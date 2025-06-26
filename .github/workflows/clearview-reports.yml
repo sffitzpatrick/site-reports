@@ -26,7 +26,6 @@ jobs:
             ca-certificates \
             fonts-liberation \
             libappindicator3-1 \
-            libasound2 \
             libatk-bridge2.0-0 \
             libatk1.0-0 \
             libcups2 \
@@ -66,8 +65,10 @@ jobs:
       - name: Run pa11y accessibility check
         continue-on-error: true
         run: |
-          npm install -g pa11y pa11y-ci
-          npx pa11y-ci https://clearviewlibrary.org --reporter html > ./docs/reports/${{ steps.date.outputs.date }}/pa11y.html
+          npx pa11y https://clearviewlibrary.org \
+            --chrome-launcher \
+            --reporter html \
+            > ./docs/reports/${{ steps.date.outputs.date }}/pa11y.html
 
       - name: Commit reports
         run: |
