@@ -56,19 +56,17 @@ jobs:
         run: |
           npx linkinator https://clearviewlibrary.org \
             --recursive \
-            --verbosity verbose \
+            --verbosity DEBUG \
             --timeout 10000 \
             --skip "mailto:,tel:" \
             --silent false \
             > ./docs/reports/${{ steps.date.outputs.date }}/broken-links.txt
 
-      - name: Run pa11y accessibility check
+      - name: Run Accessibility Audit with Pa11y CI
         continue-on-error: true
         run: |
-          npx pa11y https://clearviewlibrary.org \
-            --chrome-launcher \
-            --reporter html \
-            > ./docs/reports/${{ steps.date.outputs.date }}/pa11y.html
+          npm install -g pa11y-ci
+          npx pa11y-ci --reporter html > ./docs/reports/${{ steps.date.outputs.date }}/pa11y.html
 
       - name: Commit reports
         run: |
