@@ -19,14 +19,13 @@ jobs:
       - name: Create report folder
         run: mkdir -p docs/reports/${{ steps.date.outputs.date }}
       
-      - name: Run Lighthouse audit
-        run: |
-          npm install -g lighthouse
-          npx lighthouse https://clearviewlibrary.org 
-          --output html \
-          --output-path ./docs/reports/${{ steps.date.outputs.date }}/lighthouse.html \
-          --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" \
-          --quiet
+      - name: Run Lighthouse with GitHub Action
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: 'https://clearviewlibrary.org'
+          outputDirectory: './docs/reports/${{ steps.date.outputs.date }}'
+          uploadArtifacts: false
+          configPath: '.lighthouserc.json'  # optional
 
       - name: Run broken link check
         run: |
