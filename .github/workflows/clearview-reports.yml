@@ -1,0 +1,33 @@
+# .github/workflows/monthly-report.yml
+name: Monthly Website Report
+
+on:
+  schedule:
+    - cron: '0 6 1 * *' # Monthly on the 1st at 6AM UTC
+  workflow_dispatch:     # Optional: allow manual runs
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run Lighthouse audit
+        run: |
+          npx lighthouse https://clearviewlibrary.org --output html --output-path ./report/lighthouse.html
+
+      - name: Run broken link check
+        run: |
+          npx linkinator https://clearviewlibrary.org --recursive --output ./report/broken-links.txt
+
+      - name: Run pa11y accessibility check
+        run: |
+          npx pa11y-ci https://clearviewlibrary.org --reporter html > ./report/pa11y.html
+
+      - name: Commit reports
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add ./report
+          git commit -m "Monthly report $(date +'%Y-%m-%d')"
+          git push
