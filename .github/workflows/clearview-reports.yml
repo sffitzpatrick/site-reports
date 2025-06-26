@@ -11,18 +11,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create report folder
+        run: mkdir -p docs/reports/${{ steps.date.outputs.date }}
       
       - name: Run Lighthouse audit
         run: |
-          npx lighthouse https://clearviewlibrary.org --output html --output-path ./report/lighthouse.html
+          npm install -g lighthouse
+          npx lighthouse https://clearviewlibrary.org --output-path ./docs/reports/${{ steps.date.outputs.date }}/lighthouse.html --quiet
 
       - name: Run broken link check
         run: |
-          npx linkinator https://clearviewlibrary.org --recursive --output ./report/broken-links.txt
+          npm install linkinator
+          npx linkinator https://clearviewlibrary.org --recursive --output ./docs/reports/${{ steps.date.outputs.date }}/broken-links.txt
 
       - name: Run pa11y accessibility check
         run: |
-          npx pa11y-ci https://clearviewlibrary.org --reporter html > ./report/pa11y.html
+          npm install pa11y
+          npx pa11y-ci https://clearviewlibrary.org --reporter html > ./docs/reports/${{ steps.date.outputs.date }}/pa11y.html
 
       - name: Commit reports
         run: |
