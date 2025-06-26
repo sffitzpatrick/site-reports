@@ -22,7 +22,11 @@ jobs:
       - name: Run Lighthouse audit
         run: |
           npm install -g lighthouse
-          npx lighthouse https://clearviewlibrary.org --output-path ./docs/reports/${{ steps.date.outputs.date }}/lighthouse.html --quiet
+          npx lighthouse https://clearviewlibrary.org 
+          --output html \
+          --output-path ./docs/reports/${{ steps.date.outputs.date }}/lighthouse.html \
+          --chrome-flags="--no-sandbox" \
+          --quiet
 
       - name: Run broken link check
         run: |
