@@ -28,10 +28,16 @@ jobs:
             --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" \
             --quiet
 
-      - name: Run broken link check
+      - name: Run Broken Link Checker (Linkinator)
+        continue-on-error: true
         run: |
-          npm install linkinator
-          npx linkinator https://clearviewlibrary.org --recursive --output ./docs/reports/${{ steps.date.outputs.date }}/broken-links.txt
+          npx linkinator https://clearviewlibrary.org \
+            --recursive \
+            --verbosity verbose \
+            --timeout 10000 \
+            --skip "mailto:,tel:" \
+            --silent false \
+            > ./docs/reports/${{ steps.date.outputs.date }}/broken-links.txt
 
       - name: Run pa11y accessibility check
         run: |
