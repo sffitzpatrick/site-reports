@@ -18,7 +18,6 @@ jobs:
 
       - name: Create report folder
         run: |
-          git checkout reports
           mkdir -p docs/reports/${{ steps.date.outputs.date }}
 
       - name: Install tools
@@ -79,7 +78,6 @@ jobs:
 
       - name: Commit and Push Reports
         run: |
-          git checkout reports
           git add docs
           git commit -m "Add reports for ${{ steps.date.outputs.date }}" || echo "No changes to commit"
-          git push reports
+          git push origin reports
