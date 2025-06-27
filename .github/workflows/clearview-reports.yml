@@ -56,6 +56,7 @@ jobs:
 
            # Create a temp dir and switch to the reports branch
           git fetch origin reports || git checkout --orphan reports
+          git merge origin/reports
           git switch reports || git checkout -b reports
 
           cp -r docs/reports/${{ steps.date.outputs.date }} ./
