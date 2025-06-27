@@ -17,7 +17,9 @@ jobs:
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: Create report folder
-        run: mkdir -p docs/reports/${{ steps.date.outputs.date }}
+        run: |
+          git checkout reports
+          mkdir -p docs/reports/${{ steps.date.outputs.date }}
 
       - name: Install tools
         run: npm install -g lighthouse pa11y-ci linkinator
