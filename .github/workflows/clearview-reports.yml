@@ -20,7 +20,7 @@ jobs:
         run: mkdir -p docs/reports/${{ steps.date.outputs.date }}
 
       - name: Install tools
-              run: npm install -g lighthouse pa11y-ci linkinator
+        run: npm install -g lighthouse pa11y-ci linkinator
 
       - name: Install Chromium Dependencies
         run: |
