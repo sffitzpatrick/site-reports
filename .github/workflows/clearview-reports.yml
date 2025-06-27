@@ -54,19 +54,19 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
-           # Create a temp dir and switch to the reports branch
-          git fetch origin reports || git checkout --orphan reports
-          git merge origin/reports
-          git switch reports || git checkout -b reports
+          #  # Create a temp dir and switch to the reports branch
+          # git fetch origin reports || git checkout --orphan reports
+          # git merge origin/reports
+          # git switch reports || git checkout -b reports
 
-          cp -r docs/reports/${{ steps.date.outputs.date }} ./
-          git add ${{ steps.date.outputs.date }}
+          # cp -r docs/reports/${{ steps.date.outputs.date }} ./
+          # git add ${{ steps.date.outputs.date }}
           
-          git commit -m "Add report for ${{ steps.date.outputs.date }}" || echo "Nothing to commit"
-          git push origin reports
+          # git commit -m "Add report for ${{ steps.date.outputs.date }}" || echo "Nothing to commit"
+          # git push origin reports
 
-      # - name: Commit and Push Reports
-      #   run: |
-      #     git add docs
-      #     git commit -m "Add reports for ${{ steps.date.outputs.date }}" || echo "No changes to commit"
-      #     git push
+      - name: Commit and Push Reports
+        run: |
+          git add docs
+          git commit -m "Add reports for ${{ steps.date.outputs.date }}" || echo "No changes to commit"
+          git push
