@@ -19,7 +19,9 @@ jobs:
       - name: Install tools
         run: |
           npm install
-          npx install playwright
+          npm ci
+          npx install playwright --with-deps
+
       
       - name: Run a11y reports
         continue-on-error: true
