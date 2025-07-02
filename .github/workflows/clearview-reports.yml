@@ -17,11 +17,13 @@ jobs:
           mkdir -p docs/reports/
 
       - name: Install tools
-        run: npm install
+        run: |
+          npm install
+          npx install playwright
       
       - name: Run a11y reports
         continue-on-error: true
-        run: node a11y-run-all.js --site_name="clearview" --site_url="https://clearviewlibrary.org"
+        run: node a11y-run-all.js --site_name="clearview" --start_url="https://clearviewlibrary.org"
 
       - name: Configure Git for GitHub Actions
         run: |
