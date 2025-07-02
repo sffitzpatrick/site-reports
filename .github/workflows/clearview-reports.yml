@@ -12,58 +12,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up date
-        id: date
-        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-
       - name: Create report folder
         run: |
-          mkdir -p docs/reports/${{ steps.date.outputs.date }}
+          mkdir -p docs/reports/
 
       - name: Install tools
-        run: npm install -g lighthouse pa11y-ci linkinator
+        run: npm install
       
-      - name: Run Lighthouse
+      - name: Run a11y reports
         continue-on-error: true
-        run: |
-          lighthouse https://clearviewlibrary.org \
-            --output html \
-            --output-path ./docs/reports/${{ steps.date.outputs.date }}/lighthouse.html \
-            --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" \
-            --quiet
-
-      - name: Run Broken Link Checker (Linkinator)
-        continue-on-error: true
-        run: |
-          npx linkinator https://clearviewlibrary.org \
-            --recursive \
-            --verbosity DEBUG \
-            --timeout 10000 \
-            --skip "mailto:,tel:" \
-            --silent false \
-            > ./docs/reports/${{ steps.date.outputs.date }}/broken-links.txt
-
-      - name: Run Accessibility Audit with Pa11y CI
-        continue-on-error: true
-        run: |
-          npx pa11y-ci --reporter html > ./docs/reports/${{ steps.date.outputs.date }}/pa11y.html
+        run: node a11y-run-all.js --site_name="clearview" --site_url="https://clearviewlibrary.org"
 
       - name: Configure Git for GitHub Actions
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-
-          #  # Create a temp dir and switch to the reports branch
-          # git fetch origin reports || git checkout --orphan reports
-          # git merge origin/reports
-          # git switch reports || git checkout -b reports
-
-          # cp -r docs/reports/${{ steps.date.outputs.date }} ./
-          # git add ${{ steps.date.outputs.date }}
-          
-          # git commit -m "Add report for ${{ steps.date.outputs.date }}" || echo "Nothing to commit"
-          # git push origin reports
 
       - name: Commit and Push Reports
         run: |

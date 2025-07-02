@@ -1,0 +1,27 @@
+{
+  "name": "axe-a11y-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "crawler": "node crawler.js",
+    "summary_reporter": "node summary-reporter.js",
+    "crawl": "node a11y-run-all.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axe-core": "^4.10.3",
+    "axe-html-reporter": "^2.2.11",
+    "csv-writer": "^1.6.0",
+    "jsdom": "^26.1.0",
+    "minimalist": "^1.0.0",
+    "minimist": "^1.2.8",
+    "node-fetch": "^3.3.2",
+    "npm-run-all": "^4.1.5",
+    "playwright": "^1.53.1",
+    "robots-parser": "^3.0.1"
+  }
+}
