@@ -12,7 +12,7 @@ const SITE_NAME = args.site_name;
 const DATESTAMP = args.datestamp;
 const REPORT_DIR = args.report_dir
 
-const MAX_PAGES = 500;
+const MAX_PAGES = args.max_pages;
 const DIR_BASE = 'docs/reports/' + REPORT_DIR;
 const OUTPUT_DIR = DIR_BASE + '/reports';
 const RAW_JSON_DIR = DIR_BASE + '/axe_json';

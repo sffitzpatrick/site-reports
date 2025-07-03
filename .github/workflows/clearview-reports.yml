@@ -16,17 +16,21 @@ jobs:
           - name: clearview-drupal
             url: https://clearviewlibrary.org
             report_recipient: brad@clearviewlibrary.org
+            max_pages: 500
           - name: clearview-communico
             url: https://clearview.libnet.info/events
             report_recipient: brad@clearviewlibrary.org
+            max_pages: 500
           - name: clearview-pika
             url: https://pika.clearviewlibrary.org/
             report_recipient: brad@clearviewlibrary.org
+            max_pages: 50
 
     env:
       SITE_NAME: ${{ matrix.site.name }}
       SITE_URL: ${{ matrix.site.url }}
       REPORT_RECIPIENT: ${{ matrix.site.report_recipient }}
+      MAX_PAGES: ${{ matrix.site.max_pages }}
 
     steps:
       - uses: actions/checkout@v4
@@ -59,7 +63,7 @@ jobs:
 
       
       - name: Run a11y scan
-        run: node crawler.js --report_dir=$REPORT_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+        run: node crawler.js --max_pages=$MAX_PAGES --report_dir=$REPORT_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
 
       - name: Generate a11y reports
         run: node summary-reporter.js --report_dir=$REPORT_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
@@ -94,6 +98,6 @@ jobs:
               "from": { "email": "noreply@proofstudio.co" },
               "content": [{
                 "type": "text/plain",
-                "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"$BASE_DIR"'/summary.html"
+                "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"$REPORT_DIR"'/summary.html"
               }]
             }'

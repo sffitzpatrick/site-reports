@@ -8,6 +8,7 @@ const args = require('minimist')(process.argv.slice(2));
 const SITE_NAME = args.site_name;
 const DATESTAMP = args.datestamp;
 const REPORT_DIR = args.report_dir
+const SITE_URL = args.start_url
 
 const DIR_BASE = 'docs/reports/' + REPORT_DIR;
 
@@ -114,6 +115,7 @@ const htmlContent = `<!DOCTYPE html>
 </head>
 <body>
   <h1>Accessibility Audit Summary</h1>
+  <h2>Site url: ${SITE_URL}</h2>
   <canvas id="summaryChart"></canvas>
   <table id="summary-table">
     <thead>
