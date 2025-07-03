@@ -13,14 +13,14 @@ jobs:
     strategy:
       matrix:
         site:
-          - name: clearview-drupal
-            url: https://clearviewlibrary.org
-            report_recipient: brad@clearviewlibrary.org
-            max_pages: 500
-          - name: clearview-communico
-            url: https://clearview.libnet.info/events
-            report_recipient: brad@clearviewlibrary.org
-            max_pages: 500
+          # - name: clearview-drupal
+          #   url: https://clearviewlibrary.org
+          #   report_recipient: brad@clearviewlibrary.org
+          #   max_pages: 500
+          # - name: clearview-communico
+          #   url: https://clearview.libnet.info/events
+          #   report_recipient: brad@clearviewlibrary.org
+          #   max_pages: 500
           - name: clearview-pika
             url: https://pika.clearviewlibrary.org/
             report_recipient: brad@clearviewlibrary.org
@@ -72,6 +72,12 @@ jobs:
       - name: Generate a11y reports
         run: node summary-reporter.js --report_dir=$REPORT_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
       
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ matrix.site.name }}
+          path: docs/reports/
+
       - name: Set metadata output
         id: set-meta
         run: |
@@ -87,6 +93,11 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: docs/reports
 
       - name: Configure Git for GitHub Actions
         run: |
