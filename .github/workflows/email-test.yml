@@ -23,7 +23,10 @@ jobs:
           mkdir -p docs/reports/
 
       - name: Set dynamic datestamp
-        run: echo "DATESTAMP=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+        run: | 
+          echo "DATESTAMP=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+          BASE_DIR="$SITE_NAME-$DATESTAMP"
+          echo "BASE_DIR=$BASE_DIR" >> "$GITHUB_ENV"
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -76,6 +79,6 @@ jobs:
               "from": { "email": "noreply@proofstudio.co" },
               "content": [{
                 "type": "text/plain",
-                "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"$SITE_NAME"'-'"$DATESTAMP"'/summary.html"
+                "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"$BASE_DIR"'/summary.html"
               }]
             }'

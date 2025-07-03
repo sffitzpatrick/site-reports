@@ -21,7 +21,10 @@ jobs:
           mkdir -p docs/reports/
 
       - name: Set dynamic datestamp
-        run: echo "DATESTAMP=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+        run: |
+          echo "DATESTAMP=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+          BASE_DIR="$SITE_NAME-$DATESTAMP"
+          echo "BASE_DIR=$BASE_DIR" >> "$GITHUB_ENV"
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -39,12 +42,10 @@ jobs:
 
       
       - name: Run a11y scan
-        continue-on-error: true
-        run: node crawler.js --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+        run: node crawler.js --base_dir=$BASE_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
 
       - name: Generate a11y reports
-        continue-on-error: true
-        run: node summary-reporter.js --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+        run: node summary-reporter.js --base_dir=$BASE_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
 
       - name: Configure Git for GitHub Actions
         run: |
@@ -74,6 +75,6 @@ jobs:
               "from": { "email": "noreply@proofstudio.co" },
               "content": [{
                 "type": "text/plain",
-                "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/$SITE_NAME-$DATESTAMP/summary.html"
+                "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"$BASE_DIR"'/summary.html"
               }]
             }'
