@@ -77,10 +77,3 @@ jobs:
                 "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/docs/reports/$SITE_NAME-$DATESTAMP/summary.html"
               }]
             }'
-      - name: Trigger github pages workflow
-        run: |
-          curl -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            https://api.github.com/repos/${{ github.repository }}/actions/workflows/static.yml/dispatches \
-            -d '{"ref":"main"}'
