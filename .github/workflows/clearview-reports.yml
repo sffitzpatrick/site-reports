@@ -44,7 +44,7 @@ jobs:
 
       - name: Generate a11y reports
         continue-on-error: true
-        run: node summary-reporter.js --site_name="clearview" --start_url="https://clearviewlibrary.org"
+        run: node summary-reporter.js --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
 
       - name: Configure Git for GitHub Actions
         run: |
