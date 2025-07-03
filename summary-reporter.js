@@ -7,7 +7,7 @@ const csvWriter = require('csv-writer').createObjectCsvWriter;
 const args = require('minimist')(process.argv.slice(2));
 const SITE_NAME = args.site_name;
 const DATESTAMP = args.datestamp;
-const REPORT_DIR = args.report_dir
+const REPORT_DIR = DATESTAMP + '/' + SITE_NAME
 const SITE_URL = args.start_url
 
 const DIR_BASE = 'docs/reports/' + REPORT_DIR;
