@@ -102,7 +102,7 @@ jobs:
           git add docs
           git commit -m "Add reports for '"$SITE_NAME"' on '"$DATESTAMP"'" || echo "No changes to commit"
           git push
-            - name: Send email with SendGrid
+
       - name: email reports
         run: |
           for dir in reports/*; do
