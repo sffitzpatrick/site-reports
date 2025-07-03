@@ -39,17 +39,13 @@ jobs:
           ref: main
           fetch-depth: 0  # Fetch full history so we can pull and push safely
 
-      - name: Create report folder
-        run: |
-          mkdir -p docs/reports/
 
       - name: Set dynamic datestamp
         run: echo "DATESTAMP=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
       
-      - name: create base_dir var
+      - name: Create report folder
         run: |
-          REPORT_DIR="$SITE_NAME-$DATESTAMP"
-          echo "REPORT_DIR=$REPORT_DIR" >> "$GITHUB_ENV"
+          mkdir -p docs/reports/$DATESTAMP/$SITE_NAME
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -75,8 +71,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: report-${{ matrix.site.name }}
-          path: docs/reports/
+          name: 
+          path: docs/reports/$DATESTAMP
 
       - name: Set metadata output
         id: set-meta
@@ -97,7 +93,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          path: docs/reports
+          path: docs/reports/$DATESTAMP
 
       - name: Configure Git for GitHub Actions
         run: |
@@ -111,7 +107,7 @@ jobs:
       - name: Commit and Push Reports
         run: |
           git add docs
-          git commit -m "Add reports for '"$SITE_NAME"' on '"$DATESTAMP"'" || echo "No changes to commit"
+          git commit -m "Add reports" || echo "No changes to commit"
           git push
 
       - name: email reports
