@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-03T15:06:58.317Z",
+  "timestamp": "2025-07-03T16:03:20.265Z",
   "url": "https://pika.clearviewlibrary.org/MyAccount/EmailResetPin",
   "toolOptions": {
     "reporter": "v1"
@@ -2506,7 +2506,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 81.1064px;\">",
+          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 96.8926px;\">",
           "target": [
             "#home-page-login"
           ]
@@ -2538,7 +2538,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 80.0771px;\">",
+          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 95.8229px;\">",
           "target": [
             "#home-page-library-section"
           ]
@@ -2979,6 +2979,31 @@
           "html": "<div id=\"home-page-hours-locations\" class=\"sidebar-button\">Library Hours &amp; Locations</div>",
           "target": [
             "#home-page-hours-locations"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#4f5253",
+                "contrastRatio": 7.88,
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.88"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"home-page-home-button\" class=\"sidebar-button\">Library Home Page</div>",
+          "target": [
+            "#home-page-home-button"
           ]
         },
         {
@@ -7975,7 +8000,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 81.1064px;\">",
+          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 96.8926px;\">",
           "target": [
             "#home-page-login"
           ]
@@ -8055,7 +8080,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 80.0771px;\">",
+          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 95.8229px;\">",
           "target": [
             "#home-page-library-section"
           ]
@@ -9672,31 +9697,6 @@
             "#advancedSearchLink"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "contrastRatio": 0,
-                "fontSize": "11.3pt (15px)",
-                "fontWeight": "normal",
-                "messageKey": "bgOverlap",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element's background color could not be determined because it is overlapped by another element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<div id=\"home-page-home-button\" class=\"sidebar-button\">Library Home Page</div>",
-          "target": [
-            "#home-page-home-button"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
         }
       ]
     }
