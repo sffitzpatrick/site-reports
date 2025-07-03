@@ -6,13 +6,28 @@ on:
     - cron: '0 6 1 * *' # Monthly on the 1st at 6AM UTC
   workflow_dispatch:     # Optional: allow manual runs
 
-env:
-  SITE_NAME: "clearview-drupal"
-  SITE_URL: "https://clearviewlibrary.org"
-
 jobs:
   report:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        site:
+          - name: clearview-drupal
+            url: https://clearviewlibrary.org
+            report_recipient: brad@clearviewlibrary.org
+          - name: clearview-communico
+            url: https://clearview.libnet.info/events
+            report_recipient: brad@clearviewlibrary.org
+          - name: clearview-pika
+            url: https://pika.clearviewlibrary.org/
+            report_recipient: brad@clearviewlibrary.org
+
+    env:
+      SITE_NAME: ${{ matrix.site.name }}
+      SITE_URL: ${{ matrix.site.url }}
+      REPORT_RECIPIENT: ${{ matrix.site.report_recipient }}
+
     steps:
       - uses: actions/checkout@v4
 
@@ -25,8 +40,8 @@ jobs:
       
       - name: create base_dir var
         run: |
-          BASE_DIR="$SITE_NAME-$DATESTAMP"
-          echo "BASE_DIR=$BASE_DIR" >> "$GITHUB_ENV"
+          REPORT_DIR="$SITE_NAME-$DATESTAMP"
+          echo "REPORT_DIR=$REPORT_DIR" >> "$GITHUB_ENV"
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -44,10 +59,10 @@ jobs:
 
       
       - name: Run a11y scan
-        run: node crawler.js --base_dir=$BASE_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+        run: node crawler.js --report_dir=$REPORT_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
 
       - name: Generate a11y reports
-        run: node summary-reporter.js --base_dir=$BASE_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+        run: node summary-reporter.js --report_dir=$REPORT_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
 
       - name: Configure Git for GitHub Actions
         run: |
@@ -71,7 +86,9 @@ jobs:
             --header 'Content-Type: application/json' \
             --data '{
               "personalizations": [{
-                "to": [{ "email": "sean@proofstudio.co" }],
+                "to": [
+                  { "email": "sean@proofstudio.co" }
+                  ],
                 "subject": "📊 Report for '"$SITE_NAME"' - '"$DATESTAMP"'"
               }],
               "from": { "email": "noreply@proofstudio.co" },
