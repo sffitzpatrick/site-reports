@@ -57,3 +57,23 @@ jobs:
           git add docs
           git commit -m "Add reports for ${{ steps.date.outputs.date }}" || echo "No changes to commit"
           git push
+      
+      - name: Send email with SendGrid
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
+        run: |
+          curl --request POST \
+            --url https://api.sendgrid.com/v3/mail/send \
+            --header "Authorization: Bearer $SENDGRID_API" \
+            --header 'Content-Type: application/json' \
+            --data '{
+              "personalizations": [{
+                "to": [{ "email": "sean@proofstudio.co" }],
+                "subject": "📊 Report for '"$SITE_NAME"' - '"$DATESTAMP"'"
+              }],
+              "from": { "email": "noreply@proofstudio.co" },
+              "content": [{
+                "type": "text/plain",
+                "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/docs/reports/$SITE_NAME-$DATESTAMP/summary.html"
+              }]
+            }'
