@@ -85,9 +85,9 @@ async function extractLinks(page) {
 }
 
 (async () => {
-  if (!fs.existsSync(DIR_BASE)) fs.mkdirSync(DIR_BASE);
-  if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR);
-  if (!fs.existsSync(RAW_JSON_DIR)) fs.mkdirSync(RAW_JSON_DIR);
+  if (!fs.existsSync(DIR_BASE)) fs.mkdirSync(DIR_BASE, { recursive: true });
+  if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  if (!fs.existsSync(RAW_JSON_DIR)) fs.mkdirSync(RAW_JSON_DIR, { recursive: true });
 
   await loadRobotsTxt();
 
