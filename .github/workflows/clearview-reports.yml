@@ -33,7 +33,12 @@ jobs:
       MAX_PAGES: ${{ matrix.site.max_pages }}
 
     steps:
+
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0  # Fetch full history so we can pull and push safely
+
 
       - name: Create report folder
         run: |
@@ -76,8 +81,9 @@ jobs:
 
       - name: Commit and Push Reports
         run: |
+          git pull origin main --rebase
           git add docs
-          git commit -m "Add reports for ${{ steps.date.outputs.date }}" || echo "No changes to commit"
+          git commit -m "Add reports for '"$SITE_NAME"' on '"$DATESTAMP"'" || echo "No changes to commit"
           git push
       
       - name: Send email with SendGrid
