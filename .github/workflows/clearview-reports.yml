@@ -28,7 +28,7 @@ jobs:
         run: |
           npm install
           npm ci
-          npx install playwright --with-deps
+          npx playwright install --with-deps
 
       
       - name: Run a11y reports
