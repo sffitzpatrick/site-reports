@@ -23,8 +23,10 @@ jobs:
           mkdir -p docs/reports/
 
       - name: Set dynamic datestamp
-        run: | 
-          echo "DATESTAMP=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+        run: echo "DATESTAMP=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+      
+      - name: create base_dir var
+        run: |
           BASE_DIR="$SITE_NAME-$DATESTAMP"
           echo "BASE_DIR=$BASE_DIR" >> "$GITHUB_ENV"
 
