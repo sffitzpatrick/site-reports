@@ -9,12 +9,10 @@ const args = require('minimist')(process.argv.slice(2));
 
 const START_URL = args.start_url; // Replace with your target
 const SITE_NAME = args.site_name;
+const DATESTAMP = args.datestamp;
 
-const date = new Date();
-const datestamp = date.toISOString().split('T')[0];
-
-const MAX_PAGES = 500;
-const DIR_BASE = 'docs/reports/' + SITE_NAME + '-' + datestamp;
+const MAX_PAGES = 50;
+const DIR_BASE = 'docs/reports/' + SITE_NAME + '-' + DATESTAMP;
 const OUTPUT_DIR = DIR_BASE + '/reports';
 const RAW_JSON_DIR = DIR_BASE + '/axe_json';
 

@@ -6,6 +6,10 @@ on:
     - cron: '0 6 1 * *' # Monthly on the 1st at 6AM UTC
   workflow_dispatch:     # Optional: allow manual runs
 
+env:
+  SITE_NAME: "clearview-drupal"
+  SITE_URL: "https://clearviewlibrary.org"
+
 jobs:
   report:
     runs-on: ubuntu-latest
@@ -15,6 +19,9 @@ jobs:
       - name: Create report folder
         run: |
           mkdir -p docs/reports/
+
+      - name: Set dynamic datestamp
+        run: echo "DATESTAMP=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -31,9 +38,13 @@ jobs:
           npx playwright install
 
       
-      - name: Run a11y reports
+      - name: Run a11y scan
         continue-on-error: true
-        run: node a11y-run-all.js --site_name="clearview" --start_url="https://clearviewlibrary.org"
+        run: node crawler.js --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+
+      - name: Generate a11y reports
+        continue-on-error: true
+        run: node summary-reporter.js --site_name="clearview" --start_url="https://clearviewlibrary.org"
 
       - name: Configure Git for GitHub Actions
         run: |
