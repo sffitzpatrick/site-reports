@@ -71,7 +71,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 
+          name: report-${{ env.SITE_NAME }}-${{ env.DATESTAMP }}
           path: docs/reports/${{ env.DATESTAMP }}
 
       - name: Set metadata output
