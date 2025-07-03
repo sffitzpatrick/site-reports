@@ -7,7 +7,7 @@ on:
   workflow_dispatch:     # Optional: allow manual runs
 
 jobs:
-  report:
+  audit:
     runs-on: ubuntu-latest
 
     strategy:
@@ -39,15 +39,6 @@ jobs:
           ref: main
           fetch-depth: 0  # Fetch full history so we can pull and push safely
 
-      - name: Configure Git for GitHub Actions
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-
-      - name: Pull latest main
-        run: git pull origin main --rebase
-        
       - name: Create report folder
         run: |
           mkdir -p docs/reports/
@@ -80,31 +71,79 @@ jobs:
 
       - name: Generate a11y reports
         run: node summary-reporter.js --report_dir=$REPORT_DIR --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+      
+      - name: Set metadata output
+        id: set-meta
+        run: |
+          echo "{\"name\":\"${{ matrix.site.name }}\",\"url\":\"${{ matrix.site.url }}\"}" > site.json
+          echo "site_info=$(cat site.json)" >> $GITHUB_OUTPUT
+
+  commit-and-push:
+    needs: audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Configure Git for GitHub Actions
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Pull latest main
+        run: git pull origin main --rebase
 
       - name: Commit and Push Reports
         run: |
           git add docs
           git commit -m "Add reports for '"$SITE_NAME"' on '"$DATESTAMP"'" || echo "No changes to commit"
           git push
-      
-      - name: Send email with SendGrid
+            - name: Send email with SendGrid
+      - name: email reports
+        run: |
+          for dir in reports/*; do
+            site=$(basename "$dir" | cut -d'-' -f2)
+            echo "Sending email for $site..."
+            
+            curl --request POST \
+              --url https://api.sendgrid.com/v3/mail/send \
+              --header "Authorization: Bearer $SENDGRID_API_KEY" \
+              --header 'Content-Type: application/json' \
+              --data "{
+                \"personalizations\": [{
+                  \"to\": [{ \"email\": \"sean@proofstudio.co\" }],
+                  \"subject\": \"Report for ${site}\"
+                }],
+                \"from\": { \"email\": \"noreply@proofstudio.co\" },
+                \"content\": [{
+                  \"type\": \"text/plain\",
+                  \"value\": \"The report for ${site} is ready. View the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"${dir}"'/summary.html""
+                }]
+              }"
+          done
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
-        run: |
-          curl --request POST \
-            --url https://api.sendgrid.com/v3/mail/send \
-            --header "Authorization: Bearer $SENDGRID_API_KEY" \
-            --header 'Content-Type: application/json' \
-            --data '{
-              "personalizations": [{
-                "to": [
-                  { "email": "sean@proofstudio.co" }
-                  ],
-                "subject": "📊 Report for '"$SITE_NAME"' - '"$DATESTAMP"'"
-              }],
-              "from": { "email": "noreply@proofstudio.co" },
-              "content": [{
-                "type": "text/plain",
-                "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"$REPORT_DIR"'/summary.html"
-              }]
-            }'
+          #   env:
+          #   SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
+          # run: |
+          #   curl --request POST \
+          #     --url https://api.sendgrid.com/v3/mail/send \
+          #     --header "Authorization: Bearer $SENDGRID_API_KEY" \
+          #     --header 'Content-Type: application/json' \
+          #     --data '{
+          #       "personalizations": [{
+          #         "to": [
+          #           { "email": "sean@proofstudio.co" }
+          #           ],
+          #         "subject": "📊 Report for '"$SITE_NAME"' - '"$DATESTAMP"'"
+          #       }],
+          #       "from": { "email": "noreply@proofstudio.co" },
+          #       "content": [{
+          #         "type": "text/plain",
+          #         "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"$REPORT_DIR"'/summary.html"
+          #       }]
+          #     }'
