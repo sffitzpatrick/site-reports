@@ -72,7 +72,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: 
-          path: docs/reports/$DATESTAMP
+          path: docs/reports/${{ env.DATESTAMP }}
 
       - name: Set metadata output
         id: set-meta
@@ -93,7 +93,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          path: docs/reports/$DATESTAMP
+          path: docs/reports/${{ env.DATESTAMP }}
 
       - name: Configure Git for GitHub Actions
         run: |
