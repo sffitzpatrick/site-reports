@@ -142,7 +142,7 @@ jobs:
       - name: email reports
         run: |
           for dir in docs/reports/${{ env.DATESTAMP }}/*; do
-            site=$(basename "$dir" | cut -d'-' -f2)
+            site=$(basename "$dir")
             echo "Sending email for $site..."
             
             curl --request POST \
@@ -157,10 +157,9 @@ jobs:
                 \"from\": { \"email\": \"noreply@proofstudio.co\" },
                 \"content\": [{
                   \"type\": \"text/plain\",
-                  "value\": \"The report for ${site} is ready. View it here: https://sffitzpatrick.github.io/clearview-reports/reports/${{ env.DATESTAMP }}/$site/summary.html\"
+                  \"value\": \"The report for ${site} is ready. View it here: https://sffitzpatrick.github.io/clearview-reports/reports/${{ env.DATESTAMP }}/$site/summary.html\"
                 }]
               }"
-          done
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
           #   env:
