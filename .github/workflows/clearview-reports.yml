@@ -129,13 +129,14 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
-      - name: Pull latest main
-        run: git pull origin main --rebase
+      - name: Stage and commit before pull
+        run: |
+          git add docs/
+          git commit -m "Stash local changes before pull" || echo "No changes"
+          git pull origin main --rebase
 
       - name: Commit and Push Reports
         run: |
-          git add docs
-          git add docs/reports/${{ env.DATESTAMP }}/
           git commit -m "Add reports for ${{ env.DATESTAMP }}" || echo "No changes"
           git push origin main
 
