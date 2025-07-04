@@ -24,7 +24,7 @@ jobs:
           - name: clearview-pika
             url: https://pika.clearviewlibrary.org/
             report_recipient: brad@clearviewlibrary.org
-            max_pages: 50
+            max_pages: 5
 
     env:
       SITE_NAME: ${{ matrix.site.name }}
@@ -45,7 +45,7 @@ jobs:
       
       - name: Create report folder
         run: |
-          mkdir -p docs/reports/$DATESTAMP/$SITE_NAME
+          mkdir -p docs/reports/$DATESTAMP
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -71,7 +71,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: report-${{ env.SITE_NAME }}-${{ env.DATESTAMP }}
+          name: ${{ env.SITE_NAME }}
           path: docs/reports/${{ env.DATESTAMP }}
 
       - name: Set metadata output
