@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-04T11:12:15.550Z",
+  "timestamp": "2025-07-04T11:19:17.380Z",
   "url": "https://pika.clearviewlibrary.org/",
   "toolOptions": {
     "reporter": "v1"
@@ -749,6 +749,32 @@
             }
           ],
           "impact": null,
+          "html": "<a aria-haspopup=\"true\" class=\"VIpgJd-ZVi9od-xl07Ob-lTBxed\" href=\"#\">",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
           "html": "<select name=\"basicType\" aria-label=\"Type of catalog search\" class=\"searchTypeHorizontal form-control catalogType\" id=\"basicSearchTypes\" title=\"Search by Keyword to find subjects, titles, authors, etc. Search by Title or Author for more precise results.\">",
           "target": [
             "#basicSearchTypes"
@@ -1159,6 +1185,24 @@
       "help": "ARIA attributes must be used as specified for the element's role",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-conditional-attr?application=axeAPI",
       "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a aria-haspopup=\"true\" class=\"VIpgJd-ZVi9od-xl07Ob-lTBxed\" href=\"#\">",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed"
+          ]
+        },
         {
           "any": [],
           "all": [
@@ -1674,6 +1718,24 @@
             }
           ],
           "impact": null,
+          "html": "<a aria-haspopup=\"true\" class=\"VIpgJd-ZVi9od-xl07Ob-lTBxed\" href=\"#\">",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
           "html": "<select name=\"basicType\" aria-label=\"Type of catalog search\" class=\"searchTypeHorizontal form-control catalogType\" id=\"basicSearchTypes\" title=\"Search by Keyword to find subjects, titles, authors, etc. Search by Title or Author for more precise results.\">",
           "target": [
             "#basicSearchTypes"
@@ -2134,6 +2196,38 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<a aria-haspopup=\"true\" class=\"VIpgJd-ZVi9od-xl07Ob-lTBxed\" href=\"#\">",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<select name=\"basicType\" aria-label=\"Type of catalog search\" class=\"searchTypeHorizontal form-control catalogType\" id=\"basicSearchTypes\" title=\"Search by Keyword to find subjects, titles, authors, etc. Search by Title or Author for more precise results.\">",
           "target": [
             "#basicSearchTypes"
@@ -2520,6 +2614,24 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<a aria-haspopup=\"true\" class=\"VIpgJd-ZVi9od-xl07Ob-lTBxed\" href=\"#\">",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<select name=\"basicType\" aria-label=\"Type of catalog search\" class=\"searchTypeHorizontal form-control catalogType\" id=\"basicSearchTypes\" title=\"Search by Keyword to find subjects, titles, authors, etc. Search by Title or Author for more precise results.\">",
           "target": [
             "#basicSearchTypes"
@@ -2866,6 +2978,166 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<div class=\"skiptranslate goog-te-gadget\" dir=\"ltr\" style=\"\">",
+          "target": [
+            ".goog-te-gadget"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\":0.targetLanguage\" class=\"goog-te-gadget-simple\" style=\"white-space: nowrap;\">",
+          "target": [
+            "#\\:0\\.targetLanguage"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" class=\"goog-te-gadget-icon\" alt=\"\" style=\"background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;\">",
+          "target": [
+            ".goog-te-gadget-icon"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"vertical-align: middle;\">",
+          "target": [
+            "#\\:0\\.targetLanguage > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"border-left: 1px solid rgb(187, 187, 187);\">​</span>",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed > span:nth-child(3)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<li id=\"browse-category-clearview_colorful_titles_for_kids\" class=\"browse-category category0 selected\" data-category-id=\"clearview_colorful_titles_for_kids\" style=\"width: 195px;\"><button tabindex=\"0\">Colorful Titles for Kids</button></li>",
           "target": [
             "#browse-category-clearview_colorful_titles_for_kids"
@@ -3026,7 +3298,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"selected-browse-label-search-text\" style=\"opacity: 0.51963;\">Colorful Titles for Kids</span>",
+          "html": "<span class=\"selected-browse-label-search-text\" style=\"opacity: 0.523553;\">Colorful Titles for Kids</span>",
           "target": [
             ".selected-browse-label-search-text"
           ]
@@ -3058,7 +3330,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"selected-browse-sub-category-label-search-text\" style=\"opacity: 0.523553;\"></span>",
+          "html": "<span class=\"selected-browse-sub-category-label-search-text\" style=\"opacity: 0.527475;\"></span>",
           "target": [
             ".selected-browse-sub-category-label-search-text"
           ]
@@ -3090,7 +3362,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div class=\"row\" style=\"opacity: 0.523553;\">",
+          "html": "<div class=\"row\" style=\"opacity: 0.527475;\">",
           "target": [
             "#home-page-browse-results > .row"
           ]
@@ -3568,6 +3840,31 @@
           "html": "<strong>The libraries will be closed on Friday, July 4, for Independence Day.</strong>",
           "target": [
             "strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#000000",
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>Select Language</span>",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed > span:nth-child(1)"
           ]
         },
         {
@@ -4455,6 +4752,111 @@
       "help": "Images must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
       "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": {
+                "role": "presentation"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were overridden with role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" class=\"goog-te-gadget-icon\" alt=\"\" style=\"background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;\">",
+          "target": [
+            ".goog-te-gadget-icon"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": {
+                "role": "presentation"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were overridden with role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" alt=\"\" width=\"1\" height=\"1\">",
+          "target": [
+            "img[width=\"1\"][height=\"1\"][alt=\"\"]:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": {
+                "role": "presentation"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were overridden with role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" alt=\"\" width=\"1\" height=\"1\">",
+          "target": [
+            "img[width=\"1\"][height=\"1\"][alt=\"\"]:nth-child(4)"
+          ]
+        },
         {
           "any": [
             {
@@ -5422,6 +5824,60 @@
       "help": "Alternative text of images should not be repeated as text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=axeAPI",
       "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" class=\"goog-te-gadget-icon\" alt=\"\" style=\"background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;\">",
+          "target": [
+            ".goog-te-gadget-icon"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" alt=\"\" width=\"1\" height=\"1\">",
+          "target": [
+            "img[width=\"1\"][height=\"1\"][alt=\"\"]:nth-child(2)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" alt=\"\" width=\"1\" height=\"1\">",
+          "target": [
+            "img[width=\"1\"][height=\"1\"][alt=\"\"]:nth-child(4)"
+          ]
+        },
         {
           "any": [],
           "all": [],
@@ -6546,6 +7002,32 @@
           "html": "<a id=\"skip-to-side-bar\" href=\"#side-bar\">Skip to sidebar</a>",
           "target": [
             "#skip-to-side-bar"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a aria-haspopup=\"true\" class=\"VIpgJd-ZVi9od-xl07Ob-lTBxed\" href=\"#\">",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed"
           ]
         },
         {
@@ -8860,6 +9342,81 @@
             }
           ],
           "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" class=\"goog-te-gadget-icon\" alt=\"\" style=\"background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;\">",
+          "target": [
+            ".goog-te-gadget-icon"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "is-element-focusable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element is focusable."
+            },
+            {
+              "id": "has-global-aria-attribute",
+              "data": [],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has global ARIA attributes: "
+            }
+          ],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" alt=\"\" width=\"1\" height=\"1\">",
+          "target": [
+            "img[width=\"1\"][height=\"1\"][alt=\"\"]:nth-child(2)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "is-element-focusable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element is focusable."
+            },
+            {
+              "id": "has-global-aria-attribute",
+              "data": [],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has global ARIA attributes: "
+            }
+          ],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" alt=\"\" width=\"1\" height=\"1\">",
+          "target": [
+            "img[width=\"1\"][height=\"1\"][alt=\"\"]:nth-child(4)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "is-element-focusable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element is focusable."
+            },
+            {
+              "id": "has-global-aria-attribute",
+              "data": [],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has global ARIA attributes: "
+            }
+          ],
+          "impact": null,
           "html": "<img src=\"/interface/themes/responsive/images/Search.png\" alt=\"\">",
           "target": [
             "#vertical-menu-search-button > img[alt=\"\"]"
@@ -9246,6 +9803,186 @@
           "html": "<div id=\"google_translate_element\">",
           "target": [
             "#google_translate_element"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"skiptranslate goog-te-gadget\" dir=\"ltr\" style=\"\">",
+          "target": [
+            ".goog-te-gadget"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\":0.targetLanguage\" class=\"goog-te-gadget-simple\" style=\"white-space: nowrap;\">",
+          "target": [
+            "#\\:0\\.targetLanguage"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" class=\"goog-te-gadget-icon\" alt=\"\" style=\"background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;\">",
+          "target": [
+            ".goog-te-gadget-icon"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"vertical-align: middle;\">",
+          "target": [
+            "#\\:0\\.targetLanguage > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a aria-haspopup=\"true\" class=\"VIpgJd-ZVi9od-xl07Ob-lTBxed\" href=\"#\">",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>Select Language</span>",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed > span:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" alt=\"\" width=\"1\" height=\"1\">",
+          "target": [
+            "img[width=\"1\"][height=\"1\"][alt=\"\"]:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"border-left: 1px solid rgb(187, 187, 187);\">​</span>",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed > span:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img src=\"https://www.google.com/images/cleardot.gif\" alt=\"\" width=\"1\" height=\"1\">",
+          "target": [
+            "img[width=\"1\"][height=\"1\"][alt=\"\"]:nth-child(4)"
           ]
         },
         {
@@ -11583,7 +12320,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"selected-browse-label-search-text\" style=\"opacity: 0.51963;\">Colorful Titles for Kids</span>",
+          "html": "<span class=\"selected-browse-label-search-text\" style=\"opacity: 0.523553;\">Colorful Titles for Kids</span>",
           "target": [
             ".selected-browse-label-search-text"
           ]
@@ -11603,7 +12340,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"selected-browse-sub-category-label-search-text\" style=\"opacity: 0.523553;\"></span>",
+          "html": "<span class=\"selected-browse-sub-category-label-search-text\" style=\"opacity: 0.527475;\"></span>",
           "target": [
             ".selected-browse-sub-category-label-search-text"
           ]
@@ -11663,7 +12400,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"row\" style=\"opacity: 0.523553;\">",
+          "html": "<div class=\"row\" style=\"opacity: 0.527475;\">",
           "target": [
             "#home-page-browse-results > .row"
           ]
@@ -14783,6 +15520,27 @@
             {
               "id": "color-contrast",
               "data": {
+                "messageKey": "nonBmp"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span aria-hidden=\"true\" style=\"color: rgb(118, 118, 118);\">▼</span>",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
                 "contrastRatio": 0,
                 "fontSize": "11.3pt (15px)",
                 "fontWeight": "bold",
@@ -14900,9 +15658,9 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#7ab6dc",
+                "fgColor": "#79b5dc",
                 "bgColor": "#ffffff",
-                "contrastRatio": 2.19,
+                "contrastRatio": 2.22,
                 "fontSize": "15.0pt (20px)",
                 "fontWeight": "normal",
                 "messageKey": null,
@@ -14917,17 +15675,17 @@
                 }
               ],
               "impact": "serious",
-              "message": "Element has insufficient color contrast of 2.19 (foreground color: #7ab6dc, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "message": "Element has insufficient color contrast of 2.22 (foreground color: #79b5dc, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           ],
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<span class=\"selected-browse-label-search-text\" style=\"opacity: 0.51963;\">Colorful Titles for Kids</span>",
+          "html": "<span class=\"selected-browse-label-search-text\" style=\"opacity: 0.523553;\">Colorful Titles for Kids</span>",
           "target": [
             ".selected-browse-label-search-text"
           ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #7ab6dc, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.22 (foreground color: #79b5dc, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
         }
       ]
     }
