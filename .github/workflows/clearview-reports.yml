@@ -101,7 +101,7 @@ jobs:
           for dir in downloaded-reports/*; do
             site=$(basename "$dir" | sed 's/^report-//')
             mkdir -p docs/reports/${{ env.DATESTAMP }}/$site
-            cp "$dir"/* docs/reports/${{ env.DATESTAMP }}/$site/
+            cp -r "$dir"/* docs/reports/${{ env.DATESTAMP }}/$site/
           done
 
       - name: Configure Git for GitHub Actions
