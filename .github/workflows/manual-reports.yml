@@ -35,7 +35,6 @@ jobs:
     env:
       SITE_NAME: ${{ github.event.inputs.site_name }}
       SITE_URL: ${{ github.event.inputs.site_url }}
-     # REPORT_RECIPIENT: ${{ matrix.site.report_recipient }}
       MAX_PAGES: ${{ github.event.inputs.max_pages }}
       DATESTAMP: ${{ needs.set-date.outputs.datestamp }}
 
@@ -78,13 +77,13 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: report-${{ matrix.site.name }}
-          path: docs/reports/${{ env.DATESTAMP }}/${{ matrix.site.name }}/
+          name: report-${{ env.SITE_NAME }}
+          path: docs/reports/${{ env.DATESTAMP }}/${{ env.SITE_NAME }}/
 
       - name: Set metadata output
         id: set-meta
         run: |
-          echo "{\"name\":\"${{ matrix.site.name }}\",\"url\":\"${{ matrix.site.url }}\"}" > site.json
+          echo "{\"name\":\"${{ env.SITE_NAME }}\",\"url\":\"${{ env.SITE_URL }}\"}" > site.json
           echo "site_info=$(cat site.json)" >> $GITHUB_OUTPUT
 
   commit-and-push:
@@ -158,23 +157,3 @@ jobs:
           done
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
-          #   env:
-          #   SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
-          # run: |
-          #   curl --request POST \
-          #     --url https://api.sendgrid.com/v3/mail/send \
-          #     --header "Authorization: Bearer $SENDGRID_API_KEY" \
-          #     --header 'Content-Type: application/json' \
-          #     --data '{
-          #       "personalizations": [{
-          #         "to": [
-          #           { "email": "sean@proofstudio.co" }
-          #           ],
-          #         "subject": "📊 Report for '"$SITE_NAME"' - '"$DATESTAMP"'"
-          #       }],
-          #       "from": { "email": "noreply@proofstudio.co" },
-          #       "content": [{
-          #         "type": "text/plain",
-          #         "value": "The report for '"$SITE_NAME"' is complete.\n\nReport date: '"$DATESTAMP"'\nSite URL: '"$SITE_URL"'\n\nView the report here: https://sffitzpatrick.github.io/clearview-reports/reports/'"$REPORT_DIR"'/summary.html"
-          #       }]
-          #     }'
