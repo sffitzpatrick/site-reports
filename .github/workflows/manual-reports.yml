@@ -61,12 +61,14 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install tools
+      - name: Install a11y tools
         run: |
           npm install
           npm ci
           npx playwright install
 
+      - name: Install lychee
+        uses: lycheeverse/lychee-action@v1.8.0
       
       - name: Run a11y scan
         run: node crawler.js --max_pages=$MAX_PAGES  --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
@@ -74,6 +76,11 @@ jobs:
       - name: Generate a11y reports
         run: node summary-reporter.js --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
       
+      - name: Run lychee on website
+        run: |
+          lychee $SITE_URL --verbose --timeout 20 --max-concurrency 10 --output lychee_report.md
+
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
