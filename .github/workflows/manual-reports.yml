@@ -80,7 +80,7 @@ jobs:
 
       - name: Run lychee on website
         run: |
-          lychee $SITE_URL --verbose --timeout 20 --max-concurrency 10 --output lychee_report.md
+          lychee $SITE_URL --verbose --timeout 20 --max-concurrency 10 --format markdown --output lychee_report.md
 
 
       - name: Upload artifact
