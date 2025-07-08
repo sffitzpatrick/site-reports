@@ -56,22 +56,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
 
-      - name: Install a11y tools
-        run: |
-          npm install
-          npm ci
-          npx playwright install
+      # - name: Install a11y tools
+      #   run: |
+      #     npm install
+      #     npm ci
+      #     npx playwright install
       
-      - name: Run a11y scan
-        run: node crawler.js --max_pages=$MAX_PAGES  --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+      # - name: Run a11y scan
+      #   run: node crawler.js --max_pages=$MAX_PAGES  --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
 
-      - name: Generate a11y reports
-        run: node summary-reporter.js --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
+      # - name: Generate a11y reports
+      #   run: node summary-reporter.js --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
       
       - name: Download lychee binary
         run: |
@@ -80,8 +80,10 @@ jobs:
 
       - name: Run lychee on website
         run: |
-          lychee $SITE_URL --verbose --timeout 20 --max-concurrency 10 --format markdown --output lychee_report.md
+          lychee $SITE_URL --verbose --timeout 20 --max-concurrency 10 --format markdown --output lychee-report.md
 
+      - name: Show report (for debug)
+        run: cat lychee-report.md
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
