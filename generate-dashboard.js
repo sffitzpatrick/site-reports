@@ -10,6 +10,7 @@ const REPORT_DIR = args.output_dir; // e.g. docs/reports/2025-07-08/example/repo
 const SITE_NAME = args.site_name || 'Unnamed Site';
 const DATESTAMP = args.datestamp;
 const PAGE_COUNT = args.page_count || '?';
+const BROKEN_LINK_COUNT = args.broken_link_count || '?';
 
 // Validate directory
 if (!REPORT_DIR || !fs.existsSync(REPORT_DIR)) {
@@ -56,6 +57,7 @@ const html = `
     <div><strong>Scan Date:</strong> ${DATESTAMP}</div>
     <div><strong>Generated:</strong> ${now}</div>
     <div><strong>Pages Scanned:</strong> ${PAGE_COUNT}</div>
+    <div><strong>Broken Links Found:</strong> ${BROKEN_LINK_COUNT}</div>
   </div>
   <table>
     <thead>
