@@ -5,6 +5,7 @@ const axeCore = require('axe-core');
 const { createHtmlReport } = require('axe-html-reporter'); // Correct import
 const robotsParser = require('robots-parser');
 const fetch = require('node-fetch');
+const axios = require('axios');
 const args = require('minimist')(process.argv.slice(2));
 
 const START_URL = args.start_url; // Replace with your target
@@ -16,10 +17,12 @@ const MAX_PAGES = args.max_pages;
 const DIR_BASE = 'docs/reports/' + REPORT_DIR;
 const OUTPUT_DIR = DIR_BASE + '/reports';
 const RAW_JSON_DIR = DIR_BASE + '/axe_json';
+const LINK_REPORT_PATH = path.join(DIR_BASE, 'link_issues.json');
 
 const visited = new Set();
 const toVisit = new Set([START_URL]);
 const domain = new URL(START_URL).origin;
+
 
 let robots;
 const nonHtmlExts = /\.(css|js|pdf|png|jpe?g|svg|gif|ico|woff2?|ttf|eot|zip|mp4|mp3)$/i;
@@ -75,6 +78,29 @@ async function crawlPage(page, url) {
   }
 }
 
+async function checkLinks(links, baseUrl) {
+  const results = [];
+
+  for (const link of links) {
+    try {
+      const res = await axios.head(link, { maxRedirects: 5, timeout: 5000 });
+      results.push({ link, status: res.status });
+    } catch (error) {
+      results.push({
+        link,
+        status: error.response?.status || null,
+        error: error.code || error.message,
+        source: baseUrl,
+      });
+    }
+  }
+
+  return results;
+}
+
+let allLinkResults = [];
+
+
 async function extractLinks(page) {
   const hrefs = await page.$$eval('a[href]', els => els.map(el => el.href));
   return new Set(
@@ -121,9 +147,17 @@ async function extractLinks(page) {
     }
 
     const links = await extractLinks(page);
+    const linkArray = Array.from(links);
+    const brokenLinks = await checkLinks(linkArray, url);
+    allLinkResults.push(...brokenLinks.filter(l => l.status >= 400 || l.error));
+
     links.forEach(l => toVisit.add(l));
   }
 
   await browser.close();
+
+  fs.writeFileSync(LINK_REPORT_PATH, JSON.stringify(allLinkResults, null, 2));
+  
+  console.log(`🔗 Link check report written to ${LINK_REPORT_PATH}`);
   console.log(`✅ Completed. Scanned ${count} pages - reports in ./${OUTPUT_DIR}`);
 })();
