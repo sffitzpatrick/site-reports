@@ -76,7 +76,15 @@ jobs:
       - name: Generate broken link report
         run:  node generate-link-report.js --site_name=$SITE_NAME --datestamp=$DATESTAMP
 
-      - name: Upload artifact
+      - name: Generate HTML Dashboard
+        run: |
+          node generate-dashboard.js \
+            --output_dir docs/reports/${{ env.DATESTAMP }}/${{ env.SITE_NAME }}/reports \
+            --site_name "${{ env.SITE_NAME }}" \
+            --datestamp "${{ env.DATESTAMP }}" \
+            --page_count ${{ steps.count_pages.outputs.total }}
+
+        - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: report-${{ env.SITE_NAME }}
@@ -153,7 +161,7 @@ jobs:
                 "from": { "email": "noreply@proofstudio.co" },
                 "content": [{
                   "type": "text/plain",
-                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/clearview-reports/reports/'"${{ env.DATESTAMP }}"'/'"$site"'/summary.html"
+                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/clearview-reports/reports/'"${{ env.DATESTAMP }}"'/'"$site"'/index.html"
                 }]
               }'
           done
