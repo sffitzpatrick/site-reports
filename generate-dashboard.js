@@ -69,6 +69,6 @@ const html = `
 </html>
 `;
 
-const outPath = path.join(path.dirname(REPORT_DIR), 'index.html');
+const outPath = path.join(path.resolve(REPORT_DIR, '..'), 'index.html');
 fs.writeFileSync(outPath, html);
 console.log(`✅ Dashboard written to ${outPath}`);
