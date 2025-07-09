@@ -84,7 +84,7 @@ jobs:
             --datestamp "${{ env.DATESTAMP }}" \
             --page_count ${{ steps.count_pages.outputs.total }}
 
-        - name: Upload artifact
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: report-${{ env.SITE_NAME }}
