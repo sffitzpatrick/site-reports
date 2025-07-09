@@ -163,8 +163,8 @@ async function extractLinks(page) {
   console.log(`🔗 Link check report written to ${LINK_REPORT_PATH}`);
   console.log(`✅ Completed. Scanned ${count} pages - reports in ./${OUTPUT_DIR}`);
 
-  const core = require('@actions/core');
-  core.setOutput('broken_count', brokenLinkCount);
+  // const core = require('@actions/core');
+  // core.setOutput('broken_count', brokenLinkCount);
 
 
 })();
