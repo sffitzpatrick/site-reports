@@ -158,6 +158,13 @@ async function extractLinks(page) {
 
   fs.writeFileSync(LINK_REPORT_PATH, JSON.stringify(allLinkResults, null, 2));
   
+  const brokenLinkCount = allLinkResults.length;
+  console.log(`❌ Found ${brokenLinkCount} broken links.`);
   console.log(`🔗 Link check report written to ${LINK_REPORT_PATH}`);
   console.log(`✅ Completed. Scanned ${count} pages - reports in ./${OUTPUT_DIR}`);
+
+  const core = require('@actions/core');
+  core.setOutput('broken_count', brokenLinkCount);
+
+
 })();
