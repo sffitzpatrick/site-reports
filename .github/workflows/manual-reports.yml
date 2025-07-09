@@ -83,7 +83,6 @@ jobs:
             --site_name "${{ env.SITE_NAME }}" \
             --datestamp "${{ env.DATESTAMP }}" \
             --page_count ${{ steps.count_pages.outputs.total }}
-            --broken_link_count ${{ steps.link_check.outputs.broken_count }} \
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
