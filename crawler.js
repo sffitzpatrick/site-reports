@@ -14,7 +14,7 @@ const DATESTAMP = args.datestamp;
 const REPORT_DIR = args.report_dir
 const MAX_PAGES = args.max_pages;
 
-const DIR_BASE = 'docs/reports/' + REPORT_DIR;
+const DIR_BASE = REPORT_DIR;
 const OUTPUT_DIR = DIR_BASE + '/reports';
 const RAW_JSON_DIR = DIR_BASE + '/axe_json';
 const LINK_REPORT_PATH = path.join(DIR_BASE, 'link_issues.json');

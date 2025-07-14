@@ -6,7 +6,7 @@ const SITE_NAME = args.site_name;
 const DATESTAMP = args.datestamp;
 const REPORT_DIR = args.report_dir
 
-const DIR_BASE = 'docs/reports/' + REPORT_DIR;
+const DIR_BASE = REPORT_DIR;
 
 const inputFile = DIR_BASE + '/link_issues.json'; // e.g., 'docs/reports/2025-07-08/example/link_issues.json'
 const outputFile = args.output_file || DIR_BASE + '/link-report.html';

@@ -37,7 +37,7 @@ jobs:
       SITE_URL: ${{ github.event.inputs.site_url }}
       MAX_PAGES: ${{ github.event.inputs.max_pages }}
       DATESTAMP: ${{ needs.set-date.outputs.datestamp }}
-      REPORT_DIR: manual-reports/${{ github.event.inputs.site_name }}/${{ needs.set-date.outputs.datestamp }}
+      REPORT_DIR: docs/manual-reports/${{ github.event.inputs.site_name }}/${{ needs.set-date.outputs.datestamp }}
 
     steps:
 
@@ -52,7 +52,7 @@ jobs:
       
       - name: Create report folder
         run: |
-          mkdir -p docs/reports/$REPORT_DIR
+          mkdir -p $REPORT_DIR
 
       - name: Checkout code
         uses: actions/checkout@v4
@@ -80,7 +80,7 @@ jobs:
       - name: Generate HTML Dashboard
         run: |
           node generate-dashboard.js \
-            --output_dir docs/reports/$REPORT_DIR \
+            --output_dir $REPORT_DIR \
             --site_name "${{ env.SITE_NAME }}" \
             --datestamp "${{ env.DATESTAMP }}" \
             --page_count ${{ steps.count_pages.outputs.total }}
@@ -89,7 +89,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: report-${{ env.SITE_NAME }}
-          path: docs/reports/${{ env.REPORT_DIR }}
+          path: ${{ env.REPORT_DIR }}
 
       - name: Set metadata output
         id: set-meta
@@ -123,8 +123,8 @@ jobs:
           mkdir -p docs/reports/${{ env.DATESTAMP }}
           for dir in downloaded-reports/*; do
             site=$(basename "$dir" | sed 's/^report-//')
-            mkdir -p docs/reports/${{ env.REPORT_DIR }}
-            cp -r "$dir"/* docs/reports/${{ env.REPORT_DIR }}
+            mkdir -p ${{ env.REPORT_DIR }}
+            cp -r "$dir"/* ${{ env.REPORT_DIR }}
           done
 
       - name: Configure Git for GitHub Actions
@@ -146,7 +146,7 @@ jobs:
 
       - name: email reports
         run: |
-          for dir in docs/reports/${{ env.DATESTAMP }}/*; do
+          for dir in ${{ env.DATESTAMP }}/*; do
             site=$(basename "$dir")
             echo "Sending email for $site..."
 

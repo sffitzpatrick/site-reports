@@ -10,7 +10,7 @@ const DATESTAMP = args.datestamp;
 const REPORT_DIR = args.report_dir
 const SITE_URL = args.start_url
 
-const DIR_BASE = 'docs/reports/' + REPORT_DIR;
+const DIR_BASE = REPORT_DIR;
 
 const JSON_DIR = path.join(__dirname, DIR_BASE + '/axe_json');
 const CSV_PATH = path.join(__dirname, DIR_BASE + '/summary.csv');
