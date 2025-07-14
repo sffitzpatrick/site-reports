@@ -29,7 +29,7 @@ const rows = reportFiles.map(file => {
   return `<tr>
     <td>${file}</td>
     <td>${type}</td>
-    <td><a href="${href}" target="_blank">${href}</a></td>
+    <td><a href="${href}" target="_blank">View report</a></td>
   </tr>`;
 }).join('\n');
 

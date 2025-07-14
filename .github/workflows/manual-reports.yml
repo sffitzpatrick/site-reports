@@ -89,7 +89,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: report-${{ env.SITE_NAME }}
-          path: docs/reports/${{ env.DATESTAMP }}/${{ env.SITE_NAME }}/
+          path: docs/reports/manual-reports/${{ env.REPORT_DIR }}
 
       - name: Set metadata output
         id: set-meta
@@ -123,8 +123,8 @@ jobs:
           mkdir -p docs/reports/${{ env.DATESTAMP }}
           for dir in downloaded-reports/*; do
             site=$(basename "$dir" | sed 's/^report-//')
-            mkdir -p docs/reports/${{ env.DATESTAMP }}/$site
-            cp -r "$dir"/* docs/reports/${{ env.DATESTAMP }}/$site/
+            mkdir -p docs/reports/${{ env.REPORT_DIR }}
+            cp -r "$dir"/* docs/reports/${{ env.REPORT_DIR }}
           done
 
       - name: Configure Git for GitHub Actions
