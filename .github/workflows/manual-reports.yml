@@ -80,7 +80,7 @@ jobs:
       - name: Generate HTML Dashboard
         run: |
           node generate-dashboard.js \
-            --output_dir docs/reports/${{ env.DATESTAMP }}/${{ env.SITE_NAME }} \
+            --output_dir docs/reports/$REPORT_DIR \
             --site_name "${{ env.SITE_NAME }}" \
             --datestamp "${{ env.DATESTAMP }}" \
             --page_count ${{ steps.count_pages.outputs.total }}
