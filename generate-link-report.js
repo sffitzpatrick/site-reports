@@ -4,7 +4,7 @@ const path = require('path');
 const args = require('minimist')(process.argv.slice(2));
 const SITE_NAME = args.site_name;
 const DATESTAMP = args.datestamp;
-const REPORT_DIR = DATESTAMP + '/' + SITE_NAME
+const REPORT_DIR = args.report_dir
 
 const DIR_BASE = 'docs/reports/' + REPORT_DIR;
 

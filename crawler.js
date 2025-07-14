@@ -11,9 +11,9 @@ const args = require('minimist')(process.argv.slice(2));
 const START_URL = args.start_url; // Replace with your target
 const SITE_NAME = args.site_name;
 const DATESTAMP = args.datestamp;
-const REPORT_DIR = DATESTAMP + '/' + SITE_NAME
-
+const REPORT_DIR = args.report_dir
 const MAX_PAGES = args.max_pages;
+
 const DIR_BASE = 'docs/reports/' + REPORT_DIR;
 const OUTPUT_DIR = DIR_BASE + '/reports';
 const RAW_JSON_DIR = DIR_BASE + '/axe_json';
