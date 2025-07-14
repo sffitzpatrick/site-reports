@@ -120,7 +120,7 @@ jobs:
 
       - name: Move reports into dated directory
         run: |
-          mkdir -p docs/reports/${{ env.DATESTAMP }}
+          mkdir -p ${{ env.REPORT_DIR }}
           for dir in downloaded-reports/*; do
             site=$(basename "$dir" | sed 's/^report-//')
             mkdir -p ${{ env.REPORT_DIR }}
@@ -162,7 +162,7 @@ jobs:
                 "from": { "email": "noreply@proofstudio.co" },
                 "content": [{
                   "type": "text/plain",
-                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/clearview-reports/reports/'"${{ env.DATESTAMP }}"'/'"$site"'/index.html"
+                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/clearview-reports/manual-reports/'"${{ env.DATESTAMP }}"'/'"$site"'/index.html"
                 }]
               }'
           done
