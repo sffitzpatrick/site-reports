@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Summary</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #f4f4f4; }
+    canvas { max-width: 800px; margin: 2rem auto; display: block; }
+    a { color: #0366d6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Accessibility Audit Summary</h1>
+  <h2>Site url: https://clearviewlibrary.org</h2>
+  <canvas id="summaryChart"></canvas>
+  <table id="summary-table">
+    <thead>
+      <tr>
+        <th>Page</th><th>Title</th><th>URL</th><th>Report</th><th>Total</th><th>Critical</th><th>Serious</th><th>Moderate</th><th>Minor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>1</td>
+          <td>Homepage | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/" target="_blank">https://clearviewlibrary.org/</a></td>
+          <td><a href="./reports/1.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>10</td>
+          <td>Adventure Pass | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/borrow-research/adventure-pass" target="_blank">https://clearviewlibrary.org/borrow-research/adventure-pass</a></td>
+          <td><a href="./reports/10.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>2</td>
+          <td>Homepage | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/" target="_blank">https://clearviewlibrary.org/</a></td>
+          <td><a href="./reports/2.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>3</td>
+          <td>Hours & Locations | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/about-us/learn-more/hours-locations" target="_blank">https://clearviewlibrary.org/about-us/learn-more/hours-locations</a></td>
+          <td><a href="./reports/3.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>6</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>4</td>
+          <td>Contact | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/contact" target="_blank">https://clearviewlibrary.org/contact</a></td>
+          <td><a href="./reports/4.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>5</td>
+          <td>Get a Library Card | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/card" target="_blank">https://clearviewlibrary.org/card</a></td>
+          <td><a href="./reports/5.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>6</td>
+          <td>Borrow & Research | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/borrow-research" target="_blank">https://clearviewlibrary.org/borrow-research</a></td>
+          <td><a href="./reports/6.html" target="_blank">Report</a></td>
+          <td>4</td>
+          <td>1</td>
+          <td>1</td>
+          <td>6</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>7</td>
+          <td>Books, Movies, & More | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more" target="_blank">https://clearviewlibrary.org/borrow-research/books-movies-more</a></td>
+          <td><a href="./reports/7.html" target="_blank">Report</a></td>
+          <td>5</td>
+          <td>2</td>
+          <td>1</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>8</td>
+          <td>Downloads & Streaming | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more/downloads-streaming" target="_blank">https://clearviewlibrary.org/borrow-research/books-movies-more/downloads-streaming</a></td>
+          <td><a href="./reports/8.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>10</td>
+          <td>6</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>9</td>
+          <td>"Library of Things": Check Out an Adventure with Explore Kits | Clearview Library</td>
+          <td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more/explore-kits" target="_blank">https://clearviewlibrary.org/borrow-research/books-movies-more/explore-kits</a></td>
+          <td><a href="./reports/9.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>0</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <script>
+    const data = {
+      labels: ["1","10","2","3","4","5","6","7","8","9"],
+      datasets: [
+        { label: 'Critical', backgroundColor: '#e3342f', data: [0,0,0,0,0,0,1,2,0,0] },
+        { label: 'Serious', backgroundColor: '#f6993f', data: [0,0,0,0,0,0,1,1,10,0] },
+        { label: 'Moderate', backgroundColor: '#ffed4a', data: [9,7,9,6,7,7,6,7,6,7] },
+        { label: 'Minor', backgroundColor: '#38c172', data: [0,0,0,0,0,0,0,0,0,0] },
+      ]
+    };
+
+    new Chart(document.getElementById('summaryChart'), {
+      type: 'bar',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Accessibility Violations by Page'
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, beginAtZero: true }
+        }
+      }
+    });
+
+    $(document).ready( function () {
+      $('#summary-table').DataTable({
+        paging: false
+      });
+  } );
+
+
+
+  </script>
+</body>
+</html>

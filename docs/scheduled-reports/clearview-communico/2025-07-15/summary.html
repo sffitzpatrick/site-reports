@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Summary</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #f4f4f4; }
+    canvas { max-width: 800px; margin: 2rem auto; display: block; }
+    a { color: #0366d6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Accessibility Audit Summary</h1>
+  <h2>Site url: https://clearview.libnet.info/events</h2>
+  <canvas id="summaryChart"></canvas>
+  <table id="summary-table">
+    <thead>
+      <tr>
+        <th>Page</th><th>Title</th><th>URL</th><th>Report</th><th>Total</th><th>Critical</th><th>Serious</th><th>Moderate</th><th>Minor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>1</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events" target="_blank">https://clearview.libnet.info/events</a></td>
+          <td><a href="./reports/1.html" target="_blank">Report</a></td>
+          <td>4</td>
+          <td>0</td>
+          <td>8</td>
+          <td>13</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>2</td>
+          <td>My Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/myevents" target="_blank">https://clearview.libnet.info/myevents</a></td>
+          <td><a href="./reports/2.html" target="_blank">Report</a></td>
+          <td>7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>3</td>
+          <td>Communico</td>
+          <td><a href="https://clearview.libnet.info/v/assets/734" target="_blank">https://clearview.libnet.info/v/assets/734</a></td>
+          <td><a href="./reports/3.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>4</td>
+          <td>Privacy and cookie policy - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/privacy" target="_blank">https://clearview.libnet.info/privacy</a></td>
+          <td><a href="./reports/4.html" target="_blank">Report</a></td>
+          <td>5</td>
+          <td>0</td>
+          <td>1</td>
+          <td>18</td>
+          <td>0</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <script>
+    const data = {
+      labels: ["1","2","3","4"],
+      datasets: [
+        { label: 'Critical', backgroundColor: '#e3342f', data: [0,1,0,0] },
+        { label: 'Serious', backgroundColor: '#f6993f', data: [8,3,0,1] },
+        { label: 'Moderate', backgroundColor: '#ffed4a', data: [13,9,1,18] },
+        { label: 'Minor', backgroundColor: '#38c172', data: [0,0,0,0] },
+      ]
+    };
+
+    new Chart(document.getElementById('summaryChart'), {
+      type: 'bar',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Accessibility Violations by Page'
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, beginAtZero: true }
+        }
+      }
+    });
+
+    $(document).ready( function () {
+      $('#summary-table').DataTable({
+        paging: false
+      });
+  } );
+
+
+
+  </script>
+</body>
+</html>
