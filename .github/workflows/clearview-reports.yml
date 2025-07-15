@@ -157,11 +157,7 @@ jobs:
             site=$(basename "$dir")
             echo "Sending email for $site..."
 
-            curl --request POST \
-              --url https://api.sendgrid.com/v3/mail/send \
-              --header "Authorization: Bearer $SENDGRID_API_KEY" \
-              --header 'Content-Type: application/json' \
-              --data @- <<EOF
+            cat <<EOF > body.json
 {
   "personalizations": [{
     "to": [{ "email": "sean@proofstudio.co" }],
@@ -175,6 +171,11 @@ jobs:
 }
 EOF
 
+            curl --request POST \
+              --url https://api.sendgrid.com/v3/mail/send \
+              --header "Authorization: Bearer $SENDGRID_API_KEY" \
+              --header "Content-Type: application/json" \
+              --data @body.json
           done
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
