@@ -125,9 +125,10 @@ jobs:
           echo "Contents of downloaded-reports:"
           ls -R downloaded-reports
 
+      #may need to fix this for the missing operand error    
       - name: Move reports into dated directory
         run: |
-          mkdir -p ${{ env.REPORT_DIR }}
+          mkdir -p $REPORT_DIR
           for dir in downloaded-reports/*; do
             site=$(basename "$dir" | sed 's/^report-//')
             mkdir -p ${{ env.REPORT_DIR }}
