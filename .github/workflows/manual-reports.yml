@@ -126,6 +126,11 @@ jobs:
           pwd
           ls
           mkdir -p $REPORT_DIR
+          for dir in downloaded-reports/*; do
+            site=$(basename "$dir" | sed 's/^report-//')
+            mkdir -p ${{ env.REPORT_DIR }}
+            cp -r "$dir"/* ${{ env.REPORT_DIR }}
+          done
 
       - name: Configure Git for GitHub Actions
         run: |
