@@ -154,7 +154,7 @@ jobs:
       - name: Send email reports with Node.js
         env:
           DATESTAMP: ${{ env.DATESTAMP }}
-          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
         run: |
           node send-reports.js
 
