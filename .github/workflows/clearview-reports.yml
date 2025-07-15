@@ -132,11 +132,12 @@ jobs:
       #may need to fix this for the missing operand error    
       - name: Move reports into dated directory
         run: |
-          mkdir -p $REPORT_DIR
+          ls
+          mkdir -p scheduled-reports/$DATESTAMP
           for dir in downloaded-reports/*; do
             site=$(basename "$dir" | sed 's/^report-//')
-            mkdir -p ${{ env.REPORT_DIR }}
-            cp -r "$dir"/* ${{ env.REPORT_DIR }}
+            mkdir -p $site
+            cp -r "$dir"/* $site
           done
 
       - name: Configure Git for GitHub Actions
