@@ -101,7 +101,10 @@ jobs:
     needs: [set-date, audit]
     runs-on: ubuntu-latest
     env:
+      SITE_NAME: ${{ github.event.inputs.site_name }}
       DATESTAMP: ${{ needs.set-date.outputs.datestamp }}
+      REPORT_DIR: docs/manual-reports/${{ github.event.inputs.site_name }}/${{ needs.set-date.outputs.datestamp }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
