@@ -120,6 +120,8 @@ jobs:
 
       - name: Move reports into dated directory
         run: |
+          pwd
+          ls
           mkdir -p $REPORT_DIR
 
       - name: Configure Git for GitHub Actions
