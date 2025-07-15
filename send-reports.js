@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const fetch = require('node-fetch'); // Only needed if using Node < 18
+const fetch = require('node-fetch').default; // Only needed if using Node < 18
 
 // Configuration
 const DATESTAMP = process.env.DATESTAMP;
