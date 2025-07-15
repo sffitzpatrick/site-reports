@@ -127,11 +127,11 @@ jobs:
 
       - name: Move reports into dated directory
         run: |
-          mkdir -p scheduled-reports/$DATESTAMP
+          ls
           for dir in downloaded-reports/*; do
             site=$(basename "$dir" | sed 's/^report-//')
-            mkdir -p scheduled-reports/$DATESTAMP/$site
-            cp -r "$dir"/* scheduled-reports/$DATESTAMP/$site/
+            mkdir -p docs/scheduled-reports/$site/$DATESTAMP/
+            cp -r "$dir"/* scheduled-reports/$site/$DATESTAMP/
           done
 
       - name: Configure Git for GitHub Actions
