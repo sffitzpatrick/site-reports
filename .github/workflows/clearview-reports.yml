@@ -108,7 +108,11 @@ jobs:
     needs: [set-date, audit]
     runs-on: ubuntu-latest
     env:
+      SITE_NAME: ${{ matrix.site.name }}
+      REPORT_RECIPIENT: ${{ matrix.site.report_recipient }}
       DATESTAMP: ${{ needs.set-date.outputs.datestamp }}
+      REPORT_DIR: docs/scheduled-reports/${{ matrix.site.name }}/${{ needs.set-date.outputs.datestamp }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -154,6 +158,7 @@ jobs:
 
       - name: email reports
         run: |
+          ls
           for dir in ${{ env.DATESTAMP }}/*; do
             site=$(basename "$dir")
             echo "Sending email for $site..."
@@ -170,7 +175,7 @@ jobs:
                 "from": { "email": "noreply@proofstudio.co" },
                 "content": [{
                   "type": "text/plain",
-                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/clearview-reports/reports/'"${{ env.DATESTAMP }}"'/'"$site"'/summary.html"
+                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/site-reports/manual-reports/'"${{ env.REPORT_DIR }}"'/summary.html"
                 }]
               }'
           done
