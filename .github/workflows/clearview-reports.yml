@@ -108,10 +108,7 @@ jobs:
     needs: [set-date, audit]
     runs-on: ubuntu-latest
     env:
-      SITE_NAME: ${{ matrix.site.name }}
-      REPORT_RECIPIENT: ${{ matrix.site.report_recipient }}
       DATESTAMP: ${{ needs.set-date.outputs.datestamp }}
-      REPORT_DIR: docs/scheduled-reports/${{ matrix.site.name }}/${{ needs.set-date.outputs.datestamp }}
 
     steps:
       - name: Checkout
@@ -136,8 +133,8 @@ jobs:
           mkdir -p scheduled-reports/$DATESTAMP
           for dir in downloaded-reports/*; do
             site=$(basename "$dir" | sed 's/^report-//')
-            mkdir -p $site
-            cp -r "$dir"/* $site
+            mkdir -p scheduled-reports/$DATESTAMP/$site
+            cp -r "$dir"/* scheduled-reports/$DATESTAMP/$site/
           done
 
       - name: Configure Git for GitHub Actions
@@ -168,17 +165,19 @@ jobs:
               --url https://api.sendgrid.com/v3/mail/send \
               --header "Authorization: Bearer $SENDGRID_API_KEY" \
               --header 'Content-Type: application/json' \
-              --data '{
-                "personalizations": [{
-                  "to": [{ "email": "sean@proofstudio.co" }],
-                  "subject": "Report for '"$site"'"
-                }],
-                "from": { "email": "noreply@proofstudio.co" },
-                "content": [{
-                  "type": "text/plain",
-                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/site-reports/scheduled-reports/' "${{ env.DATESTAMP }}" '/'"' "$site" '/summary.html"
-                }]
-              }'
+              --data @- <<EOF
+{
+  "personalizations": [{
+    "to": [{ "email": "sean@proofstudio.co" }],
+    "subject": "Report for $site"
+  }],
+  "from": { "email": "noreply@proofstudio.co" },
+  "content": [{
+    "type": "text/plain",
+    "value": "The report for $site is ready. View it here: https://sffitzpatrick.github.io/site-reports/scheduled-reports/$DATESTAMP/$site/summary.html"
+  }]
+}
+EOF
           done
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
