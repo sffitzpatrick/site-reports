@@ -157,12 +157,3 @@ jobs:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
         run: |
           node send-reports.js
-
-                  curl --request POST \
-                    --url https://api.sendgrid.com/v3/mail/send \
-                    --header "Authorization: Bearer $SENDGRID_API_KEY" \
-                    --header "Content-Type: application/json" \
-                    --data @body.json
-                done
-              env:
-                SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
