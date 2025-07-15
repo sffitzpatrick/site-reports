@@ -151,31 +151,18 @@ jobs:
           git commit -m "Add reports for $DATESTAMP" || echo "No changes"
           git push origin main
 
-      - name: Email reports
-        run: |
-          for dir in scheduled-reports/$DATESTAMP/*; do
-            site=$(basename "$dir")
-            echo "Sending email for $site..."
-
-            cat <<EOF > body.json
-{
-  "personalizations": [{
-    "to": [{ "email": "sean@proofstudio.co" }],
-    "subject": "Report for $site"
-  }],
-  "from": { "email": "noreply@proofstudio.co" },
-  "content": [{
-    "type": "text/plain",
-    "value": "The report for $site is ready. View it here: https://sffitzpatrick.github.io/site-reports/scheduled-reports/$DATESTAMP/$site/summary.html"
-  }]
-}
-EOF
-
-            curl --request POST \
-              --url https://api.sendgrid.com/v3/mail/send \
-              --header "Authorization: Bearer $SENDGRID_API_KEY" \
-              --header "Content-Type: application/json" \
-              --data @body.json
-          done
+      - name: Send email reports with Node.js
         env:
-          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
+          DATESTAMP: ${{ env.DATESTAMP }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+        run: |
+          node send-reports.js
+
+                  curl --request POST \
+                    --url https://api.sendgrid.com/v3/mail/send \
+                    --header "Authorization: Bearer $SENDGRID_API_KEY" \
+                    --header "Content-Type: application/json" \
+                    --data @body.json
+                done
+              env:
+                SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
