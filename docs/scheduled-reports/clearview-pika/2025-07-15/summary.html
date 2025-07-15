@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Summary</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #f4f4f4; }
+    canvas { max-width: 800px; margin: 2rem auto; display: block; }
+    a { color: #0366d6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Accessibility Audit Summary</h1>
+  <h2>Site url: https://pika.clearviewlibrary.org/</h2>
+  <canvas id="summaryChart"></canvas>
+  <table id="summary-table">
+    <thead>
+      <tr>
+        <th>Page</th><th>Title</th><th>URL</th><th>Report</th><th>Total</th><th>Critical</th><th>Serious</th><th>Moderate</th><th>Minor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>1</td>
+          <td>Catalog Home | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/" target="_blank">https://pika.clearviewlibrary.org/</a></td>
+          <td><a href="./reports/1.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>10</td>
+          <td>Blue skies / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/60142" target="_blank">https://pika.clearviewlibrary.org/Record/60142</a></td>
+          <td><a href="./reports/10.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>2</td>
+          <td>Login | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/Home" target="_blank">https://pika.clearviewlibrary.org/MyAccount/Home</a></td>
+          <td><a href="./reports/2.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>3</td>
+          <td>Catalog Home | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/" target="_blank">https://pika.clearviewlibrary.org/</a></td>
+          <td><a href="./reports/3.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>4</td>
+          <td>Advanced Search | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Search/Advanced" target="_blank">https://pika.clearviewlibrary.org/Search/Advanced</a></td>
+          <td><a href="./reports/4.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>13</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>5</td>
+          <td></td>
+          <td><a href="https://pika.clearviewlibrary.org/AJAX/JSON?method=getHoursAndLocations" target="_blank">https://pika.clearviewlibrary.org/AJAX/JSON?method=getHoursAndLocations</a></td>
+          <td><a href="./reports/5.html" target="_blank">Report</a></td>
+          <td>5</td>
+          <td>0</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>6</td>
+          <td>Colorful Titles for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/530" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/530</a></td>
+          <td><a href="./reports/6.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>20</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>7</td>
+          <td>Anne of Green Gables | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/e005afb1-2f39-5ee6-0234-2e59bd5ae540/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/e005afb1-2f39-5ee6-0234-2e59bd5ae540/Home</a></td>
+          <td><a href="./reports/7.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>8</td>
+          <td>Annoying Orange. | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/5430" target="_blank">https://pika.clearviewlibrary.org/Record/5430</a></td>
+          <td><a href="./reports/8.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>9</td>
+          <td>Black bird, blue road | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/075d874d-5c23-7c0a-c0de-77e91125f423/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/075d874d-5c23-7c0a-c0de-77e91125f423/Home</a></td>
+          <td><a href="./reports/9.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <script>
+    const data = {
+      labels: ["1","10","2","3","4","5","6","7","8","9"],
+      datasets: [
+        { label: 'Critical', backgroundColor: '#e3342f', data: [0,1,0,0,0,0,20,1,1,1] },
+        { label: 'Serious', backgroundColor: '#f6993f', data: [1,0,0,1,13,2,0,0,0,0] },
+        { label: 'Moderate', backgroundColor: '#ffed4a', data: [0,0,0,0,0,4,0,0,0,0] },
+        { label: 'Minor', backgroundColor: '#38c172', data: [0,0,0,0,0,0,0,0,0,0] },
+      ]
+    };
+
+    new Chart(document.getElementById('summaryChart'), {
+      type: 'bar',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Accessibility Violations by Page'
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, beginAtZero: true }
+        }
+      }
+    });
+
+    $(document).ready( function () {
+      $('#summary-table').DataTable({
+        paging: false
+      });
+  } );
+
+
+
+  </script>
+</body>
+</html>
