@@ -176,7 +176,7 @@ jobs:
                 "from": { "email": "noreply@proofstudio.co" },
                 "content": [{
                   "type": "text/plain",
-                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/site-reports/manual-reports/'"${{ env.REPORT_DIR }}"'/summary.html"
+                  "value": "The report for '"$site"' is ready. View it here: https://sffitzpatrick.github.io/site-reports/scheduled-reports/' "${{ env.DATESTAMP }}" '/'"' "$site" '/summary.html"
                 }]
               }'
           done
