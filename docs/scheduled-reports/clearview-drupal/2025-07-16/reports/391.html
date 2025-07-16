@@ -99,11 +99,11 @@
             <div class="summarySection">
                 <div class="summary">
                     Page URL:
-                    <a href="https:&#x2F;&#x2F;clearviewlibrary.org&#x2F;node?page&#x3D;10" target="_blank" class="card-link">https:&#x2F;&#x2F;clearviewlibrary.org&#x2F;node?page&#x3D;10</a>
+                    <a href="https:&#x2F;&#x2F;clearviewlibrary.org&#x2F;taxonomy&#x2F;term&#x2F;32?page&#x3D;4" target="_blank" class="card-link">https:&#x2F;&#x2F;clearviewlibrary.org&#x2F;taxonomy&#x2F;term&#x2F;32?page&#x3D;4</a>
                     <br />
                 </div>
             </div>
-            <h2>axe-core found <span class="badge badge-warning">5</span> violations</h2>
+            <h2>axe-core found <span class="badge badge-warning">3</span> violations</h2>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -130,18 +130,10 @@
                         <td>landmark-unique</td>
                         <td>Best practice</td>
                         <td>moderate</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><a href="#3" class="card-link">3</a></th>
-                        <td>&lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements</td>
-                        <td>list</td>
-                        <td>WCAG 2 Level A, WCAG 1.3.1</td>
-                        <td>serious</td>
                         <td>1</td>
                     </tr>
                     <tr>
-                        <th scope="row"><a href="#4" class="card-link">4</a></th>
+                        <th scope="row"><a href="#3" class="card-link">3</a></th>
                         <td>Page should contain a level-one heading</td>
                         <td>page-has-heading-one</td>
                         <td>Best practice</td>
@@ -202,7 +194,7 @@
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#pagination-heading</code></pre>
                                         <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;h4 id&#x3D;&quot;pagination-heading&quot; class&#x3D;&quot;visually-hidden&quot;&gt;Pagination&lt;&#x2F;h4&gt;</code></pre>
+                                        <pre><code class="html text-wrap">&lt;h4 id&#x3D;&quot;pagination-heading&quot; class&#x3D;&quot;pager__heading visually-hidden&quot;&gt;Pagination&lt;&#x2F;h4&gt;</code></pre>
                                     </td>
                                     <td>
                                         <div class="wrapBreakWord">
@@ -267,25 +259,6 @@
                                     <td>1</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">#block-clearview-main-menu</code></pre>
-                                        <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;nav role&#x3D;&quot;navigation&quot; aria-labelledby&#x3D;&quot;block-clearview-main-menu-menu&quot; id&#x3D;&quot;block-clearview-main-menu&quot; class&#x3D;&quot;block block-menu navigation menu--main&quot;&gt;</code></pre>
-                                    </td>
-                                    <td>
-                                        <div class="wrapBreakWord">
-                                            <p>Fix any of the following:</p>
-                                            <ul class="text-muted">
-                                                <li>  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable</li>
-                                            </ul>
-                                        </div>
-                                        <p><strong>Related node:</strong></p>
-                                        <pre><code class="css text-wrap">#block-mainnavigation</code></pre>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">div[role&#x3D;&quot;complementary&quot;]:nth-child(1)</code></pre>
                                         <p><strong>Element source</strong></p>
                                         <pre><code class="html text-wrap">&lt;div role&#x3D;&quot;complementary&quot;&gt;</code></pre>
@@ -310,80 +283,7 @@
                 <div class="card-body">
                     <div class="violationCardLine">
                         <p class="card-title">
-                            <a id="3">3.</a> &lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements
-                        </p>
-                        <a
-                            href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.10&#x2F;list?application&#x3D;axeAPI"
-                            target="_blank"
-                            class="card-link violationCardTitleItem learnMore"
-                            >Learn more</a
-                        >
-                    </div>
-                    <div class="violationCardLine">
-                        <p class="card-subtitle mb-2 text-muted">list</p>
-                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
-                            WCAG 2 Level A, WCAG 1.3.1
-                        </p>
-                    </div>
-                    <div class="violationCardLine">
-                        <p class="card-text">Ensure that lists are structured correctly</p>
-                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
-                            serious
-                        </p>
-                    </div>
-                    <div class="violationCardLine">
-                        <p class="card-subtitle mb-2 text-muted violationCardTitleItem">
-                            Issue Tags: 
-                            <span class="badge bg-light text-dark"> cat.structure </span>
-
-                            <span class="badge bg-light text-dark"> wcag2a </span>
-
-                            <span class="badge bg-light text-dark"> wcag131 </span>
-
-                            <span class="badge bg-light text-dark"> EN-301-549 </span>
-
-                            <span class="badge bg-light text-dark"> EN-9.1.3.1 </span>
-                        </p>
-                    </div>
-                    <div class="violationNode">
-                        <table class="table table-sm table-bordered">
-                            <thead>
-                                <tr>
-                                    <th style="width: 2%">#</th>
-                                    <th style="width: 49%">Issue Description</th>
-                                    <th style="width: 49%">
-                                        To solve this violation, you need to...
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">.pager__items</code></pre>
-                                        <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;ul class&#x3D;&quot;pager__items js-pager__items&quot;&gt;</code></pre>
-                                    </td>
-                                    <td>
-                                        <div class="wrapBreakWord">
-                                            <p>Fix all of the following:</p>
-                                            <ul class="text-muted">
-                                                <li>  List element has direct children that are not allowed: [role&#x3D;presentation]</li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="card violationCard">
-                <div class="card-body">
-                    <div class="violationCardLine">
-                        <p class="card-title">
-                            <a id="4">4.</a> Page should contain a level-one heading
+                            <a id="3">3.</a> Page should contain a level-one heading
                         </p>
                         <a
                             href="https:&#x2F;&#x2F;dequeuniversity.com&#x2F;rules&#x2F;axe&#x2F;4.10&#x2F;page-has-heading-one?application&#x3D;axeAPI"
@@ -457,7 +357,7 @@
                                 aria-expanded="false"
                                 aria-controls="passes"
                             >
-                                axe returned 46 passed axe
+                                axe returned 44 passed axe
                                 checks. Expand details on
                                 click
                             </button>
@@ -486,28 +386,28 @@
                                         <td>Elements must only use supported ARIA attributes</td>
                                         <td>aria-allowed-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>7</td>
+                                        <td>6</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
                                         <td>ARIA role should be appropriate for the element</td>
                                         <td>aria-allowed-role</td>
                                         <td>Best practice</td>
-                                        <td>12</td>
+                                        <td>11</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
                                         <td>ARIA attributes must be used as specified for the element&#39;s role</td>
                                         <td>aria-conditional-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>7</td>
+                                        <td>6</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">4</th>
                                         <td>Deprecated ARIA roles must not be used</td>
                                         <td>aria-deprecated-role</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>12</td>
+                                        <td>11</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">5</th>
@@ -521,42 +421,42 @@
                                         <td>ARIA hidden element must not be focusable or contain focusable elements</td>
                                         <td>aria-hidden-focus</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>2</td>
+                                        <td>1</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">7</th>
                                         <td>Elements must only use permitted ARIA attributes</td>
                                         <td>aria-prohibited-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>7</td>
+                                        <td>6</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">8</th>
                                         <td>Required ARIA attributes must be provided</td>
                                         <td>aria-required-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>12</td>
+                                        <td>11</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">9</th>
                                         <td>ARIA roles used must conform to valid values</td>
                                         <td>aria-roles</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>12</td>
+                                        <td>11</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">10</th>
                                         <td>ARIA attributes must conform to valid values</td>
                                         <td>aria-valid-attr-value</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>7</td>
+                                        <td>6</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">11</th>
                                         <td>ARIA attributes must conform to valid names</td>
                                         <td>aria-valid-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>7</td>
+                                        <td>6</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">12</th>
@@ -577,7 +477,7 @@
                                         <td>Elements must meet minimum color contrast ratio thresholds</td>
                                         <td>color-contrast</td>
                                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
-                                        <td>75</td>
+                                        <td>43</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">15</th>
@@ -598,7 +498,7 @@
                                         <td>Headings should not be empty</td>
                                         <td>empty-heading</td>
                                         <td>Best practice</td>
-                                        <td>9</td>
+                                        <td>6</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">18</th>
@@ -612,7 +512,7 @@
                                         <td>Heading levels should only increase by one</td>
                                         <td>heading-order</td>
                                         <td>Best practice</td>
-                                        <td>8</td>
+                                        <td>5</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">20</th>
@@ -724,80 +624,66 @@
                                         <td>Landmarks should have a unique role or role&#x2F;label&#x2F;title (i.e. accessible name) combination</td>
                                         <td>landmark-unique</td>
                                         <td>Best practice</td>
-                                        <td>7</td>
+                                        <td>9</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">36</th>
-                                        <td>Links must be distinguishable without relying on color</td>
-                                        <td>link-in-text-block</td>
-                                        <td>WCAG 2 Level A, WCAG 1.4.1</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">37</th>
                                         <td>Links must have discernible text</td>
                                         <td>link-name</td>
                                         <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
-                                        <td>64</td>
+                                        <td>47</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">38</th>
+                                        <th scope="row">37</th>
                                         <td>&lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements</td>
                                         <td>list</td>
                                         <td>WCAG 2 Level A, WCAG 1.3.1</td>
-                                        <td>12</td>
+                                        <td>10</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">39</th>
+                                        <th scope="row">38</th>
                                         <td>&lt;li&gt; elements must be contained in a &lt;ul&gt; or &lt;ol&gt;</td>
                                         <td>listitem</td>
                                         <td>WCAG 2 Level A, WCAG 1.3.1</td>
-                                        <td>48</td>
+                                        <td>36</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">40</th>
+                                        <th scope="row">39</th>
                                         <td>Users should be able to zoom and scale the text up to 500%</td>
                                         <td>meta-viewport-large</td>
                                         <td>Best practice</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">41</th>
+                                        <th scope="row">40</th>
                                         <td>Zooming and scaling must not be disabled</td>
                                         <td>meta-viewport</td>
                                         <td>WCAG 2 Level AA, WCAG 1.4.4</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">42</th>
+                                        <th scope="row">41</th>
                                         <td>Interactive controls must not be nested</td>
                                         <td>nested-interactive</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
                                         <td>7</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">43</th>
-                                        <td>Ensure elements marked as presentational are consistently ignored</td>
-                                        <td>presentation-role-conflict</td>
-                                        <td>Best practice</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">44</th>
+                                        <th scope="row">42</th>
                                         <td>All page content should be contained by landmarks</td>
                                         <td>region</td>
                                         <td>Best practice</td>
-                                        <td>278</td>
+                                        <td>196</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">45</th>
+                                        <th scope="row">43</th>
                                         <td>The skip-link target should exist and be focusable</td>
                                         <td>skip-link</td>
                                         <td>Best practice</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">46</th>
+                                        <th scope="row">44</th>
                                         <td>Elements should not have tabindex greater than zero</td>
                                         <td>tabindex</td>
                                         <td>Best practice</td>
@@ -860,7 +746,7 @@
                                 aria-expanded="false"
                                 aria-controls="inapplicable"
                             >
-                                axe returned 42 inapplicable checks.
+                                axe returned 44 inapplicable checks.
                                 Expand details on click
                             </button>
                         </p>
@@ -1052,96 +938,108 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">27</th>
+                                        <td>Links must be distinguishable without relying on color</td>
+                                        <td>link-in-text-block</td>
+                                        <td>WCAG 2 Level A, WCAG 1.4.1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">28</th>
                                         <td>&lt;marquee&gt; elements are deprecated and must not be used</td>
                                         <td>marquee</td>
                                         <td>WCAG 2 Level A, WCAG 2.2.2</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">28</th>
+                                        <th scope="row">29</th>
                                         <td>Delayed refresh under 20 hours must not be used</td>
                                         <td>meta-refresh</td>
                                         <td>WCAG 2 Level A, WCAG 2.2.1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">29</th>
+                                        <th scope="row">30</th>
                                         <td>&lt;object&gt; elements must have alternative text</td>
                                         <td>object-alt</td>
                                         <td>WCAG 2 Level A, WCAG 1.1.1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">30</th>
+                                        <th scope="row">31</th>
+                                        <td>Ensure elements marked as presentational are consistently ignored</td>
+                                        <td>presentation-role-conflict</td>
+                                        <td>Best practice</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">32</th>
                                         <td>[role&#x3D;&quot;img&quot;] elements must have an alternative text</td>
                                         <td>role-img-alt</td>
                                         <td>WCAG 2 Level A, WCAG 1.1.1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">31</th>
+                                        <th scope="row">33</th>
                                         <td>scope attribute should be used correctly</td>
                                         <td>scope-attr-valid</td>
                                         <td>Best practice</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">32</th>
+                                        <th scope="row">34</th>
                                         <td>Scrollable region must have keyboard access</td>
                                         <td>scrollable-region-focusable</td>
                                         <td>WCAG 2 Level A, WCAG 2.1.1, WCAG 2.1.3</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">33</th>
+                                        <th scope="row">35</th>
                                         <td>Select element must have an accessible name</td>
                                         <td>select-name</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">34</th>
+                                        <th scope="row">36</th>
                                         <td>Server-side image maps must not be used</td>
                                         <td>server-side-image-map</td>
                                         <td>WCAG 2 Level A, WCAG 2.1.1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">35</th>
+                                        <th scope="row">37</th>
                                         <td>Summary elements must have discernible text</td>
                                         <td>summary-name</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">36</th>
+                                        <th scope="row">38</th>
                                         <td>&lt;svg&gt; elements with an img role must have an alternative text</td>
                                         <td>svg-img-alt</td>
                                         <td>WCAG 2 Level A, WCAG 1.1.1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">37</th>
+                                        <th scope="row">39</th>
                                         <td>Tables should not have the same summary and caption</td>
                                         <td>table-duplicate-name</td>
                                         <td>Best practice</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">38</th>
+                                        <th scope="row">40</th>
                                         <td>Table cells that use the headers attribute must only refer to cells in the same table</td>
                                         <td>td-headers-attr</td>
                                         <td>WCAG 2 Level A, WCAG 1.3.1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">39</th>
+                                        <th scope="row">41</th>
                                         <td>Table headers in a data table must refer to data cells</td>
                                         <td>th-has-data-cells</td>
                                         <td>WCAG 2 Level A, WCAG 1.3.1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">40</th>
+                                        <th scope="row">42</th>
                                         <td>lang attribute must have a valid value</td>
                                         <td>valid-lang</td>
                                         <td>WCAG 2 Level AA, WCAG 3.1.2</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">41</th>
+                                        <th scope="row">43</th>
                                         <td>&lt;video&gt; elements must have captions</td>
                                         <td>video-caption</td>
                                         <td>WCAG 2 Level A, WCAG 1.2.2</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">42</th>
+                                        <th scope="row">44</th>
                                         <td>&lt;video&gt; or &lt;audio&gt; elements must not play automatically</td>
                                         <td>no-autoplay-audio</td>
                                         <td>WCAG 2 Level A, WCAG 1.4.2</td>

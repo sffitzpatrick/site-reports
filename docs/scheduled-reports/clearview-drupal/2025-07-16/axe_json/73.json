@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:18:52.912Z",
+  "timestamp": "2025-07-16T19:30:33.049Z",
   "url": "https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=20",
   "toolOptions": {
     "reporter": "v1"
@@ -2607,7 +2607,7 @@
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -4150,7 +4150,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4307,7 +4307,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4559,7 +4559,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -5524,6 +5524,27 @@
             {
               "id": "landmark-is-unique",
               "data": {
+                "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
                 "role": "main",
                 "accessibleText": null
               },
@@ -5559,6 +5580,27 @@
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
           ]
         },
         {
@@ -10220,7 +10262,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"view view-resources view-id-resources view-display-id-block_1 js-view-dom-id-c5a628c52dcbe98176641f2431d3a77775c07c1cc05b398495e5182c20ae9d04\" data-once=\"ajax-pager\">",
+          "html": "<div class=\"view view-resources view-id-resources view-display-id-block_1 js-view-dom-id-223ca2c8a437a8c64f1e406088206dd0a3c11b57deab7978dff19033c9cbbe76\" data-once=\"ajax-pager\">",
           "target": [
             ".view"
           ]
@@ -12040,7 +12082,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -13883,35 +13925,6 @@
       "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
       "nodes": [
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
         {
           "any": [
             {

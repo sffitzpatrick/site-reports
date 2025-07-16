@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:27:36.421Z",
-  "url": "https://clearviewlibrary.org/node/289",
+  "timestamp": "2025-07-16T19:40:44.193Z",
+  "url": "https://clearviewlibrary.org/node/287",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,6 +264,22 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -2544,87 +2560,6 @@
       ]
     },
     {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" coast-to-coast-styles=\"\" company=\"\" https:=\"\" src=\"/sites/default/files/inline-images/Instagram_0.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        }
-      ]
-    },
-    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2713,13 +2648,13 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Coast to Coast Styles</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Phoenix Financial Consulting</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -3081,7 +3016,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Coast to Coast Styles</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Phoenix Financial Consulting</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3156,7 +3091,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: 821 Main Street, Windsor<br>\nWebsite: <a href=\"https://coast-to-coast-styles.myshopify.com/\">https://coast-to-coast-styles.myshopify.com/</a><br>\nYear Established: 2010</p>",
+          "html": "<p>Location: Colorado and New Jersey<br>\nWebsite: <a href=\"https://www.phoenixfc.co\">www.phoenixfc.co</a><br>\nPhone: <a href=\"tel:970-954-9065\">970-954-9065</a><br>\nYear Established: 2019</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -3181,9 +3116,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://coast-to-coast-styles.myshopify.com/\">https://coast-to-coast-styles.myshopify.com/</a>",
+          "html": "<a href=\"https://www.phoenixfc.co\">www.phoenixfc.co</a>",
           "target": [
-            "p:nth-child(3) > a"
+            "a[href$=\"www.phoenixfc.co\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"tel:970-954-9065\">970-954-9065</a>",
+          "target": [
+            "a[href=\"tel:970-954-9065\"]"
           ]
         },
         {
@@ -3208,7 +3168,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(5)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -3942,7 +3902,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4063,7 +4023,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Coast to Coast Styles</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Phoenix Financial Consulting</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4081,7 +4041,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4291,7 +4251,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Coast to Coast Styles</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Phoenix Financial Consulting</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4309,7 +4269,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4475,87 +4435,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Coast to Coast Styles\" data-entity-type=\"file\" data-entity-uuid=\"445f5d14-ea46-4ad5-bc24-3c523ff26790\" height=\"300\" src=\"/sites/default/files/inline-images/Coast-To-Coast-Styles.jpg\" width=\"400\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Adrienne Bell\" data-entity-type=\"file\" data-entity-uuid=\"f8ee81a9-ea8a-422e-ba72-3d87326fa542\" height=\"300\" src=\"/sites/default/files/inline-images/Adrienne%20Bell%20Phoenix%20Financial%20Consulting.jpeg\" width=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" coast-to-coast-styles=\"\" company=\"\" https:=\"\" src=\"/sites/default/files/inline-images/Instagram_0.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
-          "target": [
-            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -4706,63 +4588,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Coast to Coast Styles\" data-entity-type=\"file\" data-entity-uuid=\"445f5d14-ea46-4ad5-bc24-3c523ff26790\" height=\"300\" src=\"/sites/default/files/inline-images/Coast-To-Coast-Styles.jpg\" width=\"400\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Adrienne Bell\" data-entity-type=\"file\" data-entity-uuid=\"f8ee81a9-ea8a-422e-ba72-3d87326fa542\" height=\"300\" src=\"/sites/default/files/inline-images/Adrienne%20Bell%20Phoenix%20Financial%20Consulting.jpeg\" width=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" coast-to-coast-styles=\"\" company=\"\" https:=\"\" src=\"/sites/default/files/inline-images/Instagram_0.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
-          "target": [
-            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -5363,6 +5191,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "breadcrumb"
               },
               "relatedNodes": [],
@@ -5418,6 +5267,27 @@
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
           ]
         },
         {
@@ -5896,9 +5766,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://coast-to-coast-styles.myshopify.com/\">https://coast-to-coast-styles.myshopify.com/</a>",
+          "html": "<a href=\"https://www.phoenixfc.co\">www.phoenixfc.co</a>",
           "target": [
-            "p:nth-child(3) > a"
+            "a[href$=\"www.phoenixfc.co\"]"
           ]
         },
         {
@@ -5922,61 +5792,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.facebook.com/coasttocoaststylesco\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
+          "html": "<a href=\"tel:970-954-9065\">970-954-9065</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.instagram.com/coasttocoaststyles/?hl=en\"><img alt=\"Instagram Logo\" coast-to-coast-styles=\"\" company=\"\" https:=\"\" src=\"/sites/default/files/inline-images/Instagram_0.png\" style=\"padding-right: 5px;\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.linkedin.com/company/coast-to-coast-styles\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
+            "a[href=\"tel:970-954-9065\"]"
           ]
         },
         {
@@ -7690,63 +7508,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Coast to Coast Styles\" data-entity-type=\"file\" data-entity-uuid=\"445f5d14-ea46-4ad5-bc24-3c523ff26790\" height=\"300\" src=\"/sites/default/files/inline-images/Coast-To-Coast-Styles.jpg\" width=\"400\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Adrienne Bell\" data-entity-type=\"file\" data-entity-uuid=\"f8ee81a9-ea8a-422e-ba72-3d87326fa542\" height=\"300\" src=\"/sites/default/files/inline-images/Adrienne%20Bell%20Phoenix%20Financial%20Consulting.jpeg\" width=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" coast-to-coast-styles=\"\" company=\"\" https:=\"\" src=\"/sites/default/files/inline-images/Instagram_0.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
-          "target": [
-            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -7860,7 +7624,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Coast to Coast Styles</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Phoenix Financial Consulting</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9225,7 +8989,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Coast to Coast Styles</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Phoenix Financial Consulting</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -9245,7 +9009,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Coast to Coast Styles</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Phoenix Financial Consulting</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -9265,7 +9029,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Coast to Coast Styles</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Phoenix Financial Consulting</span>",
           "target": [
             ".field--name-title"
           ]
@@ -9405,9 +9169,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"289\" about=\"/node/289\" id=\"node-289\" class=\"node node--type-podcast-episode node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"287\" about=\"/node/287\" id=\"node-287\" class=\"node node--type-podcast-episode node--view-mode-full\">",
           "target": [
-            "#node-289"
+            "#node-287"
           ]
         },
         {
@@ -9445,7 +9209,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALCoasttoCoast0621.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
+          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALPhoenixFinancialConsulting0621.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
           "target": [
             ".field--name-field-podcast-file"
           ]
@@ -9465,7 +9229,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALCoasttoCoast0621.mp3\" type=\"audio/mpeg\">\n  </audio>",
+          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALPhoenixFinancialConsulting0621.mp3\" type=\"audio/mpeg\">\n  </audio>",
           "target": [
             "audio"
           ]
@@ -9485,7 +9249,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<source src=\"/sites/default/files/FINALCoasttoCoast0621.mp3\" type=\"audio/mpeg\">",
+          "html": "<source src=\"/sites/default/files/FINALPhoenixFinancialConsulting0621.mp3\" type=\"audio/mpeg\">",
           "target": [
             "source"
           ]
@@ -9565,7 +9329,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Coast to Coast Styles\" data-entity-type=\"file\" data-entity-uuid=\"445f5d14-ea46-4ad5-bc24-3c523ff26790\" height=\"300\" src=\"/sites/default/files/inline-images/Coast-To-Coast-Styles.jpg\" width=\"400\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Adrienne Bell\" data-entity-type=\"file\" data-entity-uuid=\"f8ee81a9-ea8a-422e-ba72-3d87326fa542\" height=\"300\" src=\"/sites/default/files/inline-images/Adrienne%20Bell%20Phoenix%20Financial%20Consulting.jpeg\" width=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -9585,7 +9349,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: 821 Main Street, Windsor<br>\nWebsite: <a href=\"https://coast-to-coast-styles.myshopify.com/\">https://coast-to-coast-styles.myshopify.com/</a><br>\nYear Established: 2010</p>",
+          "html": "<p>Location: Colorado and New Jersey<br>\nWebsite: <a href=\"https://www.phoenixfc.co\">www.phoenixfc.co</a><br>\nPhone: <a href=\"tel:970-954-9065\">970-954-9065</a><br>\nYear Established: 2019</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -9625,9 +9389,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://coast-to-coast-styles.myshopify.com/\">https://coast-to-coast-styles.myshopify.com/</a>",
+          "html": "<a href=\"https://www.phoenixfc.co\">www.phoenixfc.co</a>",
           "target": [
-            "p:nth-child(3) > a"
+            "a[href$=\"www.phoenixfc.co\"]"
           ]
         },
         {
@@ -9665,149 +9429,49 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<a href=\"tel:970-954-9065\">970-954-9065</a>",
+          "target": [
+            "a[href=\"tel:970-954-9065\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "br:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<p>",
           "target": [
             "p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.facebook.com/coasttocoaststylesco\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.instagram.com/coasttocoaststyles/?hl=en\"><img alt=\"Instagram Logo\" coast-to-coast-styles=\"\" company=\"\" https:=\"\" src=\"/sites/default/files/inline-images/Instagram_0.png\" style=\"padding-right: 5px;\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" coast-to-coast-styles=\"\" company=\"\" https:=\"\" src=\"/sites/default/files/inline-images/Instagram_0.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.linkedin.com/company/coast-to-coast-styles\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
-          "target": [
-            "img[alt=\"Linkin Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(5)"
           ]
         },
         {
@@ -10225,7 +9889,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -11871,35 +11535,6 @@
             {
               "id": "landmark-is-unique",
               "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
                 "role": "complementary",
                 "accessibleText": null
               },
@@ -12000,5 +11635,5 @@
       ]
     }
   ],
-  "documentTitle": "Clearview on Business: Coast to Coast Styles | Clearview Library"
+  "documentTitle": "Clearview on Business: Phoenix Financial Consulting | Clearview Library"
 }

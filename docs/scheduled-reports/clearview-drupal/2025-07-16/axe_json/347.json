@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:30:28.196Z",
-  "url": "https://clearviewlibrary.org/node/286",
+  "timestamp": "2025-07-16T19:43:45.199Z",
+  "url": "https://clearviewlibrary.org/node/284",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,6 +264,22 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -2544,87 +2560,6 @@
       ]
     },
     {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" company=\"\" https:=\"\" preserving-with-purpose=\"\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        }
-      ]
-    },
-    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2713,13 +2648,13 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Preserving with Purpose</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -3081,7 +3016,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Preserving with Purpose</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3156,7 +3091,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: Colorado and nationwide<br>\nWebsite: <a href=\"https://www.preservingwithpurpose.com\">www.preservingwithpurpose.com</a><br>\nPhone: <a href=\"tel:720-935-4798\">720-935-4798</a><br>\nYear Established: 2018</p>",
+          "html": "<p>Location: 628 Main Street, Windsor<br>\nWebsite: <a href=\"http://owengl.com/\">http://owengl.com</a>/<br>\nPhone: <a href=\"tel:970-395-9727\">970-395-9727</a><br>\nYear Established: 2006</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -3181,9 +3116,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.preservingwithpurpose.com\">www.preservingwithpurpose.com</a>",
+          "html": "<a href=\"http://owengl.com/\">http://owengl.com</a>",
           "target": [
-            "p:nth-child(3) > a:nth-child(2)"
+            "a[href$=\"owengl.com/\"]"
           ]
         },
         {
@@ -3206,9 +3141,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"tel:720-935-4798\">720-935-4798</a>",
+          "html": "<a href=\"tel:970-395-9727\">970-395-9727</a>",
           "target": [
-            "a[href=\"tel:720-935-4798\"]"
+            "a[href=\"tel:970-395-9727\"]"
           ]
         },
         {
@@ -3967,7 +3902,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4088,7 +4023,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Preserving with Purpose</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4106,7 +4041,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4316,7 +4251,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Preserving with Purpose</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4334,7 +4269,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4500,7 +4435,7 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Claire Richardson, Julie Dorough, Emma Atchison\" data-entity-type=\"file\" data-entity-uuid=\"84ec611c-afc3-464f-a2b0-31deaccd51b5\" height=\"300\" src=\"/sites/default/files/inline-images/Preserving%20with%20Purpose%20Team.jpg\" width=\"474\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Betty Vanek\" data-entity-type=\"file\" data-entity-uuid=\"9c0f4d8f-0377-47a2-b7b8-274855ab53fa\" height=\"300\" src=\"/sites/default/files/inline-images/Health%20Esteem%20LLC%20Betty%20Vanek.jpg\" width=\"187\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -4526,59 +4461,7 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" company=\"\" https:=\"\" preserving-with-purpose=\"\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" src=\"/sites/default/files/inline-images/Linkedin_0.png\">",
+          "html": "<img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\">",
           "target": [
             "img[alt=\"Linkin Logo\"]"
           ]
@@ -4731,7 +4614,7 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Claire Richardson, Julie Dorough, Emma Atchison\" data-entity-type=\"file\" data-entity-uuid=\"84ec611c-afc3-464f-a2b0-31deaccd51b5\" height=\"300\" src=\"/sites/default/files/inline-images/Preserving%20with%20Purpose%20Team.jpg\" width=\"474\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Betty Vanek\" data-entity-type=\"file\" data-entity-uuid=\"9c0f4d8f-0377-47a2-b7b8-274855ab53fa\" height=\"300\" src=\"/sites/default/files/inline-images/Health%20Esteem%20LLC%20Betty%20Vanek.jpg\" width=\"187\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -4749,43 +4632,7 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" company=\"\" https:=\"\" preserving-with-purpose=\"\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" src=\"/sites/default/files/inline-images/Linkedin_0.png\">",
+          "html": "<img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\">",
           "target": [
             "img[alt=\"Linkin Logo\"]"
           ]
@@ -5388,6 +5235,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "breadcrumb"
               },
               "relatedNodes": [],
@@ -5443,6 +5311,27 @@
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
           ]
         },
         {
@@ -5921,9 +5810,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.preservingwithpurpose.com\">www.preservingwithpurpose.com</a>",
+          "html": "<a href=\"http://owengl.com/\">http://owengl.com</a>",
           "target": [
-            "p:nth-child(3) > a:nth-child(2)"
+            "a[href$=\"owengl.com/\"]"
           ]
         },
         {
@@ -5947,9 +5836,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"tel:720-935-4798\">720-935-4798</a>",
+          "html": "<a href=\"tel:970-395-9727\">970-395-9727</a>",
           "target": [
-            "a[href=\"tel:720-935-4798\"]"
+            "a[href=\"tel:970-395-9727\"]"
           ]
         },
         {
@@ -5973,61 +5862,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.facebook.com/preservingwithpurpose/\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
+          "html": "<a href=\"https://www.linkedin.com/in/betty-vanek-ph-d-209b4123/\"><img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.instagram.com/preservingwithpurpose/\"><img alt=\"Instagram Logo\" company=\"\" https:=\"\" preserving-with-purpose=\"\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.linkedin.com/company/preserving-with-purpose\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
+            "p:nth-child(4) > a"
           ]
         },
         {
@@ -7741,7 +7578,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Claire Richardson, Julie Dorough, Emma Atchison\" data-entity-type=\"file\" data-entity-uuid=\"84ec611c-afc3-464f-a2b0-31deaccd51b5\" height=\"300\" src=\"/sites/default/files/inline-images/Preserving%20with%20Purpose%20Team.jpg\" width=\"474\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Betty Vanek\" data-entity-type=\"file\" data-entity-uuid=\"9c0f4d8f-0377-47a2-b7b8-274855ab53fa\" height=\"300\" src=\"/sites/default/files/inline-images/Health%20Esteem%20LLC%20Betty%20Vanek.jpg\" width=\"187\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -7759,43 +7596,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" company=\"\" https:=\"\" preserving-with-purpose=\"\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" src=\"/sites/default/files/inline-images/Linkedin_0.png\">",
+          "html": "<img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\">",
           "target": [
             "img[alt=\"Linkin Logo\"]"
           ]
@@ -7911,7 +7712,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Preserving with Purpose</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9276,7 +9077,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Preserving with Purpose</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -9296,7 +9097,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Preserving with Purpose</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -9316,7 +9117,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Preserving with Purpose</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>",
           "target": [
             ".field--name-title"
           ]
@@ -9456,9 +9257,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"286\" about=\"/node/286\" id=\"node-286\" class=\"node node--type-podcast-episode node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"284\" about=\"/node/284\" id=\"node-284\" class=\"node node--type-podcast-episode node--view-mode-full\">",
           "target": [
-            "#node-286"
+            "#node-284"
           ]
         },
         {
@@ -9496,7 +9297,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALPreservingwithPurpose0421.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
+          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALHealthEsteem0321.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
           "target": [
             ".field--name-field-podcast-file"
           ]
@@ -9516,7 +9317,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALPreservingwithPurpose0421.mp3\" type=\"audio/mpeg\">\n  </audio>",
+          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALHealthEsteem0321.mp3\" type=\"audio/mpeg\">\n  </audio>",
           "target": [
             "audio"
           ]
@@ -9536,7 +9337,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<source src=\"/sites/default/files/FINALPreservingwithPurpose0421.mp3\" type=\"audio/mpeg\">",
+          "html": "<source src=\"/sites/default/files/FINALHealthEsteem0321.mp3\" type=\"audio/mpeg\">",
           "target": [
             "source"
           ]
@@ -9616,7 +9417,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Claire Richardson, Julie Dorough, Emma Atchison\" data-entity-type=\"file\" data-entity-uuid=\"84ec611c-afc3-464f-a2b0-31deaccd51b5\" height=\"300\" src=\"/sites/default/files/inline-images/Preserving%20with%20Purpose%20Team.jpg\" width=\"474\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Betty Vanek\" data-entity-type=\"file\" data-entity-uuid=\"9c0f4d8f-0377-47a2-b7b8-274855ab53fa\" height=\"300\" src=\"/sites/default/files/inline-images/Health%20Esteem%20LLC%20Betty%20Vanek.jpg\" width=\"187\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -9636,7 +9437,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: Colorado and nationwide<br>\nWebsite: <a href=\"https://www.preservingwithpurpose.com\">www.preservingwithpurpose.com</a><br>\nPhone: <a href=\"tel:720-935-4798\">720-935-4798</a><br>\nYear Established: 2018</p>",
+          "html": "<p>Location: 628 Main Street, Windsor<br>\nWebsite: <a href=\"http://owengl.com/\">http://owengl.com</a>/<br>\nPhone: <a href=\"tel:970-395-9727\">970-395-9727</a><br>\nYear Established: 2006</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -9676,9 +9477,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.preservingwithpurpose.com\">www.preservingwithpurpose.com</a>",
+          "html": "<a href=\"http://owengl.com/\">http://owengl.com</a>",
           "target": [
-            "p:nth-child(3) > a:nth-child(2)"
+            "a[href$=\"owengl.com/\"]"
           ]
         },
         {
@@ -9716,9 +9517,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"tel:720-935-4798\">720-935-4798</a>",
+          "html": "<a href=\"tel:970-395-9727\">970-395-9727</a>",
           "target": [
-            "a[href=\"tel:720-935-4798\"]"
+            "a[href=\"tel:970-395-9727\"]"
           ]
         },
         {
@@ -9756,7 +9557,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><a href=\"https://www.linkedin.com/in/betty-vanek-ph-d-209b4123/\"><img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a></p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -9776,9 +9577,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.facebook.com/preservingwithpurpose/\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
+          "html": "<a href=\"https://www.linkedin.com/in/betty-vanek-ph-d-209b4123/\"><img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
+            "p:nth-child(4) > a"
           ]
         },
         {
@@ -9796,87 +9597,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.instagram.com/preservingwithpurpose/\"><img alt=\"Instagram Logo\" company=\"\" https:=\"\" preserving-with-purpose=\"\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" company=\"\" https:=\"\" preserving-with-purpose=\"\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.linkedin.com/company/preserving-with-purpose\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" src=\"/sites/default/files/inline-images/Linkedin_0.png\">",
+          "html": "<img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\">",
           "target": [
             "img[alt=\"Linkin Logo\"]"
           ]
@@ -10316,7 +10037,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -11962,35 +11683,6 @@
             {
               "id": "landmark-is-unique",
               "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
                 "role": "complementary",
                 "accessibleText": null
               },
@@ -12091,5 +11783,5 @@
       ]
     }
   ],
-  "documentTitle": "Clearview on Business: Preserving with Purpose | Clearview Library"
+  "documentTitle": "Clearview on Business: Health Esteem LLC | Clearview Library"
 }

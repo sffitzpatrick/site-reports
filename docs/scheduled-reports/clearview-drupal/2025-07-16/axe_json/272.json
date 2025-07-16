@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:27:34.415Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-asa-kennison",
+  "timestamp": "2025-07-16T19:40:41.328Z",
+  "url": "https://clearviewlibrary.org/node/288",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,22 +264,6 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -1497,7 +1481,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
+          "html": "<body class=\"_0829669 path-node page-node-type-podcast-episode\">",
           "target": [
             "body"
           ]
@@ -2543,6 +2527,55 @@
       ]
     },
     {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "target": [
+            "img[alt=\"Facebook Logo\"]"
+          ]
+        }
+      ]
+    },
+    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2576,25 +2609,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         }
       ]
@@ -2649,13 +2664,13 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Asa Kennison</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Mind Refined</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -2909,7 +2924,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -3002,131 +3017,6 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<time datetime=\"2021-07-23T16:14:18-06:00\" title=\"Friday, July 23, 2021 - 16:14\" class=\"datetime\">July 23, 2021</time>",
-          "target": [
-            "time"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
-          "target": [
-            "a[href=\"/taxonomy/term/32\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
                 "fgColor": "#0072bc",
                 "bgColor": "#ffffff",
                 "contrastRatio": 5.08,
@@ -3142,7 +3032,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Asa Kennison</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Mind Refined</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3167,109 +3057,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
+          "html": "<p>",
           "target": [
-            "p:nth-child(1) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Hometown:</strong> Right here in Windsor. Our library is the library I went to growing up.</p>",
-          "target": [
-            "p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Hometown:</strong>",
-          "target": [
-            "p:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Interests:</strong> Playing, listening to, or talking about music. Video games, traveling, daydreaming.</p>",
-          "target": [
-            "p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Interests:</strong>",
-          "target": [
-            "p:nth-child(3) > strong"
+            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
           ]
         },
         {
@@ -3294,32 +3084,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Book:</strong>",
-          "target": [
-            "p:nth-child(4) > strong"
+            "p:nth-child(2)"
           ]
         },
         {
@@ -3342,9 +3107,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>The Door in the Wall and Other Stories</em>",
+          "html": "<a href=\"mailto:info@ToRefineTheMind.com\">info@ToRefineTheMind.com</a>",
           "target": [
-            "a > em"
+            "p:nth-child(2) > a"
           ]
         },
         {
@@ -3367,359 +3132,84 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Preferred Superpower:</strong> Time control. Actually, flying. No wait, omniscience.</p>",
+          "html": "<p>Location: Colorado<br>\nWebsite: <a href=\"https://torefinethemind.com/\">https://torefinethemind.com/</a><br>\nPhone: <a href=\"tel:970-460-8494\">970-460-8494</a><br>\nYear Established: 2020</p>",
+          "target": [
+            "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://torefinethemind.com/\">https://torefinethemind.com/</a>",
+          "target": [
+            "a[href$=\"torefinethemind.com/\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"tel:970-460-8494\">970-460-8494</a>",
+          "target": [
+            "a[href=\"tel:970-460-8494\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
           "target": [
             "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Preferred Superpower:</strong>",
-          "target": [
-            "p:nth-child(5) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Author:</strong> It's difficult to pick just one, but I'll throw <a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dick%2C%20Philip%20K.%22\">Philip K. Dick</a> in as one of my favorites.</p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Author:</strong>",
-          "target": [
-            "p:nth-child(6) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dick%2C%20Philip%20K.%22\">Philip K. Dick</a>",
-          "target": [
-            "p:nth-child(6) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Vacation Spot:</strong> Probably Aruba, it's been pretty hard to beat.</p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Vacation Spot:</strong>",
-          "target": [
-            "p:nth-child(7) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Tierra Whack, Dave Chappelle, and Griffin Mcelroy.</p>",
-          "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
-          "target": [
-            "p:nth-child(8) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Quote:</strong> \"The universe began as an enormous breath being held. Who knows why, but whatever the reason, I am glad that it did, because I owe my existence to that fact.\" — Ted Chiang</p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Quote:</strong>",
-          "target": [
-            "p:nth-child(9) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist</p>",
-          "target": [
-            "p:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Job at the Library:</strong>",
-          "target": [
-            "p:nth-child(10) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#e1f0fb",
-                "contrastRatio": 15.26,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 15.26"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -3844,7 +3334,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -3869,7 +3359,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -4269,7 +3759,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -4453,7 +3943,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4574,7 +4064,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Asa Kennison</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Mind Refined</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4592,7 +4082,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4722,7 +4212,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > h1"
                     ],
                     "level": 1
                   },
@@ -4802,7 +4292,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Asa Kennison</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Mind Refined</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4820,7 +4310,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4986,9 +4476,61 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Asa%20Hero.jpg?itok=LibVKM0w\" width=\"1019\" height=\"573\" alt=\"Asa Kennison\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img alt=\"Brooke Lee\" data-entity-type=\"file\" data-entity-uuid=\"650920a5-21f0-4e39-babf-8e12882f3098\" height=\"300\" src=\"/sites/default/files/inline-images/Mind%20Refined%20Brooke%20Lee.jpg\" width=\"340\" loading=\"lazy\" class=\"align-left\">",
           "target": [
-            ".image-style-large-16-9"
+            ".align-left"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "target": [
+            "img[alt=\"Facebook Logo\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -5139,9 +4681,45 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Asa%20Hero.jpg?itok=LibVKM0w\" width=\"1019\" height=\"573\" alt=\"Asa Kennison\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img alt=\"Brooke Lee\" data-entity-type=\"file\" data-entity-uuid=\"650920a5-21f0-4e39-babf-8e12882f3098\" height=\"300\" src=\"/sites/default/files/inline-images/Mind%20Refined%20Brooke%20Lee.jpg\" width=\"340\" loading=\"lazy\" class=\"align-left\">",
           "target": [
-            ".image-style-large-16-9"
+            ".align-left"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "target": [
+            "img[alt=\"Facebook Logo\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -5435,7 +5013,7 @@
     },
     {
       "id": "landmark-complementary-is-top-level",
-      "impact": "moderate",
+      "impact": null,
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -5599,14 +5177,7 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
-                  "target": [
-                    "#sitewide-footer"
-                  ]
-                }
-              ],
+              "relatedNodes": [],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5614,9 +5185,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
-            ".node__meta"
+            "#sitewide-footer"
           ]
         }
       ]
@@ -5749,6 +5320,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "breadcrumb"
               },
               "relatedNodes": [],
@@ -5804,6 +5396,27 @@
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
           ]
         },
         {
@@ -5869,38 +5482,13 @@
         {
           "any": [
             {
-              "id": "link-in-text-block-style",
+              "id": "link-in-text-block",
               "data": null,
               "relatedNodes": [
                 {
                   "html": "<p>",
                   "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/f3376735-7416-3c73-dbe8-0fac5a61aee7/Home?searchId=6904&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>The Door in the Wall and Other Stories</em></a>",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p><strong>Favorite Author:</strong> It's difficult to pick just one, but I'll throw <a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dick%2C%20Philip%20K.%22\">Philip K. Dick</a> in as one of my favorites.</p>",
-                  "target": [
-                    "p:nth-child(6)"
+                    "p:nth-child(2)"
                   ]
                 }
               ],
@@ -5912,9 +5500,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p><strong>Favorite Author:</strong> It's difficult to pick just one, but I'll throw <a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dick%2C%20Philip%20K.%22\">Philip K. Dick</a> in as one of my favorites.</p>",
+                  "html": "<p>",
                   "target": [
-                    "p:nth-child(6)"
+                    "p:nth-child(2)"
                   ]
                 }
               ],
@@ -5925,16 +5513,16 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dick%2C%20Philip%20K.%22\">Philip K. Dick</a>",
+          "html": "<a href=\"mailto:info@ToRefineTheMind.com\">info@ToRefineTheMind.com</a>",
           "target": [
-            "p:nth-child(6) > a"
+            "p:nth-child(2) > a"
           ]
         }
       ]
     },
     {
       "id": "link-name",
-      "impact": null,
+      "impact": "serious",
       "tags": [
         "cat.name-role-value",
         "wcag2a",
@@ -6210,7 +5798,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -6364,9 +5952,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
+          "html": "<a href=\"mailto:info@ToRefineTheMind.com\">info@ToRefineTheMind.com</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
+            "p:nth-child(2) > a"
           ]
         },
         {
@@ -6390,9 +5978,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "html": "<a href=\"https://torefinethemind.com/\">https://torefinethemind.com/</a>",
           "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
+            "a[href$=\"torefinethemind.com/\"]"
           ]
         },
         {
@@ -6416,9 +6004,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "html": "<a href=\"tel:970-460-8494\">970-460-8494</a>",
           "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
+            "a[href=\"tel:970-460-8494\"]"
           ]
         },
         {
@@ -6442,9 +6030,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
+          "html": "<a href=\"https://www.facebook.com/torefinethemind\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
           "target": [
-            "a[href=\"/taxonomy/term/32\"]"
+            "p:nth-child(4) > a:nth-child(1)"
           ]
         },
         {
@@ -6468,61 +6056,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/media/17/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Asa%20Hero.jpg?itok=LibVKM0w\" width=\"1019\" height=\"573\" alt=\"Asa Kennison\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"https://www.linkedin.com/in/brooke-lee-lpc-lac-b452529b/\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\"></a>",
           "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/f3376735-7416-3c73-dbe8-0fac5a61aee7/Home?searchId=6904&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>The Door in the Wall and Other Stories</em></a>",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dick%2C%20Philip%20K.%22\">Philip K. Dick</a>",
-          "target": [
-            "p:nth-child(6) > a"
+            "p:nth-child(4) > a:nth-child(2)"
           ]
         },
         {
@@ -6600,7 +6136,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -6626,7 +6162,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -7276,7 +6812,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         }
       ]
@@ -7344,7 +6880,7 @@
             }
           ],
           "impact": null,
-          "html": "<ol>",
+          "html": "<ol>\n          <li>\n                  <a href=\"/\">Home</a>\n              </li>\n          <li>\n                  <a href=\"/node\"></a>\n              </li>\n        </ol>",
           "target": [
             "ol"
           ]
@@ -7666,45 +7202,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/node\"></a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
-          "target": [
-            "ol > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
-          "target": [
-            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -8272,9 +7772,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Asa%20Hero.jpg?itok=LibVKM0w\" width=\"1019\" height=\"573\" alt=\"Asa Kennison\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img alt=\"Brooke Lee\" data-entity-type=\"file\" data-entity-uuid=\"650920a5-21f0-4e39-babf-8e12882f3098\" height=\"300\" src=\"/sites/default/files/inline-images/Mind%20Refined%20Brooke%20Lee.jpg\" width=\"340\" loading=\"lazy\" class=\"align-left\">",
           "target": [
-            ".image-style-large-16-9"
+            ".align-left"
           ]
         },
         {
@@ -8290,9 +7790,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "img[alt=\"Facebook Logo\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -8328,7 +7846,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -8406,7 +7924,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Asa Kennison</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Mind Refined</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9093,7 +8611,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -9493,7 +9011,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            ".label"
+            "strong"
           ]
         },
         {
@@ -9671,7 +9189,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ol>",
+          "html": "<ol>\n          <li>\n                  <a href=\"/\">Home</a>\n              </li>\n          <li>\n                  <a href=\"/node\"></a>\n              </li>\n        </ol>",
           "target": [
             "ol"
           ]
@@ -9731,7 +9249,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/node\"></a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -9751,9 +9269,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
+          "html": "<a href=\"/node\"></a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
+            "a[href$=\"node\"]"
           ]
         },
         {
@@ -9771,9 +9289,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Mind Refined</span>\n</h1>\n\n\n  </div>",
           "target": [
-            "ol > li:nth-child(3)"
+            "#block-clearview-page-title"
           ]
         },
         {
@@ -9791,9 +9309,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Mind Refined</span>\n</h1>",
           "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
+            "h1"
           ]
         },
         {
@@ -9811,29 +9329,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Mind Refined</span>",
           "target": [
-            "ol > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
+            ".field--name-title"
           ]
         },
         {
@@ -9971,209 +9469,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"251\" about=\"/about-us/learn-more/news/staff-spotlight-asa-kennison\" typeof=\"schema:Article\" id=\"node-251\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"288\" about=\"/node/288\" id=\"node-288\" class=\"node node--type-podcast-episode node--view-mode-full\">",
           "target": [
-            "#node-251"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<footer class=\"node__meta\">",
-          "target": [
-            ".node__meta"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__submitted\">",
-          "target": [
-            ".node__submitted"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2021-07-23T22:14:18+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2021-07-23T16:14:18-06:00\" title=\"Friday, July 23, 2021 - 16:14\" class=\"datetime\">July 23, 2021</time>\n</span>",
-          "target": [
-            ".field--name-created"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<time datetime=\"2021-07-23T16:14:18-06:00\" title=\"Friday, July 23, 2021 - 16:14\" class=\"datetime\">July 23, 2021</time>",
-          "target": [
-            "time"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a></div>\n                    </div>",
-          "target": [
-            ".field--name-field-article-category"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a></div>",
-          "target": [
-            ".field--name-field-article-category > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
-          "target": [
-            "a[href=\"/taxonomy/term/32\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Asa Kennison</span>\n</h1>",
-          "target": [
-            "h1"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Asa Kennison</span>",
-          "target": [
-            ".field--name-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__main\">",
-          "target": [
-            ".node__main"
+            "#node-288"
           ]
         },
         {
@@ -10211,9 +9509,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-hidden field__item\">",
+          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALMindRefined0521.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
           "target": [
-            ".field--name-field-article-feature-image"
+            ".field--name-field-podcast-file"
           ]
         },
         {
@@ -10231,9 +9529,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article class=\"media media--type-article-feature-image media--view-mode-big-feature\">",
+          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALMindRefined0521.mp3\" type=\"audio/mpeg\">\n  </audio>",
           "target": [
-            ".media"
+            "audio"
           ]
         },
         {
@@ -10251,9 +9549,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "html": "<source src=\"/sites/default/files/FINALMindRefined0521.mp3\" type=\"audio/mpeg\">",
           "target": [
-            ".field--name-field-media-image-1"
+            "source"
           ]
         },
         {
@@ -10271,9 +9569,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            ".field__label"
+            ".node__content > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -10291,9 +9589,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">  <a href=\"/media/17/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Asa%20Hero.jpg?itok=LibVKM0w\" width=\"1019\" height=\"573\" alt=\"Asa Kennison\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
+          "html": "<p>",
           "target": [
-            ".field--name-field-media-image-1 > .field__item"
+            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
           ]
         },
         {
@@ -10311,107 +9609,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/17/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Asa%20Hero.jpg?itok=LibVKM0w\" width=\"1019\" height=\"573\" alt=\"Asa Kennison\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Asa%20Hero.jpg?itok=LibVKM0w\" width=\"1019\" height=\"573\" alt=\"Asa Kennison\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "div[property=\"schema:text\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em></p>",
-          "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
-          "target": [
-            "p:nth-child(1) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Hometown:</strong> Right here in Windsor. Our library is the library I went to growing up.</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10431,9 +9629,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Hometown:</strong>",
+          "html": "<img alt=\"Brooke Lee\" data-entity-type=\"file\" data-entity-uuid=\"650920a5-21f0-4e39-babf-8e12882f3098\" height=\"300\" src=\"/sites/default/files/inline-images/Mind%20Refined%20Brooke%20Lee.jpg\" width=\"340\" loading=\"lazy\" class=\"align-left\">",
           "target": [
-            "p:nth-child(2) > strong"
+            ".align-left"
           ]
         },
         {
@@ -10451,7 +9649,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Interests:</strong> Playing, listening to, or talking about music. Video games, traveling, daydreaming.</p>",
+          "html": "<a href=\"mailto:info@ToRefineTheMind.com\">info@ToRefineTheMind.com</a>",
+          "target": [
+            "p:nth-child(2) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Location: Colorado<br>\nWebsite: <a href=\"https://torefinethemind.com/\">https://torefinethemind.com/</a><br>\nPhone: <a href=\"tel:970-460-8494\">970-460-8494</a><br>\nYear Established: 2020</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10471,9 +9689,89 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Interests:</strong>",
+          "html": "<br>",
           "target": [
-            "p:nth-child(3) > strong"
+            "p:nth-child(3) > br:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://torefinethemind.com/\">https://torefinethemind.com/</a>",
+          "target": [
+            "a[href$=\"torefinethemind.com/\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "p:nth-child(3) > br:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"tel:970-460-8494\">970-460-8494</a>",
+          "target": [
+            "a[href=\"tel:970-460-8494\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "br:nth-child(5)"
           ]
         },
         {
@@ -10511,9 +9809,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Book:</strong>",
+          "html": "<a href=\"https://www.facebook.com/torefinethemind\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
           "target": [
-            "p:nth-child(4) > strong"
+            "p:nth-child(4) > a:nth-child(1)"
           ]
         },
         {
@@ -10531,9 +9829,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/f3376735-7416-3c73-dbe8-0fac5a61aee7/Home?searchId=6904&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>The Door in the Wall and Other Stories</em></a>",
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
           "target": [
-            "p:nth-child(4) > a"
+            "img[alt=\"Facebook Logo\"]"
           ]
         },
         {
@@ -10551,9 +9849,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>The Door in the Wall and Other Stories</em>",
+          "html": "<a href=\"https://www.linkedin.com/in/brooke-lee-lpc-lac-b452529b/\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\"></a>",
           "target": [
-            "a > em"
+            "p:nth-child(4) > a:nth-child(2)"
           ]
         },
         {
@@ -10571,349 +9869,29 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Preferred Superpower:</strong> Time control. Actually, flying. No wait, omniscience.</p>",
+          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Linkin Logo\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
           "target": [
             "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Preferred Superpower:</strong>",
-          "target": [
-            "p:nth-child(5) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Author:</strong> It's difficult to pick just one, but I'll throw <a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dick%2C%20Philip%20K.%22\">Philip K. Dick</a> in as one of my favorites.</p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Author:</strong>",
-          "target": [
-            "p:nth-child(6) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dick%2C%20Philip%20K.%22\">Philip K. Dick</a>",
-          "target": [
-            "p:nth-child(6) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Vacation Spot:</strong> Probably Aruba, it's been pretty hard to beat.</p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Vacation Spot:</strong>",
-          "target": [
-            "p:nth-child(7) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Tierra Whack, Dave Chappelle, and Griffin Mcelroy.</p>",
-          "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
-          "target": [
-            "p:nth-child(8) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Quote:</strong> \"The universe began as an enormous breath being held. Who knows why, but whatever the reason, I am glad that it did, because I owe my existence to that fact.\" — Ted Chiang</p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Quote:</strong>",
-          "target": [
-            "p:nth-child(9) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist</p>",
-          "target": [
-            "p:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Job at the Library:</strong>",
-          "target": [
-            "p:nth-child(10) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<aside class=\"sidebar\">",
-          "target": [
-            "aside"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"sidebar-newsletter-signup\">",
-          "target": [
-            "#sidebar-newsletter-signup"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -11173,7 +10151,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            "br:nth-child(3)"
+            ".address:nth-child(3) > br:nth-child(3)"
           ]
         },
         {
@@ -11331,7 +10309,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -11393,7 +10371,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -11453,7 +10431,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -12133,7 +11111,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -12873,7 +11851,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         }
       ]
@@ -12962,40 +11940,6 @@
   "incomplete": [],
   "violations": [
     {
-      "id": "landmark-complementary-is-top-level",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the complementary landmark or aside is at top level",
-      "help": "Aside should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "landmark-is-top-level",
-              "data": {
-                "role": null
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "The null landmark is contained in another landmark."
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<aside class=\"sidebar\">",
-          "target": [
-            "aside"
-          ],
-          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
-        }
-      ]
-    },
-    {
       "id": "landmark-unique",
       "impact": "moderate",
       "tags": [
@@ -13006,35 +11950,6 @@
       "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
       "nodes": [
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
         {
           "any": [
             {
@@ -13065,7 +11980,80 @@
           "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
         }
       ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"/node\"></a>",
+          "target": [
+            "a[href$=\"node\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
     }
   ],
-  "documentTitle": "Staff Spotlight: Asa Kennison | Clearview Library"
+  "documentTitle": "Clearview on Business: Mind Refined | Clearview Library"
 }

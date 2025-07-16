@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:27:09.236Z",
-  "url": "https://clearviewlibrary.org/clearview-on-business-tbk-bank",
+  "timestamp": "2025-07-16T19:40:18.377Z",
+  "url": "https://clearviewlibrary.org/clearview-on-business-vicki-larimore",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,6 +264,22 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -2544,55 +2560,6 @@
       ]
     },
     {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        }
-      ]
-    },
-    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2681,13 +2648,13 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: TBK Bank</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Vicki Larimore: Agent of Family-Heritage Life Insurance Company of America</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -3049,7 +3016,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: TBK Bank</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Vicki Larimore: Agent of Family-Heritage Life Insurance Company of America</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3109,24 +3076,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
+                "fgColor": "#0072bc",
                 "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
+                "contrastRatio": 5.08,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
+              "message": "Element has sufficient color contrast of 5.08"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: 399 W 4th Avenue, Severance<br>\nWebsite: <a href=\"https://www.tbkbank.com/\">www.tbkbank.com</a><br>\nPhone: <a href=\"tel:720-837-8202\">720-837-8202</a><br>\nEmail: <a href=\"mailto:kehrhardt@tbkbank.comg\">kehrhardt@tbkbank.com</a></p>",
+          "html": "<a href=\"https://www.globelifefamilyheritage.com/\">https://www.globelifefamilyheritage.com/</a>",
           "target": [
-            "p:nth-child(3)"
+            "p:nth-child(2) > a:nth-child(4)"
           ]
         },
         {
@@ -3149,9 +3116,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.tbkbank.com/\">www.tbkbank.com</a>",
+          "html": "<a href=\"mailto:vlarimore@fhlagent.com\">vlarimore@fhlagent.com</a>",
           "target": [
-            "a[href$=\"tbkbank.com/\"]"
+            "a[href=\"mailto:vlarimore@fhlagent.com\"]"
           ]
         },
         {
@@ -3174,34 +3141,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"tel:720-837-8202\">720-837-8202</a>",
+          "html": "<a href=\"tel:409-692-1255\">409-692-1255</a>",
           "target": [
-            "a[href=\"tel:720-837-8202\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:kehrhardt@tbkbank.comg\">kehrhardt@tbkbank.com</a>",
-          "target": [
-            "a[href=\"mailto:kehrhardt@tbkbank.comg\"]"
+            "a[href=\"tel:409-692-1255\"]"
           ]
         },
         {
@@ -3224,7 +3166,32 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>Business’ hours / services may have changed. Check out their website for the latest information.</p>",
+          "target": [
+            "p:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>The views expressed on this podcast are those of the business owner, and not necessarily those of the Clearview Library District. An interview on this podcast is not an endorsement or referral by the district.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -3960,7 +3927,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4081,7 +4048,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: TBK Bank</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Vicki Larimore: Agent of Family-Heritage Life Insurance Company of America</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4099,7 +4066,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4309,7 +4276,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: TBK Bank</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Vicki Larimore: Agent of Family-Heritage Life Insurance Company of America</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4327,7 +4294,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4493,7 +4460,7 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Kelli Ehrhardt\" data-entity-type=\"file\" data-entity-uuid=\"c424750f-ca97-46a8-951a-f76f43da4bec\" height=\"300\" src=\"/sites/default/files/inline-images/Kelli-Ehrhardt-TBK-Bank.jpg\" width=\"285\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Vicki Larimore\" data-entity-type=\"file\" data-entity-uuid=\"82e2ebc0-c7b3-4f40-ba76-a67f5a42e169\" height=\"300\" src=\"/sites/default/files/inline-images/Vicki%20Larimore_0.jpeg\" width=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -4519,9 +4486,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
           "target": [
-            "img[alt=\"Facebook Logo\"]"
+            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -4672,7 +4639,7 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Kelli Ehrhardt\" data-entity-type=\"file\" data-entity-uuid=\"c424750f-ca97-46a8-951a-f76f43da4bec\" height=\"300\" src=\"/sites/default/files/inline-images/Kelli-Ehrhardt-TBK-Bank.jpg\" width=\"285\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Vicki Larimore\" data-entity-type=\"file\" data-entity-uuid=\"82e2ebc0-c7b3-4f40-ba76-a67f5a42e169\" height=\"300\" src=\"/sites/default/files/inline-images/Vicki%20Larimore_0.jpeg\" width=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -4690,9 +4657,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
           "target": [
-            "img[alt=\"Facebook Logo\"]"
+            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -5293,6 +5260,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "breadcrumb"
               },
               "relatedNodes": [],
@@ -5348,6 +5336,27 @@
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
           ]
         },
         {
@@ -5826,9 +5835,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.tbkbank.com/\">www.tbkbank.com</a>",
+          "html": "<a href=\"https://www.globelifefamilyheritage.com/\">https://www.globelifefamilyheritage.com/</a>",
           "target": [
-            "a[href$=\"tbkbank.com/\"]"
+            "p:nth-child(2) > a:nth-child(4)"
           ]
         },
         {
@@ -5852,9 +5861,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"tel:720-837-8202\">720-837-8202</a>",
+          "html": "<a href=\"mailto:vlarimore@fhlagent.com\">vlarimore@fhlagent.com</a>",
           "target": [
-            "a[href=\"tel:720-837-8202\"]"
+            "a[href=\"mailto:vlarimore@fhlagent.com\"]"
           ]
         },
         {
@@ -5878,9 +5887,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"mailto:kehrhardt@tbkbank.comg\">kehrhardt@tbkbank.com</a>",
+          "html": "<a href=\"tel:409-692-1255\">409-692-1255</a>",
           "target": [
-            "a[href=\"mailto:kehrhardt@tbkbank.comg\"]"
+            "a[href=\"tel:409-692-1255\"]"
           ]
         },
         {
@@ -5904,9 +5913,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.facebook.com/TBKBankSeverance/\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
+          "html": "<a href=\"https://www.linkedin.com/in/vicki-larimore-b1387476/\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\"></a>",
           "target": [
-            "p:nth-child(4) > a"
+            "p:nth-child(3) > a"
           ]
         },
         {
@@ -7602,7 +7611,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Kelli Ehrhardt\" data-entity-type=\"file\" data-entity-uuid=\"c424750f-ca97-46a8-951a-f76f43da4bec\" height=\"300\" src=\"/sites/default/files/inline-images/Kelli-Ehrhardt-TBK-Bank.jpg\" width=\"285\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Vicki Larimore\" data-entity-type=\"file\" data-entity-uuid=\"82e2ebc0-c7b3-4f40-ba76-a67f5a42e169\" height=\"300\" src=\"/sites/default/files/inline-images/Vicki%20Larimore_0.jpeg\" width=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -7620,9 +7629,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
           "target": [
-            "img[alt=\"Facebook Logo\"]"
+            "img[alt=\"Linkin Logo\"]"
           ]
         },
         {
@@ -7736,7 +7745,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: TBK Bank</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Vicki Larimore: Agent of Family-Heritage Life Insurance Company of America</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9061,7 +9070,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: TBK Bank</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -9081,7 +9090,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: TBK Bank</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Vicki Larimore: Agent of Family-Heritage Life Insurance Company of America</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -9101,7 +9110,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: TBK Bank</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Vicki Larimore: Agent of Family-Heritage Life Insurance Company of America</span>",
           "target": [
             ".field--name-title"
           ]
@@ -9241,9 +9250,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"344\" about=\"/clearview-on-business-tbk-bank\" id=\"node-344\" class=\"node node--type-podcast-episode node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"341\" about=\"/clearview-on-business-vicki-larimore\" id=\"node-341\" class=\"node node--type-podcast-episode node--view-mode-full\">",
           "target": [
-            "#node-344"
+            "#node-341"
           ]
         },
         {
@@ -9281,7 +9290,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/podcast-files/FINALTBK1121.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
+          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/podcast-files/FINALFHLAgent0921.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
           "target": [
             ".field--name-field-podcast-file"
           ]
@@ -9301,7 +9310,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/podcast-files/FINALTBK1121.mp3\" type=\"audio/mpeg\">\n  </audio>",
+          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/podcast-files/FINALFHLAgent0921.mp3\" type=\"audio/mpeg\">\n  </audio>",
           "target": [
             "audio"
           ]
@@ -9321,7 +9330,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<source src=\"/sites/default/files/podcast-files/FINALTBK1121.mp3\" type=\"audio/mpeg\">",
+          "html": "<source src=\"/sites/default/files/podcast-files/FINALFHLAgent0921.mp3\" type=\"audio/mpeg\">",
           "target": [
             "source"
           ]
@@ -9401,7 +9410,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Kelli Ehrhardt\" data-entity-type=\"file\" data-entity-uuid=\"c424750f-ca97-46a8-951a-f76f43da4bec\" height=\"300\" src=\"/sites/default/files/inline-images/Kelli-Ehrhardt-TBK-Bank.jpg\" width=\"285\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Vicki Larimore\" data-entity-type=\"file\" data-entity-uuid=\"82e2ebc0-c7b3-4f40-ba76-a67f5a42e169\" height=\"300\" src=\"/sites/default/files/inline-images/Vicki%20Larimore_0.jpeg\" width=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -9421,9 +9430,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: 399 W 4th Avenue, Severance<br>\nWebsite: <a href=\"https://www.tbkbank.com/\">www.tbkbank.com</a><br>\nPhone: <a href=\"tel:720-837-8202\">720-837-8202</a><br>\nEmail: <a href=\"mailto:kehrhardt@tbkbank.comg\">kehrhardt@tbkbank.com</a></p>",
+          "html": "<br>",
           "target": [
-            "p:nth-child(3)"
+            "p:nth-child(2) > br:nth-child(2)"
           ]
         },
         {
@@ -9443,7 +9452,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            "p:nth-child(3) > br:nth-child(1)"
+            "p:nth-child(2) > br:nth-child(3)"
           ]
         },
         {
@@ -9461,49 +9470,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.tbkbank.com/\">www.tbkbank.com</a>",
+          "html": "<a href=\"https://www.globelifefamilyheritage.com/\">https://www.globelifefamilyheritage.com/</a>",
           "target": [
-            "a[href$=\"tbkbank.com/\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "p:nth-child(3) > br:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"tel:720-837-8202\">720-837-8202</a>",
-          "target": [
-            "a[href=\"tel:720-837-8202\"]"
+            "p:nth-child(2) > a:nth-child(4)"
           ]
         },
         {
@@ -9541,9 +9510,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:kehrhardt@tbkbank.comg\">kehrhardt@tbkbank.com</a>",
+          "html": "<a href=\"mailto:vlarimore@fhlagent.com\">vlarimore@fhlagent.com</a>",
           "target": [
-            "a[href=\"mailto:kehrhardt@tbkbank.comg\"]"
+            "a[href=\"mailto:vlarimore@fhlagent.com\"]"
           ]
         },
         {
@@ -9561,7 +9530,127 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><a href=\"https://www.facebook.com/TBKBankSeverance/\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a></p>",
+          "html": "<br>",
+          "target": [
+            "br:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"tel:409-692-1255\">409-692-1255</a>",
+          "target": [
+            "a[href=\"tel:409-692-1255\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "br:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><a href=\"https://www.linkedin.com/in/vicki-larimore-b1387476/\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\"></a></p>",
+          "target": [
+            "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://www.linkedin.com/in/vicki-larimore-b1387476/\"><img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\"></a>",
+          "target": [
+            "p:nth-child(3) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Linkin Logo\" data-entity-type=\"file\" data-entity-uuid=\"eee5fd4d-bfec-4f1e-9649-904c969259ea\" src=\"/sites/default/files/inline-images/Linkedin_0.png\" width=\"30\" height=\"30\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Linkin Logo\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Business’ hours / services may have changed. Check out their website for the latest information.</p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -9581,47 +9670,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.facebook.com/TBKBankSeverance/\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
+          "html": "<p>The views expressed on this podcast are those of the business owner, and not necessarily those of the Clearview Library District. An interview on this podcast is not an endorsement or referral by the district.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -9863,7 +9912,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            "br:nth-child(2)"
+            ".address:nth-child(3) > br:nth-child(2)"
           ]
         },
         {
@@ -10041,7 +10090,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -11687,35 +11736,6 @@
             {
               "id": "landmark-is-unique",
               "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
                 "role": "complementary",
                 "accessibleText": null
               },
@@ -11743,5 +11763,5 @@
       ]
     }
   ],
-  "documentTitle": "Clearview on Business: TBK Bank | Clearview Library"
+  "documentTitle": "Clearview on Business: Vicki Larimore: Agent of Family-Heritage Life Insurance Company of America | Clearview Library"
 }

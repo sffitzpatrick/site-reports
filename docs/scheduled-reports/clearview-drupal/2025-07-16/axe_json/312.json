@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:29:18.015Z",
-  "url": "https://clearviewlibrary.org/taxonomy/term/59",
+  "timestamp": "2025-07-16T19:42:30.656Z",
+  "url": "https://clearviewlibrary.org/taxonomy/term/35?page=2",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -96,23 +96,6 @@
       "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
       "help": "ARIA dialog and alertdialog nodes should have an accessible name",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "aria-hidden-focus",
-      "impact": null,
-      "tags": [
-        "cat.name-role-value",
-        "wcag2a",
-        "wcag412",
-        "TTv5",
-        "TT6.a",
-        "EN-301-549",
-        "EN-9.4.1.2"
-      ],
-      "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
-      "help": "ARIA hidden element must not be focusable or contain focusable elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus?application=axeAPI",
       "nodes": []
     },
     {
@@ -834,6 +817,32 @@
             }
           ],
           "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -1007,6 +1016,24 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -1134,6 +1161,24 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
           ]
         },
         {
@@ -1309,6 +1354,24 @@
             }
           ],
           "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "deprecatedrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role is not deprecated"
+            }
+          ],
+          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -1425,6 +1488,56 @@
       ]
     },
     {
+      "id": "aria-hidden-focus",
+      "impact": null,
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+      "help": "ARIA hidden element must not be focusable or contain focusable elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "focusable-modal-open",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements while a modal is open"
+            },
+            {
+              "id": "focusable-disabled",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements contained within element"
+            },
+            {
+              "id": "focusable-not-tabbable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements contained within element"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span aria-hidden=\"true\">‹‹</span>",
+          "target": [
+            "span[aria-hidden=\"true\"]"
+          ]
+        }
+      ]
+    },
+    {
       "id": "aria-prohibited-attr",
       "impact": null,
       "tags": [
@@ -1472,6 +1585,24 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
           ]
         },
         {
@@ -1632,6 +1763,24 @@
           "html": "<main role=\"main\">",
           "target": [
             "main"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-required-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "All required ARIA attributes are present"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
           ]
         },
         {
@@ -1927,6 +2076,38 @@
             }
           ],
           "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "invalidrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA role is valid"
+            },
+            {
+              "id": "abstractrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Abstract roles are not used"
+            },
+            {
+              "id": "unsupportedrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA role is supported"
+            }
+          ],
+          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -2167,6 +2348,38 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -2286,6 +2499,24 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
           ]
         },
         {
@@ -2427,9 +2658,15 @@
                   ]
                 },
                 {
+                  "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Severance Library Branch</span>\n</a>\n    </h2>",
+                  "target": [
+                    "#node-356 > .node-title"
+                  ]
+                },
+                {
                   "html": "<h2 class=\"node-title\">",
                   "target": [
-                    "#node-471 > .node-title"
+                    "#node-197 > .node-title"
                   ]
                 },
                 {
@@ -2445,7 +2682,19 @@
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"node-title\">",
+                  "target": [
+                    "#node-227 > .node-title"
+                  ]
+                },
+                {
+                  "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
+                  "target": [
+                    "#pagination-heading"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -2782,9 +3031,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Naming Convention, Logo Design, and Branding Refresh</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Severance Library Branch</span>",
           "target": [
-            "#node-471 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+            "#node-356 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
           ]
         },
         {
@@ -2807,9 +3056,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (“RFP”). This RFP is issued to provide naming convention, logo design, and branding refresh for the library district.</p>",
+          "html": "<p>",
           "target": [
-            ".clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
+            "#node-356 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
           ]
         },
         {
@@ -2832,9 +3081,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, Director, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
+          "html": "<p>Topics of Discussion include,&nbsp;</p>",
           "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
+            "#node-356 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
           ]
         },
         {
@@ -2857,9 +3106,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
+          "html": "<a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"tag\" title=\"Severance Library Branch\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Severance Library Branch</span></a>",
           "target": [
-            "p:nth-child(2) > a"
+            "a[title=\"Severance Library Branch\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Now Offers Online Crafting Classes</span>",
+          "target": [
+            "#node-197 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
           ]
         },
         {
@@ -2882,9 +3156,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Deadline for Questions: Friday, June 16, 2023.</p>",
+          "html": "<p>The Clearview Library District offers <a href=\"https://www.creativebug.com/lib/clearviewlibrary\" rel=\"noopener\" target=\"_blank\">Creativebug</a>, an online platform that hosts art and craft classes and resources.</p>",
           "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
+            "#node-197 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://www.creativebug.com/lib/clearviewlibrary\" rel=\"noopener\" target=\"_blank\">Creativebug</a>",
+          "target": [
+            "a[rel=\"noopener\"]"
           ]
         },
         {
@@ -2907,9 +3206,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Below are the questions we have received from potential consultants, along with our responses:</p>",
+          "html": "<p>With a Clearview library card, community members will have unlimited access to thousands of online art and crafting tutorials, including watercolor, paper art, knitting, crocheting, quilting, lettering, ceramics, and baking.</p>",
           "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
+            "#node-197 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
           ]
         },
         {
@@ -2934,7 +3233,7 @@
           "impact": null,
           "html": "<div class=\"field__label\">Tags</div>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__label"
+            "#node-197 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__label"
           ]
         },
         {
@@ -2957,9 +3256,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
+          "html": "<a href=\"/taxonomy/term/52\" property=\"schema:about\" hreflang=\"en\">downloads</a>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
+            "a[href=\"/taxonomy/term/52\"]"
           ]
         },
         {
@@ -2982,9 +3281,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"tag\" title=\"Request for Proposal for Naming Convention, Logo Design, and Branding Refresh\" hreflang=\"en\">",
+          "html": "<a href=\"/about-us/learn-more/news/clearview-library-now-offers-online-crafting-classes\" rel=\"tag\" title=\"Clearview Library Now Offers Online Crafting Classes\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Clearview Library Now Offers Online Crafting Classes</span></a>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+            "#node-197 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
           ]
         },
         {
@@ -3084,7 +3383,7 @@
           "impact": null,
           "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
           "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -3134,7 +3433,7 @@
           "impact": null,
           "html": "<p>Deadline for Submission: No later than Saturday, March 19, 2022, 5:00 pm.</p>",
           "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -3184,7 +3483,7 @@
           "impact": null,
           "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
           "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
+            "a[href=\"/taxonomy/term/59\"]"
           ]
         },
         {
@@ -3210,6 +3509,106 @@
           "html": "<a href=\"/about-us/learn-more/news/request-proposal-network-services-and-hardware\" rel=\"tag\" title=\"Request for Proposal for Network Services and Hardware\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Request for Proposal for Network Services and Hardware</span></a>",
           "target": [
             "#node-350 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Library and School District Partner to Bring e-Books to Students</span>",
+          "target": [
+            "#node-227 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "target": [
+            "#node-227 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/library-and-school-district-partner-bring-e-books-students\" rel=\"tag\" title=\"Library and School District Partner to Bring e-Books to Students\" hreflang=\"en\">",
+          "target": [
+            "#node-227 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"pager__item is-active\">\n          Page 3        </li>",
+          "target": [
+            ".is-active"
           ]
         },
         {
@@ -3916,6 +4315,24 @@
           "any": [
             {
               "id": "duplicate-id-aria",
+              "data": "pagination-heading",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
+          "target": [
+            "#pagination-heading"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -3925,7 +4342,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4028,9 +4445,27 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Severance Library Branch</span>\n</a>\n    </h2>",
+          "target": [
+            "#node-356 > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<h2 class=\"node-title\">",
           "target": [
-            "#node-471 > .node-title"
+            "#node-197 > .node-title"
           ]
         },
         {
@@ -4082,7 +4517,43 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"node-title\">",
+          "target": [
+            "#node-227 > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
+          "target": [
+            "#pagination-heading"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4177,7 +4648,7 @@
     },
     {
       "id": "heading-order",
-      "impact": null,
+      "impact": "moderate",
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -4218,9 +4689,27 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div:nth-child(2) > article > div:nth-child(3) > div:nth-child(1) > h2:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div:nth-child(3) > article > h2:nth-child(1)"
                     ],
                     "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div:nth-child(3) > article > div:nth-child(3) > div:nth-child(1) > h2:nth-child(1)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div:nth-child(4) > article > h2:nth-child(1)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > nav:nth-child(3) > h4:nth-child(1)"
+                    ],
+                    "level": 4
                   },
                   {
                     "ancestry": [
@@ -4280,9 +4769,27 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Severance Library Branch</span>\n</a>\n    </h2>",
+          "target": [
+            "#node-356 > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<h2 class=\"node-title\">",
           "target": [
-            "#node-471 > .node-title"
+            "#node-197 > .node-title"
           ]
         },
         {
@@ -4334,7 +4841,25 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"node-title\">",
+          "target": [
+            "#node-227 > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -5211,6 +5736,27 @@
             {
               "id": "landmark-is-unique",
               "data": {
+                "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
                 "role": "main",
                 "accessibleText": null
               },
@@ -5232,6 +5778,27 @@
             {
               "id": "landmark-is-unique",
               "data": {
+                "role": "navigation",
+                "accessibleText": "pagination"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
                 "role": "contentinfo",
                 "accessibleText": null
               },
@@ -5246,6 +5813,27 @@
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
           ]
         },
         {
@@ -5315,9 +5903,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, Director, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
+                  "html": "<p>The Clearview Library District offers <a href=\"https://www.creativebug.com/lib/clearviewlibrary\" rel=\"noopener\" target=\"_blank\">Creativebug</a>, an online platform that hosts art and craft classes and resources.</p>",
                   "target": [
-                    "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
+                    "#node-197 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
                   ]
                 }
               ],
@@ -5329,9 +5917,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, Director, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
+                  "html": "<p>The Clearview Library District offers <a href=\"https://www.creativebug.com/lib/clearviewlibrary\" rel=\"noopener\" target=\"_blank\">Creativebug</a>, an online platform that hosts art and craft classes and resources.</p>",
                   "target": [
-                    "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
+                    "#node-197 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
                   ]
                 }
               ],
@@ -5342,9 +5930,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
+          "html": "<a href=\"https://www.creativebug.com/lib/clearviewlibrary\" rel=\"noopener\" target=\"_blank\">Creativebug</a>",
           "target": [
-            "p:nth-child(2) > a"
+            "a[rel=\"noopener\"]"
           ]
         },
         {
@@ -5356,7 +5944,7 @@
                 {
                   "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
                   "target": [
-                    "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
+                    "p:nth-child(3)"
                   ]
                 }
               ],
@@ -5370,7 +5958,7 @@
                 {
                   "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
                   "target": [
-                    "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
+                    "p:nth-child(3)"
                   ]
                 }
               ],
@@ -5794,61 +6382,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"bookmark\">",
+          "html": "<a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Severance Library Branch</span>\n</a>",
           "target": [
-            "#node-471 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
-          "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
+            "#node-356 > .node-title > a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -5879,9 +6415,120 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"tag\" title=\"Request for Proposal for Naming Convention, Logo Design, and Branding Refresh\" hreflang=\"en\">",
+          "html": "<a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"tag\" title=\"Severance Library Branch\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Severance Library Branch</span></a>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+            "a[title=\"Severance Library Branch\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/clearview-library-now-offers-online-crafting-classes\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Now Offers Online Crafting Classes</span>\n</a>",
+          "target": [
+            "#node-197 > .node-title > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://www.creativebug.com/lib/clearviewlibrary\" rel=\"noopener\" target=\"_blank\">Creativebug</a>",
+          "target": [
+            "a[rel=\"noopener\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/taxonomy/term/52\" property=\"schema:about\" hreflang=\"en\">downloads</a>",
+          "target": [
+            "a[href=\"/taxonomy/term/52\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            },
+            {
+              "id": "non-empty-title",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has a title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/clearview-library-now-offers-online-crafting-classes\" rel=\"tag\" title=\"Clearview Library Now Offers Online Crafting Classes\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Clearview Library Now Offers Online Crafting Classes</span></a>",
+          "target": [
+            "#node-197 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
           ]
         },
         {
@@ -5959,7 +6606,7 @@
           "impact": null,
           "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
           "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
+            "a[href=\"/taxonomy/term/59\"]"
           ]
         },
         {
@@ -6016,7 +6663,99 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/59/feed\" class=\"feed-icon\">\n  Subscribe to Request for Proposal\n</a>",
+          "html": "<a href=\"/about-us/learn-more/news/library-and-school-district-partner-bring-e-books-students\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Library and School District Partner to Bring e-Books to Students</span>\n</a>",
+          "target": [
+            "#node-227 > .node-title > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            },
+            {
+              "id": "non-empty-title",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has a title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/library-and-school-district-partner-bring-e-books-students\" rel=\"tag\" title=\"Library and School District Partner to Bring e-Books to Students\" hreflang=\"en\">",
+          "target": [
+            "#node-227 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            },
+            {
+              "id": "non-empty-title",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has a title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/taxonomy/term/35?page=1\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹‹</span>\n          </a>",
+          "target": [
+            "a[href=\"/taxonomy/term/35?page=1\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/35/feed\" class=\"feed-icon\">\n  Subscribe to News\n</a>",
           "target": [
             ".feed-icon"
           ]
@@ -6840,9 +7579,27 @@
             }
           ],
           "impact": null,
+          "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"tag\" title=\"Severance Library Branch\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Severance Library Branch</span></a></li></ul>",
+          "target": [
+            "#node-356 > .node__content > .node__links > .links.inline"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
           "html": "<ul class=\"links inline\">",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline"
+            "#node-197 > .node__content > .node__links > .links.inline"
           ]
         },
         {
@@ -6861,6 +7618,42 @@
           "html": "<ul class=\"links inline\">",
           "target": [
             "#node-350 > .node__content > .node__links > .links.inline"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul class=\"links inline\">",
+          "target": [
+            "#node-227 > .node__content > .node__links > .links.inline"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul class=\"pager__items js-pager__items\">",
+          "target": [
+            ".pager__items"
           ]
         },
         {
@@ -7162,9 +7955,27 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"tag\" title=\"Severance Library Branch\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Severance Library Branch</span></a></li>",
+          "target": [
+            "#node-356 > .node__content > .node__links > .links.inline > .node-readmore"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<li class=\"node-readmore\">",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore"
+            "#node-197 > .node__content > .node__links > .links.inline > .node-readmore"
           ]
         },
         {
@@ -7183,6 +7994,60 @@
           "html": "<li class=\"node-readmore\">",
           "target": [
             "#node-350 > .node__content > .node__links > .links.inline > .node-readmore"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"node-readmore\">",
+          "target": [
+            "#node-227 > .node__content > .node__links > .links.inline > .node-readmore"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"pager__item pager__item--previous\">\n          <a href=\"/taxonomy/term/35?page=1\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹‹</span>\n          </a>\n        </li>",
+          "target": [
+            ".pager__item--previous"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"pager__item is-active\">\n          Page 3        </li>",
+          "target": [
+            ".is-active"
           ]
         },
         {
@@ -9155,7 +10020,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"view view-taxonomy-term view-id-taxonomy_term view-display-id-page_1 js-view-dom-id-177e42e15a668b580d6add23b6da178b8b768f199ee9128c524a4db6723fa447\">",
+          "html": "<div class=\"view view-taxonomy-term view-id-taxonomy_term view-display-id-page_1 js-view-dom-id-f6d3b9424354cf956b27741737fede76e819f436c6152036ac5eb5a0c77060cc\">",
           "target": [
             ".view"
           ]
@@ -9175,7 +10040,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"view-header\">",
+          "html": "<div class=\"view-header\">\n      <div about=\"/taxonomy/term/35\" id=\"taxonomy-term-35\" class=\"taxonomy-term vocabulary-article-category\">\n  \n    \n  <div class=\"content\">\n    \n  </div>\n</div>\n\n    </div>",
           "target": [
             ".view-header"
           ]
@@ -9195,9 +10060,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div about=\"/taxonomy/term/59\" typeof=\"schema:Thing\" id=\"taxonomy-term-59\" class=\"taxonomy-term vocabulary-tags\">\n  \n      <span property=\"schema:name\" content=\"Request for Proposal\" class=\"rdf-meta hidden\"></span>\n\n  <div class=\"content\">\n    \n  </div>\n</div>",
+          "html": "<div about=\"/taxonomy/term/35\" id=\"taxonomy-term-35\" class=\"taxonomy-term vocabulary-article-category\">\n  \n    \n  <div class=\"content\">\n    \n  </div>\n</div>",
           "target": [
-            "#taxonomy-term-59"
+            "#taxonomy-term-35"
           ]
         },
         {
@@ -9217,7 +10082,7 @@
           "impact": null,
           "html": "<div class=\"content\">\n    \n  </div>",
           "target": [
-            "#taxonomy-term-59 > .content"
+            "#taxonomy-term-35 > .content"
           ]
         },
         {
@@ -9275,9 +10140,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"471\" about=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" typeof=\"schema:Article\" id=\"node-471\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
+          "html": "<article data-history-node-id=\"356\" about=\"/about-us/learn-more/news/severance-library-branch\" typeof=\"schema:Article\" id=\"node-356\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
           "target": [
-            "#node-471"
+            "#node-356"
           ]
         },
         {
@@ -9295,9 +10160,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">",
+          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Severance Library Branch</span>\n</a>\n    </h2>",
           "target": [
-            "#node-471 > .node-title"
+            "#node-356 > .node-title"
           ]
         },
         {
@@ -9315,9 +10180,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"bookmark\">",
+          "html": "<a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Severance Library Branch</span>\n</a>",
           "target": [
-            "#node-471 > .node-title > a[rel=\"bookmark\"]"
+            "#node-356 > .node-title > a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -9335,9 +10200,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Naming Convention, Logo Design, and Branding Refresh</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Severance Library Branch</span>",
           "target": [
-            "#node-471 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+            "#node-356 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
           ]
         },
         {
@@ -9357,7 +10222,7 @@
           "impact": null,
           "html": "<div class=\"node__content\">",
           "target": [
-            "#node-471 > .node__content"
+            "#node-356 > .node__content"
           ]
         },
         {
@@ -9377,7 +10242,7 @@
           "impact": null,
           "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
+            "#node-356 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
           ]
         },
         {
@@ -9395,9 +10260,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (“RFP”). This RFP is issued to provide naming convention, logo design, and branding refresh for the library district.</p>",
+          "html": "<p>",
           "target": [
-            ".clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
+            "#node-356 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
           ]
         },
         {
@@ -9415,9 +10280,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, Director, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
+          "html": "<p>Topics of Discussion include,&nbsp;</p>",
           "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
+            "#node-356 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
           ]
         },
         {
@@ -9435,9 +10300,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
+          "html": "<div class=\"node__links\">\n    <ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"tag\" title=\"Severance Library Branch\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Severance Library Branch</span></a></li></ul>  </div>",
           "target": [
-            "p:nth-child(2) > a"
+            "#node-356 > .node__content > .node__links"
           ]
         },
         {
@@ -9455,9 +10320,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Deadline for Questions: Friday, June 16, 2023.</p>",
+          "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"tag\" title=\"Severance Library Branch\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Severance Library Branch</span></a></li></ul>",
           "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
+            "#node-356 > .node__content > .node__links > .links.inline"
           ]
         },
         {
@@ -9475,9 +10340,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Below are the questions we have received from potential consultants, along with our responses:</p>",
+          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"tag\" title=\"Severance Library Branch\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Severance Library Branch</span></a></li>",
           "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
+            "#node-356 > .node__content > .node__links > .links.inline > .node-readmore"
           ]
         },
         {
@@ -9495,9 +10360,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-tags field--type-entity-reference field--label-above\">",
+          "html": "<a href=\"/about-us/learn-more/news/severance-library-branch\" rel=\"tag\" title=\"Severance Library Branch\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Severance Library Branch</span></a>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above"
+            "a[title=\"Severance Library Branch\"]"
           ]
         },
         {
@@ -9515,169 +10380,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__label\">Tags</div>",
+          "html": "<span class=\"visually-hidden\"> about Severance Library Branch</span>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__label"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__items\">\n                                        <div class=\"field__item\"><a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a></div>\n                                </div>",
-          "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a></div>",
-          "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
-          "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__links\">",
-          "target": [
-            "#node-471 > .node__content > .node__links"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul class=\"links inline\">",
-          "target": [
-            "#node-471 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"node-readmore\">",
-          "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"tag\" title=\"Request for Proposal for Naming Convention, Logo Design, and Branding Refresh\" hreflang=\"en\">",
-          "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\"> about Request for Proposal for Naming Convention, Logo Design, and Branding Refresh</span>",
-          "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > span"
+            "a[title=\"Severance Library Branch\"] > .visually-hidden"
           ]
         },
         {
@@ -9698,6 +10403,406 @@
           "html": "<div class=\"views-row\">",
           "target": [
             ".views-row:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"197\" about=\"/about-us/learn-more/news/clearview-library-now-offers-online-crafting-classes\" typeof=\"schema:Article\" id=\"node-197\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
+          "target": [
+            "#node-197"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">",
+          "target": [
+            "#node-197 > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/clearview-library-now-offers-online-crafting-classes\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Now Offers Online Crafting Classes</span>\n</a>",
+          "target": [
+            "#node-197 > .node-title > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Now Offers Online Crafting Classes</span>",
+          "target": [
+            "#node-197 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__content\">",
+          "target": [
+            "#node-197 > .node__content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "target": [
+            "#node-197 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>The Clearview Library District offers <a href=\"https://www.creativebug.com/lib/clearviewlibrary\" rel=\"noopener\" target=\"_blank\">Creativebug</a>, an online platform that hosts art and craft classes and resources.</p>",
+          "target": [
+            "#node-197 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://www.creativebug.com/lib/clearviewlibrary\" rel=\"noopener\" target=\"_blank\">Creativebug</a>",
+          "target": [
+            "a[rel=\"noopener\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>With a Clearview library card, community members will have unlimited access to thousands of online art and crafting tutorials, including watercolor, paper art, knitting, crocheting, quilting, lettering, ceramics, and baking.</p>",
+          "target": [
+            "#node-197 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-tags field--type-entity-reference field--label-above\">",
+          "target": [
+            "#node-197 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label\">Tags</div>",
+          "target": [
+            "#node-197 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__label"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__items\">\n                                        <div class=\"field__item\"><a href=\"/taxonomy/term/52\" property=\"schema:about\" hreflang=\"en\">downloads</a></div>\n                                </div>",
+          "target": [
+            "#node-197 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/52\" property=\"schema:about\" hreflang=\"en\">downloads</a></div>",
+          "target": [
+            "#node-197 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/taxonomy/term/52\" property=\"schema:about\" hreflang=\"en\">downloads</a>",
+          "target": [
+            "a[href=\"/taxonomy/term/52\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__links\">",
+          "target": [
+            "#node-197 > .node__content > .node__links"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul class=\"links inline\">",
+          "target": [
+            "#node-197 > .node__content > .node__links > .links.inline"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"node-readmore\">",
+          "target": [
+            "#node-197 > .node__content > .node__links > .links.inline > .node-readmore"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/clearview-library-now-offers-online-crafting-classes\" rel=\"tag\" title=\"Clearview Library Now Offers Online Crafting Classes\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Clearview Library Now Offers Online Crafting Classes</span></a>",
+          "target": [
+            "#node-197 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"visually-hidden\"> about Clearview Library Now Offers Online Crafting Classes</span>",
+          "target": [
+            "#node-197 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > .visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"views-row\">",
+          "target": [
+            ".views-row:nth-child(3)"
           ]
         },
         {
@@ -9877,7 +10982,7 @@
           "impact": null,
           "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
           "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -9917,7 +11022,7 @@
           "impact": null,
           "html": "<p>Deadline for Submission: No later than Saturday, March 19, 2022, 5:00 pm.</p>",
           "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -10017,7 +11122,7 @@
           "impact": null,
           "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
           "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
+            "a[href=\"/taxonomy/term/59\"]"
           ]
         },
         {
@@ -10117,7 +11222,7 @@
           "impact": null,
           "html": "<span class=\"visually-hidden\"> about Request for Proposal for Network Services and Hardware</span>",
           "target": [
-            "#node-350 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > span"
+            "#node-350 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > .visually-hidden"
           ]
         },
         {
@@ -10135,7 +11240,387 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"feed-icons\">\n      <a href=\"https://clearviewlibrary.org/taxonomy/term/59/feed\" class=\"feed-icon\">\n  Subscribe to Request for Proposal\n</a>\n\n    </div>",
+          "html": "<div class=\"views-row\">",
+          "target": [
+            ".views-row:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"227\" about=\"/about-us/learn-more/news/library-and-school-district-partner-bring-e-books-students\" typeof=\"schema:Article\" id=\"node-227\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
+          "target": [
+            "#node-227"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">",
+          "target": [
+            "#node-227 > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/library-and-school-district-partner-bring-e-books-students\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Library and School District Partner to Bring e-Books to Students</span>\n</a>",
+          "target": [
+            "#node-227 > .node-title > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Library and School District Partner to Bring e-Books to Students</span>",
+          "target": [
+            "#node-227 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__content\">",
+          "target": [
+            "#node-227 > .node__content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "target": [
+            "#node-227 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__links\">",
+          "target": [
+            "#node-227 > .node__content > .node__links"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul class=\"links inline\">",
+          "target": [
+            "#node-227 > .node__content > .node__links > .links.inline"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"node-readmore\">",
+          "target": [
+            "#node-227 > .node__content > .node__links > .links.inline > .node-readmore"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/library-and-school-district-partner-bring-e-books-students\" rel=\"tag\" title=\"Library and School District Partner to Bring e-Books to Students\" hreflang=\"en\">",
+          "target": [
+            "#node-227 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"visually-hidden\"> about Library and School District Partner to Bring e-Books to Students</span>",
+          "target": [
+            "#node-227 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > .visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
+          "target": [
+            ".pager"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
+          "target": [
+            "#pagination-heading"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul class=\"pager__items js-pager__items\">",
+          "target": [
+            ".pager__items"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"pager__item pager__item--previous\">\n          <a href=\"/taxonomy/term/35?page=1\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹‹</span>\n          </a>\n        </li>",
+          "target": [
+            ".pager__item--previous"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/taxonomy/term/35?page=1\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹‹</span>\n          </a>",
+          "target": [
+            "a[href=\"/taxonomy/term/35?page=1\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"visually-hidden\">Previous page</span>",
+          "target": [
+            "a[href=\"/taxonomy/term/35?page=1\"] > .visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"pager__item is-active\">\n          Page 3        </li>",
+          "target": [
+            ".is-active"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"feed-icons\">\n      <a href=\"https://clearviewlibrary.org/taxonomy/term/35/feed\" class=\"feed-icon\">\n  Subscribe to News\n</a>\n\n    </div>",
           "target": [
             ".feed-icons"
           ]
@@ -10155,7 +11640,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/59/feed\" class=\"feed-icon\">\n  Subscribe to Request for Proposal\n</a>",
+          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/35/feed\" class=\"feed-icon\">\n  Subscribe to News\n</a>",
           "target": [
             ".feed-icon"
           ]
@@ -10575,7 +12060,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -12206,6 +13691,38 @@
   "incomplete": [],
   "violations": [
     {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
+          "target": [
+            "#pagination-heading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
       "id": "landmark-unique",
       "impact": "moderate",
       "tags": [
@@ -12216,35 +13733,6 @@
       "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
       "nodes": [
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
         {
           "any": [
             {
@@ -12309,5 +13797,5 @@
       ]
     }
   ],
-  "documentTitle": "Request for Proposal | Clearview Library"
+  "documentTitle": "News | Clearview Library"
 }

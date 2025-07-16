@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:30:32.203Z",
-  "url": "https://clearviewlibrary.org/node/284",
+  "timestamp": "2025-07-16T19:43:50.946Z",
+  "url": "https://clearviewlibrary.org/node/282",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,22 +264,6 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -2560,6 +2544,55 @@
       ]
     },
     {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "target": [
+            "img[alt=\"Facebook Logo\"]"
+          ]
+        }
+      ]
+    },
+    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2648,13 +2681,13 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Blue Summit Creative</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -3016,7 +3049,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Blue Summit Creative</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3091,7 +3124,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: 628 Main Street, Windsor<br>\nWebsite: <a href=\"http://owengl.com/\">http://owengl.com</a>/<br>\nPhone: <a href=\"tel:970-395-9727\">970-395-9727</a><br>\nYear Established: 2006</p>",
+          "html": "<p>Location: Online<br>\nWebsite: <a href=\"https://www.bluesummitcreative.com/\">www.bluesummitcreative.com</a><br>\nPhone: <a href=\"tel:970-480-5878\">970-480-5878</a><br>\nYear Established: 2019</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -3116,9 +3149,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"http://owengl.com/\">http://owengl.com</a>",
+          "html": "<a href=\"https://www.bluesummitcreative.com/\">www.bluesummitcreative.com</a>",
           "target": [
-            "a[href$=\"owengl.com/\"]"
+            "p:nth-child(3) > a:nth-child(2)"
           ]
         },
         {
@@ -3141,9 +3174,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"tel:970-395-9727\">970-395-9727</a>",
+          "html": "<a href=\"tel:970-480-5878\">970-480-5878</a>",
           "target": [
-            "a[href=\"tel:970-395-9727\"]"
+            "a[href=\"tel:970-480-5878\"]"
           ]
         },
         {
@@ -3902,7 +3935,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4023,7 +4056,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Blue Summit Creative</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4041,7 +4074,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4251,7 +4284,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Blue Summit Creative</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4269,7 +4302,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4435,9 +4468,35 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Betty Vanek\" data-entity-type=\"file\" data-entity-uuid=\"9c0f4d8f-0377-47a2-b7b8-274855ab53fa\" height=\"300\" src=\"/sites/default/files/inline-images/Health%20Esteem%20LLC%20Betty%20Vanek.jpg\" width=\"187\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Chris Chavez\" data-entity-type=\"file\" data-entity-uuid=\"93877b27-917f-4f02-b986-b634b2ca2cd5\" height=\"300\" src=\"/sites/default/files/inline-images/Chris%20Chavez%20Blue%20Summit%20Creative.jpg\" width=\"298\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "target": [
+            "img[alt=\"Facebook Logo\"]"
           ]
         },
         {
@@ -4614,9 +4673,27 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Betty Vanek\" data-entity-type=\"file\" data-entity-uuid=\"9c0f4d8f-0377-47a2-b7b8-274855ab53fa\" height=\"300\" src=\"/sites/default/files/inline-images/Health%20Esteem%20LLC%20Betty%20Vanek.jpg\" width=\"187\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Chris Chavez\" data-entity-type=\"file\" data-entity-uuid=\"93877b27-917f-4f02-b986-b634b2ca2cd5\" height=\"300\" src=\"/sites/default/files/inline-images/Chris%20Chavez%20Blue%20Summit%20Creative.jpg\" width=\"298\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "target": [
+            "img[alt=\"Facebook Logo\"]"
           ]
         },
         {
@@ -5235,6 +5312,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "breadcrumb"
               },
               "relatedNodes": [],
@@ -5290,6 +5388,27 @@
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
           ]
         },
         {
@@ -5768,9 +5887,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"http://owengl.com/\">http://owengl.com</a>",
+          "html": "<a href=\"https://www.bluesummitcreative.com/\">www.bluesummitcreative.com</a>",
           "target": [
-            "a[href$=\"owengl.com/\"]"
+            "p:nth-child(3) > a:nth-child(2)"
           ]
         },
         {
@@ -5794,9 +5913,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"tel:970-395-9727\">970-395-9727</a>",
+          "html": "<a href=\"tel:970-480-5878\">970-480-5878</a>",
           "target": [
-            "a[href=\"tel:970-395-9727\"]"
+            "a[href=\"tel:970-480-5878\"]"
           ]
         },
         {
@@ -5820,9 +5939,35 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.linkedin.com/in/betty-vanek-ph-d-209b4123/\"><img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a>",
+          "html": "<a href=\"https://www.facebook.com/bluesummitco\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
           "target": [
-            "p:nth-child(4) > a"
+            "p:nth-child(4) > a:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://www.linkedin.com/company/bluesummitco\"><img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a>",
+          "target": [
+            "p:nth-child(4) > a:nth-child(2)"
           ]
         },
         {
@@ -7536,9 +7681,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Betty Vanek\" data-entity-type=\"file\" data-entity-uuid=\"9c0f4d8f-0377-47a2-b7b8-274855ab53fa\" height=\"300\" src=\"/sites/default/files/inline-images/Health%20Esteem%20LLC%20Betty%20Vanek.jpg\" width=\"187\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Chris Chavez\" data-entity-type=\"file\" data-entity-uuid=\"93877b27-917f-4f02-b986-b634b2ca2cd5\" height=\"300\" src=\"/sites/default/files/inline-images/Chris%20Chavez%20Blue%20Summit%20Creative.jpg\" width=\"298\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "target": [
+            "img[alt=\"Facebook Logo\"]"
           ]
         },
         {
@@ -7670,7 +7833,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Blue Summit Creative</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9035,7 +9198,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Blue Summit Creative</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -9055,7 +9218,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Blue Summit Creative</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -9075,7 +9238,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Health Esteem LLC</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Blue Summit Creative</span>",
           "target": [
             ".field--name-title"
           ]
@@ -9215,9 +9378,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"284\" about=\"/node/284\" id=\"node-284\" class=\"node node--type-podcast-episode node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"282\" about=\"/node/282\" id=\"node-282\" class=\"node node--type-podcast-episode node--view-mode-full\">",
           "target": [
-            "#node-284"
+            "#node-282"
           ]
         },
         {
@@ -9255,7 +9418,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALHealthEsteem0321.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
+          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALBlueSummitCreative1220.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
           "target": [
             ".field--name-field-podcast-file"
           ]
@@ -9275,7 +9438,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALHealthEsteem0321.mp3\" type=\"audio/mpeg\">\n  </audio>",
+          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALBlueSummitCreative1220.mp3\" type=\"audio/mpeg\">\n  </audio>",
           "target": [
             "audio"
           ]
@@ -9295,7 +9458,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<source src=\"/sites/default/files/FINALHealthEsteem0321.mp3\" type=\"audio/mpeg\">",
+          "html": "<source src=\"/sites/default/files/FINALBlueSummitCreative1220.mp3\" type=\"audio/mpeg\">",
           "target": [
             "source"
           ]
@@ -9375,7 +9538,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Betty Vanek\" data-entity-type=\"file\" data-entity-uuid=\"9c0f4d8f-0377-47a2-b7b8-274855ab53fa\" height=\"300\" src=\"/sites/default/files/inline-images/Health%20Esteem%20LLC%20Betty%20Vanek.jpg\" width=\"187\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img alt=\"Chris Chavez\" data-entity-type=\"file\" data-entity-uuid=\"93877b27-917f-4f02-b986-b634b2ca2cd5\" height=\"300\" src=\"/sites/default/files/inline-images/Chris%20Chavez%20Blue%20Summit%20Creative.jpg\" width=\"298\" loading=\"lazy\" class=\"align-left\">",
           "target": [
             ".align-left"
           ]
@@ -9395,7 +9558,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: 628 Main Street, Windsor<br>\nWebsite: <a href=\"http://owengl.com/\">http://owengl.com</a>/<br>\nPhone: <a href=\"tel:970-395-9727\">970-395-9727</a><br>\nYear Established: 2006</p>",
+          "html": "<p>Location: Online<br>\nWebsite: <a href=\"https://www.bluesummitcreative.com/\">www.bluesummitcreative.com</a><br>\nPhone: <a href=\"tel:970-480-5878\">970-480-5878</a><br>\nYear Established: 2019</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -9435,9 +9598,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"http://owengl.com/\">http://owengl.com</a>",
+          "html": "<a href=\"https://www.bluesummitcreative.com/\">www.bluesummitcreative.com</a>",
           "target": [
-            "a[href$=\"owengl.com/\"]"
+            "p:nth-child(3) > a:nth-child(2)"
           ]
         },
         {
@@ -9475,9 +9638,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"tel:970-395-9727\">970-395-9727</a>",
+          "html": "<a href=\"tel:970-480-5878\">970-480-5878</a>",
           "target": [
-            "a[href=\"tel:970-395-9727\"]"
+            "a[href=\"tel:970-480-5878\"]"
           ]
         },
         {
@@ -9515,7 +9678,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><a href=\"https://www.linkedin.com/in/betty-vanek-ph-d-209b4123/\"><img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a></p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -9535,9 +9698,49 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.linkedin.com/in/betty-vanek-ph-d-209b4123/\"><img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a>",
+          "html": "<a href=\"https://www.facebook.com/bluesummitco\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
           "target": [
-            "p:nth-child(4) > a"
+            "p:nth-child(4) > a:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "target": [
+            "img[alt=\"Facebook Logo\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://www.linkedin.com/company/bluesummitco\"><img alt=\"Linkin Logo\" src=\"/sites/default/files/inline-images/Linkedin_0.png\"></a>",
+          "target": [
+            "p:nth-child(4) > a:nth-child(2)"
           ]
         },
         {
@@ -9995,7 +10198,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -11641,35 +11844,6 @@
             {
               "id": "landmark-is-unique",
               "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
                 "role": "complementary",
                 "accessibleText": null
               },
@@ -11770,5 +11944,5 @@
       ]
     }
   ],
-  "documentTitle": "Clearview on Business: Health Esteem LLC | Clearview Library"
+  "documentTitle": "Clearview on Business: Blue Summit Creative | Clearview Library"
 }

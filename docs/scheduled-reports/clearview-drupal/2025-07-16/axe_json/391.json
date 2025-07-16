@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:31:58.959Z",
-  "url": "https://clearviewlibrary.org/node?page=10",
+  "timestamp": "2025-07-16T19:45:42.682Z",
+  "url": "https://clearviewlibrary.org/taxonomy/term/32?page=4",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -431,6 +431,23 @@
       "nodes": []
     },
     {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": []
+    },
+    {
       "id": "marquee",
       "impact": null,
       "tags": [
@@ -479,6 +496,19 @@
       "description": "Ensure <object> elements have alternative text",
       "help": "<object> elements must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/object-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": null,
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=axeAPI",
       "nodes": []
     },
     {
@@ -830,32 +860,6 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>",
-          "target": [
-            "a[href=\"?page=10\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -1047,24 +1051,6 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"pager__item pager__item--ellipsis\" role=\"presentation\">…</li>",
-          "target": [
-            ".pager__item--ellipsis"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-allowed-role",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is allowed for given element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -1210,24 +1196,6 @@
           "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
           "target": [
             ".pager"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>",
-          "target": [
-            "a[href=\"?page=10\"]"
           ]
         },
         {
@@ -1421,24 +1389,6 @@
             }
           ],
           "impact": null,
-          "html": "<li class=\"pager__item pager__item--ellipsis\" role=\"presentation\">…</li>",
-          "target": [
-            ".pager__item--ellipsis"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "deprecatedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is not deprecated"
-            }
-          ],
-          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -1547,7 +1497,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node\">",
+          "html": "<body class=\"_0829669 path-taxonomy\">",
           "target": [
             "body"
           ]
@@ -1597,41 +1547,9 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span aria-hidden=\"true\">« First</span>",
+          "html": "<span aria-hidden=\"true\">‹‹</span>",
           "target": [
-            "a[href=\"?page=0\"] > span[aria-hidden=\"true\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "focusable-modal-open",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "No focusable elements while a modal is open"
-            },
-            {
-              "id": "focusable-disabled",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "No focusable elements contained within element"
-            },
-            {
-              "id": "focusable-not-tabbable",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "No focusable elements contained within element"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<span aria-hidden=\"true\">‹ Previous</span>",
-          "target": [
-            "a[title=\"Go to previous page\"] > span[aria-hidden=\"true\"]"
+            "span[aria-hidden=\"true\"]"
           ]
         }
       ]
@@ -1702,24 +1620,6 @@
           "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
           "target": [
             ".pager"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>",
-          "target": [
-            "a[href=\"?page=10\"]"
           ]
         },
         {
@@ -1898,24 +1798,6 @@
           "html": "<nav class=\"pager\" role=\"navigation\" aria-labelledby=\"pagination-heading\">",
           "target": [
             ".pager"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "All required ARIA attributes are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item pager__item--ellipsis\" role=\"presentation\">…</li>",
-          "target": [
-            ".pager__item--ellipsis"
           ]
         },
         {
@@ -2243,38 +2125,6 @@
             }
           ],
           "impact": null,
-          "html": "<li class=\"pager__item pager__item--ellipsis\" role=\"presentation\">…</li>",
-          "target": [
-            ".pager__item--ellipsis"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "invalidrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is valid"
-            },
-            {
-              "id": "abstractrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Abstract roles are not used"
-            },
-            {
-              "id": "unsupportedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is supported"
-            }
-          ],
-          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -2547,38 +2397,6 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>",
-          "target": [
-            "a[href=\"?page=10\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -2731,24 +2549,6 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>",
-          "target": [
-            "a[href=\"?page=10\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -2875,37 +2675,19 @@
                   ]
                 },
                 {
-                  "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Adds Genealogy Databases</span>\n</a>\n    </h2>",
-                  "target": [
-                    "#node-211 > .node-title"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Nathan Triz</span>\n</a>\n    </h2>",
-                  "target": [
-                    "#node-206 > .node-title"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Hailey Tolbert</span>\n</a>\n    </h2>",
-                  "target": [
-                    "#node-201 > .node-title"
-                  ]
-                },
-                {
                   "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Rebecca Robbins</span>\n</a>\n    </h2>",
                   "target": [
-                    "#node-192 > .node-title"
+                    ".node-title"
                   ]
                 },
                 {
-                  "html": "<h4 id=\"pagination-heading\" class=\"visually-hidden\">Pagination</h4>",
+                  "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
                   "target": [
                     "#pagination-heading"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -3242,559 +3024,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Adds Genealogy Databases</span>",
-          "target": [
-            "#node-211 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "#node-211 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"tag\" title=\"Clearview Library Adds Genealogy Databases\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Clearview Library Adds Genealogy Databases</span></a>",
-          "target": [
-            "#node-211 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Nathan Triz</span>",
-          "target": [
-            "#node-206 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Meet Customer Service Supervisor Nathan Triz:</p>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Hometown:</strong> Key West, Fla., but have lived in Windsor for 10 years.</p>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Hometown:</strong>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Interests:</strong> Live music (both attending and performing), songwriting, gaming (video and tabletop), yoga and exercise, preparing to become a dad!</p>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Interests:</strong>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"tag\" title=\"Staff Spotlight: Nathan Triz\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Nathan Triz</span></a>",
-          "target": [
-            "a[title=\"Staff Spotlight: Nathan Triz\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Hailey Tolbert</span>",
-          "target": [
-            "#node-201 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Meet Customer Service Specialist Hailey Tolbert:</p>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Hometown:</strong> Las Vegas, Nevada</p>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Hometown:</strong>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Interests:</strong> Film, photography, and painting</p>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Interests:</strong>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Book:</strong> <a href=\"https://pika.clearviewlibrary.org/GroupedWork/0f19ba70-78f0-76d9-f318-4d127385508c/Home?searchId=6870&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>Flowers for Algernon</em></a> by Daniel Keyes</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Book:</strong>",
-          "target": [
-            "p:nth-child(5) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Flowers for Algernon</em>",
-          "target": [
-            "a > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"tag\" title=\"Staff Spotlight: Hailey Tolbert\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Hailey Tolbert</span></a>",
-          "target": [
-            "#node-201 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Rebecca Robbins</span>",
           "target": [
-            "#node-192 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+            ".field--name-title"
           ]
         },
         {
@@ -3819,7 +3051,7 @@
           "impact": null,
           "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.&nbsp;</em>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1) > em"
+            "em"
           ]
         },
         {
@@ -3844,7 +3076,7 @@
           "impact": null,
           "html": "<p>Meet Customer Service Specialist Rebecca Robbins:</p>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
+            "p:nth-child(2)"
           ]
         },
         {
@@ -3869,7 +3101,7 @@
           "impact": null,
           "html": "<p><strong>Hometown:</strong> Sturgis, South Dakota, but I would say I am a Windsor kid.</p>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -3894,7 +3126,7 @@
           "impact": null,
           "html": "<strong>Hometown:</strong>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3) > strong"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -3919,7 +3151,7 @@
           "impact": null,
           "html": "<p><strong>Interests:</strong> I love skiing, talking about American History, and supporting the local music scene.</p>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -3944,7 +3176,7 @@
           "impact": null,
           "html": "<strong>Interests:</strong>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4) > strong"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -3969,7 +3201,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"tag\" title=\"Staff Spotlight: Rebecca Robbins\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Rebecca Robbins</span></a>",
           "target": [
-            "#node-192 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+            "a[rel=\"tag\"]"
           ]
         },
         {
@@ -3977,274 +3209,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span aria-hidden=\"true\">« First</span>",
+          "html": "<li class=\"pager__item is-active\">\n          Page 5        </li>",
           "target": [
-            "a[href=\"?page=0\"] > span[aria-hidden=\"true\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span aria-hidden=\"true\">‹ Previous</span>",
-          "target": [
-            "a[title=\"Go to previous page\"] > span[aria-hidden=\"true\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=2\" title=\"Go to page 3\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>3</a>",
-          "target": [
-            "a[href=\"?page=2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=3\" title=\"Go to page 4\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>4</a>",
-          "target": [
-            "a[href=\"?page=3\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=4\" title=\"Go to page 5\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>5</a>",
-          "target": [
-            "a[href=\"?page=4\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=5\" title=\"Go to page 6\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>6</a>",
-          "target": [
-            "a[href=\"?page=5\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=6\" title=\"Go to page 7\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>7</a>",
-          "target": [
-            "a[href=\"?page=6\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=7\" title=\"Go to page 8\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>8</a>",
-          "target": [
-            "a[href=\"?page=7\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=8\" title=\"Go to page 9\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>9</a>",
-          "target": [
-            "a[href=\"?page=8\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=9\" title=\"Go to page 10\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>10</a>",
-          "target": [
-            "a[title=\"Go to page 10\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>",
-          "target": [
-            "a[href=\"?page=10\"]"
+            ".is-active"
           ]
         },
         {
@@ -4960,7 +3942,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h4 id=\"pagination-heading\" class=\"visually-hidden\">Pagination</h4>",
+          "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
           "target": [
             "#pagination-heading"
           ]
@@ -4978,7 +3960,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -5081,63 +4063,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Adds Genealogy Databases</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-211 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Nathan Triz</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-206 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Hailey Tolbert</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-201 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Rebecca Robbins</span>\n</a>\n    </h2>",
           "target": [
-            "#node-192 > .node-title"
+            ".node-title"
           ]
         },
         {
@@ -5153,7 +4081,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h4 id=\"pagination-heading\" class=\"visually-hidden\">Pagination</h4>",
+          "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
           "target": [
             "#pagination-heading"
           ]
@@ -5171,7 +4099,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -5295,31 +4223,13 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(1) > div:nth-child(1) > article > h2:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div > article > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(1) > div:nth-child(2) > article > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(1) > div:nth-child(3) > article > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(1) > div:nth-child(4) > article > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > nav:nth-child(2) > h4:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > nav:nth-child(3) > h4:nth-child(1)"
                     ],
                     "level": 4
                   },
@@ -5381,63 +4291,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Adds Genealogy Databases</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-211 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Nathan Triz</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-206 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Hailey Tolbert</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-201 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Rebecca Robbins</span>\n</a>\n    </h2>",
           "target": [
-            "#node-192 > .node-title"
+            ".node-title"
           ]
         },
         {
@@ -5453,7 +4309,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -6330,6 +5186,27 @@
             {
               "id": "landmark-is-unique",
               "data": {
+                "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
                 "role": "main",
                 "accessibleText": null
               },
@@ -6394,6 +5271,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "mobile utilities menu"
               },
               "relatedNodes": [],
@@ -6428,49 +5326,6 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p><strong>Favorite Book:</strong> <a href=\"https://pika.clearviewlibrary.org/GroupedWork/0f19ba70-78f0-76d9-f318-4d127385508c/Home?searchId=6870&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>Flowers for Algernon</em></a> by Daniel Keyes</p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/0f19ba70-78f0-76d9-f318-4d127385508c/Home?searchId=6870&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>Flowers for Algernon</em></a>",
-          "target": [
-            "p:nth-child(5) > a"
           ]
         }
       ]
@@ -6881,212 +5736,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Adds Genealogy Databases</span>\n</a>",
-          "target": [
-            "#node-211 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"tag\" title=\"Clearview Library Adds Genealogy Databases\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Clearview Library Adds Genealogy Databases</span></a>",
-          "target": [
-            "#node-211 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Nathan Triz</span>\n</a>",
-          "target": [
-            "#node-206 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"tag\" title=\"Staff Spotlight: Nathan Triz\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Nathan Triz</span></a>",
-          "target": [
-            "a[title=\"Staff Spotlight: Nathan Triz\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Hailey Tolbert</span>\n</a>",
-          "target": [
-            "#node-201 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/0f19ba70-78f0-76d9-f318-4d127385508c/Home?searchId=6870&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>Flowers for Algernon</em></a>",
-          "target": [
-            "p:nth-child(5) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"tag\" title=\"Staff Spotlight: Hailey Tolbert\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Hailey Tolbert</span></a>",
-          "target": [
-            "#node-201 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Rebecca Robbins</span>\n</a>",
           "target": [
-            "#node-192 > .node-title > a[rel=\"bookmark\"]"
+            "a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -7119,7 +5771,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"tag\" title=\"Staff Spotlight: Rebecca Robbins\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Rebecca Robbins</span></a>",
           "target": [
-            "#node-192 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+            "a[rel=\"tag\"]"
           ]
         },
         {
@@ -7150,339 +5802,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"?page=0\" title=\"Go to first page\">\n            <span class=\"visually-hidden\">First page</span>\n            <span aria-hidden=\"true\">« First</span>\n          </a>",
+          "html": "<a href=\"/taxonomy/term/32?page=3\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹‹</span>\n          </a>",
           "target": [
-            "a[href=\"?page=0\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=9\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹ Previous</span>\n          </a>",
-          "target": [
-            "a[title=\"Go to previous page\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=2\" title=\"Go to page 3\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>3</a>",
-          "target": [
-            "a[href=\"?page=2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=3\" title=\"Go to page 4\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>4</a>",
-          "target": [
-            "a[href=\"?page=3\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=4\" title=\"Go to page 5\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>5</a>",
-          "target": [
-            "a[href=\"?page=4\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=5\" title=\"Go to page 6\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>6</a>",
-          "target": [
-            "a[href=\"?page=5\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=6\" title=\"Go to page 7\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>7</a>",
-          "target": [
-            "a[href=\"?page=6\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=7\" title=\"Go to page 8\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>8</a>",
-          "target": [
-            "a[href=\"?page=7\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=8\" title=\"Go to page 9\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>9</a>",
-          "target": [
-            "a[href=\"?page=8\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=9\" title=\"Go to page 10\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>10</a>",
-          "target": [
-            "a[title=\"Go to page 10\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>",
-          "target": [
-            "a[href=\"?page=10\"]"
+            "a[href=\"/taxonomy/term/32?page=3\"]"
           ]
         },
         {
@@ -7506,7 +5828,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/rss.xml\" class=\"feed-icon\">\n  Subscribe to \n</a>",
+          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/32/feed\" class=\"feed-icon\">\n  Subscribe to Staff Spotlight\n</a>",
           "target": [
             ".feed-icon"
           ]
@@ -8269,7 +6591,7 @@
     },
     {
       "id": "list",
-      "impact": "serious",
+      "impact": null,
       "tags": [
         "cat.structure",
         "wcag2a",
@@ -8330,63 +6652,27 @@
             }
           ],
           "impact": null,
-          "html": "<ul class=\"links inline\">",
-          "target": [
-            "#node-211 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"tag\" title=\"Staff Spotlight: Nathan Triz\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Nathan Triz</span></a></li></ul>",
-          "target": [
-            "#node-206 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"tag\" title=\"Staff Spotlight: Hailey Tolbert\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Hailey Tolbert</span></a></li></ul>",
-          "target": [
-            "#node-201 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
           "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"tag\" title=\"Staff Spotlight: Rebecca Robbins\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Rebecca Robbins</span></a></li></ul>",
           "target": [
-            "#node-192 > .node__content > .node__links > .links.inline"
+            ".links"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul class=\"pager__items js-pager__items\">",
+          "target": [
+            ".pager__items"
           ]
         },
         {
@@ -8688,63 +6974,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"tag\" title=\"Clearview Library Adds Genealogy Databases\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Clearview Library Adds Genealogy Databases</span></a></li>",
-          "target": [
-            "#node-211 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"tag\" title=\"Staff Spotlight: Nathan Triz\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Nathan Triz</span></a></li>",
-          "target": [
-            "#node-206 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"tag\" title=\"Staff Spotlight: Hailey Tolbert\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Hailey Tolbert</span></a></li>",
-          "target": [
-            "#node-201 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"tag\" title=\"Staff Spotlight: Rebecca Robbins\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Rebecca Robbins</span></a></li>",
           "target": [
-            "#node-192 > .node__content > .node__links > .links.inline > .node-readmore"
+            ".node-readmore"
           ]
         },
         {
@@ -8760,25 +6992,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"pager__item pager__item--first\">\n          <a href=\"?page=0\" title=\"Go to first page\">\n            <span class=\"visually-hidden\">First page</span>\n            <span aria-hidden=\"true\">« First</span>\n          </a>\n        </li>",
-          "target": [
-            ".pager__item--first"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item pager__item--previous\">\n          <a href=\"?page=9\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹ Previous</span>\n          </a>\n        </li>",
+          "html": "<li class=\"pager__item pager__item--previous\">\n          <a href=\"/taxonomy/term/32?page=3\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹‹</span>\n          </a>\n        </li>",
           "target": [
             ".pager__item--previous"
           ]
@@ -8796,151 +7010,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=2\" title=\"Go to page 3\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>3</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=3\" title=\"Go to page 4\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>4</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=4\" title=\"Go to page 5\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>5</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=5\" title=\"Go to page 6\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>6</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=6\" title=\"Go to page 7\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>7</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=7\" title=\"Go to page 8\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>8</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=8\" title=\"Go to page 9\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>9</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=9\" title=\"Go to page 10\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>10</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item is-active\">\n                                          <a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>\n        </li>",
+          "html": "<li class=\"pager__item is-active\">\n          Page 5        </li>",
           "target": [
             ".is-active"
           ]
@@ -9585,45 +7655,6 @@
           "html": "<img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\">",
           "target": [
             "img[alt=\"youtube icon\"]"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "presentation-role-conflict",
-      "impact": null,
-      "tags": [
-        "cat.aria",
-        "best-practice",
-        "ACT"
-      ],
-      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
-      "help": "Ensure elements marked as presentational are consistently ignored",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "is-element-focusable",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element is focusable."
-            },
-            {
-              "id": "has-global-aria-attribute",
-              "data": [],
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has global ARIA attributes: "
-            }
-          ],
-          "impact": null,
-          "html": "<li class=\"pager__item pager__item--ellipsis\" role=\"presentation\">…</li>",
-          "target": [
-            ".pager__item--ellipsis"
           ]
         }
       ]
@@ -10476,7 +8507,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".content"
+            ".prf-opac-search > .content"
           ]
         },
         {
@@ -10954,9 +8985,69 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"view view-frontpage view-id-frontpage view-display-id-page_1 js-view-dom-id-1b4bf179acd46922c5cc42e0a07dd4b7859fe417971c946065485634490ab24c\">",
+          "html": "<div class=\"view view-taxonomy-term view-id-taxonomy_term view-display-id-page_1 js-view-dom-id-6285f0d4d2b5089025474335294998d54756e2070b36142deb341e340ee75df1\">",
           "target": [
             ".view"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view-header\">\n      <div about=\"/taxonomy/term/32\" id=\"taxonomy-term-32\" class=\"taxonomy-term vocabulary-article-category\">\n  \n    \n  <div class=\"content\">\n    \n  </div>\n</div>\n\n    </div>",
+          "target": [
+            ".view-header"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div about=\"/taxonomy/term/32\" id=\"taxonomy-term-32\" class=\"taxonomy-term vocabulary-article-category\">\n  \n    \n  <div class=\"content\">\n    \n  </div>\n</div>",
+          "target": [
+            "#taxonomy-term-32"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"content\">\n    \n  </div>",
+          "target": [
+            "#taxonomy-term-32 > .content"
           ]
         },
         {
@@ -10996,1107 +9087,7 @@
           "impact": null,
           "html": "<div class=\"views-row\">",
           "target": [
-            ".views-row:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<article data-history-node-id=\"211\" about=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" typeof=\"schema:Article\" id=\"node-211\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
-          "target": [
-            "#node-211"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Adds Genealogy Databases</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-211 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Adds Genealogy Databases</span>\n</a>",
-          "target": [
-            "#node-211 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library Adds Genealogy Databases</span>",
-          "target": [
-            "#node-211 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__content\">",
-          "target": [
-            "#node-211 > .node__content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#node-211 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "#node-211 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__links\">",
-          "target": [
-            "#node-211 > .node__content > .node__links"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul class=\"links inline\">",
-          "target": [
-            "#node-211 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"tag\" title=\"Clearview Library Adds Genealogy Databases\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Clearview Library Adds Genealogy Databases</span></a></li>",
-          "target": [
-            "#node-211 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/clearview-library-adds-genealogy-databases\" rel=\"tag\" title=\"Clearview Library Adds Genealogy Databases\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Clearview Library Adds Genealogy Databases</span></a>",
-          "target": [
-            "#node-211 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\"> about Clearview Library Adds Genealogy Databases</span>",
-          "target": [
-            "#node-211 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"views-row\">",
-          "target": [
-            ".views-row:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<article data-history-node-id=\"206\" about=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" typeof=\"schema:Article\" id=\"node-206\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
-          "target": [
-            "#node-206"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Nathan Triz</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-206 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Nathan Triz</span>\n</a>",
-          "target": [
-            "#node-206 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Nathan Triz</span>",
-          "target": [
-            "#node-206 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__content\">",
-          "target": [
-            "#node-206 > .node__content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em></p>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Meet Customer Service Supervisor Nathan Triz:</p>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Hometown:</strong> Key West, Fla., but have lived in Windsor for 10 years.</p>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Hometown:</strong>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Interests:</strong> Live music (both attending and performing), songwriting, gaming (video and tabletop), yoga and exercise, preparing to become a dad!</p>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Interests:</strong>",
-          "target": [
-            "#node-206 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__links\">",
-          "target": [
-            "#node-206 > .node__content > .node__links"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"tag\" title=\"Staff Spotlight: Nathan Triz\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Nathan Triz</span></a></li></ul>",
-          "target": [
-            "#node-206 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"tag\" title=\"Staff Spotlight: Nathan Triz\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Nathan Triz</span></a></li>",
-          "target": [
-            "#node-206 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-nathan-triz\" rel=\"tag\" title=\"Staff Spotlight: Nathan Triz\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Nathan Triz</span></a>",
-          "target": [
-            "a[title=\"Staff Spotlight: Nathan Triz\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\"> about Staff Spotlight: Nathan Triz</span>",
-          "target": [
-            "a[title=\"Staff Spotlight: Nathan Triz\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"views-row\">",
-          "target": [
-            ".views-row:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<article data-history-node-id=\"201\" about=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" typeof=\"schema:Article\" id=\"node-201\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
-          "target": [
-            "#node-201"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Hailey Tolbert</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-201 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Hailey Tolbert</span>\n</a>",
-          "target": [
-            "#node-201 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Hailey Tolbert</span>",
-          "target": [
-            "#node-201 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__content\">",
-          "target": [
-            "#node-201 > .node__content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em></p>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Meet Customer Service Specialist Hailey Tolbert:</p>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Hometown:</strong> Las Vegas, Nevada</p>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Hometown:</strong>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Interests:</strong> Film, photography, and painting</p>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Interests:</strong>",
-          "target": [
-            "#node-201 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Book:</strong> <a href=\"https://pika.clearviewlibrary.org/GroupedWork/0f19ba70-78f0-76d9-f318-4d127385508c/Home?searchId=6870&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>Flowers for Algernon</em></a> by Daniel Keyes</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Book:</strong>",
-          "target": [
-            "p:nth-child(5) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/0f19ba70-78f0-76d9-f318-4d127385508c/Home?searchId=6870&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>Flowers for Algernon</em></a>",
-          "target": [
-            "p:nth-child(5) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Flowers for Algernon</em>",
-          "target": [
-            "a > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__links\">",
-          "target": [
-            "#node-201 > .node__content > .node__links"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"tag\" title=\"Staff Spotlight: Hailey Tolbert\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Hailey Tolbert</span></a></li></ul>",
-          "target": [
-            "#node-201 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"tag\" title=\"Staff Spotlight: Hailey Tolbert\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Hailey Tolbert</span></a></li>",
-          "target": [
-            "#node-201 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-hailey-tolbert\" rel=\"tag\" title=\"Staff Spotlight: Hailey Tolbert\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Hailey Tolbert</span></a>",
-          "target": [
-            "#node-201 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\"> about Staff Spotlight: Hailey Tolbert</span>",
-          "target": [
-            "#node-201 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"views-row\">",
-          "target": [
-            ".views-row:nth-child(4)"
+            ".views-row"
           ]
         },
         {
@@ -12136,7 +9127,7 @@
           "impact": null,
           "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Rebecca Robbins</span>\n</a>\n    </h2>",
           "target": [
-            "#node-192 > .node-title"
+            ".node-title"
           ]
         },
         {
@@ -12156,7 +9147,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Rebecca Robbins</span>\n</a>",
           "target": [
-            "#node-192 > .node-title > a[rel=\"bookmark\"]"
+            "a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -12176,7 +9167,7 @@
           "impact": null,
           "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Rebecca Robbins</span>",
           "target": [
-            "#node-192 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+            ".field--name-title"
           ]
         },
         {
@@ -12196,7 +9187,7 @@
           "impact": null,
           "html": "<div class=\"node__content\">",
           "target": [
-            "#node-192 > .node__content"
+            ".node__content"
           ]
         },
         {
@@ -12216,7 +9207,7 @@
           "impact": null,
           "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
+            "div[property=\"schema:text\"]"
           ]
         },
         {
@@ -12236,7 +9227,7 @@
           "impact": null,
           "html": "<p><em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.&nbsp;</em></p>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
+            "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
         },
         {
@@ -12256,7 +9247,7 @@
           "impact": null,
           "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.&nbsp;</em>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1) > em"
+            "em"
           ]
         },
         {
@@ -12276,7 +9267,7 @@
           "impact": null,
           "html": "<p>Meet Customer Service Specialist Rebecca Robbins:</p>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
+            "p:nth-child(2)"
           ]
         },
         {
@@ -12296,7 +9287,7 @@
           "impact": null,
           "html": "<p><strong>Hometown:</strong> Sturgis, South Dakota, but I would say I am a Windsor kid.</p>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -12316,7 +9307,7 @@
           "impact": null,
           "html": "<strong>Hometown:</strong>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3) > strong"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -12336,7 +9327,7 @@
           "impact": null,
           "html": "<p><strong>Interests:</strong> I love skiing, talking about American History, and supporting the local music scene.</p>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -12356,7 +9347,7 @@
           "impact": null,
           "html": "<strong>Interests:</strong>",
           "target": [
-            "#node-192 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4) > strong"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -12376,7 +9367,7 @@
           "impact": null,
           "html": "<div class=\"node__links\">",
           "target": [
-            "#node-192 > .node__content > .node__links"
+            ".node__links"
           ]
         },
         {
@@ -12396,7 +9387,7 @@
           "impact": null,
           "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"tag\" title=\"Staff Spotlight: Rebecca Robbins\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Rebecca Robbins</span></a></li></ul>",
           "target": [
-            "#node-192 > .node__content > .node__links > .links.inline"
+            ".links"
           ]
         },
         {
@@ -12416,7 +9407,7 @@
           "impact": null,
           "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"tag\" title=\"Staff Spotlight: Rebecca Robbins\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Rebecca Robbins</span></a></li>",
           "target": [
-            "#node-192 > .node__content > .node__links > .links.inline > .node-readmore"
+            ".node-readmore"
           ]
         },
         {
@@ -12436,7 +9427,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight-rebecca-robbins\" rel=\"tag\" title=\"Staff Spotlight: Rebecca Robbins\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Staff Spotlight: Rebecca Robbins</span></a>",
           "target": [
-            "#node-192 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+            "a[rel=\"tag\"]"
           ]
         },
         {
@@ -12456,7 +9447,7 @@
           "impact": null,
           "html": "<span class=\"visually-hidden\"> about Staff Spotlight: Rebecca Robbins</span>",
           "target": [
-            "#node-192 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > .visually-hidden"
+            "a[rel=\"tag\"] > span"
           ]
         },
         {
@@ -12494,7 +9485,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h4 id=\"pagination-heading\" class=\"visually-hidden\">Pagination</h4>",
+          "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
           "target": [
             "#pagination-heading"
           ]
@@ -12534,67 +9525,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"pager__item pager__item--first\">\n          <a href=\"?page=0\" title=\"Go to first page\">\n            <span class=\"visually-hidden\">First page</span>\n            <span aria-hidden=\"true\">« First</span>\n          </a>\n        </li>",
-          "target": [
-            ".pager__item--first"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=0\" title=\"Go to first page\">\n            <span class=\"visually-hidden\">First page</span>\n            <span aria-hidden=\"true\">« First</span>\n          </a>",
-          "target": [
-            "a[href=\"?page=0\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">First page</span>",
-          "target": [
-            "a[href=\"?page=0\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item pager__item--previous\">\n          <a href=\"?page=9\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹ Previous</span>\n          </a>\n        </li>",
+          "html": "<li class=\"pager__item pager__item--previous\">\n          <a href=\"/taxonomy/term/32?page=3\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹‹</span>\n          </a>\n        </li>",
           "target": [
             ".pager__item--previous"
           ]
@@ -12614,9 +9545,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"?page=9\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹ Previous</span>\n          </a>",
+          "html": "<a href=\"/taxonomy/term/32?page=3\" title=\"Go to previous page\" rel=\"prev\">\n            <span class=\"visually-hidden\">Previous page</span>\n            <span aria-hidden=\"true\">‹‹</span>\n          </a>",
           "target": [
-            "a[title=\"Go to previous page\"]"
+            "a[href=\"/taxonomy/term/32?page=3\"]"
           ]
         },
         {
@@ -12636,7 +9567,7 @@
           "impact": null,
           "html": "<span class=\"visually-hidden\">Previous page</span>",
           "target": [
-            "a[title=\"Go to previous page\"] > .visually-hidden"
+            "a[href=\"/taxonomy/term/32?page=3\"] > span:nth-child(1)"
           ]
         },
         {
@@ -12654,507 +9585,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"pager__item pager__item--ellipsis\" role=\"presentation\">…</li>",
-          "target": [
-            ".pager__item--ellipsis"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=2\" title=\"Go to page 3\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>3</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=2\" title=\"Go to page 3\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>3</a>",
-          "target": [
-            "a[href=\"?page=2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Page\n            </span>",
-          "target": [
-            "a[href=\"?page=2\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=3\" title=\"Go to page 4\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>4</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=3\" title=\"Go to page 4\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>4</a>",
-          "target": [
-            "a[href=\"?page=3\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Page\n            </span>",
-          "target": [
-            "a[href=\"?page=3\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=4\" title=\"Go to page 5\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>5</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=4\" title=\"Go to page 5\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>5</a>",
-          "target": [
-            "a[href=\"?page=4\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Page\n            </span>",
-          "target": [
-            "a[href=\"?page=4\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=5\" title=\"Go to page 6\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>6</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=5\" title=\"Go to page 6\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>6</a>",
-          "target": [
-            "a[href=\"?page=5\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Page\n            </span>",
-          "target": [
-            "a[href=\"?page=5\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=6\" title=\"Go to page 7\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>7</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=6\" title=\"Go to page 7\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>7</a>",
-          "target": [
-            "a[href=\"?page=6\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Page\n            </span>",
-          "target": [
-            "a[href=\"?page=6\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=7\" title=\"Go to page 8\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>8</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=7\" title=\"Go to page 8\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>8</a>",
-          "target": [
-            "a[href=\"?page=7\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Page\n            </span>",
-          "target": [
-            "a[href=\"?page=7\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=8\" title=\"Go to page 9\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>9</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=8\" title=\"Go to page 9\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>9</a>",
-          "target": [
-            "a[href=\"?page=8\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Page\n            </span>",
-          "target": [
-            "a[href=\"?page=8\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item\">\n                                          <a href=\"?page=9\" title=\"Go to page 10\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>10</a>\n        </li>",
-          "target": [
-            ".pager__item:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"?page=9\" title=\"Go to page 10\">\n            <span class=\"visually-hidden\">\n              Page\n            </span>10</a>",
-          "target": [
-            "a[title=\"Go to page 10\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Page\n            </span>",
-          "target": [
-            "a[title=\"Go to page 10\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"pager__item is-active\">\n                                          <a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>\n        </li>",
+          "html": "<li class=\"pager__item is-active\">\n          Page 5        </li>",
           "target": [
             ".is-active"
           ]
@@ -13174,47 +9605,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"?page=10\" title=\"Current page\" aria-current=\"page\">\n            <span class=\"visually-hidden\">\n              Current page\n            </span>11</a>",
-          "target": [
-            "a[href=\"?page=10\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\">\n              Current page\n            </span>",
-          "target": [
-            "a[href=\"?page=10\"] > .visually-hidden"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"feed-icons\">\n      <a href=\"https://clearviewlibrary.org/rss.xml\" class=\"feed-icon\">\n  Subscribe to \n</a>\n\n    </div>",
+          "html": "<div class=\"feed-icons\">\n      <a href=\"https://clearviewlibrary.org/taxonomy/term/32/feed\" class=\"feed-icon\">\n  Subscribe to Staff Spotlight\n</a>\n\n    </div>",
           "target": [
             ".feed-icons"
           ]
@@ -13234,7 +9625,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/rss.xml\" class=\"feed-icon\">\n  Subscribe to \n</a>",
+          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/32/feed\" class=\"feed-icon\">\n  Subscribe to Staff Spotlight\n</a>",
           "target": [
             ".feed-icon"
           ]
@@ -13654,7 +10045,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -15308,7 +11699,7 @@
           "all": [],
           "none": [],
           "impact": "moderate",
-          "html": "<h4 id=\"pagination-heading\" class=\"visually-hidden\">Pagination</h4>",
+          "html": "<h4 id=\"pagination-heading\" class=\"pager__heading visually-hidden\">Pagination</h4>",
           "target": [
             "#pagination-heading"
           ],
@@ -15327,35 +11718,6 @@
       "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
       "nodes": [
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
         {
           "any": [
             {
@@ -15384,50 +11746,6 @@
             "div[role=\"complementary\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        }
-      ]
-    },
-    {
-      "id": "list",
-      "impact": "serious",
-      "tags": [
-        "cat.structure",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1"
-      ],
-      "description": "Ensure that lists are structured correctly",
-      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": {
-                "values": "[role=presentation]"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<li class=\"pager__item pager__item--ellipsis\" role=\"presentation\">…</li>",
-                  "target": [
-                    ".pager__item--ellipsis"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "List element has direct children that are not allowed: [role=presentation]"
-            }
-          ],
-          "impact": "serious",
-          "html": "<ul class=\"pager__items js-pager__items\">",
-          "target": [
-            ".pager__items"
-          ],
-          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=presentation]"
         }
       ]
     },
@@ -15464,5 +11782,5 @@
       ]
     }
   ],
-  "documentTitle": "| Clearview Library"
+  "documentTitle": "Staff Spotlight | Clearview Library"
 }

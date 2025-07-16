@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:24:25.122Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/statement-clearview-library-district-board",
+  "timestamp": "2025-07-16T19:37:59.747Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-keith-teklits",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,6 +445,23 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -2649,19 +2666,13 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Statement from the Clearview Library District Board</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Keith Teklits </span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h4>Concerning the Property located at 392 near Hollister Lake Rd, Windsor</h4>",
-                  "target": [
-                    "h4"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -3098,7 +3109,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2023-09-11T10:58:45-06:00\" title=\"Monday, September 11, 2023 - 10:58\" class=\"datetime\">September 11, 2023</time>",
+          "html": "<time datetime=\"2023-08-23T09:27:54-06:00\" title=\"Wednesday, August 23, 2023 - 09:27\" class=\"datetime\">August 23, 2023</time>",
           "target": [
             "time"
           ]
@@ -3123,9 +3134,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/taxonomy/term/35\" hreflang=\"en\">News</a>",
+          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[href=\"/taxonomy/term/35\"]"
+            "a[href=\"/taxonomy/term/32\"]"
           ]
         },
         {
@@ -3148,7 +3159,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Statement from the Clearview Library District Board</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Keith Teklits </span>",
           "target": [
             ".field--name-title"
           ]
@@ -3161,9 +3172,9 @@
                 "fgColor": "#181818",
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
@@ -3173,9 +3184,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h4>Concerning the Property located at 392 near Hollister Lake Rd, Windsor</h4>",
+          "html": "<p>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</p>",
           "target": [
-            "h4"
+            "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
         },
         {
@@ -3198,7 +3209,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Hometown:</strong> Littleton.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3208,49 +3219,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/board-of-trustees\">Board of Trustees</a>",
+          "html": "<strong>Hometown:</strong>",
           "target": [
-            "p:nth-child(2) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>A Plan For the Future Facilities Plan</em>",
-          "target": [
-            "a:nth-child(2) > em"
+            "p:nth-child(2) > strong"
           ]
         },
         {
@@ -3273,9 +3259,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>",
+          "html": "<p><strong>Interests:</strong> Reading, Video Games, Good Food.</p>",
           "target": [
-            "p:nth-child(3) > em"
+            "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Interests:</strong>",
+          "target": [
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -3298,7 +3309,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Book:</strong> Good Omens by Terry Pratchett and Neil Gaiman.</p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -3308,24 +3319,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/2021-10/CLD_-_Facilities_Plan_2021_FINAL.pdf\">Facilities Plan</a>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
-            "p:nth-child(4) > a"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -3348,7 +3359,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Preferred Superpower:</strong> Not needing to sleep.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -3358,24 +3369,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://youtu.be/Nrg74rD4a0Y\">Recording of Aug 9, 2023, Special Meeting</a>",
+          "html": "<strong>Preferred Superpower:</strong>",
           "target": [
-            "a[href$=\"Nrg74rD4a0Y\"]"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -3398,7 +3409,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Author:</strong> Terry Pratchett.</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -3412,6 +3423,31 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Author:</strong>",
+          "target": [
+            "p:nth-child(6) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -3423,7 +3459,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Vacation Spot:</strong> Disneyland.</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -3437,7 +3473,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3448,9 +3484,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>It is important that we, as a community, engage in conversation over this matter, with opportunities for input in this important dialogue. The Board and Director welcome your feedback and suggestions and can be reached through email at:</p>",
+          "html": "<strong>Favorite Vacation Spot:</strong>",
           "target": [
-            "p:nth-child(8)"
+            "p:nth-child(7) > strong"
           ]
         },
         {
@@ -3473,7 +3509,57 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Quote:</strong> “Don't you understand that we need to be childish in order to understand? Only a child sees things with perfect clarity, because it hasn't developed all those filters which prevent us from seeing things that we don't expect to see.” Douglas Adams</p>",
+          "target": [
+            "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Quote:</strong>",
+          "target": [
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> Mobile Services Assistant.</p>",
           "target": [
             "p:nth-child(9)"
           ]
@@ -3483,199 +3569,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:jeromey.balderrama@clearviewlibrary.org\">jeromey.balderrama@clearviewlibrary.org</a>",
+          "html": "<strong>Job at the Library:</strong>",
           "target": [
-            "p:nth-child(9) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:cole.gerstner@clearviewlibrary.org\">cole.gerstner@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(9) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:ronald.dunworth@clearviewlibrary.org\">ronald.dunworth@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:kendra.adams@clearviewlibrary.org\">kendra.adams@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:rochelle.brotsky@clearviewlibrary.org\">rochelle.brotsky@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:lisa.gagliardi@clearviewlibrary.org\">lisa.gagliardi@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2023-09/Statement-on-the-land-Sept-11-2023.pdf\">Download the Statement</a>",
-          "target": [
-            ".button"
+            "p:nth-child(9) > strong"
           ]
         },
         {
@@ -4459,7 +4370,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4580,7 +4491,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Statement from the Clearview Library District Board</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Keith Teklits </span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4598,25 +4509,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h4>Concerning the Property located at 392 near Hollister Lake Rd, Windsor</h4>",
-          "target": [
-            "h4"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4711,7 +4604,7 @@
     },
     {
       "id": "heading-order",
-      "impact": "moderate",
+      "impact": null,
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -4749,12 +4642,6 @@
                       "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > article > h1:nth-child(2)"
                     ],
                     "level": 1
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > article > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > h4:nth-child(1)"
-                    ],
-                    "level": 4
                   },
                   {
                     "ancestry": [
@@ -4832,7 +4719,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Statement from the Clearview Library District Board</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Keith Teklits </span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4850,7 +4737,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -5016,7 +4903,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Default_News_Images.jpg?itok=OVQKq26Z\" width=\"995\" height=\"573\" alt=\"Default news image\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-08/Keith-Teklits.jpeg?itok=WAHsgtgP\" width=\"1019\" height=\"573\" alt=\"Keith Teklits\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5169,7 +5056,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Default_News_Images.jpg?itok=OVQKq26Z\" width=\"995\" height=\"573\" alt=\"Default news image\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-08/Keith-Teklits.jpeg?itok=WAHsgtgP\" width=\"1019\" height=\"573\" alt=\"Keith Teklits\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5779,6 +5666,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "breadcrumb"
               },
               "relatedNodes": [],
@@ -5842,6 +5750,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "mobile utilities menu"
               },
               "relatedNodes": [],
@@ -5876,166 +5805,6 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(2)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(2)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/board-of-trustees\">Board of Trustees</a>",
-          "target": [
-            "p:nth-child(2) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(2)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/2021-10/CLD_-_Facilities_Plan_2021_FINAL.pdf\"><em>A Plan For the Future Facilities Plan</em></a>",
-          "target": [
-            "p:nth-child(2) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/2021-10/CLD_-_Facilities_Plan_2021_FINAL.pdf\">Facilities Plan</a>",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://youtu.be/Nrg74rD4a0Y\">Recording of Aug 9, 2023, Special Meeting</a>",
-          "target": [
-            "a[href$=\"Nrg74rD4a0Y\"]"
           ]
         }
       ]
@@ -6550,9 +6319,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/taxonomy/term/35\" hreflang=\"en\">News</a>",
+          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[href=\"/taxonomy/term/35\"]"
+            "a[href=\"/taxonomy/term/32\"]"
           ]
         },
         {
@@ -6576,321 +6345,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/media/25/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Default_News_Images.jpg?itok=OVQKq26Z\" width=\"995\" height=\"573\" alt=\"Default news image\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/209/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-08/Keith-Teklits.jpeg?itok=WAHsgtgP\" width=\"1019\" height=\"573\" alt=\"Keith Teklits\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
           "target": [
             "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/board-of-trustees\">Board of Trustees</a>",
-          "target": [
-            "p:nth-child(2) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/2021-10/CLD_-_Facilities_Plan_2021_FINAL.pdf\"><em>A Plan For the Future Facilities Plan</em></a>",
-          "target": [
-            "p:nth-child(2) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/2021-10/CLD_-_Facilities_Plan_2021_FINAL.pdf\">Facilities Plan</a>",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://youtu.be/Nrg74rD4a0Y\">Recording of Aug 9, 2023, Special Meeting</a>",
-          "target": [
-            "a[href$=\"Nrg74rD4a0Y\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:jeromey.balderrama@clearviewlibrary.org\">jeromey.balderrama@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(9) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:cole.gerstner@clearviewlibrary.org\">cole.gerstner@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(9) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:ronald.dunworth@clearviewlibrary.org\">ronald.dunworth@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:kendra.adams@clearviewlibrary.org\">kendra.adams@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:rochelle.brotsky@clearviewlibrary.org\">rochelle.brotsky@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:lisa.gagliardi@clearviewlibrary.org\">lisa.gagliardi@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2023-09/Statement-on-the-land-Sept-11-2023.pdf\">Download the Statement</a>",
-          "target": [
-            ".button"
           ]
         },
         {
@@ -8640,7 +8097,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Default_News_Images.jpg?itok=OVQKq26Z\" width=\"995\" height=\"573\" alt=\"Default news image\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-08/Keith-Teklits.jpeg?itok=WAHsgtgP\" width=\"1019\" height=\"573\" alt=\"Keith Teklits\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -8774,7 +8231,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Statement from the Clearview Library District Board</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Keith Teklits </span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9861,7 +9318,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            "strong"
+            ".label"
           ]
         },
         {
@@ -10339,9 +9796,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"506\" about=\"/about-us/learn-more/news/statement-clearview-library-district-board\" typeof=\"schema:Article\" id=\"node-506\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"502\" about=\"/about-us/learn-more/news/staff-spotlight-keith-teklits\" typeof=\"schema:Article\" id=\"node-502\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#node-506"
+            "#node-502"
           ]
         },
         {
@@ -10399,7 +9856,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2023-09-11T16:58:45+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-09-11T10:58:45-06:00\" title=\"Monday, September 11, 2023 - 10:58\" class=\"datetime\">September 11, 2023</time>\n</span>",
+          "html": "<span property=\"schema:dateCreated\" content=\"2023-08-23T15:27:54+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-08-23T09:27:54-06:00\" title=\"Wednesday, August 23, 2023 - 09:27\" class=\"datetime\">August 23, 2023</time>\n</span>",
           "target": [
             ".field--name-created"
           ]
@@ -10419,7 +9876,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2023-09-11T10:58:45-06:00\" title=\"Monday, September 11, 2023 - 10:58\" class=\"datetime\">September 11, 2023</time>",
+          "html": "<time datetime=\"2023-08-23T09:27:54-06:00\" title=\"Wednesday, August 23, 2023 - 09:27\" class=\"datetime\">August 23, 2023</time>",
           "target": [
             "time"
           ]
@@ -10439,7 +9896,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/taxonomy/term/35\" hreflang=\"en\">News</a></div>\n                    </div>",
+          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a></div>\n                    </div>",
           "target": [
             ".field--name-field-article-category"
           ]
@@ -10459,7 +9916,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/35\" hreflang=\"en\">News</a></div>",
+          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a></div>",
           "target": [
             ".field--name-field-article-category > .field__item"
           ]
@@ -10479,9 +9936,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/taxonomy/term/35\" hreflang=\"en\">News</a>",
+          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[href=\"/taxonomy/term/35\"]"
+            "a[href=\"/taxonomy/term/32\"]"
           ]
         },
         {
@@ -10499,7 +9956,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Statement from the Clearview Library District Board</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Keith Teklits </span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10519,7 +9976,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Statement from the Clearview Library District Board</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Keith Teklits </span>",
           "target": [
             ".field--name-title"
           ]
@@ -10659,7 +10116,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">  <a href=\"/media/25/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Default_News_Images.jpg?itok=OVQKq26Z\" width=\"995\" height=\"573\" alt=\"Default news image\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
+          "html": "<div class=\"field__item\">  <a href=\"/media/209/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-08/Keith-Teklits.jpeg?itok=WAHsgtgP\" width=\"1019\" height=\"573\" alt=\"Keith Teklits\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
           "target": [
             ".field--name-field-media-image-1 > .field__item"
           ]
@@ -10679,7 +10136,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/25/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Default_News_Images.jpg?itok=OVQKq26Z\" width=\"995\" height=\"573\" alt=\"Default news image\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/209/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-08/Keith-Teklits.jpeg?itok=WAHsgtgP\" width=\"1019\" height=\"573\" alt=\"Keith Teklits\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -10699,7 +10156,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Default_News_Images.jpg?itok=OVQKq26Z\" width=\"995\" height=\"573\" alt=\"Default news image\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-08/Keith-Teklits.jpeg?itok=WAHsgtgP\" width=\"1019\" height=\"573\" alt=\"Keith Teklits\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -10739,9 +10196,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h4>Concerning the Property located at 392 near Hollister Lake Rd, Windsor</h4>",
+          "html": "<p>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</p>",
           "target": [
-            "h4"
+            "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
         },
         {
@@ -10759,7 +10216,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Hometown:</strong> Littleton.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10779,9 +10236,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/board-of-trustees\">Board of Trustees</a>",
+          "html": "<strong>Hometown:</strong>",
           "target": [
-            "p:nth-child(2) > a:nth-child(1)"
+            "p:nth-child(2) > strong"
           ]
         },
         {
@@ -10799,47 +10256,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/2021-10/CLD_-_Facilities_Plan_2021_FINAL.pdf\"><em>A Plan For the Future Facilities Plan</em></a>",
-          "target": [
-            "p:nth-child(2) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>A Plan For the Future Facilities Plan</em>",
-          "target": [
-            "a:nth-child(2) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Interests:</strong> Reading, Video Games, Good Food.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10859,9 +10276,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>",
+          "html": "<strong>Interests:</strong>",
           "target": [
-            "p:nth-child(3) > em"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -10879,7 +10296,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Book:</strong> Good Omens by Terry Pratchett and Neil Gaiman.</p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -10899,9 +10316,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/2021-10/CLD_-_Facilities_Plan_2021_FINAL.pdf\">Facilities Plan</a>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
-            "p:nth-child(4) > a"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -10919,7 +10336,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Preferred Superpower:</strong> Not needing to sleep.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -10939,9 +10356,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>(<a href=\"https://youtu.be/Nrg74rD4a0Y\">Recording of Aug 9, 2023, Special Meeting</a>)</em>",
+          "html": "<strong>Preferred Superpower:</strong>",
           "target": [
-            "p:nth-child(5) > em"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -10959,27 +10376,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://youtu.be/Nrg74rD4a0Y\">Recording of Aug 9, 2023, Special Meeting</a>",
-          "target": [
-            "a[href$=\"Nrg74rD4a0Y\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Author:</strong> Terry Pratchett.</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -10999,7 +10396,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<strong>Favorite Author:</strong>",
+          "target": [
+            "p:nth-child(6) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Vacation Spot:</strong> Disneyland.</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -11019,7 +10436,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>It is important that we, as a community, engage in conversation over this matter, with opportunities for input in this important dialogue. The Board and Director welcome your feedback and suggestions and can be reached through email at:</p>",
+          "html": "<strong>Favorite Vacation Spot:</strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Quote:</strong> “Don't you understand that we need to be childish in order to understand? Only a child sees things with perfect clarity, because it hasn't developed all those filters which prevent us from seeing things that we don't expect to see.” Douglas Adams</p>",
           "target": [
             "p:nth-child(8)"
           ]
@@ -11039,7 +10476,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<strong>Favorite Quote:</strong>",
+          "target": [
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> Mobile Services Assistant.</p>",
           "target": [
             "p:nth-child(9)"
           ]
@@ -11059,289 +10516,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:jeromey.balderrama@clearviewlibrary.org\">jeromey.balderrama@clearviewlibrary.org</a>",
+          "html": "<strong>Job at the Library:</strong>",
           "target": [
-            "p:nth-child(9) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "p:nth-child(9) > br:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:cole.gerstner@clearviewlibrary.org\">cole.gerstner@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(9) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "br:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:ronald.dunworth@clearviewlibrary.org\">ronald.dunworth@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "br:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:kendra.adams@clearviewlibrary.org\">kendra.adams@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "br:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:rochelle.brotsky@clearviewlibrary.org\">rochelle.brotsky@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "br:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:lisa.gagliardi@clearviewlibrary.org\">lisa.gagliardi@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "br:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "a:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2023-09/Statement-on-the-land-Sept-11-2023.pdf\">Download the Statement</a></p>",
-          "target": [
-            "p:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2023-09/Statement-on-the-land-Sept-11-2023.pdf\">Download the Statement</a>",
-          "target": [
-            ".button"
+            "p:nth-child(9) > strong"
           ]
         },
         {
@@ -11681,7 +10858,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            ".address:nth-child(3) > br:nth-child(2)"
+            "br:nth-child(2)"
           ]
         },
         {
@@ -11859,7 +11036,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -13490,38 +12667,6 @@
   "incomplete": [],
   "violations": [
     {
-      "id": "heading-order",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the order of headings is semantically correct",
-      "help": "Heading levels should only increase by one",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order invalid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<h4>Concerning the Property located at 392 near Hollister Lake Rd, Windsor</h4>",
-          "target": [
-            "h4"
-          ],
-          "failureSummary": "Fix any of the following:\n  Heading order invalid"
-        }
-      ]
-    },
-    {
       "id": "landmark-complementary-is-top-level",
       "impact": "moderate",
       "tags": [
@@ -13571,35 +12716,6 @@
             {
               "id": "landmark-is-unique",
               "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
                 "role": "complementary",
                 "accessibleText": null
               },
@@ -13627,5 +12743,5 @@
       ]
     }
   ],
-  "documentTitle": "Statement from the Clearview Library District Board | Clearview Library"
+  "documentTitle": "Staff Spotlight: Keith Teklits | Clearview Library"
 }

@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T18:30:30.060Z",
-  "url": "https://clearviewlibrary.org/node/285",
+  "timestamp": "2025-07-16T19:43:47.570Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-jesse-feavel",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -267,6 +267,22 @@
       "nodes": []
     },
     {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
+      "nodes": []
+    },
+    {
       "id": "blink",
       "impact": null,
       "tags": [
@@ -429,23 +445,6 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -1498,7 +1497,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node page-node-type-podcast-episode\">",
+          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
           "target": [
             "body"
           ]
@@ -2544,87 +2543,6 @@
       ]
     },
     {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
-          ]
-        }
-      ]
-    },
-    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2658,7 +2576,25 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has inner text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         }
       ]
@@ -2713,13 +2649,13 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Patriot Custom Finishing</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Jesse Feavel</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+                  "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
                   "target": [
                     "#block-mainnavigation-menu"
                   ]
@@ -2973,7 +2909,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -3066,6 +3002,131 @@
             {
               "id": "color-contrast",
               "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us\">About Us</a>",
+          "target": [
+            "li:nth-child(2) > a[href$=\"about-us\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "target": [
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2021-04-15T14:58:54-06:00\" title=\"Thursday, April 15, 2021 - 14:58\" class=\"datetime\">April 15, 2021</time>",
+          "target": [
+            "time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
+          "target": [
+            "a[href=\"/taxonomy/term/32\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
                 "fgColor": "#0072bc",
                 "bgColor": "#ffffff",
                 "contrastRatio": 5.08,
@@ -3081,7 +3142,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Patriot Custom Finishing</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Jesse Feavel</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3106,9 +3167,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
           "target": [
-            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
+            "p:nth-child(1) > em"
           ]
         },
         {
@@ -3131,7 +3192,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Hometown:</strong> Longmont, Colo.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3145,6 +3206,31 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Hometown:</strong>",
+          "target": [
+            "p:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -3156,7 +3242,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: 1290 Main Street, Windsor<br>\nWebsite: <a href=\"https://www.patriotcustomfinishing.com\">www.patriotcustomfinishing.com</a><br>\nPhone: <a href=\"tel:970-460-9123\">970-460-9123</a><br>\nYear Established: 2020</p>",
+          "html": "<p><strong>Interests: </strong>Spending time with my family and collecting old comic books.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -3166,24 +3252,74 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Interests: </strong>",
+          "target": [
+            "p:nth-child(3) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.patriotcustomfinishing.com\">www.patriotcustomfinishing.com</a>",
+          "html": "<p><strong>Favorite Book:</strong> I always seem to come back to the book <em><a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a></em> by Louis Sachar. It’s a great book!</p>",
           "target": [
-            "p:nth-child(3) > a:nth-child(2)"
+            "p:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Book:</strong>",
+          "target": [
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -3206,9 +3342,59 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"tel:970-460-9123\">970-460-9123</a>",
+          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a>",
           "target": [
-            "a[href=\"tel:970-460-9123\"]"
+            "em > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Preferred Superpower:</strong> I’d take the superpower One for All from My Hero Academia.</p>",
+          "target": [
+            "p:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Preferred Superpower:</strong>",
+          "target": [
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -3233,7 +3419,357 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(5)"
+            "p:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Author:</strong>",
+          "target": [
+            "p:nth-child(6) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Sachar%2C%20Louis%2C%201954-%22\">Louis Sachar</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dahl%2C%20Roald%22\">Roald Dahl</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Lee%2C%20Stan%22\">Stan Lee</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Vacation Spot:</strong> Somewhere in Estes Park or Black Hawk.</p>",
+          "target": [
+            "p:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Vacation Spot:</strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Stan Lee, Gordon Ramsay, Seth MacFarlane. I think that would be very interesting.</p>",
+          "target": [
+            "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
+          "target": [
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Quote:</strong> “With Great Power, Comes Great Responsibility.” — Ben Parker</p>",
+          "target": [
+            "p:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Quote:</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> My title at the library is IT Assistant. I love helping our staff and patrons find the magic and wonder in technology!</p>",
+          "target": [
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Job at the Library:</strong>",
+          "target": [
+            "p:nth-child(10) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#e1f0fb",
+                "contrastRatio": 15.26,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 15.26"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -3358,7 +3894,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -3383,7 +3919,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -3783,7 +4319,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -3967,7 +4503,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4088,7 +4624,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Patriot Custom Finishing</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Jesse Feavel</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4106,7 +4642,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4236,7 +4772,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > h1"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > article > h1:nth-child(2)"
                     ],
                     "level": 1
                   },
@@ -4316,7 +4852,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Patriot Custom Finishing</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Jesse Feavel</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4334,7 +4870,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -4500,61 +5036,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Aidan Holsten\" data-entity-type=\"file\" data-entity-uuid=\"a8a2556e-8179-49be-a412-b7f9be5c504d\" height=\"300\" src=\"/sites/default/files/inline-images/Patriot%20Custom%20Finishing%20Aidan%20Holsten.jpeg\" width=\"225\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Jesse%20Feavel.jpg?itok=O_fZG0dN\" width=\"1019\" height=\"573\" alt=\"Jesse Feavel\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -4705,45 +5189,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Aidan Holsten\" data-entity-type=\"file\" data-entity-uuid=\"a8a2556e-8179-49be-a412-b7f9be5c504d\" height=\"300\" src=\"/sites/default/files/inline-images/Patriot%20Custom%20Finishing%20Aidan%20Holsten.jpeg\" width=\"225\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Jesse%20Feavel.jpg?itok=O_fZG0dN\" width=\"1019\" height=\"573\" alt=\"Jesse Feavel\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -5037,7 +5485,7 @@
     },
     {
       "id": "landmark-complementary-is-top-level",
-      "impact": null,
+      "impact": "moderate",
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -5201,7 +5649,14 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [],
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
+                  "target": [
+                    "#sitewide-footer"
+                  ]
+                }
+              ],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5209,9 +5664,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
+          "html": "<footer class=\"node__meta\">",
           "target": [
-            "#sitewide-footer"
+            ".node__meta"
           ]
         }
       ]
@@ -5344,6 +5799,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "main navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "breadcrumb"
               },
               "relatedNodes": [],
@@ -5407,6 +5883,27 @@
               "id": "landmark-is-unique",
               "data": {
                 "role": "navigation",
+                "accessibleText": "footer navigation"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
                 "accessibleText": "mobile utilities menu"
               },
               "relatedNodes": [],
@@ -5446,8 +5943,182 @@
       ]
     },
     {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p><strong>Favorite Book:</strong> I always seem to come back to the book <em><a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a></em> by Louis Sachar. It’s a great book!</p>",
+                  "target": [
+                    "p:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p><strong>Favorite Book:</strong> I always seem to come back to the book <em><a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a></em> by Louis Sachar. It’s a great book!</p>",
+                  "target": [
+                    "p:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a>",
+          "target": [
+            "em > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(6)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(6)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Sachar%2C%20Louis%2C%201954-%22\">Louis Sachar</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(6)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(6)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dahl%2C%20Roald%22\">Roald Dahl</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(6)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(6)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Lee%2C%20Stan%22\">Stan Lee</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(4)"
+          ]
+        }
+      ]
+    },
+    {
       "id": "link-name",
-      "impact": "serious",
+      "impact": null,
       "tags": [
         "cat.name-role-value",
         "wcag2a",
@@ -5723,7 +6394,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -5877,9 +6548,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.patriotcustomfinishing.com\">www.patriotcustomfinishing.com</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "p:nth-child(3) > a:nth-child(2)"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -5903,9 +6574,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"tel:970-460-9123\">970-460-9123</a>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "a[href=\"tel:970-460-9123\"]"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
           ]
         },
         {
@@ -5929,9 +6600,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.facebook.com/aidan.holsten.71\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
+            "li:nth-child(4) > a[href$=\"news\"]"
           ]
         },
         {
@@ -5955,9 +6626,139 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.instagram.com/aidans_woodshop/?hl=en\"><img alt=\"Instagram Logo\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\"></a>",
+          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(2)"
+            "a[href=\"/taxonomy/term/32\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/media/18/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Jesse%20Feavel.jpg?itok=O_fZG0dN\" width=\"1019\" height=\"573\" alt=\"Jesse Feavel\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "target": [
+            "a[href$=\"edit\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a>",
+          "target": [
+            "em > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Sachar%2C%20Louis%2C%201954-%22\">Louis Sachar</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dahl%2C%20Roald%22\">Roald Dahl</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Lee%2C%20Stan%22\">Stan Lee</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(4)"
           ]
         },
         {
@@ -6035,7 +6836,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -6061,7 +6862,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -6711,7 +7512,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -6779,7 +7580,7 @@
             }
           ],
           "impact": null,
-          "html": "<ol>\n          <li>\n                  <a href=\"/\">Home</a>\n              </li>\n          <li>\n                  <a href=\"/node\"></a>\n              </li>\n        </ol>",
+          "html": "<ol>",
           "target": [
             "ol"
           ]
@@ -7101,9 +7902,45 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/node\"></a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
+          "target": [
+            "ol > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
+          "target": [
+            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -7671,9 +8508,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Aidan Holsten\" data-entity-type=\"file\" data-entity-uuid=\"a8a2556e-8179-49be-a412-b7f9be5c504d\" height=\"300\" src=\"/sites/default/files/inline-images/Patriot%20Custom%20Finishing%20Aidan%20Holsten.jpeg\" width=\"225\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Jesse%20Feavel.jpg?itok=O_fZG0dN\" width=\"1019\" height=\"573\" alt=\"Jesse Feavel\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
-            ".align-left"
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -7689,27 +8526,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "img[alt=\"Facebook Logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Instagram Logo\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
-          "target": [
-            "img[alt=\"Instagram Logo\"]"
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -7745,7 +8564,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -7823,7 +8642,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Patriot Custom Finishing</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Jesse Feavel</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8510,7 +9329,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -8910,7 +9729,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            "strong"
+            ".label"
           ]
         },
         {
@@ -9088,7 +9907,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ol>\n          <li>\n                  <a href=\"/\">Home</a>\n              </li>\n          <li>\n                  <a href=\"/node\"></a>\n              </li>\n        </ol>",
+          "html": "<ol>",
           "target": [
             "ol"
           ]
@@ -9148,7 +9967,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/node\"></a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -9168,9 +9987,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/node\"></a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "a[href$=\"node\"]"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -9188,9 +10007,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Patriot Custom Finishing</span>\n</h1>\n\n\n  </div>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
           "target": [
-            "#block-clearview-page-title"
+            "ol > li:nth-child(3)"
           ]
         },
         {
@@ -9208,9 +10027,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Patriot Custom Finishing</span>\n</h1>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "h1"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
           ]
         },
         {
@@ -9228,9 +10047,29 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Clearview on Business: Patriot Custom Finishing</span>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
           "target": [
-            ".field--name-title"
+            "ol > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
           ]
         },
         {
@@ -9368,9 +10207,209 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"285\" about=\"/node/285\" id=\"node-285\" class=\"node node--type-podcast-episode node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"245\" about=\"/about-us/learn-more/news/staff-spotlight-jesse-feavel\" typeof=\"schema:Article\" id=\"node-245\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#node-285"
+            "#node-245"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<footer class=\"node__meta\">",
+          "target": [
+            ".node__meta"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__submitted\">",
+          "target": [
+            ".node__submitted"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:dateCreated\" content=\"2021-04-15T20:58:54+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2021-04-15T14:58:54-06:00\" title=\"Thursday, April 15, 2021 - 14:58\" class=\"datetime\">April 15, 2021</time>\n</span>",
+          "target": [
+            ".field--name-created"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2021-04-15T14:58:54-06:00\" title=\"Thursday, April 15, 2021 - 14:58\" class=\"datetime\">April 15, 2021</time>",
+          "target": [
+            "time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a></div>\n                    </div>",
+          "target": [
+            ".field--name-field-article-category"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a></div>",
+          "target": [
+            ".field--name-field-article-category > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/taxonomy/term/32\" hreflang=\"en\">Staff Spotlight</a>",
+          "target": [
+            "a[href=\"/taxonomy/term/32\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Jesse Feavel</span>\n</h1>",
+          "target": [
+            "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Jesse Feavel</span>",
+          "target": [
+            ".field--name-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__main\">",
+          "target": [
+            ".node__main"
           ]
         },
         {
@@ -9408,9 +10447,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-podcast-file field--type-file field--label-hidden field__item\">\n<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALPatriotCustomFinishing0421.mp3\" type=\"audio/mpeg\">\n  </audio>\n</div>",
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-hidden field__item\">",
           "target": [
-            ".field--name-field-podcast-file"
+            ".field--name-field-article-feature-image"
           ]
         },
         {
@@ -9428,9 +10467,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<audio controls=\"controls\">\n      <source src=\"/sites/default/files/FINALPatriotCustomFinishing0421.mp3\" type=\"audio/mpeg\">\n  </audio>",
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-big-feature\">",
           "target": [
-            "audio"
+            ".media"
           ]
         },
         {
@@ -9448,9 +10487,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<source src=\"/sites/default/files/FINALPatriotCustomFinishing0421.mp3\" type=\"audio/mpeg\">",
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
           "target": [
-            "source"
+            ".field--name-field-media-image-1"
           ]
         },
         {
@@ -9468,9 +10507,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
           "target": [
-            ".node__content > .clearfix.text-formatted.field--name-body"
+            ".field__label"
           ]
         },
         {
@@ -9488,9 +10527,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<div class=\"field__item\">  <a href=\"/media/18/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Jesse%20Feavel.jpg?itok=O_fZG0dN\" width=\"1019\" height=\"573\" alt=\"Jesse Feavel\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
           "target": [
-            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
+            ".field--name-field-media-image-1 > .field__item"
           ]
         },
         {
@@ -9508,7 +10547,107 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<a href=\"/media/18/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Jesse%20Feavel.jpg?itok=O_fZG0dN\" width=\"1019\" height=\"573\" alt=\"Jesse Feavel\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "target": [
+            "a[href$=\"edit\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2021-10/Jesse%20Feavel.jpg?itok=O_fZG0dN\" width=\"1019\" height=\"573\" alt=\"Jesse Feavel\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "target": [
+            ".image-style-large-16-9"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "target": [
+            "div[property=\"schema:text\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em></p>",
+          "target": [
+            "div[property=\"schema:text\"] > p:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
+          "target": [
+            "p:nth-child(1) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Hometown:</strong> Longmont, Colo.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -9528,9 +10667,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Aidan Holsten\" data-entity-type=\"file\" data-entity-uuid=\"a8a2556e-8179-49be-a412-b7f9be5c504d\" height=\"300\" src=\"/sites/default/files/inline-images/Patriot%20Custom%20Finishing%20Aidan%20Holsten.jpeg\" width=\"225\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<strong>Hometown:</strong>",
           "target": [
-            ".align-left"
+            "p:nth-child(2) > strong"
           ]
         },
         {
@@ -9548,7 +10687,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Location: 1290 Main Street, Windsor<br>\nWebsite: <a href=\"https://www.patriotcustomfinishing.com\">www.patriotcustomfinishing.com</a><br>\nPhone: <a href=\"tel:970-460-9123\">970-460-9123</a><br>\nYear Established: 2020</p>",
+          "html": "<p><strong>Interests: </strong>Spending time with my family and collecting old comic books.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -9568,9 +10707,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<br>",
+          "html": "<strong>Interests: </strong>",
           "target": [
-            "p:nth-child(3) > br:nth-child(1)"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -9588,87 +10727,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.patriotcustomfinishing.com\">www.patriotcustomfinishing.com</a>",
-          "target": [
-            "p:nth-child(3) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "p:nth-child(3) > br:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"tel:970-460-9123\">970-460-9123</a>",
-          "target": [
-            "a[href=\"tel:970-460-9123\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "br:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Book:</strong> I always seem to come back to the book <em><a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a></em> by Louis Sachar. It’s a great book!</p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -9688,9 +10747,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.facebook.com/aidan.holsten.71\"><img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\"></a>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -9708,9 +10767,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Facebook Logo\" src=\"/sites/default/files/inline-images/Facebook.png\" style=\"padding-right: 5px;\">",
+          "html": "<em><a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a></em>",
           "target": [
-            "img[alt=\"Facebook Logo\"]"
+            "p:nth-child(4) > em"
           ]
         },
         {
@@ -9728,9 +10787,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.instagram.com/aidans_woodshop/?hl=en\"><img alt=\"Instagram Logo\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\"></a>",
+          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/04b1c1bd-715a-5050-eca5-b2556e0911e9/Home?searchId=6896&amp;recordIndex=1&amp;page=1&amp;searchSource=local\">Holes</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(2)"
+            "em > a"
           ]
         },
         {
@@ -9748,9 +10807,29 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Instagram Logo\" src=\"/sites/default/files/inline-images/Instagram_1.png\" style=\"padding-right: 5px;\">",
+          "html": "<p><strong>Preferred Superpower:</strong> I’d take the superpower One for All from My Hero Academia.</p>",
           "target": [
-            "img[alt=\"Instagram Logo\"]"
+            "p:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Preferred Superpower:</strong>",
+          "target": [
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -9770,7 +10849,347 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(5)"
+            "p:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Author:</strong>",
+          "target": [
+            "p:nth-child(6) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Sachar%2C%20Louis%2C%201954-%22\">Louis Sachar</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Dahl%2C%20Roald%22\">Roald Dahl</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Lee%2C%20Stan%22\">Stan Lee</a>",
+          "target": [
+            "p:nth-child(6) > a:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Vacation Spot:</strong> Somewhere in Estes Park or Black Hawk.</p>",
+          "target": [
+            "p:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Vacation Spot:</strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Stan Lee, Gordon Ramsay, Seth MacFarlane. I think that would be very interesting.</p>",
+          "target": [
+            "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
+          "target": [
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Quote:</strong> “With Great Power, Comes Great Responsibility.” — Ben Parker</p>",
+          "target": [
+            "p:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Quote:</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> My title at the library is IT Assistant. I love helping our staff and patrons find the magic and wonder in technology!</p>",
+          "target": [
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Job at the Library:</strong>",
+          "target": [
+            "p:nth-child(10) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<aside class=\"sidebar\">",
+          "target": [
+            "aside"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"sidebar-newsletter-signup\">",
+          "target": [
+            "#sidebar-newsletter-signup"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -10030,7 +11449,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            ".address:nth-child(3) > br:nth-child(3)"
+            "br:nth-child(3)"
           ]
         },
         {
@@ -10188,7 +11607,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Main navigation</h2>",
+          "html": "<h2 class=\"visually-hidden\" id=\"block-mainnavigation-menu\">Footer navigation</h2>",
           "target": [
             "#block-mainnavigation-menu"
           ]
@@ -10250,7 +11669,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -10310,7 +11729,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -10990,7 +12409,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -11730,7 +13149,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -11819,6 +13238,40 @@
   "incomplete": [],
   "violations": [
     {
+      "id": "landmark-complementary-is-top-level",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "landmark-is-top-level",
+              "data": {
+                "role": null
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "The null landmark is contained in another landmark."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<aside class=\"sidebar\">",
+          "target": [
+            "aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
       "id": "landmark-unique",
       "impact": "moderate",
       "tags": [
@@ -11829,35 +13282,6 @@
       "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=axeAPI",
       "nodes": [
-        {
-          "any": [
-            {
-              "id": "landmark-is-unique",
-              "data": {
-                "role": "navigation",
-                "accessibleText": "main navigation"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
-                  "target": [
-                    "#block-mainnavigation"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
-          "target": [
-            "#block-clearview-main-menu"
-          ],
-          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-        },
         {
           "any": [
             {
@@ -11888,80 +13312,7 @@
           "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
         }
       ]
-    },
-    {
-      "id": "link-name",
-      "impact": "serious",
-      "tags": [
-        "cat.name-role-value",
-        "wcag2a",
-        "wcag244",
-        "wcag412",
-        "section508",
-        "section508.22.a",
-        "TTv5",
-        "TT6.a",
-        "EN-301-549",
-        "EN-9.2.4.4",
-        "EN-9.4.1.2",
-        "ACT"
-      ],
-      "description": "Ensure links have discernible text",
-      "help": "Links must have discernible text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have text that is visible to screen readers"
-            },
-            {
-              "id": "aria-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "aria-label attribute does not exist or is empty"
-            },
-            {
-              "id": "aria-labelledby",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
-            },
-            {
-              "id": "non-empty-title",
-              "data": {
-                "messageKey": "noAttr"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has no title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is in tab order and does not have accessible text"
-            }
-          ],
-          "impact": "serious",
-          "html": "<a href=\"/node\"></a>",
-          "target": [
-            "a[href$=\"node\"]"
-          ],
-          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
-        }
-      ]
     }
   ],
-  "documentTitle": "Clearview on Business: Patriot Custom Finishing | Clearview Library"
+  "documentTitle": "Staff Spotlight: Jesse Feavel | Clearview Library"
 }
