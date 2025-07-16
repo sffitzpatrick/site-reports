@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T15:10:13.018Z",
+  "timestamp": "2025-07-16T15:46:07.248Z",
   "url": "https://pika.clearviewlibrary.org/Record/348451",
   "toolOptions": {
     "reporter": "v1"
@@ -1076,6 +1076,110 @@
             }
           ],
           "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
           "html": "<div class=\"col-tn-12 col-sm-4 text-right pull-right\" id=\"connect-with-us-info\" role=\"region\" aria-label=\"Contact Information\">",
           "target": [
             "#connect-with-us-info"
@@ -1646,6 +1750,78 @@
           "html": "<ul aria-labelledby=\"share-tools-label-c78a36a8-5e37-f0a5-66dc-8c2557ffd2ef\" class=\"share-tools-list list-inline\">",
           "target": [
             ".share-tools-list"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
           ]
         },
         {
@@ -2246,6 +2422,78 @@
           "html": "<ul aria-labelledby=\"share-tools-label-c78a36a8-5e37-f0a5-66dc-8c2557ffd2ef\" class=\"share-tools-list list-inline\">",
           "target": [
             ".share-tools-list"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
           ]
         },
         {
@@ -3307,6 +3555,134 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<div class=\"col-tn-12 col-sm-4 text-right pull-right\" id=\"connect-with-us-info\" role=\"region\" aria-label=\"Contact Information\">",
           "target": [
             "#connect-with-us-info"
@@ -3657,6 +4033,78 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<div class=\"col-tn-12 col-sm-4 text-right pull-right\" id=\"connect-with-us-info\" role=\"region\" aria-label=\"Contact Information\">",
           "target": [
             "#connect-with-us-info"
@@ -3777,7 +4225,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 82.1389px;\">",
+          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 91.5659px;\">",
           "target": [
             "#home-page-login"
           ]
@@ -3809,7 +4257,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 82.1389px;\">",
+          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 90.5076px;\">",
           "target": [
             "#home-page-library-section"
           ]
@@ -3841,9 +4289,169 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<a data-pin-custom=\"true\" data-pin-do=\"buttonPin\" data-pin-media=\"https://pika.clearviewlibrary.org/bookcover.php?id=ils%3A348451&amp;size=large&amp;format=Book&amp;isn=1338175653\" target=\"_blank\" style=\"cursor:pointer;\" title=\"Pin on Pinterest\" data-pin-log=\"button_pinit\" data-pin-href=\"https://www.pinterest.com/pin/create/button?guid=ydAyGLLnLjD2-1&amp;url=https%3A%2F%2Fpika.clearviewlibrary.org%2F%2FRecord%2F348451&amp;media=https%3A%2F%2Fpika.clearviewlibrary.org%2Fbookcover.php%3Fid%3Dils%253A348451%26size%3Dlarge%26format%3DBook%26isn%3D1338175653&amp;description=Read%20at%20n%2Fa\">",
+          "html": "<a data-pin-custom=\"true\" data-pin-do=\"buttonPin\" data-pin-media=\"https://pika.clearviewlibrary.org/bookcover.php?id=ils%3A348451&amp;size=large&amp;format=Book&amp;isn=1338175653\" target=\"_blank\" style=\"cursor:pointer;\" title=\"Pin on Pinterest\" data-pin-log=\"button_pinit\" data-pin-href=\"https://www.pinterest.com/pin/create/button?guid=pPEKyXivgBBJ-1&amp;url=https%3A%2F%2Fpika.clearviewlibrary.org%2F%2FRecord%2F348451&amp;media=https%3A%2F%2Fpika.clearviewlibrary.org%2Fbookcover.php%3Fid%3Dils%253A348451%26size%3Dlarge%26format%3DBook%26isn%3D1338175653&amp;description=Read%20at%20n%2Fa\">",
           "target": [
             "a[data-pin-custom=\"true\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"seriesInfo\" style=\"\" class=\"row\">",
+          "target": [
+            "#seriesInfo"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"moreLikeThisInfo\" style=\"\" class=\"row\">",
+          "target": [
+            "#moreLikeThisInfo"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel \" id=\"similarSeriesPanel\" style=\"\">",
+          "target": [
+            "#similarSeriesPanel"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel \" id=\"similarTitlesPanel\" style=\"\">",
+          "target": [
+            "#similarTitlesPanel"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel \" id=\"similarAuthorsPanel\" style=\"\">",
+          "target": [
+            "#similarAuthorsPanel"
           ]
         },
         {
@@ -3946,7 +4554,7 @@
           "impact": null,
           "html": "<button class=\"btn btn-default\" type=\"submit\"><span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span><span id=\"horizontal-search-box-submit-text\">&nbsp;GO</span></button>",
           "target": [
-            ".btn-default[type=\"submit\"]"
+            ".btn-default.btn[type=\"submit\"]"
           ]
         },
         {
@@ -3964,7 +4572,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"visuallyhidden\" tabindex=\"-1\">Submit rating for </button>",
           "target": [
-            ".star_rating > button[type=\"submit\"]"
+            ".visuallyhidden[type=\"submit\"]"
           ]
         },
         {
@@ -4000,7 +4608,79 @@
           "impact": null,
           "html": "<button onclick=\"return Pika.GroupedWork.showSaveToListForm(this, 'c78a36a8-5e37-f0a5-66dc-8c2557ffd2ef');\" class=\"btn btn-sm\">Add To List</button>",
           "target": [
-            ".btn-group-sm.btn-group:nth-child(2) > .btn-sm"
+            ".btn-group-sm.btn-group:nth-child(2) > .btn-sm.btn"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute exists and is not empty"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute exists and is not empty"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute exists and is not empty"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute exists and is not empty"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
           ]
         }
       ]
@@ -4064,6 +4744,24 @@
                   "html": "<h2 class=\"panel-title\">More Like This</h2>",
                   "target": [
                     "a[href$=\"#moreLikeThisPanelBody\"] > .panel-heading > .panel-title"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"panel-title\">Similar Series From NoveList</h2>",
+                  "target": [
+                    "a[href$=\"#similarSeriesPanelBody\"] > .panel-heading > .panel-title"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"panel-title\">Similar Titles From NoveList</h2>",
+                  "target": [
+                    "a[href$=\"#similarTitlesPanelBody\"] > .panel-heading > .panel-title"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"panel-title\">Similar Authors From NoveList</h2>",
+                  "target": [
+                    "a[href$=\"#similarAuthorsPanelBody\"] > .panel-heading > .panel-title"
                   ]
                 },
                 {
@@ -4389,6 +5087,31 @@
           "html": "<div id=\"home-page-hours-locations\" class=\"sidebar-button\">Library Hours &amp; Locations</div>",
           "target": [
             "#home-page-hours-locations"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#4f5253",
+                "contrastRatio": 7.88,
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.88"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"home-page-home-button\" class=\"sidebar-button\">Library Home Page</div>",
+          "target": [
+            "#home-page-home-button"
           ]
         },
         {
@@ -5438,7 +6161,7 @@
           "impact": null,
           "html": "<button onclick=\"return Pika.GroupedWork.showSaveToListForm(this, 'c78a36a8-5e37-f0a5-66dc-8c2557ffd2ef');\" class=\"btn btn-sm\">Add To List</button>",
           "target": [
-            ".btn-group-sm.btn-group:nth-child(2) > .btn-sm"
+            ".btn-group-sm.btn-group:nth-child(2) > .btn-sm.btn"
           ]
         },
         {
@@ -6047,6 +6770,60 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Series From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarSeriesPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Titles From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarTitlesPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Authors From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarAuthorsPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<h2 class=\"panel-title\">More Copies In Prospector</h2>",
           "target": [
             "a[href$=\"#prospectorPanelBody\"] > .panel-heading > .panel-title"
@@ -6469,6 +7246,24 @@
                   },
                   {
                     "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(5) > a:nth-child(1) > div > h2"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(6) > a:nth-child(1) > div > h2"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(7) > a:nth-child(1) > div > h2"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
                       "html > body > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(8) > a:nth-child(1) > div > h2"
                     ],
                     "level": 2
@@ -6606,6 +7401,60 @@
           "html": "<h2 class=\"panel-title\">More Like This</h2>",
           "target": [
             "a[href$=\"#moreLikeThisPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Series From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarSeriesPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Titles From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarTitlesPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Authors From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarAuthorsPanelBody\"] > .panel-heading > .panel-title"
           ]
         },
         {
@@ -7148,6 +7997,58 @@
             }
           ],
           "impact": null,
+          "html": "<img id=\"scrollerLoadingImageSeries\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\">",
+          "target": [
+            "#scrollerLoadingImageSeries"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img id=\"scrollerLoadingImageMoreLikeThis\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\">",
+          "target": [
+            "#scrollerLoadingImageMoreLikeThis"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
           "html": "<img src=\"/interface/themes/responsive/images/facebook.png\" alt=\"Contact the library on Facebook\" class=\"img-rounded\">",
           "target": [
             ".connect-icon:nth-child(2) > .img-rounded"
@@ -7430,6 +8331,42 @@
           "html": "<img src=\"/interface/themes/responsive/images/pinterest-icon.png\" alt=\"Pin on Pinterest\">",
           "target": [
             "img[alt=\"Pin on Pinterest\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img id=\"scrollerLoadingImageSeries\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\">",
+          "target": [
+            "#scrollerLoadingImageSeries"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img id=\"scrollerLoadingImageMoreLikeThis\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\">",
+          "target": [
+            "#scrollerLoadingImageMoreLikeThis"
           ]
         },
         {
@@ -9193,6 +10130,84 @@
             }
           ],
           "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#similarSeriesPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Series From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarSeriesPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#similarTitlesPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Titles From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarTitlesPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#similarAuthorsPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Authors From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarAuthorsPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
           "html": "<a data-toggle=\"collapse\" href=\"#prospectorPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">More Copies In Prospector</h2></div></a>",
           "target": [
             "a[href$=\"#prospectorPanelBody\"]"
@@ -10185,7 +11200,7 @@
           "impact": null,
           "html": "<button class=\"btn btn-default\" type=\"submit\"><span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span><span id=\"horizontal-search-box-submit-text\">&nbsp;GO</span></button>",
           "target": [
-            ".btn-default[type=\"submit\"]"
+            ".btn-default.btn[type=\"submit\"]"
           ]
         },
         {
@@ -10419,7 +11434,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"visuallyhidden\" tabindex=\"-1\">Submit rating for </button>",
           "target": [
-            ".star_rating > button[type=\"submit\"]"
+            ".visuallyhidden[type=\"submit\"]"
           ]
         },
         {
@@ -10473,7 +11488,7 @@
           "impact": null,
           "html": "<button onclick=\"return Pika.GroupedWork.showSaveToListForm(this, 'c78a36a8-5e37-f0a5-66dc-8c2557ffd2ef');\" class=\"btn btn-sm\">Add To List</button>",
           "target": [
-            ".btn-group-sm.btn-group:nth-child(2) > .btn-sm"
+            ".btn-group-sm.btn-group:nth-child(2) > .btn-sm.btn"
           ]
         },
         {
@@ -10546,6 +11561,114 @@
           "html": "<img src=\"/interface/themes/responsive/images/pinterest-icon.png\" alt=\"Pin on Pinterest\">",
           "target": [
             "img[alt=\"Pin on Pinterest\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img id=\"scrollerLoadingImageSeries\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\">",
+          "target": [
+            "#scrollerLoadingImageSeries"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img id=\"scrollerLoadingImageMoreLikeThis\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\">",
+          "target": [
+            "#scrollerLoadingImageMoreLikeThis"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
           ]
         },
         {
@@ -11155,7 +12278,7 @@
           "impact": null,
           "html": "<div class=\"col-xs-12 col-sm-3 col-md-3 col-lg-3\"><a href=\"/\" title=\"Return to Catalog Home\"><img id=\"header-logo\" src=\"/interface/themes/clearview/images/logo_responsive.png\" alt=\"Logo for Clearview Library District\"></a></div>",
           "target": [
-            ".col-md-3.col-lg-3.col-sm-3"
+            ".col-lg-3.col-sm-3.col-xs-12"
           ]
         },
         {
@@ -11855,7 +12978,7 @@
           "impact": null,
           "html": "<button class=\"btn btn-default\" type=\"submit\"><span class=\"glyphicon glyphicon-search\" aria-hidden=\"true\"></span><span id=\"horizontal-search-box-submit-text\">&nbsp;GO</span></button>",
           "target": [
-            ".btn-default[type=\"submit\"]"
+            ".btn-default.btn[type=\"submit\"]"
           ]
         },
         {
@@ -12393,7 +13516,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 82.1389px;\">",
+          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 91.5659px;\">",
           "target": [
             "#home-page-login"
           ]
@@ -12473,7 +13596,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 82.1389px;\">",
+          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 90.5076px;\">",
           "target": [
             "#home-page-library-section"
           ]
@@ -14075,7 +15198,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"visuallyhidden\" tabindex=\"-1\">Submit rating for </button>",
           "target": [
-            ".star_rating > button[type=\"submit\"]"
+            ".visuallyhidden[type=\"submit\"]"
           ]
         },
         {
@@ -14295,7 +15418,7 @@
           "impact": null,
           "html": "<div class=\"series row\"><div class=\"result-label col-sm-4\">NoveList Series:</div><div class=\"col-sm-8 result-value\"><a href=\"/GroupedWork/c78a36a8-5e37-f0a5-66dc-8c2557ffd2ef/Series\">Pokemon (Anime novelizations)</a><br></div></div>",
           "target": [
-            ".series.row:nth-child(2)"
+            "#record-details-column > .series.row:nth-child(2)"
           ]
         },
         {
@@ -15355,7 +16478,7 @@
           "impact": null,
           "html": "<button onclick=\"return Pika.GroupedWork.showSaveToListForm(this, 'c78a36a8-5e37-f0a5-66dc-8c2557ffd2ef');\" class=\"btn btn-sm\">Add To List</button>",
           "target": [
-            ".btn-group-sm.btn-group:nth-child(2) > .btn-sm"
+            ".btn-group-sm.btn-group:nth-child(2) > .btn-sm.btn"
           ]
         },
         {
@@ -15653,7 +16776,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a data-pin-custom=\"true\" data-pin-do=\"buttonPin\" data-pin-media=\"https://pika.clearviewlibrary.org/bookcover.php?id=ils%3A348451&amp;size=large&amp;format=Book&amp;isn=1338175653\" target=\"_blank\" style=\"cursor:pointer;\" title=\"Pin on Pinterest\" data-pin-log=\"button_pinit\" data-pin-href=\"https://www.pinterest.com/pin/create/button?guid=ydAyGLLnLjD2-1&amp;url=https%3A%2F%2Fpika.clearviewlibrary.org%2F%2FRecord%2F348451&amp;media=https%3A%2F%2Fpika.clearviewlibrary.org%2Fbookcover.php%3Fid%3Dils%253A348451%26size%3Dlarge%26format%3DBook%26isn%3D1338175653&amp;description=Read%20at%20n%2Fa\">",
+          "html": "<a data-pin-custom=\"true\" data-pin-do=\"buttonPin\" data-pin-media=\"https://pika.clearviewlibrary.org/bookcover.php?id=ils%3A348451&amp;size=large&amp;format=Book&amp;isn=1338175653\" target=\"_blank\" style=\"cursor:pointer;\" title=\"Pin on Pinterest\" data-pin-log=\"button_pinit\" data-pin-href=\"https://www.pinterest.com/pin/create/button?guid=pPEKyXivgBBJ-1&amp;url=https%3A%2F%2Fpika.clearviewlibrary.org%2F%2FRecord%2F348451&amp;media=https%3A%2F%2Fpika.clearviewlibrary.org%2Fbookcover.php%3Fid%3Dils%253A348451%26size%3Dlarge%26format%3DBook%26isn%3D1338175653&amp;description=Read%20at%20n%2Fa\">",
           "target": [
             "a[data-pin-custom=\"true\"]"
           ]
@@ -15993,6 +17116,306 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<div id=\"seriesInfo\" style=\"\" class=\"row\">",
+          "target": [
+            "#seriesInfo"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"col-sm-12\">",
+          "target": [
+            "#seriesInfo > .col-sm-12"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"list-series\" class=\"titleScroller tab-pane\">",
+          "target": [
+            "#list-series"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"series\" class=\"titleScrollerWrapper\">",
+          "target": [
+            "#series"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"titleScrollerSeries\" class=\"titleScrollerBody\">",
+          "target": [
+            "#titleScrollerSeries"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<i class=\"glyphicon glyphicon-chevron-left\"></i>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"] > .glyphicon-chevron-left"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"scrollerBodyContainer\">",
+          "target": [
+            "#titleScrollerSeries > .scrollerBodyContainer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"scrollerLoadingContainer\"><img id=\"scrollerLoadingImageSeries\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\"></div>",
+          "target": [
+            "#titleScrollerSeries > .scrollerBodyContainer > .scrollerLoadingContainer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img id=\"scrollerLoadingImageSeries\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\">",
+          "target": [
+            "#scrollerLoadingImageSeries"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"clearer\"></div>",
+          "target": [
+            "#titleScrollerSeries > .clearer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"titleScrollerSelectedTitleSeries\" class=\"titleScrollerSelectedTitle notranslate\"></div>",
+          "target": [
+            "#titleScrollerSelectedTitleSeries"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"titleScrollerSelectedAuthorSeries\" class=\"titleScrollerSelectedAuthor notranslate\"></div>",
+          "target": [
+            "#titleScrollerSelectedAuthorSeries"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<i class=\"glyphicon glyphicon-chevron-right\"></i>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"] > .glyphicon-chevron-right"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<div class=\"panel active\" id=\"copiesPanel\">",
           "target": [
             "#copiesPanel"
@@ -16155,7 +17578,7 @@
           "impact": null,
           "html": "<div class=\"striped\">",
           "target": [
-            ".striped"
+            ".accordion-inner > .striped"
           ]
         },
         {
@@ -16596,6 +18019,546 @@
           "html": "<div class=\"panel-body\">",
           "target": [
             "#moreLikeThisPanelBody > .panel-body"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"moreLikeThisInfo\" style=\"\" class=\"row\">",
+          "target": [
+            "#moreLikeThisInfo"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"col-sm-12\">",
+          "target": [
+            "#moreLikeThisInfo > .col-sm-12"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"list-morelikethis\" class=\"titleScroller tab-pane\">",
+          "target": [
+            "#list-morelikethis"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"morelikethis\" class=\"titleScrollerWrapper\">",
+          "target": [
+            "#morelikethis"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"titleScrollerMoreLikeThis\" class=\"titleScrollerBody\">",
+          "target": [
+            "#titleScrollerMoreLikeThis"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<i class=\"glyphicon glyphicon-chevron-left\"></i>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"] > .glyphicon-chevron-left"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"scrollerBodyContainer\">",
+          "target": [
+            "#titleScrollerMoreLikeThis > .scrollerBodyContainer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"scrollerLoadingContainer\"><img id=\"scrollerLoadingImageMoreLikeThis\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\"></div>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .scrollerBodyContainer > .scrollerLoadingContainer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img id=\"scrollerLoadingImageMoreLikeThis\" class=\"scrollerLoading\" src=\"/interface/themes/default/images/loading_large.gif\" alt=\"Loading...\">",
+          "target": [
+            "#scrollerLoadingImageMoreLikeThis"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"clearer\"></div>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .clearer"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"titleScrollerSelectedTitleMoreLikeThis\" class=\"titleScrollerSelectedTitle notranslate\"></div>",
+          "target": [
+            "#titleScrollerSelectedTitleMoreLikeThis"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"titleScrollerSelectedAuthorMoreLikeThis\" class=\"titleScrollerSelectedAuthor notranslate\"></div>",
+          "target": [
+            "#titleScrollerSelectedAuthorMoreLikeThis"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<i class=\"glyphicon glyphicon-chevron-right\"></i>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"] > .glyphicon-chevron-right"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel \" id=\"similarSeriesPanel\" style=\"\">",
+          "target": [
+            "#similarSeriesPanel"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#similarSeriesPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Series From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarSeriesPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Series From NoveList</h2></div>",
+          "target": [
+            "a[href$=\"#similarSeriesPanelBody\"] > .panel-heading"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Series From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarSeriesPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel \" id=\"similarTitlesPanel\" style=\"\">",
+          "target": [
+            "#similarTitlesPanel"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#similarTitlesPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Titles From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarTitlesPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Titles From NoveList</h2></div>",
+          "target": [
+            "a[href$=\"#similarTitlesPanelBody\"] > .panel-heading"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Titles From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarTitlesPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel \" id=\"similarAuthorsPanel\" style=\"\">",
+          "target": [
+            "#similarAuthorsPanel"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#similarAuthorsPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Authors From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarAuthorsPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Authors From NoveList</h2></div>",
+          "target": [
+            "a[href$=\"#similarAuthorsPanelBody\"] > .panel-heading"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Similar Authors From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarAuthorsPanelBody\"] > .panel-heading > .panel-title"
           ]
         },
         {
@@ -18111,7 +20074,79 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"visuallyhidden\" tabindex=\"-1\">Submit rating for </button>",
           "target": [
-            ".star_rating > button[type=\"submit\"]"
+            ".visuallyhidden[type=\"submit\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "tabindex",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have a tabindex greater than 0"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"seriesScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "button[onclick=\"seriesScroller.scrollToLeft();\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "tabindex",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have a tabindex greater than 0"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"seriesScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerSeries > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "tabindex",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have a tabindex greater than 0"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"leftScrollerButton enabled btn btn-default\" onclick=\"morelikethisScroller.scrollToLeft();\" tabindex=\"0\" aria-label=\"Scroll left\"><i class=\"glyphicon glyphicon-chevron-left\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .leftScrollerButton.enabled[aria-label=\"Scroll left\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "tabindex",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have a tabindex greater than 0"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button class=\"rightScrollerButton btn btn-default\" onclick=\"morelikethisScroller.scrollToRight();\" tabindex=\"0\" aria-label=\"Scroll right\"><i class=\"glyphicon glyphicon-chevron-right\"></i></button>",
+          "target": [
+            "#titleScrollerMoreLikeThis > .rightScrollerButton.btn-default[aria-label=\"Scroll right\"]"
           ]
         }
       ]
@@ -18330,31 +20365,6 @@
             {
               "id": "color-contrast",
               "data": {
-                "contrastRatio": 0,
-                "fontSize": "11.3pt (15px)",
-                "fontWeight": "normal",
-                "messageKey": "bgOverlap",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element's background color could not be determined because it is overlapped by another element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<div id=\"home-page-home-button\" class=\"sidebar-button\">Library Home Page</div>",
-          "target": [
-            "#home-page-home-button"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
                 "messageKey": "complexTextShadows"
               },
               "relatedNodes": [],
@@ -18431,6 +20441,69 @@
           "html": "<h2 class=\"panel-title\">More Like This</h2>",
           "target": [
             "a[href$=\"#moreLikeThisPanelBody\"] > .panel-heading > .panel-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "complexTextShadows"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's contrast could not be determined because it uses complex text shadows"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"panel-title\">Similar Series From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarSeriesPanelBody\"] > .panel-heading > .panel-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "complexTextShadows"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's contrast could not be determined because it uses complex text shadows"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"panel-title\">Similar Titles From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarTitlesPanelBody\"] > .panel-heading > .panel-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "complexTextShadows"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's contrast could not be determined because it uses complex text shadows"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"panel-title\">Similar Authors From NoveList</h2>",
+          "target": [
+            "a[href$=\"#similarAuthorsPanelBody\"] > .panel-heading > .panel-title"
           ],
           "failureSummary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
         },
@@ -18678,6 +20751,34 @@
               },
               "relatedNodes": [
                 {
+                  "html": "<div class=\"panel active\" id=\"seriesPanel\">",
+                  "target": [
+                    "#seriesPanel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a data-toggle=\"collapse\" href=\"#seriesPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Also in This Series</h2></div></a>",
+          "target": [
+            "a[href$=\"#seriesPanelBody\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
                   "html": "<div class=\"panel active\" id=\"copiesPanel\">",
                   "target": [
                     "#copiesPanel"
@@ -18694,6 +20795,118 @@
           "html": "<a data-toggle=\"collapse\" href=\"#copiesPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Copies</h2></div></a>",
           "target": [
             "a[href$=\"#copiesPanelBody\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"panel active\" id=\"moreLikeThisPanel\">",
+                  "target": [
+                    "#moreLikeThisPanel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a data-toggle=\"collapse\" href=\"#moreLikeThisPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">More Like This</h2></div></a>",
+          "target": [
+            "a[href$=\"#moreLikeThisPanelBody\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"panel \" id=\"similarSeriesPanel\" style=\"\">",
+                  "target": [
+                    "#similarSeriesPanel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a data-toggle=\"collapse\" href=\"#similarSeriesPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Series From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarSeriesPanelBody\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"panel \" id=\"similarTitlesPanel\" style=\"\">",
+                  "target": [
+                    "#similarTitlesPanel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a data-toggle=\"collapse\" href=\"#similarTitlesPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Titles From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarTitlesPanelBody\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"panel \" id=\"similarAuthorsPanel\" style=\"\">",
+                  "target": [
+                    "#similarAuthorsPanel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a data-toggle=\"collapse\" href=\"#similarAuthorsPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Similar Authors From NoveList</h2></div></a>",
+          "target": [
+            "a[href$=\"#similarAuthorsPanelBody\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
         },
