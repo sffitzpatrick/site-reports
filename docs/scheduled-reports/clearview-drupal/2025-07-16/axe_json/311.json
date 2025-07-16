@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T15:58:03.407Z",
-  "url": "https://clearviewlibrary.org/taxonomy/term/59",
+  "timestamp": "2025-07-16T18:29:15.042Z",
+  "url": "https://clearviewlibrary.org/taxonomy/term/64",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,6 +445,23 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -2427,21 +2444,9 @@
                   ]
                 },
                 {
-                  "html": "<h2 class=\"node-title\">",
+                  "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Check Out Our New Book Club Kits</span>\n</a>\n    </h2>",
                   "target": [
-                    "#node-471 > .node-title"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"node-title\">",
-                  "target": [
-                    "#node-350 > .node-title"
-                  ]
-                },
-                {
-                  "html": "<h2>Project and General Information</h2>",
-                  "target": [
-                    ".clearfix.text-formatted[property=\"schema:text\"] > h2"
+                    ".node-title"
                   ]
                 },
                 {
@@ -2782,9 +2787,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Naming Convention, Logo Design, and Branding Refresh</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Check Out Our New Book Club Kits</span>",
           "target": [
-            "#node-471 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+            ".field--name-title"
           ]
         },
         {
@@ -2807,109 +2812,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (“RFP”). This RFP is issued to provide naming convention, logo design, and branding refresh for the library district.</p>",
+          "html": "<p>",
           "target": [
-            ".clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, Director, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
-          "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Deadline for Questions: Friday, June 16, 2023.</p>",
-          "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Below are the questions we have received from potential consultants, along with our responses:</p>",
-          "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
+            "div[property=\"schema:text\"] > p"
           ]
         },
         {
@@ -2934,7 +2839,7 @@
           "impact": null,
           "html": "<div class=\"field__label\">Tags</div>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__label"
+            ".field__label"
           ]
         },
         {
@@ -2957,9 +2862,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
+          "html": "<a href=\"/taxonomy/term/64\" property=\"schema:about\" hreflang=\"en\">Book Club Kits</a>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
+            "a[href=\"/taxonomy/term/64\"]"
           ]
         },
         {
@@ -2982,234 +2887,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"tag\" title=\"Request for Proposal for Naming Convention, Logo Design, and Branding Refresh\" hreflang=\"en\">",
+          "html": "<a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"tag\" title=\"Check Out Our New Book Club Kits\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Check Out Our New Book Club Kits</span></a>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Network Services and Hardware</span>",
-          "target": [
-            "#node-350 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Project and General Information</h2>",
-          "target": [
-            ".clearfix.text-formatted[property=\"schema:text\"] > h2"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (“RFP”). This RFP is issued to provide network services and hardware for all sites.</p>",
-          "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
-          "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(3) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Deadline for Submission: No later than Saturday, March 19, 2022, 5:00 pm.</p>",
-          "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__label\">Tags</div>",
-          "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__label"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
-          "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-network-services-and-hardware\" rel=\"tag\" title=\"Request for Proposal for Network Services and Hardware\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Request for Proposal for Network Services and Hardware</span></a>",
-          "target": [
-            "#node-350 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+            "a[rel=\"tag\"]"
           ]
         },
         {
@@ -4028,45 +3708,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">",
+          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Check Out Our New Book Club Kits</span>\n</a>\n    </h2>",
           "target": [
-            "#node-471 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-350 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Project and General Information</h2>",
-          "target": [
-            ".clearfix.text-formatted[property=\"schema:text\"] > h2"
+            ".node-title"
           ]
         },
         {
@@ -4206,19 +3850,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div:nth-child(1) > article > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div:nth-child(2) > article > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div:nth-child(2) > article > div:nth-child(3) > div:nth-child(1) > h2:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > div > div > div > div:nth-child(2) > div > article > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
@@ -4280,45 +3912,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">",
+          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Check Out Our New Book Club Kits</span>\n</a>\n    </h2>",
           "target": [
-            "#node-471 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-350 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Project and General Information</h2>",
-          "target": [
-            ".clearfix.text-formatted[property=\"schema:text\"] > h2"
+            ".node-title"
           ]
         },
         {
@@ -5293,102 +4889,6 @@
       ]
     },
     {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, Director, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
-                  "target": [
-                    "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, Director, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
-                  "target": [
-                    "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
-                  "target": [
-                    "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
-                  "target": [
-                    "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(3) > a"
-          ]
-        }
-      ]
-    },
-    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -5794,9 +5294,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"bookmark\">",
+          "html": "<a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Check Out Our New Book Club Kits</span>\n</a>",
           "target": [
-            "#node-471 > .node-title > a[rel=\"bookmark\"]"
+            "a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -5820,35 +5320,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
+          "html": "<a href=\"/taxonomy/term/64\" property=\"schema:about\" hreflang=\"en\">Book Club Kits</a>",
           "target": [
-            "p:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
-          "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
+            "a[href=\"/taxonomy/term/64\"]"
           ]
         },
         {
@@ -5879,9 +5353,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"tag\" title=\"Request for Proposal for Naming Convention, Logo Design, and Branding Refresh\" hreflang=\"en\">",
+          "html": "<a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"tag\" title=\"Check Out Our New Book Club Kits\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Check Out Our New Book Club Kits</span></a>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+            "a[rel=\"tag\"]"
           ]
         },
         {
@@ -5905,118 +5379,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-network-services-and-hardware\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Network Services and Hardware</span>\n</a>",
-          "target": [
-            "#node-350 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(3) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
-          "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-network-services-and-hardware\" rel=\"tag\" title=\"Request for Proposal for Network Services and Hardware\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Request for Proposal for Network Services and Hardware</span></a>",
-          "target": [
-            "#node-350 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/59/feed\" class=\"feed-icon\">\n  Subscribe to Request for Proposal\n</a>",
+          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/64/feed\" class=\"feed-icon\">\n  Subscribe to Book Club Kits\n</a>",
           "target": [
             ".feed-icon"
           ]
@@ -6840,27 +6203,9 @@
             }
           ],
           "impact": null,
-          "html": "<ul class=\"links inline\">",
+          "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"tag\" title=\"Check Out Our New Book Club Kits\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Check Out Our New Book Club Kits</span></a></li></ul>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul class=\"links inline\">",
-          "target": [
-            "#node-350 > .node__content > .node__links > .links.inline"
+            ".links"
           ]
         },
         {
@@ -7162,27 +6507,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"node-readmore\">",
+          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"tag\" title=\"Check Out Our New Book Club Kits\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Check Out Our New Book Club Kits</span></a></li>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"node-readmore\">",
-          "target": [
-            "#node-350 > .node__content > .node__links > .links.inline > .node-readmore"
+            ".node-readmore"
           ]
         },
         {
@@ -9155,7 +8482,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"view view-taxonomy-term view-id-taxonomy_term view-display-id-page_1 js-view-dom-id-177e42e15a668b580d6add23b6da178b8b768f199ee9128c524a4db6723fa447\">",
+          "html": "<div class=\"view view-taxonomy-term view-id-taxonomy_term view-display-id-page_1 js-view-dom-id-fcf2bb5a6599cb684b09bd578ad1f63c4b865e409642fe3b612738ed540ce5ca\">",
           "target": [
             ".view"
           ]
@@ -9175,7 +8502,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"view-header\">",
+          "html": "<div class=\"view-header\">\n      <div about=\"/taxonomy/term/64\" typeof=\"schema:Thing\" id=\"taxonomy-term-64\" class=\"taxonomy-term vocabulary-tags\">\n  \n      <span property=\"schema:name\" content=\"Book Club Kits\" class=\"rdf-meta hidden\"></span>\n\n  <div class=\"content\">\n    \n  </div>\n</div>\n\n    </div>",
           "target": [
             ".view-header"
           ]
@@ -9195,9 +8522,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div about=\"/taxonomy/term/59\" typeof=\"schema:Thing\" id=\"taxonomy-term-59\" class=\"taxonomy-term vocabulary-tags\">\n  \n      <span property=\"schema:name\" content=\"Request for Proposal\" class=\"rdf-meta hidden\"></span>\n\n  <div class=\"content\">\n    \n  </div>\n</div>",
+          "html": "<div about=\"/taxonomy/term/64\" typeof=\"schema:Thing\" id=\"taxonomy-term-64\" class=\"taxonomy-term vocabulary-tags\">\n  \n      <span property=\"schema:name\" content=\"Book Club Kits\" class=\"rdf-meta hidden\"></span>\n\n  <div class=\"content\">\n    \n  </div>\n</div>",
           "target": [
-            "#taxonomy-term-59"
+            "#taxonomy-term-64"
           ]
         },
         {
@@ -9217,7 +8544,7 @@
           "impact": null,
           "html": "<div class=\"content\">\n    \n  </div>",
           "target": [
-            "#taxonomy-term-59 > .content"
+            "#taxonomy-term-64 > .content"
           ]
         },
         {
@@ -9257,7 +8584,7 @@
           "impact": null,
           "html": "<div class=\"views-row\">",
           "target": [
-            ".views-row:nth-child(1)"
+            ".views-row"
           ]
         },
         {
@@ -9275,9 +8602,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"471\" about=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" typeof=\"schema:Article\" id=\"node-471\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
+          "html": "<article data-history-node-id=\"509\" about=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" typeof=\"schema:Article\" id=\"node-509\" class=\"node node--type-article node--promoted node--view-mode-teaser\">",
           "target": [
-            "#node-471"
+            "#node-509"
           ]
         },
         {
@@ -9295,9 +8622,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">",
+          "html": "<h2 class=\"node-title\">\n      <a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Check Out Our New Book Club Kits</span>\n</a>\n    </h2>",
           "target": [
-            "#node-471 > .node-title"
+            ".node-title"
           ]
         },
         {
@@ -9315,9 +8642,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"bookmark\">",
+          "html": "<a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Check Out Our New Book Club Kits</span>\n</a>",
           "target": [
-            "#node-471 > .node-title > a[rel=\"bookmark\"]"
+            "a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -9335,9 +8662,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Naming Convention, Logo Design, and Branding Refresh</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Check Out Our New Book Club Kits</span>",
           "target": [
-            "#node-471 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+            ".field--name-title"
           ]
         },
         {
@@ -9357,7 +8684,7 @@
           "impact": null,
           "html": "<div class=\"node__content\">",
           "target": [
-            "#node-471 > .node__content"
+            ".node__content"
           ]
         },
         {
@@ -9377,7 +8704,7 @@
           "impact": null,
           "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
+            "div[property=\"schema:text\"]"
           ]
         },
         {
@@ -9395,89 +8722,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (“RFP”). This RFP is issued to provide naming convention, logo design, and branding refresh for the library district.</p>",
+          "html": "<p>",
           "target": [
-            ".clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, Director, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
-          "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Deadline for Questions: Friday, June 16, 2023.</p>",
-          "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Below are the questions we have received from potential consultants, along with our responses:</p>",
-          "target": [
-            "#node-471 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
+            "div[property=\"schema:text\"] > p"
           ]
         },
         {
@@ -9497,7 +8744,7 @@
           "impact": null,
           "html": "<div class=\"field field--name-field-tags field--type-entity-reference field--label-above\">",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above"
+            ".field--name-field-tags"
           ]
         },
         {
@@ -9517,7 +8764,7 @@
           "impact": null,
           "html": "<div class=\"field__label\">Tags</div>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__label"
+            ".field__label"
           ]
         },
         {
@@ -9535,9 +8782,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__items\">\n                                        <div class=\"field__item\"><a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a></div>\n                                </div>",
+          "html": "<div class=\"field__items\">\n                                        <div class=\"field__item\"><a href=\"/taxonomy/term/64\" property=\"schema:about\" hreflang=\"en\">Book Club Kits</a></div>\n                                </div>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items"
+            ".field__items"
           ]
         },
         {
@@ -9555,9 +8802,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a></div>",
+          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/64\" property=\"schema:about\" hreflang=\"en\">Book Club Kits</a></div>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item"
+            ".field__items > .field__item"
           ]
         },
         {
@@ -9575,9 +8822,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
+          "html": "<a href=\"/taxonomy/term/64\" property=\"schema:about\" hreflang=\"en\">Book Club Kits</a>",
           "target": [
-            "#node-471 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
+            "a[href=\"/taxonomy/term/64\"]"
           ]
         },
         {
@@ -9597,7 +8844,7 @@
           "impact": null,
           "html": "<div class=\"node__links\">",
           "target": [
-            "#node-471 > .node__content > .node__links"
+            ".node__links"
           ]
         },
         {
@@ -9615,9 +8862,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul class=\"links inline\">",
+          "html": "<ul class=\"links inline\"><li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"tag\" title=\"Check Out Our New Book Club Kits\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Check Out Our New Book Club Kits</span></a></li></ul>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline"
+            ".links"
           ]
         },
         {
@@ -9635,9 +8882,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"node-readmore\">",
+          "html": "<li class=\"node-readmore\"><a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"tag\" title=\"Check Out Our New Book Club Kits\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Check Out Our New Book Club Kits</span></a></li>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore"
+            ".node-readmore"
           ]
         },
         {
@@ -9655,9 +8902,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh\" rel=\"tag\" title=\"Request for Proposal for Naming Convention, Logo Design, and Branding Refresh\" hreflang=\"en\">",
+          "html": "<a href=\"/about-us/learn-more/news/check-out-our-new-book-club-kits\" rel=\"tag\" title=\"Check Out Our New Book Club Kits\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Check Out Our New Book Club Kits</span></a>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
+            "a[rel=\"tag\"]"
           ]
         },
         {
@@ -9675,9 +8922,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"visually-hidden\"> about Request for Proposal for Naming Convention, Logo Design, and Branding Refresh</span>",
+          "html": "<span class=\"visually-hidden\"> about Check Out Our New Book Club Kits</span>",
           "target": [
-            "#node-471 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > span"
+            "a[rel=\"tag\"] > span"
           ]
         },
         {
@@ -9695,447 +8942,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"views-row\">",
-          "target": [
-            ".views-row:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<article data-history-node-id=\"350\" about=\"/about-us/learn-more/news/request-proposal-network-services-and-hardware\" typeof=\"schema:Article\" id=\"node-350\" class=\"node node--type-article node--view-mode-teaser\">",
-          "target": [
-            "#node-350"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-350 > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-network-services-and-hardware\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Network Services and Hardware</span>\n</a>",
-          "target": [
-            "#node-350 > .node-title > a[rel=\"bookmark\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Network Services and Hardware</span>",
-          "target": [
-            "#node-350 > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__content\">",
-          "target": [
-            "#node-350 > .node__content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Project and General Information</h2>",
-          "target": [
-            ".clearfix.text-formatted[property=\"schema:text\"] > h2"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (“RFP”). This RFP is issued to provide network services and hardware for all sites.</p>",
-          "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Submit all responses via E-mail as attachments to Ann Kling, <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>.&nbsp;</p>",
-          "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(3) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Deadline for Submission: No later than Saturday, March 19, 2022, 5:00 pm.</p>",
-          "target": [
-            "#node-350 > .node__content > .clearfix.text-formatted[property=\"schema:text\"] > p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-tags field--type-entity-reference field--label-above\">",
-          "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__label\">Tags</div>",
-          "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__label"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__items\">\n                                        <div class=\"field__item\"><a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a></div>\n                                </div>",
-          "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a></div>",
-          "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/taxonomy/term/59\" property=\"schema:about\" hreflang=\"en\">Request for Proposal</a>",
-          "target": [
-            "#node-350 > .node__content > .field--name-field-tags.field--type-entity-reference.field--label-above > .field__items > .field__item > a[href=\"/taxonomy/term/59\"][property=\"schema:about\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__links\">",
-          "target": [
-            "#node-350 > .node__content > .node__links"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul class=\"links inline\">",
-          "target": [
-            "#node-350 > .node__content > .node__links > .links.inline"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"node-readmore\">",
-          "target": [
-            "#node-350 > .node__content > .node__links > .links.inline > .node-readmore"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/request-proposal-network-services-and-hardware\" rel=\"tag\" title=\"Request for Proposal for Network Services and Hardware\" hreflang=\"en\">Read more<span class=\"visually-hidden\"> about Request for Proposal for Network Services and Hardware</span></a>",
-          "target": [
-            "#node-350 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"visually-hidden\"> about Request for Proposal for Network Services and Hardware</span>",
-          "target": [
-            "#node-350 > .node__content > .node__links > .links.inline > .node-readmore > a[rel=\"tag\"][hreflang=\"en\"] > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"feed-icons\">\n      <a href=\"https://clearviewlibrary.org/taxonomy/term/59/feed\" class=\"feed-icon\">\n  Subscribe to Request for Proposal\n</a>\n\n    </div>",
+          "html": "<div class=\"feed-icons\">\n      <a href=\"https://clearviewlibrary.org/taxonomy/term/64/feed\" class=\"feed-icon\">\n  Subscribe to Book Club Kits\n</a>\n\n    </div>",
           "target": [
             ".feed-icons"
           ]
@@ -10155,7 +8962,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/59/feed\" class=\"feed-icon\">\n  Subscribe to Request for Proposal\n</a>",
+          "html": "<a href=\"https://clearviewlibrary.org/taxonomy/term/64/feed\" class=\"feed-icon\">\n  Subscribe to Book Club Kits\n</a>",
           "target": [
             ".feed-icon"
           ]
@@ -12309,5 +11116,5 @@
       ]
     }
   ],
-  "documentTitle": "Request for Proposal | Clearview Library"
+  "documentTitle": "Book Club Kits | Clearview Library"
 }

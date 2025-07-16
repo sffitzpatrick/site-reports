@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-07-16T15:41:56.783Z",
+  "timestamp": "2025-07-16T18:15:32.913Z",
   "url": "https://clearview.libnet.info/event/13542466",
   "toolOptions": {
     "reporter": "v1"
@@ -1865,6 +1865,24 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<div class=\"alert past-event-panel\" role=\"alert\">",
+          "target": [
+            ".alert"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -2833,6 +2851,24 @@
             }
           ],
           "impact": null,
+          "html": "<div class=\"alert past-event-panel\" role=\"alert\">",
+          "target": [
+            ".alert"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "deprecatedrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role is not deprecated"
+            }
+          ],
+          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -3547,6 +3583,24 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<div class=\"alert past-event-panel\" role=\"alert\">",
+          "target": [
+            ".alert"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-required-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "All required ARIA attributes are present"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -3744,6 +3798,38 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "invalidrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA role is valid"
+            },
+            {
+              "id": "abstractrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Abstract roles are not used"
+            },
+            {
+              "id": "unsupportedrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA role is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<div class=\"alert past-event-panel\" role=\"alert\">",
+          "target": [
+            ".alert"
           ]
         },
         {
@@ -5843,6 +5929,38 @@
           "html": "<div class=\"amh-content\" style=\"border-width: 0px; border-style: solid; margin-right: 0px; margin-bottom: 40px; padding: 0 15px;\">",
           "target": [
             "#idCcf1N > .amh-content"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a style=\"display: block;max-width: 350px; margin: 0 auto;height:\" class=\"button past-event-button-text\" href=\"/events?r=thismonth\">View other events</a>",
+          "target": [
+            ".past-event-button-text"
           ]
         },
         {
@@ -9529,6 +9647,56 @@
             {
               "id": "color-contrast",
               "data": {
+                "fgColor": "#c10000",
+                "bgColor": "#fffdd9",
+                "contrastRatio": 6.21,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 6.21"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p class=\"past-event-text-important\">Event finished. This event was in the past: 10:15am on Wednesday, July 16, 2025</p>",
+          "target": [
+            ".past-event-text-important"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "13.0pt (17.328px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a style=\"display: block;max-width: 350px; margin: 0 auto;height:\" class=\"button past-event-button-text\" href=\"/events?r=thismonth\">View other events</a>",
+          "target": [
+            ".past-event-button-text"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
                 "fgColor": "#0072bc",
                 "bgColor": "#ffffff",
                 "contrastRatio": 5.08,
@@ -12143,25 +12311,25 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div > div > div > div:nth-child(2) > div > div:nth-child(1) > div > div > span > h2:nth-child(1)"
+                      "html > body > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > div > div > span > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div > div > div > div:nth-child(2) > div > div:nth-child(1) > div > div > span > h3:nth-child(2)"
+                      "html > body > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > div > div > span > h3:nth-child(2)"
                     ],
                     "level": 3
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > div > span > h4:nth-child(1)"
+                      "html > body > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > div > span > h4:nth-child(1)"
                     ],
                     "level": 4
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > span > h4:nth-child(1)"
+                      "html > body > div:nth-child(5) > div:nth-child(1) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > span > h4:nth-child(1)"
                     ],
                     "level": 4
                   },
@@ -13567,6 +13735,32 @@
           "html": "<a href=\"https://clearviewlibrary.org/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
             "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a style=\"display: block;max-width: 350px; margin: 0 auto;height:\" class=\"button past-event-button-text\" href=\"/events?r=thismonth\">View other events</a>",
+          "target": [
+            ".past-event-button-text"
           ]
         },
         {
@@ -17898,6 +18092,146 @@
           "html": "<div class=\"amh-content\" style=\"border-width: 0px; border-style: solid; margin-right: 0px; margin-bottom: 40px; padding: 0 15px;\">",
           "target": [
             "#idCcf1N > .amh-content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"amh-row row\">",
+          "target": [
+            "#idCcf1N > .amh-content > .amh-row.row:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"alert past-event-panel\" role=\"alert\">",
+          "target": [
+            ".alert"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"row\">",
+          "target": [
+            ".alert > .row"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"col-md-12 past-event-text\"><p class=\"past-event-text-important\">Event finished. This event was in the past: 10:15am on Wednesday, July 16, 2025</p></div>",
+          "target": [
+            ".past-event-text"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p class=\"past-event-text-important\">Event finished. This event was in the past: 10:15am on Wednesday, July 16, 2025</p>",
+          "target": [
+            ".past-event-text-important"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"col-md-12\"><a style=\"display: block;max-width: 350px; margin: 0 auto;height:\" class=\"button past-event-button-text\" href=\"/events?r=thismonth\">View other events</a></div>",
+          "target": [
+            ".col-md-12:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a style=\"display: block;max-width: 350px; margin: 0 auto;height:\" class=\"button past-event-button-text\" href=\"/events?r=thismonth\">View other events</a>",
+          "target": [
+            ".past-event-button-text"
           ]
         },
         {
