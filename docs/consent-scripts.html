@@ -15,80 +15,11 @@
   </style>
 </head>
 <body>
-  <h1>Toll-Free Verification — Ready-to-submit Text</h1>
-  <p class="card"><small>Edit the placeholders (e.g. <code>[Your Name]</code>, <code>[Your Toll-Free Number]</code>) before copying if needed.</small></p>
-
-  <div class="card">
-    <strong>Use Case Description</strong>
-    <div class="row" style="margin-top:8px;">
-      <pre id="usecase">Personal two-way SMS relay between two known contacts. The toll-free number is used solely to forward SMS messages between the account owner and a single external contact for personal, non-promotional communication. Message and data rates may apply.</pre>
-      <button onclick="copyText('usecase')">Copy</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <strong>Verbal Consent Script</strong>
-    <div class="row" style="margin-top:8px;">
-      <pre id="verbal">"Hi, this is [Your Name]. I want to confirm you agree to receive text messages from my toll-free number [Your Toll-Free Number]. These messages will be for personal communication only (not marketing). Message and data rates may apply. You can reply STOP at any time to stop receiving messages. Do you agree?"</pre>
-      <button onclick="copyText('verbal')">Copy</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <strong>Written Consent Example</strong>
-    <div class="row" style="margin-top:8px;">
-      <pre id="written">By providing your phone number, you agree to receive text messages from [Your Name] through the toll-free number [Your Toll-Free Number]. These messages are for personal communication only and are not promotional. Message and data rates may apply. Reply STOP at any time to stop receiving messages.</pre>
-      <button onclick="copyText('written')">Copy</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <strong>Sample Messages (use in "Message Samples" field)</strong>
-    <div style="margin-top:8px;">
-      <div class="row" style="width:100%">
-        <div style="flex:1">
-          <small><strong>Inbound (from external contact to toll-free):</strong></small>
-          <pre id="sample_in">Hey — are we still meeting tonight at 7? — Alice</pre>
-        </div>
-        <div style="flex:1">
-          <small><strong>Forwarded (from toll-free to you):</strong></small>
-          <pre id="sample_forward">FWD from +1XXXXXXXXXX: Hey — are we still meeting tonight at 7?</pre>
-        </div>
-      </div>
-
-      <div class="row" style="margin-top:8px;">
-        <button onclick="copyText('sample_in')">Copy Inbound</button>
-        <button onclick="copyText('sample_forward')">Copy Forwarded</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <strong>Opt-out / STOP Language</strong>
-    <div class="row" style="margin-top:8px;">
-      <pre id="stop">Reply STOP to opt out of future messages. After replying STOP you will no longer receive messages from this number.</pre>
-      <button onclick="copyText('stop')">Copy</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <strong>Additional Notes for Submission</strong>
-    <ul>
-      <li>Keep the use case consistent with the scripts above: <em>personal, non-promotional, two known contacts</em>.</li>
-      <li>If Twilio asks for a website or point of contact, provide your email and a short URL or GitHub profile (optional for personal use).</li>
-      <li>Replace placeholders before submitting: <code>[Your Name]</code>, <code>[Your Toll-Free Number]</code>, and any example phone numbers.</li>
-    </ul>
-  </div>
-
-  <script>
-    function copyText(id) {
-      const text = document.getElementById(id).innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Copied to clipboard!');
-      }).catch(() => {
-        prompt('Copy the text below:', text);
-      });
-    }
-  </script>
+  <h1>Toll-Free Verification scripts</h1>
+  <h2>Example Verbal Consent Script</h2>
+  <p>“Hi, I’d like to confirm that you agree to receive text messages from me through my toll-free number. These texts will only be for personal communication, not marketing. Message and data rates may apply. You can reply STOP at any time to stop receiving messages. Do you agree?”</p>
+  <h2>Example Written Consent Script</h2>
+  <p>“By providing your phone number, you agree to receive text messages from me through my toll-free number. These messages are for personal communication only and are not promotional. Message and data rates may apply. Reply STOP at any time to stop receiving messages.”</p>
+  
 </body>
 </html>
