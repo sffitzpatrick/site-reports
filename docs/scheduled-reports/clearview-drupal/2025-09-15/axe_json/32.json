@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:37:46.149Z",
-  "url": "https://clearviewlibrary.org/services/other/bookmobile",
+  "timestamp": "2025-09-15T17:41:16.385Z",
+  "url": "https://clearviewlibrary.org/services/other",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,23 +445,6 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -903,9 +886,61 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>",
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Other</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+            "#menu-item-94d5e068 > .is-active[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > .is-active[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > .is-active[data-drupal-link-system-path=\"node/38\"][aria-current=\"page\"]"
           ]
         },
         {
@@ -1084,7 +1119,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1298,9 +1333,45 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>",
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Other</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+            "#menu-item-94d5e068 > .is-active[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > .is-active[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > .is-active[data-drupal-link-system-path=\"node/38\"][aria-current=\"page\"]"
           ]
         },
         {
@@ -1458,7 +1529,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1708,9 +1779,45 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>",
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Other</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+            "#menu-item-94d5e068 > .is-active[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > .is-active[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > .is-active[data-drupal-link-system-path=\"node/38\"][aria-current=\"page\"]"
           ]
         },
         {
@@ -1868,7 +1975,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2152,7 +2259,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2520,9 +2627,73 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>",
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Other</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+            "#menu-item-94d5e068 > .is-active[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > .is-active[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > .is-active[data-drupal-link-system-path=\"node/38\"][aria-current=\"page\"]"
           ]
         },
         {
@@ -2722,9 +2893,45 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>",
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Other</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+            "#menu-item-94d5e068 > .is-active[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > .is-active[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > .is-active[data-drupal-link-system-path=\"node/38\"][aria-current=\"page\"]"
           ]
         },
         {
@@ -2866,21 +3073,45 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Bookmobile</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Other Services</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2>Delivered Materials</h2>",
+                  "html": "<h2 id=\"bookmobile\">Bookmobile</h2>",
                   "target": [
-                    "h2:nth-child(4)"
+                    "#bookmobile"
                   ]
                 },
                 {
-                  "html": "<h2>Returned Materials</h2>",
+                  "html": "<h2 id=\"lobby-stops\">Lobby Stops</h2>",
                   "target": [
-                    "h2:nth-child(7)"
+                    "#lobby-stops"
+                  ]
+                },
+                {
+                  "html": "<h2 id=\"notary\">Notary</h2>",
+                  "target": [
+                    "#notary"
+                  ]
+                },
+                {
+                  "html": "<h2 id=\"reserve-a-room\">Reserve a Room</h2>",
+                  "target": [
+                    "#reserve-a-room"
+                  ]
+                },
+                {
+                  "html": "<h2 id=\"tax-help\">Tax Help</h2>",
+                  "target": [
+                    "#tax-help"
+                  ]
+                },
+                {
+                  "html": "<h2 id=\"test-proctoring\">Test Proctoring</h2>",
+                  "target": [
+                    "#test-proctoring"
                   ]
                 },
                 {
@@ -2910,7 +3141,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\" class=\"has-sidebar\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -3227,9 +3458,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Bookmobile</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Other Services</span>",
           "target": [
             ".field--name-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"bookmobile\">Bookmobile</h2>",
+          "target": [
+            "#bookmobile"
           ]
         },
         {
@@ -3252,9 +3508,134 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Our bookmobile — a mini library on wheels — travels to regular stops in our three communities each week to bring a sampling of library materials and services to your neighborhood.</p>",
+          "html": "<p>A mini library on wheels.</p>",
           "target": [
-            "p:nth-child(2)"
+            "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/bookmobile\">Check it Out</a>",
+          "target": [
+            ".button[href$=\"bookmobile\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"lobby-stops\">Lobby Stops</h2>",
+          "target": [
+            "#lobby-stops"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>The Library in Your Lobby</p>",
+          "target": [
+            "p:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/lobby-stops\">Learn More</a>",
+          "target": [
+            ".button[href$=\"lobby-stops\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"notary\">Notary</h2>",
+          "target": [
+            "#notary"
           ]
         },
         {
@@ -3279,7 +3660,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(3)"
+            "p:nth-child(11)"
           ]
         },
         {
@@ -3302,84 +3683,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"file file--mime-application-pdf file--application-pdf\" filename=\"Summer-Bomo-2022.pdf\" href=\"https://clearview.libnet.info/events?l=Bookmobile&amp;r=thismonth\">Check out our schedule</a>",
+          "html": "<a href=\"https://clearview.libnet.info/v/assets/771\">schedule an appointment</a>",
           "target": [
-            ".file"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-our-bookmobile\">Staff Spotlight</a>",
-          "target": [
-            "p:nth-child(3) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"tel:9702034319\">970-203-4319</a>",
-          "target": [
-            "a[href=\"tel:9702034319\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Delivered Materials</h2>",
-          "target": [
-            "h2:nth-child(4)"
+            "p:nth-child(11) > a"
           ]
         },
         {
@@ -3402,9 +3708,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>To have an item delivered to a bookmobile stop, place a request in our catalog and select “Bookmobile” for the location, and your holds will be brought to the stop closest to your home address.</p>",
+          "html": "<em>We are unable to provide witnesses. If witnesses are required on a document you are having notarized, please have the witnesses accompany you to our office and have them bring a government issued, photo ID with them.</em>",
           "target": [
-            "p:nth-child(5)"
+            "em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"https://clearview.libnet.info/v/assets/771\">Schedule an Appointment</a>",
+          "target": [
+            "p:nth-child(12) > .button"
           ]
         },
         {
@@ -3427,9 +3758,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Returned Materials</h2>",
+          "html": "<h2 id=\"reserve-a-room\">Reserve a Room</h2>",
           "target": [
-            "h2:nth-child(7)"
+            "#reserve-a-room"
           ]
         },
         {
@@ -3452,9 +3783,184 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Place items to be returned in the bins outside the bookmobile. We’ll also collect Weld RE-4 School District and Windsor Charter Academy library books.</p>",
+          "html": "<p>Study in solitude or meet with a group.</p>",
           "target": [
-            "p:nth-child(8)"
+            "p:nth-child(15)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/reserve-room\">Get Started</a>",
+          "target": [
+            ".button[href$=\"reserve-room\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"tax-help\">Tax Help</h2>",
+          "target": [
+            "#tax-help"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Here to help at tax time.</p>",
+          "target": [
+            "p:nth-child(20)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/tax-help\">Check it Out</a>",
+          "target": [
+            ".button[href$=\"tax-help\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"test-proctoring\">Test Proctoring</h2>",
+          "target": [
+            "#test-proctoring"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "p:nth-child(24)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"554ed977-7a93-4daa-b008-38b5735d792d\" href=\"/contact\" target=\"_blank\" title=\"Contact\">Reach out</a>",
+          "target": [
+            "a[data-entity-substitution=\"canonical\"]"
           ]
         },
         {
@@ -3677,9 +4183,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\">Other</a>",
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Other</a>",
           "target": [
-            "#menu-item-94d5e068 > a[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > .is-active[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
           ]
         },
         {
@@ -3702,9 +4208,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>",
+          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/39\"][href$=\"bookmobile\"]"
           ]
         },
         {
@@ -3729,7 +4235,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/lobby-stops\" data-drupal-link-system-path=\"node/115\">Lobby Stops</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[href$=\"lobby-stops\"][data-drupal-link-system-path=\"node/115\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/115\"][href$=\"lobby-stops\"]"
           ]
         },
         {
@@ -3752,9 +4258,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>",
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(3) > a[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > .is-active[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
           ]
         },
         {
@@ -3779,7 +4285,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/reserve-room\" data-drupal-link-system-path=\"node/41\">Reserve a Room</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[href$=\"reserve-room\"][data-drupal-link-system-path=\"node/41\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/41\"][href$=\"reserve-room\"]"
           ]
         },
         {
@@ -3804,7 +4310,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\">Tax Help</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(5) > a[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/43\"][href$=\"tax-help\"]"
           ]
         },
         {
@@ -3827,9 +4333,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>",
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > .is-active[data-drupal-link-system-path=\"node/38\"][aria-current=\"page\"]"
           ]
         },
         {
@@ -3929,7 +4435,7 @@
           "impact": null,
           "html": "<a href=\"/contact\">Contact</a>",
           "target": [
-            "p > a[href$=\"contact\"]"
+            ".contact:nth-child(4) > p > a[href$=\"contact\"]"
           ]
         },
         {
@@ -4691,7 +5197,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Bookmobile</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Other Services</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4709,9 +5215,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Delivered Materials</h2>",
+          "html": "<h2 id=\"bookmobile\">Bookmobile</h2>",
           "target": [
-            "h2:nth-child(4)"
+            "#bookmobile"
           ]
         },
         {
@@ -4727,9 +5233,81 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Returned Materials</h2>",
+          "html": "<h2 id=\"lobby-stops\">Lobby Stops</h2>",
           "target": [
-            "h2:nth-child(7)"
+            "#lobby-stops"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"notary\">Notary</h2>",
+          "target": [
+            "#notary"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"reserve-a-room\">Reserve a Room</h2>",
+          "target": [
+            "#reserve-a-room"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"tax-help\">Tax Help</h2>",
+          "target": [
+            "#tax-help"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"test-proctoring\">Test Proctoring</h2>",
+          "target": [
+            "#test-proctoring"
           ]
         },
         {
@@ -4893,19 +5471,43 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h2:nth-child(4)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h2:nth-child(7)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h2:nth-child(5)"
                     ],
                     "level": 2
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h2:nth-child(9)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h2:nth-child(13)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h2:nth-child(18)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h2:nth-child(22)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
@@ -4967,7 +5569,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Bookmobile</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Other Services</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4985,9 +5587,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Delivered Materials</h2>",
+          "html": "<h2 id=\"bookmobile\">Bookmobile</h2>",
           "target": [
-            "h2:nth-child(4)"
+            "#bookmobile"
           ]
         },
         {
@@ -5003,9 +5605,81 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Returned Materials</h2>",
+          "html": "<h2 id=\"lobby-stops\">Lobby Stops</h2>",
           "target": [
-            "h2:nth-child(7)"
+            "#lobby-stops"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"notary\">Notary</h2>",
+          "target": [
+            "#notary"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"reserve-a-room\">Reserve a Room</h2>",
+          "target": [
+            "#reserve-a-room"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"tax-help\">Tax Help</h2>",
+          "target": [
+            "#tax-help"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"test-proctoring\">Test Proctoring</h2>",
+          "target": [
+            "#test-proctoring"
           ]
         },
         {
@@ -5205,9 +5879,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Children on Bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"bed680dc-e8f2-4a5d-ab94-1ace77b6a679\" src=\"/sites/default/files/inline-images/Bookmobile.jpg\" width=\"1920\" height=\"1080\" loading=\"lazy\">",
+          "html": "<img alt=\"Bookmobile 2025\" data-entity-type=\"file\" data-entity-uuid=\"54a27ca1-7be5-46f2-91a1-e4be533a26e2\" src=\"/sites/default/files/inline-images/Bookmobile%202025%20Image.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
           "target": [
-            "img[alt=\"Children on Bookmobile\"]"
+            "img[alt=\"Bookmobile 2025\"]"
           ]
         },
         {
@@ -5231,9 +5905,113 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"screenshot of catalog selection for bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"9fb5b7ec-690c-4fb4-90fa-e306b69dcb03\" src=\"/sites/default/files/inline-images/Screen%20Shot%202021-08-25%20at%209.34.37%20AM_0.png\" width=\"500\" height=\"291\" loading=\"lazy\">",
+          "html": "<img alt=\"lobby stop 2025\" data-entity-type=\"file\" data-entity-uuid=\"512e646a-6093-471e-bbfc-0c66f90478f1\" src=\"/sites/default/files/inline-images/Lobby_Stops_2025_Image.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
           "target": [
-            "img[width=\"500\"]"
+            "img[alt=\"lobby stop 2025\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"notary\" data-entity-type=\"file\" data-entity-uuid=\"223d7083-6f87-493e-9aac-f09189322831\" src=\"/sites/default/files/inline-images/Notary_Services_2025_Photo%202.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"notary\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"James Peak Meeting Room, WL\" data-entity-type=\"file\" data-entity-uuid=\"85fd605e-1a21-46e5-8d4f-56e7ec6aa41d\" src=\"/sites/default/files/inline-images/Reserve_a_Room_2025_James%20Peak%20WL.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"James Peak Meeting Room, WL\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"tax help\" data-entity-type=\"file\" data-entity-uuid=\"2d1ce821-83a7-44ba-a4e4-83d571648237\" src=\"/sites/default/files/inline-images/tax-help_0.jpg\" width=\"500\" height=\"234\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"tax help\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"test taker\" data-entity-type=\"file\" data-entity-uuid=\"b6209c0c-a389-4301-bb17-2f8092102cc7\" src=\"/sites/default/files/inline-images/test-proctoring.jpg\" width=\"500\" height=\"334\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"test taker\"]"
           ]
         },
         {
@@ -5384,9 +6162,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Children on Bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"bed680dc-e8f2-4a5d-ab94-1ace77b6a679\" src=\"/sites/default/files/inline-images/Bookmobile.jpg\" width=\"1920\" height=\"1080\" loading=\"lazy\">",
+          "html": "<img alt=\"Bookmobile 2025\" data-entity-type=\"file\" data-entity-uuid=\"54a27ca1-7be5-46f2-91a1-e4be533a26e2\" src=\"/sites/default/files/inline-images/Bookmobile%202025%20Image.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
           "target": [
-            "img[alt=\"Children on Bookmobile\"]"
+            "img[alt=\"Bookmobile 2025\"]"
           ]
         },
         {
@@ -5402,9 +6180,81 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"screenshot of catalog selection for bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"9fb5b7ec-690c-4fb4-90fa-e306b69dcb03\" src=\"/sites/default/files/inline-images/Screen%20Shot%202021-08-25%20at%209.34.37%20AM_0.png\" width=\"500\" height=\"291\" loading=\"lazy\">",
+          "html": "<img alt=\"lobby stop 2025\" data-entity-type=\"file\" data-entity-uuid=\"512e646a-6093-471e-bbfc-0c66f90478f1\" src=\"/sites/default/files/inline-images/Lobby_Stops_2025_Image.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
           "target": [
-            "img[width=\"500\"]"
+            "img[alt=\"lobby stop 2025\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"notary\" data-entity-type=\"file\" data-entity-uuid=\"223d7083-6f87-493e-9aac-f09189322831\" src=\"/sites/default/files/inline-images/Notary_Services_2025_Photo%202.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"notary\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"James Peak Meeting Room, WL\" data-entity-type=\"file\" data-entity-uuid=\"85fd605e-1a21-46e5-8d4f-56e7ec6aa41d\" src=\"/sites/default/files/inline-images/Reserve_a_Room_2025_James%20Peak%20WL.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"James Peak Meeting Room, WL\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"tax help\" data-entity-type=\"file\" data-entity-uuid=\"2d1ce821-83a7-44ba-a4e4-83d571648237\" src=\"/sites/default/files/inline-images/tax-help_0.jpg\" width=\"500\" height=\"234\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"tax help\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"test taker\" data-entity-type=\"file\" data-entity-uuid=\"b6209c0c-a389-4301-bb17-2f8092102cc7\" src=\"/sites/default/files/inline-images/test-proctoring.jpg\" width=\"500\" height=\"334\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"test taker\"]"
           ]
         },
         {
@@ -5788,7 +6638,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5881,7 +6731,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5907,7 +6757,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\" class=\"has-sidebar\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -6037,7 +6887,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -6166,6 +7016,102 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(11)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(11)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://clearview.libnet.info/v/assets/771\">schedule an appointment</a>",
+          "target": [
+            "p:nth-child(11) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(24)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(24)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"554ed977-7a93-4daa-b008-38b5735d792d\" href=\"/contact\" target=\"_blank\" title=\"Contact\">Reach out</a>",
+          "target": [
+            "a[data-entity-substitution=\"canonical\"]"
           ]
         }
       ]
@@ -6576,9 +7522,9 @@
             }
           ],
           "impact": null,
-          "html": "<a class=\"file file--mime-application-pdf file--application-pdf\" filename=\"Summer-Bomo-2022.pdf\" href=\"https://clearview.libnet.info/events?l=Bookmobile&amp;r=thismonth\">Check out our schedule</a>",
+          "html": "<a class=\"button\" href=\"/services/other/bookmobile\">Check it Out</a>",
           "target": [
-            ".file"
+            ".button[href$=\"bookmobile\"]"
           ]
         },
         {
@@ -6602,9 +7548,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-our-bookmobile\">Staff Spotlight</a>",
+          "html": "<a class=\"button\" href=\"/services/other/lobby-stops\">Learn More</a>",
           "target": [
-            "p:nth-child(3) > a:nth-child(2)"
+            ".button[href$=\"lobby-stops\"]"
           ]
         },
         {
@@ -6628,9 +7574,120 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"tel:9702034319\">970-203-4319</a>",
+          "html": "<a href=\"https://clearview.libnet.info/v/assets/771\">schedule an appointment</a>",
           "target": [
-            "a[href=\"tel:9702034319\"]"
+            "p:nth-child(11) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"https://clearview.libnet.info/v/assets/771\">Schedule an Appointment</a>",
+          "target": [
+            "p:nth-child(12) > .button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/reserve-room\">Get Started</a>",
+          "target": [
+            ".button[href$=\"reserve-room\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/tax-help\">Check it Out</a>",
+          "target": [
+            ".button[href$=\"tax-help\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            },
+            {
+              "id": "non-empty-title",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has a title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"554ed977-7a93-4daa-b008-38b5735d792d\" href=\"/contact\" target=\"_blank\" title=\"Contact\">Reach out</a>",
+          "target": [
+            "a[data-entity-substitution=\"canonical\"]"
           ]
         },
         {
@@ -6836,9 +7893,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\">Other</a>",
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Other</a>",
           "target": [
-            "#menu-item-94d5e068 > a[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > .is-active[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
           ]
         },
         {
@@ -6862,9 +7919,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>",
+          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/39\"][href$=\"bookmobile\"]"
           ]
         },
         {
@@ -6890,7 +7947,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/lobby-stops\" data-drupal-link-system-path=\"node/115\">Lobby Stops</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[href$=\"lobby-stops\"][data-drupal-link-system-path=\"node/115\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/115\"][href$=\"lobby-stops\"]"
           ]
         },
         {
@@ -6914,9 +7971,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>",
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(3) > a[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > .is-active[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
           ]
         },
         {
@@ -6942,7 +7999,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/reserve-room\" data-drupal-link-system-path=\"node/41\">Reserve a Room</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[href$=\"reserve-room\"][data-drupal-link-system-path=\"node/41\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/41\"][href$=\"reserve-room\"]"
           ]
         },
         {
@@ -6968,7 +8025,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\">Tax Help</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(5) > a[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/43\"][href$=\"tax-help\"]"
           ]
         },
         {
@@ -6992,9 +8049,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>",
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > .is-active[data-drupal-link-system-path=\"node/38\"][aria-current=\"page\"]"
           ]
         },
         {
@@ -7046,7 +8103,7 @@
           "impact": null,
           "html": "<a href=\"/contact\">Contact</a>",
           "target": [
-            "p > a[href$=\"contact\"]"
+            ".contact:nth-child(4) > p > a[href$=\"contact\"]"
           ]
         },
         {
@@ -8326,9 +9383,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"menu-item menu-item--active-trail\">\n        <a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>\n              </li>",
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>\n              </li>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail"
+            "#menu-item-94d5e068 > ul > li:nth-child(1)"
           ]
         },
         {
@@ -8362,7 +9419,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>\n              </li>",
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>\n              </li>",
           "target": [
             "#menu-item-94d5e068 > ul > li:nth-child(3)"
           ]
@@ -8416,7 +9473,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>\n              </li>",
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>\n              </li>",
           "target": [
             "#menu-item-94d5e068 > ul > li:nth-child(6)"
           ]
@@ -9004,9 +10061,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Children on Bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"bed680dc-e8f2-4a5d-ab94-1ace77b6a679\" src=\"/sites/default/files/inline-images/Bookmobile.jpg\" width=\"1920\" height=\"1080\" loading=\"lazy\">",
+          "html": "<img alt=\"Bookmobile 2025\" data-entity-type=\"file\" data-entity-uuid=\"54a27ca1-7be5-46f2-91a1-e4be533a26e2\" src=\"/sites/default/files/inline-images/Bookmobile%202025%20Image.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
           "target": [
-            "img[alt=\"Children on Bookmobile\"]"
+            "img[alt=\"Bookmobile 2025\"]"
           ]
         },
         {
@@ -9022,9 +10079,81 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"screenshot of catalog selection for bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"9fb5b7ec-690c-4fb4-90fa-e306b69dcb03\" src=\"/sites/default/files/inline-images/Screen%20Shot%202021-08-25%20at%209.34.37%20AM_0.png\" width=\"500\" height=\"291\" loading=\"lazy\">",
+          "html": "<img alt=\"lobby stop 2025\" data-entity-type=\"file\" data-entity-uuid=\"512e646a-6093-471e-bbfc-0c66f90478f1\" src=\"/sites/default/files/inline-images/Lobby_Stops_2025_Image.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
           "target": [
-            "img[width=\"500\"]"
+            "img[alt=\"lobby stop 2025\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"notary\" data-entity-type=\"file\" data-entity-uuid=\"223d7083-6f87-493e-9aac-f09189322831\" src=\"/sites/default/files/inline-images/Notary_Services_2025_Photo%202.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"notary\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"James Peak Meeting Room, WL\" data-entity-type=\"file\" data-entity-uuid=\"85fd605e-1a21-46e5-8d4f-56e7ec6aa41d\" src=\"/sites/default/files/inline-images/Reserve_a_Room_2025_James%20Peak%20WL.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"James Peak Meeting Room, WL\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"tax help\" data-entity-type=\"file\" data-entity-uuid=\"2d1ce821-83a7-44ba-a4e4-83d571648237\" src=\"/sites/default/files/inline-images/tax-help_0.jpg\" width=\"500\" height=\"234\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"tax help\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"test taker\" data-entity-type=\"file\" data-entity-uuid=\"b6209c0c-a389-4301-bb17-2f8092102cc7\" src=\"/sites/default/files/inline-images/test-proctoring.jpg\" width=\"500\" height=\"334\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"test taker\"]"
           ]
         },
         {
@@ -9138,7 +10267,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Bookmobile</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Other Services</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -10343,7 +11472,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Bookmobile</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Other Services</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -10363,7 +11492,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Bookmobile</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Other Services</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10383,7 +11512,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Bookmobile</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Other Services</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10403,9 +11532,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<div class=\"main-wrapper  has-sidebar\">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -10443,9 +11572,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -10503,9 +11632,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"39\" about=\"/services/other/bookmobile\" typeof=\"schema:WebPage\" id=\"node-39\" class=\"node node--type-page node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"38\" about=\"/services/other\" typeof=\"schema:WebPage\" id=\"node-38\" class=\"node node--type-page node--view-mode-full\">",
           "target": [
-            "#node-39"
+            "#node-38"
           ]
         },
         {
@@ -10623,9 +11752,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><img alt=\"Children on Bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"bed680dc-e8f2-4a5d-ab94-1ace77b6a679\" src=\"/sites/default/files/inline-images/Bookmobile.jpg\" width=\"1920\" height=\"1080\" loading=\"lazy\"></p>",
+          "html": "<h2 id=\"bookmobile\">Bookmobile</h2>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
+            "#bookmobile"
           ]
         },
         {
@@ -10643,27 +11772,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Children on Bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"bed680dc-e8f2-4a5d-ab94-1ace77b6a679\" src=\"/sites/default/files/inline-images/Bookmobile.jpg\" width=\"1920\" height=\"1080\" loading=\"lazy\">",
-          "target": [
-            "img[alt=\"Children on Bookmobile\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Our bookmobile — a mini library on wheels — travels to regular stops in our three communities each week to bring a sampling of library materials and services to your neighborhood.</p>",
+          "html": "<p><img alt=\"Bookmobile 2025\" data-entity-type=\"file\" data-entity-uuid=\"54a27ca1-7be5-46f2-91a1-e4be533a26e2\" src=\"/sites/default/files/inline-images/Bookmobile%202025%20Image.png\" width=\"500\" height=\"333\" loading=\"lazy\"></p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10683,7 +11792,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<img alt=\"Bookmobile 2025\" data-entity-type=\"file\" data-entity-uuid=\"54a27ca1-7be5-46f2-91a1-e4be533a26e2\" src=\"/sites/default/files/inline-images/Bookmobile%202025%20Image.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Bookmobile 2025\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>A mini library on wheels.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10703,9 +11832,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"file file--mime-application-pdf file--application-pdf\" filename=\"Summer-Bomo-2022.pdf\" href=\"https://clearview.libnet.info/events?l=Bookmobile&amp;r=thismonth\">Check out our schedule</a>",
+          "html": "<p><a class=\"button\" href=\"/services/other/bookmobile\">Check it Out</a></p>",
           "target": [
-            ".file"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -10723,9 +11852,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-our-bookmobile\">Staff Spotlight</a>",
+          "html": "<a class=\"button\" href=\"/services/other/bookmobile\">Check it Out</a>",
           "target": [
-            "p:nth-child(3) > a:nth-child(2)"
+            ".button[href$=\"bookmobile\"]"
           ]
         },
         {
@@ -10743,9 +11872,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"tel:9702034319\">970-203-4319</a>",
+          "html": "<h2 id=\"lobby-stops\">Lobby Stops</h2>",
           "target": [
-            "a[href=\"tel:9702034319\"]"
+            "#lobby-stops"
           ]
         },
         {
@@ -10763,47 +11892,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Delivered Materials</h2>",
-          "target": [
-            "h2:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>To have an item delivered to a bookmobile stop, place a request in our catalog and select “Bookmobile” for the location, and your holds will be brought to the stop closest to your home address.</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><img alt=\"screenshot of catalog selection for bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"9fb5b7ec-690c-4fb4-90fa-e306b69dcb03\" src=\"/sites/default/files/inline-images/Screen%20Shot%202021-08-25%20at%209.34.37%20AM_0.png\" width=\"500\" height=\"291\" loading=\"lazy\"></p>",
+          "html": "<p><img alt=\"lobby stop 2025\" data-entity-type=\"file\" data-entity-uuid=\"512e646a-6093-471e-bbfc-0c66f90478f1\" src=\"/sites/default/files/inline-images/Lobby_Stops_2025_Image.png\" width=\"500\" height=\"333\" loading=\"lazy\"></p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -10823,9 +11912,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"screenshot of catalog selection for bookmobile\" data-entity-type=\"file\" data-entity-uuid=\"9fb5b7ec-690c-4fb4-90fa-e306b69dcb03\" src=\"/sites/default/files/inline-images/Screen%20Shot%202021-08-25%20at%209.34.37%20AM_0.png\" width=\"500\" height=\"291\" loading=\"lazy\">",
+          "html": "<img alt=\"lobby stop 2025\" data-entity-type=\"file\" data-entity-uuid=\"512e646a-6093-471e-bbfc-0c66f90478f1\" src=\"/sites/default/files/inline-images/Lobby_Stops_2025_Image.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
           "target": [
-            "img[width=\"500\"]"
+            "img[alt=\"lobby stop 2025\"]"
           ]
         },
         {
@@ -10843,9 +11932,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Returned Materials</h2>",
+          "html": "<p>The Library in Your Lobby</p>",
           "target": [
-            "h2:nth-child(7)"
+            "p:nth-child(7)"
           ]
         },
         {
@@ -10863,9 +11952,549 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Place items to be returned in the bins outside the bookmobile. We’ll also collect Weld RE-4 School District and Windsor Charter Academy library books.</p>",
+          "html": "<p><a class=\"button\" href=\"/services/other/lobby-stops\">Learn More</a></p>",
           "target": [
             "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/lobby-stops\">Learn More</a>",
+          "target": [
+            ".button[href$=\"lobby-stops\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"notary\">Notary</h2>",
+          "target": [
+            "#notary"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><img alt=\"notary\" data-entity-type=\"file\" data-entity-uuid=\"223d7083-6f87-493e-9aac-f09189322831\" src=\"/sites/default/files/inline-images/Notary_Services_2025_Photo%202.png\" width=\"500\" height=\"333\" loading=\"lazy\"></p>",
+          "target": [
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"notary\" data-entity-type=\"file\" data-entity-uuid=\"223d7083-6f87-493e-9aac-f09189322831\" src=\"/sites/default/files/inline-images/Notary_Services_2025_Photo%202.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"notary\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "p:nth-child(11)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://clearview.libnet.info/v/assets/771\">schedule an appointment</a>",
+          "target": [
+            "p:nth-child(11) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>We are unable to provide witnesses. If witnesses are required on a document you are having notarized, please have the witnesses accompany you to our office and have them bring a government issued, photo ID with them.</em>",
+          "target": [
+            "em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><a class=\"button\" href=\"https://clearview.libnet.info/v/assets/771\">Schedule an Appointment</a></p>",
+          "target": [
+            "p:nth-child(12)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"https://clearview.libnet.info/v/assets/771\">Schedule an Appointment</a>",
+          "target": [
+            "p:nth-child(12) > .button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"reserve-a-room\">Reserve a Room</h2>",
+          "target": [
+            "#reserve-a-room"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><img alt=\"James Peak Meeting Room, WL\" data-entity-type=\"file\" data-entity-uuid=\"85fd605e-1a21-46e5-8d4f-56e7ec6aa41d\" src=\"/sites/default/files/inline-images/Reserve_a_Room_2025_James%20Peak%20WL.png\" width=\"500\" height=\"333\" loading=\"lazy\"></p>",
+          "target": [
+            "p:nth-child(14)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"James Peak Meeting Room, WL\" data-entity-type=\"file\" data-entity-uuid=\"85fd605e-1a21-46e5-8d4f-56e7ec6aa41d\" src=\"/sites/default/files/inline-images/Reserve_a_Room_2025_James%20Peak%20WL.png\" width=\"500\" height=\"333\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"James Peak Meeting Room, WL\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Study in solitude or meet with a group.</p>",
+          "target": [
+            "p:nth-child(15)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><a class=\"button\" href=\"/services/other/reserve-room\">Get Started</a></p>",
+          "target": [
+            "p:nth-child(16)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/reserve-room\">Get Started</a>",
+          "target": [
+            ".button[href$=\"reserve-room\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>&nbsp;</p>",
+          "target": [
+            "p:nth-child(17)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"tax-help\">Tax Help</h2>",
+          "target": [
+            "#tax-help"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><img alt=\"tax help\" data-entity-type=\"file\" data-entity-uuid=\"2d1ce821-83a7-44ba-a4e4-83d571648237\" src=\"/sites/default/files/inline-images/tax-help_0.jpg\" width=\"500\" height=\"234\" loading=\"lazy\"></p>",
+          "target": [
+            "p:nth-child(19)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"tax help\" data-entity-type=\"file\" data-entity-uuid=\"2d1ce821-83a7-44ba-a4e4-83d571648237\" src=\"/sites/default/files/inline-images/tax-help_0.jpg\" width=\"500\" height=\"234\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"tax help\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Here to help at tax time.</p>",
+          "target": [
+            "p:nth-child(20)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><a class=\"button\" href=\"/services/other/tax-help\">Check it Out</a></p>",
+          "target": [
+            "p:nth-child(21)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button\" href=\"/services/other/tax-help\">Check it Out</a>",
+          "target": [
+            ".button[href$=\"tax-help\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"test-proctoring\">Test Proctoring</h2>",
+          "target": [
+            "#test-proctoring"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><img alt=\"test taker\" data-entity-type=\"file\" data-entity-uuid=\"b6209c0c-a389-4301-bb17-2f8092102cc7\" src=\"/sites/default/files/inline-images/test-proctoring.jpg\" width=\"500\" height=\"334\" loading=\"lazy\"></p>",
+          "target": [
+            "p:nth-child(23)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"test taker\" data-entity-type=\"file\" data-entity-uuid=\"b6209c0c-a389-4301-bb17-2f8092102cc7\" src=\"/sites/default/files/inline-images/test-proctoring.jpg\" width=\"500\" height=\"334\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"test taker\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "p:nth-child(24)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"554ed977-7a93-4daa-b008-38b5735d792d\" href=\"/contact\" target=\"_blank\" title=\"Contact\">Reach out</a>",
+          "target": [
+            "a[data-entity-substitution=\"canonical\"]"
           ]
         },
         {
@@ -11323,9 +12952,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\">Other</a>",
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Other</a>",
           "target": [
-            "#menu-item-94d5e068 > a[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > .is-active[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
           ]
         },
         {
@@ -11363,9 +12992,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"menu-item menu-item--active-trail\">\n        <a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>\n              </li>",
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>\n              </li>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail"
+            "#menu-item-94d5e068 > ul > li:nth-child(1)"
           ]
         },
         {
@@ -11383,9 +13012,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\" class=\"is-active\" aria-current=\"page\">Bookmobile</a>",
+          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/39\"][href$=\"bookmobile\"]"
           ]
         },
         {
@@ -11425,7 +13054,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/lobby-stops\" data-drupal-link-system-path=\"node/115\">Lobby Stops</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[href$=\"lobby-stops\"][data-drupal-link-system-path=\"node/115\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/115\"][href$=\"lobby-stops\"]"
           ]
         },
         {
@@ -11443,7 +13072,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>\n              </li>",
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>\n              </li>",
           "target": [
             "#menu-item-94d5e068 > ul > li:nth-child(3)"
           ]
@@ -11463,9 +13092,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>",
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Notary</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(3) > a[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > .is-active[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
           ]
         },
         {
@@ -11505,7 +13134,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/reserve-room\" data-drupal-link-system-path=\"node/41\">Reserve a Room</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[href$=\"reserve-room\"][data-drupal-link-system-path=\"node/41\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/41\"][href$=\"reserve-room\"]"
           ]
         },
         {
@@ -11545,7 +13174,7 @@
           "impact": null,
           "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\">Tax Help</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(5) > a[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/43\"][href$=\"tax-help\"]"
           ]
         },
         {
@@ -11563,7 +13192,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>\n              </li>",
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>\n              </li>",
           "target": [
             "#menu-item-94d5e068 > ul > li:nth-child(6)"
           ]
@@ -11583,9 +13212,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>",
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\" class=\"is-active\" aria-current=\"page\">Test Proctoring</a>",
           "target": [
-            "#menu-item-94d5e068 > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/38\"]"
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > .is-active[data-drupal-link-system-path=\"node/38\"][aria-current=\"page\"]"
           ]
         },
         {
@@ -11945,7 +13574,7 @@
           "impact": null,
           "html": "<a href=\"/contact\">Contact</a>",
           "target": [
-            "p > a[href$=\"contact\"]"
+            ".contact:nth-child(4) > p > a[href$=\"contact\"]"
           ]
         },
         {
@@ -13653,5 +15282,5 @@
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Bookmobile | Clearview Library"
+  "documentTitle": "Other Services | Clearview Library"
 }

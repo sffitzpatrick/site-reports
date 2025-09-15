@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:45:09.022Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/postings-promotional-materials-displays-and-exhibits-policy",
+  "timestamp": "2025-09-15T17:45:15.631Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/financial-policies",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,23 +445,6 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -1058,7 +1041,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1414,7 +1397,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1806,7 +1789,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2090,7 +2073,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2754,15 +2737,21 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Financial Policies</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
+                  "html": "<h2>Cash Management and Banking Policy</h2>",
                   "target": [
-                    ".clearfix.text-formatted.field--name-body > h2"
+                    ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+                  ]
+                },
+                {
+                  "html": "<h2>Credit Card Use Policy</h2>",
+                  "target": [
+                    "h2:nth-child(4)"
                   ]
                 },
                 {
@@ -2792,7 +2781,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\" class=\"has-sidebar\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -3109,9 +3098,409 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Financial Policies</span>",
           "target": [
             ".field--name-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Cash Management and Banking Policy</h2>",
+          "target": [
+            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>It is the policy of the Clearview Library District &nbsp;to ensure safe and secure handling of funds through an efficient cash management program.&nbsp;</p>",
+          "target": [
+            "p:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://codes.findlaw.com/co/title-24-government-state/co-rev-st-sect-24-75-701/\">C.R.S. 24-75-701</a>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(1) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>The President of the Library Board, the Treasurer of the Library Board, and the Library Director are designated as authorized signers for the bank account used for the payment of library obligations.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>One signature is required for check signing and related operational transactional responsibilities.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Reimbursements to the library director for expenses incurred for meetings, programs, or other library activities will be approved by the library board president or treasurer.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Two signatures, one of which must be the Board President or the Board Treasurer, are required for the opening and closing of accounts.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Non-budgeted expenditures over $30,000 must be approved by the Library Board before issuing payment.</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Electronic funds transfer, direct deposit, wire transfers and automated clearing house transactions will be used whenever feasible and available. These transactions can be initiated by the Director with an authorized password and/or PIN number to insure appropriate authorization.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>The Director has authority to transfer funds between banks and Colotrust for the normal operations of the library district; this includes transfers to cover budgeted expenditures and transfers to cover expenditures for special projects that have been approved by the Library Board.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>All bank statements will be reconciled monthly by the Financial/Human Resources Specialist &nbsp;and reviewed and approved by the Director.</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Cash receipts will be accounted for using procedures and documentation developed by the Financial/Human Resources Specialist. &nbsp;&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>The district accepts payments in cash, checks, electronic transfer and credit/debit cards.</li>",
+          "target": [
+            "li:nth-child(11)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Individuals issuing checks which are returned for insufficient funds or any other reason may be submitted to collections and assessed a charge of $20.&nbsp;</li>",
+          "target": [
+            "li:nth-child(12)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Credit Card Use Policy</h2>",
+          "target": [
+            "h2:nth-child(4)"
           ]
         },
         {
@@ -3136,206 +3525,6 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Posting or displaying such materials by the district does not indicate district endorsement of the ideas, issues, or events promoted by these materials.</p>",
-          "target": [
-            "p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > h2"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>All materials must be submitted to district staff for posting and display.</li>",
-          "target": [
-            "ol > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Materials that have not been submitted for approval will be removed.</li>",
-          "target": [
-            "ol > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Priority is given to organizations located within the library district. If space permits, materials from northern Colorado organizations, outside of the library district, will be considered.</li>",
-          "target": [
-            "ol > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>The district assumes no responsibility for the preservation or protection of the submitted materials.</li>",
-          "target": [
-            "ol > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Commercial advertisements / promotions, events, or materials for businesses or for- profit organizations will not be permitted, with the exception of an event that a business is sponsoring or co-sponsoring for a nonprofit organization.</li>",
-          "target": [
-            "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>The following items are prohibited from being displayed or distributed at the designated posting space:</p>",
-          "target": [
             "p:nth-child(5)"
           ]
         },
@@ -3359,9 +3548,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Advertisements of personal services or products sold for profit</li>",
+          "html": "<li>Credit cards may only be used for official library business.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
+            "ul:nth-child(6) > li:nth-child(1)"
           ]
         },
         {
@@ -3384,9 +3573,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Petitions</li>",
+          "html": "<li>Credit cards are not to be used for personal use.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
+            "ul:nth-child(6) > li:nth-child(2)"
           ]
         },
         {
@@ -3409,9 +3598,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Job postings</li>",
+          "html": "<li>All credit card holders are to submit receipts for every purchase to the Financial/Human Resources Specialist on a monthly basis.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
+            "ul:nth-child(6) > li:nth-child(3)"
           ]
         },
         {
@@ -3434,9 +3623,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Rental announcements</li>",
+          "html": "<li>Credit card statements must be reviewed and approved by the Director on a monthly basis.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
+            "ul:nth-child(6) > li:nth-child(4)"
           ]
         },
         {
@@ -3459,9 +3648,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Campaign literature and partisan political materials</li>",
+          "html": "<li>Loss of a credit card must be reported immediately to the credit card bank and to the Financial/Human Resources Specialist.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
+            "ul:nth-child(6) > li:nth-child(5)"
           ]
         },
         {
@@ -3484,7 +3673,82 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Adopted, April 24, 2014, Revised, May 25, 2023</em>",
+          "html": "<li>The Director or Financial/Human Resources Specialist will cancel credit cards immediately upon termination of an employee.</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Credit cards must be surrendered upon termination of employment or at the request of the Director.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Clearview Library District is tax exempt. A tax exempt form for any purchase must be provided to the vendor at time of purchase to ensure no sales taxes are applied to the purchase.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>Adopted June 30, 2022</em>",
           "target": [
             "em"
           ]
@@ -4748,7 +5012,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Financial Policies</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4766,9 +5030,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
+          "html": "<h2>Cash Management and Banking Policy</h2>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2"
+            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Credit Card Use Policy</h2>",
+          "target": [
+            "h2:nth-child(4)"
           ]
         },
         {
@@ -4932,13 +5214,19 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h2:nth-child(3)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(4)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
@@ -5000,7 +5288,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Financial Policies</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -5018,9 +5306,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
+          "html": "<h2>Cash Management and Banking Policy</h2>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2"
+            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Credit Card Use Policy</h2>",
+          "target": [
+            "h2:nth-child(4)"
           ]
         },
         {
@@ -5715,7 +6021,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5808,7 +6114,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5834,7 +6140,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\" class=\"has-sidebar\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5964,7 +6270,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -6093,6 +6399,63 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<li>",
+                  "target": [
+                    "ul:nth-child(3) > li:nth-child(1)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<li>",
+                  "target": [
+                    "ul:nth-child(3) > li:nth-child(1)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://codes.findlaw.com/co/title-24-government-state/co-rev-st-sect-24-75-701/\">C.R.S. 24-75-701</a>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(1) > a"
           ]
         }
       ]
@@ -6480,6 +6843,32 @@
           "html": "<a class=\"search-suggestions__suggestion\" href=\"https://pika.clearviewlibrary.org/Search/Results?lookfor=%2A&amp;basicType=Keyword&amp;basicType=Keyword&amp;filter%5B%5D=collection_clearview%3A%22Young+Adult+Fiction%22&amp;sort=relevance&amp;view=list&amp;searchSource=local\">Teen Books</a>",
           "target": [
             ".search-suggestions__suggestion:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://codes.findlaw.com/co/title-24-government-state/co-rev-st-sect-24-75-701/\">C.R.S. 24-75-701</a>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(1) > a"
           ]
         },
         {
@@ -7717,9 +8106,9 @@
             }
           ],
           "impact": null,
-          "html": "<ol>",
+          "html": "<ul>",
           "target": [
-            "ol"
+            "ul:nth-child(3)"
           ]
         },
         {
@@ -7735,9 +8124,9 @@
             }
           ],
           "impact": null,
-          "html": "<ul>\n\t<li>Advertisements of personal services or products sold for profit</li>\n\t<li>Petitions</li>\n\t<li>Job postings</li>\n\t<li>Rental announcements</li>\n\t<li>Campaign literature and partisan political materials</li>\n</ul>",
+          "html": "<ul>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul"
+            "ul:nth-child(6)"
           ]
         },
         {
@@ -8111,9 +8500,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>All materials must be submitted to district staff for posting and display.</li>",
+          "html": "<li>",
           "target": [
-            "ol > li:nth-child(1)"
+            "ul:nth-child(3) > li:nth-child(1)"
           ]
         },
         {
@@ -8129,9 +8518,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Materials that have not been submitted for approval will be removed.</li>",
+          "html": "<li>The President of the Library Board, the Treasurer of the Library Board, and the Library Director are designated as authorized signers for the bank account used for the payment of library obligations.&nbsp;</li>",
           "target": [
-            "ol > li:nth-child(2)"
+            "ul:nth-child(3) > li:nth-child(2)"
           ]
         },
         {
@@ -8147,9 +8536,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Priority is given to organizations located within the library district. If space permits, materials from northern Colorado organizations, outside of the library district, will be considered.</li>",
+          "html": "<li>One signature is required for check signing and related operational transactional responsibilities.&nbsp;</li>",
           "target": [
-            "ol > li:nth-child(3)"
+            "ul:nth-child(3) > li:nth-child(3)"
           ]
         },
         {
@@ -8165,9 +8554,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>The district assumes no responsibility for the preservation or protection of the submitted materials.</li>",
+          "html": "<li>Reimbursements to the library director for expenses incurred for meetings, programs, or other library activities will be approved by the library board president or treasurer.&nbsp;</li>",
           "target": [
-            "ol > li:nth-child(4)"
+            "ul:nth-child(3) > li:nth-child(4)"
           ]
         },
         {
@@ -8183,9 +8572,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Commercial advertisements / promotions, events, or materials for businesses or for- profit organizations will not be permitted, with the exception of an event that a business is sponsoring or co-sponsoring for a nonprofit organization.</li>",
+          "html": "<li>Two signatures, one of which must be the Board President or the Board Treasurer, are required for the opening and closing of accounts.&nbsp;</li>",
           "target": [
-            "ol > li:nth-child(5)"
+            "ul:nth-child(3) > li:nth-child(5)"
           ]
         },
         {
@@ -8201,9 +8590,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Advertisements of personal services or products sold for profit</li>",
+          "html": "<li>Non-budgeted expenditures over $30,000 must be approved by the Library Board before issuing payment.</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
+            "ul:nth-child(3) > li:nth-child(6)"
           ]
         },
         {
@@ -8219,9 +8608,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Petitions</li>",
+          "html": "<li>Electronic funds transfer, direct deposit, wire transfers and automated clearing house transactions will be used whenever feasible and available. These transactions can be initiated by the Director with an authorized password and/or PIN number to insure appropriate authorization.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
+            "ul:nth-child(3) > li:nth-child(7)"
           ]
         },
         {
@@ -8237,9 +8626,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Job postings</li>",
+          "html": "<li>The Director has authority to transfer funds between banks and Colotrust for the normal operations of the library district; this includes transfers to cover budgeted expenditures and transfers to cover expenditures for special projects that have been approved by the Library Board.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
+            "ul:nth-child(3) > li:nth-child(8)"
           ]
         },
         {
@@ -8255,9 +8644,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Rental announcements</li>",
+          "html": "<li>All bank statements will be reconciled monthly by the Financial/Human Resources Specialist &nbsp;and reviewed and approved by the Director.</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
+            "ul:nth-child(3) > li:nth-child(9)"
           ]
         },
         {
@@ -8273,9 +8662,189 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Campaign literature and partisan political materials</li>",
+          "html": "<li>Cash receipts will be accounted for using procedures and documentation developed by the Financial/Human Resources Specialist. &nbsp;&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
+            "ul:nth-child(3) > li:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>The district accepts payments in cash, checks, electronic transfer and credit/debit cards.</li>",
+          "target": [
+            "li:nth-child(11)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Individuals issuing checks which are returned for insufficient funds or any other reason may be submitted to collections and assessed a charge of $20.&nbsp;</li>",
+          "target": [
+            "li:nth-child(12)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Credit cards may only be used for official library business.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Credit cards are not to be used for personal use.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>All credit card holders are to submit receipts for every purchase to the Financial/Human Resources Specialist on a monthly basis.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Credit card statements must be reviewed and approved by the Director on a monthly basis.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Loss of a credit card must be reported immediately to the credit card bank and to the Financial/Human Resources Specialist.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>The Director or Financial/Human Resources Specialist will cancel credit cards immediately upon termination of an employee.</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Credit cards must be surrendered upon termination of employment or at the request of the Director.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Clearview Library District is tax exempt. A tax exempt form for any purchase must be provided to the vendor at time of purchase to ensure no sales taxes are applied to the purchase.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(8)"
           ]
         },
         {
@@ -9229,7 +9798,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Financial Policies</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -10434,7 +11003,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Financial Policies</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -10454,7 +11023,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Financial Policies</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10474,7 +11043,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Financial Policies</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10494,9 +11063,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<div class=\"main-wrapper  has-sidebar\">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -10534,9 +11103,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -10594,9 +11163,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"469\" about=\"/about-us/learn-more/policies-faqs/postings-promotional-materials-displays-and-exhibits-policy\" id=\"node-469\" class=\"node node--type-policy node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"475\" about=\"/about-us/learn-more/policies-faqs/financial-policies\" id=\"node-475\" class=\"node node--type-policy node--view-mode-full\">",
           "target": [
-            "#node-469"
+            "#node-475"
           ]
         },
         {
@@ -10654,9 +11223,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<h2>Cash Management and Banking Policy</h2>",
           "target": [
-            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
           ]
         },
         {
@@ -10674,7 +11243,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Posting or displaying such materials by the district does not indicate district endorsement of the ideas, issues, or events promoted by these materials.</p>",
+          "html": "<p>It is the policy of the Clearview Library District &nbsp;to ensure safe and secure handling of funds through an efficient cash management program.&nbsp;</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10694,9 +11263,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
+          "html": "<ul>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2"
+            "ul:nth-child(3)"
           ]
         },
         {
@@ -10714,9 +11283,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ol>",
+          "html": "<li>",
           "target": [
-            "ol"
+            "ul:nth-child(3) > li:nth-child(1)"
           ]
         },
         {
@@ -10734,9 +11303,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>All materials must be submitted to district staff for posting and display.</li>",
+          "html": "<a href=\"https://codes.findlaw.com/co/title-24-government-state/co-rev-st-sect-24-75-701/\">C.R.S. 24-75-701</a>",
           "target": [
-            "ol > li:nth-child(1)"
+            "ul:nth-child(3) > li:nth-child(1) > a"
           ]
         },
         {
@@ -10754,9 +11323,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Materials that have not been submitted for approval will be removed.</li>",
+          "html": "<li>The President of the Library Board, the Treasurer of the Library Board, and the Library Director are designated as authorized signers for the bank account used for the payment of library obligations.&nbsp;</li>",
           "target": [
-            "ol > li:nth-child(2)"
+            "ul:nth-child(3) > li:nth-child(2)"
           ]
         },
         {
@@ -10774,9 +11343,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Priority is given to organizations located within the library district. If space permits, materials from northern Colorado organizations, outside of the library district, will be considered.</li>",
+          "html": "<li>One signature is required for check signing and related operational transactional responsibilities.&nbsp;</li>",
           "target": [
-            "ol > li:nth-child(3)"
+            "ul:nth-child(3) > li:nth-child(3)"
           ]
         },
         {
@@ -10794,9 +11363,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>The district assumes no responsibility for the preservation or protection of the submitted materials.</li>",
+          "html": "<li>Reimbursements to the library director for expenses incurred for meetings, programs, or other library activities will be approved by the library board president or treasurer.&nbsp;</li>",
           "target": [
-            "ol > li:nth-child(4)"
+            "ul:nth-child(3) > li:nth-child(4)"
           ]
         },
         {
@@ -10814,9 +11383,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Commercial advertisements / promotions, events, or materials for businesses or for- profit organizations will not be permitted, with the exception of an event that a business is sponsoring or co-sponsoring for a nonprofit organization.</li>",
+          "html": "<li>Two signatures, one of which must be the Board President or the Board Treasurer, are required for the opening and closing of accounts.&nbsp;</li>",
           "target": [
-            "ol > li:nth-child(5)"
+            "ul:nth-child(3) > li:nth-child(5)"
           ]
         },
         {
@@ -10834,7 +11403,167 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The following items are prohibited from being displayed or distributed at the designated posting space:</p>",
+          "html": "<li>Non-budgeted expenditures over $30,000 must be approved by the Library Board before issuing payment.</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Electronic funds transfer, direct deposit, wire transfers and automated clearing house transactions will be used whenever feasible and available. These transactions can be initiated by the Director with an authorized password and/or PIN number to insure appropriate authorization.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>The Director has authority to transfer funds between banks and Colotrust for the normal operations of the library district; this includes transfers to cover budgeted expenditures and transfers to cover expenditures for special projects that have been approved by the Library Board.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>All bank statements will be reconciled monthly by the Financial/Human Resources Specialist &nbsp;and reviewed and approved by the Director.</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Cash receipts will be accounted for using procedures and documentation developed by the Financial/Human Resources Specialist. &nbsp;&nbsp;</li>",
+          "target": [
+            "ul:nth-child(3) > li:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>The district accepts payments in cash, checks, electronic transfer and credit/debit cards.</li>",
+          "target": [
+            "li:nth-child(11)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Individuals issuing checks which are returned for insufficient funds or any other reason may be submitted to collections and assessed a charge of $20.&nbsp;</li>",
+          "target": [
+            "li:nth-child(12)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Credit Card Use Policy</h2>",
+          "target": [
+            "h2:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -10854,9 +11583,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>\n\t<li>Advertisements of personal services or products sold for profit</li>\n\t<li>Petitions</li>\n\t<li>Job postings</li>\n\t<li>Rental announcements</li>\n\t<li>Campaign literature and partisan political materials</li>\n</ul>",
+          "html": "<ul>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul"
+            "ul:nth-child(6)"
           ]
         },
         {
@@ -10874,9 +11603,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Advertisements of personal services or products sold for profit</li>",
+          "html": "<li>Credit cards may only be used for official library business.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
+            "ul:nth-child(6) > li:nth-child(1)"
           ]
         },
         {
@@ -10894,9 +11623,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Petitions</li>",
+          "html": "<li>Credit cards are not to be used for personal use.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
+            "ul:nth-child(6) > li:nth-child(2)"
           ]
         },
         {
@@ -10914,9 +11643,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Job postings</li>",
+          "html": "<li>All credit card holders are to submit receipts for every purchase to the Financial/Human Resources Specialist on a monthly basis.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
+            "ul:nth-child(6) > li:nth-child(3)"
           ]
         },
         {
@@ -10934,9 +11663,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Rental announcements</li>",
+          "html": "<li>Credit card statements must be reviewed and approved by the Director on a monthly basis.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
+            "ul:nth-child(6) > li:nth-child(4)"
           ]
         },
         {
@@ -10954,9 +11683,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Campaign literature and partisan political materials</li>",
+          "html": "<li>Loss of a credit card must be reported immediately to the credit card bank and to the Financial/Human Resources Specialist.&nbsp;</li>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
+            "ul:nth-child(6) > li:nth-child(5)"
           ]
         },
         {
@@ -10974,7 +11703,67 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><em>Adopted, April 24, 2014, Revised, May 25, 2023</em><br>\n&nbsp;</p>",
+          "html": "<li>The Director or Financial/Human Resources Specialist will cancel credit cards immediately upon termination of an employee.</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Credit cards must be surrendered upon termination of employment or at the request of the Director.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Clearview Library District is tax exempt. A tax exempt form for any purchase must be provided to the vendor at time of purchase to ensure no sales taxes are applied to the purchase.&nbsp;</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><em>Adopted June 30, 2022</em><br>\n&nbsp;</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -10994,7 +11783,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Adopted, April 24, 2014, Revised, May 25, 2023</em>",
+          "html": "<em>Adopted June 30, 2022</em>",
           "target": [
             "em"
           ]
@@ -13864,5 +14653,5 @@
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Postings, Promotional Materials, Displays, and Exhibits Policy | Clearview Library"
+  "documentTitle": "Financial Policies | Clearview Library"
 }

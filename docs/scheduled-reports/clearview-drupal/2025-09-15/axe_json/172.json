@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:45:05.499Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/open-records-policy",
+  "timestamp": "2025-09-15T17:45:13.854Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/emergency-closings-policy",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,6 +445,23 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -1041,7 +1058,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1397,7 +1414,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1789,7 +1806,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2073,7 +2090,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2737,7 +2754,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Open Records Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Emergency Closings Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2769,7 +2786,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\" class=\"has-sidebar\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -3086,7 +3103,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Open Records Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Emergency Closings Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3111,34 +3128,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Open Records requests within Colorado are governed by the </span>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(1) > span:nth-child(1) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span>",
-          "target": [
-            "span > span > span > span > span > span > span > span"
+            "p:nth-child(1) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3161,32 +3153,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span> within the Colorado Revised Statutes and other applicable sections. The Clearview Library District is subject to and will meet the requirements of current state law regarding open records access.</span>",
-          "target": [
-            "span:nth-child(3) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>The custodian of records is the Library Director. The Library Director shall designate alternate custodians for times when the Director is not available.</span>",
+          "html": "<span>All emergency closings will be announced promptly to staff and the public and will be posted on the district’s website, social media, and by any other source deemed possible. A sign will be posted on the front door of the library when possible.</span>",
           "target": [
             "p:nth-child(2) > span > span > span > span > span > span"
           ]
@@ -3211,57 +3178,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span>",
-          "target": [
-            "p:nth-child(3) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/node/322\">Open Records Requests</a>",
-          "target": [
-            "a[href=\"/node/322\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Adopted August 27, 2020</span>",
+          "html": "<span>Adopted May 27, 2021.</span>",
           "target": [
             "em > span"
           ]
@@ -4525,7 +4442,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Open Records Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Emergency Closings Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4691,7 +4608,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
@@ -4753,7 +4670,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Open Records Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Emergency Closings Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -5450,7 +5367,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5543,7 +5460,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5569,7 +5486,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\" class=\"has-sidebar\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5699,7 +5616,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5828,74 +5745,6 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.sos.state.co.us/pubs/info_center/laws/Title24/Title24Article72Part2.html\" tabindex=\"-1\"><span><span><span><span><span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span></span></span></span></span></a>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > p:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p><span><span><span><span><span><span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span></span></span></span></span></span></p>",
-                  "target": [
-                    "p:nth-child(3)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/node/322\">Open Records Requests</a>",
-          "target": [
-            "a[href=\"/node/322\"]"
           ]
         }
       ]
@@ -6283,58 +6132,6 @@
           "html": "<a class=\"search-suggestions__suggestion\" href=\"https://pika.clearviewlibrary.org/Search/Results?lookfor=%2A&amp;basicType=Keyword&amp;basicType=Keyword&amp;filter%5B%5D=collection_clearview%3A%22Young+Adult+Fiction%22&amp;sort=relevance&amp;view=list&amp;searchSource=local\">Teen Books</a>",
           "target": [
             ".search-suggestions__suggestion:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.sos.state.co.us/pubs/info_center/laws/Title24/Title24Article72Part2.html\" tabindex=\"-1\"><span><span><span><span><span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span></span></span></span></span></a>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > p:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/node/322\">Open Records Requests</a>",
-          "target": [
-            "a[href=\"/node/322\"]"
           ]
         },
         {
@@ -8868,7 +8665,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Open Records Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Emergency Closings Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -10073,7 +9870,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Open Records Policy</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Emergency Closings Policy</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -10093,7 +9890,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Open Records Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Emergency Closings Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10113,7 +9910,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Open Records Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Emergency Closings Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10133,9 +9930,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<div class=\"main-wrapper  has-sidebar\">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -10173,9 +9970,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -10233,9 +10030,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"321\" about=\"/about-us/learn-more/policies-faqs/open-records-policy\" id=\"node-321\" class=\"node node--type-policy node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"317\" about=\"/about-us/learn-more/policies-faqs/emergency-closings-policy\" id=\"node-317\" class=\"node node--type-policy node--view-mode-full\">",
           "target": [
-            "#node-321"
+            "#node-317"
           ]
         },
         {
@@ -10313,9 +10110,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Open Records requests within Colorado are governed by the </span></span></span></span></span></span>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(1) > span:nth-child(1)"
+            "p:nth-child(1) > span"
           ]
         },
         {
@@ -10333,9 +10130,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Open Records requests within Colorado are governed by the </span></span></span></span></span>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(1) > span:nth-child(1) > span"
+            "p:nth-child(1) > span > span"
           ]
         },
         {
@@ -10353,9 +10150,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Open Records requests within Colorado are governed by the </span></span></span></span>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(1) > span:nth-child(1) > span > span"
+            "p:nth-child(1) > span > span > span"
           ]
         },
         {
@@ -10373,9 +10170,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Open Records requests within Colorado are governed by the </span></span></span>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(1) > span:nth-child(1) > span > span > span"
+            "p:nth-child(1) > span > span > span > span"
           ]
         },
         {
@@ -10393,9 +10190,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Open Records requests within Colorado are governed by the </span></span>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(1) > span:nth-child(1) > span > span > span > span"
+            "p:nth-child(1) > span > span > span > span > span"
           ]
         },
         {
@@ -10413,9 +10210,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Open Records requests within Colorado are governed by the </span>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(1) > span:nth-child(1) > span > span > span > span > span"
+            "p:nth-child(1) > span > span > span > span > span > span"
           ]
         },
         {
@@ -10433,307 +10230,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.sos.state.co.us/pubs/info_center/laws/Title24/Title24Article72Part2.html\" tabindex=\"-1\"><span><span><span><span><span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span></span></span></span></span></a>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > p:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span></span></span></span></span>",
-          "target": [
-            "p:nth-child(1) > a > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span></span></span></span>",
-          "target": [
-            "a > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span></span></span>",
-          "target": [
-            "a > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span></span>",
-          "target": [
-            "a > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span>",
-          "target": [
-            "a > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span>",
-          "target": [
-            "a > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span>",
-          "target": [
-            "a > span > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span>",
-          "target": [
-            "span > span > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span> within the Colorado Revised Statutes and other applicable sections. The Clearview Library District is subject to and will meet the requirements of current state law regarding open records access.</span></span></span></span></span></span>",
-          "target": [
-            "span:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span> within the Colorado Revised Statutes and other applicable sections. The Clearview Library District is subject to and will meet the requirements of current state law regarding open records access.</span></span></span></span></span>",
-          "target": [
-            "span:nth-child(3) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span> within the Colorado Revised Statutes and other applicable sections. The Clearview Library District is subject to and will meet the requirements of current state law regarding open records access.</span></span></span></span>",
-          "target": [
-            "span:nth-child(3) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span> within the Colorado Revised Statutes and other applicable sections. The Clearview Library District is subject to and will meet the requirements of current state law regarding open records access.</span></span></span>",
-          "target": [
-            "span:nth-child(3) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span> within the Colorado Revised Statutes and other applicable sections. The Clearview Library District is subject to and will meet the requirements of current state law regarding open records access.</span></span>",
-          "target": [
-            "span:nth-child(3) > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span> within the Colorado Revised Statutes and other applicable sections. The Clearview Library District is subject to and will meet the requirements of current state law regarding open records access.</span>",
-          "target": [
-            "span:nth-child(3) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><span><span><span><span><span><span>The custodian of records is the Library Director. The Library Director shall designate alternate custodians for times when the Director is not available.</span></span></span></span></span></span></p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10753,7 +10250,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>The custodian of records is the Library Director. The Library Director shall designate alternate custodians for times when the Director is not available.</span></span></span></span></span></span>",
+          "html": "<span>",
           "target": [
             "p:nth-child(2) > span"
           ]
@@ -10773,7 +10270,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>The custodian of records is the Library Director. The Library Director shall designate alternate custodians for times when the Director is not available.</span></span></span></span></span>",
+          "html": "<span>",
           "target": [
             "p:nth-child(2) > span > span"
           ]
@@ -10793,7 +10290,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>The custodian of records is the Library Director. The Library Director shall designate alternate custodians for times when the Director is not available.</span></span></span></span>",
+          "html": "<span><span><span><span>All emergency closings will be announced promptly to staff and the public and will be posted on the district’s website, social media, and by any other source deemed possible. A sign will be posted on the front door of the library when possible.</span></span></span></span>",
           "target": [
             "p:nth-child(2) > span > span > span"
           ]
@@ -10813,7 +10310,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>The custodian of records is the Library Director. The Library Director shall designate alternate custodians for times when the Director is not available.</span></span></span>",
+          "html": "<span><span><span>All emergency closings will be announced promptly to staff and the public and will be posted on the district’s website, social media, and by any other source deemed possible. A sign will be posted on the front door of the library when possible.</span></span></span>",
           "target": [
             "p:nth-child(2) > span > span > span > span"
           ]
@@ -10833,7 +10330,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>The custodian of records is the Library Director. The Library Director shall designate alternate custodians for times when the Director is not available.</span></span>",
+          "html": "<span><span>All emergency closings will be announced promptly to staff and the public and will be posted on the district’s website, social media, and by any other source deemed possible. A sign will be posted on the front door of the library when possible.</span></span>",
           "target": [
             "p:nth-child(2) > span > span > span > span > span"
           ]
@@ -10853,7 +10350,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>The custodian of records is the Library Director. The Library Director shall designate alternate custodians for times when the Director is not available.</span>",
+          "html": "<span>All emergency closings will be announced promptly to staff and the public and will be posted on the district’s website, social media, and by any other source deemed possible. A sign will be posted on the front door of the library when possible.</span>",
           "target": [
             "p:nth-child(2) > span > span > span > span > span > span"
           ]
@@ -10873,7 +10370,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><span><span><span><span><span><span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span></span></span></span></span></span></p>",
+          "html": "<p><span><span><span><span><em><span>Adopted May 27, 2021.</span></em></span></span></span></span></p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10893,7 +10390,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><em><span>Adopted May 27, 2021.</span></em></span></span></span></span>",
           "target": [
             "p:nth-child(3) > span"
           ]
@@ -10913,7 +10410,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span></span></span></span></span>",
+          "html": "<span><span><span><em><span>Adopted May 27, 2021.</span></em></span></span></span>",
           "target": [
             "p:nth-child(3) > span > span"
           ]
@@ -10933,7 +10430,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span></span></span></span>",
+          "html": "<span><span><em><span>Adopted May 27, 2021.</span></em></span></span>",
           "target": [
             "p:nth-child(3) > span > span > span"
           ]
@@ -10953,7 +10450,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span></span></span>",
+          "html": "<span><em><span>Adopted May 27, 2021.</span></em></span>",
           "target": [
             "p:nth-child(3) > span > span > span > span"
           ]
@@ -10973,167 +10470,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span></span>",
-          "target": [
-            "p:nth-child(3) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Access, process, and the handling of <a href=\"/node/322\">Open Records Requests</a> by the Clearview Library District is determined through the library district’s Open Records Access Procedure.</span>",
-          "target": [
-            "p:nth-child(3) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/node/322\">Open Records Requests</a>",
-          "target": [
-            "a[href=\"/node/322\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><span><span><span><span><em><span>Adopted August 27, 2020</span></em></span></span></span></span><span><span><span><span><span><span>.</span></span></span></span></span></span></p>",
-          "target": [
-            "p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><em><span>Adopted August 27, 2020</span></em></span></span></span></span>",
-          "target": [
-            "p:nth-child(4) > span:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><em><span>Adopted August 27, 2020</span></em></span></span></span>",
-          "target": [
-            "p:nth-child(4) > span:nth-child(1) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><em><span>Adopted August 27, 2020</span></em></span></span>",
-          "target": [
-            "p:nth-child(4) > span:nth-child(1) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><em><span>Adopted August 27, 2020</span></em></span>",
-          "target": [
-            "p:nth-child(4) > span:nth-child(1) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em><span>Adopted August 27, 2020</span></em>",
+          "html": "<em><span>Adopted May 27, 2021.</span></em>",
           "target": [
             "em"
           ]
@@ -11153,129 +10490,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Adopted August 27, 2020</span>",
+          "html": "<span>Adopted May 27, 2021.</span>",
           "target": [
             "em > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span>.</span></span></span></span></span></span>",
-          "target": [
-            "span:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span>.</span></span></span></span></span>",
-          "target": [
-            "span:nth-child(2) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span>.</span></span></span></span>",
-          "target": [
-            "span:nth-child(2) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span>.</span></span></span>",
-          "target": [
-            "span:nth-child(2) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span>.</span></span>",
-          "target": [
-            "span:nth-child(2) > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>.</span>",
-          "target": [
-            "span:nth-child(2) > span > span > span > span > span"
           ]
         },
         {
@@ -14117,29 +13334,11 @@
           "target": [
             "#main-content"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "tabindex",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have a tabindex greater than 0"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.sos.state.co.us/pubs/info_center/laws/Title24/Title24Article72Part2.html\" tabindex=\"-1\"><span><span><span><span><span><span><span><span>Open Records Act, (C.R.S.24-72-201 et seq. (“CORA”)</span></span></span></span></span></span></span></span></a>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > p:nth-child(1) > a"
-          ]
         }
       ]
     }
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Open Records Policy | Clearview Library"
+  "documentTitle": "Emergency Closings Policy | Clearview Library"
 }

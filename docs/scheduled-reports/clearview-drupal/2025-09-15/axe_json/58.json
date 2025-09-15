@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:38:53.126Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/art-library-july-2025",
+  "timestamp": "2025-09-15T17:42:44.845Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/join-clearview-library-district-board-trustees",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,22 +264,6 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -1059,7 +1043,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1397,7 +1381,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1771,7 +1755,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2051,7 +2035,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2569,6 +2553,1175 @@
       ]
     },
     {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span></span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">Picked up</span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\">",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span></span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span></span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">Dropped off</span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\">",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span></span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span></span></span></span></span>",
+          "target": [
+            "p > span:nth-child(3)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span></span></span></span>",
+          "target": [
+            "span:nth-child(3) > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span></span></span>",
+          "target": [
+            "span:nth-child(3) > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span></span>",
+          "target": [
+            "span:nth-child(3) > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span>",
+          "target": [
+            "span:nth-child(3) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">mailed to</span>",
+          "target": [
+            "span:nth-child(3) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span></span></span></span></span>",
+          "target": [
+            "span:nth-child(4)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span></span></span></span>",
+          "target": [
+            "span:nth-child(4) > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span></span></span>",
+          "target": [
+            "span:nth-child(4) > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span></span>",
+          "target": [
+            "span:nth-child(4) > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span>",
+          "target": [
+            "span:nth-child(4) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">:</span>",
+          "target": [
+            "span:nth-child(4) > span > span > span > span > span"
+          ]
+        }
+      ]
+    },
+    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2675,7 +3828,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Join the Clearview Library District Board of Trustees</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2701,7 +3854,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -3118,7 +4271,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Art In The Library - July 2025\n              </li>",
+          "html": "<li>\n                  Join The Clearview Library District Board of Trustees\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -3143,7 +4296,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2025-07-08T10:26:21-06:00\" title=\"Tuesday, July 8, 2025 - 10:26\" class=\"datetime\">July 8, 2025</time>",
+          "html": "<time datetime=\"2025-09-03T07:38:00-06:00\" title=\"Wednesday, September 3, 2025 - 07:38\" class=\"datetime\">September 3, 2025</time>",
           "target": [
             "time"
           ]
@@ -3168,9 +4321,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
+            "a[hreflang=\"en\"][href$=\"news\"]"
           ]
         },
         {
@@ -3193,7 +4346,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Join the Clearview Library District Board of Trustees</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3218,7 +4371,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Paintings on display in the library. Clockwise from upper left, Sherri Scofield, Tony Shelburne, Kelly Marie Tikvah Blackwell, and Alene Starkey.</em>",
+          "html": "<em>Applications Open Through September 28, 2025</em>",
           "target": [
             "em"
           ]
@@ -3243,7 +4396,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>The Clearview Library District is currently accepting applications to fill two Trustee openings and one Trustee Alternate position for three-year terms beginning January 1, 2026. These volunteer positions are open to all Clearview Library District residents.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3268,9 +4421,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Alene Starkey</strong> - Vibrant watercolor and mixed media prints highlighting the beauty of our flora and fauna.</li>",
+          "html": "<p>Interviews for qualified applicants will take place in mid-October 2025.</p>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -3293,9 +4446,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Alene Starkey</strong>",
+          "html": "<strong>How to Apply</strong>",
           "target": [
-            "li:nth-child(1) > strong"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -3318,9 +4471,59 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Kelly Marie Tikvah Blackwell</strong> - Brightly colored acrylic landscapes, plus a cameo by one special furry friend.</li>",
+          "html": "<p>To be considered, please submit:</p>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+            "p:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>A letter of interest</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>A completed Trustee application</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(2)"
           ]
         },
         {
@@ -3343,9 +4546,134 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Kelly Marie Tikvah Blackwell</strong>",
+          "html": "<strong>Applications may be:</strong>",
           "target": [
-            "li:nth-child(2) > strong"
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#000000",
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "fontSize": "11.0pt (14.6667px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">Picked up</span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#000000",
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "fontSize": "11.0pt (14.6667px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#000000",
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "fontSize": "11.0pt (14.6667px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">Dropped off</span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#000000",
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "fontSize": "11.0pt (14.6667px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#000000",
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "fontSize": "11.0pt (14.6667px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">mailed to</span>",
+          "target": [
+            "span:nth-child(3) > span > span > span > span > span"
           ]
         },
         {
@@ -3368,9 +4696,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Sherri Scofield</strong> - Beautifully detailed scenes from Colorado and the artist’s travels, in watercolor, pastel, and acrylic.</li>",
+          "html": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Library Board President<br>\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Clearview Library District<br>\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1194 W. Ash St.<br>\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Windsor, CO 80550</p>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+            "p:nth-child(9)"
           ]
         },
         {
@@ -3393,84 +4721,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Sherri Scofield</strong>",
+          "html": "<strong>Emailed to:</strong>",
           "target": [
-            "li:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Tony Shelburne</strong> - Gorgeous landscapes and portraits created using a variety of mediums including graphite and alcohol ink.&nbsp;</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Tony Shelburne</strong>",
-          "target": [
-            "li:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(4)"
+            "li > strong"
           ]
         },
         {
@@ -3493,9 +4746,134 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy\">our public art submission form</a>",
+          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
+            "ul:nth-child(10) > li > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Application Deadline:</strong>",
+          "target": [
+            "p:nth-child(11) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Sunday, September 28, 2025</p>",
+          "target": [
+            "p:nth-child(12)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-08/Library-Board-of-Trustees-Application-2025.pdf\">Download the Application</a>",
+          "target": [
+            ".button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Learn More About the Role</strong>",
+          "target": [
+            "p:nth-child(14) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>For details about board responsibilities and expectations, review the <a href=\"https://www.cde.state.co.us/cdelib/librarydevelopment/publiclibraries/trusteehandbook\">Colorado Public Library Board &amp; Trustee Handbook</a>.<br>\nLearn More About the Board</p>",
+          "target": [
+            "p:nth-child(15)"
           ]
         },
         {
@@ -3518,9 +4896,109 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:courtney@clearviewlibrary.org\">courtney@clearviewlibrary.org</a>",
+          "html": "<a href=\"https://www.cde.state.co.us/cdelib/librarydevelopment/publiclibraries/trusteehandbook\">Colorado Public Library Board &amp; Trustee Handbook</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(2)"
+            "p:nth-child(15) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Important Dates</strong>",
+          "target": [
+            "p:nth-child(16) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Application Deadline: September 28, 2025</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Interviews: Mid-October 2025</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>New Term Begins: January 1, 2026</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(3)"
           ]
         },
         {
@@ -4425,7 +5903,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Join the Clearview Library District Board of Trustees</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4573,7 +6051,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > h1:nth-child(2)"
                     ],
                     "level": 1
                   },
@@ -4653,7 +6131,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Join the Clearview Library District Board of Trustees</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4837,7 +6315,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-09/Board-of-Trustees-2026-Hero.jpg?itok=g96t09we\" width=\"1019\" height=\"573\" alt=\"Business team, each holding glowing lightbulbs symbolizing collaboration and ideas.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -4990,7 +6468,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-09/Board-of-Trustees-2026-Hero.jpg?itok=g96t09we\" width=\"1019\" height=\"573\" alt=\"Business team, each holding glowing lightbulbs symbolizing collaboration and ideas.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5343,7 +6821,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5443,7 +6921,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5469,7 +6947,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5620,7 +7098,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5713,7 +7191,7 @@
     },
     {
       "id": "link-in-text-block",
-      "impact": null,
+      "impact": "serious",
       "tags": [
         "cat.color",
         "wcag2a",
@@ -5734,109 +7212,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<ol>",
+                  "html": "<p>For details about board responsibilities and expectations, review the <a href=\"https://www.cde.state.co.us/cdelib/librarydevelopment/publiclibraries/trusteehandbook\">Colorado Public Library Board &amp; Trustee Handbook</a>.<br>\nLearn More About the Board</p>",
                   "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/\">Home</a>",
-          "target": [
-            "li:nth-child(1) > a[href=\"/\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
+                    "p:nth-child(15)"
                   ]
                 }
               ],
@@ -5848,9 +7226,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>",
+                  "html": "<p>For details about board responsibilities and expectations, review the <a href=\"https://www.cde.state.co.us/cdelib/librarydevelopment/publiclibraries/trusteehandbook\">Colorado Public Library Board &amp; Trustee Handbook</a>.<br>\nLearn More About the Board</p>",
                   "target": [
-                    "p:nth-child(4)"
+                    "p:nth-child(15)"
                   ]
                 }
               ],
@@ -5861,48 +7239,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy\">our public art submission form</a>",
+          "html": "<a href=\"https://www.cde.state.co.us/cdelib/librarydevelopment/publiclibraries/trusteehandbook\">Colorado Public Library Board &amp; Trustee Handbook</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:courtney@clearviewlibrary.org\">courtney@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
+            "p:nth-child(15) > a"
           ]
         }
       ]
@@ -6417,9 +7756,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
+            "a[hreflang=\"en\"][href$=\"news\"]"
           ]
         },
         {
@@ -6443,7 +7782,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/media/448/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/460/edit\" hreflang=\"en\">",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -6469,9 +7808,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy\">our public art submission form</a>",
+          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
+            "ul:nth-child(10) > li > a"
           ]
         },
         {
@@ -6495,9 +7834,35 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"mailto:courtney@clearviewlibrary.org\">courtney@clearviewlibrary.org</a>",
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-08/Library-Board-of-Trustees-Application-2025.pdf\">Download the Application</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(2)"
+            ".button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://www.cde.state.co.us/cdelib/librarydevelopment/publiclibraries/trusteehandbook\">Colorado Public Library Board &amp; Trustee Handbook</a>",
+          "target": [
+            "p:nth-child(15) > a"
           ]
         },
         {
@@ -7337,9 +8702,63 @@
             }
           ],
           "impact": null,
+          "html": "<ul>\n\t<li>A letter of interest</li>\n\t<li>A completed Trustee application</li>\n</ul>",
+          "target": [
+            "ul:nth-child(6)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
           "html": "<ul>",
           "target": [
-            "div[property=\"schema:text\"] > ul"
+            "ul:nth-child(8)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul>\n\t<li><strong>Emailed to:</strong> <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a></li>\n</ul>",
+          "target": [
+            "ul:nth-child(10)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul>\n\t<li>Application Deadline: September 28, 2025</li>\n\t<li>Interviews: Mid-October 2025</li>\n\t<li>New Term Begins: January 1, 2026</li>\n</ul>",
+          "target": [
+            "ul:nth-child(17)"
           ]
         },
         {
@@ -7713,7 +9132,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Art In The Library - July 2025\n              </li>",
+          "html": "<li>\n                  Join The Clearview Library District Board of Trustees\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -7731,9 +9150,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Alene Starkey</strong> - Vibrant watercolor and mixed media prints highlighting the beauty of our flora and fauna.</li>",
+          "html": "<li>A letter of interest</li>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+            "ul:nth-child(6) > li:nth-child(1)"
           ]
         },
         {
@@ -7749,9 +9168,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Kelly Marie Tikvah Blackwell</strong> - Brightly colored acrylic landscapes, plus a cameo by one special furry friend.</li>",
+          "html": "<li>A completed Trustee application</li>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+            "ul:nth-child(6) > li:nth-child(2)"
           ]
         },
         {
@@ -7767,9 +9186,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Sherri Scofield</strong> - Beautifully detailed scenes from Colorado and the artist’s travels, in watercolor, pastel, and acrylic.</li>",
+          "html": "<li>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+            "ul:nth-child(8) > li:nth-child(1)"
           ]
         },
         {
@@ -7785,9 +9204,81 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Tony Shelburne</strong> - Gorgeous landscapes and portraits created using a variety of mediums including graphite and alcohol ink.&nbsp;</li>",
+          "html": "<li>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
+            "ul:nth-child(8) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Emailed to:</strong> <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a></li>",
+          "target": [
+            "ul:nth-child(10) > li"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Application Deadline: September 28, 2025</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Interviews: Mid-October 2025</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>New Term Begins: January 1, 2026</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(3)"
           ]
         },
         {
@@ -8355,7 +9846,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-09/Board-of-Trustees-2026-Hero.jpg?itok=g96t09we\" width=\"1019\" height=\"573\" alt=\"Business team, each holding glowing lightbulbs symbolizing collaboration and ideas.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -8489,7 +9980,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Join the Clearview Library District Board of Trustees</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9934,7 +11425,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Art In The Library - July 2025\n              </li>",
+          "html": "<li>\n                  Join The Clearview Library District Board of Trustees\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -9954,9 +11445,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<div class=\"main-wrapper \">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -9994,9 +11485,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -10054,9 +11545,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"714\" about=\"/about-us/learn-more/news/art-library-july-2025\" typeof=\"schema:Article\" id=\"node-714\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"731\" about=\"/about-us/learn-more/news/join-clearview-library-district-board-trustees\" typeof=\"schema:Article\" id=\"node-731\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#node-714"
+            "#node-731"
           ]
         },
         {
@@ -10114,7 +11605,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2025-07-08T16:26:21+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-07-08T10:26:21-06:00\" title=\"Tuesday, July 8, 2025 - 10:26\" class=\"datetime\">July 8, 2025</time>\n</span>",
+          "html": "<span property=\"schema:dateCreated\" content=\"2025-09-03T13:38:00+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-09-03T07:38:00-06:00\" title=\"Wednesday, September 3, 2025 - 07:38\" class=\"datetime\">September 3, 2025</time>\n</span>",
           "target": [
             ".field--name-created"
           ]
@@ -10134,7 +11625,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2025-07-08T10:26:21-06:00\" title=\"Tuesday, July 8, 2025 - 10:26\" class=\"datetime\">July 8, 2025</time>",
+          "html": "<time datetime=\"2025-09-03T07:38:00-06:00\" title=\"Wednesday, September 3, 2025 - 07:38\" class=\"datetime\">September 3, 2025</time>",
           "target": [
             "time"
           ]
@@ -10154,7 +11645,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a></div>\n                    </div>",
+          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a></div>\n                    </div>",
           "target": [
             ".field--name-field-article-category"
           ]
@@ -10174,7 +11665,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a></div>",
+          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a></div>",
           "target": [
             ".field--name-field-article-category > .field__item"
           ]
@@ -10194,9 +11685,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
+            "a[hreflang=\"en\"][href$=\"news\"]"
           ]
         },
         {
@@ -10214,7 +11705,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Join the Clearview Library District Board of Trustees</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10234,7 +11725,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Join the Clearview Library District Board of Trustees</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10394,7 +11885,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/448/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/460/edit\" hreflang=\"en\">",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -10414,7 +11905,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-09/Board-of-Trustees-2026-Hero.jpg?itok=g96t09we\" width=\"1019\" height=\"573\" alt=\"Business team, each holding glowing lightbulbs symbolizing collaboration and ideas.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -10454,7 +11945,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><em>Paintings on display in the library. Clockwise from upper left, Sherri Scofield, Tony Shelburne, Kelly Marie Tikvah Blackwell, and Alene Starkey.</em></p>",
+          "html": "<p><em>Applications Open Through September 28, 2025</em></p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -10474,7 +11965,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Paintings on display in the library. Clockwise from upper left, Sherri Scofield, Tony Shelburne, Kelly Marie Tikvah Blackwell, and Alene Starkey.</em>",
+          "html": "<em>Applications Open Through September 28, 2025</em>",
           "target": [
             "em"
           ]
@@ -10494,7 +11985,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>The Clearview Library District is currently accepting applications to fill two Trustee openings and one Trustee Alternate position for three-year terms beginning January 1, 2026. These volunteer positions are open to all Clearview Library District residents.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10514,9 +12005,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>",
+          "html": "<p>Interviews for qualified applicants will take place in mid-October 2025.</p>",
           "target": [
-            "div[property=\"schema:text\"] > ul"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -10534,167 +12025,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Alene Starkey</strong> - Vibrant watercolor and mixed media prints highlighting the beauty of our flora and fauna.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Alene Starkey</strong>",
-          "target": [
-            "li:nth-child(1) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Kelly Marie Tikvah Blackwell</strong> - Brightly colored acrylic landscapes, plus a cameo by one special furry friend.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Kelly Marie Tikvah Blackwell</strong>",
-          "target": [
-            "li:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Sherri Scofield</strong> - Beautifully detailed scenes from Colorado and the artist’s travels, in watercolor, pastel, and acrylic.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Sherri Scofield</strong>",
-          "target": [
-            "li:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Tony Shelburne</strong> - Gorgeous landscapes and portraits created using a variety of mediums including graphite and alcohol ink.&nbsp;</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Tony Shelburne</strong>",
-          "target": [
-            "li:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>How to Apply</strong></p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -10714,9 +12045,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy\">our public art submission form</a>",
+          "html": "<strong>How to Apply</strong>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -10734,9 +12065,949 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:courtney@clearviewlibrary.org\">courtney@clearviewlibrary.org</a>",
+          "html": "<p>To be considered, please submit:</p>",
           "target": [
-            "p:nth-child(4) > a:nth-child(2)"
+            "p:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul>\n\t<li>A letter of interest</li>\n\t<li>A completed Trustee application</li>\n</ul>",
+          "target": [
+            "ul:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>A letter of interest</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>A completed Trustee application</li>",
+          "target": [
+            "ul:nth-child(6) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Applications may be:</strong></p>",
+          "target": [
+            "p:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Applications may be:</strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul>",
+          "target": [
+            "ul:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>",
+          "target": [
+            "ul:nth-child(8) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "li:nth-child(1) > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span></span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\">Picked up</span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">Picked up</span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(1) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\">",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span></span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span></span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span></span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span></span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\"> at the Windsor Library, Severance Library, or on the Bookmobile</span>",
+          "target": [
+            "li:nth-child(1) > p > span:nth-child(2) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>",
+          "target": [
+            "ul:nth-child(8) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "li:nth-child(2) > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span></span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dropped off</span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">Dropped off</span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(1) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\">",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span></span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span></span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span></span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span></span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\"> at the Windsor Library, Severance Library﻿, or </span>",
+          "target": [
+            "li:nth-child(2) > p > span:nth-child(2) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span></span></span></span></span>",
+          "target": [
+            "p > span:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span></span></span></span>",
+          "target": [
+            "span:nth-child(3) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span></span></span>",
+          "target": [
+            "span:nth-child(3) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:700\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span></span>",
+          "target": [
+            "span:nth-child(3) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\">mailed to</span></span>",
+          "target": [
+            "span:nth-child(3) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">mailed to</span>",
+          "target": [
+            "span:nth-child(3) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span></span></span></span></span>",
+          "target": [
+            "span:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-family:'Noto Sans',sans-serif\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span></span></span></span>",
+          "target": [
+            "span:nth-child(4) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span></span></span>",
+          "target": [
+            "span:nth-child(4) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span></span>",
+          "target": [
+            "span:nth-child(4) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"font-style:normal\"><span style=\"text-decoration:none\">:</span></span>",
+          "target": [
+            "span:nth-child(4) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span style=\"text-decoration:none\">:</span>",
+          "target": [
+            "span:nth-child(4) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Library Board President<br>\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Clearview Library District<br>\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1194 W. Ash St.<br>\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Windsor, CO 80550</p>",
+          "target": [
+            "p:nth-child(9)"
           ]
         },
         {
@@ -10756,7 +13027,447 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            "p:nth-child(4) > br"
+            "p:nth-child(9) > br:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "p:nth-child(9) > br:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "p:nth-child(9) > br:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul>\n\t<li><strong>Emailed to:</strong> <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a></li>\n</ul>",
+          "target": [
+            "ul:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Emailed to:</strong> <a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a></li>",
+          "target": [
+            "ul:nth-child(10) > li"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Emailed to:</strong>",
+          "target": [
+            "li > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"mailto:director@clearviewlibrary.org\">director@clearviewlibrary.org</a>",
+          "target": [
+            "ul:nth-child(10) > li > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Application Deadline:</strong></p>",
+          "target": [
+            "p:nth-child(11)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Application Deadline:</strong>",
+          "target": [
+            "p:nth-child(11) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Sunday, September 28, 2025</p>",
+          "target": [
+            "p:nth-child(12)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-08/Library-Board-of-Trustees-Application-2025.pdf\">Download the Application</a></p>",
+          "target": [
+            "p:nth-child(13)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-08/Library-Board-of-Trustees-Application-2025.pdf\">Download the Application</a>",
+          "target": [
+            ".button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Learn More About the Role</strong></p>",
+          "target": [
+            "p:nth-child(14)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Learn More About the Role</strong>",
+          "target": [
+            "p:nth-child(14) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>For details about board responsibilities and expectations, review the <a href=\"https://www.cde.state.co.us/cdelib/librarydevelopment/publiclibraries/trusteehandbook\">Colorado Public Library Board &amp; Trustee Handbook</a>.<br>\nLearn More About the Board</p>",
+          "target": [
+            "p:nth-child(15)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://www.cde.state.co.us/cdelib/librarydevelopment/publiclibraries/trusteehandbook\">Colorado Public Library Board &amp; Trustee Handbook</a>",
+          "target": [
+            "p:nth-child(15) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "p:nth-child(15) > br"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Important Dates</strong></p>",
+          "target": [
+            "p:nth-child(16)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Important Dates</strong>",
+          "target": [
+            "p:nth-child(16) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul>\n\t<li>Application Deadline: September 28, 2025</li>\n\t<li>Interviews: Mid-October 2025</li>\n\t<li>New Term Begins: January 1, 2026</li>\n</ul>",
+          "target": [
+            "ul:nth-child(17)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Application Deadline: September 28, 2025</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Interviews: Mid-October 2025</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>New Term Begins: January 1, 2026</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(3)"
           ]
         },
         {
@@ -11096,7 +13807,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            "br:nth-child(2)"
+            ".address:nth-child(3) > br:nth-child(2)"
           ]
         },
         {
@@ -12882,7 +15593,138 @@
       ]
     }
   ],
-  "incomplete": [],
+  "incomplete": [
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/\">Home</a>",
+          "target": [
+            "li:nth-child(1) > a[href=\"/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us\">About Us</a>",
+          "target": [
+            "li:nth-child(2) > a[href$=\"about-us\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "target": [
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        }
+      ]
+    }
+  ],
   "violations": [
     {
       "id": "landmark-complementary-is-top-level",
@@ -12919,5 +15761,5 @@
       ]
     }
   ],
-  "documentTitle": "Art in the Library - July 2025 | Clearview Library"
+  "documentTitle": "Join the Clearview Library District Board of Trustees | Clearview Library"
 }

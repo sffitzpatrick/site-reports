@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:56:19.909Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-diana-hyland",
+  "timestamp": "2025-09-15T17:47:51.776Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/events",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,6 +445,35 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "landmark-complementary-is-top-level",
+      "impact": null,
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -1059,7 +1088,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1397,7 +1426,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1505,7 +1534,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
+          "html": "<body class=\"_0829669 path-taxonomy\">",
           "target": [
             "body"
           ]
@@ -1771,7 +1800,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2051,7 +2080,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2602,25 +2631,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         }
       ]
@@ -2675,9 +2686,15 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Diana Hyland</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
                   "target": [
                     "h1"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>\n        </h2>",
+                  "target": [
+                    ".node-title"
                   ]
                 },
                 {
@@ -2701,7 +2718,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -2995,7 +3012,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -3118,59 +3135,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Diana Hyland\n              </li>",
+          "html": "<li>\n                  Events\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<time datetime=\"2022-03-24T13:06:48-06:00\" title=\"Thursday, March 24, 2022 - 13:06\" class=\"datetime\">March 24, 2022</time>",
-          "target": [
-            "time"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
-          "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3193,7 +3160,97 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Diana Hyland</span>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
+          "target": [
+            "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "hidden"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is hidden"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<select data-drupal-selector=\"edit-field-article-category-target-id\" id=\"edit-field-article-category-target-id\" name=\"field_article_category_target_id\" class=\"form-select\">",
+          "target": [
+            "#edit-field-article-category-target-id"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "hidden"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is hidden"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<input data-bef-auto-submit-click=\"\" class=\"js-hide button js-form-submit form-submit\" data-drupal-selector=\"edit-submit-news\" type=\"submit\" id=\"edit-submit-news\" value=\"Apply\">",
+          "target": [
+            "#edit-submit-news"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/events\" hreflang=\"en\">Events</a>",
+          "target": [
+            ".category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3218,9 +3275,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
+          "html": "<time datetime=\"2023-03-29T12:06:12-06:00\" title=\"Wednesday, March 29, 2023 - 12:06\" class=\"datetime\">March 29, 2023</time>",
           "target": [
-            "p:nth-child(1) > em"
+            "time"
           ]
         },
         {
@@ -3243,9 +3300,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Hometown:</strong> Greeley, CO</p>",
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "p:nth-child(2)"
+            "div[property=\"schema:text\"]"
           ]
         },
         {
@@ -3253,674 +3310,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
+                "fgColor": "#d14600",
                 "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
+                "contrastRatio": 4.57,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
+              "message": "Element has sufficient color contrast of 4.57"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Hometown:</strong>",
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/national-library-week-2023\">Read More ➔</a>",
           "target": [
-            "p:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Interests:</strong> I enjoy hiking, stand up paddle boarding, running, creating home decor from wood, sewing, reading (of course) and spending time with my family and friends.</p>",
-          "target": [
-            "p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Interests:</strong>",
-          "target": [
-            "p:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Book:</strong>",
-          "target": [
-            "p:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>The Lion, the Witch and the Wardrobe</em>",
-          "target": [
-            "a:nth-child(2) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Where the Red Fern Grows</em>",
-          "target": [
-            "a:nth-child(3) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Miss Suzy</em>",
-          "target": [
-            "p:nth-child(4) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Jurassic Park</em>",
-          "target": [
-            "a:nth-child(5) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Killing the Rising Sun</em>",
-          "target": [
-            "a:nth-child(6) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>This Moose Belongs to Me</em>",
-          "target": [
-            "a:nth-child(7) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Library Lion</em>",
-          "target": [
-            "a:nth-child(8) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>The Keeping Quilt</em>",
-          "target": [
-            "a:nth-child(9) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Preferred Superpower:</strong> The ability to fly....not like our friend Harry on his broom or Max with her genetically enhanced body with wings...I want to fly like Superman.</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Preferred Superpower:</strong>",
-          "target": [
-            "p:nth-child(5) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Author:</strong> Michael Crichton and CS Lewis.</p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Author:</strong>",
-          "target": [
-            "p:nth-child(6) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Vacation Spot:</strong> Keystone CO (in the summer as I intensely despise snow), and the north shore of Kauai (anytime).</p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Vacation Spot:</strong>",
-          "target": [
-            "p:nth-child(7) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> The Russo brothers (the talented team behind the cinematic Marvel universe), Abraham Lincoln and Jesus.</p>",
-          "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
-          "target": [
-            "p:nth-child(8) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Quote:</strong>&nbsp;\"Do small things with great love.\" - Mother Teresa</p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Quote:</strong>",
-          "target": [
-            "p:nth-child(9) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist</p>",
-          "target": [
-            "p:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Job at the Library:</strong>",
-          "target": [
-            "p:nth-child(10) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#e1f0fb",
-                "contrastRatio": 15.26,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 15.26"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "a[alt=\"go to the article\"]"
           ]
         },
         {
@@ -4445,7 +3852,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -4470,7 +3877,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -4495,7 +3902,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         }
       ]
@@ -4645,6 +4052,24 @@
           "any": [
             {
               "id": "duplicate-id-aria",
+              "data": "edit-field-article-category-target-id",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<select data-drupal-selector=\"edit-field-article-category-target-id\" id=\"edit-field-article-category-target-id\" name=\"field_article_category_target_id\" class=\"form-select\">",
+          "target": [
+            "#edit-field-article-category-target-id"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -4775,9 +4200,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Diana Hyland</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>\n        </h2>",
+          "target": [
+            ".node-title"
           ]
         },
         {
@@ -4923,9 +4366,15 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(1) > div > div > h1"
                     ],
                     "level": 1
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(2) > div > div > div > div > div:nth-child(2) > div > article > div:nth-child(2) > h2:nth-child(2)"
+                    ],
+                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -5003,9 +4452,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Diana Hyland</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>\n        </h2>",
+          "target": [
+            ".node-title"
           ]
         },
         {
@@ -5187,7 +4654,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-03/Diana-H-photo.jpg?itok=758u6kSX\" width=\"1019\" height=\"573\" alt=\"Diana Hyland\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-03/National-Library-Week-2023-Hero.png?itok=WlonhVla\" width=\"1019\" height=\"573\" alt=\"More to the story graphic for National Library Week 2023\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5340,7 +4807,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-03/Diana-H-photo.jpg?itok=758u6kSX\" width=\"1019\" height=\"573\" alt=\"Diana Hyland\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-03/National-Library-Week-2023-Hero.png?itok=WlonhVla\" width=\"1019\" height=\"573\" alt=\"More to the story graphic for National Library Week 2023\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5453,7 +4920,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         }
       ]
@@ -5693,7 +5160,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5747,14 +5214,7 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
-                  "target": [
-                    "#sitewide-footer"
-                  ]
-                }
-              ],
+              "relatedNodes": [],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5762,9 +5222,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
-            ".node__meta"
+            "#sitewide-footer"
           ]
         }
       ]
@@ -5793,7 +5253,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5819,7 +5279,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5970,7 +5430,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -6057,299 +5517,6 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/\">Home</a>",
-          "target": [
-            "li:nth-child(1) > a[href=\"/\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=15&amp;cn=56477\"><em>The Lion, the Witch and the Wardrobe</em></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=6&amp;cn=81832\"><em>Where the Red Fern Grows</em></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=10&amp;cn=65900\"><em>Jurassic Park</em></a>",
-          "target": [
-            "a:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=5&amp;cn=8043\"><em>Killing the Rising Sun</em></a>",
-          "target": [
-            "a:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=63266\"><em>This Moose Belongs to Me</em></a>",
-          "target": [
-            "a:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=764\"><em>Library Lion</em></a>",
-          "target": [
-            "a:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=47082\"><em>The Keeping Quilt</em></a>",
-          "target": [
-            "a:nth-child(9)"
           ]
         }
       ]
@@ -6864,33 +6031,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
-          "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/media/56/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-03/Diana-H-photo.jpg?itok=758u6kSX\" width=\"1019\" height=\"573\" alt=\"Diana Hyland\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/176/edit\" hreflang=\"en\">",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -6916,9 +6057,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=15&amp;cn=56477\"><em>The Lion, the Witch and the Wardrobe</em></a>",
+          "html": "<a href=\"/about-us/learn-more/news/events\" hreflang=\"en\">Events</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(2)"
+            ".category > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -6942,9 +6083,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=6&amp;cn=81832\"><em>Where the Red Fern Grows</em></a>",
+          "html": "<a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>",
           "target": [
-            "p:nth-child(4) > a:nth-child(3)"
+            "a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -6968,113 +6109,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=10&amp;cn=65900\"><em>Jurassic Park</em></a>",
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/national-library-week-2023\">Read More ➔</a>",
           "target": [
-            "a:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=5&amp;cn=8043\"><em>Killing the Rising Sun</em></a>",
-          "target": [
-            "a:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=63266\"><em>This Moose Belongs to Me</em></a>",
-          "target": [
-            "a:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=764\"><em>Library Lion</em></a>",
-          "target": [
-            "a:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=47082\"><em>The Keeping Quilt</em></a>",
-          "target": [
-            "a:nth-child(9)"
+            "a[alt=\"go to the article\"]"
           ]
         },
         {
@@ -7568,7 +6605,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
           ]
         },
         {
@@ -7594,7 +6631,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
           ]
         },
         {
@@ -7620,7 +6657,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
           ]
         },
         {
@@ -8272,7 +7309,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Diana Hyland\n              </li>",
+          "html": "<li>\n                  Events\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -8826,7 +7863,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -8842,27 +7879,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-03/Diana-H-photo.jpg?itok=758u6kSX\" width=\"1019\" height=\"573\" alt=\"Diana Hyland\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-03/National-Library-Week-2023-Hero.png?itok=WlonhVla\" width=\"1019\" height=\"573\" alt=\"More to the story graphic for National Library Week 2023\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -8898,7 +7917,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -8976,7 +7995,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Diana Hyland</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9843,7 +8862,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".content"
+            ".prf-opac-search > .content"
           ]
         },
         {
@@ -10023,7 +9042,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -10063,7 +9082,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            ".label"
+            "strong"
           ]
         },
         {
@@ -10181,9 +9200,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-breadcrumbs\" class=\"block block-system block-system-breadcrumb-block\">",
+          "html": "<div id=\"block-clearview-breadcrumbs-2\" class=\"block block-system block-system-breadcrumb-block\">",
           "target": [
-            "#block-clearview-breadcrumbs"
+            "#block-clearview-breadcrumbs-2"
           ]
         },
         {
@@ -10421,7 +9440,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Diana Hyland\n              </li>",
+          "html": "<li>\n                  Events\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -10441,9 +9460,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<div class=\"main-wrapper \">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -10481,9 +9500,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -10541,9 +9560,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"354\" about=\"/about-us/learn-more/news/staff-spotlight-diana-hyland\" typeof=\"schema:Article\" id=\"node-354\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<div about=\"/about-us/learn-more/news/events\" id=\"taxonomy-term-34\" class=\"taxonomy-term vocabulary-article-category\">",
           "target": [
-            "#node-354"
+            "#taxonomy-term-34"
           ]
         },
         {
@@ -10561,9 +9580,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<div class=\"content\">",
           "target": [
-            ".node__meta"
+            "#taxonomy-term-34 > .content"
           ]
         },
         {
@@ -10581,9 +9600,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__submitted\">",
+          "html": "<div class=\"no-flex layout layout--onecol\">",
           "target": [
-            ".node__submitted"
+            ".no-flex"
           ]
         },
         {
@@ -10601,9 +9620,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2022-03-24T19:06:48+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2022-03-24T13:06:48-06:00\" title=\"Thursday, March 24, 2022 - 13:06\" class=\"datetime\">March 24, 2022</time>\n</span>",
+          "html": "<div class=\"layout__region layout__region--content\">\n      <div class=\"block block-layout-builder block-field-blocktaxonomy-termarticle-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>\n\n  </div>\n\n    </div>",
           "target": [
-            ".field--name-created"
+            ".no-flex > .layout__region.layout__region--content"
           ]
         },
         {
@@ -10621,9 +9640,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2022-03-24T13:06:48-06:00\" title=\"Thursday, March 24, 2022 - 13:06\" class=\"datetime\">March 24, 2022</time>",
+          "html": "<div class=\"block block-layout-builder block-field-blocktaxonomy-termarticle-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>\n\n  </div>",
           "target": [
-            "time"
+            ".block-layout-builder"
           ]
         },
         {
@@ -10641,67 +9660,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a></div>\n                    </div>",
-          "target": [
-            ".field--name-field-article-category"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a></div>",
-          "target": [
-            ".field--name-field-article-category > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
-          "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Diana Hyland</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
           "target": [
             "h1"
           ]
@@ -10721,9 +9680,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Diana Hyland</span>",
+          "html": "<div class=\"layout layout--onecol\">",
           "target": [
-            ".field--name-title"
+            ".layout.layout--onecol:nth-child(2)"
           ]
         },
         {
@@ -10741,9 +9700,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__main\">",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            ".node__main"
+            ".layout.layout--onecol:nth-child(2) > .layout__region.layout__region--content"
           ]
         },
         {
@@ -10761,9 +9720,129 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__content\">",
+          "html": "<div class=\"views-element-container block block-views block-views-blocknews-block-3\">",
           "target": [
-            ".node__content"
+            ".block-views-blocknews-block-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div>",
+          "target": [
+            ".block-views-blocknews-block-3 > div"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view view-news view-id-news view-display-id-block_3 js-view-dom-id-74cb5063bd501da7b8e943676d40804436148ffe26dd9916d018bafb35f38d9c\">",
+          "target": [
+            ".view-display-id-block_3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view-content\">",
+          "target": [
+            ".view-content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"views-row\">",
+          "target": [
+            ".views-row"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"456\" about=\"/about-us/learn-more/news/national-library-week-2023\" typeof=\"schema:Article\" id=\"node-456\" class=\"node node--type-article node--promoted node--sticky node--view-mode-big-feature\">",
+          "target": [
+            "#node-456"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__image\">",
+          "target": [
+            ".node__image"
           ]
         },
         {
@@ -10861,7 +9940,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">  <a href=\"/media/56/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-03/Diana-H-photo.jpg?itok=758u6kSX\" width=\"1019\" height=\"573\" alt=\"Diana Hyland\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
+          "html": "<div class=\"field__item\">",
           "target": [
             ".field--name-field-media-image-1 > .field__item"
           ]
@@ -10881,7 +9960,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/56/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-03/Diana-H-photo.jpg?itok=758u6kSX\" width=\"1019\" height=\"573\" alt=\"Diana Hyland\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/176/edit\" hreflang=\"en\">",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -10901,9 +9980,209 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-03/Diana-H-photo.jpg?itok=758u6kSX\" width=\"1019\" height=\"573\" alt=\"Diana Hyland\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-03/National-Library-Week-2023-Hero.png?itok=WlonhVla\" width=\"1019\" height=\"573\" alt=\"More to the story graphic for National Library Week 2023\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__content\">",
+          "target": [
+            ".node__content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"category\">\n                <a href=\"/about-us/learn-more/news/events\" hreflang=\"en\">Events</a>\n            </div>",
+          "target": [
+            ".category"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/events\" hreflang=\"en\">Events</a>",
+          "target": [
+            ".category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>\n        </h2>",
+          "target": [
+            ".node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>",
+          "target": [
+            "a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>",
+          "target": [
+            ".field--name-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"date\">",
+          "target": [
+            ".date"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:dateCreated\" content=\"2023-03-29T18:06:12+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-03-29T12:06:12-06:00\" title=\"Wednesday, March 29, 2023 - 12:06\" class=\"datetime\">March 29, 2023</time>\n</span>",
+          "target": [
+            ".field--name-created"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2023-03-29T12:06:12-06:00\" title=\"Wednesday, March 29, 2023 - 12:06\" class=\"datetime\">March 29, 2023</time>",
+          "target": [
+            "time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__body\">",
+          "target": [
+            ".node__body"
           ]
         },
         {
@@ -10941,9 +10220,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em></p>",
+          "html": "<div class=\"read-more\">\n            <a alt=\"go to the article\" href=\"/about-us/learn-more/news/national-library-week-2023\">Read More ➔</a>\n        </div>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
+            ".read-more"
           ]
         },
         {
@@ -10961,9 +10240,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</em>",
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/national-library-week-2023\">Read More ➔</a>",
           "target": [
-            "p:nth-child(1) > em"
+            "a[alt=\"go to the article\"]"
           ]
         },
         {
@@ -10981,9 +10260,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Hometown:</strong> Greeley, CO</p>",
+          "html": "<div class=\"layout layout--onecol\">",
           "target": [
-            "p:nth-child(2)"
+            ".layout.layout--onecol:nth-child(3)"
           ]
         },
         {
@@ -11001,9 +10280,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Hometown:</strong>",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            "p:nth-child(2) > strong"
+            ".layout.layout--onecol:nth-child(3) > .layout__region.layout__region--content"
           ]
         },
         {
@@ -11021,9 +10300,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Interests:</strong> I enjoy hiking, stand up paddle boarding, running, creating home decor from wood, sewing, reading (of course) and spending time with my family and friends.</p>",
+          "html": "<div class=\"views-element-container block block-views block-views-blocknews-block-2\">",
           "target": [
-            "p:nth-child(3)"
+            ".block-views-blocknews-block-2"
           ]
         },
         {
@@ -11041,9 +10320,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Interests:</strong>",
+          "html": "<div><div class=\"view view-news view-id-news view-display-id-block_2 js-view-dom-id-b3af859b777d3ca7bc68d4a2eabddd861e44651633f5cf8b3d4470e601a5ab6d\">\n  \n    \n      \n  \n      \n          </div>\n</div>",
           "target": [
-            "p:nth-child(3) > strong"
+            ".block-views-blocknews-block-2 > div"
           ]
         },
         {
@@ -11061,669 +10340,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<div class=\"view view-news view-id-news view-display-id-block_2 js-view-dom-id-b3af859b777d3ca7bc68d4a2eabddd861e44651633f5cf8b3d4470e601a5ab6d\">\n  \n    \n      \n  \n      \n          </div>",
           "target": [
-            "p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Book:</strong>",
-          "target": [
-            "p:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=15&amp;cn=56477\"><em>The Lion, the Witch and the Wardrobe</em></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>The Lion, the Witch and the Wardrobe</em>",
-          "target": [
-            "a:nth-child(2) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=6&amp;cn=81832\"><em>Where the Red Fern Grows</em></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Where the Red Fern Grows</em>",
-          "target": [
-            "a:nth-child(3) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Miss Suzy</em>",
-          "target": [
-            "p:nth-child(4) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=10&amp;cn=65900\"><em>Jurassic Park</em></a>",
-          "target": [
-            "a:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Jurassic Park</em>",
-          "target": [
-            "a:nth-child(5) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=5&amp;cn=8043\"><em>Killing the Rising Sun</em></a>",
-          "target": [
-            "a:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Killing the Rising Sun</em>",
-          "target": [
-            "a:nth-child(6) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=63266\"><em>This Moose Belongs to Me</em></a>",
-          "target": [
-            "a:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>This Moose Belongs to Me</em>",
-          "target": [
-            "a:nth-child(7) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=764\"><em>Library Lion</em></a>",
-          "target": [
-            "a:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Library Lion</em>",
-          "target": [
-            "a:nth-child(8) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=47082\"><em>The Keeping Quilt</em></a>",
-          "target": [
-            "a:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>The Keeping Quilt</em>",
-          "target": [
-            "a:nth-child(9) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Preferred Superpower:</strong> The ability to fly....not like our friend Harry on his broom or Max with her genetically enhanced body with wings...I want to fly like Superman.</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Preferred Superpower:</strong>",
-          "target": [
-            "p:nth-child(5) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Author:</strong> Michael Crichton and CS Lewis.</p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Author:</strong>",
-          "target": [
-            "p:nth-child(6) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Vacation Spot:</strong> Keystone CO (in the summer as I intensely despise snow), and the north shore of Kauai (anytime).</p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Vacation Spot:</strong>",
-          "target": [
-            "p:nth-child(7) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> The Russo brothers (the talented team behind the cinematic Marvel universe), Abraham Lincoln and Jesus.</p>",
-          "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
-          "target": [
-            "p:nth-child(8) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Quote:</strong>&nbsp;\"Do small things with great love.\" - Mother Teresa</p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Favorite Quote:</strong>",
-          "target": [
-            "p:nth-child(9) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist</p>",
-          "target": [
-            "p:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Job at the Library:</strong>",
-          "target": [
-            "p:nth-child(10) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<aside class=\"sidebar\">",
-          "target": [
-            "aside"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"sidebar-newsletter-signup\">",
-          "target": [
-            "#sidebar-newsletter-signup"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            ".view-display-id-block_2"
           ]
         },
         {
@@ -11823,7 +10442,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-footerbranding-2 > .clearfix.text-formatted.field--name-body"
+            "#block-footerbranding-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -11843,7 +10462,7 @@
           "impact": null,
           "html": "<div class=\"site-logo\">\n    <img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">\n</div>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > .site-logo"
+            ".text-formatted.field--name-body.field--type-text-with-summary > .site-logo"
           ]
         },
         {
@@ -12903,7 +11522,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -12923,7 +11542,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -12943,7 +11562,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -13023,7 +11642,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>© Clearview Library District, 2021</p></div>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -13043,7 +11662,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -13083,7 +11702,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -13103,7 +11722,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
           ]
         },
         {
@@ -13143,7 +11762,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
           ]
         },
         {
@@ -13183,7 +11802,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
           ]
         },
         {
@@ -13750,41 +12369,6 @@
     }
   ],
   "incomplete": [],
-  "violations": [
-    {
-      "id": "landmark-complementary-is-top-level",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the complementary landmark or aside is at top level",
-      "help": "Aside should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "landmark-is-top-level",
-              "data": {
-                "role": null
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "The null landmark is contained in another landmark."
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<aside class=\"sidebar\">",
-          "target": [
-            "aside"
-          ],
-          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
-        }
-      ]
-    }
-  ],
-  "documentTitle": "Staff Spotlight: Diana Hyland | Clearview Library"
+  "violations": [],
+  "documentTitle": "Events | Clearview Library"
 }

@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:53:30.963Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-cindy-mullanix",
+  "timestamp": "2025-09-15T17:47:31.530Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-christy-olson",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,6 +264,22 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -1043,7 +1059,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1381,7 +1397,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1755,7 +1771,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2035,7 +2051,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2553,55 +2569,6 @@
       ]
     },
     {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
-          "target": [
-            "font"
-          ]
-        }
-      ]
-    },
-    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2708,7 +2675,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Christy Olson</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2734,7 +2701,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -3151,7 +3118,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Christy Olson\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -3176,7 +3143,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>",
+          "html": "<time datetime=\"2023-11-07T09:07:29-07:00\" title=\"Tuesday, November 7, 2023 - 09:07\" class=\"datetime\">November 7, 2023</time>",
           "target": [
             "time"
           ]
@@ -3226,7 +3193,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Christy Olson</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3276,7 +3243,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Hometown:</strong> Dallas, Texas.</p>",
+          "html": "<p><strong>Hometown:</strong> &nbsp;Wellington, CO.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3315,6 +3282,31 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Interests:</strong> Skiing, camping, cooking, visiting local restaurants and breweries and, this may be surprising but I am a lover of books and movies.&nbsp;</p>",
+          "target": [
+            "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -3329,31 +3321,6 @@
           "html": "<strong>Interests:</strong>",
           "target": [
             "p:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#222222",
-                "bgColor": "#ffffff",
-                "contrastRatio": 15.9,
-                "fontSize": "9.6pt (12.8px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 15.9"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
-          "target": [
-            "font"
           ]
         },
         {
@@ -3376,7 +3343,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -3401,7 +3368,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Book: </strong>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
             "p:nth-child(4) > strong"
           ]
@@ -3426,9 +3393,59 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>All I Really Need to Know I Learned in Kindergarten</em>",
+          "html": "<em>Outlander</em>",
           "target": [
-            "a > em"
+            "a:nth-child(2) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The Southern Book Club's Guide To Slaying Vampires</em>",
+          "target": [
+            "a:nth-child(3) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The Hiding Place</em>",
+          "target": [
+            "a:nth-child(4) > em"
           ]
         },
         {
@@ -3451,32 +3468,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>The Girl From the Sea of Cortez</em>",
-          "target": [
-            "p:nth-child(4) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Preferred Superpower:</strong> Being able to communicate in any language.</p>",
+          "html": "<p><strong>Preferred Superpower:</strong> I would like to be an Elf from Middle Earth. They are immortal, have superior hearing and vision, strong, fast, have magical powers and just all around super cool!</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -3526,7 +3518,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Author:</strong> I absolutely can't pick just one. Robert Fulghum. Kristin Hannah. Anna Quindlen.</p>",
+          "html": "<p><strong>Favorite Author:</strong> Diana Gabaldon, Jane Austen, Grady Hendrix, J.R.R Tolkien and Susanna Kearsley.</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -3576,7 +3568,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Vacation Spot: </strong>Northern California.</p>",
+          "html": "<p><strong>Favorite Vacation Spot:</strong> I have a dream of visiting Europe with my husband one day. Otherwise, a cabin in the mountains with snow all around and a fire in the hearth is my ideal.&nbsp;</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -3601,7 +3593,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Vacation Spot: </strong>",
+          "html": "<strong>Favorite Vacation Spot:</strong>",
           "target": [
             "p:nth-child(7) > strong"
           ]
@@ -3626,7 +3618,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Eleanor Roosevelt, Van Jones, Chris McCloskey (my late brother).</p>",
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> My Grandma Paula, Grandpa Bill and my Father who have left this earth.</p>",
           "target": [
             "p:nth-child(8)"
           ]
@@ -3676,7 +3668,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Quote:</strong> \"Live a balanced life - learn some and drink some and draw some and paint some and sing and dance and play and work everyday some.\" Robert Fulghum</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(9)"
           ]
@@ -3711,6 +3703,31 @@
             {
               "id": "color-contrast",
               "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=6&amp;cn=25049\">The Library Book</a>",
+          "target": [
+            "em > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
                 "fgColor": "#181818",
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
@@ -3726,7 +3743,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist.</p>",
+          "html": "<p><strong>Job at the Library:</strong> Mobile Services and Bookmobile Queen (a title I happily share with Katie N at the library).</p>",
           "target": [
             "p:nth-child(10)"
           ]
@@ -4658,7 +4675,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Christy Olson</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4806,7 +4823,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > h1:nth-child(2)"
                     ],
                     "level": 1
                   },
@@ -4886,7 +4903,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Christy Olson</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -5070,7 +5087,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Christy.jpeg?itok=9skTaYxd\" width=\"1019\" height=\"573\" alt=\"woman standing by a bookmobile.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5223,7 +5240,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Christy.jpeg?itok=9skTaYxd\" width=\"1019\" height=\"573\" alt=\"woman standing by a bookmobile.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5576,7 +5593,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5676,7 +5693,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5702,7 +5719,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5853,7 +5870,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -6067,7 +6084,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
+                  "html": "<p>",
                   "target": [
                     "p:nth-child(4)"
                   ]
@@ -6080,9 +6097,98 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=4&amp;cn=14017\"><em>Outlander</em></a>",
           "target": [
-            "p:nth-child(4) > a"
+            "p:nth-child(4) > a:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=4&amp;cn=59083\"><em>The Southern Book Club's Guide To Slaying Vampires</em></a>",
+          "target": [
+            "p:nth-child(4) > a:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=8&amp;cn=1832\"><em>The Hiding Place</em></a>",
+          "target": [
+            "p:nth-child(4) > a:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(9)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(9)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=6&amp;cn=25049\">The Library Book</a>",
+          "target": [
+            "em > a"
           ]
         }
       ]
@@ -6623,7 +6729,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/media/196/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/231/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Christy.jpeg?itok=9skTaYxd\" width=\"1019\" height=\"573\" alt=\"woman standing by a bookmobile.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -6649,9 +6755,87 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=4&amp;cn=14017\"><em>Outlander</em></a>",
           "target": [
-            "p:nth-child(4) > a"
+            "p:nth-child(4) > a:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=4&amp;cn=59083\"><em>The Southern Book Club's Guide To Slaying Vampires</em></a>",
+          "target": [
+            "p:nth-child(4) > a:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=8&amp;cn=1832\"><em>The Hiding Place</em></a>",
+          "target": [
+            "p:nth-child(4) > a:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=6&amp;cn=25049\">The Library Book</a>",
+          "target": [
+            "em > a"
           ]
         },
         {
@@ -7849,7 +8033,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Christy Olson\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -8419,7 +8603,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Christy.jpeg?itok=9skTaYxd\" width=\"1019\" height=\"573\" alt=\"woman standing by a bookmobile.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -8553,7 +8737,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Christy Olson</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9998,7 +10182,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Christy Olson\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -10018,9 +10202,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<div class=\"main-wrapper \">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -10058,9 +10242,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -10118,9 +10302,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"470\" about=\"/about-us/learn-more/news/staff-spotlight-cindy-mullanix\" typeof=\"schema:Article\" id=\"node-470\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"528\" about=\"/about-us/learn-more/news/staff-spotlight-christy-olson\" typeof=\"schema:Article\" id=\"node-528\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#node-470"
+            "#node-528"
           ]
         },
         {
@@ -10178,7 +10362,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2023-06-01T17:03:08+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>\n</span>",
+          "html": "<span property=\"schema:dateCreated\" content=\"2023-11-07T16:07:29+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-11-07T09:07:29-07:00\" title=\"Tuesday, November 7, 2023 - 09:07\" class=\"datetime\">November 7, 2023</time>\n</span>",
           "target": [
             ".field--name-created"
           ]
@@ -10198,7 +10382,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>",
+          "html": "<time datetime=\"2023-11-07T09:07:29-07:00\" title=\"Tuesday, November 7, 2023 - 09:07\" class=\"datetime\">November 7, 2023</time>",
           "target": [
             "time"
           ]
@@ -10278,7 +10462,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Christy Olson</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10298,7 +10482,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Christy Olson</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10458,7 +10642,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/196/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/231/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Christy.jpeg?itok=9skTaYxd\" width=\"1019\" height=\"573\" alt=\"woman standing by a bookmobile.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -10478,7 +10662,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Christy.jpeg?itok=9skTaYxd\" width=\"1019\" height=\"573\" alt=\"woman standing by a bookmobile.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -10538,7 +10722,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Hometown:</strong> Dallas, Texas.</p>",
+          "html": "<p><strong>Hometown:</strong> &nbsp;Wellington, CO.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10578,7 +10762,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Interests:</strong> Skiing, camping, cooking, visiting local restaurants and breweries and, this may be surprising but I am a lover of books and movies.&nbsp;</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10618,27 +10802,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
-          "target": [
-            "font"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -10658,7 +10822,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Book: </strong>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
             "p:nth-child(4) > strong"
           ]
@@ -10678,9 +10842,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=4&amp;cn=14017\"><em>Outlander</em></a>",
           "target": [
-            "p:nth-child(4) > a"
+            "p:nth-child(4) > a:nth-child(2)"
           ]
         },
         {
@@ -10698,9 +10862,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>All I Really Need to Know I Learned in Kindergarten</em>",
+          "html": "<em>Outlander</em>",
           "target": [
-            "a > em"
+            "a:nth-child(2) > em"
           ]
         },
         {
@@ -10718,9 +10882,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>The Girl From the Sea of Cortez</em>",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=4&amp;cn=59083\"><em>The Southern Book Club's Guide To Slaying Vampires</em></a>",
           "target": [
-            "p:nth-child(4) > em"
+            "p:nth-child(4) > a:nth-child(3)"
           ]
         },
         {
@@ -10738,7 +10902,67 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Preferred Superpower:</strong> Being able to communicate in any language.</p>",
+          "html": "<em>The Southern Book Club's Guide To Slaying Vampires</em>",
+          "target": [
+            "a:nth-child(3) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=8&amp;cn=1832\"><em>The Hiding Place</em></a>",
+          "target": [
+            "p:nth-child(4) > a:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The Hiding Place</em>",
+          "target": [
+            "a:nth-child(4) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Preferred Superpower:</strong> I would like to be an Elf from Middle Earth. They are immortal, have superior hearing and vision, strong, fast, have magical powers and just all around super cool!</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -10778,7 +11002,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Author:</strong> I absolutely can't pick just one. Robert Fulghum. Kristin Hannah. Anna Quindlen.</p>",
+          "html": "<p><strong>Favorite Author:</strong> Diana Gabaldon, Jane Austen, Grady Hendrix, J.R.R Tolkien and Susanna Kearsley.</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -10818,7 +11042,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Vacation Spot: </strong>Northern California.</p>",
+          "html": "<p><strong>Favorite Vacation Spot:</strong> I have a dream of visiting Europe with my husband one day. Otherwise, a cabin in the mountains with snow all around and a fire in the hearth is my ideal.&nbsp;</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -10838,7 +11062,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Vacation Spot: </strong>",
+          "html": "<strong>Favorite Vacation Spot:</strong>",
           "target": [
             "p:nth-child(7) > strong"
           ]
@@ -10858,7 +11082,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Eleanor Roosevelt, Van Jones, Chris McCloskey (my late brother).</p>",
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> My Grandma Paula, Grandpa Bill and my Father who have left this earth.</p>",
           "target": [
             "p:nth-child(8)"
           ]
@@ -10898,7 +11122,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Quote:</strong> \"Live a balanced life - learn some and drink some and draw some and paint some and sing and dance and play and work everyday some.\" Robert Fulghum</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(9)"
           ]
@@ -10938,7 +11162,47 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist.</p>",
+          "html": "<em><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=6&amp;cn=25049\">The Library Book</a>.</em>",
+          "target": [
+            "p:nth-child(9) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=6&amp;cn=25049\">The Library Book</a>",
+          "target": [
+            "em > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> Mobile Services and Bookmobile Queen (a title I happily share with Katie N at the library).</p>",
           "target": [
             "p:nth-child(10)"
           ]
@@ -13123,5 +13387,5 @@
       ]
     }
   ],
-  "documentTitle": "Staff Spotlight: Cindy Mullanix | Clearview Library"
+  "documentTitle": "Staff Spotlight: Christy Olson | Clearview Library"
 }

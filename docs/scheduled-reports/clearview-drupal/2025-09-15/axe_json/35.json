@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:37:52.234Z",
-  "url": "https://clearviewlibrary.org/educator-card",
+  "timestamp": "2025-09-15T17:41:21.285Z",
+  "url": "https://clearviewlibrary.org/services/other/tax-help",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -448,18 +448,6 @@
       "nodes": []
     },
     {
-      "id": "landmark-complementary-is-top-level",
-      "impact": null,
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the complementary landmark or aside is at top level",
-      "help": "Aside should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
-      "nodes": []
-    },
-    {
       "id": "marquee",
       "impact": null,
       "tags": [
@@ -872,6 +860,58 @@
             }
           ],
           "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -1027,9 +1067,45 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<aside class=\"layout-sidebar-first\" role=\"complementary\">",
+          "target": [
+            "aside"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role is allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
           ]
         },
         {
@@ -1187,6 +1263,42 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -1329,9 +1441,45 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "deprecatedrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role is not deprecated"
+            }
+          ],
+          "impact": null,
+          "html": "<aside class=\"layout-sidebar-first\" role=\"complementary\">",
+          "target": [
+            "aside"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "deprecatedrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role is not deprecated"
+            }
+          ],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
           ]
         },
         {
@@ -1525,6 +1673,42 @@
             }
           ],
           "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -1667,9 +1851,45 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-required-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "All required ARIA attributes are present"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<aside class=\"layout-sidebar-first\" role=\"complementary\">",
+          "target": [
+            "aside"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-required-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "All required ARIA attributes are present"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
           ]
         },
         {
@@ -1915,9 +2135,73 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "invalidrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA role is valid"
+            },
+            {
+              "id": "abstractrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Abstract roles are not used"
+            },
+            {
+              "id": "unsupportedrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA role is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<aside class=\"layout-sidebar-first\" role=\"complementary\">",
+          "target": [
+            "aside"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "invalidrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA role is valid"
+            },
+            {
+              "id": "abstractrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Abstract roles are not used"
+            },
+            {
+              "id": "unsupportedrole",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA role is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
           ]
         },
         {
@@ -2187,6 +2471,70 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -2339,6 +2687,42 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-menu\" id=\"block-mainnavigation\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation"
@@ -2465,21 +2849,15 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Educator Card</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Tax Help</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h3>Features of Your Educator Card</h3>",
+                  "html": "<h2 id=\"block-mainnavigation-2-menu\">Services</h2>",
                   "target": [
-                    "h3:nth-child(3)"
-                  ]
-                },
-                {
-                  "html": "<h3>How to Get Your Educator Card</h3>",
-                  "target": [
-                    "h3:nth-child(5)"
+                    "#block-mainnavigation-2-menu"
                   ]
                 },
                 {
@@ -2503,7 +2881,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -2562,7 +2940,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -2587,7 +2965,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -2612,7 +2990,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -2637,7 +3015,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > li:nth-child(4) > a"
           ]
         },
         {
@@ -2662,7 +3040,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -2687,7 +3065,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(2) > a"
           ]
         },
         {
@@ -2712,7 +3090,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--active-trail.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -2737,7 +3115,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -2820,7 +3198,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Educator Card</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Tax Help</span>",
           "target": [
             ".field--name-title"
           ]
@@ -2845,7 +3223,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Educator Card supports the efforts of classroom teachers, homeschoolers, and professors as they inspire and educate lifelong learners. This specialized library card is enhanced with privileges tailored to meet unique classroom needs.</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -2858,31 +3236,6 @@
                 "fgColor": "#181818",
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Features of Your Educator Card</h3>",
-          "target": [
-            "h3:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
@@ -2895,234 +3248,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Expanded Checkout Limits:</strong> Borrow up to <strong>100 items</strong> at a time, ensuring educators have all the materials needed for lessons and projects.</li>",
+          "html": "<p>Appointments are available via registration only; this site does not take walk-ins. For appointment registration and additional information, please visit the NoCo VITA Tax website at <a href=\"https://makechangenoco.org\">https://makechangenoco.org</a>.</p>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Expanded Checkout Limits:</strong>",
-          "target": [
-            "li:nth-child(1) > strong:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>100 items</strong>",
-          "target": [
-            "li:nth-child(1) > strong:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Extended Loan Periods:</strong> Enjoy <strong>6-week checkout periods</strong> on all materials, providing ample time to integrate resources into a curriculum.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Extended Loan Periods:</strong>",
-          "target": [
-            "li:nth-child(2) > strong:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>6-week checkout periods</strong>",
-          "target": [
-            "li:nth-child(2) > strong:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>How to Get Your Educator Card</h3>",
-          "target": [
-            "h3:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Applying for an Educator Card is quick and easy.&nbsp;</p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSeiLbwOkZS819niBWcCz2G6dQkOnImyF3QtTR242oWWEM3NsA/viewform?usp=header\">Register for Your Educator Card</a>",
-          "target": [
-            ".button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Clearview Library District is excited to partner with all Educators in fostering a love of learning in our community. If you have any questions about the Educator Card, please don't hesitate to <a href=\"mailto:becca@clearviewlibrary.org\">contact us</a>!</p>",
-          "target": [
-            "p:nth-child(8)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -3145,9 +3273,484 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:becca@clearviewlibrary.org\">contact us</a>",
+          "html": "<a href=\"https://makechangenoco.org\">https://makechangenoco.org</a>",
           "target": [
-            "p:nth-child(8) > a"
+            "p:nth-child(3) > a[href$=\"makechangenoco.org\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Please note that registration for appointments will open on January 22, 2025, and must be made through the <a href=\"https://makechangenoco.org\">makechangenoco.org</a> website. Library staff will not be responsible for making, modifying, or canceling appointments.</strong>",
+          "target": [
+            "p:nth-child(4) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://makechangenoco.org\">makechangenoco.org</a>",
+          "target": [
+            "strong > a[href$=\"makechangenoco.org\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>On January 22, 2025, appointments can also be made by calling (970)599-1765 and leaving a message. This number is for a voicemail service only. Calls will be returned within 2 business days. Calls will not be returned prior to January 22, 2025, please do not call before this date.</strong>",
+          "target": [
+            "p:nth-child(5) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"block-mainnavigation-2-menu\">Services</h2>",
+          "target": [
+            "#block-mainnavigation-2-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology\" data-drupal-link-system-path=\"node/31\">Technology</a>",
+          "target": [
+            "#menu-item-a38c6c1a > a[href$=\"technology\"][data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology/3d-printing\" data-drupal-link-system-path=\"node/32\">3D Printing</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/32\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/text-notifications\" data-drupal-link-system-path=\"node/580\">Text Notifications</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/580\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology#copy-print-scan\" data-drupal-link-system-path=\"node/31\">Copying, Printing &amp; Scanning</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(3) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology#free-internet\" data-drupal-link-system-path=\"node/31\">Free Internet</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology#get-tech-help\" data-drupal-link-system-path=\"node/31\">Get Tech Help</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology#laptops-computer-stations\" data-drupal-link-system-path=\"node/31\">Laptops &amp; Computer Stations</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\">Other</a>",
+          "target": [
+            "#menu-item-94d5e068 > a[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(1) > a[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/lobby-stops\" data-drupal-link-system-path=\"node/115\">Lobby Stops</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[href$=\"lobby-stops\"][data-drupal-link-system-path=\"node/115\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > a[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/reserve-room\" data-drupal-link-system-path=\"node/41\">Reserve a Room</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[href$=\"reserve-room\"][data-drupal-link-system-path=\"node/41\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/educator-card\" data-drupal-link-system-path=\"node/720\">Educator Card</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(7) > a[href$=\"educator-card\"][data-drupal-link-system-path=\"node/720\"]"
           ]
         },
         {
@@ -3297,7 +3900,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -3322,7 +3925,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -3347,7 +3950,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -3372,7 +3975,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -3397,7 +4000,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -3422,7 +4025,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -3472,7 +4075,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -3497,7 +4100,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -3522,7 +4125,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -3572,7 +4175,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > li:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -3597,7 +4200,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -3622,7 +4225,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > li:nth-child(3) > a"
           ]
         },
         {
@@ -3647,7 +4250,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > li:nth-child(4) > a"
           ]
         },
         {
@@ -3854,6 +4457,24 @@
           "any": [
             {
               "id": "duplicate-id-aria",
+              "data": "block-mainnavigation-2-menu",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 id=\"block-mainnavigation-2-menu\">Services</h2>",
+          "target": [
+            "#block-mainnavigation-2-menu"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -3966,7 +4587,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Educator Card</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Tax Help</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -3984,27 +4605,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>Features of Your Educator Card</h3>",
+          "html": "<h2 id=\"block-mainnavigation-2-menu\">Services</h2>",
           "target": [
-            "h3:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>How to Get Your Educator Card</h3>",
-          "target": [
-            "h3:nth-child(5)"
+            "#block-mainnavigation-2-menu"
           ]
         },
         {
@@ -4115,7 +4718,7 @@
     },
     {
       "id": "heading-order",
-      "impact": "moderate",
+      "impact": null,
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -4150,15 +4753,9 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h3:nth-child(3)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
                     ],
-                    "level": 3
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div:nth-child(2) > div > div > div > div > h3:nth-child(5)"
-                    ],
-                    "level": 3
+                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -4218,7 +4815,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Educator Card</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Tax Help</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4236,9 +4833,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>How to Get Your Educator Card</h3>",
+          "html": "<h2 id=\"block-mainnavigation-2-menu\">Services</h2>",
           "target": [
-            "h3:nth-child(5)"
+            "#block-mainnavigation-2-menu"
           ]
         },
         {
@@ -4420,9 +5017,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"woman teaching class of children\" data-entity-type=\"file\" data-entity-uuid=\"0c7f2b85-856c-4a3d-9aed-b0f537772e53\" src=\"/sites/default/files/inline-images/Educator-Card-Hero.jpeg\" width=\"1920\" height=\"1080\" loading=\"lazy\">",
+          "html": "<img alt=\"Tax Form and Calculator\" data-entity-type=\"file\" data-entity-uuid=\"cbf707b1-6f28-4331-ae49-ef55de44cf95\" src=\"/sites/default/files/inline-images/Tax-Help.jpg\" width=\"1920\" height=\"900\" loading=\"lazy\">",
           "target": [
-            "img[data-entity-type=\"file\"]"
+            "img[alt=\"Tax Form and Calculator\"]"
           ]
         },
         {
@@ -4573,9 +5170,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"woman teaching class of children\" data-entity-type=\"file\" data-entity-uuid=\"0c7f2b85-856c-4a3d-9aed-b0f537772e53\" src=\"/sites/default/files/inline-images/Educator-Card-Hero.jpeg\" width=\"1920\" height=\"1080\" loading=\"lazy\">",
+          "html": "<img alt=\"Tax Form and Calculator\" data-entity-type=\"file\" data-entity-uuid=\"cbf707b1-6f28-4331-ae49-ef55de44cf95\" src=\"/sites/default/files/inline-images/Tax-Help.jpg\" width=\"1920\" height=\"900\" loading=\"lazy\">",
           "target": [
-            "img[data-entity-type=\"file\"]"
+            "img[alt=\"Tax Form and Calculator\"]"
           ]
         },
         {
@@ -4868,6 +5465,39 @@
       ]
     },
     {
+      "id": "landmark-complementary-is-top-level",
+      "impact": null,
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "landmark-is-top-level",
+              "data": {
+                "role": "complementary"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "The complementary landmark is at the top level."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<aside class=\"layout-sidebar-first\" role=\"complementary\">",
+          "target": [
+            "aside"
+          ]
+        }
+      ]
+    },
+    {
       "id": "landmark-contentinfo-is-top-level",
       "impact": null,
       "tags": [
@@ -4926,7 +5556,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5019,7 +5649,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5045,7 +5675,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5175,9 +5805,51 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "complementary",
+                "accessibleText": null
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<aside class=\"layout-sidebar-first\" role=\"complementary\">",
+          "target": [
+            "aside"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "navigation",
+                "accessibleText": "services"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
+          "target": [
+            "#block-mainnavigation-2"
           ]
         },
         {
@@ -5289,9 +5961,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>Clearview Library District is excited to partner with all Educators in fostering a love of learning in our community. If you have any questions about the Educator Card, please don't hesitate to <a href=\"mailto:becca@clearviewlibrary.org\">contact us</a>!</p>",
+                  "html": "<p>Appointments are available via registration only; this site does not take walk-ins. For appointment registration and additional information, please visit the NoCo VITA Tax website at <a href=\"https://makechangenoco.org\">https://makechangenoco.org</a>.</p>",
                   "target": [
-                    "p:nth-child(8)"
+                    "p:nth-child(3)"
                   ]
                 }
               ],
@@ -5303,9 +5975,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>Clearview Library District is excited to partner with all Educators in fostering a love of learning in our community. If you have any questions about the Educator Card, please don't hesitate to <a href=\"mailto:becca@clearviewlibrary.org\">contact us</a>!</p>",
+                  "html": "<p>Appointments are available via registration only; this site does not take walk-ins. For appointment registration and additional information, please visit the NoCo VITA Tax website at <a href=\"https://makechangenoco.org\">https://makechangenoco.org</a>.</p>",
                   "target": [
-                    "p:nth-child(8)"
+                    "p:nth-child(3)"
                   ]
                 }
               ],
@@ -5316,9 +5988,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:becca@clearviewlibrary.org\">contact us</a>",
+          "html": "<a href=\"https://makechangenoco.org\">https://makechangenoco.org</a>",
           "target": [
-            "p:nth-child(8) > a"
+            "p:nth-child(3) > a[href$=\"makechangenoco.org\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p><strong>Please note that registration for appointments will open on January 22, 2025, and must be made through the <a href=\"https://makechangenoco.org\">makechangenoco.org</a> website. Library staff will not be responsible for making, modifying, or canceling appointments.</strong></p>",
+                  "target": [
+                    "p:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://makechangenoco.org\">makechangenoco.org</a>",
+          "target": [
+            "strong > a[href$=\"makechangenoco.org\"]"
           ]
         }
       ]
@@ -5393,7 +6090,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -5419,7 +6116,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -5445,7 +6142,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -5471,7 +6168,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > li:nth-child(4) > a"
           ]
         },
         {
@@ -5523,7 +6220,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -5549,7 +6246,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(2) > a"
           ]
         },
         {
@@ -5575,7 +6272,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--active-trail.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -5601,7 +6298,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -5627,7 +6324,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > ul > li:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -5729,9 +6426,9 @@
             }
           ],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSeiLbwOkZS819niBWcCz2G6dQkOnImyF3QtTR242oWWEM3NsA/viewform?usp=header\">Register for Your Educator Card</a>",
+          "html": "<a href=\"https://makechangenoco.org\">https://makechangenoco.org</a>",
           "target": [
-            ".button"
+            "p:nth-child(3) > a[href$=\"makechangenoco.org\"]"
           ]
         },
         {
@@ -5755,9 +6452,399 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"mailto:becca@clearviewlibrary.org\">contact us</a>",
+          "html": "<a href=\"https://makechangenoco.org\">makechangenoco.org</a>",
           "target": [
-            "p:nth-child(8) > a"
+            "strong > a[href$=\"makechangenoco.org\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/technology\" data-drupal-link-system-path=\"node/31\">Technology</a>",
+          "target": [
+            "#menu-item-a38c6c1a > a[href$=\"technology\"][data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/technology/3d-printing\" data-drupal-link-system-path=\"node/32\">3D Printing</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/32\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/text-notifications\" data-drupal-link-system-path=\"node/580\">Text Notifications</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/580\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/technology#copy-print-scan\" data-drupal-link-system-path=\"node/31\">Copying, Printing &amp; Scanning</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(3) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/technology#free-internet\" data-drupal-link-system-path=\"node/31\">Free Internet</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/technology#get-tech-help\" data-drupal-link-system-path=\"node/31\">Get Tech Help</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/technology#laptops-computer-stations\" data-drupal-link-system-path=\"node/31\">Laptops &amp; Computer Stations</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\">Other</a>",
+          "target": [
+            "#menu-item-94d5e068 > a[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(1) > a[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other/lobby-stops\" data-drupal-link-system-path=\"node/115\">Lobby Stops</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[href$=\"lobby-stops\"][data-drupal-link-system-path=\"node/115\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > a[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other/reserve-room\" data-drupal-link-system-path=\"node/41\">Reserve a Room</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[href$=\"reserve-room\"][data-drupal-link-system-path=\"node/41\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/educator-card\" data-drupal-link-system-path=\"node/720\">Educator Card</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(7) > a[href$=\"educator-card\"][data-drupal-link-system-path=\"node/720\"]"
           ]
         },
         {
@@ -5861,7 +6948,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -5887,7 +6974,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -5913,7 +7000,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -5939,7 +7026,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -5965,7 +7052,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -5991,7 +7078,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -6043,7 +7130,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -6069,7 +7156,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -6095,7 +7182,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -6147,7 +7234,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > li:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -6173,7 +7260,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -6199,7 +7286,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > li:nth-child(3) > a"
           ]
         },
         {
@@ -6225,7 +7312,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > li:nth-child(4) > a"
           ]
         },
         {
@@ -6329,7 +7416,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6355,7 +7442,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -6381,7 +7468,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -6407,7 +7494,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(4) > a"
           ]
         },
         {
@@ -6433,7 +7520,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -6459,7 +7546,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(2) > a"
           ]
         },
         {
@@ -6485,7 +7572,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--active-trail.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -6511,7 +7598,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         }
       ]
@@ -6545,7 +7632,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > .menu"
+            "#block-utilitiesmenu > ul"
           ]
         },
         {
@@ -6563,25 +7650,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > .menu"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "div[property=\"schema:text\"] > ul"
+            "#block-clearview-main-menu > ul"
           ]
         },
         {
@@ -6599,7 +7668,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > .menu"
+            "#block-mainnavigation-2 > ul"
           ]
         },
         {
@@ -6617,7 +7686,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > .menu"
+            "#menu-item-a38c6c1a > ul"
           ]
         },
         {
@@ -6635,7 +7704,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > .menu"
+            "#menu-item-94d5e068 > ul"
           ]
         },
         {
@@ -6653,7 +7722,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > .menu"
+            "#block-mainnavigation > ul"
           ]
         },
         {
@@ -6671,7 +7740,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > .menu"
+            "#menu-item-c92f701b > ul"
           ]
         },
         {
@@ -6689,7 +7758,61 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation-6 > .menu"
+            "#menu-item-cb25c7c1 > ul"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul class=\"menu\">",
+          "target": [
+            "#menu-item-0267a4c3 > ul"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul class=\"menu\">",
+          "target": [
+            "#block-utilitiesmenu-2 > ul"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul class=\"menu\">",
+          "target": [
+            "#block-mainnavigation-6 > ul"
           ]
         }
       ]
@@ -6723,7 +7846,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > ul > li:nth-child(1)"
           ]
         },
         {
@@ -6741,7 +7864,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > ul > li:nth-child(2)"
           ]
         },
         {
@@ -6759,7 +7882,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > ul > li:nth-child(3)"
           ]
         },
         {
@@ -6777,7 +7900,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > ul > li:nth-child(4)"
           ]
         },
         {
@@ -6795,7 +7918,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(1)"
           ]
         },
         {
@@ -6813,7 +7936,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(2)"
           ]
         },
         {
@@ -6831,7 +7954,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded menu-item--active-trail\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--active-trail.menu-item--expanded.menu-item"
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded"
           ]
         },
         {
@@ -6849,7 +7972,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(4)"
           ]
         },
         {
@@ -6867,7 +7990,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > ul > li:nth-child(5)"
           ]
         },
         {
@@ -6883,9 +8006,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Expanded Checkout Limits:</strong> Borrow up to <strong>100 items</strong> at a time, ensuring educators have all the materials needed for lessons and projects.</li>",
+          "html": "<li id=\"menu-item-a38c6c1a\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+            "#menu-item-a38c6c1a"
           ]
         },
         {
@@ -6901,9 +8024,243 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Extended Loan Periods:</strong> Enjoy <strong>6-week checkout periods</strong> on all materials, providing ample time to integrate resources into a curriculum.</li>",
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology/3d-printing\" data-drupal-link-system-path=\"node/32\">3D Printing</a>\n              </li>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+            "#menu-item-a38c6c1a > ul > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news/text-notifications\" data-drupal-link-system-path=\"node/580\">Text Notifications</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology#copy-print-scan\" data-drupal-link-system-path=\"node/31\">Copying, Printing &amp; Scanning</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology#free-internet\" data-drupal-link-system-path=\"node/31\">Free Internet</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology#get-tech-help\" data-drupal-link-system-path=\"node/31\">Get Tech Help</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology#laptops-computer-stations\" data-drupal-link-system-path=\"node/31\">Laptops &amp; Computer Stations</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li id=\"menu-item-94d5e068\" class=\"menu-item menu-item--expanded menu-item--active-trail\">",
+          "target": [
+            "#menu-item-94d5e068"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other/lobby-stops\" data-drupal-link-system-path=\"node/115\">Lobby Stops</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other/reserve-room\" data-drupal-link-system-path=\"node/41\">Reserve a Room</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item menu-item--active-trail\">\n        <a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/educator-card\" data-drupal-link-system-path=\"node/720\">Educator Card</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(7)"
           ]
         },
         {
@@ -6939,7 +8296,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > ul > li:nth-child(1)"
           ]
         },
         {
@@ -6957,7 +8314,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > ul > li:nth-child(2)"
           ]
         },
         {
@@ -6975,7 +8332,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > ul > li:nth-child(3)"
           ]
         },
         {
@@ -6993,7 +8350,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > ul > li:nth-child(4)"
           ]
         },
         {
@@ -7011,7 +8368,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > ul > li:nth-child(5)"
           ]
         },
         {
@@ -7029,7 +8386,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > ul > li:nth-child(6)"
           ]
         },
         {
@@ -7065,7 +8422,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(1)"
           ]
         },
         {
@@ -7083,7 +8440,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(2)"
           ]
         },
         {
@@ -7101,7 +8458,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(3)"
           ]
         },
         {
@@ -7137,7 +8494,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > ul > li:nth-child(1)"
           ]
         },
         {
@@ -7155,7 +8512,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > ul > li:nth-child(2)"
           ]
         },
         {
@@ -7173,7 +8530,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > ul > li:nth-child(3)"
           ]
         },
         {
@@ -7191,7 +8548,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > ul > li:nth-child(4)"
           ]
         },
         {
@@ -7209,7 +8566,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(1)"
           ]
         },
         {
@@ -7227,7 +8584,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(2)"
           ]
         },
         {
@@ -7245,7 +8602,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(3)"
           ]
         },
         {
@@ -7263,7 +8620,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(4)"
           ]
         },
         {
@@ -7281,7 +8638,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(1)"
           ]
         },
         {
@@ -7299,7 +8656,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(2)"
           ]
         },
         {
@@ -7317,7 +8674,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded menu-item--active-trail\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--active-trail.menu-item--expanded.menu-item"
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded"
           ]
         },
         {
@@ -7335,7 +8692,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(4)"
           ]
         }
       ]
@@ -7471,9 +8828,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"woman teaching class of children\" data-entity-type=\"file\" data-entity-uuid=\"0c7f2b85-856c-4a3d-9aed-b0f537772e53\" src=\"/sites/default/files/inline-images/Educator-Card-Hero.jpeg\" width=\"1920\" height=\"1080\" loading=\"lazy\">",
+          "html": "<img alt=\"Tax Form and Calculator\" data-entity-type=\"file\" data-entity-uuid=\"cbf707b1-6f28-4331-ae49-ef55de44cf95\" src=\"/sites/default/files/inline-images/Tax-Help.jpg\" width=\"1920\" height=\"900\" loading=\"lazy\">",
           "target": [
-            "img[data-entity-type=\"file\"]"
+            "img[alt=\"Tax Form and Calculator\"]"
           ]
         },
         {
@@ -7587,7 +8944,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Educator Card</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Tax Help</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -7794,7 +9151,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > .menu"
+            "#block-utilitiesmenu > ul"
           ]
         },
         {
@@ -7814,7 +9171,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > ul > li:nth-child(1)"
           ]
         },
         {
@@ -7834,7 +9191,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7854,7 +9211,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > ul > li:nth-child(2)"
           ]
         },
         {
@@ -7874,7 +9231,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -7894,7 +9251,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > ul > li:nth-child(3)"
           ]
         },
         {
@@ -7914,7 +9271,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > li:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -7934,7 +9291,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > ul > li:nth-child(4)"
           ]
         },
         {
@@ -7954,7 +9311,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > li:nth-child(4) > a"
           ]
         },
         {
@@ -8114,7 +9471,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > .menu"
+            "#block-clearview-main-menu > ul"
           ]
         },
         {
@@ -8134,7 +9491,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(1)"
           ]
         },
         {
@@ -8154,7 +9511,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -8174,7 +9531,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(2)"
           ]
         },
         {
@@ -8194,7 +9551,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(2) > a"
           ]
         },
         {
@@ -8214,7 +9571,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded menu-item--active-trail\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--active-trail.menu-item--expanded.menu-item"
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded"
           ]
         },
         {
@@ -8234,7 +9591,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--active-trail.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -8254,7 +9611,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(4)"
           ]
         },
         {
@@ -8274,7 +9631,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -8294,7 +9651,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > ul > li:nth-child(5)"
           ]
         },
         {
@@ -8314,7 +9671,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > ul > li:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -8792,7 +10149,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Educator Card</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Tax Help</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -8812,7 +10169,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Educator Card</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Tax Help</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -8832,7 +10189,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Educator Card</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Tax Help</span>",
           "target": [
             ".field--name-title"
           ]
@@ -8852,9 +10209,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<div class=\"main-wrapper  has-sidebar\">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -8892,9 +10249,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -8952,9 +10309,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"720\" about=\"/educator-card\" typeof=\"schema:WebPage\" id=\"node-720\" class=\"node node--type-page node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"43\" about=\"/services/other/tax-help\" typeof=\"schema:WebPage\" id=\"node-43\" class=\"node node--type-page node--view-mode-full\">",
           "target": [
-            "#node-720"
+            "#node-43"
           ]
         },
         {
@@ -9072,7 +10429,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><img alt=\"woman teaching class of children\" data-entity-type=\"file\" data-entity-uuid=\"0c7f2b85-856c-4a3d-9aed-b0f537772e53\" src=\"/sites/default/files/inline-images/Educator-Card-Hero.jpeg\" width=\"1920\" height=\"1080\" loading=\"lazy\"></p>",
+          "html": "<p><img alt=\"Tax Form and Calculator\" data-entity-type=\"file\" data-entity-uuid=\"cbf707b1-6f28-4331-ae49-ef55de44cf95\" src=\"/sites/default/files/inline-images/Tax-Help.jpg\" width=\"1920\" height=\"900\" loading=\"lazy\"></p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -9092,9 +10449,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"woman teaching class of children\" data-entity-type=\"file\" data-entity-uuid=\"0c7f2b85-856c-4a3d-9aed-b0f537772e53\" src=\"/sites/default/files/inline-images/Educator-Card-Hero.jpeg\" width=\"1920\" height=\"1080\" loading=\"lazy\">",
+          "html": "<img alt=\"Tax Form and Calculator\" data-entity-type=\"file\" data-entity-uuid=\"cbf707b1-6f28-4331-ae49-ef55de44cf95\" src=\"/sites/default/files/inline-images/Tax-Help.jpg\" width=\"1920\" height=\"900\" loading=\"lazy\">",
           "target": [
-            "img[data-entity-type=\"file\"]"
+            "img[alt=\"Tax Form and Calculator\"]"
           ]
         },
         {
@@ -9112,7 +10469,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Educator Card supports the efforts of classroom teachers, homeschoolers, and professors as they inspire and educate lifelong learners. This specialized library card is enhanced with privileges tailored to meet unique classroom needs.</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -9132,9 +10489,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>Features of Your Educator Card</h3>",
+          "html": "<p>Appointments are available via registration only; this site does not take walk-ins. For appointment registration and additional information, please visit the NoCo VITA Tax website at <a href=\"https://makechangenoco.org\">https://makechangenoco.org</a>.</p>",
           "target": [
-            "h3:nth-child(3)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -9152,9 +10509,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>",
+          "html": "<a href=\"https://makechangenoco.org\">https://makechangenoco.org</a>",
           "target": [
-            "div[property=\"schema:text\"] > ul"
+            "p:nth-child(3) > a[href$=\"makechangenoco.org\"]"
           ]
         },
         {
@@ -9172,9 +10529,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Expanded Checkout Limits:</strong> Borrow up to <strong>100 items</strong> at a time, ensuring educators have all the materials needed for lessons and projects.</li>",
+          "html": "<p><strong>Please note that registration for appointments will open on January 22, 2025, and must be made through the <a href=\"https://makechangenoco.org\">makechangenoco.org</a> website. Library staff will not be responsible for making, modifying, or canceling appointments.</strong></p>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -9192,9 +10549,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Expanded Checkout Limits:</strong>",
+          "html": "<strong>Please note that registration for appointments will open on January 22, 2025, and must be made through the <a href=\"https://makechangenoco.org\">makechangenoco.org</a> website. Library staff will not be responsible for making, modifying, or canceling appointments.</strong>",
           "target": [
-            "li:nth-child(1) > strong:nth-child(1)"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -9212,9 +10569,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>100 items</strong>",
+          "html": "<a href=\"https://makechangenoco.org\">makechangenoco.org</a>",
           "target": [
-            "li:nth-child(1) > strong:nth-child(2)"
+            "strong > a[href$=\"makechangenoco.org\"]"
           ]
         },
         {
@@ -9232,9 +10589,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Extended Loan Periods:</strong> Enjoy <strong>6-week checkout periods</strong> on all materials, providing ample time to integrate resources into a curriculum.</li>",
+          "html": "<p>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+            "p:nth-child(5)"
           ]
         },
         {
@@ -9252,9 +10609,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Extended Loan Periods:</strong>",
+          "html": "<strong>On January 22, 2025, appointments can also be made by calling (970)599-1765 and leaving a message. This number is for a voicemail service only. Calls will be returned within 2 business days. Calls will not be returned prior to January 22, 2025, please do not call before this date.</strong>",
           "target": [
-            "li:nth-child(2) > strong:nth-child(1)"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -9272,9 +10629,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>6-week checkout periods</strong>",
+          "html": "<aside class=\"layout-sidebar-first\" role=\"complementary\">",
           "target": [
-            "li:nth-child(2) > strong:nth-child(2)"
+            "aside"
           ]
         },
         {
@@ -9292,9 +10649,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>How to Get Your Educator Card</h3>",
+          "html": "<div class=\"region region-sidebar\" id=\"region-sidebar\">",
           "target": [
-            "h3:nth-child(5)"
+            "#region-sidebar"
           ]
         },
         {
@@ -9312,9 +10669,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Applying for an Educator Card is quick and easy.&nbsp;</p>",
+          "html": "<div class=\"region-inner\">",
           "target": [
-            "p:nth-child(6)"
+            "#region-sidebar > .region-inner"
           ]
         },
         {
@@ -9332,9 +10689,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><a class=\"button text-center\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSeiLbwOkZS819niBWcCz2G6dQkOnImyF3QtTR242oWWEM3NsA/viewform?usp=header\">Register for Your Educator Card</a></p>",
+          "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-2-menu\" id=\"block-mainnavigation-2\" class=\"block block-menu navigation menu--main\">",
           "target": [
-            "p:nth-child(7)"
+            "#block-mainnavigation-2"
           ]
         },
         {
@@ -9352,9 +10709,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSeiLbwOkZS819niBWcCz2G6dQkOnImyF3QtTR242oWWEM3NsA/viewform?usp=header\">Register for Your Educator Card</a>",
+          "html": "<h2 id=\"block-mainnavigation-2-menu\">Services</h2>",
           "target": [
-            ".button"
+            "#block-mainnavigation-2-menu"
           ]
         },
         {
@@ -9372,9 +10729,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Clearview Library District is excited to partner with all Educators in fostering a love of learning in our community. If you have any questions about the Educator Card, please don't hesitate to <a href=\"mailto:becca@clearviewlibrary.org\">contact us</a>!</p>",
+          "html": "<ul class=\"menu\">",
           "target": [
-            "p:nth-child(8)"
+            "#block-mainnavigation-2 > ul"
           ]
         },
         {
@@ -9392,9 +10749,629 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:becca@clearviewlibrary.org\">contact us</a>",
+          "html": "<li id=\"menu-item-a38c6c1a\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "p:nth-child(8) > a"
+            "#menu-item-a38c6c1a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology\" data-drupal-link-system-path=\"node/31\">Technology</a>",
+          "target": [
+            "#menu-item-a38c6c1a > a[href$=\"technology\"][data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul class=\"menu\">",
+          "target": [
+            "#menu-item-a38c6c1a > ul"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology/3d-printing\" data-drupal-link-system-path=\"node/32\">3D Printing</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology/3d-printing\" data-drupal-link-system-path=\"node/32\">3D Printing</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/32\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news/text-notifications\" data-drupal-link-system-path=\"node/580\">Text Notifications</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/text-notifications\" data-drupal-link-system-path=\"node/580\">Text Notifications</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/580\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology#copy-print-scan\" data-drupal-link-system-path=\"node/31\">Copying, Printing &amp; Scanning</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology#copy-print-scan\" data-drupal-link-system-path=\"node/31\">Copying, Printing &amp; Scanning</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(3) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology#free-internet\" data-drupal-link-system-path=\"node/31\">Free Internet</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology#free-internet\" data-drupal-link-system-path=\"node/31\">Free Internet</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology#get-tech-help\" data-drupal-link-system-path=\"node/31\">Get Tech Help</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology#get-tech-help\" data-drupal-link-system-path=\"node/31\">Get Tech Help</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/technology#laptops-computer-stations\" data-drupal-link-system-path=\"node/31\">Laptops &amp; Computer Stations</a>\n              </li>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/technology#laptops-computer-stations\" data-drupal-link-system-path=\"node/31\">Laptops &amp; Computer Stations</a>",
+          "target": [
+            "#menu-item-a38c6c1a > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/31\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li id=\"menu-item-94d5e068\" class=\"menu-item menu-item--expanded menu-item--active-trail\">",
+          "target": [
+            "#menu-item-94d5e068"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other\" data-drupal-link-system-path=\"node/38\">Other</a>",
+          "target": [
+            "#menu-item-94d5e068 > a[href$=\"other\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul class=\"menu\">",
+          "target": [
+            "#menu-item-94d5e068 > ul"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/bookmobile\" data-drupal-link-system-path=\"node/39\">Bookmobile</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(1) > a[href$=\"bookmobile\"][data-drupal-link-system-path=\"node/39\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other/lobby-stops\" data-drupal-link-system-path=\"node/115\">Lobby Stops</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/lobby-stops\" data-drupal-link-system-path=\"node/115\">Lobby Stops</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(2) > a[href$=\"lobby-stops\"][data-drupal-link-system-path=\"node/115\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#notary\" data-drupal-link-system-path=\"node/38\">Notary</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(3) > a[href$=\"other#notary\"][data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other/reserve-room\" data-drupal-link-system-path=\"node/41\">Reserve a Room</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/reserve-room\" data-drupal-link-system-path=\"node/41\">Reserve a Room</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(4) > a[href$=\"reserve-room\"][data-drupal-link-system-path=\"node/41\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item menu-item--active-trail\">\n        <a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/tax-help\" data-drupal-link-system-path=\"node/43\" class=\"is-active\" aria-current=\"page\">Tax Help</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > .menu-item--active-trail > .is-active[href$=\"tax-help\"][data-drupal-link-system-path=\"node/43\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other#test-proctoring\" data-drupal-link-system-path=\"node/38\">Test Proctoring</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/38\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li class=\"menu-item\">\n        <a href=\"/educator-card\" data-drupal-link-system-path=\"node/720\">Educator Card</a>\n              </li>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/educator-card\" data-drupal-link-system-path=\"node/720\">Educator Card</a>",
+          "target": [
+            "#menu-item-94d5e068 > ul > li:nth-child(7) > a[href$=\"educator-card\"][data-drupal-link-system-path=\"node/720\"]"
           ]
         },
         {
@@ -9834,7 +11811,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > .menu"
+            "#block-mainnavigation > ul"
           ]
         },
         {
@@ -9894,7 +11871,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > .menu"
+            "#menu-item-c92f701b > ul"
           ]
         },
         {
@@ -9914,7 +11891,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > ul > li:nth-child(1)"
           ]
         },
         {
@@ -9934,7 +11911,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -9954,7 +11931,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > ul > li:nth-child(2)"
           ]
         },
         {
@@ -9974,7 +11951,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -9994,7 +11971,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > ul > li:nth-child(3)"
           ]
         },
         {
@@ -10014,7 +11991,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -10034,7 +12011,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > ul > li:nth-child(4)"
           ]
         },
         {
@@ -10054,7 +12031,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -10074,7 +12051,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > ul > li:nth-child(5)"
           ]
         },
         {
@@ -10094,7 +12071,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -10114,7 +12091,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > ul > li:nth-child(6)"
           ]
         },
         {
@@ -10134,7 +12111,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > li:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -10194,7 +12171,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > .menu"
+            "#menu-item-cb25c7c1 > ul"
           ]
         },
         {
@@ -10214,7 +12191,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(1)"
           ]
         },
         {
@@ -10234,7 +12211,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -10254,7 +12231,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(2)"
           ]
         },
         {
@@ -10274,7 +12251,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -10294,7 +12271,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(3)"
           ]
         },
         {
@@ -10314,7 +12291,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > li:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -10374,7 +12351,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > .menu"
+            "#menu-item-0267a4c3 > ul"
           ]
         },
         {
@@ -10394,7 +12371,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > ul > li:nth-child(1)"
           ]
         },
         {
@@ -10414,7 +12391,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > li:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -10434,7 +12411,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > ul > li:nth-child(2)"
           ]
         },
         {
@@ -10454,7 +12431,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -10474,7 +12451,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > ul > li:nth-child(3)"
           ]
         },
         {
@@ -10494,7 +12471,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > li:nth-child(3) > a"
           ]
         },
         {
@@ -10514,7 +12491,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > ul > li:nth-child(4)"
           ]
         },
         {
@@ -10534,7 +12511,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > li:nth-child(4) > a"
           ]
         },
         {
@@ -10974,7 +12951,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > .menu"
+            "#block-utilitiesmenu-2 > ul"
           ]
         },
         {
@@ -10994,7 +12971,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(1)"
           ]
         },
         {
@@ -11014,7 +12991,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -11034,7 +13011,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(2)"
           ]
         },
         {
@@ -11054,7 +13031,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -11074,7 +13051,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(3)"
           ]
         },
         {
@@ -11094,7 +13071,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -11114,7 +13091,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(4)"
           ]
         },
         {
@@ -11134,7 +13111,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > ul > li:nth-child(4) > a"
           ]
         },
         {
@@ -11174,7 +13151,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation-6 > .menu"
+            "#block-mainnavigation-6 > ul"
           ]
         },
         {
@@ -11194,7 +13171,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(1)"
           ]
         },
         {
@@ -11214,7 +13191,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -11234,7 +13211,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(2)"
           ]
         },
         {
@@ -11254,7 +13231,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(2) > a"
           ]
         },
         {
@@ -11274,7 +13251,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded menu-item--active-trail\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--active-trail.menu-item--expanded.menu-item"
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded"
           ]
         },
         {
@@ -11294,7 +13271,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--active-trail.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -11314,7 +13291,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(4)"
           ]
         },
         {
@@ -11334,7 +13311,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         }
       ]
@@ -11421,39 +13398,6 @@
     }
   ],
   "incomplete": [],
-  "violations": [
-    {
-      "id": "heading-order",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the order of headings is semantically correct",
-      "help": "Heading levels should only increase by one",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order invalid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<h3>Features of Your Educator Card</h3>",
-          "target": [
-            "h3:nth-child(3)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Heading order invalid"
-        }
-      ]
-    }
-  ],
-  "documentTitle": "Educator Card | Clearview Library"
+  "violations": [],
+  "documentTitle": "Tax Help | Clearview Library"
 }

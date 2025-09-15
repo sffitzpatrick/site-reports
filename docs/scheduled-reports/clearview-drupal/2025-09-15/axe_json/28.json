@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:37:37.782Z",
-  "url": "https://clearviewlibrary.org/services/technology",
+  "timestamp": "2025-09-15T17:41:08.322Z",
+  "url": "https://clearviewlibrary.org/services",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -444,6 +444,23 @@
       "nodes": []
     },
     {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": []
+    },
+    {
       "id": "marquee",
       "impact": null,
       "tags": [
@@ -830,6 +847,32 @@
             }
           ],
           "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
           "html": "<div role=\"region\" aria-label=\"page top content\">",
           "target": [
             "div[role=\"region\"]"
@@ -911,6 +954,32 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         }
       ]
@@ -1011,7 +1080,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1153,6 +1222,24 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<div role=\"region\" aria-label=\"page top content\">",
           "target": [
             "div[role=\"region\"]"
@@ -1210,6 +1297,24 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         }
       ]
@@ -1313,7 +1418,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1421,7 +1526,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node page-node-type-page\">",
+          "html": "<body class=\"_0829669 path-node page-node-type-landing-page\">",
           "target": [
             "body"
           ]
@@ -1476,6 +1581,24 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-clearview-main-menu-menu\" id=\"block-clearview-main-menu\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-clearview-main-menu"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -1548,6 +1671,24 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         }
       ]
@@ -1651,7 +1792,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1899,7 +2040,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2139,6 +2280,38 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<div role=\"region\" aria-label=\"page top content\">",
           "target": [
             "div[role=\"region\"]"
@@ -2238,6 +2411,38 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         }
       ]
@@ -2305,6 +2510,24 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<div role=\"region\" aria-label=\"page top content\">",
           "target": [
             "div[role=\"region\"]"
@@ -2363,6 +2586,24 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
+          "target": [
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+          ]
         }
       ]
     },
@@ -2408,9 +2649,9 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div class=\"grid-item grid-item--5 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-102\" style=\"background-image: url(/sites/default/files/card-images/2023-02/Tech-Help-Square.jpeg);\">",
+          "html": "<section class=\"node-header\" style=\"background-image: url(/sites/default/files/landing-page-backgrounds/ClearviewPatrons-2%20%281%29_0.jpg);\">",
           "target": [
-            "#block-inline-blockcontent-card-102"
+            "section"
           ]
         },
         {
@@ -2440,9 +2681,9 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div class=\"grid-item grid-item--12 block-content-card--full-width-bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-104\" style=\"background-image: url(/sites/default/files/card-images/2023-02/3d-Printing-Hero.jpeg);\">",
+          "html": "<div class=\"grid-item grid-item--12 block-content-card--full-width-bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-25\" style=\"background-image: url(/sites/default/files/card-images/2021-09/tech-bg.jpg);\">",
           "target": [
-            "#block-inline-blockcontent-card-104"
+            "#block-inline-blockcontent-card-25"
           ]
         },
         {
@@ -2472,9 +2713,41 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div class=\"grid-item grid-item--6 block-content-card--full-width-bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-105\" style=\"background-image: url(/sites/default/files/card-images/2024-06/Internet-Hero.jpeg);\">",
+          "html": "<div class=\"grid-item grid-item--5 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-26\" style=\"background-image: url(/sites/default/files/card-images/2021-09/room-res-bg.png);\">",
           "target": [
-            "#block-inline-blockcontent-card-105"
+            "#block-inline-blockcontent-card-26"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"grid-item grid-item--7 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-27\" style=\"background-image: url(/sites/default/files/card-images/2021-09/bookmobile-bg.jpg);\">",
+          "target": [
+            "#block-inline-blockcontent-card-27"
           ]
         }
       ]
@@ -2562,7 +2835,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Technology Services</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\">More Than Just Books</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2588,7 +2861,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -2795,9 +3068,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -2890,331 +3163,6 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "29.9pt (39.8131px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Technology Services</span>",
-          "target": [
-            ".field--name-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#f8f8f8",
-                "contrastRatio": 16.71,
-                "fontSize": "10.0pt (13.3333px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 16.71"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Copy, Printing &amp; Scanning</div>",
-          "target": [
-            "#block-inline-blockcontent-card-103 > .content > .field--name-field-lead-in.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#f8f8f8",
-                "contrastRatio": 4.78,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 4.78"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Mobile Printing</div>",
-          "target": [
-            "#block-inline-blockcontent-card-103 > .content > .field--name-field-card-title.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#f8f8f8",
-                "contrastRatio": 16.71,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 16.71"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"mobile-printing\">",
-          "target": [
-            "#mobile-printing"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#f8f8f8",
-                "contrastRatio": 4.78,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 4.78"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/faqs#printing\">FAQ page</a>",
-          "target": [
-            "#mobile-printing > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#b23c00",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.93,
-                "fontSize": "10.0pt (13.3333px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.93"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://print.princh.com?pid=108440\">Mobile Printing - Windsor</a>",
-          "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#b23c00",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.93,
-                "fontSize": "10.0pt (13.3333px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.93"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://print.princh.com?pid=109069\">Mobile Printing - Severance</a>",
-          "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#b23c00",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.93,
-                "fontSize": "10.0pt (13.3333px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.93"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/services/technology/ask-a-tech\">Ask a Tech</a>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#b23c00",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.93,
-                "fontSize": "10.0pt (13.3333px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.93"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/borrow-research/research/technology\">Tech Resources</a>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#fffffe",
-                "contrastRatio": 17.74,
-                "fontSize": "10.0pt (13.3333px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.74"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Explore</div>",
-          "target": [
-            "#block-inline-blockcontent-card-104 > .block-content > .field--name-field-lead-in.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#fffffe",
-                "contrastRatio": 5.07,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.07"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">3D Printing</div>",
-          "target": [
-            "#block-inline-blockcontent-card-104 > .block-content > .field--name-field-card-title.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#fffffe",
-                "contrastRatio": 17.74,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.74"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"print-3d\">Guitar picks to toys, phone cases to coasters, your imagination is the limit.</p>",
-          "target": [
-            "#print-3d"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#b23c00",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.93,
-                "fontSize": "10.0pt (13.3333px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.93"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/services/technology/3d-printing\">Learn More</a>",
-          "target": [
-            ".block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
                 "fgColor": "#181818",
                 "bgColor": "#fffffe",
                 "contrastRatio": 17.74,
@@ -3232,7 +3180,7 @@
           "impact": null,
           "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Technology Services</div>",
           "target": [
-            "#block-inline-blockcontent-card-105 > .block-content > .field--name-field-lead-in.field--type-string.field"
+            "#block-inline-blockcontent-card-25 > .block-content > .field--name-field-lead-in.field--type-string.field"
           ]
         },
         {
@@ -3255,9 +3203,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Free Internet</div>",
+          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Helping you get and stay connected</div>",
           "target": [
-            "#block-inline-blockcontent-card-105 > .block-content > .field--name-field-card-title.field--type-string.field"
+            "#block-inline-blockcontent-card-25 > .block-content > .field--name-field-card-title.field--type-string.field"
           ]
         },
         {
@@ -3265,24 +3213,99 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
-                "bgColor": "#fffffe",
-                "contrastRatio": 17.74,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fgColor": "#b23c00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.93,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.74"
+              "message": "Element has sufficient color contrast of 5.93"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p id=\"free-internet\">We offer fast and secure internet connection at both of our branches. Access it through our computer terminals or hop on our WiFi, which extends to our parking lot.</p>",
+          "html": "<a href=\"/services/technology\">Learn How We Do It</a>",
           "target": [
-            "#free-internet"
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"technology\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#b23c00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.93,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.93"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/reserve-room\">Book Now</a>",
+          "target": [
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"reserve-room\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#b23c00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.93,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.93"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://clearview.libnet.info/todays-room-schedule\">View today's schedule</a>",
+          "target": [
+            ".field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#b23c00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.93,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.93"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/bookmobile\">Learn More</a>",
+          "target": [
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"bookmobile\"]"
           ]
         },
         {
@@ -3291,23 +3314,23 @@
               "id": "color-contrast",
               "data": {
                 "fgColor": "#181818",
-                "bgColor": "#f8f8f8",
-                "contrastRatio": 16.71,
+                "bgColor": "#f3f9fd",
+                "contrastRatio": 16.72,
                 "fontSize": "10.0pt (13.3333px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 16.71"
+              "message": "Element has sufficient color contrast of 16.72"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Technology Resources</div>",
+          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">3D Printing</div>",
           "target": [
-            "#block-inline-blockcontent-card-106 > .content > .field--name-field-lead-in.field--type-string.field"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-lead-in.field--type-string.field"
           ]
         },
         {
@@ -3316,7 +3339,7 @@
               "id": "color-contrast",
               "data": {
                 "fgColor": "#0072bc",
-                "bgColor": "#f8f8f8",
+                "bgColor": "#f3f9fd",
                 "contrastRatio": 4.78,
                 "fontSize": "20.7pt (27.648px)",
                 "fontWeight": "bold",
@@ -3330,9 +3353,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Computer Stations</div>",
+          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">What will you create?</div>",
           "target": [
-            "#block-inline-blockcontent-card-106 > .content > .field--name-field-card-title.field--type-string.field"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-card-title.field--type-string.field"
           ]
         },
         {
@@ -3340,24 +3363,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
-                "bgColor": "#f8f8f8",
-                "contrastRatio": 16.71,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fgColor": "#b23c00",
+                "bgColor": "#f3f9fd",
+                "contrastRatio": 5.58,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 16.71"
+              "message": "Element has sufficient color contrast of 5.58"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p id=\"laptops-computer-stations\">We offer computer stations for children, teens, and adults. Check your email, surf the web, or use our suite of Microsoft Office software.&nbsp;</p>",
+          "html": "<a href=\"/services/technology/3d-printing\">Get Started</a>",
           "target": [
-            "#laptops-computer-stations"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
           ]
         },
         {
@@ -4176,7 +4199,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Technology Services</span>\n</h1>",
+          "html": "<h1 class=\"node-title\">More Than Just Books</h1>",
           "target": [
             "h1"
           ]
@@ -4318,7 +4341,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > h1"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > section:nth-child(1) > div > h1:nth-child(2)"
                     ],
                     "level": 1
                   },
@@ -4380,7 +4403,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Technology Services</span>\n</h1>",
+          "html": "<h1 class=\"node-title\">More Than Just Books</h1>",
           "target": [
             "h1"
           ]
@@ -4551,13 +4574,6 @@
               "relatedNodes": [],
               "impact": "critical",
               "message": "Element has an alt attribute"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a title attribute"
             }
           ],
           "all": [],
@@ -4571,42 +4587,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/card-images/2023-02/Wireless-Printing-Hero.jpeg?itok=bWOCHvB8\" width=\"1019\" height=\"573\" alt=\"Woman printing from phone to copier.\" title=\"Wireless Printing\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img src=\"/sites/default/files/styles/large_16_9/public/card-images/2021-09/3d-bg.jpg?itok=4pzFLdGt\" alt=\"3d printing\">",
           "target": [
-            "img[title=\"Wireless Printing\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/card-images/2024-06/Computer-Hero.jpg?itok=YYBFeaqz\" width=\"1019\" height=\"573\" alt=\"People working at computers in a library\" title=\"Computer Stations\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            "img[title=\"Computer Stations\"]"
+            "img[alt=\"3d printing\"]"
           ]
         },
         {
@@ -4757,27 +4740,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/card-images/2023-02/Wireless-Printing-Hero.jpeg?itok=bWOCHvB8\" width=\"1019\" height=\"573\" alt=\"Woman printing from phone to copier.\" title=\"Wireless Printing\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img src=\"/sites/default/files/styles/large_16_9/public/card-images/2021-09/3d-bg.jpg?itok=4pzFLdGt\" alt=\"3d printing\">",
           "target": [
-            "img[title=\"Wireless Printing\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/card-images/2024-06/Computer-Hero.jpg?itok=YYBFeaqz\" width=\"1019\" height=\"573\" alt=\"People working at computers in a library\" title=\"Computer Stations\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            "img[title=\"Computer Stations\"]"
+            "img[alt=\"3d printing\"]"
           ]
         },
         {
@@ -5128,7 +5093,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5221,7 +5186,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5247,7 +5212,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5377,7 +5342,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5464,63 +5429,6 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p id=\"mobile-printing\">",
-                  "target": [
-                    "#mobile-printing"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p id=\"mobile-printing\">",
-                  "target": [
-                    "#mobile-printing"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/faqs#printing\">FAQ page</a>",
-          "target": [
-            "#mobile-printing > a"
           ]
         }
       ]
@@ -5775,9 +5683,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -5931,9 +5839,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/faqs#printing\">FAQ page</a>",
+          "html": "<a href=\"/services/technology\">Learn How We Do It</a>",
           "target": [
-            "#mobile-printing > a"
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"technology\"]"
           ]
         },
         {
@@ -5957,9 +5865,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://print.princh.com?pid=108440\">Mobile Printing - Windsor</a>",
+          "html": "<a href=\"/services/other/reserve-room\">Book Now</a>",
           "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"reserve-room\"]"
           ]
         },
         {
@@ -5983,9 +5891,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://print.princh.com?pid=109069\">Mobile Printing - Severance</a>",
+          "html": "<a href=\"https://clearview.libnet.info/todays-room-schedule\">View today's schedule</a>",
           "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
+            ".field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
           ]
         },
         {
@@ -6009,9 +5917,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services/technology/ask-a-tech\">Ask a Tech</a>",
+          "html": "<a href=\"/services/other/bookmobile\">Learn More</a>",
           "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"bookmobile\"]"
           ]
         },
         {
@@ -6035,35 +5943,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/borrow-research/research/technology\">Tech Resources</a>",
+          "html": "<a href=\"/services/technology/3d-printing\">Get Started</a>",
           "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/services/technology/3d-printing\">Learn More</a>",
-          "target": [
-            ".block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
           ]
         },
         {
@@ -6789,9 +6671,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -7723,27 +7605,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/card-images/2023-02/Wireless-Printing-Hero.jpeg?itok=bWOCHvB8\" width=\"1019\" height=\"573\" alt=\"Woman printing from phone to copier.\" title=\"Wireless Printing\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img src=\"/sites/default/files/styles/large_16_9/public/card-images/2021-09/3d-bg.jpg?itok=4pzFLdGt\" alt=\"3d printing\">",
           "target": [
-            "img[title=\"Wireless Printing\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/card-images/2024-06/Computer-Hero.jpg?itok=YYBFeaqz\" width=\"1019\" height=\"573\" alt=\"People working at computers in a library\" title=\"Computer Stations\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            "img[title=\"Computer Stations\"]"
+            "img[alt=\"3d printing\"]"
           ]
         },
         {
@@ -7857,7 +7721,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Technology Services</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\">More Than Just Books</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8502,9 +8366,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -8724,7 +8588,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".prf-opac-search > .content"
+            ".content"
           ]
         },
         {
@@ -9022,7 +8886,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"region region-title-meta\" id=\"region-title-meta\">",
+          "html": "<div class=\"region region-title-meta\" id=\"region-title-meta\">\n    <div class=\"region-inner\">\n      <div data-drupal-messages-fallback=\"\" class=\"hidden\"></div>\n\n    </div>\n  </div>",
           "target": [
             "#region-title-meta"
           ]
@@ -9042,7 +8906,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"region-inner\">",
+          "html": "<div class=\"region-inner\">\n      <div data-drupal-messages-fallback=\"\" class=\"hidden\"></div>\n\n    </div>",
           "target": [
             "#region-title-meta > .region-inner"
           ]
@@ -9062,69 +8926,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Technology Services</span>\n</h1>\n\n\n  </div>",
+          "html": "<div class=\"main-wrapper \">",
           "target": [
-            "#block-clearview-page-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h1 class=\"page-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Technology Services</span>\n</h1>",
-          "target": [
-            "h1"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Technology Services</span>",
-          "target": [
-            ".field--name-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<main role=\"main\">",
-          "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -9162,9 +8966,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -9222,9 +9026,229 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"31\" about=\"/services/technology\" typeof=\"schema:WebPage\" id=\"node-31\" class=\"node node--type-page node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"3\" about=\"/services\" id=\"node-3\" class=\"node node--type-landing-page node--view-mode-full\">",
           "target": [
-            "#node-31"
+            "#node-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<section class=\"node-header\" style=\"background-image: url(/sites/default/files/landing-page-backgrounds/ClearviewPatrons-2%20%281%29_0.jpg);\">",
+          "target": [
+            "section"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node-header__inner\">",
+          "target": [
+            ".node-header__inner"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"lead-in\"><span class=\"field field--name-title field--type-string field--label-hidden\">Services</span>\n</div>",
+          "target": [
+            ".lead-in"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Services</span>",
+          "target": [
+            ".field--name-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h1 class=\"node-title\">More Than Just Books</h1>",
+          "target": [
+            "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<svg width=\"30px\" height=\"9px\" viewBox=\"0 0 30 9\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+          "target": [
+            "svg[width=\"30px\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<title>Line 5</title>",
+          "target": [
+            "svg[width=\"30px\"] > title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<g id=\"Symbols\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">",
+          "target": [
+            "#Symbols"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<g id=\"title-intro\" transform=\"translate(-498.000000, -162.000000)\">",
+          "target": [
+            "#title-intro"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<rect id=\"Rectangle\" x=\"0\" y=\"0\" width=\"1026\" height=\"197\"></rect>",
+          "target": [
+            "#Rectangle"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<path id=\"Line-5\" d=\"M507,162 L507,166 L519,166 L519,162 L528,162 L528,171 L519,171 L519,167 L507,167 L507,171 L498,171 L498,162 L507,162 Z M506,163 L499,163 L499,170 L506,170 L506,163 Z M527,163 L520,163 L520,170 L527,170 L527,163 Z\" fill=\"#33546D\" fill-rule=\"nonzero\"></path>",
+          "target": [
+            "#Line-5"
           ]
         },
         {
@@ -9302,9 +9326,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"grid-item grid-item--7 block-content-card--photo-top block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-103\">",
+          "html": "<div class=\"grid-item grid-item--12 block-content-card--full-width-bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-25\" style=\"background-image: url(/sites/default/files/card-images/2021-09/tech-bg.jpg);\">",
           "target": [
-            "#block-inline-blockcontent-card-103"
+            "#block-inline-blockcontent-card-25"
           ]
         },
         {
@@ -9322,9 +9346,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-card-image field--type-image field--label-hidden field__item\">",
+          "html": "<div class=\"block-content\">",
           "target": [
-            "#block-inline-blockcontent-card-103 > .field--name-field-card-image.field--type-image.field"
+            "#block-inline-blockcontent-card-25 > .block-content"
           ]
         },
         {
@@ -9342,9 +9366,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/card-images/2023-02/Wireless-Printing-Hero.jpeg?itok=bWOCHvB8\" width=\"1019\" height=\"573\" alt=\"Woman printing from phone to copier.\" title=\"Wireless Printing\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Technology Services</div>",
           "target": [
-            "img[title=\"Wireless Printing\"]"
+            "#block-inline-blockcontent-card-25 > .block-content > .field--name-field-lead-in.field--type-string.field"
           ]
         },
         {
@@ -9362,109 +9386,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"content\">",
+          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Helping you get and stay connected</div>",
           "target": [
-            "#block-inline-blockcontent-card-103 > .content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Copy, Printing &amp; Scanning</div>",
-          "target": [
-            "#block-inline-blockcontent-card-103 > .content > .field--name-field-lead-in.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Mobile Printing</div>",
-          "target": [
-            "#block-inline-blockcontent-card-103 > .content > .field--name-field-card-title.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#block-inline-blockcontent-card-103 > .content > .clearfix.text-formatted.field--name-body"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"mobile-printing\">",
-          "target": [
-            "#mobile-printing"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/faqs#printing\">FAQ page</a>",
-          "target": [
-            "#mobile-printing > a"
+            "#block-inline-blockcontent-card-25 > .block-content > .field--name-field-card-title.field--type-string.field"
           ]
         },
         {
@@ -9484,7 +9408,7 @@
           "impact": null,
           "html": "<div class=\"field field--name-field-ctas field--type-entity-reference-revisions field--label-hidden field__items\">",
           "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items"
+            "#block-inline-blockcontent-card-25 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items"
           ]
         },
         {
@@ -9504,7 +9428,7 @@
           "impact": null,
           "html": "<div class=\"field__item\">",
           "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1)"
+            "#block-inline-blockcontent-card-25 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item"
           ]
         },
         {
@@ -9522,9 +9446,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">",
+          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">\n          \n                        <div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/technology\">Learn How We Do It</a></div>\n            \n      </div>",
           "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
+            "#block-inline-blockcontent-card-25 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
           ]
         },
         {
@@ -9542,9 +9466,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"https://print.princh.com?pid=108440\">Mobile Printing - Windsor</a></div>",
+          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/technology\">Learn How We Do It</a></div>",
           "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
+            "#block-inline-blockcontent-card-25 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
           ]
         },
         {
@@ -9562,329 +9486,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://print.princh.com?pid=108440\">Mobile Printing - Windsor</a>",
+          "html": "<a href=\"/services/technology\">Learn How We Do It</a>",
           "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\">",
-          "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">",
-          "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"https://print.princh.com?pid=109069\">Mobile Printing - Severance</a></div>",
-          "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://print.princh.com?pid=109069\">Mobile Printing - Severance</a>",
-          "target": [
-            ".content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"grid-item grid-item--5 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-102\" style=\"background-image: url(/sites/default/files/card-images/2023-02/Tech-Help-Square.jpeg);\">",
-          "target": [
-            "#block-inline-blockcontent-card-102"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Tech Help</div>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-lead-in.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Resources for your tech needs.</div>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-card-title.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-ctas field--type-entity-reference-revisions field--label-hidden field__items\">",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\">",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">\n          \n                        <div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/technology/ask-a-tech\">Ask a Tech</a></div>\n            \n      </div>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/technology/ask-a-tech\">Ask a Tech</a></div>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/services/technology/ask-a-tech\">Ask a Tech</a>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\">",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"https://clearviewlibrary.org/borrow-research/research/technology\">Tech Resources</a></div>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/borrow-research/research/technology\">Tech Resources</a>",
-          "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"technology\"]"
           ]
         },
         {
@@ -9942,9 +9546,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"grid-item grid-item--12 block-content-card--full-width-bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-104\" style=\"background-image: url(/sites/default/files/card-images/2023-02/3d-Printing-Hero.jpeg);\">",
+          "html": "<div class=\"grid-item grid-item--5 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-26\" style=\"background-image: url(/sites/default/files/card-images/2021-09/room-res-bg.png);\">",
           "target": [
-            "#block-inline-blockcontent-card-104"
+            "#block-inline-blockcontent-card-26"
           ]
         },
         {
@@ -9962,9 +9566,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"block-content\">",
+          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Reserve a room</div>",
           "target": [
-            "#block-inline-blockcontent-card-104 > .block-content"
+            "#block-inline-blockcontent-card-26 > .field--name-field-lead-in.field--type-string.field"
           ]
         },
         {
@@ -9982,69 +9586,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Explore</div>",
+          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Study alone or meet with a group</div>",
           "target": [
-            "#block-inline-blockcontent-card-104 > .block-content > .field--name-field-lead-in.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">3D Printing</div>",
-          "target": [
-            "#block-inline-blockcontent-card-104 > .block-content > .field--name-field-card-title.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p id=\"print-3d\">Guitar picks to toys, phone cases to coasters, your imagination is the limit.</p>\n</div>",
-          "target": [
-            "#block-inline-blockcontent-card-104 > .block-content > .clearfix.text-formatted.field--name-body"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"print-3d\">Guitar picks to toys, phone cases to coasters, your imagination is the limit.</p>",
-          "target": [
-            "#print-3d"
+            "#block-inline-blockcontent-card-26 > .field--name-field-card-title.field--type-string.field"
           ]
         },
         {
@@ -10064,7 +9608,7 @@
           "impact": null,
           "html": "<div class=\"field field--name-field-ctas field--type-entity-reference-revisions field--label-hidden field__items\">",
           "target": [
-            "#block-inline-blockcontent-card-104 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items"
+            "#block-inline-blockcontent-card-26 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items"
           ]
         },
         {
@@ -10084,7 +9628,7 @@
           "impact": null,
           "html": "<div class=\"field__item\">",
           "target": [
-            "#block-inline-blockcontent-card-104 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item"
+            "#block-inline-blockcontent-card-26 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1)"
           ]
         },
         {
@@ -10102,9 +9646,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">\n          \n                        <div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/technology/3d-printing\">Learn More</a></div>\n            \n      </div>",
+          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">\n          \n                        <div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/other/reserve-room\">Book Now</a></div>\n            \n      </div>",
           "target": [
-            "#block-inline-blockcontent-card-104 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
+            "#block-inline-blockcontent-card-26 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
           ]
         },
         {
@@ -10122,9 +9666,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/technology/3d-printing\">Learn More</a></div>",
+          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/other/reserve-room\">Book Now</a></div>",
           "target": [
-            ".block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
+            "#block-inline-blockcontent-card-26 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(1) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
           ]
         },
         {
@@ -10142,9 +9686,249 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services/technology/3d-printing\">Learn More</a>",
+          "html": "<a href=\"/services/other/reserve-room\">Book Now</a>",
           "target": [
-            ".block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"reserve-room\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">",
+          "target": [
+            ".field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">",
+          "target": [
+            ".field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"https://clearview.libnet.info/todays-room-schedule\">View today's schedule</a></div>",
+          "target": [
+            ".field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://clearview.libnet.info/todays-room-schedule\">View today's schedule</a>",
+          "target": [
+            ".field__item:nth-child(2) > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"grid-item grid-item--7 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-27\" style=\"background-image: url(/sites/default/files/card-images/2021-09/bookmobile-bg.jpg);\">",
+          "target": [
+            "#block-inline-blockcontent-card-27"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Bookmobile</div>",
+          "target": [
+            "#block-inline-blockcontent-card-27 > .field--name-field-lead-in.field--type-string.field"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">A mini library on wheels</div>",
+          "target": [
+            "#block-inline-blockcontent-card-27 > .field--name-field-card-title.field--type-string.field"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-ctas field--type-entity-reference-revisions field--label-hidden field__items\">",
+          "target": [
+            "#block-inline-blockcontent-card-27 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">",
+          "target": [
+            "#block-inline-blockcontent-card-27 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">\n          \n                        <div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/other/bookmobile\">Learn More</a></div>\n            \n      </div>",
+          "target": [
+            "#block-inline-blockcontent-card-27 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/other/bookmobile\">Learn More</a></div>",
+          "target": [
+            "#block-inline-blockcontent-card-27 > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/services/other/bookmobile\">Learn More</a>",
+          "target": [
+            ".field--name-field-link-and-text.field--type-link.field > a[href$=\"bookmobile\"]"
           ]
         },
         {
@@ -10202,9 +9986,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"grid-item grid-item--6 block-content-card--full-width-bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-105\" style=\"background-image: url(/sites/default/files/card-images/2024-06/Internet-Hero.jpeg);\">",
+          "html": "<div class=\"grid-item grid-item--12 block-content-card--full-width-split block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-28\">",
           "target": [
-            "#block-inline-blockcontent-card-105"
+            "#block-inline-blockcontent-card-28"
           ]
         },
         {
@@ -10224,7 +10008,7 @@
           "impact": null,
           "html": "<div class=\"block-content\">",
           "target": [
-            "#block-inline-blockcontent-card-105 > .block-content"
+            "#block-inline-blockcontent-card-28 > .block-content"
           ]
         },
         {
@@ -10242,9 +10026,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Technology Services</div>",
+          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">3D Printing</div>",
           "target": [
-            "#block-inline-blockcontent-card-105 > .block-content > .field--name-field-lead-in.field--type-string.field"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-lead-in.field--type-string.field"
           ]
         },
         {
@@ -10262,49 +10046,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Free Internet</div>",
+          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">What will you create?</div>",
           "target": [
-            "#block-inline-blockcontent-card-105 > .block-content > .field--name-field-card-title.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#block-inline-blockcontent-card-105 > .block-content > .clearfix.text-formatted.field--name-body"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"free-internet\">We offer fast and secure internet connection at both of our branches. Access it through our computer terminals or hop on our WiFi, which extends to our parking lot.</p>",
-          "target": [
-            "#free-internet"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-card-title.field--type-string.field"
           ]
         },
         {
@@ -10324,7 +10068,7 @@
           "impact": null,
           "html": "<div class=\"field field--name-field-ctas field--type-entity-reference-revisions field--label-hidden field__items\">",
           "target": [
-            "#block-inline-blockcontent-card-105 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items"
           ]
         },
         {
@@ -10342,9 +10086,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">  <div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">\n          \n      </div>\n</div>",
+          "html": "<div class=\"field__item\">",
           "target": [
-            "#block-inline-blockcontent-card-105 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item"
           ]
         },
         {
@@ -10362,9 +10106,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">\n          \n      </div>",
+          "html": "<div class=\"paragraph paragraph--type--cta paragraph--view-mode--default\">\n          \n                        <div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/technology/3d-printing\">Get Started</a></div>\n            \n      </div>",
           "target": [
-            "#block-inline-blockcontent-card-105 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default"
           ]
         },
         {
@@ -10382,9 +10126,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"grid-item grid-item--6 block-content-card--photo-top block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-106\">",
+          "html": "<div class=\"field field--name-field-link-and-text field--type-link field--label-hidden field__item\"><a href=\"/services/technology/3d-printing\">Get Started</a></div>",
           "target": [
-            "#block-inline-blockcontent-card-106"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field"
           ]
         },
         {
@@ -10402,9 +10146,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-card-image field--type-image field--label-hidden field__item\">",
+          "html": "<a href=\"/services/technology/3d-printing\">Get Started</a>",
           "target": [
-            "#block-inline-blockcontent-card-106 > .field--name-field-card-image.field--type-image.field"
+            "#block-inline-blockcontent-card-28 > .block-content > .field--name-field-ctas.field--type-entity-reference-revisions.field__items > .field__item > .paragraph.paragraph--type--cta.paragraph--view-mode--default > .field--name-field-link-and-text.field--type-link.field > a"
           ]
         },
         {
@@ -10422,9 +10166,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/card-images/2024-06/Computer-Hero.jpg?itok=YYBFeaqz\" width=\"1019\" height=\"573\" alt=\"People working at computers in a library\" title=\"Computer Stations\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<div class=\"block-image\">\n            <img src=\"/sites/default/files/styles/large_16_9/public/card-images/2021-09/3d-bg.jpg?itok=4pzFLdGt\" alt=\"3d printing\">\n        </div>",
           "target": [
-            "img[title=\"Computer Stations\"]"
+            ".block-image"
           ]
         },
         {
@@ -10442,129 +10186,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"content\">",
+          "html": "<img src=\"/sites/default/files/styles/large_16_9/public/card-images/2021-09/3d-bg.jpg?itok=4pzFLdGt\" alt=\"3d printing\">",
           "target": [
-            "#block-inline-blockcontent-card-106 > .content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Technology Resources</div>",
-          "target": [
-            "#block-inline-blockcontent-card-106 > .content > .field--name-field-lead-in.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Computer Stations</div>",
-          "target": [
-            "#block-inline-blockcontent-card-106 > .content > .field--name-field-card-title.field--type-string.field"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#block-inline-blockcontent-card-106 > .content > .clearfix.text-formatted.field--name-body"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"laptops-computer-stations\">We offer computer stations for children, teens, and adults. Check your email, surf the web, or use our suite of Microsoft Office software.&nbsp;</p>",
-          "target": [
-            "#laptops-computer-stations"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n      \n    </div>\n  </div>",
-          "target": [
-            ".layout.layout--onecol:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"layout__region layout__region--content\">\n      \n    </div>",
-          "target": [
-            ".layout.layout--onecol:nth-child(4) > .layout__region.layout__region--content"
+            "img[alt=\"3d printing\"]"
           ]
         },
         {
@@ -12462,9 +12086,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
+          "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\" class=\"is-active\" aria-current=\"page\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--active-trail.menu-item--expanded > .is-active[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -12616,14 +12240,64 @@
                 "contrastRatio": 0,
                 "fontSize": "10.0pt (13.3333px)",
                 "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Services</span>",
+          "target": [
+            ".field--name-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "29.9pt (39.8131px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h1 class=\"node-title\">More Than Just Books</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
                 "messageKey": "bgImage",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [
                 {
-                  "html": "<div class=\"grid-item grid-item--5 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-102\" style=\"background-image: url(/sites/default/files/card-images/2023-02/Tech-Help-Square.jpeg);\">",
+                  "html": "<div class=\"grid-item grid-item--5 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-26\" style=\"background-image: url(/sites/default/files/card-images/2021-09/room-res-bg.png);\">",
                   "target": [
-                    "#block-inline-blockcontent-card-102"
+                    "#block-inline-blockcontent-card-26"
                   ]
                 }
               ],
@@ -12634,9 +12308,9 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Tech Help</div>",
+          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Reserve a room</div>",
           "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-lead-in.field--type-string.field"
+            "#block-inline-blockcontent-card-26 > .field--name-field-lead-in.field--type-string.field"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
         },
@@ -12653,9 +12327,9 @@
               },
               "relatedNodes": [
                 {
-                  "html": "<div class=\"grid-item grid-item--5 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-102\" style=\"background-image: url(/sites/default/files/card-images/2023-02/Tech-Help-Square.jpeg);\">",
+                  "html": "<div class=\"grid-item grid-item--5 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-26\" style=\"background-image: url(/sites/default/files/card-images/2021-09/room-res-bg.png);\">",
                   "target": [
-                    "#block-inline-blockcontent-card-102"
+                    "#block-inline-blockcontent-card-26"
                   ]
                 }
               ],
@@ -12666,9 +12340,73 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Resources for your tech needs.</div>",
+          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">Study alone or meet with a group</div>",
           "target": [
-            "#block-inline-blockcontent-card-102 > .field--name-field-card-title.field--type-string.field"
+            "#block-inline-blockcontent-card-26 > .field--name-field-card-title.field--type-string.field"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"grid-item grid-item--7 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-27\" style=\"background-image: url(/sites/default/files/card-images/2021-09/bookmobile-bg.jpg);\">",
+                  "target": [
+                    "#block-inline-blockcontent-card-27"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"field field--name-field-lead-in field--type-string field--label-hidden field__item\">Bookmobile</div>",
+          "target": [
+            "#block-inline-blockcontent-card-27 > .field--name-field-lead-in.field--type-string.field"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "bold",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"grid-item grid-item--7 block-content-card--photo_bg block-content-card block block-layout-builder block-inline-blockcontent-card\" id=\"block-inline-blockcontent-card-27\" style=\"background-image: url(/sites/default/files/card-images/2021-09/bookmobile-bg.jpg);\">",
+                  "target": [
+                    "#block-inline-blockcontent-card-27"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"field field--name-field-card-title field--type-string field--label-hidden field__item\">A mini library on wheels</div>",
+          "target": [
+            "#block-inline-blockcontent-card-27 > .field--name-field-card-title.field--type-string.field"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
         }
@@ -12676,5 +12414,5 @@
     }
   ],
   "violations": [],
-  "documentTitle": "Technology Services | Clearview Library"
+  "documentTitle": "Services | Clearview Library"
 }

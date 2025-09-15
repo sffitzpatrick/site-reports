@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:45:12.634Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/procurement-policy",
+  "timestamp": "2025-09-15T17:45:17.156Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/internet-safety-and-acceptable-use-policy",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -267,6 +267,22 @@
       "nodes": []
     },
     {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
+      "nodes": []
+    },
+    {
       "id": "blink",
       "impact": null,
       "tags": [
@@ -313,6 +329,18 @@
       "description": "Ensure <dt> and <dd> elements are contained by a <dl>",
       "help": "<dt> and <dd> elements must be contained by a <dl>",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/dlitem?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "empty-table-header",
+      "impact": null,
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "description": "Ensure table headers have discernible text",
+      "help": "Table header text should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=axeAPI",
       "nodes": []
     },
     {
@@ -521,6 +549,18 @@
       "nodes": []
     },
     {
+      "id": "scope-attr-valid",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "best-practice"
+      ],
+      "description": "Ensure the scope attribute is used correctly on tables",
+      "help": "scope attribute should be used correctly",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/scope-attr-valid?application=axeAPI",
+      "nodes": []
+    },
+    {
       "id": "scrollable-region-focusable",
       "impact": null,
       "tags": [
@@ -615,6 +655,56 @@
       "description": "Ensure <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text",
       "help": "<svg> elements with an img role must have an alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/svg-img-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "table-duplicate-name",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "best-practice"
+      ],
+      "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
+      "help": "Tables should not have the same summary and caption",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "td-headers-attr",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "wcag2a",
+        "wcag131",
+        "section508",
+        "section508.22.g",
+        "TTv5",
+        "TT14.b",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
+      "help": "Table cells that use the headers attribute must only refer to cells in the same table",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/td-headers-attr?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "th-has-data-cells",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "wcag2a",
+        "wcag131",
+        "section508",
+        "section508.22.g",
+        "TTv5",
+        "TT14.b",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
+      "help": "Table headers in a data table must refer to data cells",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/th-has-data-cells?application=axeAPI",
       "nodes": []
     },
     {
@@ -968,7 +1058,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1324,7 +1414,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1716,7 +1806,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2000,7 +2090,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2582,55 +2672,6 @@
       ]
     },
     {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 650px;\">",
-          "target": [
-            "table"
-          ]
-        }
-      ]
-    },
-    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2713,81 +2754,21 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Procurement Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Internet Safety and Acceptable Use Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2>Purchasing Policy</h2>",
+                  "html": "<h2>User Responsibilities</h2>",
                   "target": [
-                    ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+                    "h2:nth-child(9)"
                   ]
                 },
                 {
-                  "html": "<h2>Responsibilities</h2>",
+                  "html": "<h2>Children, Parents, and the Internet</h2>",
                   "target": [
-                    "h2:nth-child(3)"
-                  ]
-                },
-                {
-                  "html": "<h2>Purchase Process</h2>",
-                  "target": [
-                    "h2:nth-child(5)"
-                  ]
-                },
-                {
-                  "html": "<h3>Quotes not required $1000.01 - $15,000</h3>",
-                  "target": [
-                    "h3:nth-child(8)"
-                  ]
-                },
-                {
-                  "html": "<h3>Quotes $15,000.01- $30,000</h3>",
-                  "target": [
-                    "h3:nth-child(10)"
-                  ]
-                },
-                {
-                  "html": "<h3>Requests for Proposals (RFPs) $30,000.01 - $100,000</h3>",
-                  "target": [
-                    "h3:nth-child(12)"
-                  ]
-                },
-                {
-                  "html": "<h3>Competitive Bidding &nbsp;$100,000.01+</h3>",
-                  "target": [
-                    "h3:nth-child(14)"
-                  ]
-                },
-                {
-                  "html": "<h3>When Competitive Bidding is not Required</h3>",
-                  "target": [
-                    "h3:nth-child(18)"
-                  ]
-                },
-                {
-                  "html": "<h2>Local Vendor Preference</h2>",
-                  "target": [
-                    "h2:nth-child(20)"
-                  ]
-                },
-                {
-                  "html": "<h2>Construction Projects and Professional Services</h2>",
-                  "target": [
-                    "h2:nth-child(22)"
-                  ]
-                },
-                {
-                  "html": "<h2>Emergency Purchases</h2>",
-                  "target": [
-                    "h2:nth-child(24)"
-                  ]
-                },
-                {
-                  "html": "<h2>Code of Ethics</h2>",
-                  "target": [
-                    "h2:nth-child(26)"
+                    "h2:nth-child(12)"
                   ]
                 },
                 {
@@ -2817,7 +2798,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\" class=\"has-sidebar\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -3134,7 +3115,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Procurement Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Internet Safety and Acceptable Use Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3144,24 +3125,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Purchasing Policy</h2>",
+          "html": "<p>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
           ]
         },
         {
@@ -3194,24 +3175,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Responsibilities</h2>",
+          "html": "<p>",
           "target": [
-            "h2:nth-child(3)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -3244,24 +3225,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Purchase Process</h2>",
+          "html": "<p>5. As with all library resources, patrons are advised to exercise their own critical judgment and discrimination when evaluating sites found on the internet. Certain information may be inaccurate, misleading or offensive to some individuals.</p>",
           "target": [
-            "h2:nth-child(5)"
+            "p:nth-child(5)"
           ]
         },
         {
@@ -3284,7 +3265,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>All purchases and expenditures must comply with the documentation and approval requirements listed in the following chart. Purchases cannot be split in order to avoid the approval process. Bulk items (i.e., 50 chairs) should be applied to the chart below using the total cost.</p>",
+          "html": "<p>6. Unauthorized access, including so-called hacking, and any other unlawful activities by any Library users are strictly prohibited.</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -3298,81 +3279,6 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Purchase Limits</th>",
-          "target": [
-            "th:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Documentation Required</th>",
-          "target": [
-            "th:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Approval Level</th>",
-          "target": [
-            "th:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -3384,884 +3290,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td>$0.01-$50.00</td>",
+          "html": "<p>",
           "target": [
-            "tr:nth-child(1) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Petty cash request, Manager credit card purchase. Quotes not required.</td>",
-          "target": [
-            "tr:nth-child(1) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Manager</td>",
-          "target": [
-            "tr:nth-child(1) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$50.01- $1,000.00</td>",
-          "target": [
-            "tr:nth-child(2) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Manager credit card purchase. Quotes not required.</td>",
-          "target": [
-            "tr:nth-child(2) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Manager</td>",
-          "target": [
-            "tr:nth-child(2) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$1,000.01-$15,000</td>",
-          "target": [
-            "tr:nth-child(3) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Three quotes, if available.</td>",
-          "target": [
-            "tr:nth-child(3) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Manager and Director</td>",
-          "target": [
-            "tr:nth-child(3) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$15,000.01- $30,000</td>",
-          "target": [
-            "tr:nth-child(4) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Three quotes.</td>",
-          "target": [
-            "tr:nth-child(4) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Manager and Director</td>",
-          "target": [
-            "tr:nth-child(4) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$30,000.01-$100,000</td>",
-          "target": [
-            "tr:nth-child(5) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Published RFP.</td>",
-          "target": [
-            "tr:nth-child(5) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Library Board</td>",
-          "target": [
-            "tr:nth-child(5) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$100,000.01</td>",
-          "target": [
-            "tr:nth-child(6) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Published RFP. Formal Sealed bid.</td>",
-          "target": [
-            "tr:nth-child(6) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Library Board</td>",
-          "target": [
-            "tr:nth-child(6) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Quotes not required $1000.01 - $15,000</h3>",
-          "target": [
-            "h3:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District staff can use written, catalog, or telephone quotations.</li>",
-          "target": [
-            "ul:nth-child(9) > li"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Quotes $15,000.01- $30,000</h3>",
-          "target": [
-            "h3:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District staff can invite quotes from persons, firms, or corporations.</li>",
-          "target": [
-            "ul:nth-child(11) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Quotes will be in writing on company letterhead.</li>",
-          "target": [
-            "ul:nth-child(11) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District will determine the best value by considering timing, quality, quantity, price, vendor performance, and any other relevant criteria. Clearview Library District reserves the right to reject any quotel and to accept the proposal that is in its best interest.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(11) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Requests for Proposals (RFPs) $30,000.01 - $100,000</h3>",
-          "target": [
-            "h3:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District staff can invite RFPs from persons, firms, or corporations.</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>An RFP will be published on Clearview Library District’s website, and one time in a newspaper of general circulation within the district’s boundaries for all contracts for services or materials or both of $30,000.01 - $100,000.</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District will determine the best value by considering timing, quality, quantity, price, vendor performance, and any other relevant criteria. Clearview Library District reserves the right to reject any proposal and to accept the proposal that is in its best interest.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Competitive Bidding &nbsp;$100,000.01+</h3>",
-          "target": [
-            "h3:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>An open and competitive environment will be maintained to ensure that all qualified buyers and sellers have access to Clearview Library District’s business and that all purchasing actions are conducted fairly and impartially.</p>",
-          "target": [
-            "p:nth-child(15)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Major operational items, including capital items and construction projects expected to cost $100,000.01 or more each, shall be purchased via a competitive bidding process.</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>The library director, or delegated representative, may request bids/RFPs from persons, firms, or corporations.</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>An invitation to bid/RFP shall be published one time in a newspaper of general circulation within the district boundaries for all contracts for services or materials or both of at least $100,000.01</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>All bids shall be sealed and opened in the presence of witnesses.</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>The library director may repeatedly reject all bids and again may submit to the same or other persons, firms, or corporations the request for quotation (or invitation to bid), and/or again publish notice of the proposed purchase.</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(6)"
+            "p:nth-child(7)"
           ]
         },
         {
@@ -4286,182 +3317,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(17)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>When Competitive Bidding is not Required</h3>",
-          "target": [
-            "h3:nth-child(18)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Library materials (e.g., books, periodicals, audiovisual materials, e-materials), printing services, computing and networking, etc., may be sourced by vendor rather than item by item.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>A sole source purchase may be made if it has been determined that only one vendor is capable of meeting all specifications and purchase requirements or that it is in the Clearview Library District’s best interests. Purchase may then be made on the basis of prices established by negotiation.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District is eligible to purchase commodities under existing contracts negotiated by federal, state, local and cooperative systems such as the Colorado Library Consortium (CLIC).</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Services (gas, electricity, telephone, etc.) purchased from a public utility at a price or rate determined by the applicable government authority.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Where proposed equipment and/or services vary to the extent that sealed bids are not practical, detailed proposals may be accepted in lieu of such bids.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District may participate in joint bidding and/or other cooperative purchasing ventures with other library organizations and government agencies if it is deemed in the best interests of Clearview Library District to do so.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(6)"
+            "p:nth-child(8)"
           ]
         },
         {
@@ -4484,9 +3340,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Local Vendor Preference</h2>",
+          "html": "<h2>User Responsibilities</h2>",
           "target": [
-            "h2:nth-child(20)"
+            "h2:nth-child(9)"
           ]
         },
         {
@@ -4511,7 +3367,157 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(21)"
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Damaging equipment, software, or data;</li>",
+          "target": [
+            "ol > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Violating system security;</li>",
+          "target": [
+            "ol > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Violating any legal agreement (e.g., software licenses);</li>",
+          "target": [
+            "ol > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Violating any federal, state or local law (e.g., copyright, child pornography);</li>",
+          "target": [
+            "ol > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Using personal software on Library equipment, and</li>",
+          "target": [
+            "ol > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Engaging in activities that may be judged as disruptive by Library staff or patrons. User responsibilities are not limited to the above and may be subject to change.</li>",
+          "target": [
+            "ol > li:nth-child(6)"
           ]
         },
         {
@@ -4534,9 +3540,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Construction Projects and Professional Services</h2>",
+          "html": "<h2>Children, Parents, and the Internet</h2>",
           "target": [
-            "h2:nth-child(22)"
+            "h2:nth-child(12)"
           ]
         },
         {
@@ -4561,32 +3567,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(23)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Emergency Purchases</h2>",
-          "target": [
-            "h2:nth-child(24)"
+            "p:nth-child(13)"
           ]
         },
         {
@@ -4609,34 +3590,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>2. The Library has taken measures designed to assist in the safe and effective use of the internet, including:</p>",
           "target": [
-            "p:nth-child(25)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Code of Ethics</h2>",
-          "target": [
-            "h2:nth-child(26)"
+            "p:nth-child(14)"
           ]
         },
         {
@@ -4659,9 +3615,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<li>Employing technology protection measures (filters) on all computers offering internet access&nbsp;</li>",
           "target": [
-            "p:nth-child(27)"
+            "ul:nth-child(15) > li:nth-child(1)"
           ]
         },
         {
@@ -4684,9 +3640,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<li>Developing and maintaining web sites designed for children and teens;</li>",
           "target": [
-            "p:nth-child(28)"
+            "ul:nth-child(15) > li:nth-child(2)"
           ]
         },
         {
@@ -4709,9 +3665,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<li>Providing online and printed information about child safety and information on educational or recreational uses of the internet.</li>",
           "target": [
-            "p:nth-child(29)"
+            "ul:nth-child(15) > li:nth-child(3)"
           ]
         },
         {
@@ -4734,7 +3690,157 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Adopted May 31, 2018. Revised and adopted September 30, 2021.</em>",
+          "html": "<p>3. To address the issue of the safety and security of minors (individuals who have not attained the age of 17) when using e-mail, chat rooms and other forms of direct electronic communications, the Library recommends the following safety guidelines. Minors should:</p>",
+          "target": [
+            "p:nth-child(16)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Always ask their parents' permission before using their full name, address, telephone number, or school name anywhere on the internet;</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Always tell their parents or another adult they trust if they see something online that is frightening or that they do not understand;</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Never respond to messages that make them feel uncomfortable or uneasy;</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Never give out a credit card number or password online without parental approval, and</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Never arrange to meet in person someone they have met online unless they discuss it with their parents and an adult accompanies them.</li>",
+          "target": [
+            "ul:nth-child(17) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>Adopted September 29th, 2016. Revised October 28th, 2021.</em>",
           "target": [
             "em"
           ]
@@ -5998,7 +5104,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Procurement Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Internet Safety and Acceptable Use Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -6016,9 +5122,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Purchasing Policy</h2>",
+          "html": "<h2>User Responsibilities</h2>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            "h2:nth-child(9)"
           ]
         },
         {
@@ -6034,189 +5140,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Responsibilities</h2>",
+          "html": "<h2>Children, Parents, and the Internet</h2>",
           "target": [
-            "h2:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Purchase Process</h2>",
-          "target": [
-            "h2:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Quotes not required $1000.01 - $15,000</h3>",
-          "target": [
-            "h3:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Quotes $15,000.01- $30,000</h3>",
-          "target": [
-            "h3:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Requests for Proposals (RFPs) $30,000.01 - $100,000</h3>",
-          "target": [
-            "h3:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Competitive Bidding &nbsp;$100,000.01+</h3>",
-          "target": [
-            "h3:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>When Competitive Bidding is not Required</h3>",
-          "target": [
-            "h3:nth-child(18)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Local Vendor Preference</h2>",
-          "target": [
-            "h2:nth-child(20)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Construction Projects and Professional Services</h2>",
-          "target": [
-            "h2:nth-child(22)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Emergency Purchases</h2>",
-          "target": [
-            "h2:nth-child(24)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Code of Ethics</h2>",
-          "target": [
-            "h2:nth-child(26)"
+            "h2:nth-child(12)"
           ]
         },
         {
@@ -6271,73 +5197,6 @@
           "html": "<h2 class=\"visually-hidden\" id=\"block-utilitiesmenu-2-menu\">Mobile Utilities Menu</h2>",
           "target": [
             "#block-utilitiesmenu-2-menu"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "empty-table-header",
-      "impact": null,
-      "tags": [
-        "cat.name-role-value",
-        "best-practice"
-      ],
-      "description": "Ensure table headers have discernible text",
-      "help": "Table header text should not be empty",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Purchase Limits</th>",
-          "target": [
-            "th:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Documentation Required</th>",
-          "target": [
-            "th:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Approval Level</th>",
-          "target": [
-            "th:nth-child(3)"
           ]
         }
       ]
@@ -6447,79 +5306,19 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h2:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(9)"
                     ],
                     "level": 2
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h2:nth-child(3)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(12)"
                     ],
                     "level": 2
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h2:nth-child(5)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h3:nth-child(8)"
-                    ],
-                    "level": 3
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h3:nth-child(10)"
-                    ],
-                    "level": 3
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h3:nth-child(12)"
-                    ],
-                    "level": 3
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h3:nth-child(14)"
-                    ],
-                    "level": 3
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h3:nth-child(18)"
-                    ],
-                    "level": 3
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h2:nth-child(20)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h2:nth-child(22)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h2:nth-child(24)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > div > div > h2:nth-child(26)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
                     ],
                     "level": 2
                   },
@@ -6581,7 +5380,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Procurement Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Internet Safety and Acceptable Use Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -6599,9 +5398,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Purchasing Policy</h2>",
+          "html": "<h2>User Responsibilities</h2>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            "h2:nth-child(9)"
           ]
         },
         {
@@ -6617,189 +5416,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Responsibilities</h2>",
+          "html": "<h2>Children, Parents, and the Internet</h2>",
           "target": [
-            "h2:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Purchase Process</h2>",
-          "target": [
-            "h2:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Quotes not required $1000.01 - $15,000</h3>",
-          "target": [
-            "h3:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Quotes $15,000.01- $30,000</h3>",
-          "target": [
-            "h3:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Requests for Proposals (RFPs) $30,000.01 - $100,000</h3>",
-          "target": [
-            "h3:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Competitive Bidding &nbsp;$100,000.01+</h3>",
-          "target": [
-            "h3:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>When Competitive Bidding is not Required</h3>",
-          "target": [
-            "h3:nth-child(18)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Local Vendor Preference</h2>",
-          "target": [
-            "h2:nth-child(20)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Construction Projects and Professional Services</h2>",
-          "target": [
-            "h2:nth-child(22)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Emergency Purchases</h2>",
-          "target": [
-            "h2:nth-child(24)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Code of Ethics</h2>",
-          "target": [
-            "h2:nth-child(26)"
+            "h2:nth-child(12)"
           ]
         },
         {
@@ -7494,7 +6113,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -7587,7 +6206,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -7613,7 +6232,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\" class=\"has-sidebar\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -7743,7 +6362,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -9496,9 +8115,9 @@
             }
           ],
           "impact": null,
-          "html": "<ul>\n\t<li>Clearview Library District staff can use written, catalog, or telephone quotations.</li>\n</ul>",
+          "html": "<ol>",
           "target": [
-            "ul:nth-child(9)"
+            "ol"
           ]
         },
         {
@@ -9516,7 +8135,7 @@
           "impact": null,
           "html": "<ul>",
           "target": [
-            "ul:nth-child(11)"
+            "ul:nth-child(15)"
           ]
         },
         {
@@ -9534,43 +8153,7 @@
           "impact": null,
           "html": "<ul>",
           "target": [
-            "ul:nth-child(13)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "ul:nth-child(16)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "ul:nth-child(19)"
+            "ul:nth-child(17)"
           ]
         },
         {
@@ -9944,9 +8527,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District staff can use written, catalog, or telephone quotations.</li>",
+          "html": "<li>Damaging equipment, software, or data;</li>",
           "target": [
-            "ul:nth-child(9) > li"
+            "ol > li:nth-child(1)"
           ]
         },
         {
@@ -9962,9 +8545,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District staff can invite quotes from persons, firms, or corporations.</li>",
+          "html": "<li>Violating system security;</li>",
           "target": [
-            "ul:nth-child(11) > li:nth-child(1)"
+            "ol > li:nth-child(2)"
           ]
         },
         {
@@ -9980,9 +8563,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Quotes will be in writing on company letterhead.</li>",
+          "html": "<li>Violating any legal agreement (e.g., software licenses);</li>",
           "target": [
-            "ul:nth-child(11) > li:nth-child(2)"
+            "ol > li:nth-child(3)"
           ]
         },
         {
@@ -9998,9 +8581,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District will determine the best value by considering timing, quality, quantity, price, vendor performance, and any other relevant criteria. Clearview Library District reserves the right to reject any quotel and to accept the proposal that is in its best interest.&nbsp;</li>",
+          "html": "<li>Violating any federal, state or local law (e.g., copyright, child pornography);</li>",
           "target": [
-            "ul:nth-child(11) > li:nth-child(3)"
+            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -10016,9 +8599,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District staff can invite RFPs from persons, firms, or corporations.</li>",
+          "html": "<li>Using personal software on Library equipment, and</li>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(1)"
+            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -10034,9 +8617,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>An RFP will be published on Clearview Library District’s website, and one time in a newspaper of general circulation within the district’s boundaries for all contracts for services or materials or both of $30,000.01 - $100,000.</li>",
+          "html": "<li>Engaging in activities that may be judged as disruptive by Library staff or patrons. User responsibilities are not limited to the above and may be subject to change.</li>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(2)"
+            "ol > li:nth-child(6)"
           ]
         },
         {
@@ -10052,9 +8635,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District will determine the best value by considering timing, quality, quantity, price, vendor performance, and any other relevant criteria. Clearview Library District reserves the right to reject any proposal and to accept the proposal that is in its best interest.&nbsp;</li>",
+          "html": "<li>Employing technology protection measures (filters) on all computers offering internet access&nbsp;</li>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(3)"
+            "ul:nth-child(15) > li:nth-child(1)"
           ]
         },
         {
@@ -10070,9 +8653,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Major operational items, including capital items and construction projects expected to cost $100,000.01 or more each, shall be purchased via a competitive bidding process.</li>",
+          "html": "<li>Developing and maintaining web sites designed for children and teens;</li>",
           "target": [
-            "ul:nth-child(16) > li:nth-child(1)"
+            "ul:nth-child(15) > li:nth-child(2)"
           ]
         },
         {
@@ -10088,9 +8671,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>The library director, or delegated representative, may request bids/RFPs from persons, firms, or corporations.</li>",
+          "html": "<li>Providing online and printed information about child safety and information on educational or recreational uses of the internet.</li>",
           "target": [
-            "ul:nth-child(16) > li:nth-child(2)"
+            "ul:nth-child(15) > li:nth-child(3)"
           ]
         },
         {
@@ -10106,9 +8689,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>An invitation to bid/RFP shall be published one time in a newspaper of general circulation within the district boundaries for all contracts for services or materials or both of at least $100,000.01</li>",
+          "html": "<li>Always ask their parents' permission before using their full name, address, telephone number, or school name anywhere on the internet;</li>",
           "target": [
-            "ul:nth-child(16) > li:nth-child(3)"
+            "ul:nth-child(17) > li:nth-child(1)"
           ]
         },
         {
@@ -10124,9 +8707,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>All bids shall be sealed and opened in the presence of witnesses.</li>",
+          "html": "<li>Always tell their parents or another adult they trust if they see something online that is frightening or that they do not understand;</li>",
           "target": [
-            "ul:nth-child(16) > li:nth-child(4)"
+            "ul:nth-child(17) > li:nth-child(2)"
           ]
         },
         {
@@ -10142,9 +8725,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li>Never respond to messages that make them feel uncomfortable or uneasy;</li>",
           "target": [
-            "ul:nth-child(16) > li:nth-child(5)"
+            "ul:nth-child(17) > li:nth-child(3)"
           ]
         },
         {
@@ -10160,9 +8743,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>The library director may repeatedly reject all bids and again may submit to the same or other persons, firms, or corporations the request for quotation (or invitation to bid), and/or again publish notice of the proposed purchase.</li>",
+          "html": "<li>Never give out a credit card number or password online without parental approval, and</li>",
           "target": [
-            "ul:nth-child(16) > li:nth-child(6)"
+            "ul:nth-child(17) > li:nth-child(4)"
           ]
         },
         {
@@ -10178,99 +8761,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Library materials (e.g., books, periodicals, audiovisual materials, e-materials), printing services, computing and networking, etc., may be sourced by vendor rather than item by item.</li>",
+          "html": "<li>Never arrange to meet in person someone they have met online unless they discuss it with their parents and an adult accompanies them.</li>",
           "target": [
-            "ul:nth-child(19) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>A sole source purchase may be made if it has been determined that only one vendor is capable of meeting all specifications and purchase requirements or that it is in the Clearview Library District’s best interests. Purchase may then be made on the basis of prices established by negotiation.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District is eligible to purchase commodities under existing contracts negotiated by federal, state, local and cooperative systems such as the Colorado Library Consortium (CLIC).</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Services (gas, electricity, telephone, etc.) purchased from a public utility at a price or rate determined by the applicable government authority.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Where proposed equipment and/or services vary to the extent that sealed bids are not practical, detailed proposals may be accepted in lieu of such bids.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District may participate in joint bidding and/or other cooperative purchasing ventures with other library organizations and government agencies if it is deemed in the best interests of Clearview Library District to do so.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(6)"
+            "ul:nth-child(17) > li:nth-child(5)"
           ]
         },
         {
@@ -11224,7 +9717,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Procurement Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Internet Safety and Acceptable Use Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -12429,7 +10922,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Procurement Policy</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Internet Safety and Acceptable Use Policy</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -12449,7 +10942,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Procurement Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Internet Safety and Acceptable Use Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -12469,7 +10962,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Procurement Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Internet Safety and Acceptable Use Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -12489,9 +10982,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\" class=\"has-sidebar\">",
+          "html": "<div class=\"main-wrapper  has-sidebar\">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -12529,9 +11022,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -12589,9 +11082,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"385\" about=\"/about-us/learn-more/policies-faqs/procurement-policy\" id=\"node-385\" class=\"node node--type-policy node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"384\" about=\"/about-us/learn-more/policies-faqs/internet-safety-and-acceptable-use-policy\" id=\"node-384\" class=\"node node--type-policy node--view-mode-full\">",
           "target": [
-            "#node-385"
+            "#node-384"
           ]
         },
         {
@@ -12649,9 +11142,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Purchasing Policy</h2>",
+          "html": "<p>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
           ]
         },
         {
@@ -12689,9 +11182,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Responsibilities</h2>",
+          "html": "<p>",
           "target": [
-            "h2:nth-child(3)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -12729,9 +11222,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Purchase Process</h2>",
+          "html": "<p>5. As with all library resources, patrons are advised to exercise their own critical judgment and discrimination when evaluating sites found on the internet. Certain information may be inaccurate, misleading or offensive to some individuals.</p>",
           "target": [
-            "h2:nth-child(5)"
+            "p:nth-child(5)"
           ]
         },
         {
@@ -12749,7 +11242,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>All purchases and expenditures must comply with the documentation and approval requirements listed in the following chart. Purchases cannot be split in order to avoid the approval process. Bulk items (i.e., 50 chairs) should be applied to the chart below using the total cost.</p>",
+          "html": "<p>6. Unauthorized access, including so-called hacking, and any other unlawful activities by any Library users are strictly prohibited.</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -12769,9 +11262,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 650px;\">",
+          "html": "<p>",
           "target": [
-            "table"
+            "p:nth-child(7)"
           ]
         },
         {
@@ -12789,9 +11282,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Purchase Limits</th>\n\t\t\t<th scope=\"col\">Documentation Required</th>\n\t\t\t<th scope=\"col\">Approval Level</th>\n\t\t</tr>\n\t</thead>",
+          "html": "<p>",
           "target": [
-            "thead"
+            "p:nth-child(8)"
           ]
         },
         {
@@ -12809,9 +11302,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tr>\n\t\t\t<th scope=\"col\">Purchase Limits</th>\n\t\t\t<th scope=\"col\">Documentation Required</th>\n\t\t\t<th scope=\"col\">Approval Level</th>\n\t\t</tr>",
+          "html": "<h2>User Responsibilities</h2>",
           "target": [
-            "thead > tr"
+            "h2:nth-child(9)"
           ]
         },
         {
@@ -12829,9 +11322,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<th scope=\"col\">Purchase Limits</th>",
+          "html": "<p>",
           "target": [
-            "th:nth-child(1)"
+            "p:nth-child(10)"
           ]
         },
         {
@@ -12849,9 +11342,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<th scope=\"col\">Documentation Required</th>",
+          "html": "<ol>",
           "target": [
-            "th:nth-child(2)"
+            "ol"
           ]
         },
         {
@@ -12869,9 +11362,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<th scope=\"col\">Approval Level</th>",
+          "html": "<li>Damaging equipment, software, or data;</li>",
           "target": [
-            "th:nth-child(3)"
+            "ol > li:nth-child(1)"
           ]
         },
         {
@@ -12889,9 +11382,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tbody>",
+          "html": "<li>Violating system security;</li>",
           "target": [
-            "tbody"
+            "ol > li:nth-child(2)"
           ]
         },
         {
@@ -12909,9 +11402,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tr>\n\t\t\t<td>$0.01-$50.00</td>\n\t\t\t<td>Petty cash request, Manager credit card purchase. Quotes not required.</td>\n\t\t\t<td>Manager</td>\n\t\t</tr>",
+          "html": "<li>Violating any legal agreement (e.g., software licenses);</li>",
           "target": [
-            "tbody > tr:nth-child(1)"
+            "ol > li:nth-child(3)"
           ]
         },
         {
@@ -12929,9 +11422,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td>$0.01-$50.00</td>",
+          "html": "<li>Violating any federal, state or local law (e.g., copyright, child pornography);</li>",
           "target": [
-            "tr:nth-child(1) > td:nth-child(1)"
+            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -12949,9 +11442,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td>Petty cash request, Manager credit card purchase. Quotes not required.</td>",
+          "html": "<li>Using personal software on Library equipment, and</li>",
           "target": [
-            "tr:nth-child(1) > td:nth-child(2)"
+            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -12969,9 +11462,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td>Manager</td>",
+          "html": "<li>Engaging in activities that may be judged as disruptive by Library staff or patrons. User responsibilities are not limited to the above and may be subject to change.</li>",
           "target": [
-            "tr:nth-child(1) > td:nth-child(3)"
+            "ol > li:nth-child(6)"
           ]
         },
         {
@@ -12989,9 +11482,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tr>\n\t\t\t<td>$50.01- $1,000.00</td>\n\t\t\t<td>Manager credit card purchase. Quotes not required.</td>\n\t\t\t<td>Manager</td>\n\t\t</tr>",
+          "html": "<h2>Children, Parents, and the Internet</h2>",
           "target": [
-            "tr:nth-child(2)"
+            "h2:nth-child(12)"
           ]
         },
         {
@@ -13009,9 +11502,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td>$50.01- $1,000.00</td>",
+          "html": "<p>",
           "target": [
-            "tr:nth-child(2) > td:nth-child(1)"
+            "p:nth-child(13)"
           ]
         },
         {
@@ -13029,429 +11522,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td>Manager credit card purchase. Quotes not required.</td>",
+          "html": "<p>2. The Library has taken measures designed to assist in the safe and effective use of the internet, including:</p>",
           "target": [
-            "tr:nth-child(2) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Manager</td>",
-          "target": [
-            "tr:nth-child(2) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<tr>\n\t\t\t<td>$1,000.01-$15,000</td>\n\t\t\t<td>Three quotes, if available.</td>\n\t\t\t<td>Manager and Director</td>\n\t\t</tr>",
-          "target": [
-            "tr:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$1,000.01-$15,000</td>",
-          "target": [
-            "tr:nth-child(3) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Three quotes, if available.</td>",
-          "target": [
-            "tr:nth-child(3) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Manager and Director</td>",
-          "target": [
-            "tr:nth-child(3) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<tr>\n\t\t\t<td>$15,000.01- $30,000</td>\n\t\t\t<td>Three quotes.</td>\n\t\t\t<td>Manager and Director</td>\n\t\t</tr>",
-          "target": [
-            "tr:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$15,000.01- $30,000</td>",
-          "target": [
-            "tr:nth-child(4) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Three quotes.</td>",
-          "target": [
-            "tr:nth-child(4) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Manager and Director</td>",
-          "target": [
-            "tr:nth-child(4) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<tr>\n\t\t\t<td>$30,000.01-$100,000</td>\n\t\t\t<td>Published RFP.</td>\n\t\t\t<td>Library Board</td>\n\t\t</tr>",
-          "target": [
-            "tr:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$30,000.01-$100,000</td>",
-          "target": [
-            "tr:nth-child(5) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Published RFP.</td>",
-          "target": [
-            "tr:nth-child(5) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Library Board</td>",
-          "target": [
-            "tr:nth-child(5) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<tr>\n\t\t\t<td>$100,000.01</td>\n\t\t\t<td>Published RFP. Formal Sealed bid.</td>\n\t\t\t<td>Library Board</td>\n\t\t</tr>",
-          "target": [
-            "tr:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>$100,000.01</td>",
-          "target": [
-            "tr:nth-child(6) > td:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Published RFP. Formal Sealed bid.</td>",
-          "target": [
-            "tr:nth-child(6) > td:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td>Library Board</td>",
-          "target": [
-            "tr:nth-child(6) > td:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Quotes not required $1000.01 - $15,000</h3>",
-          "target": [
-            "h3:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul>\n\t<li>Clearview Library District staff can use written, catalog, or telephone quotations.</li>\n</ul>",
-          "target": [
-            "ul:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District staff can use written, catalog, or telephone quotations.</li>",
-          "target": [
-            "ul:nth-child(9) > li"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>Quotes $15,000.01- $30,000</h3>",
-          "target": [
-            "h3:nth-child(10)"
+            "p:nth-child(14)"
           ]
         },
         {
@@ -13471,7 +11544,7 @@
           "impact": null,
           "html": "<ul>",
           "target": [
-            "ul:nth-child(11)"
+            "ul:nth-child(15)"
           ]
         },
         {
@@ -13489,9 +11562,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District staff can invite quotes from persons, firms, or corporations.</li>",
+          "html": "<li>Employing technology protection measures (filters) on all computers offering internet access&nbsp;</li>",
           "target": [
-            "ul:nth-child(11) > li:nth-child(1)"
+            "ul:nth-child(15) > li:nth-child(1)"
           ]
         },
         {
@@ -13509,9 +11582,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Quotes will be in writing on company letterhead.</li>",
+          "html": "<li>Developing and maintaining web sites designed for children and teens;</li>",
           "target": [
-            "ul:nth-child(11) > li:nth-child(2)"
+            "ul:nth-child(15) > li:nth-child(2)"
           ]
         },
         {
@@ -13529,9 +11602,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District will determine the best value by considering timing, quality, quantity, price, vendor performance, and any other relevant criteria. Clearview Library District reserves the right to reject any quotel and to accept the proposal that is in its best interest.&nbsp;</li>",
+          "html": "<li>Providing online and printed information about child safety and information on educational or recreational uses of the internet.</li>",
           "target": [
-            "ul:nth-child(11) > li:nth-child(3)"
+            "ul:nth-child(15) > li:nth-child(3)"
           ]
         },
         {
@@ -13549,9 +11622,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>Requests for Proposals (RFPs) $30,000.01 - $100,000</h3>",
+          "html": "<p>3. To address the issue of the safety and security of minors (individuals who have not attained the age of 17) when using e-mail, chat rooms and other forms of direct electronic communications, the Library recommends the following safety guidelines. Minors should:</p>",
           "target": [
-            "h3:nth-child(12)"
+            "p:nth-child(16)"
           ]
         },
         {
@@ -13571,7 +11644,7 @@
           "impact": null,
           "html": "<ul>",
           "target": [
-            "ul:nth-child(13)"
+            "ul:nth-child(17)"
           ]
         },
         {
@@ -13589,9 +11662,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District staff can invite RFPs from persons, firms, or corporations.</li>",
+          "html": "<li>Always ask their parents' permission before using their full name, address, telephone number, or school name anywhere on the internet;</li>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(1)"
+            "ul:nth-child(17) > li:nth-child(1)"
           ]
         },
         {
@@ -13609,9 +11682,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>An RFP will be published on Clearview Library District’s website, and one time in a newspaper of general circulation within the district’s boundaries for all contracts for services or materials or both of $30,000.01 - $100,000.</li>",
+          "html": "<li>Always tell their parents or another adult they trust if they see something online that is frightening or that they do not understand;</li>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(2)"
+            "ul:nth-child(17) > li:nth-child(2)"
           ]
         },
         {
@@ -13629,9 +11702,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Clearview Library District will determine the best value by considering timing, quality, quantity, price, vendor performance, and any other relevant criteria. Clearview Library District reserves the right to reject any proposal and to accept the proposal that is in its best interest.&nbsp;</li>",
+          "html": "<li>Never respond to messages that make them feel uncomfortable or uneasy;</li>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(3)"
+            "ul:nth-child(17) > li:nth-child(3)"
           ]
         },
         {
@@ -13649,9 +11722,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>Competitive Bidding &nbsp;$100,000.01+</h3>",
+          "html": "<li>Never give out a credit card number or password online without parental approval, and</li>",
           "target": [
-            "h3:nth-child(14)"
+            "ul:nth-child(17) > li:nth-child(4)"
           ]
         },
         {
@@ -13669,9 +11742,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>An open and competitive environment will be maintained to ensure that all qualified buyers and sellers have access to Clearview Library District’s business and that all purchasing actions are conducted fairly and impartially.</p>",
+          "html": "<li>Never arrange to meet in person someone they have met online unless they discuss it with their parents and an adult accompanies them.</li>",
           "target": [
-            "p:nth-child(15)"
+            "ul:nth-child(17) > li:nth-child(5)"
           ]
         },
         {
@@ -13689,9 +11762,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>",
+          "html": "<p><em>Adopted September 29th, 2016. Revised October 28th, 2021.</em><br>\n&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br>\n&nbsp;</p>",
           "target": [
-            "ul:nth-child(16)"
+            "p:nth-child(18)"
           ]
         },
         {
@@ -13709,547 +11782,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Major operational items, including capital items and construction projects expected to cost $100,000.01 or more each, shall be purchased via a competitive bidding process.</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>The library director, or delegated representative, may request bids/RFPs from persons, firms, or corporations.</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>An invitation to bid/RFP shall be published one time in a newspaper of general circulation within the district boundaries for all contracts for services or materials or both of at least $100,000.01</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>All bids shall be sealed and opened in the presence of witnesses.</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>The library director may repeatedly reject all bids and again may submit to the same or other persons, firms, or corporations the request for quotation (or invitation to bid), and/or again publish notice of the proposed purchase.</li>",
-          "target": [
-            "ul:nth-child(16) > li:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(17)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3>When Competitive Bidding is not Required</h3>",
-          "target": [
-            "h3:nth-child(18)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "ul:nth-child(19)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Library materials (e.g., books, periodicals, audiovisual materials, e-materials), printing services, computing and networking, etc., may be sourced by vendor rather than item by item.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>A sole source purchase may be made if it has been determined that only one vendor is capable of meeting all specifications and purchase requirements or that it is in the Clearview Library District’s best interests. Purchase may then be made on the basis of prices established by negotiation.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District is eligible to purchase commodities under existing contracts negotiated by federal, state, local and cooperative systems such as the Colorado Library Consortium (CLIC).</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Services (gas, electricity, telephone, etc.) purchased from a public utility at a price or rate determined by the applicable government authority.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Where proposed equipment and/or services vary to the extent that sealed bids are not practical, detailed proposals may be accepted in lieu of such bids.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Clearview Library District may participate in joint bidding and/or other cooperative purchasing ventures with other library organizations and government agencies if it is deemed in the best interests of Clearview Library District to do so.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Local Vendor Preference</h2>",
-          "target": [
-            "h2:nth-child(20)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(21)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Construction Projects and Professional Services</h2>",
-          "target": [
-            "h2:nth-child(22)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(23)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Emergency Purchases</h2>",
-          "target": [
-            "h2:nth-child(24)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(25)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Code of Ethics</h2>",
-          "target": [
-            "h2:nth-child(26)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(27)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(28)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(29)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>&nbsp;</p>",
-          "target": [
-            "p:nth-child(30)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><em>Adopted May 31, 2018. Revised and adopted September 30, 2021.</em><br>\n&nbsp;</p>",
-          "target": [
-            "p:nth-child(31)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Adopted May 31, 2018. Revised and adopted September 30, 2021.</em>",
+          "html": "<em>Adopted September 29th, 2016. Revised October 28th, 2021.</em>",
           "target": [
             "em"
           ]
@@ -14271,7 +11804,27 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            "p:nth-child(31) > br"
+            "p:nth-child(18) > br:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "p:nth-child(18) > br:nth-child(3)"
           ]
         },
         {
@@ -15351,7 +12904,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            "br:nth-child(3)"
+            ".address:nth-child(3) > br:nth-child(3)"
           ]
         },
         {
@@ -17037,94 +14590,6 @@
       ]
     },
     {
-      "id": "scope-attr-valid",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "best-practice"
-      ],
-      "description": "Ensure the scope attribute is used correctly on tables",
-      "help": "scope attribute should be used correctly",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/scope-attr-valid?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "html5-scope",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Scope attribute is only used on table header elements (<th>)"
-            },
-            {
-              "id": "scope-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Scope attribute is used correctly"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Purchase Limits</th>",
-          "target": [
-            "th:nth-child(1)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "html5-scope",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Scope attribute is only used on table header elements (<th>)"
-            },
-            {
-              "id": "scope-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Scope attribute is used correctly"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Documentation Required</th>",
-          "target": [
-            "th:nth-child(2)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "html5-scope",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Scope attribute is only used on table header elements (<th>)"
-            },
-            {
-              "id": "scope-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Scope attribute is used correctly"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<th scope=\"col\">Approval Level</th>",
-          "target": [
-            "th:nth-child(3)"
-          ]
-        }
-      ]
-    },
-    {
       "id": "skip-link",
       "impact": null,
       "tags": [
@@ -17203,116 +14668,9 @@
           ]
         }
       ]
-    },
-    {
-      "id": "table-duplicate-name",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "best-practice"
-      ],
-      "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
-      "help": "Tables should not have the same summary and caption",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "same-caption-summary",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Content of summary attribute and <caption> are not duplicated"
-            }
-          ],
-          "impact": null,
-          "html": "<table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 650px;\">",
-          "target": [
-            "table"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "td-headers-attr",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "wcag2a",
-        "wcag131",
-        "section508",
-        "section508.22.g",
-        "TTv5",
-        "TT14.b",
-        "EN-301-549",
-        "EN-9.1.3.1"
-      ],
-      "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
-      "help": "Table cells that use the headers attribute must only refer to cells in the same table",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/td-headers-attr?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "td-headers-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "The headers attribute is exclusively used to refer to other cells in the table"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 650px;\">",
-          "target": [
-            "table"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "th-has-data-cells",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "wcag2a",
-        "wcag131",
-        "section508",
-        "section508.22.g",
-        "TTv5",
-        "TT14.b",
-        "EN-301-549",
-        "EN-9.1.3.1"
-      ],
-      "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
-      "help": "Table headers in a data table must refer to data cells",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/th-has-data-cells?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "th-has-data-cells",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "All table header cells refer to data cells"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 650px;\">",
-          "target": [
-            "table"
-          ]
-        }
-      ]
     }
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Procurement Policy | Clearview Library"
+  "documentTitle": "Internet Safety and Acceptable Use Policy | Clearview Library"
 }

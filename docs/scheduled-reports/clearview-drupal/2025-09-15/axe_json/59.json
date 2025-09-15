@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:38:54.825Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/clearview-library-district-announces-summer-adventure-program-color-our",
+  "timestamp": "2025-09-15T17:42:45.659Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/art-library",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,6 +445,35 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "landmark-complementary-is-top-level",
+      "impact": null,
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -1059,7 +1088,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1397,7 +1426,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1505,7 +1534,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
+          "html": "<body class=\"_0829669 path-taxonomy\">",
           "target": [
             "body"
           ]
@@ -1771,7 +1800,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2051,7 +2080,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2602,25 +2631,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         }
       ]
@@ -2675,9 +2686,45 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library District announces summer adventure program: Color Our World</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Art in the Library</h1>",
                   "target": [
                     "h1"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-july-2025\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</a>\n        </h2>",
+                  "target": [
+                    ".node__content > .node-title"
+                  ]
+                },
+                {
+                  "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-winter-edition\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - Winter Edition! </span>\n</a>\n        </h4>",
+                  "target": [
+                    "#node-662 > h4"
+                  ]
+                },
+                {
+                  "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-may-july-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! May - July 2024</span>\n</a>\n        </h4>",
+                  "target": [
+                    "#node-595 > h4"
+                  ]
+                },
+                {
+                  "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-march-may-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</a>\n        </h4>",
+                  "target": [
+                    "#node-570 > h4"
+                  ]
+                },
+                {
+                  "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-in-the-library-January-March-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! January - March 2024</span>\n</a>\n        </h4>",
+                  "target": [
+                    "#node-558 > h4"
+                  ]
+                },
+                {
+                  "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-in-the-library\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library!</span>\n</a>\n        </h4>",
+                  "target": [
+                    "#node-541 > h4"
                   ]
                 },
                 {
@@ -2701,7 +2748,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -2995,7 +3042,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -3118,59 +3165,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Clearview Library District Announces Summer Adventure Program: Color Our World\n              </li>",
+          "html": "<li>\n                  Art In The Library\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<time datetime=\"2025-05-28T15:27:28-06:00\" title=\"Wednesday, May 28, 2025 - 15:27\" class=\"datetime\">May 28, 2025</time>",
-          "target": [
-            "time"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
-          "target": [
-            "a[hreflang=\"en\"][href$=\"news\"]"
           ]
         },
         {
@@ -3193,9 +3190,49 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library District announces summer adventure program: Color Our World</span>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Art in the Library</h1>",
           "target": [
-            ".field--name-title"
+            "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "hidden"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is hidden"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<select data-drupal-selector=\"edit-field-article-category-target-id\" id=\"edit-field-article-category-target-id\" name=\"field_article_category_target_id\" class=\"form-select\">",
+          "target": [
+            "#edit-field-article-category-target-id"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "hidden"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is hidden"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<input data-bef-auto-submit-click=\"\" class=\"js-hide button js-form-submit form-submit\" data-drupal-selector=\"edit-submit-news\" type=\"submit\" id=\"edit-submit-news\" value=\"Apply\">",
+          "target": [
+            "#edit-submit-news"
           ]
         },
         {
@@ -3207,7 +3244,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3218,109 +3255,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the launch of its highly anticipated Summer Adventure Program, themed <em>Color Our World</em>.</p>",
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Color Our World</em>",
-          "target": [
-            "em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(4)"
+            ".node__content > .category > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3331,9 +3268,9 @@
                 "fgColor": "#0072bc",
                 "bgColor": "#ffffff",
                 "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
+                "fontSize": "20.7pt (27.648px)",
                 "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
+                "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
@@ -3343,9 +3280,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearview.libnet.info/event/13598682\">oin the library on Monday, June 2</a>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>",
           "target": [
-            "p:nth-child(4) > a"
+            ".node__content > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
           ]
         },
         {
@@ -3368,34 +3305,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<time datetime=\"2025-07-08T10:26:21-06:00\" title=\"Tuesday, July 8, 2025 - 10:26\" class=\"datetime\">July 8, 2025</time>",
           "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sap\">clearviewlibrary.org/sap</a>",
-          "target": [
-            "p:nth-child(5) > a"
+            "time"
           ]
         },
         {
@@ -3404,23 +3316,23 @@
               "id": "color-contrast",
               "data": {
                 "fgColor": "#181818",
-                "bgColor": "#e1f0fb",
-                "contrastRatio": 15.26,
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 15.26"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+            "div[property=\"schema:text\"]"
           ]
         },
         {
@@ -3428,24 +3340,274 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
+                "fgColor": "#d14600",
+                "bgColor": "#ffffff",
+                "contrastRatio": 4.57,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 4.57"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/art-library-july-2025\">Read More ➔</a>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "a[alt=\"go to the article\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-662 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - Winter Edition! </span>",
+          "target": [
+            "#node-662 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-595 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! May - July 2024</span>",
+          "target": [
+            "#node-595 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-570 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>",
+          "target": [
+            "#node-570 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-558 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! January - March 2024</span>",
+          "target": [
+            "#node-558 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-541 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "14.4pt (19.2px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library!</span>",
+          "target": [
+            "#node-541 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
           ]
         },
         {
@@ -3970,7 +4132,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -3995,7 +4157,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -4020,7 +4182,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         }
       ]
@@ -4170,6 +4332,24 @@
           "any": [
             {
               "id": "duplicate-id-aria",
+              "data": "edit-field-article-category-target-id",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<select data-drupal-selector=\"edit-field-article-category-target-id\" id=\"edit-field-article-category-target-id\" name=\"field_article_category_target_id\" class=\"form-select\">",
+          "target": [
+            "#edit-field-article-category-target-id"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -4300,9 +4480,117 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library District announces summer adventure program: Color Our World</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Art in the Library</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-july-2025\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</a>\n        </h2>",
+          "target": [
+            ".node__content > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-winter-edition\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - Winter Edition! </span>\n</a>\n        </h4>",
+          "target": [
+            "#node-662 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-may-july-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! May - July 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-595 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-march-may-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-570 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-in-the-library-January-March-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! January - March 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-558 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-in-the-library\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library!</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-541 > h4"
           ]
         },
         {
@@ -4413,7 +4701,7 @@
     },
     {
       "id": "heading-order",
-      "impact": null,
+      "impact": "moderate",
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -4448,9 +4736,45 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(1) > div > div > h1"
                     ],
                     "level": 1
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(2) > div > div > div > div > div:nth-child(2) > div > article > div:nth-child(2) > h2:nth-child(2)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div:nth-child(1) > article > h4:nth-child(3)"
+                    ],
+                    "level": 4
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div:nth-child(2) > article > h4:nth-child(3)"
+                    ],
+                    "level": 4
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div:nth-child(3) > article > h4:nth-child(3)"
+                    ],
+                    "level": 4
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div:nth-child(4) > article > h4:nth-child(3)"
+                    ],
+                    "level": 4
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(3) > div > div > div > div > div > div:nth-child(5) > article > h4:nth-child(3)"
+                    ],
+                    "level": 4
                   },
                   {
                     "ancestry": [
@@ -4528,9 +4852,99 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library District announces summer adventure program: Color Our World</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Art in the Library</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-july-2025\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</a>\n        </h2>",
+          "target": [
+            ".node__content > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-may-july-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! May - July 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-595 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-march-may-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-570 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-in-the-library-January-March-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! January - March 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-558 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-in-the-library\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library!</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-541 > h4"
           ]
         },
         {
@@ -4712,9 +5126,139 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-05/SAP-2025-Hero.png?itok=h_7VkIVk\" width=\"1019\" height=\"573\" alt=\"Summer Adventure 2025\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-12/Winter-Art-in-the-Library-Hero.jpg?itok=dcAJpEwH\" width=\"480\" height=\"270\" alt=\"art work in library\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"art work in library\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-06/Susan-MacGregor-Hero.jpg?itok=En1FKhik\" width=\"480\" height=\"270\" alt=\"Paintings by Susan MacGregor\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"Paintings by Susan MacGregor\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=YAx91cpA\" width=\"480\" height=\"270\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item > .image-style-large[width=\"480\"][height=\"270\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-02/Joan-Utley-Hero.JPG?itok=kwDujxkz\" width=\"480\" height=\"270\" alt=\"Joan Utley tulips painting\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"Joan Utley tulips painting\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2023-12/Down-By-the-Riverside-Detail-Janice-Spencer.JPG?itok=Xk0FH500\" width=\"480\" height=\"270\" alt=\"Down By the Riverside Detail Janice Spencer\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item > .image-style-large[width=\"480\"][height=\"270\"]"
           ]
         },
         {
@@ -4865,9 +5409,99 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-05/SAP-2025-Hero.png?itok=h_7VkIVk\" width=\"1019\" height=\"573\" alt=\"Summer Adventure 2025\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-12/Winter-Art-in-the-Library-Hero.jpg?itok=dcAJpEwH\" width=\"480\" height=\"270\" alt=\"art work in library\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"art work in library\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-06/Susan-MacGregor-Hero.jpg?itok=En1FKhik\" width=\"480\" height=\"270\" alt=\"Paintings by Susan MacGregor\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"Paintings by Susan MacGregor\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=YAx91cpA\" width=\"480\" height=\"270\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item > .image-style-large[width=\"480\"][height=\"270\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-02/Joan-Utley-Hero.JPG?itok=kwDujxkz\" width=\"480\" height=\"270\" alt=\"Joan Utley tulips painting\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"Joan Utley tulips painting\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2023-12/Down-By-the-Riverside-Detail-Janice-Spencer.JPG?itok=Xk0FH500\" width=\"480\" height=\"270\" alt=\"Down By the Riverside Detail Janice Spencer\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item > .image-style-large[width=\"480\"][height=\"270\"]"
           ]
         },
         {
@@ -4978,7 +5612,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         }
       ]
@@ -5218,7 +5852,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5272,14 +5906,7 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
-                  "target": [
-                    "#sitewide-footer"
-                  ]
-                }
-              ],
+              "relatedNodes": [],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5287,9 +5914,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
-            ".node__meta"
+            "#sitewide-footer"
           ]
         }
       ]
@@ -5318,7 +5945,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5344,7 +5971,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5495,7 +6122,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5582,102 +6209,6 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearview.libnet.info/event/13598682\">oin the library on Monday, June 2</a>",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sap\">clearviewlibrary.org/sap</a>",
-          "target": [
-            "p:nth-child(5) > a"
           ]
         }
       ]
@@ -6192,33 +6723,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
-          "target": [
-            "a[hreflang=\"en\"][href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/media/438/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-05/SAP-2025-Hero.png?itok=h_7VkIVk\" width=\"1019\" height=\"573\" alt=\"Summer Adventure 2025\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/448/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -6244,9 +6749,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearview.libnet.info/event/13598682\">oin the library on Monday, June 2</a>",
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
           "target": [
-            "p:nth-child(4) > a"
+            ".node__content > .category > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -6270,9 +6775,295 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sap\">clearviewlibrary.org/sap</a>",
+          "html": "<a href=\"/about-us/learn-more/news/art-library-july-2025\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</a>",
           "target": [
-            "p:nth-child(5) > a"
+            ".node__content > .node-title > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/art-library-july-2025\">Read More ➔</a>",
+          "target": [
+            "a[alt=\"go to the article\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-662 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library-winter-edition\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - Winter Edition! </span>\n</a>",
+          "target": [
+            "#node-662 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-595 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library-may-july-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! May - July 2024</span>\n</a>",
+          "target": [
+            "#node-595 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-570 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library-march-may-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</a>",
+          "target": [
+            "#node-570 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-558 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-in-the-library-January-March-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! January - March 2024</span>\n</a>",
+          "target": [
+            "#node-558 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-541 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-in-the-library\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library!</span>\n</a>",
+          "target": [
+            "#node-541 > h4 > a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -6766,7 +7557,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
           ]
         },
         {
@@ -6792,7 +7583,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
           ]
         },
         {
@@ -6818,7 +7609,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
           ]
         },
         {
@@ -7470,7 +8261,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Clearview Library District Announces Summer Adventure Program: Color Our World\n              </li>",
+          "html": "<li>\n                  Art In The Library\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -8024,7 +8815,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -8040,7 +8831,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-05/SAP-2025-Hero.png?itok=h_7VkIVk\" width=\"1019\" height=\"573\" alt=\"Summer Adventure 2025\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -8058,9 +8849,81 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-12/Winter-Art-in-the-Library-Hero.jpg?itok=dcAJpEwH\" width=\"480\" height=\"270\" alt=\"art work in library\" typeof=\"foaf:Image\" class=\"image-style-large\">",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "img[alt=\"art work in library\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-06/Susan-MacGregor-Hero.jpg?itok=En1FKhik\" width=\"480\" height=\"270\" alt=\"Paintings by Susan MacGregor\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"Paintings by Susan MacGregor\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=YAx91cpA\" width=\"480\" height=\"270\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item > .image-style-large[width=\"480\"][height=\"270\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-02/Joan-Utley-Hero.JPG?itok=kwDujxkz\" width=\"480\" height=\"270\" alt=\"Joan Utley tulips painting\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"Joan Utley tulips painting\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2023-12/Down-By-the-Riverside-Detail-Janice-Spencer.JPG?itok=Xk0FH500\" width=\"480\" height=\"270\" alt=\"Down By the Riverside Detail Janice Spencer\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item > .image-style-large[width=\"480\"][height=\"270\"]"
           ]
         },
         {
@@ -8096,7 +8959,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -8174,7 +9037,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library District announces summer adventure program: Color Our World</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Art in the Library</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9041,7 +9904,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".content"
+            ".prf-opac-search > .content"
           ]
         },
         {
@@ -9221,7 +10084,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -9379,9 +10242,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-breadcrumbs\" class=\"block block-system block-system-breadcrumb-block\">",
+          "html": "<div id=\"block-clearview-breadcrumbs-2\" class=\"block block-system block-system-breadcrumb-block\">",
           "target": [
-            "#block-clearview-breadcrumbs"
+            "#block-clearview-breadcrumbs-2"
           ]
         },
         {
@@ -9619,7 +10482,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Clearview Library District Announces Summer Adventure Program: Color Our World\n              </li>",
+          "html": "<li>\n                  Art In The Library\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -9639,9 +10502,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<div class=\"main-wrapper \">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -9679,9 +10542,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -9739,9 +10602,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"708\" about=\"/about-us/learn-more/news/clearview-library-district-announces-summer-adventure-program-color-our\" typeof=\"schema:Article\" id=\"node-708\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<div about=\"/about-us/learn-more/news/art-library\" id=\"taxonomy-term-76\" class=\"taxonomy-term vocabulary-article-category\">",
           "target": [
-            "#node-708"
+            "#taxonomy-term-76"
           ]
         },
         {
@@ -9759,9 +10622,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<div class=\"content\">",
           "target": [
-            ".node__meta"
+            "#taxonomy-term-76 > .content"
           ]
         },
         {
@@ -9779,9 +10642,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__submitted\">",
+          "html": "<div class=\"no-flex layout layout--onecol\">",
           "target": [
-            ".node__submitted"
+            ".no-flex"
           ]
         },
         {
@@ -9799,9 +10662,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2025-05-28T21:27:28+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-05-28T15:27:28-06:00\" title=\"Wednesday, May 28, 2025 - 15:27\" class=\"datetime\">May 28, 2025</time>\n</span>",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            ".field--name-created"
+            ".no-flex > .layout__region.layout__region--content"
           ]
         },
         {
@@ -9819,9 +10682,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2025-05-28T15:27:28-06:00\" title=\"Wednesday, May 28, 2025 - 15:27\" class=\"datetime\">May 28, 2025</time>",
+          "html": "<div class=\"block block-layout-builder block-field-blocktaxonomy-termarticle-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Art in the Library</h1>\n\n  </div>",
           "target": [
-            "time"
+            ".block-layout-builder"
           ]
         },
         {
@@ -9839,67 +10702,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a></div>\n                    </div>",
-          "target": [
-            ".field--name-field-article-category"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a></div>",
-          "target": [
-            ".field--name-field-article-category > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
-          "target": [
-            "a[hreflang=\"en\"][href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library District announces summer adventure program: Color Our World</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Art in the Library</h1>",
           "target": [
             "h1"
           ]
@@ -9919,9 +10722,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Clearview Library District announces summer adventure program: Color Our World</span>",
+          "html": "<div class=\"layout layout--onecol\">",
           "target": [
-            ".field--name-title"
+            ".layout.layout--onecol:nth-child(2)"
           ]
         },
         {
@@ -9939,9 +10742,289 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__main\">",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            ".node__main"
+            ".layout.layout--onecol:nth-child(2) > .layout__region.layout__region--content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"views-element-container block block-views block-views-blocknews-block-3\">",
+          "target": [
+            ".block-views-blocknews-block-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div>",
+          "target": [
+            ".block-views-blocknews-block-3 > div"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view view-news view-id-news view-display-id-block_3 js-view-dom-id-211d42238aaafdf98c7211ee39b2841708816c199aaf4485488535f64902b28e\">",
+          "target": [
+            ".view-display-id-block_3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view-content\">",
+          "target": [
+            ".view-display-id-block_3 > .view-content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"views-row\">",
+          "target": [
+            ".view-display-id-block_3 > .view-content > .views-row"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"714\" about=\"/about-us/learn-more/news/art-library-july-2025\" typeof=\"schema:Article\" id=\"node-714\" class=\"node node--type-article node--promoted node--view-mode-big-feature\">",
+          "target": [
+            "#node-714"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__image\">",
+          "target": [
+            ".node__image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-hidden field__item\">",
+          "target": [
+            ".field--name-field-article-feature-image.field--type-entity-reference.field--label-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-big-feature\">",
+          "target": [
+            ".media--view-mode-big-feature"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "target": [
+            ".media--view-mode-big-feature > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "target": [
+            ".media--view-mode-big-feature > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">",
+          "target": [
+            ".media--view-mode-big-feature > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/media/448/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "target": [
+            "a[href$=\"edit\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-07/Art-in-the-Library-July-2025.jpg?itok=Mz3LFyXt\" width=\"1019\" height=\"573\" alt=\"various paintings hung on the wall\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "target": [
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -9979,9 +11062,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-hidden field__item\">",
+          "html": "<div class=\"category\">\n                <a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>\n            </div>",
           "target": [
-            ".field--name-field-article-feature-image"
+            ".node__content > .category"
           ]
         },
         {
@@ -9999,9 +11082,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article class=\"media media--type-article-feature-image media--view-mode-big-feature\">",
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
           "target": [
-            ".media"
+            ".node__content > .category > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10019,9 +11102,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-july-2025\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</a>\n        </h2>",
           "target": [
-            ".field--name-field-media-image-1"
+            ".node__content > .node-title"
           ]
         },
         {
@@ -10039,9 +11122,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "html": "<a href=\"/about-us/learn-more/news/art-library-july-2025\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>\n</a>",
           "target": [
-            ".field__label"
+            ".node__content > .node-title > a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -10059,9 +11142,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">  <a href=\"/media/438/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-05/SAP-2025-Hero.png?itok=h_7VkIVk\" width=\"1019\" height=\"573\" alt=\"Summer Adventure 2025\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - July 2025</span>",
           "target": [
-            ".field--name-field-media-image-1 > .field__item"
+            ".node__content > .node-title > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
           ]
         },
         {
@@ -10079,9 +11162,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/438/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-05/SAP-2025-Hero.png?itok=h_7VkIVk\" width=\"1019\" height=\"573\" alt=\"Summer Adventure 2025\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<div class=\"date\"><span property=\"schema:dateCreated\" content=\"2025-07-08T16:26:21+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-07-08T10:26:21-06:00\" title=\"Tuesday, July 8, 2025 - 10:26\" class=\"datetime\">July 8, 2025</time>\n</span>\n</div>",
           "target": [
-            "a[href$=\"edit\"]"
+            ".date"
           ]
         },
         {
@@ -10099,9 +11182,49 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-05/SAP-2025-Hero.png?itok=h_7VkIVk\" width=\"1019\" height=\"573\" alt=\"Summer Adventure 2025\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<span property=\"schema:dateCreated\" content=\"2025-07-08T16:26:21+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-07-08T10:26:21-06:00\" title=\"Tuesday, July 8, 2025 - 10:26\" class=\"datetime\">July 8, 2025</time>\n</span>",
           "target": [
-            ".image-style-large-16-9"
+            ".field--name-created"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2025-07-08T10:26:21-06:00\" title=\"Tuesday, July 8, 2025 - 10:26\" class=\"datetime\">July 8, 2025</time>",
+          "target": [
+            "time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__body\">",
+          "target": [
+            ".node__body"
           ]
         },
         {
@@ -10139,9 +11262,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the launch of its highly anticipated Summer Adventure Program, themed <em>Color Our World</em>.</p>",
+          "html": "<div class=\"read-more\">\n            <a alt=\"go to the article\" href=\"/about-us/learn-more/news/art-library-july-2025\">Read More ➔</a>\n        </div>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
+            ".read-more"
           ]
         },
         {
@@ -10159,9 +11282,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Color Our World</em>",
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/art-library-july-2025\">Read More ➔</a>",
           "target": [
-            "em"
+            "a[alt=\"go to the article\"]"
           ]
         },
         {
@@ -10179,9 +11302,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<div class=\"layout layout--onecol\">",
           "target": [
-            "p:nth-child(2)"
+            ".layout.layout--onecol:nth-child(3)"
           ]
         },
         {
@@ -10199,9 +11322,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            "p:nth-child(3)"
+            ".layout.layout--onecol:nth-child(3) > .layout__region.layout__region--content"
           ]
         },
         {
@@ -10219,9 +11342,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<div class=\"views-element-container block block-views block-views-blocknews-block-2\">",
           "target": [
-            "p:nth-child(4)"
+            ".block-views-blocknews-block-2"
           ]
         },
         {
@@ -10239,9 +11362,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearview.libnet.info/event/13598682\">oin the library on Monday, June 2</a>",
+          "html": "<div>",
           "target": [
-            "p:nth-child(4) > a"
+            ".block-views-blocknews-block-2 > div"
           ]
         },
         {
@@ -10259,9 +11382,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<div class=\"view view-news view-id-news view-display-id-block_2 js-view-dom-id-43a63bf95826fa6a1fb7a226e691e774f53411c46e332721f4bbdd9e5cd543bd\">",
           "target": [
-            "p:nth-child(5)"
+            ".view-display-id-block_2"
           ]
         },
         {
@@ -10279,9 +11402,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sap\">clearviewlibrary.org/sap</a>",
+          "html": "<div class=\"view-content\">",
           "target": [
-            "p:nth-child(5) > a"
+            ".view-display-id-block_2 > .view-content"
           ]
         },
         {
@@ -10299,9 +11422,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<aside class=\"sidebar\">",
+          "html": "<div class=\"grid-item grid-item--4 views-row\">",
           "target": [
-            "aside"
+            ".grid-item.grid-item--4.views-row:nth-child(1)"
           ]
         },
         {
@@ -10319,9 +11442,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"sidebar-newsletter-signup\">",
+          "html": "<article data-history-node-id=\"662\" about=\"/about-us/learn-more/news/art-library-winter-edition\" typeof=\"schema:Article\" id=\"node-662\" class=\"node node--type-article node--promoted node--view-mode-content-card\">",
           "target": [
-            "#sidebar-newsletter-signup"
+            "#node-662"
           ]
         },
         {
@@ -10339,9 +11462,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "html": "<div class=\"category\">\n                <a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>\n            </div>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
+            "#node-662 > .category"
           ]
         },
         {
@@ -10359,9 +11482,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+            "#node-662 > .category > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10379,9 +11502,1409 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-visually_hidden\">",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "#node-662 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Article Feature Image</div>",
+          "target": [
+            "#node-662 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">",
+          "target": [
+            "#node-662 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-teaser\">",
+          "target": [
+            "#node-662 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "target": [
+            "#node-662 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "target": [
+            "#node-662 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-12/Winter-Art-in-the-Library-Hero.jpg?itok=dcAJpEwH\" width=\"480\" height=\"270\" alt=\"art work in library\" typeof=\"foaf:Image\" class=\"image-style-large\">\n\n\n</div>",
+          "target": [
+            "#node-662 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-12/Winter-Art-in-the-Library-Hero.jpg?itok=dcAJpEwH\" width=\"480\" height=\"270\" alt=\"art work in library\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"art work in library\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-winter-edition\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - Winter Edition! </span>\n</a>\n        </h4>",
+          "target": [
+            "#node-662 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library-winter-edition\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - Winter Edition! </span>\n</a>",
+          "target": [
+            "#node-662 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - Winter Edition! </span>",
+          "target": [
+            "#node-662 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"grid-item grid-item--4 views-row\">",
+          "target": [
+            ".grid-item.grid-item--4.views-row:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"595\" about=\"/about-us/learn-more/news/art-library-may-july-2024\" typeof=\"schema:Article\" id=\"node-595\" class=\"node node--type-article node--promoted node--view-mode-content-card\">",
+          "target": [
+            "#node-595"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"category\">\n                <a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>\n            </div>",
+          "target": [
+            "#node-595 > .category"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-595 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-visually_hidden\">",
+          "target": [
+            "#node-595 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Article Feature Image</div>",
+          "target": [
+            "#node-595 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">",
+          "target": [
+            "#node-595 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-teaser\">",
+          "target": [
+            "#node-595 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "target": [
+            "#node-595 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "target": [
+            "#node-595 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-06/Susan-MacGregor-Hero.jpg?itok=En1FKhik\" width=\"480\" height=\"270\" alt=\"Paintings by Susan MacGregor\" typeof=\"foaf:Image\" class=\"image-style-large\">\n\n\n</div>",
+          "target": [
+            "#node-595 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-06/Susan-MacGregor-Hero.jpg?itok=En1FKhik\" width=\"480\" height=\"270\" alt=\"Paintings by Susan MacGregor\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"Paintings by Susan MacGregor\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-may-july-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! May - July 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-595 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library-may-july-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! May - July 2024</span>\n</a>",
+          "target": [
+            "#node-595 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! May - July 2024</span>",
+          "target": [
+            "#node-595 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"grid-item grid-item--4 views-row\">",
+          "target": [
+            ".grid-item.grid-item--4.views-row:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"570\" about=\"/about-us/learn-more/news/art-library-march-may-2024\" typeof=\"schema:Article\" id=\"node-570\" class=\"node node--type-article node--promoted node--view-mode-content-card\">",
+          "target": [
+            "#node-570"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"category\">\n                <a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>\n            </div>",
+          "target": [
+            "#node-570 > .category"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-570 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-visually_hidden\">",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Article Feature Image</div>",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-teaser\">",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=YAx91cpA\" width=\"480\" height=\"270\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large\">\n\n\n</div>",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=YAx91cpA\" width=\"480\" height=\"270\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "#node-570 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item > .image-style-large[width=\"480\"][height=\"270\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-march-may-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-570 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library-march-may-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</a>",
+          "target": [
+            "#node-570 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>",
+          "target": [
+            "#node-570 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"grid-item grid-item--4 views-row\">",
+          "target": [
+            ".grid-item.grid-item--4.views-row:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"558\" about=\"/about-us/learn-more/news/art-in-the-library-January-March-2024\" typeof=\"schema:Article\" id=\"node-558\" class=\"node node--type-article node--promoted node--view-mode-content-card\">",
+          "target": [
+            "#node-558"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"category\">\n                <a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>\n            </div>",
+          "target": [
+            "#node-558 > .category"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-558 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-visually_hidden\">",
+          "target": [
+            "#node-558 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Article Feature Image</div>",
+          "target": [
+            "#node-558 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">",
+          "target": [
+            "#node-558 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-teaser\">",
+          "target": [
+            "#node-558 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "target": [
+            "#node-558 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "target": [
+            "#node-558 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-02/Joan-Utley-Hero.JPG?itok=kwDujxkz\" width=\"480\" height=\"270\" alt=\"Joan Utley tulips painting\" typeof=\"foaf:Image\" class=\"image-style-large\">\n\n\n</div>",
+          "target": [
+            "#node-558 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2024-02/Joan-Utley-Hero.JPG?itok=kwDujxkz\" width=\"480\" height=\"270\" alt=\"Joan Utley tulips painting\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "img[alt=\"Joan Utley tulips painting\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-in-the-library-January-March-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! January - March 2024</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-558 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-in-the-library-January-March-2024\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! January - March 2024</span>\n</a>",
+          "target": [
+            "#node-558 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! January - March 2024</span>",
+          "target": [
+            "#node-558 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"grid-item grid-item--4 views-row\">",
+          "target": [
+            ".grid-item.grid-item--4.views-row:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"541\" about=\"/about-us/learn-more/news/art-in-the-library\" typeof=\"schema:Article\" id=\"node-541\" class=\"node node--type-article node--promoted node--view-mode-content-card\">",
+          "target": [
+            "#node-541"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"category\">\n                <a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>\n            </div>",
+          "target": [
+            "#node-541 > .category"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
+          "target": [
+            "#node-541 > .category > a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-visually_hidden\">",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Article Feature Image</div>",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-teaser\">",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__label.visually-hidden"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2023-12/Down-By-the-Riverside-Detail-Janice-Spencer.JPG?itok=Xk0FH500\" width=\"480\" height=\"270\" alt=\"Down By the Riverside Detail Janice Spencer\" typeof=\"foaf:Image\" class=\"image-style-large\">\n\n\n</div>",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large/public/2023-12/Down-By-the-Riverside-Detail-Janice-Spencer.JPG?itok=Xk0FH500\" width=\"480\" height=\"270\" alt=\"Down By the Riverside Detail Janice Spencer\" typeof=\"foaf:Image\" class=\"image-style-large\">",
+          "target": [
+            "#node-541 > .field--name-field-article-feature-image.field--type-entity-reference.field--label-visually_hidden > .field__item > .media--view-mode-teaser.media.media--type-article-feature-image > .field--name-field-media-image-1.field--type-image.field--label-visually_hidden > .field__item > .image-style-large[width=\"480\"][height=\"270\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-in-the-library\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library!</span>\n</a>\n        </h4>",
+          "target": [
+            "#node-541 > h4"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/art-in-the-library\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library!</span>\n</a>",
+          "target": [
+            "#node-541 > h4 > a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library!</span>",
+          "target": [
+            "#node-541 > h4 > a[rel=\"bookmark\"] > .field--name-title.field--type-string[property=\"schema:name\"]"
           ]
         },
         {
@@ -10481,7 +13004,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-footerbranding-2 > .clearfix.text-formatted.field--name-body"
+            "#block-footerbranding-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -10501,7 +13024,7 @@
           "impact": null,
           "html": "<div class=\"site-logo\">\n    <img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">\n</div>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > .site-logo"
+            ".text-formatted.field--name-body.field--type-text-with-summary > .site-logo"
           ]
         },
         {
@@ -11561,7 +14084,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -11581,7 +14104,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -11601,7 +14124,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -11681,7 +14204,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>© Clearview Library District, 2021</p></div>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -11701,7 +14224,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -11741,7 +14264,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -11761,7 +14284,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
           ]
         },
         {
@@ -11801,7 +14324,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
           ]
         },
         {
@@ -11841,7 +14364,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
           ]
         },
         {
@@ -12407,173 +14930,40 @@
       ]
     }
   ],
-  "incomplete": [
-    {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/\">Home</a>",
-          "target": [
-            "li:nth-child(1) > a[href=\"/\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        }
-      ]
-    }
-  ],
+  "incomplete": [],
   "violations": [
     {
-      "id": "landmark-complementary-is-top-level",
+      "id": "heading-order",
       "impact": "moderate",
       "tags": [
         "cat.semantics",
         "best-practice"
       ],
-      "description": "Ensure the complementary landmark or aside is at top level",
-      "help": "Aside should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
       "nodes": [
         {
           "any": [
             {
-              "id": "landmark-is-top-level",
-              "data": {
-                "role": null
-              },
+              "id": "heading-order",
+              "data": null,
               "relatedNodes": [],
               "impact": "moderate",
-              "message": "The null landmark is contained in another landmark."
+              "message": "Heading order invalid"
             }
           ],
           "all": [],
           "none": [],
           "impact": "moderate",
-          "html": "<aside class=\"sidebar\">",
+          "html": "<h4 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/art-library-winter-edition\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library - Winter Edition! </span>\n</a>\n        </h4>",
           "target": [
-            "aside"
+            "#node-662 > h4"
           ],
-          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
         }
       ]
     }
   ],
-  "documentTitle": "Clearview Library District announces summer adventure program: Color Our World | Clearview Library"
+  "documentTitle": "Art in the Library | Clearview Library"
 }

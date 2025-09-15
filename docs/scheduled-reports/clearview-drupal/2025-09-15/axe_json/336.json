@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T13:56:03.509Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-half-baked-harvest-every-day",
+  "timestamp": "2025-09-15T17:47:46.165Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-cindy-mullanix",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,22 +264,6 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -1059,7 +1043,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1397,7 +1381,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -1771,7 +1755,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2051,7 +2035,7 @@
             }
           ],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -2569,6 +2553,55 @@
       ]
     },
     {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
+          "target": [
+            "font"
+          ]
+        }
+      ]
+    },
+    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2675,7 +2708,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2701,7 +2734,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -2760,7 +2793,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -2785,7 +2818,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -2810,7 +2843,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -2835,7 +2868,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -2860,7 +2893,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -2885,7 +2918,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -2910,7 +2943,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -2935,7 +2968,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -3118,7 +3151,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Half Baked Harvest: Every Day\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -3143,7 +3176,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2022-09-26T10:36:42-06:00\" title=\"Monday, September 26, 2022 - 10:36\" class=\"datetime\">September 26, 2022</time>",
+          "html": "<time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>",
           "target": [
             "time"
           ]
@@ -3168,9 +3201,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[href$=\"cookbook-nook\"]"
+            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3193,7 +3226,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3218,59 +3251,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">Half Baked Harvest: Every Day</a>",
-          "target": [
-            "em > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
-          "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1) > a"
           ]
         },
         {
@@ -3293,7 +3276,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>What We’re Trying:</strong> Spicy Pretzel Chicken Fingers with Hot Honey. Crunchy, salty, sweet and spicy! Baked, not fried! Yes, please!&nbsp;This recipe spoke to us loud and clear! Hot honey is trending, and I'd like to try it. In addition, it's easy to prepare and serve.&nbsp;</p>",
+          "html": "<p><strong>Hometown:</strong> Dallas, Texas.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3318,7 +3301,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>What We’re Trying:</strong>",
+          "html": "<strong>Hometown:</strong>",
           "target": [
             "p:nth-child(2) > strong"
           ]
@@ -3332,7 +3315,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3343,9 +3326,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>You probably have most of the ingredients in your pantry.&nbsp;</li>",
+          "html": "<strong>Interests:</strong>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+            "p:nth-child(3) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#222222",
+                "bgColor": "#ffffff",
+                "contrastRatio": 15.9,
+                "fontSize": "9.6pt (12.8px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 15.9"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
+          "target": [
+            "font"
           ]
         },
         {
@@ -3368,9 +3376,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>",
+          "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -3382,7 +3390,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3393,9 +3401,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>",
+          "html": "<strong>Favorite Book: </strong>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -3403,8 +3411,8 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
                 "contrastRatio": 5.08,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
@@ -3418,9 +3426,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">View in the Catalog</a>",
+          "html": "<em>All I Really Need to Know I Learned in Kindergarten</em>",
           "target": [
-            ".button"
+            "a > em"
           ]
         },
         {
@@ -3443,7 +3451,32 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<em>The Girl From the Sea of Cortez</em>",
+          "target": [
+            "p:nth-child(4) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Preferred Superpower:</strong> Being able to communicate in any language.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -3453,24 +3486,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
+          "html": "<strong>Preferred Superpower:</strong>",
           "target": [
-            "p:nth-child(5) > a:nth-child(1)"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -3478,24 +3511,249 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Half Baked Harvest: Every Day</em>",
+          "html": "<p><strong>Favorite Author:</strong> I absolutely can't pick just one. Robert Fulghum. Kristin Hannah. Anna Quindlen.</p>",
           "target": [
-            "a:nth-child(2) > em"
+            "p:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Author:</strong>",
+          "target": [
+            "p:nth-child(6) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Vacation Spot: </strong>Northern California.</p>",
+          "target": [
+            "p:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Vacation Spot: </strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Eleanor Roosevelt, Van Jones, Chris McCloskey (my late brother).</p>",
+          "target": [
+            "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
+          "target": [
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Quote:</strong> \"Live a balanced life - learn some and drink some and draw some and paint some and sing and dance and play and work everyday some.\" Robert Fulghum</p>",
+          "target": [
+            "p:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Quote:</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist.</p>",
+          "target": [
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Job at the Library:</strong>",
+          "target": [
+            "p:nth-child(10) > strong"
           ]
         },
         {
@@ -3695,7 +3953,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -3720,7 +3978,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -3745,7 +4003,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -3770,7 +4028,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -3795,7 +4053,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -3820,7 +4078,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -3870,7 +4128,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -3895,7 +4153,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -3920,7 +4178,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -3970,7 +4228,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -3995,7 +4253,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -4020,7 +4278,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -4045,7 +4303,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -4400,7 +4658,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4548,7 +4806,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > h1:nth-child(2)"
                     ],
                     "level": 1
                   },
@@ -4628,7 +4886,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4812,35 +5070,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Half Baked Harvest Every Day cookbook by Tieghan Gerard\" data-entity-type=\"file\" data-entity-uuid=\"d22dcd52-b795-4d0a-bdb1-ed697b62a3c9\" height=\"300\" src=\"https://live-clearview-library.pantheonsite.io/sites/default/files/2022-09/Half-Baked-Harvest.png\" width=\"245\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            ".align-left"
           ]
         },
         {
@@ -4991,27 +5223,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Half Baked Harvest Every Day cookbook by Tieghan Gerard\" data-entity-type=\"file\" data-entity-uuid=\"d22dcd52-b795-4d0a-bdb1-ed697b62a3c9\" height=\"300\" src=\"https://live-clearview-library.pantheonsite.io/sites/default/files/2022-09/Half-Baked-Harvest.png\" width=\"245\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            ".align-left"
           ]
         },
         {
@@ -5362,7 +5576,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5462,7 +5676,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5488,7 +5702,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<main role=\"main\">",
+                  "html": "<main role=\"main\" class=\"layout-content\">",
                   "target": [
                     "main"
                   ]
@@ -5639,7 +5853,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
           ]
@@ -5732,7 +5946,7 @@
     },
     {
       "id": "link-in-text-block",
-      "impact": "serious",
+      "impact": null,
       "tags": [
         "cat.color",
         "wcag2a",
@@ -5753,36 +5967,22 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>",
+                  "html": "<ol>",
                   "target": [
-                    "div[property=\"schema:text\"] > p:nth-child(1)"
+                    "ol"
                   ]
                 }
               ],
               "impact": "serious",
               "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "div[property=\"schema:text\"] > p:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">Half Baked Harvest: Every Day</a>",
+          "html": "<a href=\"/\">Home</a>",
           "target": [
-            "em > a:nth-child(2)"
+            "li:nth-child(1) > a[href=\"/\"]"
           ]
         },
         {
@@ -5792,36 +5992,22 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>",
+                  "html": "<ol>",
                   "target": [
-                    "div[property=\"schema:text\"] > p:nth-child(1)"
+                    "ol"
                   ]
                 }
               ],
               "impact": "serious",
               "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "div[property=\"schema:text\"] > p:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1) > a"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -5831,36 +6017,47 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>",
+                  "html": "<ol>",
                   "target": [
-                    "p:nth-child(5)"
+                    "ol"
                   ]
                 }
               ],
               "impact": "serious",
               "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "p:nth-child(5) > a:nth-child(1)"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
           ]
         },
         {
@@ -5870,9 +6067,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>",
+                  "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
                   "target": [
-                    "p:nth-child(5)"
+                    "p:nth-child(4)"
                   ]
                 }
               ],
@@ -5883,9 +6080,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\"><em>Half Baked Harvest: Every Day</em></a>",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
           "target": [
-            "p:nth-child(5) > a:nth-child(2)"
+            "p:nth-child(4) > a"
           ]
         }
       ]
@@ -5960,7 +6157,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -5986,7 +6183,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -6012,7 +6209,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -6038,7 +6235,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -6090,7 +6287,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -6116,7 +6313,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -6142,7 +6339,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -6168,7 +6365,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -6194,7 +6391,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -6400,9 +6597,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[href$=\"cookbook-nook\"]"
+            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -6426,7 +6623,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/196/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -6452,139 +6649,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
           "target": [
-            "em > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">Half Baked Harvest: Every Day</a>",
-          "target": [
-            "em > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
-          "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">View in the Catalog</a>",
-          "target": [
-            ".button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
-          "target": [
-            "p:nth-child(5) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\"><em>Half Baked Harvest: Every Day</em></a>",
-          "target": [
-            "p:nth-child(5) > a:nth-child(2)"
+            "p:nth-child(4) > a"
           ]
         },
         {
@@ -6688,7 +6755,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -6714,7 +6781,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -6740,7 +6807,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -6766,7 +6833,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -6792,7 +6859,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -6818,7 +6885,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -6870,7 +6937,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -6896,7 +6963,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -6922,7 +6989,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -6974,7 +7041,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -7000,7 +7067,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -7026,7 +7093,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -7052,7 +7119,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -7156,7 +7223,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7182,7 +7249,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -7208,7 +7275,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -7234,7 +7301,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -7260,7 +7327,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -7286,7 +7353,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -7312,7 +7379,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -7338,7 +7405,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -7372,7 +7439,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > .menu"
+            "#block-utilitiesmenu > ul"
           ]
         },
         {
@@ -7390,7 +7457,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > .menu"
+            "#block-clearview-main-menu > ul"
           ]
         },
         {
@@ -7424,9 +7491,9 @@
             }
           ],
           "impact": null,
-          "html": "<ul>\n\t<li>You probably have most of the ingredients in your pantry.&nbsp;</li>\n\t<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>\n\t<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>\n</ul>",
+          "html": "<ul class=\"menu\">",
           "target": [
-            "div[property=\"schema:text\"] > ul"
+            "#block-mainnavigation > ul"
           ]
         },
         {
@@ -7444,7 +7511,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > .menu"
+            "#menu-item-c92f701b > ul"
           ]
         },
         {
@@ -7462,7 +7529,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > .menu"
+            "#menu-item-cb25c7c1 > ul"
           ]
         },
         {
@@ -7480,7 +7547,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > .menu"
+            "#menu-item-0267a4c3 > ul"
           ]
         },
         {
@@ -7498,7 +7565,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > .menu"
+            "#block-utilitiesmenu-2 > ul"
           ]
         },
         {
@@ -7516,25 +7583,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > .menu"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul class=\"menu\">",
-          "target": [
-            "#block-mainnavigation-6 > .menu"
+            "#block-mainnavigation-6 > ul"
           ]
         }
       ]
@@ -7568,7 +7617,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7586,7 +7635,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7604,7 +7653,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -7622,7 +7671,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -7640,7 +7689,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -7658,7 +7707,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -7676,7 +7725,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -7694,7 +7743,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -7712,7 +7761,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -7800,63 +7849,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Half Baked Harvest: Every Day\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>You probably have most of the ingredients in your pantry.&nbsp;</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
           ]
         },
         {
@@ -7892,7 +7887,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7910,7 +7905,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7928,7 +7923,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -7946,7 +7941,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -7964,7 +7959,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -7982,7 +7977,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6)"
           ]
         },
         {
@@ -8018,7 +8013,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8036,7 +8031,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8054,7 +8049,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8090,7 +8085,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8108,7 +8103,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8126,7 +8121,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8144,7 +8139,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8162,7 +8157,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8180,7 +8175,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8198,7 +8193,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8216,7 +8211,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8234,7 +8229,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -8252,7 +8247,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -8270,7 +8265,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -8288,7 +8283,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         }
       ]
@@ -8424,27 +8419,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Half Baked Harvest Every Day cookbook by Tieghan Gerard\" data-entity-type=\"file\" data-entity-uuid=\"d22dcd52-b795-4d0a-bdb1-ed697b62a3c9\" height=\"300\" src=\"https://live-clearview-library.pantheonsite.io/sites/default/files/2022-09/Half-Baked-Harvest.png\" width=\"245\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            ".align-left"
           ]
         },
         {
@@ -8576,7 +8553,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8783,7 +8760,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > .menu"
+            "#block-utilitiesmenu > ul"
           ]
         },
         {
@@ -8803,7 +8780,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8823,7 +8800,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -8843,7 +8820,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8863,7 +8840,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -8883,7 +8860,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8903,7 +8880,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -8923,7 +8900,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8943,7 +8920,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -9103,7 +9080,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > .menu"
+            "#block-clearview-main-menu > ul"
           ]
         },
         {
@@ -9123,7 +9100,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -9143,7 +9120,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -9163,7 +9140,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -9183,7 +9160,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -9203,7 +9180,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -9223,7 +9200,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -9243,7 +9220,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -9263,7 +9240,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -9283,7 +9260,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -9303,7 +9280,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -10021,7 +9998,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Half Baked Harvest: Every Day\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -10041,9 +10018,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<main role=\"main\">",
+          "html": "<div class=\"main-wrapper \">",
           "target": [
-            "main"
+            ".main-wrapper"
           ]
         },
         {
@@ -10081,9 +10058,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout-content\">",
+          "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
-            ".layout-content"
+            "main"
           ]
         },
         {
@@ -10141,9 +10118,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"407\" about=\"/about-us/learn-more/news/cookbook-nook-half-baked-harvest-every-day\" typeof=\"schema:Article\" id=\"node-407\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"470\" about=\"/about-us/learn-more/news/staff-spotlight-cindy-mullanix\" typeof=\"schema:Article\" id=\"node-470\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#node-407"
+            "#node-470"
           ]
         },
         {
@@ -10201,7 +10178,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2022-09-26T16:36:42+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2022-09-26T10:36:42-06:00\" title=\"Monday, September 26, 2022 - 10:36\" class=\"datetime\">September 26, 2022</time>\n</span>",
+          "html": "<span property=\"schema:dateCreated\" content=\"2023-06-01T17:03:08+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>\n</span>",
           "target": [
             ".field--name-created"
           ]
@@ -10221,7 +10198,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2022-09-26T10:36:42-06:00\" title=\"Monday, September 26, 2022 - 10:36\" class=\"datetime\">September 26, 2022</time>",
+          "html": "<time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>",
           "target": [
             "time"
           ]
@@ -10241,7 +10218,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>\n                    </div>",
+          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a></div>\n                    </div>",
           "target": [
             ".field--name-field-article-category"
           ]
@@ -10261,7 +10238,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>",
+          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a></div>",
           "target": [
             ".field--name-field-article-category > .field__item"
           ]
@@ -10281,9 +10258,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[href$=\"cookbook-nook\"]"
+            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10301,7 +10278,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10321,7 +10298,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10461,7 +10438,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">  <a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
+          "html": "<div class=\"field__item\">",
           "target": [
             ".field--name-field-media-image-1 > .field__item"
           ]
@@ -10481,7 +10458,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/media/196/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
           "target": [
             "a[href$=\"edit\"]"
           ]
@@ -10501,7 +10478,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -10541,7 +10518,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -10561,107 +10538,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>",
-          "target": [
-            "p:nth-child(1) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
-          "target": [
-            "em > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Half Baked Harvest Every Day cookbook by Tieghan Gerard\" data-entity-type=\"file\" data-entity-uuid=\"d22dcd52-b795-4d0a-bdb1-ed697b62a3c9\" height=\"300\" src=\"https://live-clearview-library.pantheonsite.io/sites/default/files/2022-09/Half-Baked-Harvest.png\" width=\"245\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">Half Baked Harvest: Every Day</a>",
-          "target": [
-            "em > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
-          "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>What We’re Trying:</strong> Spicy Pretzel Chicken Fingers with Hot Honey. Crunchy, salty, sweet and spicy! Baked, not fried! Yes, please!&nbsp;This recipe spoke to us loud and clear! Hot honey is trending, and I'd like to try it. In addition, it's easy to prepare and serve.&nbsp;</p>",
+          "html": "<p><strong>Hometown:</strong> Dallas, Texas.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10681,7 +10558,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>What We’re Trying:</strong>",
+          "html": "<strong>Hometown:</strong>",
           "target": [
             "p:nth-child(2) > strong"
           ]
@@ -10701,9 +10578,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>\n\t<li>You probably have most of the ingredients in your pantry.&nbsp;</li>\n\t<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>\n\t<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>\n</ul>",
+          "html": "<p>",
           "target": [
-            "div[property=\"schema:text\"] > ul"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -10721,9 +10598,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>You probably have most of the ingredients in your pantry.&nbsp;</li>",
+          "html": "<strong>Interests:</strong>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -10741,9 +10618,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>",
+          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+            "font"
           ]
         },
         {
@@ -10761,27 +10638,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">View in the Catalog</a></p>",
+          "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -10801,9 +10658,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">View in the Catalog</a>",
+          "html": "<strong>Favorite Book: </strong>",
           "target": [
-            ".button"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -10821,7 +10678,67 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
+          "target": [
+            "p:nth-child(4) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>All I Really Need to Know I Learned in Kindergarten</em>",
+          "target": [
+            "a > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The Girl From the Sea of Cortez</em>",
+          "target": [
+            "p:nth-child(4) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Preferred Superpower:</strong> Being able to communicate in any language.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -10841,9 +10758,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
+          "html": "<strong>Preferred Superpower:</strong>",
           "target": [
-            "p:nth-child(5) > a:nth-child(1)"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -10861,9 +10778,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\"><em>Half Baked Harvest: Every Day</em></a>",
+          "html": "<p><strong>Favorite Author:</strong> I absolutely can't pick just one. Robert Fulghum. Kristin Hannah. Anna Quindlen.</p>",
           "target": [
-            "p:nth-child(5) > a:nth-child(2)"
+            "p:nth-child(6)"
           ]
         },
         {
@@ -10881,9 +10798,169 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Half Baked Harvest: Every Day</em>",
+          "html": "<strong>Favorite Author:</strong>",
           "target": [
-            "a:nth-child(2) > em"
+            "p:nth-child(6) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Vacation Spot: </strong>Northern California.</p>",
+          "target": [
+            "p:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Vacation Spot: </strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Eleanor Roosevelt, Van Jones, Chris McCloskey (my late brother).</p>",
+          "target": [
+            "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
+          "target": [
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Quote:</strong> \"Live a balanced life - learn some and drink some and draw some and paint some and sing and dance and play and work everyday some.\" Robert Fulghum</p>",
+          "target": [
+            "p:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Quote:</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist.</p>",
+          "target": [
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Job at the Library:</strong>",
+          "target": [
+            "p:nth-child(10) > strong"
           ]
         },
         {
@@ -11423,7 +11500,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > .menu"
+            "#block-mainnavigation > ul"
           ]
         },
         {
@@ -11483,7 +11560,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > .menu"
+            "#menu-item-c92f701b > ul"
           ]
         },
         {
@@ -11503,7 +11580,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -11523,7 +11600,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -11543,7 +11620,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -11563,7 +11640,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -11583,7 +11660,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -11603,7 +11680,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -11623,7 +11700,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -11643,7 +11720,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -11663,7 +11740,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -11683,7 +11760,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -11703,7 +11780,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6)"
           ]
         },
         {
@@ -11723,7 +11800,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -11783,7 +11860,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > .menu"
+            "#menu-item-cb25c7c1 > ul"
           ]
         },
         {
@@ -11803,7 +11880,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -11823,7 +11900,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -11843,7 +11920,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -11863,7 +11940,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -11883,7 +11960,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -11903,7 +11980,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -11963,7 +12040,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > .menu"
+            "#menu-item-0267a4c3 > ul"
           ]
         },
         {
@@ -11983,7 +12060,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -12003,7 +12080,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -12023,7 +12100,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12043,7 +12120,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -12063,7 +12140,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -12083,7 +12160,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -12103,7 +12180,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -12123,7 +12200,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -12563,7 +12640,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > .menu"
+            "#block-utilitiesmenu-2 > ul"
           ]
         },
         {
@@ -12583,7 +12660,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -12603,7 +12680,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -12623,7 +12700,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12643,7 +12720,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -12663,7 +12740,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -12683,7 +12760,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -12703,7 +12780,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -12723,7 +12800,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -12763,7 +12840,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation-6 > .menu"
+            "#block-mainnavigation-6 > ul"
           ]
         },
         {
@@ -12783,7 +12860,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -12803,7 +12880,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -12823,7 +12900,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -12843,7 +12920,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -12863,7 +12940,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -12883,7 +12960,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -12903,7 +12980,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -12923,7 +13000,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -13009,138 +13086,7 @@
       ]
     }
   ],
-  "incomplete": [
-    {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/\">Home</a>",
-          "target": [
-            "li:nth-child(1) > a[href=\"/\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        }
-      ]
-    }
-  ],
+  "incomplete": [],
   "violations": [
     {
       "id": "landmark-complementary-is-top-level",
@@ -13177,5 +13123,5 @@
       ]
     }
   ],
-  "documentTitle": "Cookbook Nook: Half Baked Harvest: Every Day | Clearview Library"
+  "documentTitle": "Staff Spotlight: Cindy Mullanix | Clearview Library"
 }
