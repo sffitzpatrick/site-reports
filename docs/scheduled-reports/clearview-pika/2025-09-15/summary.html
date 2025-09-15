@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Summary</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #f4f4f4; }
+    canvas { max-width: 800px; margin: 2rem auto; display: block; }
+    a { color: #0366d6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Accessibility Audit Summary</h1>
+  <h2>Site url: https://pika.clearviewlibrary.org/</h2>
+  <canvas id="summaryChart"></canvas>
+  <table id="summary-table">
+    <thead>
+      <tr>
+        <th>Page</th><th>Title</th><th>URL</th><th>Report</th><th>Total</th><th>Critical</th><th>Serious</th><th>Moderate</th><th>Minor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>1</td>
+          <td>Catalog Home | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/" target="_blank">https://pika.clearviewlibrary.org/</a></td>
+          <td><a href="./reports/1.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>10</td>
+          <td>Bear helps the forest (maybe you help, too) / | Clearview...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/313898" target="_blank">https://pika.clearviewlibrary.org/Record/313898</a></td>
+          <td><a href="./reports/10.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>11</td>
+          <td>The Big Tree | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/308937" target="_blank">https://pika.clearviewlibrary.org/Record/308937</a></td>
+          <td><a href="./reports/11.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>12</td>
+          <td>Calling for the moon / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/350145" target="_blank">https://pika.clearviewlibrary.org/Record/350145</a></td>
+          <td><a href="./reports/12.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>13</td>
+          <td>Fall. | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/323451" target="_blank">https://pika.clearviewlibrary.org/Record/323451</a></td>
+          <td><a href="./reports/13.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>14</td>
+          <td>The fall festival fiasco / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/373219" target="_blank">https://pika.clearviewlibrary.org/Record/373219</a></td>
+          <td><a href="./reports/14.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>15</td>
+          <td>Fall fun / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/370051" target="_blank">https://pika.clearviewlibrary.org/Record/370051</a></td>
+          <td><a href="./reports/15.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>16</td>
+          <td>Fall = : Otono / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/229857" target="_blank">https://pika.clearviewlibrary.org/Record/229857</a></td>
+          <td><a href="./reports/16.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>17</td>
+          <td>Forest friends sleep | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/bdfb8748-dc9d-e7a4-6e7f-abadf8237a1c/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/bdfb8748-dc9d-e7a4-6e7f-abadf8237a1c/Home</a></td>
+          <td><a href="./reports/17.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>18</td>
+          <td>Happy fell | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/91b4de11-8282-d7de-3f56-1897841e0cdf/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/91b4de11-8282-d7de-3f56-1897841e0cdf/Home</a></td>
+          <td><a href="./reports/18.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>19</td>
+          <td>I'm a little pumpkin / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/339054" target="_blank">https://pika.clearviewlibrary.org/Record/339054</a></td>
+          <td><a href="./reports/19.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>2</td>
+          <td>Login | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/Home" target="_blank">https://pika.clearviewlibrary.org/MyAccount/Home</a></td>
+          <td><a href="./reports/2.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>20</td>
+          <td>Kitten's autumn | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/04a2b436-f459-06dd-ecaf-0dcb1f385b73/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/04a2b436-f459-06dd-ecaf-0dcb1f385b73/Home</a></td>
+          <td><a href="./reports/20.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>21</td>
+          <td>Leaf Man | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/70a0f0da-7e73-5b70-6902-805eff91ffb0/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/70a0f0da-7e73-5b70-6902-805eff91ffb0/Home</a></td>
+          <td><a href="./reports/21.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>22</td>
+          <td>The maple festival / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/349370" target="_blank">https://pika.clearviewlibrary.org/Record/349370</a></td>
+          <td><a href="./reports/22.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>23</td>
+          <td>Marya Khan and the spectacular fall festival | Clearview...</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/95ac1132-e51b-8a35-b0f6-90d469945bb8/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/95ac1132-e51b-8a35-b0f6-90d469945bb8/Home</a></td>
+          <td><a href="./reports/23.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>24</td>
+          <td>Mindy Kim and the Mid-Autumn Festival / | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/348894" target="_blank">https://pika.clearviewlibrary.org/Record/348894</a></td>
+          <td><a href="./reports/24.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>25</td>
+          <td>The monster storm | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/babf2b1c-1466-b225-a3d8-468c0956834a/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/babf2b1c-1466-b225-a3d8-468c0956834a/Home</a></td>
+          <td><a href="./reports/25.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>26</td>
+          <td>My big book of outdoors : : welcome! In every season, there...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/344862" target="_blank">https://pika.clearviewlibrary.org/Record/344862</a></td>
+          <td><a href="./reports/26.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>27</td>
+          <td>My leaf book / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/23540" target="_blank">https://pika.clearviewlibrary.org/Record/23540</a></td>
+          <td><a href="./reports/27.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>28</td>
+          <td>Nothing ever happens on a gray day | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/35244c42-40e2-3513-d646-3d90b73f038e/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/35244c42-40e2-3513-d646-3d90b73f038e/Home</a></td>
+          <td><a href="./reports/28.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>29</td>
+          <td>The pumpkin book | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/95eff2a6-353e-e087-e84b-f3d7e6ff8491/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/95eff2a6-353e-e087-e84b-f3d7e6ff8491/Home</a></td>
+          <td><a href="./reports/29.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>3</td>
+          <td>Catalog Home | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/" target="_blank">https://pika.clearviewlibrary.org/</a></td>
+          <td><a href="./reports/3.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>30</td>
+          <td>Pumpkin soup | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/5604bc30-40e2-7a81-4397-cccdea04fa53/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/5604bc30-40e2-7a81-4397-cccdea04fa53/Home</a></td>
+          <td><a href="./reports/30.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>31</td>
+          <td>Report Web Accessibility Issue | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Help/AccessibilityReport" target="_blank">https://pika.clearviewlibrary.org/Help/AccessibilityReport</a></td>
+          <td><a href="./reports/31.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>32</td>
+          <td>Email to Reset Pin | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/EmailResetPin" target="_blank">https://pika.clearviewlibrary.org/MyAccount/EmailResetPin</a></td>
+          <td><a href="./reports/32.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>33</td>
+          <td>Self Registration | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/SelfReg" target="_blank">https://pika.clearviewlibrary.org/MyAccount/SelfReg</a></td>
+          <td><a href="./reports/33.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>34</td>
+          <td></td>
+          <td><a href="https://pika.clearviewlibrary.org/Help/Home?topic=advsearch" target="_blank">https://pika.clearviewlibrary.org/Help/Home?topic=advsearch</a></td>
+          <td><a href="./reports/34.html" target="_blank">Report</a></td>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>35</td>
+          <td></td>
+          <td><a href="https://pika.clearviewlibrary.org/Help/Home?topic=search" target="_blank">https://pika.clearviewlibrary.org/Help/Home?topic=search</a></td>
+          <td><a href="./reports/35.html" target="_blank">Report</a></td>
+          <td>5</td>
+          <td>0</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>36</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Admin+and+Storage%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Admin+and+Storage%22&sort=title</a></td>
+          <td><a href="./reports/36.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>37</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Bookmobile%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Bookmobile%22&sort=title</a></td>
+          <td><a href="./reports/37.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>38</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Severance+Library%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Severance+Library%22&sort=title</a></td>
+          <td><a href="./reports/38.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>39</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Windsor+Library%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Windsor+Library%22&sort=title</a></td>
+          <td><a href="./reports/39.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>7</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>4</td>
+          <td>Advanced Search | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Search/Advanced" target="_blank">https://pika.clearviewlibrary.org/Search/Advanced</a></td>
+          <td><a href="./reports/4.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>13</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>40</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Online+OverDrive+Collection%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=available_at_clearview%3A%22Online+OverDrive+Collection%22&sort=title</a></td>
+          <td><a href="./reports/40.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>41</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=format_clearview%3A%22Book%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=format_clearview%3A%22Book%22&sort=title</a></td>
+          <td><a href="./reports/41.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>20</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>42</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=format_clearview%3A%22eBook%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=format_clearview%3A%22eBook%22&sort=title</a></td>
+          <td><a href="./reports/42.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>9</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>43</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=format_clearview%3A%22Board+Book%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=format_clearview%3A%22Board+Book%22&sort=title</a></td>
+          <td><a href="./reports/43.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>8</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>44</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=format_clearview%3A%22eAudiobook%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=format_clearview%3A%22eAudiobook%22&sort=title</a></td>
+          <td><a href="./reports/44.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>45</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Board+Book%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Board+Book%22&sort=title</a></td>
+          <td><a href="./reports/45.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>10</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>46</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Picture+Book%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Picture+Book%22&sort=title</a></td>
+          <td><a href="./reports/46.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>10</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>47</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Juvenile+Fiction%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Juvenile+Fiction%22&sort=title</a></td>
+          <td><a href="./reports/47.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>6</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>48</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Juvenile+Non-Fiction%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Juvenile+Non-Fiction%22&sort=title</a></td>
+          <td><a href="./reports/48.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>49</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Holiday%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Holiday%22&sort=title</a></td>
+          <td><a href="./reports/49.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>5</td>
+          <td></td>
+          <td><a href="https://pika.clearviewlibrary.org/AJAX/JSON?method=getHoursAndLocations" target="_blank">https://pika.clearviewlibrary.org/AJAX/JSON?method=getHoursAndLocations</a></td>
+          <td><a href="./reports/5.html" target="_blank">Report</a></td>
+          <td>5</td>
+          <td>0</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>50</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Juvenile+Graphic+Novel+Fiction%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636?filter%5B%5D=collection_clearview%3A%22Juvenile+Graphic+Novel+Fiction%22&sort=title</a></td>
+          <td><a href="./reports/50.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>6</td>
+          <td>Fall in Love with Children's Literature | Clearview Library...</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/636" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/636</a></td>
+          <td><a href="./reports/6.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>20</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>7</td>
+          <td>Apple vs. Pumpkin : : the battle for the best fall treat is...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/339145" target="_blank">https://pika.clearviewlibrary.org/Record/339145</a></td>
+          <td><a href="./reports/7.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>8</td>
+          <td>Autumn leaves fall | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/d2eb1874-6194-843b-771b-3bb2dffd80d4/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/d2eb1874-6194-843b-771b-3bb2dffd80d4/Home</a></td>
+          <td><a href="./reports/8.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>9</td>
+          <td>Baby loves Fall! : : a Karen Katz lift-the-flap book / |...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/276554" target="_blank">https://pika.clearviewlibrary.org/Record/276554</a></td>
+          <td><a href="./reports/9.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <script>
+    const data = {
+      labels: ["1","10","11","12","13","14","15","16","17","18","19","2","20","21","22","23","24","25","26","27","28","29","3","30","31","32","33","34","35","36","37","38","39","4","40","41","42","43","44","45","46","47","48","49","5","50","6","7","8","9"],
+      datasets: [
+        { label: 'Critical', backgroundColor: '#e3342f', data: [0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,2,7,0,1,20,9,8,5,10,10,6,3,1,0,1,20,1,1,1] },
+        { label: 'Serious', backgroundColor: '#f6993f', data: [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,2,13,0,1,0,1,0,2,0,0,0,0,2,0,2,1,0,0] },
+        { label: 'Moderate', backgroundColor: '#ffed4a', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0] },
+        { label: 'Minor', backgroundColor: '#38c172', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] },
+      ]
+    };
+
+    new Chart(document.getElementById('summaryChart'), {
+      type: 'bar',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Accessibility Violations by Page'
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, beginAtZero: true }
+        }
+      }
+    });
+
+    $(document).ready( function () {
+      $('#summary-table').DataTable({
+        paging: false
+      });
+  } );
+
+
+
+  </script>
+</body>
+</html>
