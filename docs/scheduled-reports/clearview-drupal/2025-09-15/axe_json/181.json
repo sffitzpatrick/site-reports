@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:37:25.804Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/photography-videography-and-recording-policy",
+  "timestamp": "2025-09-15T21:17:28.918Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/postings-promotional-materials-displays-and-exhibits-policy",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,6 +445,23 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -2737,27 +2754,15 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Photography, Videography, and Recording Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2>Photography, Videography, and Recording by Clearview Library District Visitors</h2>",
+                  "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
                   "target": [
-                    ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
-                  ]
-                },
-                {
-                  "html": "<h2>&nbsp;<br>\nPhotography, Videography, and Recording by Clearview Library District Staff</h2>",
-                  "target": [
-                    "h2:nth-child(5)"
-                  ]
-                },
-                {
-                  "html": "<h2>Clearview Library District Security Cameras</h2>",
-                  "target": [
-                    "h2:nth-child(8)"
+                    ".clearfix.text-formatted.field--name-body > h2"
                   ]
                 },
                 {
@@ -2844,9 +2849,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -3104,7 +3109,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Photography, Videography, and Recording Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3114,24 +3119,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Photography, Videography, and Recording by Clearview Library District Visitors</h2>",
+          "html": "<p>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
           ]
         },
         {
@@ -3154,7 +3159,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>Posting or displaying such materials by the district does not indicate district endorsement of the ideas, issues, or events promoted by these materials.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3164,206 +3169,6 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Any person photographing, filming, and/or recording on Clearview Library District premises:</p>",
-          "target": [
-            "p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Is expected to be respectful of, and refrain from disturbing other patrons as specified in Clearview Library District’s <a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>.</li>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Accepts sole responsibility for adherence to copyright law (<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>) regarding reproduction and distribution of copyrighted materials.</li>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Is not permitted to take photos, video or audio of another person in areas where there is a reasonable expectation of privacy, such as restrooms.</li>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Is prohibited from taking photos, video, or audio of any other person in staff-only areas unless an exception, with staff accompaniment, is made.</li>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>May be required to refrain from taking videos, photos, or recordings of programs, as requested by the facilitator, out of respect for their intellectual property.</li>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
                 "fgColor": "#0072bc",
                 "bgColor": "#ffffff",
                 "contrastRatio": 5.08,
@@ -3379,9 +3184,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>&nbsp;<br>\nPhotography, Videography, and Recording by Clearview Library District Staff</h2>",
+          "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
           "target": [
-            "h2:nth-child(5)"
+            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -3404,9 +3209,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<li>All materials must be submitted to district staff for posting and display.</li>",
           "target": [
-            "p:nth-child(6)"
+            "ol > li:nth-child(1)"
           ]
         },
         {
@@ -3429,34 +3234,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>To ensure the privacy of all individuals, the full names or any personally identifiable information of photographed subjects will not be used without the express written approval from the subject, or if a minor, the parent or legal guardian.</p>",
+          "html": "<li>Materials that have not been submitted for approval will be removed.</li>",
           "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Clearview Library District Security Cameras</h2>",
-          "target": [
-            "h2:nth-child(8)"
+            "ol > li:nth-child(2)"
           ]
         },
         {
@@ -3479,9 +3259,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<li>Priority is given to organizations located within the library district. If space permits, materials from northern Colorado organizations, outside of the library district, will be considered.</li>",
           "target": [
-            "p:nth-child(9)"
+            "ol > li:nth-child(3)"
           ]
         },
         {
@@ -3504,34 +3284,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li>The district assumes no responsibility for the preservation or protection of the submitted materials.</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(1) > a"
+            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -3554,9 +3309,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Signs in Areas Under Camera Surveillance:&nbsp;Notice of the use of security cameras will be posted at the entrance of Clearview Library District buildings so that library visitors have reasonable and adequate warning that surveillance is or may be in operation.</li>",
+          "html": "<li>Commercial advertisements / promotions, events, or materials for businesses or for- profit organizations will not be permitted, with the exception of an event that a business is sponsoring or co-sponsoring for a nonprofit organization.</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(2)"
+            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -3579,9 +3334,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<p>The following items are prohibited from being displayed or distributed at the designated posting space:</p>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(3)"
+            "p:nth-child(5)"
           ]
         },
         {
@@ -3604,9 +3359,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li>Advertisements of personal services or products sold for profit</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(4)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
           ]
         },
         {
@@ -3629,34 +3384,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li>Petitions</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.cde.state.co.us/cdelib/qgprivacy\">Colorado Revised Statutes &nbsp;§ 24-90-119</a>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(5) > a"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
           ]
         },
         {
@@ -3679,7 +3409,82 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Adopted July 28, 2022</em>",
+          "html": "<li>Job postings</li>",
+          "target": [
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Rental announcements</li>",
+          "target": [
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Campaign literature and partisan political materials</li>",
+          "target": [
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>Adopted, April 24, 2014, Revised, May 25, 2023</em>",
           "target": [
             "em"
           ]
@@ -4943,7 +4748,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Photography, Videography, and Recording Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4961,45 +4766,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Photography, Videography, and Recording by Clearview Library District Visitors</h2>",
+          "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>&nbsp;<br>\nPhotography, Videography, and Recording by Clearview Library District Staff</h2>",
-          "target": [
-            "h2:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Clearview Library District Security Cameras</h2>",
-          "target": [
-            "h2:nth-child(8)"
+            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -5163,19 +4932,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(5)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(8)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(3)"
                     ],
                     "level": 2
                   },
@@ -5243,7 +5000,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Photography, Videography, and Recording Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -5261,45 +5018,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Photography, Videography, and Recording by Clearview Library District Visitors</h2>",
+          "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>&nbsp;<br>\nPhotography, Videography, and Recording by Clearview Library District Staff</h2>",
-          "target": [
-            "h2:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Clearview Library District Security Cameras</h2>",
-          "target": [
-            "h2:nth-child(8)"
+            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -6377,180 +6098,6 @@
       ]
     },
     {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>Is expected to be respectful of, and refrain from disturbing other patrons as specified in Clearview Library District’s <a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>.</li>",
-                  "target": [
-                    "ul:nth-child(4) > li:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>Is expected to be respectful of, and refrain from disturbing other patrons as specified in Clearview Library District’s <a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>.</li>",
-                  "target": [
-                    "ul:nth-child(4) > li:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>Accepts sole responsibility for adherence to copyright law (<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>) regarding reproduction and distribution of copyrighted materials.</li>",
-                  "target": [
-                    "ul:nth-child(4) > li:nth-child(2)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>Accepts sole responsibility for adherence to copyright law (<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>) regarding reproduction and distribution of copyrighted materials.</li>",
-                  "target": [
-                    "ul:nth-child(4) > li:nth-child(2)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.cde.state.co.us/cdelib/qgprivacy\">Colorado Revised Statutes &nbsp;§ 24-90-119</a>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(5) > a"
-          ]
-        }
-      ]
-    },
-    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -6618,9 +6165,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6933,110 +6480,6 @@
           "html": "<a class=\"search-suggestions__suggestion\" href=\"https://pika.clearviewlibrary.org/Search/Results?lookfor=%2A&amp;basicType=Keyword&amp;basicType=Keyword&amp;filter%5B%5D=collection_clearview%3A%22Young+Adult+Fiction%22&amp;sort=relevance&amp;view=list&amp;searchSource=local\">Teen Books</a>",
           "target": [
             ".search-suggestions__suggestion:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.cde.state.co.us/cdelib/qgprivacy\">Colorado Revised Statutes &nbsp;§ 24-90-119</a>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(5) > a"
           ]
         },
         {
@@ -8022,9 +7465,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -8274,9 +7717,9 @@
             }
           ],
           "impact": null,
-          "html": "<ul>",
+          "html": "<ol>",
           "target": [
-            "ul:nth-child(4)"
+            "ol"
           ]
         },
         {
@@ -8292,9 +7735,9 @@
             }
           ],
           "impact": null,
-          "html": "<ul>",
+          "html": "<ul>\n\t<li>Advertisements of personal services or products sold for profit</li>\n\t<li>Petitions</li>\n\t<li>Job postings</li>\n\t<li>Rental announcements</li>\n\t<li>Campaign literature and partisan political materials</li>\n</ul>",
           "target": [
-            "ul:nth-child(10)"
+            ".clearfix.text-formatted.field--name-body > ul"
           ]
         },
         {
@@ -8506,7 +7949,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -8668,9 +8111,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Is expected to be respectful of, and refrain from disturbing other patrons as specified in Clearview Library District’s <a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>.</li>",
+          "html": "<li>All materials must be submitted to district staff for posting and display.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(1)"
+            "ol > li:nth-child(1)"
           ]
         },
         {
@@ -8686,9 +8129,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Accepts sole responsibility for adherence to copyright law (<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>) regarding reproduction and distribution of copyrighted materials.</li>",
+          "html": "<li>Materials that have not been submitted for approval will be removed.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(2)"
+            "ol > li:nth-child(2)"
           ]
         },
         {
@@ -8704,9 +8147,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Is not permitted to take photos, video or audio of another person in areas where there is a reasonable expectation of privacy, such as restrooms.</li>",
+          "html": "<li>Priority is given to organizations located within the library district. If space permits, materials from northern Colorado organizations, outside of the library district, will be considered.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(3)"
+            "ol > li:nth-child(3)"
           ]
         },
         {
@@ -8722,9 +8165,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Is prohibited from taking photos, video, or audio of any other person in staff-only areas unless an exception, with staff accompaniment, is made.</li>",
+          "html": "<li>The district assumes no responsibility for the preservation or protection of the submitted materials.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(4)"
+            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -8740,9 +8183,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>May be required to refrain from taking videos, photos, or recordings of programs, as requested by the facilitator, out of respect for their intellectual property.</li>",
+          "html": "<li>Commercial advertisements / promotions, events, or materials for businesses or for- profit organizations will not be permitted, with the exception of an event that a business is sponsoring or co-sponsoring for a nonprofit organization.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(5)"
+            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -8758,9 +8201,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li>Advertisements of personal services or products sold for profit</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
           ]
         },
         {
@@ -8776,9 +8219,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Signs in Areas Under Camera Surveillance:&nbsp;Notice of the use of security cameras will be posted at the entrance of Clearview Library District buildings so that library visitors have reasonable and adequate warning that surveillance is or may be in operation.</li>",
+          "html": "<li>Petitions</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(2)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
           ]
         },
         {
@@ -8794,9 +8237,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li>Job postings</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
           ]
         },
         {
@@ -8812,9 +8255,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li>Rental announcements</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(4)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
           ]
         },
         {
@@ -8830,9 +8273,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li>Campaign literature and partisan political materials</li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(5)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
           ]
         },
         {
@@ -9424,7 +8867,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -9786,7 +9229,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Photography, Videography, and Recording Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -10011,7 +9454,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -10031,9 +9474,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -10991,7 +10434,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Photography, Videography, and Recording Policy</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -11011,7 +10454,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Photography, Videography, and Recording Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -11031,7 +10474,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Photography, Videography, and Recording Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Postings, Promotional Materials, Displays, and Exhibits Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -11151,9 +10594,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"402\" about=\"/about-us/learn-more/policies-faqs/photography-videography-and-recording-policy\" id=\"node-402\" class=\"node node--type-policy node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"469\" about=\"/about-us/learn-more/policies-faqs/postings-promotional-materials-displays-and-exhibits-policy\" id=\"node-469\" class=\"node node--type-policy node--view-mode-full\">",
           "target": [
-            "#node-402"
+            "#node-469"
           ]
         },
         {
@@ -11211,9 +10654,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Photography, Videography, and Recording by Clearview Library District Visitors</h2>",
+          "html": "<p>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
           ]
         },
         {
@@ -11231,7 +10674,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>Posting or displaying such materials by the district does not indicate district endorsement of the ideas, issues, or events promoted by these materials.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -11251,9 +10694,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Any person photographing, filming, and/or recording on Clearview Library District premises:</p>",
+          "html": "<h2>Designated Posting Space Guidelines and Restrictions</h2>",
           "target": [
-            "p:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -11271,9 +10714,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>",
+          "html": "<ol>",
           "target": [
-            "ul:nth-child(4)"
+            "ol"
           ]
         },
         {
@@ -11291,9 +10734,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Is expected to be respectful of, and refrain from disturbing other patrons as specified in Clearview Library District’s <a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>.</li>",
+          "html": "<li>All materials must be submitted to district staff for posting and display.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(1)"
+            "ol > li:nth-child(1)"
           ]
         },
         {
@@ -11311,9 +10754,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>",
+          "html": "<li>Materials that have not been submitted for approval will be removed.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(1) > a"
+            "ol > li:nth-child(2)"
           ]
         },
         {
@@ -11331,9 +10774,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Accepts sole responsibility for adherence to copyright law (<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>) regarding reproduction and distribution of copyrighted materials.</li>",
+          "html": "<li>Priority is given to organizations located within the library district. If space permits, materials from northern Colorado organizations, outside of the library district, will be considered.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(2)"
+            "ol > li:nth-child(3)"
           ]
         },
         {
@@ -11351,9 +10794,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.copyright.gov/title17/\">Title 17, United States Code</a>",
+          "html": "<li>The district assumes no responsibility for the preservation or protection of the submitted materials.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(2) > a"
+            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -11371,9 +10814,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Is not permitted to take photos, video or audio of another person in areas where there is a reasonable expectation of privacy, such as restrooms.</li>",
+          "html": "<li>Commercial advertisements / promotions, events, or materials for businesses or for- profit organizations will not be permitted, with the exception of an event that a business is sponsoring or co-sponsoring for a nonprofit organization.</li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(3)"
+            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -11391,9 +10834,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Is prohibited from taking photos, video, or audio of any other person in staff-only areas unless an exception, with staff accompaniment, is made.</li>",
+          "html": "<p>The following items are prohibited from being displayed or distributed at the designated posting space:</p>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(4)"
+            "p:nth-child(5)"
           ]
         },
         {
@@ -11411,9 +10854,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>May be required to refrain from taking videos, photos, or recordings of programs, as requested by the facilitator, out of respect for their intellectual property.</li>",
+          "html": "<ul>\n\t<li>Advertisements of personal services or products sold for profit</li>\n\t<li>Petitions</li>\n\t<li>Job postings</li>\n\t<li>Rental announcements</li>\n\t<li>Campaign literature and partisan political materials</li>\n</ul>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(5)"
+            ".clearfix.text-formatted.field--name-body > ul"
           ]
         },
         {
@@ -11431,9 +10874,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>&nbsp;<br>\nPhotography, Videography, and Recording by Clearview Library District Staff</h2>",
+          "html": "<li>Advertisements of personal services or products sold for profit</li>",
           "target": [
-            "h2:nth-child(5)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
           ]
         },
         {
@@ -11451,9 +10894,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<br>",
+          "html": "<li>Petitions</li>",
           "target": [
-            "h2:nth-child(5) > br"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
           ]
         },
         {
@@ -11471,9 +10914,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<li>Job postings</li>",
           "target": [
-            "p:nth-child(6)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
           ]
         },
         {
@@ -11491,7 +10934,47 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>To ensure the privacy of all individuals, the full names or any personally identifiable information of photographed subjects will not be used without the express written approval from the subject, or if a minor, the parent or legal guardian.</p>",
+          "html": "<li>Rental announcements</li>",
+          "target": [
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Campaign literature and partisan political materials</li>",
+          "target": [
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><em>Adopted, April 24, 2014, Revised, May 25, 2023</em><br>\n&nbsp;</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -11511,227 +10994,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Clearview Library District Security Cameras</h2>",
-          "target": [
-            "h2:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "ul:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy\">Conduct in the Library Policy</a>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Signs in Areas Under Camera Surveillance:&nbsp;Notice of the use of security cameras will be posted at the entrance of Clearview Library District buildings so that library visitors have reasonable and adequate warning that surveillance is or may be in operation.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.cde.state.co.us/cdelib/qgprivacy\">Colorado Revised Statutes &nbsp;§ 24-90-119</a>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(5) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><em>Adopted July 28, 2022</em><br>\n&nbsp;</p>",
-          "target": [
-            "p:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Adopted July 28, 2022</em>",
+          "html": "<em>Adopted, April 24, 2014, Revised, May 25, 2023</em>",
           "target": [
             "em"
           ]
@@ -11753,7 +11016,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            "p:nth-child(11) > br"
+            "p:nth-child(7) > br"
           ]
         },
         {
@@ -14171,7 +13434,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -14191,9 +13454,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -14601,5 +13864,5 @@
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Photography, Videography, and Recording Policy | Clearview Library"
+  "documentTitle": "Postings, Promotional Materials, Displays, and Exhibits Policy | Clearview Library"
 }

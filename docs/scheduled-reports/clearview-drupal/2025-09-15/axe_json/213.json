@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:37:51.988Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-sadie",
+  "timestamp": "2025-09-15T21:17:56.200Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-courtney-harris",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -457,23 +457,6 @@
       "description": "Ensure the complementary landmark or aside is at top level",
       "help": "Aside should not be contained in another landmark",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -2704,7 +2687,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Sadie</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Courtney Harris</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2787,9 +2770,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -3147,7 +3130,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Sadie\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Courtney Harris\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -3172,7 +3155,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2024-10-16T08:25:39-06:00\" title=\"Wednesday, October 16, 2024 - 08:25\" class=\"datetime\">October 16, 2024</time>",
+          "html": "<time datetime=\"2024-05-09T09:17:59-06:00\" title=\"Thursday, May 9, 2024 - 09:17\" class=\"datetime\">May 9, 2024</time>",
           "target": [
             "time"
           ]
@@ -3199,7 +3182,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3222,7 +3205,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Sadie</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Courtney Harris</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3247,7 +3230,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</p>",
+          "html": "<p>Each month, we spotlight one of the friendly staff faces you'll run into at the Windsor Library, Severance Library, or aboard the Bookmobile.</p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -3272,7 +3255,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Hometown:&nbsp;Aurora, Colorado.</p>",
+          "html": "<p><strong>Hometown:</strong>&nbsp;Madison, Wisconsin.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3286,6 +3269,31 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Hometown:</strong>",
+          "target": [
+            "p:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -3297,7 +3305,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Interests:&nbsp;Reading, baking, playing games with my family and loving on my pets.</p>",
+          "html": "<p><strong>Interests:</strong>&nbsp;Reading (of course!), trying out local restaurants and breweries (I'm new to town, so love suggestions--my photo is from High Hops here in Windsor!), hiking, hanging with my dog Violet.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -3311,7 +3319,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3322,109 +3330,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<strong>Interests:</strong>",
           "target": [
-            "p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>The Night Circus</em>",
-          "target": [
-            "em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;lookfor=Erin+Morgenstern&amp;basicType=Author&amp;searchSource=local\">Erin Morgenstern</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Search/Results?basicType=Series&amp;lookfor=%22Throne%20of%20glass%20novels%22\">Throne of Glass</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=Sarah+J.+Maas&amp;basicType=Author&amp;searchSource=local\">Sarah J. Maas</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(4)"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -3447,7 +3355,57 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Preferred Superpower:&nbsp;The ability to heal.</p>",
+          "html": "<p><strong>Favorite Book:&nbsp;</strong>This changes constantly...right now I can't stop talking about Enter the Body by Joy McCullough.&nbsp;</p>",
+          "target": [
+            "p:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Book:&nbsp;</strong>",
+          "target": [
+            "p:nth-child(4) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Preferred Superpower:</strong>&nbsp;Teleportation- so I could both travel the world and get home in an instant.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -3461,7 +3419,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3472,59 +3430,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<strong>Preferred Superpower:</strong>",
           "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=David+Sedaris&amp;basicType=Author&amp;searchSource=local\">David Sedaris</a>",
-          "target": [
-            "p:nth-child(6) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=Mo+Willems&amp;basicType=Author&amp;searchSource=local\">Mo Willems</a>",
-          "target": [
-            "p:nth-child(6) > a:nth-child(2)"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -3547,7 +3455,57 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Favorite Vacation Spot:&nbsp;Our family cabin in Leadville, though I would LOVE to go to Scotland someday.</p>",
+          "html": "<p><strong>Favorite Author:</strong>&nbsp;At the moment- Jasmine Guillory, Fredrik Backman, or Louise Penny.</p>",
+          "target": [
+            "p:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Author:</strong>",
+          "target": [
+            "p:nth-child(6) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Vacation Spot:</strong>&nbsp;Any National Park (Acadia in Maine was one of my favorites).</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -3561,6 +3519,31 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Vacation Spot:</strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -3572,7 +3555,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>What three people (dead or alive) would you invite to a dinner party?&nbsp;Marsha P. Johnson, Eartha Kitt, and Dolly Parton.</p>",
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong>&nbsp;Former President Obama; Betty White; Taylor Swift.</p>",
           "target": [
             "p:nth-child(8)"
           ]
@@ -3586,7 +3569,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3597,9 +3580,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Favorite Quote:&nbsp;\"Heroes don't have to be perfect, you know. They just have to make you think bigger about yourself somehow.\" -Linda Belcher.</p>",
+          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
           "target": [
-            "p:nth-child(9)"
+            "p:nth-child(8) > strong"
           ]
         },
         {
@@ -3622,9 +3605,84 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Job at the Library:&nbsp;Customer Service Specialist.&nbsp;</p>",
+          "html": "<p>",
+          "target": [
+            "p:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Quote:</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong>&nbsp;Children's Services Assistant.</p>",
           "target": [
             "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Job at the Library:</strong>",
+          "target": [
+            "p:nth-child(10) > strong"
           ]
         },
         {
@@ -4529,7 +4587,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Sadie</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Courtney Harris</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4757,7 +4815,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Sadie</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Courtney Harris</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4941,7 +4999,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/Sadie-Hero.jpg?itok=4rQz-8y5\" width=\"1019\" height=\"573\" alt=\"Family sitting in snow\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-05/Courtney-Harris-Hero.jpg?itok=NQwpNVyM\" width=\"1019\" height=\"573\" alt=\"Woman and Santa skeleton\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5094,7 +5152,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/Sadie-Hero.jpg?itok=4rQz-8y5\" width=\"1019\" height=\"573\" alt=\"Family sitting in snow\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-05/Courtney-Harris-Hero.jpg?itok=NQwpNVyM\" width=\"1019\" height=\"573\" alt=\"Woman and Santa skeleton\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5816,6 +5874,124 @@
       ]
     },
     {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/\">Home</a>",
+          "target": [
+            "li:nth-child(1) > a[href=\"/\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us\">About Us</a>",
+          "target": [
+            "li:nth-child(2) > a[href$=\"about-us\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "target": [
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ]
+        }
+      ]
+    },
+    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -5883,9 +6059,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6327,189 +6503,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/media/362/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/Sadie-Hero.jpg?itok=4rQz-8y5\" width=\"1019\" height=\"573\" alt=\"Family sitting in snow\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/2885924a-1be4-04e6-013f-1e44cb44338e/Home?searchId=7755&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>The Night Circus</em></a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;lookfor=Erin+Morgenstern&amp;basicType=Author&amp;searchSource=local\">Erin Morgenstern</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Search/Results?basicType=Series&amp;lookfor=%22Throne%20of%20glass%20novels%22\">Throne of Glass</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=Sarah+J.+Maas&amp;basicType=Author&amp;searchSource=local\">Sarah J. Maas</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=David+Sedaris&amp;basicType=Author&amp;searchSource=local\">David Sedaris</a>",
-          "target": [
-            "p:nth-child(6) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=Mo+Willems&amp;basicType=Author&amp;searchSource=local\">Mo Willems</a>",
-          "target": [
-            "p:nth-child(6) > a:nth-child(2)"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -7079,9 +7073,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7473,7 +7467,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
@@ -7707,7 +7701,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Sadie\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Courtney Harris\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -8013,7 +8007,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
@@ -8277,7 +8271,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/Sadie-Hero.jpg?itok=4rQz-8y5\" width=\"1019\" height=\"573\" alt=\"Family sitting in snow\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-05/Courtney-Harris-Hero.jpg?itok=NQwpNVyM\" width=\"1019\" height=\"573\" alt=\"Woman and Santa skeleton\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -8411,7 +8405,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Sadie</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Courtney Harris</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8636,7 +8630,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
@@ -8656,9 +8650,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -9498,7 +9492,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            "strong"
+            ".label"
           ]
         },
         {
@@ -9856,7 +9850,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Sadie\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Courtney Harris\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -9976,9 +9970,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"647\" about=\"/about-us/learn-more/news/staff-spotlight-sadie\" typeof=\"schema:Article\" id=\"node-647\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"574\" about=\"/about-us/learn-more/news/staff-spotlight-courtney-harris\" typeof=\"schema:Article\" id=\"node-574\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#node-647"
+            "#node-574"
           ]
         },
         {
@@ -10036,7 +10030,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2024-10-16T14:25:39+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-10-16T08:25:39-06:00\" title=\"Wednesday, October 16, 2024 - 08:25\" class=\"datetime\">October 16, 2024</time>\n</span>",
+          "html": "<span property=\"schema:dateCreated\" content=\"2024-05-09T15:17:59+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-05-09T09:17:59-06:00\" title=\"Thursday, May 9, 2024 - 09:17\" class=\"datetime\">May 9, 2024</time>\n</span>",
           "target": [
             ".field--name-created"
           ]
@@ -10056,7 +10050,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2024-10-16T08:25:39-06:00\" title=\"Wednesday, October 16, 2024 - 08:25\" class=\"datetime\">October 16, 2024</time>",
+          "html": "<time datetime=\"2024-05-09T09:17:59-06:00\" title=\"Thursday, May 9, 2024 - 09:17\" class=\"datetime\">May 9, 2024</time>",
           "target": [
             "time"
           ]
@@ -10118,7 +10112,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10136,7 +10130,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Sadie</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Courtney Harris</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10156,7 +10150,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Sadie</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Courtney Harris</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10296,7 +10290,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">  <a href=\"/media/362/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/Sadie-Hero.jpg?itok=4rQz-8y5\" width=\"1019\" height=\"573\" alt=\"Family sitting in snow\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-05/Courtney-Harris-Hero.jpg?itok=NQwpNVyM\" width=\"1019\" height=\"573\" alt=\"Woman and Santa skeleton\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n\n</div>",
           "target": [
             ".field--name-field-media-image-1 > .field__item"
           ]
@@ -10316,27 +10310,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/362/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/Sadie-Hero.jpg?itok=4rQz-8y5\" width=\"1019\" height=\"573\" alt=\"Family sitting in snow\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/Sadie-Hero.jpg?itok=4rQz-8y5\" width=\"1019\" height=\"573\" alt=\"Family sitting in snow\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-05/Courtney-Harris-Hero.jpg?itok=NQwpNVyM\" width=\"1019\" height=\"573\" alt=\"Woman and Santa skeleton\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -10376,7 +10350,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</p>",
+          "html": "<p>Each month, we spotlight one of the friendly staff faces you'll run into at the Windsor Library, Severance Library, or aboard the Bookmobile.</p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -10396,7 +10370,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Hometown:&nbsp;Aurora, Colorado.</p>",
+          "html": "<p><strong>Hometown:</strong>&nbsp;Madison, Wisconsin.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10416,7 +10390,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Interests:&nbsp;Reading, baking, playing games with my family and loving on my pets.</p>",
+          "html": "<strong>Hometown:</strong>",
+          "target": [
+            "p:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Interests:</strong>&nbsp;Reading (of course!), trying out local restaurants and breweries (I'm new to town, so love suggestions--my photo is from High Hops here in Windsor!), hiking, hanging with my dog Violet.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10436,7 +10430,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<strong>Interests:</strong>",
+          "target": [
+            "p:nth-child(3) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Book:&nbsp;</strong>This changes constantly...right now I can't stop talking about Enter the Body by Joy McCullough.&nbsp;</p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -10456,9 +10470,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/GroupedWork/2885924a-1be4-04e6-013f-1e44cb44338e/Home?searchId=7755&amp;recordIndex=1&amp;page=1&amp;searchSource=local\"><em>The Night Circus</em></a>",
+          "html": "<strong>Favorite Book:&nbsp;</strong>",
           "target": [
-            "p:nth-child(4) > a:nth-child(1)"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -10476,87 +10490,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>The Night Circus</em>",
-          "target": [
-            "em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;lookfor=Erin+Morgenstern&amp;basicType=Author&amp;searchSource=local\">Erin Morgenstern</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Search/Results?basicType=Series&amp;lookfor=%22Throne%20of%20glass%20novels%22\">Throne of Glass</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=Sarah+J.+Maas&amp;basicType=Author&amp;searchSource=local\">Sarah J. Maas</a>",
-          "target": [
-            "p:nth-child(4) > a:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Preferred Superpower:&nbsp;The ability to heal.</p>",
+          "html": "<p><strong>Preferred Superpower:</strong>&nbsp;Teleportation- so I could both travel the world and get home in an instant.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -10576,7 +10510,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<strong>Preferred Superpower:</strong>",
+          "target": [
+            "p:nth-child(5) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Author:</strong>&nbsp;At the moment- Jasmine Guillory, Fredrik Backman, or Louise Penny.</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -10596,9 +10550,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=David+Sedaris&amp;basicType=Author&amp;searchSource=local\">David Sedaris</a>",
+          "html": "<strong>Favorite Author:</strong>",
           "target": [
-            "p:nth-child(6) > a:nth-child(1)"
+            "p:nth-child(6) > strong"
           ]
         },
         {
@@ -10616,27 +10570,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://pika.clearviewlibrary.org/Union/Search?view=list&amp;showCovers=on&amp;lookfor=Mo+Willems&amp;basicType=Author&amp;searchSource=local\">Mo Willems</a>",
-          "target": [
-            "p:nth-child(6) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Favorite Vacation Spot:&nbsp;Our family cabin in Leadville, though I would LOVE to go to Scotland someday.</p>",
+          "html": "<p><strong>Favorite Vacation Spot:</strong>&nbsp;Any National Park (Acadia in Maine was one of my favorites).</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -10656,7 +10590,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>What three people (dead or alive) would you invite to a dinner party?&nbsp;Marsha P. Johnson, Eartha Kitt, and Dolly Parton.</p>",
+          "html": "<strong>Favorite Vacation Spot:</strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong>&nbsp;Former President Obama; Betty White; Taylor Swift.</p>",
           "target": [
             "p:nth-child(8)"
           ]
@@ -10676,7 +10630,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Favorite Quote:&nbsp;\"Heroes don't have to be perfect, you know. They just have to make you think bigger about yourself somehow.\" -Linda Belcher.</p>",
+          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
+          "target": [
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
           "target": [
             "p:nth-child(9)"
           ]
@@ -10696,9 +10670,49 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Job at the Library:&nbsp;Customer Service Specialist.&nbsp;</p>",
+          "html": "<strong>Favorite Quote:</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong>&nbsp;Children's Services Assistant.</p>",
           "target": [
             "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Job at the Library:</strong>",
+          "target": [
+            "p:nth-child(10) > strong"
           ]
         },
         {
@@ -12396,7 +12410,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
@@ -12416,9 +12430,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -12826,5 +12840,5 @@
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Staff Spotlight: Sadie | Clearview Library"
+  "documentTitle": "Staff Spotlight: Courtney Harris | Clearview Library"
 }

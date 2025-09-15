@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:38:14.198Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/art-library-march-may-2024",
+  "timestamp": "2025-09-15T21:18:18.949Z",
+  "url": "https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=20",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -457,6 +457,23 @@
       "description": "Ensure the complementary landmark or aside is at top level",
       "help": "Aside should not be contained in another landmark",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -954,6 +971,32 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -1074,42 +1117,6 @@
           "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-allowed-role",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is allowed for given element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-allowed-role",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is allowed for given element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-right\">",
-          "target": [
-            ".align-right"
           ]
         },
         {
@@ -1325,6 +1332,24 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -1463,42 +1488,6 @@
             }
           ],
           "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "deprecatedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is not deprecated"
-            }
-          ],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-right\">",
-          "target": [
-            ".align-right"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "deprecatedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is not deprecated"
-            }
-          ],
-          "impact": null,
           "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
             "#sitewide-footer"
@@ -1589,7 +1578,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
+          "html": "<body class=\"_0829669 path-taxonomy\">",
           "target": [
             "body"
           ]
@@ -1735,6 +1724,24 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -1858,42 +1865,6 @@
           "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "All required ARIA attributes are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "All required ARIA attributes are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-right\">",
-          "target": [
-            ".align-right"
           ]
         },
         {
@@ -2174,70 +2145,6 @@
           "html": "<main role=\"main\" class=\"layout-content\">",
           "target": [
             "main"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "invalidrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is valid"
-            },
-            {
-              "id": "abstractrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Abstract roles are not used"
-            },
-            {
-              "id": "unsupportedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "invalidrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is valid"
-            },
-            {
-              "id": "abstractrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Abstract roles are not used"
-            },
-            {
-              "id": "unsupportedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-right\">",
-          "target": [
-            ".align-right"
           ]
         },
         {
@@ -2607,6 +2514,38 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -2749,6 +2688,24 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -2786,25 +2743,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         }
       ]
@@ -2859,7 +2798,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">General Research</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2942,9 +2881,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -2969,7 +2908,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -2994,7 +2933,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -3019,7 +2958,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -3044,7 +2983,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -3069,7 +3008,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -3094,7 +3033,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -3119,7 +3058,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -3179,7 +3118,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -3227,9 +3166,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
+          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
+            "li:nth-child(2) > a[href$=\"borrow-research\"]"
           ]
         },
         {
@@ -3252,9 +3191,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "html": "<a href=\"/borrow-research/research\">Research</a>",
           "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
+            "ol > li:nth-child(3) > a[href$=\"research\"]"
           ]
         },
         {
@@ -3277,84 +3216,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "html": "<li>\n                  General Research\n              </li>",
           "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>\n                  Art In The Library! March - May 2024\n              </li>",
-          "target": [
-            "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<time datetime=\"2024-04-23T10:44:16-06:00\" title=\"Tuesday, April 23, 2024 - 10:44\" class=\"datetime\">April 23, 2024</time>",
-          "target": [
-            "time"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
-          "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
+            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -3377,9 +3241,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">General Research</h1>",
           "target": [
-            ".field--name-title"
+            "h1"
           ]
         },
         {
@@ -3387,224 +3251,19 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
+                "messageKey": "hidden"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
+              "message": "Element is hidden"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Mountain Summer Gabriele Bergmann.</em>",
+          "html": "<input data-bef-auto-submit-click=\"\" class=\"js-hide button js-form-submit form-submit\" data-drupal-selector=\"edit-submit-resources\" type=\"submit\" id=\"edit-submit-resources\" value=\"Apply\">",
           "target": [
-            "em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figcaption>Paintings by Helga Peiler.</figcaption>",
-          "target": [
-            ".align-left > figcaption"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figcaption>Paintings by Bee Leek.</figcaption>",
-          "target": [
-            ".align-right > figcaption"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Visitors will be in for a visual treat once they see the crisply drawn pen and ink botanicals, richly painted acrylic and oil captures of wildlife, and the vibrantly colorful nature-themed watercolor and oil pastels. This gallery exhibit will be on display until mid-May.</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy\">application for our public art submission online</a>",
-          "target": [
-            "p:nth-child(6) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#e1f0fb",
-                "contrastRatio": 15.26,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 15.26"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "#edit-submit-resources"
           ]
         },
         {
@@ -3729,7 +3388,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -3754,7 +3413,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -3779,7 +3438,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -3804,7 +3463,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -3829,7 +3488,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -3854,7 +3513,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -3879,7 +3538,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -3929,7 +3588,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -3954,7 +3613,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -3979,7 +3638,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -4029,7 +3688,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -4054,7 +3713,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -4079,7 +3738,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -4104,7 +3763,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -4129,7 +3788,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -4154,7 +3813,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -4179,7 +3838,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         }
       ]
@@ -4329,6 +3988,24 @@
           "any": [
             {
               "id": "duplicate-id-aria",
+              "data": "edit-field-resource-category-target-id",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"bef-links-use-ajax bef-links\" data-drupal-selector=\"edit-field-resource-category-target-id\" id=\"edit-field-resource-category-target-id\" name=\"field_resource_category_target_id\" data-once=\"bef-links-use-ajax\">",
+          "target": [
+            "#edit-field-resource-category-target-id"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -4459,7 +4136,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">General Research</h1>",
           "target": [
             "h1"
           ]
@@ -4607,7 +4284,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(1) > h1"
                     ],
                     "level": 1
                   },
@@ -4687,7 +4364,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">General Research</h1>",
           "target": [
             "h1"
           ]
@@ -4871,84 +4548,6 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=tRumBAfS\" width=\"1019\" height=\"573\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Paintings by Helga Peiler\" data-entity-type=\"file\" data-entity-uuid=\"b57e162e-c889-4626-b30e-cd4ed443f1e8\" height=\"300\" loading=\"lazy\" src=\"/sites/default/files/inline-images/Helga-Peiler.jpg\" width=\"300\">",
-          "target": [
-            "img[alt=\"Paintings by Helga Peiler\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Paintings by Bee Leek\" data-entity-type=\"file\" data-entity-uuid=\"9f24ac7b-3720-4205-b026-a2ce3db5bae9\" height=\"300\" loading=\"lazy\" src=\"/sites/default/files/inline-images/Bee-Leek.jpg\" width=\"300\">",
-          "target": [
-            "img[alt=\"Paintings by Bee Leek\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
           "html": "<img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">",
           "target": [
             "img[alt=\"footer logo\"]"
@@ -5076,60 +4675,6 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=tRumBAfS\" width=\"1019\" height=\"573\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Paintings by Helga Peiler\" data-entity-type=\"file\" data-entity-uuid=\"b57e162e-c889-4626-b30e-cd4ed443f1e8\" height=\"300\" loading=\"lazy\" src=\"/sites/default/files/inline-images/Helga-Peiler.jpg\" width=\"300\">",
-          "target": [
-            "img[alt=\"Paintings by Helga Peiler\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Paintings by Bee Leek\" data-entity-type=\"file\" data-entity-uuid=\"9f24ac7b-3720-4205-b026-a2ce3db5bae9\" height=\"300\" loading=\"lazy\" src=\"/sites/default/files/inline-images/Bee-Leek.jpg\" width=\"300\">",
-          "target": [
-            "img[alt=\"Paintings by Bee Leek\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
           "html": "<img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">",
           "target": [
             "img[alt=\"footer logo\"]"
@@ -5225,7 +4770,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         }
       ]
@@ -5519,14 +5064,7 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
-                  "target": [
-                    "#sitewide-footer"
-                  ]
-                }
-              ],
+              "relatedNodes": [],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5534,9 +5072,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
-            ".node__meta"
+            "#sitewide-footer"
           ]
         }
       ]
@@ -5834,63 +5372,6 @@
       ]
     },
     {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(6)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(6)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy\">application for our public art submission online</a>",
-          "target": [
-            "p:nth-child(6) > a"
-          ]
-        }
-      ]
-    },
-    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -5958,9 +5439,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -5986,7 +5467,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -6012,7 +5493,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -6038,7 +5519,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -6090,7 +5571,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -6116,7 +5597,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -6142,7 +5623,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -6168,7 +5649,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -6194,7 +5675,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -6322,9 +5803,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
+          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
+            "li:nth-child(2) > a[href$=\"borrow-research\"]"
           ]
         },
         {
@@ -6348,113 +5829,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "html": "<a href=\"/borrow-research/research\">Research</a>",
           "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
-          "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/media/279/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=tRumBAfS\" width=\"1019\" height=\"573\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy\">application for our public art submission online</a>",
-          "target": [
-            "p:nth-child(6) > a"
+            "ol > li:nth-child(3) > a[href$=\"research\"]"
           ]
         },
         {
@@ -6532,7 +5909,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -6558,7 +5935,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -6584,7 +5961,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -6610,7 +5987,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -6636,7 +6013,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -6662,7 +6039,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -6688,7 +6065,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -6740,7 +6117,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -6766,7 +6143,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -6792,7 +6169,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -6844,7 +6221,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -6870,7 +6247,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -6896,7 +6273,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -6922,7 +6299,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -6948,7 +6325,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
           ]
         },
         {
@@ -6974,7 +6351,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
           ]
         },
         {
@@ -7000,7 +6377,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
           ]
         },
         {
@@ -7024,9 +6401,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7052,7 +6429,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -7078,7 +6455,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -7104,7 +6481,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -7130,7 +6507,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -7156,7 +6533,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -7182,7 +6559,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -7208,7 +6585,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         }
       ]
@@ -7242,7 +6619,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > ul"
+            "#block-utilitiesmenu > .menu"
           ]
         },
         {
@@ -7260,7 +6637,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > ul"
+            "#block-clearview-main-menu > .menu"
           ]
         },
         {
@@ -7296,7 +6673,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > ul"
+            "#block-mainnavigation > .menu"
           ]
         },
         {
@@ -7314,7 +6691,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > ul"
+            "#menu-item-c92f701b > .menu"
           ]
         },
         {
@@ -7332,7 +6709,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > ul"
+            "#menu-item-cb25c7c1 > .menu"
           ]
         },
         {
@@ -7350,7 +6727,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > ul"
+            "#menu-item-0267a4c3 > .menu"
           ]
         },
         {
@@ -7368,7 +6745,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > ul"
+            "#block-utilitiesmenu-2 > .menu"
           ]
         },
         {
@@ -7386,7 +6763,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation-6 > ul"
+            "#block-mainnavigation-6 > .menu"
           ]
         }
       ]
@@ -7418,9 +6795,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7438,7 +6815,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7456,7 +6833,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -7474,7 +6851,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -7492,7 +6869,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -7510,7 +6887,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -7528,7 +6905,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -7546,7 +6923,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -7564,7 +6941,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -7598,7 +6975,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/borrow-research\">Borrow &amp; Research</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -7616,7 +6993,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/borrow-research/research\">Research</a>\n              </li>",
           "target": [
             "ol > li:nth-child(3)"
           ]
@@ -7634,27 +7011,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
+          "html": "<li>\n                  General Research\n              </li>",
           "target": [
             "ol > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>\n                  Art In The Library! March - May 2024\n              </li>",
-          "target": [
-            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -7690,7 +7049,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7708,7 +7067,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7726,7 +7085,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -7744,7 +7103,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -7762,7 +7121,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -7780,7 +7139,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
           ]
         },
         {
@@ -7816,7 +7175,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7834,7 +7193,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7852,7 +7211,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -7888,7 +7247,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7906,7 +7265,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7924,7 +7283,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -7942,7 +7301,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -7958,9 +7317,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7978,7 +7337,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7996,7 +7355,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8014,7 +7373,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8032,7 +7391,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -8050,7 +7409,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -8068,7 +7427,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -8086,7 +7445,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         }
       ]
@@ -8206,79 +7565,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=tRumBAfS\" width=\"1019\" height=\"573\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Paintings by Helga Peiler\" data-entity-type=\"file\" data-entity-uuid=\"b57e162e-c889-4626-b30e-cd4ed443f1e8\" height=\"300\" loading=\"lazy\" src=\"/sites/default/files/inline-images/Helga-Peiler.jpg\" width=\"300\">",
-          "target": [
-            "img[alt=\"Paintings by Helga Peiler\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Paintings by Bee Leek\" data-entity-type=\"file\" data-entity-uuid=\"9f24ac7b-3720-4205-b026-a2ce3db5bae9\" height=\"300\" loading=\"lazy\" src=\"/sites/default/files/inline-images/Bee-Leek.jpg\" width=\"300\">",
-          "target": [
-            "img[alt=\"Paintings by Bee Leek\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -8314,7 +7601,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -8392,7 +7679,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">General Research</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8599,7 +7886,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > ul"
+            "#block-utilitiesmenu > .menu"
           ]
         },
         {
@@ -8617,9 +7904,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8637,9 +7924,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -8659,7 +7946,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8679,7 +7966,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -8699,7 +7986,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8719,7 +8006,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -8739,7 +8026,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8759,7 +8046,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -8919,7 +8206,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > ul"
+            "#block-clearview-main-menu > .menu"
           ]
         },
         {
@@ -8939,7 +8226,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -8959,7 +8246,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -8979,7 +8266,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -8999,7 +8286,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -9019,7 +8306,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -9039,7 +8326,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -9059,7 +8346,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -9079,7 +8366,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -9099,7 +8386,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -9119,7 +8406,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > ul > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -9259,7 +8546,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".content"
+            ".prf-opac-search > .content"
           ]
         },
         {
@@ -9439,7 +8726,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -9597,9 +8884,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-breadcrumbs\" class=\"block block-system block-system-breadcrumb-block\">",
+          "html": "<div id=\"block-clearview-breadcrumbs-2\" class=\"block block-system block-system-breadcrumb-block\">",
           "target": [
-            "#block-clearview-breadcrumbs"
+            "#block-clearview-breadcrumbs-2"
           ]
         },
         {
@@ -9717,7 +9004,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/borrow-research\">Borrow &amp; Research</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -9737,9 +9024,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
+          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
+            "li:nth-child(2) > a[href$=\"borrow-research\"]"
           ]
         },
         {
@@ -9757,7 +9044,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/borrow-research/research\">Research</a>\n              </li>",
           "target": [
             "ol > li:nth-child(3)"
           ]
@@ -9777,9 +9064,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "html": "<a href=\"/borrow-research/research\">Research</a>",
           "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
+            "ol > li:nth-child(3) > a[href$=\"research\"]"
           ]
         },
         {
@@ -9797,49 +9084,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
+          "html": "<li>\n                  General Research\n              </li>",
           "target": [
             "ol > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>\n                  Art In The Library! March - May 2024\n              </li>",
-          "target": [
-            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -9957,9 +9204,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"570\" about=\"/about-us/learn-more/news/art-library-march-may-2024\" typeof=\"schema:Article\" id=\"node-570\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<div id=\"block-clearview-content\" class=\"block block-system block-system-main-block\">",
           "target": [
-            "#node-570"
+            "#block-clearview-content"
           ]
         },
         {
@@ -9977,9 +9224,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<div about=\"/borrow-research/research/general-research\" id=\"taxonomy-term-16\" class=\"taxonomy-term vocabulary-resource-category\">",
           "target": [
-            ".node__meta"
+            "#taxonomy-term-16"
           ]
         },
         {
@@ -9997,9 +9244,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__submitted\">",
+          "html": "<div class=\"content\">",
           "target": [
-            ".node__submitted"
+            "#taxonomy-term-16 > .content"
           ]
         },
         {
@@ -10017,9 +9264,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2024-04-23T16:44:16+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-04-23T10:44:16-06:00\" title=\"Tuesday, April 23, 2024 - 10:44\" class=\"datetime\">April 23, 2024</time>\n</span>",
+          "html": "<div class=\"layout layout--onecol\">",
           "target": [
-            ".field--name-created"
+            ".layout"
           ]
         },
         {
@@ -10037,9 +9284,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2024-04-23T10:44:16-06:00\" title=\"Tuesday, April 23, 2024 - 10:44\" class=\"datetime\">April 23, 2024</time>",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            "time"
+            ".layout__region"
           ]
         },
         {
@@ -10057,9 +9304,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a></div>\n                    </div>",
+          "html": "<div class=\"block block-layout-builder block-field-blocktaxonomy-termresource-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">General Research</h1>\n\n  </div>",
           "target": [
-            ".field--name-field-article-category"
+            ".block-layout-builder"
           ]
         },
         {
@@ -10077,47 +9324,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a></div>",
-          "target": [
-            ".field--name-field-article-category > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/art-library\" hreflang=\"en\">Art in the Library</a>",
-          "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">General Research</h1>",
           "target": [
             "h1"
           ]
@@ -10137,9 +9344,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Art in the Library! March -  May 2024</span>",
+          "html": "<div class=\"views-element-container block block-views block-views-blockresources-block-3\">",
           "target": [
-            ".field--name-title"
+            ".views-element-container"
           ]
         },
         {
@@ -10157,9 +9364,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__main\">",
+          "html": "<div>",
           "target": [
-            ".node__main"
+            ".views-element-container > div"
           ]
         },
         {
@@ -10177,509 +9384,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__content\">",
+          "html": "<div class=\"view view-resources view-id-resources view-display-id-block_3 js-view-dom-id-37e11002ac141e6a357a4ba2f6f36367d90c5221f3558edcc5a7abe09a84f913\" data-once=\"ajax-pager\">",
           "target": [
-            ".node__content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-hidden field__item\">",
-          "target": [
-            ".field--name-field-article-feature-image"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<article class=\"media media--type-article-feature-image media--view-mode-big-feature\">",
-          "target": [
-            ".media"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
-          "target": [
-            ".field--name-field-media-image-1"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__label visually-hidden\">Image</div>",
-          "target": [
-            ".field__label"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\">",
-          "target": [
-            ".field--name-field-media-image-1 > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/media/279/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=tRumBAfS\" width=\"1019\" height=\"573\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-04/Mountain-Summer-Gabriele-Bergmann-Hero.jpg?itok=tRumBAfS\" width=\"1019\" height=\"573\" alt=\"Mountain Summer Gabriele Bergmann\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "div[property=\"schema:text\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><em>Mountain Summer Gabriele Bergmann.</em></p>",
-          "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Mountain Summer Gabriele Bergmann.</em>",
-          "target": [
-            "em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Paintings by Helga Peiler\" data-entity-type=\"file\" data-entity-uuid=\"b57e162e-c889-4626-b30e-cd4ed443f1e8\" height=\"300\" loading=\"lazy\" src=\"/sites/default/files/inline-images/Helga-Peiler.jpg\" width=\"300\">",
-          "target": [
-            "img[alt=\"Paintings by Helga Peiler\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figcaption>Paintings by Helga Peiler.</figcaption>",
-          "target": [
-            ".align-left > figcaption"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figure role=\"group\" class=\"caption caption-img align-right\">",
-          "target": [
-            ".align-right"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Paintings by Bee Leek\" data-entity-type=\"file\" data-entity-uuid=\"9f24ac7b-3720-4205-b026-a2ce3db5bae9\" height=\"300\" loading=\"lazy\" src=\"/sites/default/files/inline-images/Bee-Leek.jpg\" width=\"300\">",
-          "target": [
-            "img[alt=\"Paintings by Bee Leek\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<figcaption>Paintings by Bee Leek.</figcaption>",
-          "target": [
-            ".align-right > figcaption"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Visitors will be in for a visual treat once they see the crisply drawn pen and ink botanicals, richly painted acrylic and oil captures of wildlife, and the vibrantly colorful nature-themed watercolor and oil pastels. This gallery exhibit will be on display until mid-May.</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy\">application for our public art submission online</a>",
-          "target": [
-            "p:nth-child(6) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"sidebar\">",
-          "target": [
-            ".sidebar"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"sidebar-newsletter-signup\">",
-          "target": [
-            "#sidebar-newsletter-signup"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            ".view"
           ]
         },
         {
@@ -10779,7 +9486,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-footerbranding-2 > .clearfix.text-formatted.field--name-body"
+            "#block-footerbranding-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -10799,7 +9506,7 @@
           "impact": null,
           "html": "<div class=\"site-logo\">\n    <img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">\n</div>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > .site-logo"
+            ".text-formatted.field--name-body.field--type-text-with-summary > .site-logo"
           ]
         },
         {
@@ -11119,7 +9826,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > ul"
+            "#block-mainnavigation > .menu"
           ]
         },
         {
@@ -11159,7 +9866,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -11179,7 +9886,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > ul"
+            "#menu-item-c92f701b > .menu"
           ]
         },
         {
@@ -11199,7 +9906,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -11219,7 +9926,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -11239,7 +9946,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -11259,7 +9966,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -11279,7 +9986,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -11299,7 +10006,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -11319,7 +10026,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -11339,7 +10046,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -11359,7 +10066,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -11379,7 +10086,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -11399,7 +10106,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
           ]
         },
         {
@@ -11419,7 +10126,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -11479,7 +10186,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > ul"
+            "#menu-item-cb25c7c1 > .menu"
           ]
         },
         {
@@ -11499,7 +10206,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -11519,7 +10226,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -11539,7 +10246,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -11559,7 +10266,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -11579,7 +10286,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -11599,7 +10306,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -11659,7 +10366,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > ul"
+            "#menu-item-0267a4c3 > .menu"
           ]
         },
         {
@@ -11679,7 +10386,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -11699,7 +10406,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -11719,7 +10426,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -11739,7 +10446,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -11759,7 +10466,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -11779,7 +10486,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -11799,7 +10506,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -11819,7 +10526,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -11859,7 +10566,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -11879,7 +10586,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -11899,7 +10606,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -11979,7 +10686,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>© Clearview Library District, 2021</p></div>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -11999,7 +10706,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -12039,7 +10746,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -12059,7 +10766,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
           ]
         },
         {
@@ -12099,7 +10806,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
           ]
         },
         {
@@ -12139,7 +10846,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
           ]
         },
         {
@@ -12259,7 +10966,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > ul"
+            "#block-utilitiesmenu-2 > .menu"
           ]
         },
         {
@@ -12277,9 +10984,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -12297,9 +11004,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -12319,7 +11026,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12339,7 +11046,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -12359,7 +11066,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -12379,7 +11086,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -12399,7 +11106,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -12419,7 +11126,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -12459,7 +11166,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation-6 > ul"
+            "#block-mainnavigation-6 > .menu"
           ]
         },
         {
@@ -12479,7 +11186,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -12499,7 +11206,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -12519,7 +11226,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -12539,7 +11246,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -12559,7 +11266,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -12579,7 +11286,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -12599,7 +11306,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -12619,7 +11326,27 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
           ]
         }
       ]
@@ -12705,138 +11432,7 @@
       ]
     }
   ],
-  "incomplete": [
-    {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/\">Home</a>",
-          "target": [
-            "li:nth-child(1) > a[href=\"/\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        }
-      ]
-    }
-  ],
+  "incomplete": [],
   "violations": [],
-  "documentTitle": "Art in the Library! March - May 2024 | Clearview Library"
+  "documentTitle": "General Research | Clearview Library"
 }

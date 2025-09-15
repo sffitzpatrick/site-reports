@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:37:34.934Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/social-media-policy",
+  "timestamp": "2025-09-15T21:17:37.952Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/solicitation-and-petitioning-policy",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,23 +445,6 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -2754,15 +2737,9 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Social Media Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Solicitation and Petitioning Policy</span>\n</h1>",
                   "target": [
                     "h1"
-                  ]
-                },
-                {
-                  "html": "<h2><span><span><span><strong><span><span>Disclaimer</span></span></strong></span></span></span></h2>",
-                  "target": [
-                    ".clearfix.text-formatted.field--name-body > h2"
                   ]
                 },
                 {
@@ -2849,9 +2826,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -3109,7 +3086,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Social Media Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Solicitation and Petitioning Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3134,9 +3111,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"MsoNormal\">",
+          "html": "<span>Library buildings and grounds are limited public forums for free speech activities under the First Amendment to the Constitution of the United States. These activities include, but are not limited to, petitioning, leafleting, and campaign activities.</span>",
           "target": [
-            ".MsoNormal"
+            "p:nth-child(1) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3159,9 +3136,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Posts to the Clearview Library District social media sites will generally be reviewed and responded to during the regular business hours of Monday – Friday, 9:00 a.m. - 5:00 p.m.<o:p></o:p></p>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(2)"
+            "p:nth-child(2) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3184,9 +3161,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District reserves the right to hide or delete comments containing:</p>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(3)"
+            "p:nth-child(3) > span > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>Please see the map for more detail</span>",
+          "target": [
+            ".file > span > span"
           ]
         },
         {
@@ -3209,7 +3211,32 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Comments that are clearly off-topic or irrelevant to the discussion or post</span>",
+          "html": "<span>The following activities are prohibited on Library District owned property:</span>",
+          "target": [
+            "p:nth-child(4) > span > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span>",
           "target": [
             "li:nth-child(1) > span > span > span > span > span > span"
           ]
@@ -3234,7 +3261,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Profane, obscene, or vulgar language</span>",
+          "html": "<span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span>",
           "target": [
             "li:nth-child(2) > span > span > span > span > span > span"
           ]
@@ -3259,32 +3286,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Personal attacks</span></span></span></span></span></span>,&nbsp;as well as threatening or abusive language of any kind.</li>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Personal attacks</span>",
+          "html": "<span>Continuing to impose upon, follow, shout at or against, mark for approach by others, or otherwise press an issue after having been advised of the individual’s lack of interest or opposing viewpoint and desire to be left alone.</span>",
           "target": [
             "li:nth-child(3) > span > span > span > span > span > span"
           ]
@@ -3309,32 +3311,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Content th</span>",
+          "html": "<span>Surrounding or making serial approaches to a patron, employee, or visitor.</span>",
           "target": [
             "li:nth-child(4) > span > span > span > span > span > span"
           ]
@@ -3359,7 +3336,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Spam or links to other sites or pages</span>",
+          "html": "<span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span>",
           "target": [
             "li:nth-child(5) > span > span > span > span > span > span"
           ]
@@ -3384,7 +3361,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Encouragement or endorsement of illegal activity</span>",
+          "html": "<span>Inciting or promoting imminent acts of violence.</span>",
           "target": [
             "li:nth-child(6) > span > span > span > span > span > span"
           ]
@@ -3409,7 +3386,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Solicitations of commerce</span>",
+          "html": "<span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span>",
           "target": [
             "li:nth-child(7) > span > span > span > span > span > span"
           ]
@@ -3434,7 +3411,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Promotion or endorsement of political organizations, groups or candidates</span>",
+          "html": "<span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span>",
           "target": [
             "li:nth-child(8) > span > span > span > span > span > span"
           ]
@@ -3459,7 +3436,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Personally identifiable medical information (HIPPA laws)</span>",
+          "html": "<span>Solicitation and petitioning activities inside the Library District facilities.</span>",
           "target": [
             "li:nth-child(9) > span > span > span > span > span > span"
           ]
@@ -3484,307 +3461,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Infor</span></span></span></span></span></span>mation that may compromise the safety and security of the public or public systems.</li>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Infor</span>",
-          "target": [
-            "li:nth-child(10) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><span><span><span><span><span><span>Information that m</span></span></span></span></span></span>ay compromise the proceeding of any criminal or civil investigations.</li>",
-          "target": [
-            "li:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Information that m</span>",
-          "target": [
-            "li:nth-child(11) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Copyright infringement; content that violates a legal ownership interest of any other party</span>",
-          "target": [
-            "li:nth-child(12) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>The Clearv</span>",
-          "target": [
-            "p:nth-child(5) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Disclaimer</span>",
-          "target": [
-            "strong > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Please </span>",
-          "target": [
-            "p:nth-child(7) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Commen</span>",
-          "target": [
-            "p:nth-child(8) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Adopted November 20, 2018. Updated, March 30, 2023.</span>",
+          "html": "<span>Adopted August 30, 2018. Reaffirmed February 27, 2020.</span>",
           "target": [
             "em > span"
           ]
@@ -5048,27 +4725,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Social Media Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Solicitation and Petitioning Policy</span>\n</h1>",
           "target": [
             "h1"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2><span><span><span><strong><span><span>Disclaimer</span></span></strong></span></span></span></h2>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -5232,12 +4891,6 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(6)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
                       "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > aside:nth-child(3) > div > div > nav > h2:nth-child(1)"
                     ],
                     "level": 2
@@ -5300,27 +4953,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Social Media Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Solicitation and Petitioning Policy</span>\n</h1>",
           "target": [
             "h1"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2><span><span><span><strong><span><span>Disclaimer</span></span></strong></span></span></span></h2>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -6398,6 +6033,49 @@
       ]
     },
     {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(3)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"file file--mime-application-pdf file--application-pdf\" data-entity-type=\"file\" data-entity-uuid=\"0a00dd9b-593d-4bf8-871c-f683d8d133f4\" filename=\"Solicitation and Petitioning Policy Map.pdf\" href=\"/sites/default/files/inline-files/Solicitation%20and%20Petitioning%20Policy%20Map.pdf\" title=\"Solicitation and Petitioning Policy Map.pdf\">",
+          "target": [
+            ".file"
+          ]
+        }
+      ]
+    },
+    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -6465,9 +6143,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6780,6 +6458,39 @@
           "html": "<a class=\"search-suggestions__suggestion\" href=\"https://pika.clearviewlibrary.org/Search/Results?lookfor=%2A&amp;basicType=Keyword&amp;basicType=Keyword&amp;filter%5B%5D=collection_clearview%3A%22Young+Adult+Fiction%22&amp;sort=relevance&amp;view=list&amp;searchSource=local\">Teen Books</a>",
           "target": [
             ".search-suggestions__suggestion:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            },
+            {
+              "id": "non-empty-title",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has a title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a class=\"file file--mime-application-pdf file--application-pdf\" data-entity-type=\"file\" data-entity-uuid=\"0a00dd9b-593d-4bf8-871c-f683d8d133f4\" filename=\"Solicitation and Petitioning Policy Map.pdf\" href=\"/sites/default/files/inline-files/Solicitation%20and%20Petitioning%20Policy%20Map.pdf\" title=\"Solicitation and Petitioning Policy Map.pdf\">",
+          "target": [
+            ".file"
           ]
         },
         {
@@ -7765,9 +7476,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -8231,7 +7942,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -8393,7 +8104,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Comments that are clearly off-topic or irrelevant to the discussion or post</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
           ]
@@ -8411,7 +8122,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Profane, obscene, or vulgar language</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
           ]
@@ -8429,7 +8140,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Personal attacks</span></span></span></span></span></span>,&nbsp;as well as threatening or abusive language of any kind.</li>",
+          "html": "<li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
           ]
@@ -8447,7 +8158,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li><span><span><span><span><span><span>Surrounding or making serial approaches to a patron, employee, or visitor.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
           ]
@@ -8465,7 +8176,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Spam or links to other sites or pages</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
           ]
@@ -8483,7 +8194,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Encouragement or endorsement of illegal activity</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Inciting or promoting imminent acts of violence.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(6)"
           ]
@@ -8501,7 +8212,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Solicitations of commerce</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(7)"
           ]
@@ -8519,7 +8230,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Promotion or endorsement of political organizations, groups or candidates</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(8)"
           ]
@@ -8537,63 +8248,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Personally identifiable medical information (HIPPA laws)</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Solicitation and petitioning activities inside the Library District facilities.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><span><span><span><span><span><span>Infor</span></span></span></span></span></span>mation that may compromise the safety and security of the public or public systems.</li>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><span><span><span><span><span><span>Information that m</span></span></span></span></span></span>ay compromise the proceeding of any criminal or civil investigations.</li>",
-          "target": [
-            "li:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><span><span><span><span><span><span>Copyright infringement; content that violates a legal ownership interest of any other party</span></span></span></span></span></span></li>",
-          "target": [
-            "li:nth-child(12)"
           ]
         },
         {
@@ -9185,7 +8842,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -9547,7 +9204,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Social Media Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Solicitation and Petitioning Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9772,7 +9429,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -9792,9 +9449,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -10634,7 +10291,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            ".label"
+            "strong"
           ]
         },
         {
@@ -10752,7 +10409,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Social Media Policy</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Solicitation and Petitioning Policy</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -10772,7 +10429,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Social Media Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Solicitation and Petitioning Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10792,7 +10449,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Social Media Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Solicitation and Petitioning Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10912,9 +10569,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"325\" about=\"/about-us/learn-more/policies-faqs/social-media-policy\" id=\"node-325\" class=\"node node--type-policy node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"326\" about=\"/about-us/learn-more/policies-faqs/solicitation-and-petitioning-policy\" id=\"node-326\" class=\"node node--type-policy node--view-mode-full\">",
           "target": [
-            "#node-325"
+            "#node-326"
           ]
         },
         {
@@ -10972,9 +10629,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"MsoNormal\">",
+          "html": "<p>",
           "target": [
-            ".MsoNormal"
+            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
           ]
         },
         {
@@ -10992,9 +10649,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<o:p></o:p>",
+          "html": "<span>",
           "target": [
-            ".MsoNormal > o\\:p"
+            "p:nth-child(1) > span"
           ]
         },
         {
@@ -11012,7 +10669,107 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Posts to the Clearview Library District social media sites will generally be reviewed and responded to during the regular business hours of Monday – Friday, 9:00 a.m. - 5:00 p.m.<o:p></o:p></p>",
+          "html": "<span>",
+          "target": [
+            "p:nth-child(1) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(1) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span><span><span>Library buildings and grounds are limited public forums for free speech activities under the First Amendment to the Constitution of the United States. These activities include, but are not limited to, petitioning, leafleting, and campaign activities.</span></span></span>",
+          "target": [
+            "p:nth-child(1) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span><span>Library buildings and grounds are limited public forums for free speech activities under the First Amendment to the Constitution of the United States. These activities include, but are not limited to, petitioning, leafleting, and campaign activities.</span></span>",
+          "target": [
+            "p:nth-child(1) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>Library buildings and grounds are limited public forums for free speech activities under the First Amendment to the Constitution of the United States. These activities include, but are not limited to, petitioning, leafleting, and campaign activities.</span>",
+          "target": [
+            "p:nth-child(1) > span > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -11032,9 +10789,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<o:p></o:p>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(2) > o\\:p"
+            "p:nth-child(2) > span"
           ]
         },
         {
@@ -11052,9 +10809,429 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District reserves the right to hide or delete comments containing:</p>",
+          "html": "<span>",
+          "target": [
+            "p:nth-child(2) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(2) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(2) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(2) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(2) > span > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
           "target": [
             "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(3) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(3) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(3) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(3) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(3) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>",
+          "target": [
+            "p:nth-child(3) > span > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"file file--mime-application-pdf file--application-pdf\" data-entity-type=\"file\" data-entity-uuid=\"0a00dd9b-593d-4bf8-871c-f683d8d133f4\" filename=\"Solicitation and Petitioning Policy Map.pdf\" href=\"/sites/default/files/inline-files/Solicitation%20and%20Petitioning%20Policy%20Map.pdf\" title=\"Solicitation and Petitioning Policy Map.pdf\">",
+          "target": [
+            ".file"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span><span>Please see the map for more detail</span></span>",
+          "target": [
+            ".file > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>Please see the map for more detail</span>",
+          "target": [
+            ".file > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><span><span><span><span><span><span>The following activities are prohibited on Library District owned property:</span></span></span></span></span></span></p>",
+          "target": [
+            "p:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span><span><span><span><span><span>The following activities are prohibited on Library District owned property:</span></span></span></span></span></span>",
+          "target": [
+            "p:nth-child(4) > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span><span><span><span><span>The following activities are prohibited on Library District owned property:</span></span></span></span></span>",
+          "target": [
+            "p:nth-child(4) > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span><span><span><span>The following activities are prohibited on Library District owned property:</span></span></span></span>",
+          "target": [
+            "p:nth-child(4) > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span><span><span>The following activities are prohibited on Library District owned property:</span></span></span>",
+          "target": [
+            "p:nth-child(4) > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span><span>The following activities are prohibited on Library District owned property:</span></span>",
+          "target": [
+            "p:nth-child(4) > span > span > span > span > span"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>The following activities are prohibited on Library District owned property:</span>",
+          "target": [
+            "p:nth-child(4) > span > span > span > span > span > span"
           ]
         },
         {
@@ -11092,7 +11269,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Comments that are clearly off-topic or irrelevant to the discussion or post</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
           ]
@@ -11112,7 +11289,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Comments that are clearly off-topic or irrelevant to the discussion or post</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><span><span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span></span></span></span></span></span>",
           "target": [
             "li:nth-child(1) > span"
           ]
@@ -11132,7 +11309,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Comments that are clearly off-topic or irrelevant to the discussion or post</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span></span></span></span></span>",
           "target": [
             "li:nth-child(1) > span > span"
           ]
@@ -11152,7 +11329,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Comments that are clearly off-topic or irrelevant to the discussion or post</span></span></span></span>",
+          "html": "<span><span><span><span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span></span></span></span>",
           "target": [
             "li:nth-child(1) > span > span > span"
           ]
@@ -11172,7 +11349,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Comments that are clearly off-topic or irrelevant to the discussion or post</span></span></span>",
+          "html": "<span><span><span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span></span></span>",
           "target": [
             "li:nth-child(1) > span > span > span > span"
           ]
@@ -11192,7 +11369,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Comments that are clearly off-topic or irrelevant to the discussion or post</span></span>",
+          "html": "<span><span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span></span>",
           "target": [
             "li:nth-child(1) > span > span > span > span > span"
           ]
@@ -11212,7 +11389,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Comments that are clearly off-topic or irrelevant to the discussion or post</span>",
+          "html": "<span>Exercising free speech rights under this policy outside of a Free Speech Zone.</span>",
           "target": [
             "li:nth-child(1) > span > span > span > span > span > span"
           ]
@@ -11232,7 +11409,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Profane, obscene, or vulgar language</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
           ]
@@ -11252,7 +11429,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Profane, obscene, or vulgar language</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><span><span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span></span></span></span></span></span>",
           "target": [
             "li:nth-child(2) > span"
           ]
@@ -11272,7 +11449,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Profane, obscene, or vulgar language</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span></span></span></span></span>",
           "target": [
             "li:nth-child(2) > span > span"
           ]
@@ -11292,7 +11469,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Profane, obscene, or vulgar language</span></span></span></span>",
+          "html": "<span><span><span><span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span></span></span></span>",
           "target": [
             "li:nth-child(2) > span > span > span"
           ]
@@ -11312,7 +11489,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Profane, obscene, or vulgar language</span></span></span>",
+          "html": "<span><span><span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span></span></span>",
           "target": [
             "li:nth-child(2) > span > span > span > span"
           ]
@@ -11332,7 +11509,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Profane, obscene, or vulgar language</span></span>",
+          "html": "<span><span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span></span>",
           "target": [
             "li:nth-child(2) > span > span > span > span > span"
           ]
@@ -11352,7 +11529,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Profane, obscene, or vulgar language</span>",
+          "html": "<span>Hindering, impeding, or blocking the passage of library patrons, employees, or visitors.</span>",
           "target": [
             "li:nth-child(2) > span > span > span > span > span > span"
           ]
@@ -11372,7 +11549,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Personal attacks</span></span></span></span></span></span>,&nbsp;as well as threatening or abusive language of any kind.</li>",
+          "html": "<li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
           ]
@@ -11392,7 +11569,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Personal attacks</span></span></span></span></span></span>",
+          "html": "<span>",
           "target": [
             "li:nth-child(3) > span"
           ]
@@ -11412,7 +11589,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Personal attacks</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Continuing to impose upon, follow, shout at or against, mark for approach by others, or otherwise press an issue after having been advised of the individual’s lack of interest or opposing viewpoint and desire to be left alone.</span></span></span></span></span>",
           "target": [
             "li:nth-child(3) > span > span"
           ]
@@ -11432,7 +11609,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Personal attacks</span></span></span></span>",
+          "html": "<span><span><span><span>Continuing to impose upon, follow, shout at or against, mark for approach by others, or otherwise press an issue after having been advised of the individual’s lack of interest or opposing viewpoint and desire to be left alone.</span></span></span></span>",
           "target": [
             "li:nth-child(3) > span > span > span"
           ]
@@ -11452,7 +11629,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Personal attacks</span></span></span>",
+          "html": "<span><span><span>Continuing to impose upon, follow, shout at or against, mark for approach by others, or otherwise press an issue after having been advised of the individual’s lack of interest or opposing viewpoint and desire to be left alone.</span></span></span>",
           "target": [
             "li:nth-child(3) > span > span > span > span"
           ]
@@ -11472,7 +11649,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Personal attacks</span></span>",
+          "html": "<span><span>Continuing to impose upon, follow, shout at or against, mark for approach by others, or otherwise press an issue after having been advised of the individual’s lack of interest or opposing viewpoint and desire to be left alone.</span></span>",
           "target": [
             "li:nth-child(3) > span > span > span > span > span"
           ]
@@ -11492,7 +11669,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Personal attacks</span>",
+          "html": "<span>Continuing to impose upon, follow, shout at or against, mark for approach by others, or otherwise press an issue after having been advised of the individual’s lack of interest or opposing viewpoint and desire to be left alone.</span>",
           "target": [
             "li:nth-child(3) > span > span > span > span > span > span"
           ]
@@ -11512,7 +11689,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li><span><span><span><span><span><span>Surrounding or making serial approaches to a patron, employee, or visitor.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
           ]
@@ -11532,7 +11709,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Content th</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><span><span>Surrounding or making serial approaches to a patron, employee, or visitor.</span></span></span></span></span></span>",
           "target": [
             "li:nth-child(4) > span"
           ]
@@ -11552,7 +11729,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Content th</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Surrounding or making serial approaches to a patron, employee, or visitor.</span></span></span></span></span>",
           "target": [
             "li:nth-child(4) > span > span"
           ]
@@ -11572,7 +11749,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Content th</span></span></span></span>",
+          "html": "<span><span><span><span>Surrounding or making serial approaches to a patron, employee, or visitor.</span></span></span></span>",
           "target": [
             "li:nth-child(4) > span > span > span"
           ]
@@ -11592,7 +11769,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Content th</span></span></span>",
+          "html": "<span><span><span>Surrounding or making serial approaches to a patron, employee, or visitor.</span></span></span>",
           "target": [
             "li:nth-child(4) > span > span > span > span"
           ]
@@ -11612,7 +11789,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Content th</span></span>",
+          "html": "<span><span>Surrounding or making serial approaches to a patron, employee, or visitor.</span></span>",
           "target": [
             "li:nth-child(4) > span > span > span > span > span"
           ]
@@ -11632,7 +11809,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Content th</span>",
+          "html": "<span>Surrounding or making serial approaches to a patron, employee, or visitor.</span>",
           "target": [
             "li:nth-child(4) > span > span > span > span > span > span"
           ]
@@ -11652,7 +11829,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Spam or links to other sites or pages</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
           ]
@@ -11672,7 +11849,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Spam or links to other sites or pages</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><span><span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span></span></span></span></span></span>",
           "target": [
             "li:nth-child(5) > span"
           ]
@@ -11692,7 +11869,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Spam or links to other sites or pages</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span></span></span></span></span>",
           "target": [
             "li:nth-child(5) > span > span"
           ]
@@ -11712,7 +11889,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Spam or links to other sites or pages</span></span></span></span>",
+          "html": "<span><span><span><span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span></span></span></span>",
           "target": [
             "li:nth-child(5) > span > span > span"
           ]
@@ -11732,7 +11909,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Spam or links to other sites or pages</span></span></span>",
+          "html": "<span><span><span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span></span></span>",
           "target": [
             "li:nth-child(5) > span > span > span > span"
           ]
@@ -11752,7 +11929,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Spam or links to other sites or pages</span></span>",
+          "html": "<span><span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span></span>",
           "target": [
             "li:nth-child(5) > span > span > span > span > span"
           ]
@@ -11772,7 +11949,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Spam or links to other sites or pages</span>",
+          "html": "<span>Engaging, arguing with or otherwise opposing or inciting others exercising their rights under this policy.</span>",
           "target": [
             "li:nth-child(5) > span > span > span > span > span > span"
           ]
@@ -11792,7 +11969,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Encouragement or endorsement of illegal activity</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Inciting or promoting imminent acts of violence.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(6)"
           ]
@@ -11812,7 +11989,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Encouragement or endorsement of illegal activity</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><span><span>Inciting or promoting imminent acts of violence.</span></span></span></span></span></span>",
           "target": [
             "li:nth-child(6) > span"
           ]
@@ -11832,7 +12009,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Encouragement or endorsement of illegal activity</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Inciting or promoting imminent acts of violence.</span></span></span></span></span>",
           "target": [
             "li:nth-child(6) > span > span"
           ]
@@ -11852,7 +12029,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Encouragement or endorsement of illegal activity</span></span></span></span>",
+          "html": "<span><span><span><span>Inciting or promoting imminent acts of violence.</span></span></span></span>",
           "target": [
             "li:nth-child(6) > span > span > span"
           ]
@@ -11872,7 +12049,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Encouragement or endorsement of illegal activity</span></span></span>",
+          "html": "<span><span><span>Inciting or promoting imminent acts of violence.</span></span></span>",
           "target": [
             "li:nth-child(6) > span > span > span > span"
           ]
@@ -11892,7 +12069,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Encouragement or endorsement of illegal activity</span></span>",
+          "html": "<span><span>Inciting or promoting imminent acts of violence.</span></span>",
           "target": [
             "li:nth-child(6) > span > span > span > span > span"
           ]
@@ -11912,7 +12089,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Encouragement or endorsement of illegal activity</span>",
+          "html": "<span>Inciting or promoting imminent acts of violence.</span>",
           "target": [
             "li:nth-child(6) > span > span > span > span > span > span"
           ]
@@ -11932,7 +12109,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Solicitations of commerce</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(7)"
           ]
@@ -11952,7 +12129,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Solicitations of commerce</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><span><span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span></span></span></span></span></span>",
           "target": [
             "li:nth-child(7) > span"
           ]
@@ -11972,7 +12149,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Solicitations of commerce</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span></span></span></span></span>",
           "target": [
             "li:nth-child(7) > span > span"
           ]
@@ -11992,7 +12169,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Solicitations of commerce</span></span></span></span>",
+          "html": "<span><span><span><span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span></span></span></span>",
           "target": [
             "li:nth-child(7) > span > span > span"
           ]
@@ -12012,7 +12189,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Solicitations of commerce</span></span></span>",
+          "html": "<span><span><span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span></span></span>",
           "target": [
             "li:nth-child(7) > span > span > span > span"
           ]
@@ -12032,7 +12209,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Solicitations of commerce</span></span>",
+          "html": "<span><span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span></span>",
           "target": [
             "li:nth-child(7) > span > span > span > span > span"
           ]
@@ -12052,7 +12229,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Solicitations of commerce</span>",
+          "html": "<span>Presenting, imposing, or otherwise impressing upon patrons, employees, or visitors obscene materials that would be considered generally offensive with the community.</span>",
           "target": [
             "li:nth-child(7) > span > span > span > span > span > span"
           ]
@@ -12072,7 +12249,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Promotion or endorsement of political organizations, groups or candidates</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(8)"
           ]
@@ -12092,7 +12269,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Promotion or endorsement of political organizations, groups or candidates</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><span><span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span></span></span></span></span></span>",
           "target": [
             "li:nth-child(8) > span"
           ]
@@ -12112,7 +12289,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Promotion or endorsement of political organizations, groups or candidates</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span></span></span></span></span>",
           "target": [
             "li:nth-child(8) > span > span"
           ]
@@ -12132,7 +12309,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Promotion or endorsement of political organizations, groups or candidates</span></span></span></span>",
+          "html": "<span><span><span><span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span></span></span></span>",
           "target": [
             "li:nth-child(8) > span > span > span"
           ]
@@ -12152,7 +12329,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Promotion or endorsement of political organizations, groups or candidates</span></span></span>",
+          "html": "<span><span><span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span></span></span>",
           "target": [
             "li:nth-child(8) > span > span > span > span"
           ]
@@ -12172,7 +12349,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Promotion or endorsement of political organizations, groups or candidates</span></span>",
+          "html": "<span><span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span></span>",
           "target": [
             "li:nth-child(8) > span > span > span > span > span"
           ]
@@ -12192,7 +12369,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Promotion or endorsement of political organizations, groups or candidates</span>",
+          "html": "<span>Solicitation of funds or sale of goods and services without a copy of written authorization from the Library District Director in the possession of the person acting pursuant to the written authorization.</span>",
           "target": [
             "li:nth-child(8) > span > span > span > span > span > span"
           ]
@@ -12212,7 +12389,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Personally identifiable medical information (HIPPA laws)</span></span></span></span></span></span></li>",
+          "html": "<li><span><span><span><span><span><span>Solicitation and petitioning activities inside the Library District facilities.</span></span></span></span></span></span></li>",
           "target": [
             ".clearfix.text-formatted.field--name-body > ul > li:nth-child(9)"
           ]
@@ -12232,7 +12409,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Personally identifiable medical information (HIPPA laws)</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><span><span>Solicitation and petitioning activities inside the Library District facilities.</span></span></span></span></span></span>",
           "target": [
             "li:nth-child(9) > span"
           ]
@@ -12252,7 +12429,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Personally identifiable medical information (HIPPA laws)</span></span></span></span></span>",
+          "html": "<span><span><span><span><span>Solicitation and petitioning activities inside the Library District facilities.</span></span></span></span></span>",
           "target": [
             "li:nth-child(9) > span > span"
           ]
@@ -12272,7 +12449,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Personally identifiable medical information (HIPPA laws)</span></span></span></span>",
+          "html": "<span><span><span><span>Solicitation and petitioning activities inside the Library District facilities.</span></span></span></span>",
           "target": [
             "li:nth-child(9) > span > span > span"
           ]
@@ -12292,7 +12469,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Personally identifiable medical information (HIPPA laws)</span></span></span>",
+          "html": "<span><span><span>Solicitation and petitioning activities inside the Library District facilities.</span></span></span>",
           "target": [
             "li:nth-child(9) > span > span > span > span"
           ]
@@ -12312,7 +12489,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Personally identifiable medical information (HIPPA laws)</span></span>",
+          "html": "<span><span>Solicitation and petitioning activities inside the Library District facilities.</span></span>",
           "target": [
             "li:nth-child(9) > span > span > span > span > span"
           ]
@@ -12332,7 +12509,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Personally identifiable medical information (HIPPA laws)</span>",
+          "html": "<span>Solicitation and petitioning activities inside the Library District facilities.</span>",
           "target": [
             "li:nth-child(9) > span > span > span > span > span > span"
           ]
@@ -12352,9 +12529,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><span><span><span><span><span><span>Infor</span></span></span></span></span></span>mation that may compromise the safety and security of the public or public systems.</li>",
+          "html": "<p><span><span><span><span><em><span>Adopted August 30, 2018. Reaffirmed February 27, 2020.</span></em></span></span></span></span></p>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(10)"
+            "p:nth-child(6)"
           ]
         },
         {
@@ -12372,9 +12549,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span><span>Infor</span></span></span></span></span></span>",
+          "html": "<span><span><span><span><em><span>Adopted August 30, 2018. Reaffirmed February 27, 2020.</span></em></span></span></span></span>",
           "target": [
-            "li:nth-child(10) > span"
+            "p:nth-child(6) > span"
           ]
         },
         {
@@ -12392,9 +12569,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span><span>Infor</span></span></span></span></span>",
+          "html": "<span><span><span><em><span>Adopted August 30, 2018. Reaffirmed February 27, 2020.</span></em></span></span></span>",
           "target": [
-            "li:nth-child(10) > span > span"
+            "p:nth-child(6) > span > span"
           ]
         },
         {
@@ -12412,9 +12589,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span><span>Infor</span></span></span></span>",
+          "html": "<span><span><em><span>Adopted August 30, 2018. Reaffirmed February 27, 2020.</span></em></span></span>",
           "target": [
-            "li:nth-child(10) > span > span > span"
+            "p:nth-child(6) > span > span > span"
           ]
         },
         {
@@ -12432,9 +12609,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span><span>Infor</span></span></span>",
+          "html": "<span><em><span>Adopted August 30, 2018. Reaffirmed February 27, 2020.</span></em></span>",
           "target": [
-            "li:nth-child(10) > span > span > span > span"
+            "p:nth-child(6) > span > span > span > span"
           ]
         },
         {
@@ -12452,987 +12629,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span><span>Infor</span></span>",
-          "target": [
-            "li:nth-child(10) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Infor</span>",
-          "target": [
-            "li:nth-child(10) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><span><span><span><span><span><span>Information that m</span></span></span></span></span></span>ay compromise the proceeding of any criminal or civil investigations.</li>",
-          "target": [
-            "li:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span>Information that m</span></span></span></span></span></span>",
-          "target": [
-            "li:nth-child(11) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span>Information that m</span></span></span></span></span>",
-          "target": [
-            "li:nth-child(11) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span>Information that m</span></span></span></span>",
-          "target": [
-            "li:nth-child(11) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span>Information that m</span></span></span>",
-          "target": [
-            "li:nth-child(11) > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span>Information that m</span></span>",
-          "target": [
-            "li:nth-child(11) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Information that m</span>",
-          "target": [
-            "li:nth-child(11) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><span><span><span><span><span><span>Copyright infringement; content that violates a legal ownership interest of any other party</span></span></span></span></span></span></li>",
-          "target": [
-            "li:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span>Copyright infringement; content that violates a legal ownership interest of any other party</span></span></span></span></span></span>",
-          "target": [
-            "li:nth-child(12) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span>Copyright infringement; content that violates a legal ownership interest of any other party</span></span></span></span></span>",
-          "target": [
-            "li:nth-child(12) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span>Copyright infringement; content that violates a legal ownership interest of any other party</span></span></span></span>",
-          "target": [
-            "li:nth-child(12) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span>Copyright infringement; content that violates a legal ownership interest of any other party</span></span></span>",
-          "target": [
-            "li:nth-child(12) > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span>Copyright infringement; content that violates a legal ownership interest of any other party</span></span>",
-          "target": [
-            "li:nth-child(12) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Copyright infringement; content that violates a legal ownership interest of any other party</span>",
-          "target": [
-            "li:nth-child(12) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span>The Clearv</span></span></span></span></span></span>",
-          "target": [
-            "p:nth-child(5) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span>The Clearv</span></span></span></span></span>",
-          "target": [
-            "p:nth-child(5) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span>The Clearv</span></span></span></span>",
-          "target": [
-            "p:nth-child(5) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span>The Clearv</span></span></span>",
-          "target": [
-            "p:nth-child(5) > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span>The Clearv</span></span>",
-          "target": [
-            "p:nth-child(5) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>The Clearv</span>",
-          "target": [
-            "p:nth-child(5) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2><span><span><span><strong><span><span>Disclaimer</span></span></strong></span></span></span></h2>",
-          "target": [
-            ".clearfix.text-formatted.field--name-body > h2"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><strong><span><span>Disclaimer</span></span></strong></span></span></span>",
-          "target": [
-            "h2 > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><strong><span><span>Disclaimer</span></span></strong></span></span>",
-          "target": [
-            "h2 > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><strong><span><span>Disclaimer</span></span></strong></span>",
-          "target": [
-            "h2 > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong><span><span>Disclaimer</span></span></strong>",
-          "target": [
-            "span > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span>Disclaimer</span></span>",
-          "target": [
-            "strong > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Disclaimer</span>",
-          "target": [
-            "strong > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span>Please </span></span></span></span></span></span>",
-          "target": [
-            "p:nth-child(7) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span>Please </span></span></span></span></span>",
-          "target": [
-            "p:nth-child(7) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span>Please </span></span></span></span>",
-          "target": [
-            "p:nth-child(7) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span>Please </span></span></span>",
-          "target": [
-            "p:nth-child(7) > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span>Please </span></span>",
-          "target": [
-            "p:nth-child(7) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Please </span>",
-          "target": [
-            "p:nth-child(7) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span><span>Commen</span></span></span></span></span></span>",
-          "target": [
-            "p:nth-child(8) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><span>Commen</span></span></span></span></span>",
-          "target": [
-            "p:nth-child(8) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span>Commen</span></span></span></span>",
-          "target": [
-            "p:nth-child(8) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span>Commen</span></span></span>",
-          "target": [
-            "p:nth-child(8) > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span>Commen</span></span>",
-          "target": [
-            "p:nth-child(8) > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span>Commen</span>",
-          "target": [
-            "p:nth-child(8) > span > span > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><span><span><span><span><em><span>Adopted November 20, 2018. Updated, March 30, 2023.</span></em></span></span></span></span></p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><span><em><span>Adopted November 20, 2018. Updated, March 30, 2023.</span></em></span></span></span></span>",
-          "target": [
-            "p:nth-child(9) > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><span><em><span>Adopted November 20, 2018. Updated, March 30, 2023.</span></em></span></span></span>",
-          "target": [
-            "p:nth-child(9) > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><span><em><span>Adopted November 20, 2018. Updated, March 30, 2023.</span></em></span></span>",
-          "target": [
-            "p:nth-child(9) > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span><em><span>Adopted November 20, 2018. Updated, March 30, 2023.</span></em></span>",
-          "target": [
-            "p:nth-child(9) > span > span > span > span"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em><span>Adopted November 20, 2018. Updated, March 30, 2023.</span></em>",
+          "html": "<em><span>Adopted August 30, 2018. Reaffirmed February 27, 2020.</span></em>",
           "target": [
             "em"
           ]
@@ -13452,7 +12649,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span>Adopted November 20, 2018. Updated, March 30, 2023.</span>",
+          "html": "<span>Adopted August 30, 2018. Reaffirmed February 27, 2020.</span>",
           "target": [
             "em > span"
           ]
@@ -15872,7 +15069,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -15892,9 +15089,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -16302,5 +15499,5 @@
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Social Media Policy | Clearview Library"
+  "documentTitle": "Solicitation and Petitioning Policy | Clearview Library"
 }

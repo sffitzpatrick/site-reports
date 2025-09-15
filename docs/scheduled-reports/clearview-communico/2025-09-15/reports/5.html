@@ -103,7 +103,7 @@
                     <br />
                 </div>
             </div>
-            <h2>axe-core found <span class="badge badge-warning">30</span> violations</h2>
+            <h2>axe-core found <span class="badge badge-warning">28</span> violations</h2>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -170,7 +170,7 @@
                         <td>link-name</td>
                         <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
                         <td>serious</td>
-                        <td>3</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <th scope="row"><a href="#8" class="card-link">8</a></th>
@@ -186,7 +186,7 @@
                         <td>region</td>
                         <td>Best practice</td>
                         <td>moderate</td>
-                        <td>18</td>
+                        <td>15</td>
                     </tr>
                 </tbody>
             </table>
@@ -756,6 +756,32 @@
                                     <td>1</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">a[href$&#x3D;&quot;share&quot;]</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.addtoany.com&#x2F;share&quot;&gt;&lt;&#x2F;a&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix all of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element is in tab order and does not have accessible text</li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element does not have text that is visible to screen readers</li>
+                                                <li>  aria-label attribute does not exist or is empty</li>
+                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                                <li>  Element has no title attribute</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">span &gt; a[href$&#x3D;&quot;#branch&quot;]</code></pre>
                                         <p><strong>Element source</strong></p>
                                         <pre><code class="html text-wrap">&lt;a href&#x3D;&quot;#branch&quot;&gt;&lt;i class&#x3D;&quot;am-locations&quot; style&#x3D;&quot;color: #afafaf;&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;a&gt;</code></pre>
@@ -779,7 +805,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
+                                    <td>3</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">a[href&#x3D;&quot;&#x2F;events?term&#x3D;&quot;]</code></pre>
@@ -805,7 +831,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
+                                    <td>4</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">.amh-content &gt; a[target&#x3D;&quot;_blank&quot;]:nth-child(1)</code></pre>
@@ -970,57 +996,6 @@
                                     <td>2</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">.a2a_button_facebook &gt; .a2a_label</code></pre>
-                                        <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;span class&#x3D;&quot;a2a_label&quot;&gt;Facebook&lt;&#x2F;span&gt;</code></pre>
-                                    </td>
-                                    <td>
-                                        <div class="wrapBreakWord">
-                                            <p>Fix any of the following:</p>
-                                            <ul class="text-muted">
-                                                <li>  Some page content is not contained by landmarks</li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>
-                                        <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">.a2a_button_x &gt; .a2a_label</code></pre>
-                                        <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;span class&#x3D;&quot;a2a_label&quot;&gt;X&lt;&#x2F;span&gt;</code></pre>
-                                    </td>
-                                    <td>
-                                        <div class="wrapBreakWord">
-                                            <p>Fix any of the following:</p>
-                                            <ul class="text-muted">
-                                                <li>  Some page content is not contained by landmarks</li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>
-                                        <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">.a2a_button_email &gt; .a2a_label</code></pre>
-                                        <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;span class&#x3D;&quot;a2a_label&quot;&gt;Email&lt;&#x2F;span&gt;</code></pre>
-                                    </td>
-                                    <td>
-                                        <div class="wrapBreakWord">
-                                            <p>Fix any of the following:</p>
-                                            <ul class="text-muted">
-                                                <li>  Some page content is not contained by landmarks</li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>
-                                        <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idEZOEa</code></pre>
                                         <p><strong>Element source</strong></p>
                                         <pre><code class="html text-wrap">&lt;div class&#x3D;&quot;amh-row row&quot; id&#x3D;&quot;idEZOEa&quot;&gt;</code></pre>
@@ -1035,7 +1010,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>6</td>
+                                    <td>3</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idm0vRo &gt; .amh-content &gt; span &gt; h4</code></pre>
@@ -1054,7 +1029,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>7</td>
+                                    <td>4</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">span &gt; .amh-content &gt; .addtocalendar.atc-style-blue &gt; .atcb-link</code></pre>
@@ -1071,7 +1046,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>8</td>
+                                    <td>5</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#ido3nIF</code></pre>
@@ -1088,7 +1063,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>9</td>
+                                    <td>6</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idlw5ZC</code></pre>
@@ -1105,7 +1080,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>10</td>
+                                    <td>7</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idQ9R9H</code></pre>
@@ -1122,7 +1097,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>11</td>
+                                    <td>8</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idoHUdG</code></pre>
@@ -1139,7 +1114,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>12</td>
+                                    <td>9</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idu1bAQ</code></pre>
@@ -1156,7 +1131,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>13</td>
+                                    <td>10</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idwcYV5</code></pre>
@@ -1173,7 +1148,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>14</td>
+                                    <td>11</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idVbM5V</code></pre>
@@ -1190,7 +1165,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>15</td>
+                                    <td>12</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idxCr9h</code></pre>
@@ -1207,7 +1182,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>16</td>
+                                    <td>13</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#idIBGTZ</code></pre>
@@ -1224,7 +1199,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>17</td>
+                                    <td>14</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#id4Ejdw</code></pre>
@@ -1241,7 +1216,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>18</td>
+                                    <td>15</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">#default_footer</code></pre>
@@ -1312,7 +1287,7 @@
                                         <td>ARIA role should be appropriate for the element</td>
                                         <td>aria-allowed-role</td>
                                         <td>Best practice</td>
-                                        <td>12</td>
+                                        <td>9</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
@@ -1340,7 +1315,7 @@
                                         <td>ARIA hidden element must not be focusable or contain focusable elements</td>
                                         <td>aria-hidden-focus</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>5</td>
+                                        <td>1</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">7</th>
@@ -1382,7 +1357,7 @@
                                         <td>Inline text spacing must be adjustable with custom stylesheets</td>
                                         <td>avoid-inline-spacing</td>
                                         <td>WCAG 2.1 Level AA, WCAG 1.4.1.2</td>
-                                        <td>78</td>
+                                        <td>74</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">13</th>
@@ -1403,7 +1378,7 @@
                                         <td>Elements must meet minimum color contrast ratio thresholds</td>
                                         <td>color-contrast</td>
                                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
-                                        <td>87</td>
+                                        <td>85</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">16</th>
@@ -1417,7 +1392,7 @@
                                         <td>IDs used in ARIA and labels must be unique</td>
                                         <td>duplicate-id-aria</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>18</td>
+                                        <td>16</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">18</th>
@@ -1508,7 +1483,7 @@
                                         <td>Links must have discernible text</td>
                                         <td>link-name</td>
                                         <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
-                                        <td>52</td>
+                                        <td>49</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">31</th>
@@ -1550,7 +1525,7 @@
                                         <td>All page content should be contained by landmarks</td>
                                         <td>region</td>
                                         <td>Best practice</td>
-                                        <td>351</td>
+                                        <td>348</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">37</th>

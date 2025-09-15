@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:38:58.725Z",
-  "url": "https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=24",
+  "timestamp": "2025-09-15T21:19:06.276Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-evas-kitchen-eva-longoria-and-marah-stets",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -457,23 +457,6 @@
       "description": "Ensure the complementary landmark or aside is at top level",
       "help": "Aside should not be contained in another landmark",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -971,32 +954,6 @@
           "target": [
             "#block-mainnavigation-6"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
-          ]
         }
       ]
     },
@@ -1332,24 +1289,6 @@
           "target": [
             "#block-mainnavigation-6"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
-          ]
         }
       ]
     },
@@ -1578,7 +1517,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-taxonomy\">",
+          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
           "target": [
             "body"
           ]
@@ -1723,24 +1662,6 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
           ]
         }
       ]
@@ -2514,38 +2435,6 @@
           "target": [
             "#block-mainnavigation-6"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
-          ]
         }
       ]
     },
@@ -2688,24 +2577,6 @@
           "target": [
             "#block-mainnavigation-6"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
-          ]
         }
       ]
     },
@@ -2743,7 +2614,25 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has inner text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         }
       ]
@@ -2798,7 +2687,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Technology</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Eva's Kitchen by Eva Longoria and Marah Stets</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2881,9 +2770,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -2983,7 +2872,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -3058,7 +2947,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -3118,7 +3007,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[value=\"Search\"]"
+            "input[type=\"submit\"]"
           ]
         },
         {
@@ -3166,9 +3055,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"borrow-research\"]"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -3191,9 +3080,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research\">Research</a>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "ol > li:nth-child(3) > a[href$=\"research\"]"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
           ]
         },
         {
@@ -3216,9 +3105,84 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Technology\n              </li>",
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
           "target": [
-            "ol > li:nth-child(4)"
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n                  Cookbook Nook: Eva's Kitchen By Eva Longoria and Marah Stets\n              </li>",
+          "target": [
+            "ol > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2023-11-14T11:04:59-07:00\" title=\"Tuesday, November 14, 2023 - 11:04\" class=\"datetime\">November 14, 2023</time>",
+          "target": [
+            "time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "target": [
+            "a[href$=\"cookbook-nook\"]"
           ]
         },
         {
@@ -3241,9 +3205,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Technology</h1>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Eva's Kitchen by Eva Longoria and Marah Stets</span>",
           "target": [
-            "h1"
+            ".field--name-title"
           ]
         },
         {
@@ -3251,19 +3215,474 @@
             {
               "id": "color-contrast",
               "data": {
-                "messageKey": "hidden"
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element is hidden"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<input data-bef-auto-submit-click=\"\" class=\"js-hide button js-form-submit form-submit\" data-drupal-selector=\"edit-submit-resources\" type=\"submit\" id=\"edit-submit-resources\" value=\"Apply\">",
+          "html": "<strong>",
           "target": [
-            "#edit-submit-resources"
+            "p:nth-child(1) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Why This Book</strong>",
+          "target": [
+            "p:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>Eva's Kitchen</em>",
+          "target": [
+            "em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>What We’re Trying: Turkey Shepherd’s Pie</strong>",
+          "target": [
+            "p:nth-child(4) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Thanksgiving dinner often presents a common challenge: what to do with all those delicious leftovers? This shepherd’s pie is an excellent solution for using up leftovers while also creating a new, flavorful dish that everyone can enjoy!</p>",
+          "target": [
+            "p:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Thanksgiving Leftovers with a Twist -</strong> mashed potatoes, turkey, veggies mixed with ketchup, chili powder, and cheese - create a new flavor profile to fight the typical boringness of leftovers.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Thanksgiving Leftovers with a Twist -</strong>",
+          "target": [
+            "li:nth-child(1) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Extra Flavor -</strong> We recommend adding basil and rosemary to your turkey mixture for a more traditional meat-pie flavor.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Extra Flavor -</strong>",
+          "target": [
+            "li:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Chopped Turkey in Place of Ground -</strong> We used ground turkey as specified by the recipe. When speaking with a professional chef, it was agreed that chopped turkey would slightly change the texture but still present a great flavor!</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Chopped Turkey in Place of Ground -</strong>",
+          "target": [
+            "li:nth-child(3) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Tips from a Chef -</strong> We recommend pouring gravy over the meat mixture before adding potatoes for a thicker pie.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Tips from a Chef -</strong>",
+          "target": [
+            "li:nth-child(4) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\">View in the Catalog</a>",
+          "target": [
+            ".button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Meet the Author</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#e1f0fb",
+                "contrastRatio": 15.26,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 15.26"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -3388,7 +3807,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -3413,7 +3832,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -3788,7 +4207,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
           ]
         },
         {
@@ -3813,7 +4232,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -3838,7 +4257,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
+            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
           ]
         }
       ]
@@ -3988,24 +4407,6 @@
           "any": [
             {
               "id": "duplicate-id-aria",
-              "data": "edit-field-resource-category-target-id",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"bef-links-use-ajax bef-links\" data-drupal-selector=\"edit-field-resource-category-target-id\" id=\"edit-field-resource-category-target-id\" name=\"field_resource_category_target_id\" data-once=\"bef-links-use-ajax\">",
-          "target": [
-            "#edit-field-resource-category-target-id"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -4136,7 +4537,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Technology</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Eva's Kitchen by Eva Longoria and Marah Stets</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4284,7 +4685,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(1) > h1"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > h1:nth-child(2)"
                     ],
                     "level": 1
                   },
@@ -4364,7 +4765,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Technology</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Eva's Kitchen by Eva Longoria and Marah Stets</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4548,6 +4949,110 @@
             }
           ],
           "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Cookbook-Nook-11-23-Hero.png?itok=StGJF3Rf\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo with Eva's Kitchen book cover\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "target": [
+            ".image-style-large-16-9"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Eva's Kitchen book cover\" data-entity-type=\"file\" data-entity-uuid=\"68f1a8e9-1807-45b1-9e11-44314f976aeb\" src=\"/sites/default/files/inline-images/Evas_Kitchen_CB_Cover-300.jpg\" width=\"225\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "target": [
+            "img[alt=\"Eva's Kitchen book cover\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Shepards pie in a pan.\" data-entity-type=\"file\" data-entity-uuid=\"10216df3-54a0-4812-bea1-87047f245fab\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_3.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\">",
+          "target": [
+            ".align-right"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Shepards pie on a plate\" data-entity-type=\"file\" data-entity-uuid=\"27e09c70-7dcf-4ff2-9cb0-0fe8611ddcd2\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_5.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "target": [
+            "img[alt=\"Shepards pie on a plate\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
           "html": "<img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">",
           "target": [
             "img[alt=\"footer logo\"]"
@@ -4675,6 +5180,78 @@
             }
           ],
           "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Cookbook-Nook-11-23-Hero.png?itok=StGJF3Rf\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo with Eva's Kitchen book cover\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "target": [
+            ".image-style-large-16-9"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Eva's Kitchen book cover\" data-entity-type=\"file\" data-entity-uuid=\"68f1a8e9-1807-45b1-9e11-44314f976aeb\" src=\"/sites/default/files/inline-images/Evas_Kitchen_CB_Cover-300.jpg\" width=\"225\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "target": [
+            "img[alt=\"Eva's Kitchen book cover\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Shepards pie in a pan.\" data-entity-type=\"file\" data-entity-uuid=\"10216df3-54a0-4812-bea1-87047f245fab\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_3.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\">",
+          "target": [
+            ".align-right"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img alt=\"Shepards pie on a plate\" data-entity-type=\"file\" data-entity-uuid=\"27e09c70-7dcf-4ff2-9cb0-0fe8611ddcd2\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_5.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "target": [
+            "img[alt=\"Shepards pie on a plate\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
           "html": "<img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">",
           "target": [
             "img[alt=\"footer logo\"]"
@@ -4770,7 +5347,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[value=\"Search\"]"
+            "input[type=\"submit\"]"
           ]
         }
       ]
@@ -5064,7 +5641,14 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [],
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
+                  "target": [
+                    "#sitewide-footer"
+                  ]
+                }
+              ],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5072,9 +5656,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
+          "html": "<footer class=\"node__meta\">",
           "target": [
-            "#sitewide-footer"
+            ".node__meta"
           ]
         }
       ]
@@ -5372,6 +5956,49 @@
       ]
     },
     {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(3)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\"><em>Eva's Kitchen</em></a>",
+          "target": [
+            "p:nth-child(3) > a"
+          ]
+        }
+      ]
+    },
+    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -5439,9 +6066,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -5571,7 +6198,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -5649,7 +6276,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -5803,9 +6430,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"borrow-research\"]"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -5829,9 +6456,139 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research\">Research</a>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "ol > li:nth-child(3) > a[href$=\"research\"]"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "target": [
+            "a[href$=\"cookbook-nook\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\">",
+          "target": [
+            "strong > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\"><em>Eva's Kitchen</em></a>",
+          "target": [
+            "p:nth-child(3) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\">View in the Catalog</a>",
+          "target": [
+            ".button"
           ]
         },
         {
@@ -5909,7 +6666,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -5935,7 +6692,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -6325,7 +7082,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
           ]
         },
         {
@@ -6351,7 +7108,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
+            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
           ]
         },
         {
@@ -6377,7 +7134,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
           ]
         },
         {
@@ -6401,9 +7158,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6507,7 +7264,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -6585,7 +7342,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -6656,6 +7413,24 @@
           "html": "<ol>",
           "target": [
             "ol"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul>",
+          "target": [
+            "div[property=\"schema:text\"] > ul"
           ]
         },
         {
@@ -6795,7 +7570,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -6975,7 +7750,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/borrow-research\">Borrow &amp; Research</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -6993,7 +7768,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/borrow-research/research\">Research</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
           "target": [
             "ol > li:nth-child(3)"
           ]
@@ -7011,9 +7786,99 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Technology\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
           "target": [
             "ol > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n                  Cookbook Nook: Eva's Kitchen By Eva Longoria and Marah Stets\n              </li>",
+          "target": [
+            "ol > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Thanksgiving Leftovers with a Twist -</strong> mashed potatoes, turkey, veggies mixed with ketchup, chili powder, and cheese - create a new flavor profile to fight the typical boringness of leftovers.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Extra Flavor -</strong> We recommend adding basil and rosemary to your turkey mixture for a more traditional meat-pie flavor.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Chopped Turkey in Place of Ground -</strong> We used ground turkey as specified by the recipe. When speaking with a professional chef, it was agreed that chopped turkey would slightly change the texture but still present a great flavor!</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Tips from a Chef -</strong> We recommend pouring gravy over the meat mixture before adding potatoes for a thicker pie.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
           ]
         },
         {
@@ -7317,7 +8182,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -7565,7 +8430,97 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[value=\"Search\"]"
+            "input[type=\"submit\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Cookbook-Nook-11-23-Hero.png?itok=StGJF3Rf\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo with Eva's Kitchen book cover\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "target": [
+            ".image-style-large-16-9"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Eva's Kitchen book cover\" data-entity-type=\"file\" data-entity-uuid=\"68f1a8e9-1807-45b1-9e11-44314f976aeb\" src=\"/sites/default/files/inline-images/Evas_Kitchen_CB_Cover-300.jpg\" width=\"225\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "target": [
+            "img[alt=\"Eva's Kitchen book cover\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Shepards pie in a pan.\" data-entity-type=\"file\" data-entity-uuid=\"10216df3-54a0-4812-bea1-87047f245fab\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_3.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\">",
+          "target": [
+            ".align-right"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Shepards pie on a plate\" data-entity-type=\"file\" data-entity-uuid=\"27e09c70-7dcf-4ff2-9cb0-0fe8611ddcd2\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_5.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "target": [
+            "img[alt=\"Shepards pie on a plate\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -7601,7 +8556,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -7679,7 +8634,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Technology</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Eva's Kitchen by Eva Longoria and Marah Stets</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -7904,7 +8859,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -7924,9 +8879,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -8246,7 +9201,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -8366,7 +9321,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -8546,7 +9501,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".prf-opac-search > .content"
+            ".content"
           ]
         },
         {
@@ -8726,7 +9681,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[value=\"Search\"]"
+            "input[type=\"submit\"]"
           ]
         },
         {
@@ -8766,7 +9721,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            "strong"
+            ".label"
           ]
         },
         {
@@ -8884,9 +9839,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-breadcrumbs-2\" class=\"block block-system block-system-breadcrumb-block\">",
+          "html": "<div id=\"block-clearview-breadcrumbs\" class=\"block block-system block-system-breadcrumb-block\">",
           "target": [
-            "#block-clearview-breadcrumbs-2"
+            "#block-clearview-breadcrumbs"
           ]
         },
         {
@@ -9004,7 +9959,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/borrow-research\">Borrow &amp; Research</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -9024,9 +9979,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"borrow-research\"]"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -9044,7 +9999,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/borrow-research/research\">Research</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
           "target": [
             "ol > li:nth-child(3)"
           ]
@@ -9064,9 +10019,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research\">Research</a>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "ol > li:nth-child(3) > a[href$=\"research\"]"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
           ]
         },
         {
@@ -9084,9 +10039,49 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Technology\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
           "target": [
             "ol > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n                  Cookbook Nook: Eva's Kitchen By Eva Longoria and Marah Stets\n              </li>",
+          "target": [
+            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -9204,9 +10199,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-content\" class=\"block block-system block-system-main-block\">",
+          "html": "<article data-history-node-id=\"530\" about=\"/about-us/learn-more/news/cookbook-nook-evas-kitchen-eva-longoria-and-marah-stets\" typeof=\"schema:Article\" id=\"node-530\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#block-clearview-content"
+            "#node-530"
           ]
         },
         {
@@ -9224,9 +10219,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div about=\"/borrow-research/research/technology\" id=\"taxonomy-term-62\" class=\"taxonomy-term vocabulary-resource-category\">",
+          "html": "<footer class=\"node__meta\">",
           "target": [
-            "#taxonomy-term-62"
+            ".node__meta"
           ]
         },
         {
@@ -9244,9 +10239,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"content\">",
+          "html": "<div class=\"node__submitted\">",
           "target": [
-            "#taxonomy-term-62 > .content"
+            ".node__submitted"
           ]
         },
         {
@@ -9264,9 +10259,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout layout--onecol\">",
+          "html": "<span property=\"schema:dateCreated\" content=\"2023-11-14T18:04:59+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-11-14T11:04:59-07:00\" title=\"Tuesday, November 14, 2023 - 11:04\" class=\"datetime\">November 14, 2023</time>\n</span>",
           "target": [
-            ".layout"
+            ".field--name-created"
           ]
         },
         {
@@ -9284,9 +10279,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout__region layout__region--content\">",
+          "html": "<time datetime=\"2023-11-14T11:04:59-07:00\" title=\"Tuesday, November 14, 2023 - 11:04\" class=\"datetime\">November 14, 2023</time>",
           "target": [
-            ".layout__region"
+            "time"
           ]
         },
         {
@@ -9304,9 +10299,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"block block-layout-builder block-field-blocktaxonomy-termresource-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Technology</h1>\n\n  </div>",
+          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>\n                    </div>",
           "target": [
-            ".block-layout-builder"
+            ".field--name-field-article-category"
           ]
         },
         {
@@ -9324,7 +10319,47 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Technology</h1>",
+          "html": "<div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>",
+          "target": [
+            ".field--name-field-article-category > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "target": [
+            "a[href$=\"cookbook-nook\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Eva's Kitchen by Eva Longoria and Marah Stets</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -9344,9 +10379,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"views-element-container block block-views block-views-blockresources-block-3\">",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Eva's Kitchen by Eva Longoria and Marah Stets</span>",
           "target": [
-            ".views-element-container"
+            ".field--name-title"
           ]
         },
         {
@@ -9364,9 +10399,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div>",
+          "html": "<div class=\"node__main\">",
           "target": [
-            ".views-element-container > div"
+            ".node__main"
           ]
         },
         {
@@ -9384,9 +10419,829 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"view view-resources view-id-resources view-display-id-block_3 js-view-dom-id-71a665363c9fc2907180409051899cfbcf45ad3cfd06dab7a8f9b1c1c893873c\" data-once=\"ajax-pager\">",
+          "html": "<div class=\"node__content\">",
           "target": [
-            ".view"
+            ".node__content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-hidden field__item\">",
+          "target": [
+            ".field--name-field-article-feature-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-big-feature\">",
+          "target": [
+            ".media"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "target": [
+            ".field--name-field-media-image-1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "target": [
+            ".field__label"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Cookbook-Nook-11-23-Hero.png?itok=StGJF3Rf\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo with Eva's Kitchen book cover\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n\n</div>",
+          "target": [
+            ".field--name-field-media-image-1 > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-11/Cookbook-Nook-11-23-Hero.png?itok=StGJF3Rf\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo with Eva's Kitchen book cover\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "target": [
+            ".image-style-large-16-9"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "target": [
+            "div[property=\"schema:text\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "div[property=\"schema:text\"] > p:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>",
+          "target": [
+            "p:nth-child(1) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\">",
+          "target": [
+            "strong > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Eva's Kitchen book cover\" data-entity-type=\"file\" data-entity-uuid=\"68f1a8e9-1807-45b1-9e11-44314f976aeb\" src=\"/sites/default/files/inline-images/Evas_Kitchen_CB_Cover-300.jpg\" width=\"225\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "target": [
+            "img[alt=\"Eva's Kitchen book cover\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Why This Book</strong></p>",
+          "target": [
+            "p:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Why This Book</strong>",
+          "target": [
+            "p:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\"><em>Eva's Kitchen</em></a>",
+          "target": [
+            "p:nth-child(3) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>Eva's Kitchen</em>",
+          "target": [
+            "em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Shepards pie in a pan.\" data-entity-type=\"file\" data-entity-uuid=\"10216df3-54a0-4812-bea1-87047f245fab\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_3.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\">",
+          "target": [
+            ".align-right"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>What We’re Trying: Turkey Shepherd’s Pie</strong></p>",
+          "target": [
+            "p:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>What We’re Trying: Turkey Shepherd’s Pie</strong>",
+          "target": [
+            "p:nth-child(4) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Thanksgiving dinner often presents a common challenge: what to do with all those delicious leftovers? This shepherd’s pie is an excellent solution for using up leftovers while also creating a new, flavorful dish that everyone can enjoy!</p>",
+          "target": [
+            "p:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<ul>",
+          "target": [
+            "div[property=\"schema:text\"] > ul"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Thanksgiving Leftovers with a Twist -</strong> mashed potatoes, turkey, veggies mixed with ketchup, chili powder, and cheese - create a new flavor profile to fight the typical boringness of leftovers.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Thanksgiving Leftovers with a Twist -</strong>",
+          "target": [
+            "li:nth-child(1) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Extra Flavor -</strong> We recommend adding basil and rosemary to your turkey mixture for a more traditional meat-pie flavor.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Extra Flavor -</strong>",
+          "target": [
+            "li:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Chopped Turkey in Place of Ground -</strong> We used ground turkey as specified by the recipe. When speaking with a professional chef, it was agreed that chopped turkey would slightly change the texture but still present a great flavor!</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Chopped Turkey in Place of Ground -</strong>",
+          "target": [
+            "li:nth-child(3) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Tips from a Chef -</strong> We recommend pouring gravy over the meat mixture before adding potatoes for a thicker pie.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Tips from a Chef -</strong>",
+          "target": [
+            "li:nth-child(4) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><img alt=\"Shepards pie on a plate\" data-entity-type=\"file\" data-entity-uuid=\"27e09c70-7dcf-4ff2-9cb0-0fe8611ddcd2\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_5.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\"></p>",
+          "target": [
+            "p:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img alt=\"Shepards pie on a plate\" data-entity-type=\"file\" data-entity-uuid=\"27e09c70-7dcf-4ff2-9cb0-0fe8611ddcd2\" src=\"/sites/default/files/inline-images/Resized_Nov_Shepherds_Pie_5.png\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "target": [
+            "img[alt=\"Shepards pie on a plate\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\">View in the Catalog</a></p>",
+          "target": [
+            "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=14&amp;cn=96401\">View in the Catalog</a>",
+          "target": [
+            ".button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Meet the Author</strong></p>",
+          "target": [
+            "p:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Meet the Author</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"sidebar\">",
+          "target": [
+            ".sidebar"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"sidebar-newsletter-signup\">",
+          "target": [
+            "#sidebar-newsletter-signup"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -9486,7 +11341,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-footerbranding-2 > .text-formatted.field--name-body.field--type-text-with-summary"
+            "#block-footerbranding-2 > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -9506,7 +11361,7 @@
           "impact": null,
           "html": "<div class=\"site-logo\">\n    <img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">\n</div>",
           "target": [
-            ".text-formatted.field--name-body.field--type-text-with-summary > .site-logo"
+            ".clearfix.text-formatted.field--name-body > .site-logo"
           ]
         },
         {
@@ -9866,7 +11721,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -9926,7 +11781,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -10566,7 +12421,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -10586,7 +12441,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
           ]
         },
         {
@@ -10606,7 +12461,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -10686,7 +12541,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>© Clearview Library District, 2021</p></div>",
           "target": [
-            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary"
+            "#block-copyright-2 > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -10706,7 +12561,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
+            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
           ]
         },
         {
@@ -10746,7 +12601,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary"
+            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -10766,7 +12621,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
           ]
         },
         {
@@ -10806,7 +12661,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
+            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
           ]
         },
         {
@@ -10846,7 +12701,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
           ]
         },
         {
@@ -10984,7 +12839,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -11004,9 +12859,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -11206,7 +13061,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -11326,27 +13181,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -11432,7 +13267,138 @@
       ]
     }
   ],
-  "incomplete": [],
+  "incomplete": [
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/\">Home</a>",
+          "target": [
+            "li:nth-child(1) > a[href=\"/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us\">About Us</a>",
+          "target": [
+            "li:nth-child(2) > a[href$=\"about-us\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "target": [
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        }
+      ]
+    }
+  ],
   "violations": [],
-  "documentTitle": "Technology | Clearview Library"
+  "documentTitle": "Cookbook Nook: Eva's Kitchen by Eva Longoria and Marah Stets | Clearview Library"
 }

@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:37:00.368Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/proposal-network-services-and-hardware-all-sites",
+  "timestamp": "2025-09-15T21:16:40.571Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-cristin-altepeter",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,6 +264,22 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -634,6 +650,37 @@
       "description": "Ensure <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text",
       "help": "<svg> elements with an img role must have an alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/svg-img-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "table-duplicate-name",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "best-practice"
+      ],
+      "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
+      "help": "Tables should not have the same summary and caption",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "td-headers-attr",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "wcag2a",
+        "wcag131",
+        "section508",
+        "section508.22.g",
+        "TTv5",
+        "TT14.b",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
+      "help": "Table cells that use the headers attribute must only refer to cells in the same table",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/td-headers-attr?application=axeAPI",
       "nodes": []
     },
     {
@@ -2534,55 +2581,6 @@
       ]
     },
     {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">",
-          "target": [
-            "table"
-          ]
-        }
-      ]
-    },
-    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2689,7 +2687,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cristin Altepeter</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2772,9 +2770,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -3132,7 +3130,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Proposal For Network Services and Hardware For All Sites\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Cristin Altepeter\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -3157,7 +3155,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2025-01-09T09:57:55-07:00\" title=\"Thursday, January 9, 2025 - 09:57\" class=\"datetime\">January 9, 2025</time>",
+          "html": "<time datetime=\"2024-12-31T11:00:30-07:00\" title=\"Tuesday, December 31, 2024 - 11:00\" class=\"datetime\">December 31, 2024</time>",
           "target": [
             "time"
           ]
@@ -3182,9 +3180,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
+          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[hreflang=\"en\"][href$=\"news\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3207,7 +3205,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cristin Altepeter</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3232,7 +3230,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (RFP) for Network Services and Hardware for All Sites.&nbsp;</p>",
+          "html": "<p>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -3257,7 +3255,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Deadline for Questions:</strong> January 25, 2025, by 5:00 PM MT. Questions must be submitted via email to <a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>.</p>",
+          "html": "<p><strong>Hometown:</strong> Marshall, Minnesota.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3282,34 +3280,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Deadline for Questions:</strong>",
+          "html": "<strong>Hometown:</strong>",
           "target": [
             "p:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(2) > a"
           ]
         },
         {
@@ -3332,7 +3305,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Answers to Questions Posted:</strong> January 31, 2025, by 5:00 PM MT. Answers will be available on the District’s website.</p>",
+          "html": "<p><strong>Interests:</strong> dogs, hiking, paddle boarding, wildflowers, stars, dogs, gardening, sewing, nature, camping, reading, dogs.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -3357,7 +3330,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Answers to Questions Posted:</strong>",
+          "html": "<strong>Interests:</strong>",
           "target": [
             "p:nth-child(3) > strong"
           ]
@@ -3382,7 +3355,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Book:</strong> Impossible question! &nbsp;As a very small child, my favorite book was <em>Betty Bear’s Birthday Party</em>&nbsp;(not even sure you can find it in print anymore!).</p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -3407,7 +3380,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Proposal Deadline:</strong>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
             "p:nth-child(4) > strong"
           ]
@@ -3417,24 +3390,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
+          "html": "<em>Betty Bear’s Birthday Party</em>",
           "target": [
-            "p:nth-child(4) > a"
+            "em"
           ]
         },
         {
@@ -3442,24 +3415,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/FCC-Form-470-Clearview-Library-District-RFP-2025.pdf\">View the RFP</a>",
+          "html": "<p><strong>Preferred Superpower:</strong> I’d like to time travel, mostly so I could go back in time and re-live special moments. Flying would be pretty cool too!</p>",
           "target": [
-            "td:nth-child(1) > .button.text-center"
+            "p:nth-child(5)"
           ]
         },
         {
@@ -3467,24 +3440,224 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Preferred Superpower:</strong>",
+          "target": [
+            "p:nth-child(5) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/Pricing%20Spreadsheet-Cat-One-and-Two-2025-Updated.xlsx\">View the Pricing Spreadsheet</a>",
+          "html": "<p><strong>Favorite Author:</strong> Sandra Dallas.</p>",
           "target": [
-            "td:nth-child(2) > .button.text-center"
+            "p:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Author:</strong>",
+          "target": [
+            "p:nth-child(6) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Favorite Vacation Spot:</strong> A little tree house in the mountains near Taos, NM, on an alpaca farm, as well as our family cabin and land in northern MN.</p>",
+          "target": [
+            "p:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Favorite Vacation Spot:</strong>",
+          "target": [
+            "p:nth-child(7) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> My dad, Michelle Obama, my daughter.</p>",
+          "target": [
+            "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
+          "target": [
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> Youth Services.</p>",
+          "target": [
+            "p:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Job at the Library:</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
           ]
         },
         {
@@ -4389,7 +4562,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cristin Altepeter</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4617,7 +4790,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cristin Altepeter</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4801,7 +4974,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-12/Cristin-Altepeter-Hero.jpg?itok=vVPzMJjC\" width=\"1019\" height=\"573\" alt=\"Woman and dog hiking\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -4954,7 +5127,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-12/Cristin-Altepeter-Hero.jpg?itok=vVPzMJjC\" width=\"1019\" height=\"573\" alt=\"Woman and dog hiking\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5677,7 +5850,7 @@
     },
     {
       "id": "link-in-text-block",
-      "impact": "serious",
+      "impact": null,
       "tags": [
         "cat.color",
         "wcag2a",
@@ -5698,36 +5871,22 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p><strong>Deadline for Questions:</strong> January 25, 2025, by 5:00 PM MT. Questions must be submitted via email to <a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>.</p>",
+                  "html": "<ol>",
                   "target": [
-                    "p:nth-child(2)"
+                    "ol"
                   ]
                 }
               ],
               "impact": "serious",
               "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p><strong>Deadline for Questions:</strong> January 25, 2025, by 5:00 PM MT. Questions must be submitted via email to <a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>.</p>",
-                  "target": [
-                    "p:nth-child(2)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
+          "html": "<a href=\"/\">Home</a>",
           "target": [
-            "p:nth-child(2) > a"
+            "li:nth-child(1) > a[href=\"/\"]"
           ]
         },
         {
@@ -5737,36 +5896,72 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>",
+                  "html": "<ol>",
                   "target": [
-                    "p:nth-child(4)"
+                    "ol"
                   ]
                 }
               ],
               "impact": "serious",
               "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "p:nth-child(4) > a"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "target": [
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
           ]
         }
       ]
@@ -5839,9 +6034,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6281,139 +6476,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
+          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[hreflang=\"en\"][href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/media/368/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/FCC-Form-470-Clearview-Library-District-RFP-2025.pdf\">View the RFP</a>",
-          "target": [
-            "td:nth-child(1) > .button.text-center"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/Pricing%20Spreadsheet-Cat-One-and-Two-2025-Updated.xlsx\">View the Pricing Spreadsheet</a>",
-          "target": [
-            "td:nth-child(2) > .button.text-center"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -6983,9 +7048,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7377,7 +7442,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
@@ -7611,7 +7676,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Proposal For Network Services and Hardware For All Sites\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Cristin Altepeter\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -7917,7 +7982,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
@@ -8181,7 +8246,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-12/Cristin-Altepeter-Hero.jpg?itok=vVPzMJjC\" width=\"1019\" height=\"573\" alt=\"Woman and dog hiking\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -8315,7 +8380,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cristin Altepeter</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8540,7 +8605,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
@@ -8560,9 +8625,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -9760,7 +9825,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Proposal For Network Services and Hardware For All Sites\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Cristin Altepeter\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -9880,9 +9945,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"668\" about=\"/about-us/learn-more/news/proposal-network-services-and-hardware-all-sites\" typeof=\"schema:Article\" id=\"node-668\" class=\"node node--type-article node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"665\" about=\"/about-us/learn-more/news/staff-spotlight-cristin-altepeter\" typeof=\"schema:Article\" id=\"node-665\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#node-668"
+            "#node-665"
           ]
         },
         {
@@ -9940,7 +10005,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2025-01-09T16:57:55+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-01-09T09:57:55-07:00\" title=\"Thursday, January 9, 2025 - 09:57\" class=\"datetime\">January 9, 2025</time>\n</span>",
+          "html": "<span property=\"schema:dateCreated\" content=\"2024-12-31T18:00:30+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2024-12-31T11:00:30-07:00\" title=\"Tuesday, December 31, 2024 - 11:00\" class=\"datetime\">December 31, 2024</time>\n</span>",
           "target": [
             ".field--name-created"
           ]
@@ -9960,7 +10025,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2025-01-09T09:57:55-07:00\" title=\"Thursday, January 9, 2025 - 09:57\" class=\"datetime\">January 9, 2025</time>",
+          "html": "<time datetime=\"2024-12-31T11:00:30-07:00\" title=\"Tuesday, December 31, 2024 - 11:00\" class=\"datetime\">December 31, 2024</time>",
           "target": [
             "time"
           ]
@@ -9980,7 +10045,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a></div>\n                    </div>",
+          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a></div>\n                    </div>",
           "target": [
             ".field--name-field-article-category"
           ]
@@ -10000,7 +10065,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a></div>",
+          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a></div>",
           "target": [
             ".field--name-field-article-category > .field__item"
           ]
@@ -10020,9 +10085,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
+          "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            "a[hreflang=\"en\"][href$=\"news\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10040,7 +10105,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cristin Altepeter</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10060,7 +10125,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cristin Altepeter</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10200,7 +10265,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">",
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-12/Cristin-Altepeter-Hero.jpg?itok=vVPzMJjC\" width=\"1019\" height=\"573\" alt=\"Woman and dog hiking\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n\n</div>",
           "target": [
             ".field--name-field-media-image-1 > .field__item"
           ]
@@ -10220,27 +10285,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/368/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-12/Cristin-Altepeter-Hero.jpg?itok=vVPzMJjC\" width=\"1019\" height=\"573\" alt=\"Woman and dog hiking\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -10280,7 +10325,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (RFP) for Network Services and Hardware for All Sites.&nbsp;</p>",
+          "html": "<p>Each month we spotlight one of the friendly staff faces you’ll run into at the Windsor-Severance Library or on the bookmobile.</p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -10300,7 +10345,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Deadline for Questions:</strong> January 25, 2025, by 5:00 PM MT. Questions must be submitted via email to <a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>.</p>",
+          "html": "<p><strong>Hometown:</strong> Marshall, Minnesota.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10320,7 +10365,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Deadline for Questions:</strong>",
+          "html": "<strong>Hometown:</strong>",
           "target": [
             "p:nth-child(2) > strong"
           ]
@@ -10340,27 +10385,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
-          "target": [
-            "p:nth-child(2) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Answers to Questions Posted:</strong> January 31, 2025, by 5:00 PM MT. Answers will be available on the District’s website.</p>",
+          "html": "<p><strong>Interests:</strong> dogs, hiking, paddle boarding, wildflowers, stars, dogs, gardening, sewing, nature, camping, reading, dogs.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10380,7 +10405,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Answers to Questions Posted:</strong>",
+          "html": "<strong>Interests:</strong>",
           "target": [
             "p:nth-child(3) > strong"
           ]
@@ -10400,7 +10425,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Favorite Book:</strong> Impossible question! &nbsp;As a very small child, my favorite book was <em>Betty Bear’s Birthday Party</em>&nbsp;(not even sure you can find it in print anymore!).</p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -10420,7 +10445,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Proposal Deadline:</strong>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
             "p:nth-child(4) > strong"
           ]
@@ -10440,9 +10465,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
+          "html": "<em>Betty Bear’s Birthday Party</em>",
           "target": [
-            "p:nth-child(4) > a"
+            "em"
           ]
         },
         {
@@ -10460,7 +10485,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>&nbsp;</p>",
+          "html": "<p><strong>Preferred Superpower:</strong> I’d like to time travel, mostly so I could go back in time and re-live special moments. Flying would be pretty cool too!</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -10480,9 +10505,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">",
+          "html": "<strong>Preferred Superpower:</strong>",
           "target": [
-            "table"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -10500,9 +10525,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tbody>",
+          "html": "<p><strong>Favorite Author:</strong> Sandra Dallas.</p>",
           "target": [
-            "tbody"
+            "p:nth-child(6)"
           ]
         },
         {
@@ -10520,9 +10545,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tr>",
+          "html": "<strong>Favorite Author:</strong>",
           "target": [
-            "tr"
+            "p:nth-child(6) > strong"
           ]
         },
         {
@@ -10540,9 +10565,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td><a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/FCC-Form-470-Clearview-Library-District-RFP-2025.pdf\">View the RFP</a></td>",
+          "html": "<p><strong>Favorite Vacation Spot:</strong> A little tree house in the mountains near Taos, NM, on an alpaca farm, as well as our family cabin and land in northern MN.</p>",
           "target": [
-            "td:nth-child(1)"
+            "p:nth-child(7)"
           ]
         },
         {
@@ -10560,9 +10585,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/FCC-Form-470-Clearview-Library-District-RFP-2025.pdf\">View the RFP</a>",
+          "html": "<strong>Favorite Vacation Spot:</strong>",
           "target": [
-            "td:nth-child(1) > .button.text-center"
+            "p:nth-child(7) > strong"
           ]
         },
         {
@@ -10580,9 +10605,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td><a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/Pricing%20Spreadsheet-Cat-One-and-Two-2025-Updated.xlsx\">View the Pricing Spreadsheet</a></td>",
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> My dad, Michelle Obama, my daughter.</p>",
           "target": [
-            "td:nth-child(2)"
+            "p:nth-child(8)"
           ]
         },
         {
@@ -10600,9 +10625,49 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/Pricing%20Spreadsheet-Cat-One-and-Two-2025-Updated.xlsx\">View the Pricing Spreadsheet</a>",
+          "html": "<strong>What three people (dead or alive) would you invite to a dinner party?</strong>",
           "target": [
-            "td:nth-child(2) > .button.text-center"
+            "p:nth-child(8) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Job at the Library:</strong> Youth Services.</p>",
+          "target": [
+            "p:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Job at the Library:</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
           ]
         },
         {
@@ -12300,7 +12365,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
@@ -12320,9 +12385,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -12726,209 +12791,9 @@
           ]
         }
       ]
-    },
-    {
-      "id": "table-duplicate-name",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "best-practice"
-      ],
-      "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
-      "help": "Tables should not have the same summary and caption",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "same-caption-summary",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Content of summary attribute and <caption> are not duplicated"
-            }
-          ],
-          "impact": null,
-          "html": "<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">",
-          "target": [
-            "table"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "td-headers-attr",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "wcag2a",
-        "wcag131",
-        "section508",
-        "section508.22.g",
-        "TTv5",
-        "TT14.b",
-        "EN-301-549",
-        "EN-9.1.3.1"
-      ],
-      "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
-      "help": "Table cells that use the headers attribute must only refer to cells in the same table",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/td-headers-attr?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "td-headers-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "The headers attribute is exclusively used to refer to other cells in the table"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">",
-          "target": [
-            "table"
-          ]
-        }
-      ]
     }
   ],
-  "incomplete": [
-    {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/\">Home</a>",
-          "target": [
-            "li:nth-child(1) > a[href=\"/\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        }
-      ]
-    }
-  ],
+  "incomplete": [],
   "violations": [],
-  "documentTitle": "Proposal for Network Services and Hardware for All Sites | Clearview Library"
+  "documentTitle": "Staff Spotlight: Cristin Altepeter | Clearview Library"
 }

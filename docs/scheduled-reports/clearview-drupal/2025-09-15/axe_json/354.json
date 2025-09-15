@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:39:37.262Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-half-baked-harvest-every-day",
+  "timestamp": "2025-09-15T21:19:42.744Z",
+  "url": "https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=All",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -457,6 +457,23 @@
       "description": "Ensure the complementary landmark or aside is at top level",
       "help": "Aside should not be contained in another landmark",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -954,6 +971,32 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -1289,6 +1332,24 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -1517,7 +1578,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
+          "html": "<body class=\"_0829669 path-taxonomy\">",
           "target": [
             "body"
           ]
@@ -1662,6 +1723,24 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
           ]
         }
       ]
@@ -2435,6 +2514,38 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -2577,6 +2688,24 @@
           "target": [
             "#block-mainnavigation-6"
           ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
+          ]
         }
       ]
     },
@@ -2614,25 +2743,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         }
       ]
@@ -2687,9 +2798,21 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Automotive</h1>",
                   "target": [
                     "h1"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"node-title\">\n      <a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=autorepso\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Auto Repair Source</span>\n</a>\n    </h2>",
+                  "target": [
+                    "#node-83 > .node__content > .node-title"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"node-title\">",
+                  "target": [
+                    "#node-113 > .node__content > .node-title"
                   ]
                 },
                 {
@@ -2770,9 +2893,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -2872,7 +2995,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -2947,7 +3070,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -3007,7 +3130,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -3055,9 +3178,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
+          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
+            "li:nth-child(2) > a[href$=\"borrow-research\"]"
           ]
         },
         {
@@ -3080,9 +3203,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "html": "<a href=\"/borrow-research/research\">Research</a>",
           "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
+            "ol > li:nth-child(3) > a[href$=\"research\"]"
           ]
         },
         {
@@ -3105,84 +3228,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "html": "<li>\n                  Automotive\n              </li>",
           "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Half Baked Harvest: Every Day\n              </li>",
-          "target": [
-            "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<time datetime=\"2022-09-26T10:36:42-06:00\" title=\"Monday, September 26, 2022 - 10:36\" class=\"datetime\">September 26, 2022</time>",
-          "target": [
-            "time"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
-          "target": [
-            "a[href$=\"cookbook-nook\"]"
+            "ol > li:nth-child(4)"
           ]
         },
         {
@@ -3205,9 +3253,54 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Automotive</h1>",
           "target": [
-            ".field--name-title"
+            "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "hidden"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is hidden"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<input data-bef-auto-submit-click=\"\" class=\"js-hide button js-form-submit form-submit\" data-drupal-selector=\"edit-submit-resources\" type=\"submit\" id=\"edit-submit-resources\" value=\"Apply\">",
+          "target": [
+            "#edit-submit-resources"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Auto Repair Source</span>",
+          "target": [
+            "#node-83 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
           ]
         },
         {
@@ -3232,82 +3325,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">Half Baked Harvest: Every Day</a>",
-          "target": [
-            "em > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
-          "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>What We’re Trying:</strong> Spicy Pretzel Chicken Fingers with Hot Honey. Crunchy, salty, sweet and spicy! Baked, not fried! Yes, please!&nbsp;This recipe spoke to us loud and clear! Hot honey is trending, and I'd like to try it. In addition, it's easy to prepare and serve.&nbsp;</p>",
-          "target": [
-            "p:nth-child(2)"
+            "#node-83 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
           ]
         },
         {
@@ -3330,9 +3348,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>What We’re Trying:</strong>",
+          "html": "<a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a>",
           "target": [
-            "p:nth-child(2) > strong"
+            "#node-83 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3340,24 +3358,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fgColor": "#006eb8",
+                "bgColor": "#e1f0fb",
+                "contrastRatio": 4.6,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
+              "message": "Element has sufficient color contrast of 4.6"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>You probably have most of the ingredients in your pantry.&nbsp;</li>",
+          "html": "<a href=\"https://my.nicheacademy.com/clearviewlibrary/course/8112\" class=\"button button--niche\" alt=\"Open tutorial\" data-featherlight=\"iframe\" data-featherlight-iframe-height=\"640\" data-featherlight-iframe-width=\"480\">\n        Watch the Tutorial</a>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+            "#node-83 > .node__content > .field--name-field-niche-id.field--type-string.field__item > .button--niche[alt=\"Open tutorial\"][data-featherlight=\"iframe\"]"
           ]
         },
         {
@@ -3365,62 +3383,12 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
+                "fgColor": "#0072bc",
                 "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
                 "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
+                "fontSize": "20.7pt (27.648px)",
                 "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
+                "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
@@ -3430,9 +3398,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">View in the Catalog</a>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Small Engine Repair Reference Source</span>",
           "target": [
-            ".button"
+            "#node-113 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
           ]
         },
         {
@@ -3457,57 +3425,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
-          "target": [
-            "p:nth-child(5) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Half Baked Harvest: Every Day</em>",
-          "target": [
-            "a:nth-child(2) > em"
+            "#node-113 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
           ]
         },
         {
@@ -3516,23 +3434,23 @@
               "id": "color-contrast",
               "data": {
                 "fgColor": "#181818",
-                "bgColor": "#e1f0fb",
-                "contrastRatio": 15.26,
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 15.26"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "html": "<a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+            "#node-113 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3540,24 +3458,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
+                "fgColor": "#006eb8",
+                "bgColor": "#e1f0fb",
+                "contrastRatio": 4.6,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 4.6"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "html": "<a href=\"https://my.nicheacademy.com/clearviewlibrary/course/10871\" class=\"button button--niche\" alt=\"Open tutorial\" data-featherlight=\"iframe\" data-featherlight-iframe-height=\"640\" data-featherlight-iframe-width=\"480\">\n        Watch the Tutorial</a>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "#node-113 > .node__content > .field--name-field-niche-id.field--type-string.field__item > .button--niche[alt=\"Open tutorial\"][data-featherlight=\"iframe\"]"
           ]
         },
         {
@@ -3682,7 +3600,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -3707,7 +3625,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -4082,7 +4000,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .field--name-body.field--type-text-with-summary.text-formatted > p"
           ]
         },
         {
@@ -4107,7 +4025,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -4132,7 +4050,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .field--name-body.field--type-text-with-summary.text-formatted > p"
           ]
         }
       ]
@@ -4282,6 +4200,24 @@
           "any": [
             {
               "id": "duplicate-id-aria",
+              "data": "edit-field-resource-category-target-id",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"bef-links-use-ajax bef-links\" data-drupal-selector=\"edit-field-resource-category-target-id\" id=\"edit-field-resource-category-target-id\" name=\"field_resource_category_target_id\" data-once=\"bef-links-use-ajax\">",
+          "target": [
+            "#edit-field-resource-category-target-id"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -4412,9 +4348,45 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Automotive</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n      <a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=autorepso\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Auto Repair Source</span>\n</a>\n    </h2>",
+          "target": [
+            "#node-83 > .node__content > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">",
+          "target": [
+            "#node-113 > .node__content > .node-title"
           ]
         },
         {
@@ -4560,9 +4532,21 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(1) > h1"
                     ],
                     "level": 1
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(1) > article > div:nth-child(1) > h2:nth-child(1)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > article > div:nth-child(1) > h2:nth-child(1)"
+                    ],
+                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -4640,9 +4624,45 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Automotive</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n      <a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=autorepso\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Auto Repair Source</span>\n</a>\n    </h2>",
+          "target": [
+            "#node-83 > .node__content > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">",
+          "target": [
+            "#node-113 > .node__content > .node-title"
           ]
         },
         {
@@ -4824,9 +4844,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/auto-repair-source-button-240.png?itok=UCzHVkxz\" width=\"220\" height=\"64\" alt=\"Auto repair source logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
           "target": [
-            ".image-style-large-16-9"
+            "img[height=\"64\"]"
           ]
         },
         {
@@ -4837,6 +4857,13 @@
               "relatedNodes": [],
               "impact": "critical",
               "message": "Element has an alt attribute"
+            },
+            {
+              "id": "non-empty-title",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a title attribute"
             }
           ],
           "all": [],
@@ -4850,9 +4877,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Half Baked Harvest Every Day cookbook by Tieghan Gerard\" data-entity-type=\"file\" data-entity-uuid=\"d22dcd52-b795-4d0a-bdb1-ed697b62a3c9\" height=\"300\" src=\"https://live-clearview-library.pantheonsite.io/sites/default/files/2022-09/Half-Baked-Harvest.png\" width=\"245\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2025/small-engine-repair-source-button-240.png?itok=dZionU1h\" width=\"220\" height=\"92\" alt=\"Small Engine Repair Reference Source logo\" title=\"Small Engine Repair Reference Source\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
           "target": [
-            ".align-left"
+            "img[height=\"92\"]"
           ]
         },
         {
@@ -5003,9 +5030,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/auto-repair-source-button-240.png?itok=UCzHVkxz\" width=\"220\" height=\"64\" alt=\"Auto repair source logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
           "target": [
-            ".image-style-large-16-9"
+            "img[height=\"64\"]"
           ]
         },
         {
@@ -5021,9 +5048,9 @@
             }
           ],
           "impact": null,
-          "html": "<img alt=\"Half Baked Harvest Every Day cookbook by Tieghan Gerard\" data-entity-type=\"file\" data-entity-uuid=\"d22dcd52-b795-4d0a-bdb1-ed697b62a3c9\" height=\"300\" src=\"https://live-clearview-library.pantheonsite.io/sites/default/files/2022-09/Half-Baked-Harvest.png\" width=\"245\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2025/small-engine-repair-source-button-240.png?itok=dZionU1h\" width=\"220\" height=\"92\" alt=\"Small Engine Repair Reference Source logo\" title=\"Small Engine Repair Reference Source\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
           "target": [
-            ".align-left"
+            "img[height=\"92\"]"
           ]
         },
         {
@@ -5134,7 +5161,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         }
       ]
@@ -5428,14 +5455,7 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
-                  "target": [
-                    "#sitewide-footer"
-                  ]
-                }
-              ],
+              "relatedNodes": [],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5443,9 +5463,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
-            ".node__meta"
+            "#sitewide-footer"
           ]
         }
       ]
@@ -5743,166 +5763,6 @@
       ]
     },
     {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "div[property=\"schema:text\"] > p:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "div[property=\"schema:text\"] > p:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">Half Baked Harvest: Every Day</a>",
-          "target": [
-            "em > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "div[property=\"schema:text\"] > p:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "div[property=\"schema:text\"] > p:nth-child(1)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
-          "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
-          "target": [
-            "p:nth-child(5) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(5)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\"><em>Half Baked Harvest: Every Day</em></a>",
-          "target": [
-            "p:nth-child(5) > a:nth-child(2)"
-          ]
-        }
-      ]
-    },
-    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -5970,9 +5830,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6102,7 +5962,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -6180,7 +6040,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -6334,9 +6194,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
+          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
+            "li:nth-child(2) > a[href$=\"borrow-research\"]"
           ]
         },
         {
@@ -6360,9 +6220,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "html": "<a href=\"/borrow-research/research\">Research</a>",
           "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
+            "ol > li:nth-child(3) > a[href$=\"research\"]"
           ]
         },
         {
@@ -6386,9 +6246,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=autorepso\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Auto Repair Source</span>\n</a>",
           "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
+            "#node-83 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
           ]
         },
         {
@@ -6412,9 +6272,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "html": "<a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a>",
           "target": [
-            "a[href$=\"cookbook-nook\"]"
+            "#node-83 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -6438,9 +6298,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"https://my.nicheacademy.com/clearviewlibrary/course/8112\" class=\"button button--niche\" alt=\"Open tutorial\" data-featherlight=\"iframe\" data-featherlight-iframe-height=\"640\" data-featherlight-iframe-width=\"480\">\n        Watch the Tutorial</a>",
           "target": [
-            "a[href$=\"edit\"]"
+            "#node-83 > .node__content > .field--name-field-niche-id.field--type-string.field__item > .button--niche[alt=\"Open tutorial\"][data-featherlight=\"iframe\"]"
           ]
         },
         {
@@ -6464,9 +6324,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
+          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=autorepso\" rel=\"bookmark\" target=\"_blank\">",
           "target": [
-            "em > a:nth-child(1)"
+            "#node-83 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
           ]
         },
         {
@@ -6490,9 +6350,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">Half Baked Harvest: Every Day</a>",
+          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=serrc\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Small Engine Repair Reference Source</span>\n</a>",
           "target": [
-            "em > a:nth-child(2)"
+            "#node-113 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
           ]
         },
         {
@@ -6516,9 +6376,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
+          "html": "<a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1) > a"
+            "#node-113 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -6542,9 +6402,9 @@
             }
           ],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">View in the Catalog</a>",
+          "html": "<a href=\"https://my.nicheacademy.com/clearviewlibrary/course/10871\" class=\"button button--niche\" alt=\"Open tutorial\" data-featherlight=\"iframe\" data-featherlight-iframe-height=\"640\" data-featherlight-iframe-width=\"480\">\n        Watch the Tutorial</a>",
           "target": [
-            ".button"
+            "#node-113 > .node__content > .field--name-field-niche-id.field--type-string.field__item > .button--niche[alt=\"Open tutorial\"][data-featherlight=\"iframe\"]"
           ]
         },
         {
@@ -6568,35 +6428,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
+          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=serrc\" rel=\"bookmark\" target=\"_blank\">",
           "target": [
-            "p:nth-child(5) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\"><em>Half Baked Harvest: Every Day</em></a>",
-          "target": [
-            "p:nth-child(5) > a:nth-child(2)"
+            "#node-113 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
           ]
         },
         {
@@ -6674,7 +6508,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -6700,7 +6534,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -7090,7 +6924,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(1)"
           ]
         },
         {
@@ -7116,7 +6950,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(2)"
           ]
         },
         {
@@ -7142,7 +6976,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(3)"
           ]
         },
         {
@@ -7166,9 +7000,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7272,7 +7106,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -7350,7 +7184,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         }
       ]
@@ -7421,24 +7255,6 @@
           "html": "<ol>",
           "target": [
             "ol"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul>\n\t<li>You probably have most of the ingredients in your pantry.&nbsp;</li>\n\t<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>\n\t<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>\n</ul>",
-          "target": [
-            "div[property=\"schema:text\"] > ul"
           ]
         },
         {
@@ -7578,7 +7394,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -7758,7 +7574,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/borrow-research\">Borrow &amp; Research</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -7776,7 +7592,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/borrow-research/research\">Research</a>\n              </li>",
           "target": [
             "ol > li:nth-child(3)"
           ]
@@ -7794,81 +7610,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
+          "html": "<li>\n                  Automotive\n              </li>",
           "target": [
             "ol > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Half Baked Harvest: Every Day\n              </li>",
-          "target": [
-            "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>You probably have most of the ingredients in your pantry.&nbsp;</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
           ]
         },
         {
@@ -8172,7 +7916,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -8420,7 +8164,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -8436,9 +8180,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/auto-repair-source-button-240.png?itok=UCzHVkxz\" width=\"220\" height=\"64\" alt=\"Auto repair source logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
           "target": [
-            ".image-style-large-16-9"
+            "img[height=\"64\"]"
           ]
         },
         {
@@ -8454,27 +8198,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Half Baked Harvest Every Day cookbook by Tieghan Gerard\" data-entity-type=\"file\" data-entity-uuid=\"d22dcd52-b795-4d0a-bdb1-ed697b62a3c9\" height=\"300\" src=\"https://live-clearview-library.pantheonsite.io/sites/default/files/2022-09/Half-Baked-Harvest.png\" width=\"245\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2025/small-engine-repair-source-button-240.png?itok=dZionU1h\" width=\"220\" height=\"92\" alt=\"Small Engine Repair Reference Source logo\" title=\"Small Engine Repair Reference Source\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
           "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "img[height=\"92\"]"
           ]
         },
         {
@@ -8510,7 +8236,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -8588,7 +8314,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Automotive</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8813,7 +8539,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -8833,9 +8559,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -9155,7 +8881,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -9275,7 +9001,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
           ]
         },
         {
@@ -9455,7 +9181,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".content"
+            ".prf-opac-search > .content"
           ]
         },
         {
@@ -9635,7 +9361,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -9675,7 +9401,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            ".label"
+            "strong"
           ]
         },
         {
@@ -9793,9 +9519,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-breadcrumbs\" class=\"block block-system block-system-breadcrumb-block\">",
+          "html": "<div id=\"block-clearview-breadcrumbs-2\" class=\"block block-system block-system-breadcrumb-block\">",
           "target": [
-            "#block-clearview-breadcrumbs"
+            "#block-clearview-breadcrumbs-2"
           ]
         },
         {
@@ -9913,7 +9639,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/borrow-research\">Borrow &amp; Research</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -9933,9 +9659,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us\">About Us</a>",
+          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
+            "li:nth-child(2) > a[href$=\"borrow-research\"]"
           ]
         },
         {
@@ -9953,7 +9679,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/borrow-research/research\">Research</a>\n              </li>",
           "target": [
             "ol > li:nth-child(3)"
           ]
@@ -9973,9 +9699,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "html": "<a href=\"/borrow-research/research\">Research</a>",
           "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
+            "ol > li:nth-child(3) > a[href$=\"research\"]"
           ]
         },
         {
@@ -9993,49 +9719,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
+          "html": "<li>\n                  Automotive\n              </li>",
           "target": [
             "ol > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Half Baked Harvest: Every Day\n              </li>",
-          "target": [
-            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -10153,9 +9839,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"407\" about=\"/about-us/learn-more/news/cookbook-nook-half-baked-harvest-every-day\" typeof=\"schema:Article\" id=\"node-407\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<div id=\"block-clearview-content\" class=\"block block-system block-system-main-block\">",
           "target": [
-            "#node-407"
+            "#block-clearview-content"
           ]
         },
         {
@@ -10173,9 +9859,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<div about=\"/borrow-research/research/automotive\" id=\"taxonomy-term-20\" class=\"taxonomy-term vocabulary-resource-category\">",
           "target": [
-            ".node__meta"
+            "#taxonomy-term-20"
           ]
         },
         {
@@ -10193,9 +9879,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__submitted\">",
+          "html": "<div class=\"content\">",
           "target": [
-            ".node__submitted"
+            "#taxonomy-term-20 > .content"
           ]
         },
         {
@@ -10213,9 +9899,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2022-09-26T16:36:42+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2022-09-26T10:36:42-06:00\" title=\"Monday, September 26, 2022 - 10:36\" class=\"datetime\">September 26, 2022</time>\n</span>",
+          "html": "<div class=\"layout layout--onecol\">",
           "target": [
-            ".field--name-created"
+            ".layout"
           ]
         },
         {
@@ -10233,9 +9919,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2022-09-26T10:36:42-06:00\" title=\"Monday, September 26, 2022 - 10:36\" class=\"datetime\">September 26, 2022</time>",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            "time"
+            ".layout__region"
           ]
         },
         {
@@ -10253,9 +9939,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>\n                    </div>",
+          "html": "<div class=\"block block-layout-builder block-field-blocktaxonomy-termresource-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Automotive</h1>\n\n  </div>",
           "target": [
-            ".field--name-field-article-category"
+            ".block-layout-builder"
           ]
         },
         {
@@ -10273,47 +9959,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>",
-          "target": [
-            ".field--name-field-article-category > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
-          "target": [
-            "a[href$=\"cookbook-nook\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Automotive</h1>",
           "target": [
             "h1"
           ]
@@ -10333,9 +9979,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Half Baked Harvest: Every Day</span>",
+          "html": "<div class=\"views-element-container block block-views block-views-blockresources-block-3\">",
           "target": [
-            ".field--name-title"
+            ".views-element-container"
           ]
         },
         {
@@ -10353,9 +9999,89 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__main\">",
+          "html": "<div>",
           "target": [
-            ".node__main"
+            ".views-element-container > div"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view view-resources view-id-resources view-display-id-block_3 js-view-dom-id-d73d65778ee5718dd678e70368ed91530777def28b666d63fa17edb755b7f704\" data-once=\"ajax-pager\">",
+          "target": [
+            ".view"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view-content\">",
+          "target": [
+            ".view-content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"views-row\">",
+          "target": [
+            ".views-row:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"83\" about=\"/node/83\" id=\"node-83\" class=\"node node--type-resource-database-etc- node--view-mode-teaser\">",
+          "target": [
+            "#node-83"
           ]
         },
         {
@@ -10375,7 +10101,7 @@
           "impact": null,
           "html": "<div class=\"node__content\">",
           "target": [
-            ".node__content"
+            "#node-83 > .node__content"
           ]
         },
         {
@@ -10393,9 +10119,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-hidden field__item\">",
+          "html": "<h2 class=\"node-title\">\n      <a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=autorepso\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Auto Repair Source</span>\n</a>\n    </h2>",
           "target": [
-            ".field--name-field-article-feature-image"
+            "#node-83 > .node__content > .node-title"
           ]
         },
         {
@@ -10413,9 +10139,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article class=\"media media--type-article-feature-image media--view-mode-big-feature\">",
+          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=autorepso\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Auto Repair Source</span>\n</a>",
           "target": [
-            ".media"
+            "#node-83 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
           ]
         },
         {
@@ -10433,9 +10159,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Auto Repair Source</span>",
           "target": [
-            ".field--name-field-media-image-1"
+            "#node-83 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
           ]
         },
         {
@@ -10453,89 +10179,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__label visually-hidden\">Image</div>",
+          "html": "<div class=\"clearfix text-formatted field field--name-field-resource-description field--type-text-long field--label-hidden field__item\">",
           "target": [
-            ".field__label"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\">  <a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
-          "target": [
-            ".field--name-field-media-image-1 > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
-          "target": [
-            ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "div[property=\"schema:text\"]"
+            "#node-83 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted"
           ]
         },
         {
@@ -10555,7 +10201,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
+            "#node-83 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
           ]
         },
         {
@@ -10573,9 +10219,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>",
+          "html": "<div class=\"field field--name-field-resource-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a></div>\n                    </div>",
           "target": [
-            "p:nth-child(1) > em"
+            "#node-83 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items"
           ]
         },
         {
@@ -10593,9 +10239,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
+          "html": "<div class=\"field__item\"><a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a></div>",
           "target": [
-            "em > a:nth-child(1)"
+            "#node-83 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item"
           ]
         },
         {
@@ -10613,9 +10259,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Half Baked Harvest Every Day cookbook by Tieghan Gerard\" data-entity-type=\"file\" data-entity-uuid=\"d22dcd52-b795-4d0a-bdb1-ed697b62a3c9\" height=\"300\" src=\"https://live-clearview-library.pantheonsite.io/sites/default/files/2022-09/Half-Baked-Harvest.png\" width=\"245\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a>",
           "target": [
-            ".align-left"
+            "#node-83 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10633,9 +10279,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">Half Baked Harvest: Every Day</a>",
+          "html": "<div class=\"field field--name-field-niche-id field--type-string field--label-hidden field__item\">",
           "target": [
-            "em > a:nth-child(2)"
+            "#node-83 > .node__content > .field--name-field-niche-id.field--type-string.field__item"
           ]
         },
         {
@@ -10653,9 +10299,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
+          "html": "<a href=\"https://my.nicheacademy.com/clearviewlibrary/course/8112\" class=\"button button--niche\" alt=\"Open tutorial\" data-featherlight=\"iframe\" data-featherlight-iframe-height=\"640\" data-featherlight-iframe-width=\"480\">\n        Watch the Tutorial</a>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1) > a"
+            "#node-83 > .node__content > .field--name-field-niche-id.field--type-string.field__item > .button--niche[alt=\"Open tutorial\"][data-featherlight=\"iframe\"]"
           ]
         },
         {
@@ -10673,9 +10319,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>What We’re Trying:</strong> Spicy Pretzel Chicken Fingers with Hot Honey. Crunchy, salty, sweet and spicy! Baked, not fried! Yes, please!&nbsp;This recipe spoke to us loud and clear! Hot honey is trending, and I'd like to try it. In addition, it's easy to prepare and serve.&nbsp;</p>",
+          "html": "<div class=\"node__image\">",
           "target": [
-            "p:nth-child(2)"
+            "#node-83 > .node__image"
           ]
         },
         {
@@ -10693,9 +10339,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>What We’re Trying:</strong>",
+          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=autorepso\" rel=\"bookmark\" target=\"_blank\">",
           "target": [
-            "p:nth-child(2) > strong"
+            "#node-83 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
           ]
         },
         {
@@ -10713,9 +10359,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>\n\t<li>You probably have most of the ingredients in your pantry.&nbsp;</li>\n\t<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>\n\t<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>\n</ul>",
+          "html": "<div class=\"field field--name-field-resource-logo field--type-image field--label-hidden field__item\">",
           "target": [
-            "div[property=\"schema:text\"] > ul"
+            "#node-83 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-field-resource-logo.field--type-image.field__item"
           ]
         },
         {
@@ -10733,9 +10379,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>You probably have most of the ingredients in your pantry.&nbsp;</li>",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/auto-repair-source-button-240.png?itok=UCzHVkxz\" width=\"220\" height=\"64\" alt=\"Auto repair source logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+            "img[height=\"64\"]"
           ]
         },
         {
@@ -10753,9 +10399,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Chicken tenders cook quickly, making this recipe a great option for a weeknight meal or Game Day nibble.&nbsp;</li>",
+          "html": "<div class=\"views-row\">",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+            ".views-row:nth-child(2)"
           ]
         },
         {
@@ -10773,9 +10419,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Also, sheet pan cooking is a breeze since you can bake and serve from the same pan!</li>",
+          "html": "<article data-history-node-id=\"113\" about=\"/node/113\" id=\"node-113\" class=\"node node--type-resource-database-etc- node--view-mode-teaser\">",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+            "#node-113"
           ]
         },
         {
@@ -10793,9 +10439,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">View in the Catalog</a></p>",
+          "html": "<div class=\"node__content\">",
           "target": [
-            "p:nth-child(4)"
+            "#node-113 > .node__content"
           ]
         },
         {
@@ -10813,9 +10459,69 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">View in the Catalog</a>",
+          "html": "<h2 class=\"node-title\">",
           "target": [
-            ".button"
+            "#node-113 > .node__content > .node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=serrc\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Small Engine Repair Reference Source</span>\n</a>",
+          "target": [
+            "#node-113 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Small Engine Repair Reference Source</span>",
+          "target": [
+            "#node-113 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"clearfix text-formatted field field--name-field-resource-description field--type-text-long field--label-hidden field__item\">",
+          "target": [
+            "#node-113 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted"
           ]
         },
         {
@@ -10835,7 +10541,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(5)"
+            "#node-113 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
           ]
         },
         {
@@ -10853,9 +10559,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.halfbakedharvest.com/\">Half Baked Harvest</a>",
+          "html": "<div class=\"field field--name-field-resource-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a></div>\n                    </div>",
           "target": [
-            "p:nth-child(5) > a:nth-child(1)"
+            "#node-113 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items"
           ]
         },
         {
@@ -10873,9 +10579,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=Half%20Baked%20Harvest:%20Every%20Day&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\"><em>Half Baked Harvest: Every Day</em></a>",
+          "html": "<div class=\"field__item\"><a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a></div>",
           "target": [
-            "p:nth-child(5) > a:nth-child(2)"
+            "#node-113 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item"
           ]
         },
         {
@@ -10893,9 +10599,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>Half Baked Harvest: Every Day</em>",
+          "html": "<a href=\"/borrow-research/research/automotive\" hreflang=\"en\">Automotive</a>",
           "target": [
-            "a:nth-child(2) > em"
+            "#node-113 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10913,9 +10619,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"sidebar\">",
+          "html": "<div class=\"field field--name-field-niche-id field--type-string field--label-hidden field__item\">",
           "target": [
-            ".sidebar"
+            "#node-113 > .node__content > .field--name-field-niche-id.field--type-string.field__item"
           ]
         },
         {
@@ -10933,9 +10639,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"sidebar-newsletter-signup\">",
+          "html": "<a href=\"https://my.nicheacademy.com/clearviewlibrary/course/10871\" class=\"button button--niche\" alt=\"Open tutorial\" data-featherlight=\"iframe\" data-featherlight-iframe-height=\"640\" data-featherlight-iframe-width=\"480\">\n        Watch the Tutorial</a>",
           "target": [
-            "#sidebar-newsletter-signup"
+            "#node-113 > .node__content > .field--name-field-niche-id.field--type-string.field__item > .button--niche[alt=\"Open tutorial\"][data-featherlight=\"iframe\"]"
           ]
         },
         {
@@ -10953,9 +10659,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+          "html": "<div class=\"node__image\">",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
+            "#node-113 > .node__image"
           ]
         },
         {
@@ -10973,9 +10679,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=serrc\" rel=\"bookmark\" target=\"_blank\">",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+            "#node-113 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
           ]
         },
         {
@@ -10993,9 +10699,29 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "html": "<div class=\"field field--name-field-resource-logo field--type-image field--label-hidden field__item\">",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "#node-113 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-field-resource-logo.field--type-image.field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2025/small-engine-repair-source-button-240.png?itok=dZionU1h\" width=\"220\" height=\"92\" alt=\"Small Engine Repair Reference Source logo\" title=\"Small Engine Repair Reference Source\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "target": [
+            "img[height=\"92\"]"
           ]
         },
         {
@@ -11095,7 +10821,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-footerbranding-2 > .clearfix.text-formatted.field--name-body"
+            "#block-footerbranding-2 > .field--name-body.field--type-text-with-summary.text-formatted"
           ]
         },
         {
@@ -11115,7 +10841,7 @@
           "impact": null,
           "html": "<div class=\"site-logo\">\n    <img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">\n</div>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > .site-logo"
+            ".field--name-body.field--type-text-with-summary.text-formatted > .site-logo"
           ]
         },
         {
@@ -11475,7 +11201,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
+            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
           ]
         },
         {
@@ -11535,7 +11261,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
           ]
         },
         {
@@ -12175,7 +11901,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body"
+            "#block-newslettersignup-2 > .field--name-body.field--type-text-with-summary.text-formatted"
           ]
         },
         {
@@ -12195,7 +11921,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .field--name-body.field--type-text-with-summary.text-formatted > p"
           ]
         },
         {
@@ -12215,7 +11941,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -12295,7 +12021,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>© Clearview Library District, 2021</p></div>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body"
+            "#block-copyright-2 > .field--name-body.field--type-text-with-summary.text-formatted"
           ]
         },
         {
@@ -12315,7 +12041,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .field--name-body.field--type-text-with-summary.text-formatted > p"
           ]
         },
         {
@@ -12355,7 +12081,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body"
+            "#block-socialicons-2 > .field--name-body.field--type-text-with-summary.text-formatted"
           ]
         },
         {
@@ -12375,7 +12101,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(1)"
           ]
         },
         {
@@ -12415,7 +12141,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(2)"
           ]
         },
         {
@@ -12455,7 +12181,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(3)"
           ]
         },
         {
@@ -12593,7 +12319,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -12613,9 +12339,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -12815,7 +12541,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
           ]
         },
         {
@@ -12935,7 +12661,27 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
+          "target": [
+            "#drupal-live-announce"
           ]
         }
       ]
@@ -13021,138 +12767,7 @@
       ]
     }
   ],
-  "incomplete": [
-    {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/\">Home</a>",
-          "target": [
-            "li:nth-child(1) > a[href=\"/\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        }
-      ]
-    }
-  ],
+  "incomplete": [],
   "violations": [],
-  "documentTitle": "Cookbook Nook: Half Baked Harvest: Every Day | Clearview Library"
+  "documentTitle": "Automotive | Clearview Library"
 }

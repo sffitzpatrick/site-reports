@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:37:29.138Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/program-policy",
+  "timestamp": "2025-09-15T21:17:32.204Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/policies-faqs/provision-library-services-policy",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -445,6 +445,23 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -2737,63 +2754,15 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Program Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Provision of Library Services Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2>Scope of Programs</h2>",
+                  "html": "<h2><span><span><span><span><span><span>Regulations</span></span></span></span></span></span></h2>",
                   "target": [
-                    "h2:nth-child(5)"
-                  ]
-                },
-                {
-                  "html": "<h2>Private Programs Utilizing Library Space</h2>",
-                  "target": [
-                    "h2:nth-child(7)"
-                  ]
-                },
-                {
-                  "html": "<h2>Essential Principles</h2>",
-                  "target": [
-                    "h2:nth-child(9)"
-                  ]
-                },
-                {
-                  "html": "<h2>Criteria</h2>",
-                  "target": [
-                    "h2:nth-child(11)"
-                  ]
-                },
-                {
-                  "html": "<h2>The District Does Not Provide</h2>",
-                  "target": [
-                    "h2:nth-child(14)"
-                  ]
-                },
-                {
-                  "html": "<h2>Discord Over Subjective Topics</h2>",
-                  "target": [
-                    "h2:nth-child(16)"
-                  ]
-                },
-                {
-                  "html": "<h2>Reconsideration</h2>",
-                  "target": [
-                    "h2:nth-child(21)"
-                  ]
-                },
-                {
-                  "html": "<h2>Accessibility</h2>",
-                  "target": [
-                    "h2:nth-child(23)"
-                  ]
-                },
-                {
-                  "html": "<h2>Related Documents Websites</h2>",
-                  "target": [
-                    "h2:nth-child(25)"
+                    ".clearfix.text-formatted.field--name-body > h2"
                   ]
                 },
                 {
@@ -2880,9 +2849,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -3140,7 +3109,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Program Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Provision of Library Services Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3165,209 +3134,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Clearview Library District programs are planned with the District’s Mission and Vision in mind:</p>",
+          "html": "<span>The Clearview Library District is committed to providing quality service to all district residents. To ensure that service is provided in an effective and efficient manner, the Board of Trustees will establish and observe guidelines related to the provision of library service.</span>",
           "target": [
-            ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><br>\nMission: Cultivate Curiosity. Enlighten the Mind. Strengthen the Community.</p>",
-          "target": [
-            "p:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Foster Early Literacy</strong>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(1) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Build Connections</strong> — We believe that social connection is critical to growing, learning, and contributing to stronger communities by building bridges across generations, cultures, ideas, and beliefs to support learners of all ages.</li>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Build Connections</strong>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Inspire Lifelong Learning</strong>",
-          "target": [
-            "ul:nth-child(4) > li:nth-child(3) > strong"
+            "p:nth-child(1) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3390,9 +3159,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Scope of Programs</h2>",
+          "html": "<span>Regulations</span>",
           "target": [
-            "h2:nth-child(5)"
+            "h2 > span > span > span > span > span > span"
           ]
         },
         {
@@ -3415,34 +3184,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<span>The district will operate library facilities in locations where residents frequently and willingly go.</span>",
           "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Private Programs Utilizing Library Space</h2>",
-          "target": [
-            "h2:nth-child(7)"
+            "li:nth-child(1) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3465,59 +3209,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span>",
           "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/inline-files/Clearview_Library_District_Meeting_Room_Policy.pdf\">District Meeting Rooms policy</a>",
-          "target": [
-            "p:nth-child(8) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Essential Principles</h2>",
-          "target": [
-            "h2:nth-child(9)"
+            "li:nth-child(2) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3540,9 +3234,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs are intended to reinforce the District’s mission and vision.</li>",
+          "html": "<span>The district may provide library service in leased or donated space when it best serves the community.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(1)"
+            "li:nth-child(3) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3565,9 +3259,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>All library-sponsored activities are free and open to the public. Library programs may be targeted toward age-specific audiences.&nbsp;</li>",
+          "html": "<span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(2)"
+            "li:nth-child(4) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3590,9 +3284,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Parents/legal guardians are welcome to attend programs with their children. Parents/legal guardians are required to attend programs with children ages 5 and under.</li>",
+          "html": "<span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(3)"
+            "li:nth-child(5) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3615,9 +3309,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>For the safety and protection of minors, adults who do not have a child/children attending a program are not permitted to attend a program targeted for children ages 18 and under.</li>",
+          "html": "<span>The district will explore the feasibility of new service methods and material types whenever they arise.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(4)"
+            "li:nth-child(6) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3640,9 +3334,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Responsibility for the exposure of minors to library programs rests with their parents or legal guardians.</li>",
+          "html": "<span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(5)"
+            "li:nth-child(7) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3665,9 +3359,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs should consist of the same breadth and depth of topics, stories and perspectives that are offered in the collection.</li>",
+          "html": "<span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(6)"
+            "li:nth-child(8) > span > span > span > span > span > span"
           ]
         },
         {
@@ -3690,1309 +3384,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Program topics should reflect community interests.</li>",
+          "html": "<span>Adopted February 28, 2014. Revised and adopted March 25, 2021.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs may be canceled due to weather, low registration, or absence of the presenter.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs may require advance registration to ensure that adequate supplies and resources are available.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Library programs may be developed and presented by staff, or by hired program professionals.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>The District may partner with other community agencies, organizations, educational and cultural institutions, or individuals to develop and present public programs.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Views expressed by a program presenter or participant do not constitute District endorsement.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>No right of privacy exists relating to attendees passive or active participation in a public event.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/librarybill\">Library Bill of Rights | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomreadstatement\">The Freedom to Read Statement | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomviewstatement\">Freedom to View Statement | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Criteria</h2>",
-          "target": [
-            "h2:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Among the criteria considered when making decisions about a specific program will be the following:</p>",
-          "target": [
-            "p:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Degree of alignment with District mission, vision and strategic plan</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Community needs and interests</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Cost and budget</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Service area demographics</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Provides a forum for sharing of different perspectives</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Offers training and assistance with new technologies</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Fosters a love for reading and learning</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Fosters community awareness</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Safety and security of customers and staff</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Accuracy and timeliness of topic</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Supplementing or extending information found in library collections</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Promoting the library and encouraging use of its resources&nbsp;</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Presenter background and qualifications in content area</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Historical, cultural or educational significance</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Availability of program space</li>",
-          "target": [
-            "li:nth-child(15)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Availability elsewhere in the community</li>",
-          "target": [
-            "li:nth-child(16)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>The District Does Not Provide</h2>",
-          "target": [
-            "h2:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs of a purely commercial nature or those designed for the solicitation of business for third parties&nbsp;</li>",
-          "target": [
-            "ul:nth-child(15) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs that specifically support or oppose any political party, candidate or ballot measure&nbsp;</li>",
-          "target": [
-            "ul:nth-child(15) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs that support or oppose a specific religion. Programs may address religious themes to educate or inform, but will not promote or proselytize a particular religious conviction.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(15) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Discord Over Subjective Topics</h2>",
-          "target": [
-            "h2:nth-child(16)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(17)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>The District follows these principles, as expressed in our vision:</p>",
-          "target": [
-            "p:nth-child(18)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Foster Early Literacy</strong>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(1) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Build Connections</strong> — We believe that social connection is critical to growing, learning, and contributing to stronger communities by building bridges across generations, cultures, ideas, and beliefs to support learners of all ages.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Build Connections</strong>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Inspire Lifelong Learning</strong>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(20)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Reconsideration</h2>",
-          "target": [
-            "h2:nth-child(21)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>The District welcomes feedback about its programs. Individuals who have questions, concerns, or suggestions about programs should use our <a href=\"https://clearviewlibrary.org/contact\">Contact Us form</a>.</p>",
-          "target": [
-            "p:nth-child(22)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/contact\">Contact Us form</a>",
-          "target": [
-            "p:nth-child(22) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Accessibility</h2>",
-          "target": [
-            "h2:nth-child(23)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Pursuant to the Americans with Disabilities Act, accommodations for persons with disabilities will be made in accordance with applicable federal, state and local laws, policies, guidelines, directives and procedures.</p>",
-          "target": [
-            "p:nth-child(24)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Related Documents Websites</h2>",
-          "target": [
-            "h2:nth-child(25)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/librarybill\">American Library Association Library Bill of Rights</a>",
-          "target": [
-            "p:nth-child(26) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomreadstatement\">American Library Association Freedom to Read Statement</a>",
-          "target": [
-            "p:nth-child(26) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomviewstatement\">American Library Association Freedom to View Statement</a>",
-          "target": [
-            "a:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Adopted July 28, 2022</em>",
-          "target": [
-            "em"
+            "em > span"
           ]
         },
         {
@@ -5492,7 +3886,7 @@
           "impact": null,
           "html": "<a href=\"/contact\">Contact</a>",
           "target": [
-            ".contact:nth-child(4) > p > a[href$=\"contact\"]"
+            "p > a[href$=\"contact\"]"
           ]
         },
         {
@@ -6254,7 +4648,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Program Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Provision of Library Services Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -6272,153 +4666,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Scope of Programs</h2>",
+          "html": "<h2><span><span><span><span><span><span>Regulations</span></span></span></span></span></span></h2>",
           "target": [
-            "h2:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Private Programs Utilizing Library Space</h2>",
-          "target": [
-            "h2:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Essential Principles</h2>",
-          "target": [
-            "h2:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Criteria</h2>",
-          "target": [
-            "h2:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>The District Does Not Provide</h2>",
-          "target": [
-            "h2:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Discord Over Subjective Topics</h2>",
-          "target": [
-            "h2:nth-child(16)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Reconsideration</h2>",
-          "target": [
-            "h2:nth-child(21)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Accessibility</h2>",
-          "target": [
-            "h2:nth-child(23)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Related Documents Websites</h2>",
-          "target": [
-            "h2:nth-child(25)"
+            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -6582,55 +4832,7 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(5)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(7)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(9)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(11)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(14)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(16)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(21)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(23)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(25)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div > div > h2:nth-child(2)"
                     ],
                     "level": 2
                   },
@@ -6698,7 +4900,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Program Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Provision of Library Services Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -6716,153 +4918,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Scope of Programs</h2>",
+          "html": "<h2><span><span><span><span><span><span>Regulations</span></span></span></span></span></span></h2>",
           "target": [
-            "h2:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Private Programs Utilizing Library Space</h2>",
-          "target": [
-            "h2:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Essential Principles</h2>",
-          "target": [
-            "h2:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Criteria</h2>",
-          "target": [
-            "h2:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>The District Does Not Provide</h2>",
-          "target": [
-            "h2:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Discord Over Subjective Topics</h2>",
-          "target": [
-            "h2:nth-child(16)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Reconsideration</h2>",
-          "target": [
-            "h2:nth-child(21)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Accessibility</h2>",
-          "target": [
-            "h2:nth-child(23)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Related Documents Websites</h2>",
-          "target": [
-            "h2:nth-child(25)"
+            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -7940,219 +5998,6 @@
       ]
     },
     {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(8)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(8)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/inline-files/Clearview_Library_District_Meeting_Room_Policy.pdf\">District Meeting Rooms policy</a>",
-          "target": [
-            "p:nth-child(8) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(14)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(14)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/librarybill\">Library Bill of Rights | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(14)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(14)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomreadstatement\">The Freedom to Read Statement | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(14)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "ul:nth-child(10) > li:nth-child(14)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomviewstatement\">Freedom to View Statement | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>The District welcomes feedback about its programs. Individuals who have questions, concerns, or suggestions about programs should use our <a href=\"https://clearviewlibrary.org/contact\">Contact Us form</a>.</p>",
-                  "target": [
-                    "p:nth-child(22)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>The District welcomes feedback about its programs. Individuals who have questions, concerns, or suggestions about programs should use our <a href=\"https://clearviewlibrary.org/contact\">Contact Us form</a>.</p>",
-                  "target": [
-                    "p:nth-child(22)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/contact\">Contact Us form</a>",
-          "target": [
-            "p:nth-child(22) > a"
-          ]
-        }
-      ]
-    },
-    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -8220,9 +6065,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -8535,214 +6380,6 @@
           "html": "<a class=\"search-suggestions__suggestion\" href=\"https://pika.clearviewlibrary.org/Search/Results?lookfor=%2A&amp;basicType=Keyword&amp;basicType=Keyword&amp;filter%5B%5D=collection_clearview%3A%22Young+Adult+Fiction%22&amp;sort=relevance&amp;view=list&amp;searchSource=local\">Teen Books</a>",
           "target": [
             ".search-suggestions__suggestion:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/inline-files/Clearview_Library_District_Meeting_Room_Policy.pdf\">District Meeting Rooms policy</a>",
-          "target": [
-            "p:nth-child(8) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/librarybill\">Library Bill of Rights | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomreadstatement\">The Freedom to Read Statement | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomviewstatement\">Freedom to View Statement | Advocacy, Legislation &amp; Issues</a>",
-          "target": [
-            "li:nth-child(14) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/contact\">Contact Us form</a>",
-          "target": [
-            "p:nth-child(22) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/librarybill\">American Library Association Library Bill of Rights</a>",
-          "target": [
-            "p:nth-child(26) > a:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomreadstatement\">American Library Association Freedom to Read Statement</a>",
-          "target": [
-            "p:nth-child(26) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomviewstatement\">American Library Association Freedom to View Statement</a>",
-          "target": [
-            "a:nth-child(5)"
           ]
         },
         {
@@ -9184,7 +6821,7 @@
           "impact": null,
           "html": "<a href=\"/contact\">Contact</a>",
           "target": [
-            ".contact:nth-child(4) > p > a[href$=\"contact\"]"
+            "p > a[href$=\"contact\"]"
           ]
         },
         {
@@ -9728,9 +7365,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -9982,79 +7619,7 @@
           "impact": null,
           "html": "<ul>",
           "target": [
-            "ul:nth-child(4)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "ul:nth-child(10)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "ul:nth-child(13)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "ul:nth-child(15)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "ul:nth-child(19)"
+            ".clearfix.text-formatted.field--name-body > ul"
           ]
         },
         {
@@ -10266,7 +7831,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -10428,9 +7993,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li><span><span><span><span><span><span>The district will operate library facilities in locations where residents frequently and willingly go.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
           ]
         },
         {
@@ -10446,9 +8011,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Build Connections</strong> — We believe that social connection is critical to growing, learning, and contributing to stronger communities by building bridges across generations, cultures, ideas, and beliefs to support learners of all ages.</li>",
+          "html": "<li><span><span><span><span><span><span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(2)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
           ]
         },
         {
@@ -10464,9 +8029,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li><span><span><span><span><span><span>The district may provide library service in leased or donated space when it best serves the community.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
           ]
         },
         {
@@ -10482,9 +8047,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs are intended to reinforce the District’s mission and vision.</li>",
+          "html": "<li><span><span><span><span><span><span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
           ]
         },
         {
@@ -10500,9 +8065,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>All library-sponsored activities are free and open to the public. Library programs may be targeted toward age-specific audiences.&nbsp;</li>",
+          "html": "<li><span><span><span><span><span><span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(2)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
           ]
         },
         {
@@ -10518,9 +8083,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Parents/legal guardians are welcome to attend programs with their children. Parents/legal guardians are required to attend programs with children ages 5 and under.</li>",
+          "html": "<li><span><span><span><span><span><span>The district will explore the feasibility of new service methods and material types whenever they arise.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(6)"
           ]
         },
         {
@@ -10536,9 +8101,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>For the safety and protection of minors, adults who do not have a child/children attending a program are not permitted to attend a program targeted for children ages 18 and under.</li>",
+          "html": "<li><span><span><span><span><span><span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(4)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(7)"
           ]
         },
         {
@@ -10554,567 +8119,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Responsibility for the exposure of minors to library programs rests with their parents or legal guardians.</li>",
+          "html": "<li><span><span><span><span><span><span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs should consist of the same breadth and depth of topics, stories and perspectives that are offered in the collection.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Program topics should reflect community interests.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs may be canceled due to weather, low registration, or absence of the presenter.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs may require advance registration to ensure that adequate supplies and resources are available.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Library programs may be developed and presented by staff, or by hired program professionals.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>The District may partner with other community agencies, organizations, educational and cultural institutions, or individuals to develop and present public programs.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Views expressed by a program presenter or participant do not constitute District endorsement.</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>No right of privacy exists relating to attendees passive or active participation in a public event.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(10) > li:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Degree of alignment with District mission, vision and strategic plan</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Community needs and interests</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Cost and budget</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Service area demographics</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Provides a forum for sharing of different perspectives</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Offers training and assistance with new technologies</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Fosters a love for reading and learning</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Fosters community awareness</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Safety and security of customers and staff</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Accuracy and timeliness of topic</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Supplementing or extending information found in library collections</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Promoting the library and encouraging use of its resources&nbsp;</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Presenter background and qualifications in content area</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Historical, cultural or educational significance</li>",
-          "target": [
-            "ul:nth-child(13) > li:nth-child(14)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Availability of program space</li>",
-          "target": [
-            "li:nth-child(15)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Availability elsewhere in the community</li>",
-          "target": [
-            "li:nth-child(16)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs of a purely commercial nature or those designed for the solicitation of business for third parties&nbsp;</li>",
-          "target": [
-            "ul:nth-child(15) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs that specifically support or oppose any political party, candidate or ballot measure&nbsp;</li>",
-          "target": [
-            "ul:nth-child(15) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>Programs that support or oppose a specific religion. Programs may address religious themes to educate or inform, but will not promote or proselytize a particular religious conviction.&nbsp;</li>",
-          "target": [
-            "ul:nth-child(15) > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Build Connections</strong> — We believe that social connection is critical to growing, learning, and contributing to stronger communities by building bridges across generations, cultures, ideas, and beliefs to support learners of all ages.</li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "ul:nth-child(19) > li:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(8)"
           ]
         },
         {
@@ -11706,7 +8713,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -12068,7 +9075,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Program Policy</span>\n</h1>",
+                  "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Provision of Library Services Policy</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -12293,7 +9300,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -12313,9 +9320,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -13155,7 +10162,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            ".label"
+            "strong"
           ]
         },
         {
@@ -13273,7 +10280,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Program Policy</span>\n</h1>\n\n\n  </div>",
+          "html": "<div id=\"block-clearview-page-title\" class=\"block block-core block-page-title-block\">\n  \n    \n      \n  <h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Provision of Library Services Policy</span>\n</h1>\n\n\n  </div>",
           "target": [
             "#block-clearview-page-title"
           ]
@@ -13293,7 +10300,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Program Policy</span>\n</h1>",
+          "html": "<h1 class=\"page-title\"><span class=\"field field--name-title field--type-string field--label-hidden\">Provision of Library Services Policy</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -13313,7 +10320,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Program Policy</span>",
+          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Provision of Library Services Policy</span>",
           "target": [
             ".field--name-title"
           ]
@@ -13433,9 +10440,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"403\" about=\"/about-us/learn-more/policies-faqs/program-policy\" id=\"node-403\" class=\"node node--type-policy node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"323\" about=\"/about-us/learn-more/policies-faqs/provision-library-services-policy\" id=\"node-323\" class=\"node node--type-policy node--view-mode-full\">",
           "target": [
-            "#node-403"
+            "#node-323"
           ]
         },
         {
@@ -13493,7 +10500,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Clearview Library District programs are planned with the District’s Mission and Vision in mind:</p>",
+          "html": "<p>",
           "target": [
             ".node__content > .clearfix.text-formatted.field--name-body > p:nth-child(1)"
           ]
@@ -13513,9 +10520,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><br>\nMission: Cultivate Curiosity. Enlighten the Mind. Strengthen the Community.</p>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(2)"
+            "p:nth-child(1) > span"
           ]
         },
         {
@@ -13533,9 +10540,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<br>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(2) > br"
+            "p:nth-child(1) > span > span"
           ]
         },
         {
@@ -13553,9 +10560,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(3)"
+            "p:nth-child(1) > span > span > span"
           ]
         },
         {
@@ -13573,9 +10580,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<br>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(3) > br:nth-child(1)"
+            "p:nth-child(1) > span > span > span > span"
           ]
         },
         {
@@ -13593,9 +10600,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<br>",
+          "html": "<span>",
           "target": [
-            "p:nth-child(3) > br:nth-child(2)"
+            "p:nth-child(1) > span > span > span > span > span"
           ]
         },
         {
@@ -13613,9 +10620,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>",
+          "html": "<span>The Clearview Library District is committed to providing quality service to all district residents. To ensure that service is provided in an effective and efficient manner, the Board of Trustees will establish and observe guidelines related to the provision of library service.</span>",
           "target": [
-            "ul:nth-child(4)"
+            "p:nth-child(1) > span > span > span > span > span > span"
           ]
         },
         {
@@ -13633,9 +10640,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<h2><span><span><span><span><span><span>Regulations</span></span></span></span></span></span></h2>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > h2"
           ]
         },
         {
@@ -13653,9 +10660,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Foster Early Literacy</strong>",
+          "html": "<span><span><span><span><span><span>Regulations</span></span></span></span></span></span>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(1) > strong"
+            "h2 > span"
           ]
         },
         {
@@ -13673,9 +10680,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Build Connections</strong> — We believe that social connection is critical to growing, learning, and contributing to stronger communities by building bridges across generations, cultures, ideas, and beliefs to support learners of all ages.</li>",
+          "html": "<span><span><span><span><span>Regulations</span></span></span></span></span>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(2)"
+            "h2 > span > span"
           ]
         },
         {
@@ -13693,9 +10700,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Build Connections</strong>",
+          "html": "<span><span><span><span>Regulations</span></span></span></span>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(2) > strong"
+            "h2 > span > span > span"
           ]
         },
         {
@@ -13713,9 +10720,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<span><span><span>Regulations</span></span></span>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(3)"
+            "h2 > span > span > span > span"
           ]
         },
         {
@@ -13733,9 +10740,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Inspire Lifelong Learning</strong>",
+          "html": "<span><span>Regulations</span></span>",
           "target": [
-            "ul:nth-child(4) > li:nth-child(3) > strong"
+            "h2 > span > span > span > span > span"
           ]
         },
         {
@@ -13753,109 +10760,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Scope of Programs</h2>",
+          "html": "<span>Regulations</span>",
           "target": [
-            "h2:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Private Programs Utilizing Library Space</h2>",
-          "target": [
-            "h2:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/sites/default/files/inline-files/Clearview_Library_District_Meeting_Room_Policy.pdf\">District Meeting Rooms policy</a>",
-          "target": [
-            "p:nth-child(8) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Essential Principles</h2>",
-          "target": [
-            "h2:nth-child(9)"
+            "h2 > span > span > span > span > span > span"
           ]
         },
         {
@@ -13875,7 +10782,7 @@
           "impact": null,
           "html": "<ul>",
           "target": [
-            "ul:nth-child(10)"
+            ".clearfix.text-formatted.field--name-body > ul"
           ]
         },
         {
@@ -13893,9 +10800,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs are intended to reinforce the District’s mission and vision.</li>",
+          "html": "<li><span><span><span><span><span><span>The district will operate library facilities in locations where residents frequently and willingly go.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(1)"
           ]
         },
         {
@@ -13913,9 +10820,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>All library-sponsored activities are free and open to the public. Library programs may be targeted toward age-specific audiences.&nbsp;</li>",
+          "html": "<span><span><span><span><span><span>The district will operate library facilities in locations where residents frequently and willingly go.</span></span></span></span></span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(2)"
+            "li:nth-child(1) > span"
           ]
         },
         {
@@ -13933,9 +10840,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Parents/legal guardians are welcome to attend programs with their children. Parents/legal guardians are required to attend programs with children ages 5 and under.</li>",
+          "html": "<span><span><span><span><span>The district will operate library facilities in locations where residents frequently and willingly go.</span></span></span></span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(3)"
+            "li:nth-child(1) > span > span"
           ]
         },
         {
@@ -13953,9 +10860,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>For the safety and protection of minors, adults who do not have a child/children attending a program are not permitted to attend a program targeted for children ages 18 and under.</li>",
+          "html": "<span><span><span><span>The district will operate library facilities in locations where residents frequently and willingly go.</span></span></span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(4)"
+            "li:nth-child(1) > span > span > span"
           ]
         },
         {
@@ -13973,9 +10880,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Responsibility for the exposure of minors to library programs rests with their parents or legal guardians.</li>",
+          "html": "<span><span><span>The district will operate library facilities in locations where residents frequently and willingly go.</span></span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(5)"
+            "li:nth-child(1) > span > span > span > span"
           ]
         },
         {
@@ -13993,9 +10900,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs should consist of the same breadth and depth of topics, stories and perspectives that are offered in the collection.</li>",
+          "html": "<span><span>The district will operate library facilities in locations where residents frequently and willingly go.</span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(6)"
+            "li:nth-child(1) > span > span > span > span > span"
           ]
         },
         {
@@ -14013,9 +10920,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Program topics should reflect community interests.</li>",
+          "html": "<span>The district will operate library facilities in locations where residents frequently and willingly go.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(7)"
+            "li:nth-child(1) > span > span > span > span > span > span"
           ]
         },
         {
@@ -14033,9 +10940,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs may be canceled due to weather, low registration, or absence of the presenter.&nbsp;</li>",
+          "html": "<li><span><span><span><span><span><span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(8)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(2)"
           ]
         },
         {
@@ -14053,9 +10960,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs may require advance registration to ensure that adequate supplies and resources are available.</li>",
+          "html": "<span><span><span><span><span><span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span></span></span></span></span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(9)"
+            "li:nth-child(2) > span"
           ]
         },
         {
@@ -14073,9 +10980,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Library programs may be developed and presented by staff, or by hired program professionals.</li>",
+          "html": "<span><span><span><span><span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span></span></span></span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(10)"
+            "li:nth-child(2) > span > span"
           ]
         },
         {
@@ -14093,9 +11000,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>The District may partner with other community agencies, organizations, educational and cultural institutions, or individuals to develop and present public programs.&nbsp;</li>",
+          "html": "<span><span><span><span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span></span></span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(11)"
+            "li:nth-child(2) > span > span > span"
           ]
         },
         {
@@ -14113,9 +11020,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Views expressed by a program presenter or participant do not constitute District endorsement.</li>",
+          "html": "<span><span><span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span></span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(12)"
+            "li:nth-child(2) > span > span > span > span"
           ]
         },
         {
@@ -14133,9 +11040,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>No right of privacy exists relating to attendees passive or active participation in a public event.&nbsp;</li>",
+          "html": "<span><span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span></span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(13)"
+            "li:nth-child(2) > span > span > span > span > span"
           ]
         },
         {
@@ -14153,9 +11060,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<span>The district may provide library service via the bookmobile in accordance with the Bookmobile Policy.</span>",
           "target": [
-            "ul:nth-child(10) > li:nth-child(14)"
+            "li:nth-child(2) > span > span > span > span > span > span"
           ]
         },
         {
@@ -14173,9 +11080,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/librarybill\">Library Bill of Rights | Advocacy, Legislation &amp; Issues</a>",
+          "html": "<li><span><span><span><span><span><span>The district may provide library service in leased or donated space when it best serves the community.</span></span></span></span></span></span></li>",
           "target": [
-            "li:nth-child(14) > a:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(3)"
           ]
         },
         {
@@ -14193,9 +11100,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomreadstatement\">The Freedom to Read Statement | Advocacy, Legislation &amp; Issues</a>",
+          "html": "<span><span><span><span><span><span>The district may provide library service in leased or donated space when it best serves the community.</span></span></span></span></span></span>",
           "target": [
-            "li:nth-child(14) > a:nth-child(2)"
+            "li:nth-child(3) > span"
           ]
         },
         {
@@ -14213,9 +11120,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomviewstatement\">Freedom to View Statement | Advocacy, Legislation &amp; Issues</a>",
+          "html": "<span><span><span><span><span>The district may provide library service in leased or donated space when it best serves the community.</span></span></span></span></span>",
           "target": [
-            "li:nth-child(14) > a:nth-child(3)"
+            "li:nth-child(3) > span > span"
           ]
         },
         {
@@ -14233,9 +11140,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Criteria</h2>",
+          "html": "<span><span><span><span>The district may provide library service in leased or donated space when it best serves the community.</span></span></span></span>",
           "target": [
-            "h2:nth-child(11)"
+            "li:nth-child(3) > span > span > span"
           ]
         },
         {
@@ -14253,9 +11160,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Among the criteria considered when making decisions about a specific program will be the following:</p>",
+          "html": "<span><span><span>The district may provide library service in leased or donated space when it best serves the community.</span></span></span>",
           "target": [
-            "p:nth-child(12)"
+            "li:nth-child(3) > span > span > span > span"
           ]
         },
         {
@@ -14273,9 +11180,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>",
+          "html": "<span><span>The district may provide library service in leased or donated space when it best serves the community.</span></span>",
           "target": [
-            "ul:nth-child(13)"
+            "li:nth-child(3) > span > span > span > span > span"
           ]
         },
         {
@@ -14293,9 +11200,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Degree of alignment with District mission, vision and strategic plan</li>",
+          "html": "<span>The district may provide library service in leased or donated space when it best serves the community.</span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(1)"
+            "li:nth-child(3) > span > span > span > span > span > span"
           ]
         },
         {
@@ -14313,9 +11220,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Community needs and interests</li>",
+          "html": "<li><span><span><span><span><span><span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(2)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(4)"
           ]
         },
         {
@@ -14333,9 +11240,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Cost and budget</li>",
+          "html": "<span><span><span><span><span><span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span></span></span></span></span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(3)"
+            "li:nth-child(4) > span"
           ]
         },
         {
@@ -14353,9 +11260,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Service area demographics</li>",
+          "html": "<span><span><span><span><span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span></span></span></span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(4)"
+            "li:nth-child(4) > span > span"
           ]
         },
         {
@@ -14373,9 +11280,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Provides a forum for sharing of different perspectives</li>",
+          "html": "<span><span><span><span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span></span></span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(5)"
+            "li:nth-child(4) > span > span > span"
           ]
         },
         {
@@ -14393,9 +11300,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Offers training and assistance with new technologies</li>",
+          "html": "<span><span><span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span></span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(6)"
+            "li:nth-child(4) > span > span > span > span"
           ]
         },
         {
@@ -14413,9 +11320,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Fosters a love for reading and learning</li>",
+          "html": "<span><span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(7)"
+            "li:nth-child(4) > span > span > span > span > span"
           ]
         },
         {
@@ -14433,9 +11340,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Fosters community awareness</li>",
+          "html": "<span>The district may provide library service from co-located facilities. Refer to the policy entitled Co-location of Library Facilities for information on this topic.</span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(8)"
+            "li:nth-child(4) > span > span > span > span > span > span"
           ]
         },
         {
@@ -14453,9 +11360,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Safety and security of customers and staff</li>",
+          "html": "<li><span><span><span><span><span><span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(9)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(5)"
           ]
         },
         {
@@ -14473,9 +11380,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Accuracy and timeliness of topic</li>",
+          "html": "<span><span><span><span><span><span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span></span></span></span></span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(10)"
+            "li:nth-child(5) > span"
           ]
         },
         {
@@ -14493,9 +11400,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Supplementing or extending information found in library collections</li>",
+          "html": "<span><span><span><span><span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span></span></span></span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(11)"
+            "li:nth-child(5) > span > span"
           ]
         },
         {
@@ -14513,9 +11420,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Promoting the library and encouraging use of its resources&nbsp;</li>",
+          "html": "<span><span><span><span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span></span></span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(12)"
+            "li:nth-child(5) > span > span > span"
           ]
         },
         {
@@ -14533,9 +11440,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Presenter background and qualifications in content area</li>",
+          "html": "<span><span><span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span></span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(13)"
+            "li:nth-child(5) > span > span > span > span"
           ]
         },
         {
@@ -14553,9 +11460,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Historical, cultural or educational significance</li>",
+          "html": "<span><span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span></span>",
           "target": [
-            "ul:nth-child(13) > li:nth-child(14)"
+            "li:nth-child(5) > span > span > span > span > span"
           ]
         },
         {
@@ -14573,9 +11480,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Availability of program space</li>",
+          "html": "<span>The district will pursue and deploy various means to deliver service to residents at non-library locations.</span>",
           "target": [
-            "li:nth-child(15)"
+            "li:nth-child(5) > span > span > span > span > span > span"
           ]
         },
         {
@@ -14593,9 +11500,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Availability elsewhere in the community</li>",
+          "html": "<li><span><span><span><span><span><span>The district will explore the feasibility of new service methods and material types whenever they arise.</span></span></span></span></span></span></li>",
           "target": [
-            "li:nth-child(16)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(6)"
           ]
         },
         {
@@ -14613,9 +11520,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>The District Does Not Provide</h2>",
+          "html": "<span><span><span><span><span><span>The district will explore the feasibility of new service methods and material types whenever they arise.</span></span></span></span></span></span>",
           "target": [
-            "h2:nth-child(14)"
+            "li:nth-child(6) > span"
           ]
         },
         {
@@ -14633,9 +11540,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>",
+          "html": "<span><span><span><span><span>The district will explore the feasibility of new service methods and material types whenever they arise.</span></span></span></span></span>",
           "target": [
-            "ul:nth-child(15)"
+            "li:nth-child(6) > span > span"
           ]
         },
         {
@@ -14653,9 +11560,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs of a purely commercial nature or those designed for the solicitation of business for third parties&nbsp;</li>",
+          "html": "<span><span><span><span>The district will explore the feasibility of new service methods and material types whenever they arise.</span></span></span></span>",
           "target": [
-            "ul:nth-child(15) > li:nth-child(1)"
+            "li:nth-child(6) > span > span > span"
           ]
         },
         {
@@ -14673,9 +11580,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs that specifically support or oppose any political party, candidate or ballot measure&nbsp;</li>",
+          "html": "<span><span><span>The district will explore the feasibility of new service methods and material types whenever they arise.</span></span></span>",
           "target": [
-            "ul:nth-child(15) > li:nth-child(2)"
+            "li:nth-child(6) > span > span > span > span"
           ]
         },
         {
@@ -14693,9 +11600,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>Programs that support or oppose a specific religion. Programs may address religious themes to educate or inform, but will not promote or proselytize a particular religious conviction.&nbsp;</li>",
+          "html": "<span><span>The district will explore the feasibility of new service methods and material types whenever they arise.</span></span>",
           "target": [
-            "ul:nth-child(15) > li:nth-child(3)"
+            "li:nth-child(6) > span > span > span > span > span"
           ]
         },
         {
@@ -14713,9 +11620,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Discord Over Subjective Topics</h2>",
+          "html": "<span>The district will explore the feasibility of new service methods and material types whenever they arise.</span>",
           "target": [
-            "h2:nth-child(16)"
+            "li:nth-child(6) > span > span > span > span > span > span"
           ]
         },
         {
@@ -14733,9 +11640,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<li><span><span><span><span><span><span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span></span></span></span></span></span></li>",
           "target": [
-            "p:nth-child(17)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(7)"
           ]
         },
         {
@@ -14753,9 +11660,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The District follows these principles, as expressed in our vision:</p>",
+          "html": "<span><span><span><span><span><span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span></span></span></span></span></span>",
           "target": [
-            "p:nth-child(18)"
+            "li:nth-child(7) > span"
           ]
         },
         {
@@ -14773,9 +11680,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<ul>",
+          "html": "<span><span><span><span><span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span></span></span></span></span>",
           "target": [
-            "ul:nth-child(19)"
+            "li:nth-child(7) > span > span"
           ]
         },
         {
@@ -14793,9 +11700,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<span><span><span><span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span></span></span></span>",
           "target": [
-            "ul:nth-child(19) > li:nth-child(1)"
+            "li:nth-child(7) > span > span > span"
           ]
         },
         {
@@ -14813,9 +11720,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Foster Early Literacy</strong>",
+          "html": "<span><span><span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span></span></span>",
           "target": [
-            "ul:nth-child(19) > li:nth-child(1) > strong"
+            "li:nth-child(7) > span > span > span > span"
           ]
         },
         {
@@ -14833,9 +11740,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><strong>Build Connections</strong> — We believe that social connection is critical to growing, learning, and contributing to stronger communities by building bridges across generations, cultures, ideas, and beliefs to support learners of all ages.</li>",
+          "html": "<span><span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span></span>",
           "target": [
-            "ul:nth-child(19) > li:nth-child(2)"
+            "li:nth-child(7) > span > span > span > span > span"
           ]
         },
         {
@@ -14853,9 +11760,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Build Connections</strong>",
+          "html": "<span>If the district operates more than one facility, it is the district’s preference to be open a minimum of 30 hours per week at each location.</span>",
           "target": [
-            "ul:nth-child(19) > li:nth-child(2) > strong"
+            "li:nth-child(7) > span > span > span > span > span > span"
           ]
         },
         {
@@ -14873,9 +11780,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>",
+          "html": "<li><span><span><span><span><span><span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span></span></span></span></span></span></li>",
           "target": [
-            "ul:nth-child(19) > li:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > ul > li:nth-child(8)"
           ]
         },
         {
@@ -14893,9 +11800,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Inspire Lifelong Learning</strong>",
+          "html": "<span><span><span><span><span><span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span></span></span></span></span></span>",
           "target": [
-            "ul:nth-child(19) > li:nth-child(3) > strong"
+            "li:nth-child(8) > span"
           ]
         },
         {
@@ -14913,9 +11820,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<span><span><span><span><span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span></span></span></span></span>",
           "target": [
-            "p:nth-child(20)"
+            "li:nth-child(8) > span > span"
           ]
         },
         {
@@ -14933,9 +11840,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Reconsideration</h2>",
+          "html": "<span><span><span><span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span></span></span></span>",
           "target": [
-            "h2:nth-child(21)"
+            "li:nth-child(8) > span > span > span"
           ]
         },
         {
@@ -14953,9 +11860,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>The District welcomes feedback about its programs. Individuals who have questions, concerns, or suggestions about programs should use our <a href=\"https://clearviewlibrary.org/contact\">Contact Us form</a>.</p>",
+          "html": "<span><span><span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span></span></span>",
           "target": [
-            "p:nth-child(22)"
+            "li:nth-child(8) > span > span > span > span"
           ]
         },
         {
@@ -14973,9 +11880,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/contact\">Contact Us form</a>",
+          "html": "<span><span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span></span>",
           "target": [
-            "p:nth-child(22) > a"
+            "li:nth-child(8) > span > span > span > span > span"
           ]
         },
         {
@@ -14993,9 +11900,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Accessibility</h2>",
+          "html": "<span>New facilities will be constructed in accordance with the district’s Facilities Policy.</span>",
           "target": [
-            "h2:nth-child(23)"
+            "li:nth-child(8) > span > span > span > span > span > span"
           ]
         },
         {
@@ -15013,9 +11920,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>Pursuant to the Americans with Disabilities Act, accommodations for persons with disabilities will be made in accordance with applicable federal, state and local laws, policies, guidelines, directives and procedures.</p>",
+          "html": "<p><span><span><span><span><em><span>Adopted February 28, 2014. Revised and adopted March 25, 2021.</span></em></span></span></span></span></p>",
           "target": [
-            "p:nth-child(24)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -15033,9 +11940,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Related Documents Websites</h2>",
+          "html": "<span><span><span><span><em><span>Adopted February 28, 2014. Revised and adopted March 25, 2021.</span></em></span></span></span></span>",
           "target": [
-            "h2:nth-child(25)"
+            "p:nth-child(4) > span"
           ]
         },
         {
@@ -15053,9 +11960,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<span><span><span><em><span>Adopted February 28, 2014. Revised and adopted March 25, 2021.</span></em></span></span></span>",
           "target": [
-            "p:nth-child(26)"
+            "p:nth-child(4) > span > span"
           ]
         },
         {
@@ -15073,9 +11980,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/librarybill\">American Library Association Library Bill of Rights</a>",
+          "html": "<span><span><em><span>Adopted February 28, 2014. Revised and adopted March 25, 2021.</span></em></span></span>",
           "target": [
-            "p:nth-child(26) > a:nth-child(1)"
+            "p:nth-child(4) > span > span > span"
           ]
         },
         {
@@ -15093,9 +12000,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<br>",
+          "html": "<span><em><span>Adopted February 28, 2014. Revised and adopted March 25, 2021.</span></em></span>",
           "target": [
-            "p:nth-child(26) > br:nth-child(2)"
+            "p:nth-child(4) > span > span > span > span"
           ]
         },
         {
@@ -15113,89 +12020,29 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomreadstatement\">American Library Association Freedom to Read Statement</a>",
-          "target": [
-            "p:nth-child(26) > a:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "br:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.ala.org/advocacy/intfreedom/freedomviewstatement\">American Library Association Freedom to View Statement</a>",
-          "target": [
-            "a:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><em>Adopted July 28, 2022</em></p>",
-          "target": [
-            "p:nth-child(27)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>Adopted July 28, 2022</em>",
+          "html": "<em><span>Adopted February 28, 2014. Revised and adopted March 25, 2021.</span></em>",
           "target": [
             "em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span>Adopted February 28, 2014. Revised and adopted March 25, 2021.</span>",
+          "target": [
+            "em > span"
           ]
         },
         {
@@ -16255,7 +13102,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            ".address:nth-child(3) > br:nth-child(2)"
+            "br:nth-child(2)"
           ]
         },
         {
@@ -16335,7 +13182,7 @@
           "impact": null,
           "html": "<a href=\"/contact\">Contact</a>",
           "target": [
-            ".contact:nth-child(4) > p > a[href$=\"contact\"]"
+            "p > a[href$=\"contact\"]"
           ]
         },
         {
@@ -17613,7 +14460,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -17633,9 +14480,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -18043,5 +14890,5 @@
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Program Policy | Clearview Library"
+  "documentTitle": "Provision of Library Services Policy | Clearview Library"
 }

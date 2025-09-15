@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:39:02.031Z",
-  "url": "https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=All",
+  "timestamp": "2025-09-15T21:19:09.621Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-forest-feast-simple-vegetarian-recipes-my-cabin-woods",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -457,23 +457,6 @@
       "description": "Ensure the complementary landmark or aside is at top level",
       "help": "Aside should not be contained in another landmark",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "link-in-text-block",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -971,32 +954,6 @@
           "target": [
             "#block-mainnavigation-6"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
-          ]
         }
       ]
     },
@@ -1332,24 +1289,6 @@
           "target": [
             "#block-mainnavigation-6"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
-          ]
         }
       ]
     },
@@ -1578,7 +1517,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-taxonomy\">",
+          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
           "target": [
             "body"
           ]
@@ -1723,24 +1662,6 @@
           "html": "<nav role=\"navigation\" aria-labelledby=\"block-mainnavigation-6-menu\" id=\"block-mainnavigation-6\" class=\"block block-menu navigation menu--main\">",
           "target": [
             "#block-mainnavigation-6"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
           ]
         }
       ]
@@ -2514,38 +2435,6 @@
           "target": [
             "#block-mainnavigation-6"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
-          ]
         }
       ]
     },
@@ -2688,24 +2577,6 @@
           "target": [
             "#block-mainnavigation-6"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
-          ]
         }
       ]
     },
@@ -2743,7 +2614,25 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has inner text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         }
       ]
@@ -2798,33 +2687,9 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Business &amp; Legal</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
                   "target": [
                     "h1"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"node-title\">",
-                  "target": [
-                    "#node-85 > .node__content > .node-title"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"node-title\">",
-                  "target": [
-                    "#node-98 > .node__content > .node-title"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"node-title\">",
-                  "target": [
-                    "#node-111 > .node__content > .node-title"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"node-title\">\n      <a href=\"https://townofwindsor.sizeup.com/colorado/\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">SizeUp Windsor Economic Development</span>\n</a>\n    </h2>",
-                  "target": [
-                    "#node-406 > .node__content > .node-title"
                   ]
                 },
                 {
@@ -2905,9 +2770,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -3007,7 +2872,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -3082,7 +2947,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -3142,7 +3007,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[value=\"Search\"]"
+            "input[type=\"submit\"]"
           ]
         },
         {
@@ -3190,9 +3055,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"borrow-research\"]"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -3215,9 +3080,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research\">Research</a>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "ol > li:nth-child(3) > a[href$=\"research\"]"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
           ]
         },
         {
@@ -3240,9 +3105,84 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Business &amp; Legal\n              </li>",
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
           "target": [
-            "ol > li:nth-child(4)"
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n                  Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes From My Cabin In The Woods\n              </li>",
+          "target": [
+            "ol > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2023-09-22T10:26:37-06:00\" title=\"Friday, September 22, 2023 - 10:26\" class=\"datetime\">September 22, 2023</time>",
+          "target": [
+            "time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "target": [
+            "a[href$=\"cookbook-nook\"]"
           ]
         },
         {
@@ -3265,79 +3205,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Business &amp; Legal</h1>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>",
           "target": [
-            "h1"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "messageKey": "hidden"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is hidden"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input data-bef-auto-submit-click=\"\" class=\"js-hide button js-form-submit form-submit\" data-drupal-selector=\"edit-submit-resources\" type=\"submit\" id=\"edit-submit-resources\" value=\"Apply\">",
-          "target": [
-            "#edit-submit-resources"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Business Source Premier</span>",
-          "target": [
-            "#node-85 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>This is the industry's most used business research database, providing full text for more than 2,100 journals. Business Source Premier provides coverage across all disciplines of business, including marketing, management, accounting, banking, finance, and more.</p>",
-          "target": [
-            "#node-85 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
+            ".field--name-title"
           ]
         },
         {
@@ -3360,59 +3230,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<strong>",
           "target": [
-            "#node-85 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Legal Information Source</span>",
-          "target": [
-            "#node-98 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>This database contains hundreds of full-text publications and thousands of legal forms. The full-text legal reference books are provided through Nolo, the nation's oldest and most-respected provider of legal information for consumers and small businesses.</p>",
-          "target": [
-            "#node-98 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
+            "p:nth-child(2) > strong"
           ]
         },
         {
@@ -3435,34 +3255,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<strong>Why This Book</strong>",
           "target": [
-            "#node-98 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Regional Business News</span>",
-          "target": [
-            "#node-111 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -3485,9 +3280,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>This database provides comprehensive full-text coverage for regional business publications. Regional Business News incorporates coverage of more than 80 regional business publications covering all metropolitan and rural areas within the United States.</p>",
+          "html": "<p>",
           "target": [
-            "#node-111 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
+            "p:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</em>",
+          "target": [
+            "a > em"
           ]
         },
         {
@@ -3510,34 +3330,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<strong>What We’re Trying: Cream Cheese-filled Parmesan Poppers&nbsp;</strong>",
           "target": [
-            "#node-111 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "20.7pt (27.648px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">SizeUp Windsor Economic Development</span>",
-          "target": [
-            "#node-406 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -3560,9 +3355,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>SizeUp is a free, robust business analytics tool designed to support small and medium-sized businesses in a variety of stages, from the entrepreneur looking to start their first business to a seasoned business owner looking to expand their customer base.</p>",
+          "html": "<p>",
           "target": [
-            "#node-406 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
+            "p:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Only Four Ingredients -</strong> Eggs, parmesan, cayenne, and cream cheese are all you’ll need for this easy recipe!</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
           ]
         },
         {
@@ -3585,9 +3405,309 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<strong>Only Four Ingredients -</strong>",
           "target": [
-            "#node-406 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
+            "li:nth-child(1) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Great for Hosting -</strong> These delicious cheesy poppers will appeal to any guest regardless of age and are an easy appetizer to make just minutes before the party.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Great for Hosting -</strong>",
+          "target": [
+            "li:nth-child(2) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Warm food that won’t heat the kitchen -</strong> These poppers are fried for just one minute on the stove, resulting in a warm treat while keeping your living space cool.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Warm food that won’t heat the kitchen -</strong>",
+          "target": [
+            "li:nth-child(3) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em><strong>Key Tips -</strong> We recommend using a non-stick pot as these parmesan poppers quickly become sticky in the hot oil. The poppers we made were large, which resulted in a longer cooking time. While they were delicious, it is recommended to make smaller ones instead.</em>",
+          "target": [
+            "li:nth-child(4) > em"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Key Tips -</strong>",
+          "target": [
+            "em > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
+          "target": [
+            ".button"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Meet the Author</strong>",
+          "target": [
+            "p:nth-child(9) > strong"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>",
+          "target": [
+            "p:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://www.theforestfeast.com/\">check out her website</a>",
+          "target": [
+            "p:nth-child(10) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#e1f0fb",
+                "contrastRatio": 15.26,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 15.26"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>Get the latest on library news, events, and services.</p>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
+          "target": [
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -3712,7 +3832,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -3737,7 +3857,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -4112,7 +4232,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .field--name-body.field--type-text-with-summary.text-formatted > p"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
           ]
         },
         {
@@ -4137,7 +4257,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -4162,7 +4282,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .field--name-body.field--type-text-with-summary.text-formatted > p"
+            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
           ]
         }
       ]
@@ -4312,24 +4432,6 @@
           "any": [
             {
               "id": "duplicate-id-aria",
-              "data": "edit-field-resource-category-target-id",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"bef-links-use-ajax bef-links\" data-drupal-selector=\"edit-field-resource-category-target-id\" id=\"edit-field-resource-category-target-id\" name=\"field_resource_category_target_id\" data-once=\"bef-links-use-ajax\">",
-          "target": [
-            "#edit-field-resource-category-target-id"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -4460,81 +4562,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Business &amp; Legal</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
           "target": [
             "h1"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-85 > .node__content > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-98 > .node__content > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-111 > .node__content > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"https://townofwindsor.sizeup.com/colorado/\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">SizeUp Windsor Economic Development</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-406 > .node__content > .node-title"
           ]
         },
         {
@@ -4680,33 +4710,9 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(1) > h1"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > h1:nth-child(2)"
                     ],
                     "level": 1
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(1) > article > div:nth-child(1) > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > article > div:nth-child(1) > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(3) > article > div:nth-child(1) > h2:nth-child(1)"
-                    ],
-                    "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(4) > article > div:nth-child(1) > h2:nth-child(1)"
-                    ],
-                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -4784,81 +4790,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Business &amp; Legal</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
           "target": [
             "h1"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-85 > .node__content > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-98 > .node__content > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">",
-          "target": [
-            "#node-111 > .node__content > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"https://townofwindsor.sizeup.com/colorado/\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">SizeUp Windsor Economic Development</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-406 > .node__content > .node-title"
           ]
         },
         {
@@ -5040,42 +4974,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/business-source-premier-button-240.png?itok=BxN20I9V\" width=\"220\" height=\"64\" alt=\"Business source premier logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
-            "img[alt=\"Business source premier logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a title attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2025/legal-information-source-button-240.png?itok=OLw50qsp\" width=\"220\" height=\"92\" alt=\"Legal Information Source logo\" title=\"Legal Information Source\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
-          "target": [
-            "img[height=\"92\"]"
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -5099,9 +5000,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/regional-business-news-button-240_0.png?itok=kM_T1v4V\" width=\"220\" height=\"64\" alt=\"Regional business news logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img alt=\"The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods by Erin Gleeson Book Cover\" data-entity-type=\"file\" data-entity-uuid=\"6f020583-e293-4955-9e7a-d1c8b336c5e4\" src=\"/sites/default/files/inline-images/Sept_The_Forest_Feast.jpg\" width=\"220\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
-            "img[alt=\"Regional business news logo\"]"
+            ".align-left"
           ]
         },
         {
@@ -5112,13 +5013,6 @@
               "relatedNodes": [],
               "impact": "critical",
               "message": "Element has an alt attribute"
-            },
-            {
-              "id": "non-empty-title",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a title attribute"
             }
           ],
           "all": [],
@@ -5132,9 +5026,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2022/Windsor-Economic-Development-for-Size-Up.png?itok=0D5OQX5k\" width=\"220\" height=\"36\" alt=\"SizeUp Windsor Logo\" title=\"SizeUp Windsor Economic Development\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img alt=\"Ingredients and book for Cream Cheese-filled Parmesan Poppers\" data-entity-type=\"file\" data-entity-uuid=\"e737ac6e-d916-42ab-8af9-9d6349da5070\" src=\"/sites/default/files/inline-images/Sept_before-cooking-parmesan-poppers.jpg\" width=\"500\" height=\"281\" loading=\"lazy\" class=\"align-right\">",
           "target": [
-            "img[height=\"36\"]"
+            ".align-right"
           ]
         },
         {
@@ -5285,9 +5179,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/business-source-premier-button-240.png?itok=BxN20I9V\" width=\"220\" height=\"64\" alt=\"Business source premier logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
-            "img[alt=\"Business source premier logo\"]"
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -5303,9 +5197,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2025/legal-information-source-button-240.png?itok=OLw50qsp\" width=\"220\" height=\"92\" alt=\"Legal Information Source logo\" title=\"Legal Information Source\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img alt=\"The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods by Erin Gleeson Book Cover\" data-entity-type=\"file\" data-entity-uuid=\"6f020583-e293-4955-9e7a-d1c8b336c5e4\" src=\"/sites/default/files/inline-images/Sept_The_Forest_Feast.jpg\" width=\"220\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
-            "img[height=\"92\"]"
+            ".align-left"
           ]
         },
         {
@@ -5321,27 +5215,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/regional-business-news-button-240_0.png?itok=kM_T1v4V\" width=\"220\" height=\"64\" alt=\"Regional business news logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img alt=\"Ingredients and book for Cream Cheese-filled Parmesan Poppers\" data-entity-type=\"file\" data-entity-uuid=\"e737ac6e-d916-42ab-8af9-9d6349da5070\" src=\"/sites/default/files/inline-images/Sept_before-cooking-parmesan-poppers.jpg\" width=\"500\" height=\"281\" loading=\"lazy\" class=\"align-right\">",
           "target": [
-            "img[alt=\"Regional business news logo\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2022/Windsor-Economic-Development-for-Size-Up.png?itok=0D5OQX5k\" width=\"220\" height=\"36\" alt=\"SizeUp Windsor Logo\" title=\"SizeUp Windsor Economic Development\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
-          "target": [
-            "img[height=\"36\"]"
+            ".align-right"
           ]
         },
         {
@@ -5452,7 +5328,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[value=\"Search\"]"
+            "input[type=\"submit\"]"
           ]
         }
       ]
@@ -5746,7 +5622,14 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [],
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
+                  "target": [
+                    "#sitewide-footer"
+                  ]
+                }
+              ],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5754,9 +5637,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
+          "html": "<footer class=\"node__meta\">",
           "target": [
-            "#sitewide-footer"
+            ".node__meta"
           ]
         }
       ]
@@ -6054,6 +5937,88 @@
       ]
     },
     {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
+          "target": [
+            "p:nth-child(4) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(10)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text in some way other than by color"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<p>",
+                  "target": [
+                    "p:nth-child(10)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Links can be distinguished from surrounding text by visual styling"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"https://www.theforestfeast.com/\">check out her website</a>",
+          "target": [
+            "p:nth-child(10) > a"
+          ]
+        }
+      ]
+    },
+    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -6121,9 +6086,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6253,7 +6218,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -6331,7 +6296,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -6485,9 +6450,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"borrow-research\"]"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -6511,9 +6476,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research\">Research</a>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "ol > li:nth-child(3) > a[href$=\"research\"]"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
           ]
         },
         {
@@ -6537,9 +6502,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=bsi\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Business Source Premier</span>\n</a>",
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
           "target": [
-            "#node-85 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "li:nth-child(4) > a[href$=\"news\"]"
           ]
         },
         {
@@ -6563,9 +6528,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
           "target": [
-            "#node-85 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
+            "a[href$=\"cookbook-nook\"]"
           ]
         },
         {
@@ -6589,9 +6554,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=bsi\" rel=\"bookmark\" target=\"_blank\">",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
           "target": [
-            "#node-85 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "strong > a"
           ]
         },
         {
@@ -6615,9 +6580,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=lirc\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Legal Information Source</span>\n</a>",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
           "target": [
-            "#node-98 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "p:nth-child(4) > a"
           ]
         },
         {
@@ -6641,9 +6606,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
           "target": [
-            "#node-98 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
+            ".button"
           ]
         },
         {
@@ -6667,165 +6632,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=lirc\" rel=\"bookmark\" target=\"_blank\">",
+          "html": "<a href=\"https://www.theforestfeast.com/\">check out her website</a>",
           "target": [
-            "#node-98 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=ehost&amp;defaultdb=bwh\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Regional Business News</span>\n</a>",
-          "target": [
-            "#node-111 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
-          "target": [
-            "#node-111 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=ehost&amp;defaultdb=bwh\" rel=\"bookmark\" target=\"_blank\">",
-          "target": [
-            "#node-111 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://townofwindsor.sizeup.com/colorado/\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">SizeUp Windsor Economic Development</span>\n</a>",
-          "target": [
-            "#node-406 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
-          "target": [
-            "#node-406 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://townofwindsor.sizeup.com/colorado/\" rel=\"bookmark\" target=\"_blank\">",
-          "target": [
-            "#node-406 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "p:nth-child(10) > a"
           ]
         },
         {
@@ -6903,7 +6712,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -6929,7 +6738,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -7319,7 +7128,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
           ]
         },
         {
@@ -7345,7 +7154,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(2)"
+            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
           ]
         },
         {
@@ -7371,7 +7180,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
           ]
         },
         {
@@ -7395,9 +7204,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7501,7 +7310,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -7579,7 +7388,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -7650,6 +7459,24 @@
           "html": "<ol>",
           "target": [
             "ol"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul>",
+          "target": [
+            "div[property=\"schema:text\"] > ul"
           ]
         },
         {
@@ -7789,7 +7616,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -7969,7 +7796,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/borrow-research\">Borrow &amp; Research</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -7987,7 +7814,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/borrow-research/research\">Research</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
           "target": [
             "ol > li:nth-child(3)"
           ]
@@ -8005,9 +7832,99 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Business &amp; Legal\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
           "target": [
             "ol > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n                  Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes From My Cabin In The Woods\n              </li>",
+          "target": [
+            "ol > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Only Four Ingredients -</strong> Eggs, parmesan, cayenne, and cream cheese are all you’ll need for this easy recipe!</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Great for Hosting -</strong> These delicious cheesy poppers will appeal to any guest regardless of age and are an easy appetizer to make just minutes before the party.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><strong>Warm food that won’t heat the kitchen -</strong> These poppers are fried for just one minute on the stove, resulting in a warm treat while keeping your living space cool.</li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li><em><strong>Key Tips -</strong> We recommend using a non-stick pot as these parmesan poppers quickly become sticky in the hot oil. The poppers we made were large, which resulted in a longer cooking time. While they were delicious, it is recommended to make smaller ones instead.</em></li>",
+          "target": [
+            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
           ]
         },
         {
@@ -8311,7 +8228,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -8559,7 +8476,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[value=\"Search\"]"
+            "input[type=\"submit\"]"
           ]
         },
         {
@@ -8575,9 +8492,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/business-source-premier-button-240.png?itok=BxN20I9V\" width=\"220\" height=\"64\" alt=\"Business source premier logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
-            "img[alt=\"Business source premier logo\"]"
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -8593,9 +8510,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2025/legal-information-source-button-240.png?itok=OLw50qsp\" width=\"220\" height=\"92\" alt=\"Legal Information Source logo\" title=\"Legal Information Source\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img alt=\"The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods by Erin Gleeson Book Cover\" data-entity-type=\"file\" data-entity-uuid=\"6f020583-e293-4955-9e7a-d1c8b336c5e4\" src=\"/sites/default/files/inline-images/Sept_The_Forest_Feast.jpg\" width=\"220\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
-            "img[height=\"92\"]"
+            ".align-left"
           ]
         },
         {
@@ -8611,9 +8528,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/regional-business-news-button-240_0.png?itok=kM_T1v4V\" width=\"220\" height=\"64\" alt=\"Regional business news logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img alt=\"Ingredients and book for Cream Cheese-filled Parmesan Poppers\" data-entity-type=\"file\" data-entity-uuid=\"e737ac6e-d916-42ab-8af9-9d6349da5070\" src=\"/sites/default/files/inline-images/Sept_before-cooking-parmesan-poppers.jpg\" width=\"500\" height=\"281\" loading=\"lazy\" class=\"align-right\">",
           "target": [
-            "img[alt=\"Regional business news logo\"]"
+            ".align-right"
           ]
         },
         {
@@ -8629,9 +8546,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2022/Windsor-Economic-Development-for-Size-Up.png?itok=0D5OQX5k\" width=\"220\" height=\"36\" alt=\"SizeUp Windsor Logo\" title=\"SizeUp Windsor Economic Development\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "img[height=\"36\"]"
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -8667,7 +8584,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -8745,7 +8662,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Business &amp; Legal</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8970,7 +8887,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
           ]
@@ -8990,9 +8907,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -9312,7 +9229,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -9432,7 +9349,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
+            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -9612,7 +9529,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".prf-opac-search > .content"
+            ".content"
           ]
         },
         {
@@ -9792,7 +9709,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[value=\"Search\"]"
+            "input[type=\"submit\"]"
           ]
         },
         {
@@ -9832,7 +9749,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            "strong"
+            ".label"
           ]
         },
         {
@@ -9950,9 +9867,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-breadcrumbs-2\" class=\"block block-system block-system-breadcrumb-block\">",
+          "html": "<div id=\"block-clearview-breadcrumbs\" class=\"block block-system block-system-breadcrumb-block\">",
           "target": [
-            "#block-clearview-breadcrumbs-2"
+            "#block-clearview-breadcrumbs"
           ]
         },
         {
@@ -10070,7 +9987,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/borrow-research\">Borrow &amp; Research</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us\">About Us</a>\n              </li>",
           "target": [
             "ol > li:nth-child(2)"
           ]
@@ -10090,9 +10007,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research\">Borrow &amp; Research</a>",
+          "html": "<a href=\"/about-us\">About Us</a>",
           "target": [
-            "li:nth-child(2) > a[href$=\"borrow-research\"]"
+            "li:nth-child(2) > a[href$=\"about-us\"]"
           ]
         },
         {
@@ -10110,7 +10027,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  <a href=\"/borrow-research/research\">Research</a>\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more\">Learn More</a>\n              </li>",
           "target": [
             "ol > li:nth-child(3)"
           ]
@@ -10130,9 +10047,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research\">Research</a>",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
           "target": [
-            "ol > li:nth-child(3) > a[href$=\"research\"]"
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
           ]
         },
         {
@@ -10150,9 +10067,49 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Business &amp; Legal\n              </li>",
+          "html": "<li>\n                  <a href=\"/about-us/learn-more/news\">News</a>\n              </li>",
           "target": [
             "ol > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n                  Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes From My Cabin In The Woods\n              </li>",
+          "target": [
+            "ol > li:nth-child(5)"
           ]
         },
         {
@@ -10270,9 +10227,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-content\" class=\"block block-system block-system-main-block\">",
+          "html": "<article data-history-node-id=\"522\" about=\"/about-us/learn-more/news/cookbook-nook-forest-feast-simple-vegetarian-recipes-my-cabin-woods\" typeof=\"schema:Article\" id=\"node-522\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#block-clearview-content"
+            "#node-522"
           ]
         },
         {
@@ -10290,9 +10247,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div about=\"/borrow-research/research/business-legal-0\" id=\"taxonomy-term-19\" class=\"taxonomy-term vocabulary-resource-category\">",
+          "html": "<footer class=\"node__meta\">",
           "target": [
-            "#taxonomy-term-19"
+            ".node__meta"
           ]
         },
         {
@@ -10310,9 +10267,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"content\">",
+          "html": "<div class=\"node__submitted\">",
           "target": [
-            "#taxonomy-term-19 > .content"
+            ".node__submitted"
           ]
         },
         {
@@ -10330,9 +10287,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout layout--onecol\">",
+          "html": "<span property=\"schema:dateCreated\" content=\"2023-09-22T16:26:37+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-09-22T10:26:37-06:00\" title=\"Friday, September 22, 2023 - 10:26\" class=\"datetime\">September 22, 2023</time>\n</span>",
           "target": [
-            ".layout"
+            ".field--name-created"
           ]
         },
         {
@@ -10350,9 +10307,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"layout__region layout__region--content\">",
+          "html": "<time datetime=\"2023-09-22T10:26:37-06:00\" title=\"Friday, September 22, 2023 - 10:26\" class=\"datetime\">September 22, 2023</time>",
           "target": [
-            ".layout__region"
+            "time"
           ]
         },
         {
@@ -10370,9 +10327,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"block block-layout-builder block-field-blocktaxonomy-termresource-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Business &amp; Legal</h1>\n\n  </div>",
+          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>\n                    </div>",
           "target": [
-            ".block-layout-builder"
+            ".field--name-field-article-category"
           ]
         },
         {
@@ -10390,7 +10347,47 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Business &amp; Legal</h1>",
+          "html": "<div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>",
+          "target": [
+            ".field--name-field-article-category > .field__item"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "target": [
+            "a[href$=\"cookbook-nook\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10410,9 +10407,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"views-element-container block block-views block-views-blockresources-block-3\">",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>",
           "target": [
-            ".views-element-container"
+            ".field--name-title"
           ]
         },
         {
@@ -10430,89 +10427,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div>",
+          "html": "<div class=\"node__main\">",
           "target": [
-            ".views-element-container > div"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"view view-resources view-id-resources view-display-id-block_3 js-view-dom-id-c86c06e4d7745bfc5310a334a8f83330bfb3e6d2f1f1028e918432ce2baf5ef6\" data-once=\"ajax-pager\">",
-          "target": [
-            ".view"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"view-content\">",
-          "target": [
-            ".view-content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"views-row\">",
-          "target": [
-            ".views-row:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<article data-history-node-id=\"85\" about=\"/node/85\" id=\"node-85\" class=\"node node--type-resource-database-etc- node--view-mode-teaser\">",
-          "target": [
-            "#node-85"
+            ".node__main"
           ]
         },
         {
@@ -10532,7 +10449,7 @@
           "impact": null,
           "html": "<div class=\"node__content\">",
           "target": [
-            "#node-85 > .node__content"
+            ".node__content"
           ]
         },
         {
@@ -10550,9 +10467,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">",
+          "html": "<div class=\"field field--name-field-article-feature-image field--type-entity-reference field--label-hidden field__item\">",
           "target": [
-            "#node-85 > .node__content > .node-title"
+            ".field--name-field-article-feature-image"
           ]
         },
         {
@@ -10570,9 +10487,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=bsi\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Business Source Premier</span>\n</a>",
+          "html": "<article class=\"media media--type-article-feature-image media--view-mode-big-feature\">",
           "target": [
-            "#node-85 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
+            ".media"
           ]
         },
         {
@@ -10590,9 +10507,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Business Source Premier</span>",
+          "html": "<div class=\"field field--name-field-media-image-1 field--type-image field--label-visually_hidden\">",
           "target": [
-            "#node-85 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
+            ".field--name-field-media-image-1"
           ]
         },
         {
@@ -10610,9 +10527,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-field-resource-description field--type-text-long field--label-hidden field__item\">",
+          "html": "<div class=\"field__label visually-hidden\">Image</div>",
           "target": [
-            "#node-85 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted"
+            ".field__label"
           ]
         },
         {
@@ -10630,9 +10547,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>This is the industry's most used business research database, providing full text for more than 2,100 journals. Business Source Premier provides coverage across all disciplines of business, including marketing, management, accounting, banking, finance, and more.</p>",
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n\n</div>",
           "target": [
-            "#node-85 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
+            ".field--name-field-media-image-1 > .field__item"
           ]
         },
         {
@@ -10650,9 +10567,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-resource-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a></div>\n                    </div>",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
-            "#node-85 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items"
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -10670,9 +10587,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a></div>",
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#node-85 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item"
+            "div[property=\"schema:text\"]"
           ]
         },
         {
@@ -10690,9 +10607,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<p>&nbsp;</p>",
           "target": [
-            "#node-85 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
+            "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
         },
         {
@@ -10710,9 +10627,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__image\">",
+          "html": "<p>",
           "target": [
-            "#node-85 > .node__image"
+            "p:nth-child(2)"
           ]
         },
         {
@@ -10730,9 +10647,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=bsi\" rel=\"bookmark\" target=\"_blank\">",
+          "html": "<strong>",
           "target": [
-            "#node-85 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "p:nth-child(2) > strong"
           ]
         },
         {
@@ -10750,9 +10667,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-resource-logo field--type-image field--label-hidden field__item\">",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
           "target": [
-            "#node-85 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-field-resource-logo.field--type-image.field__item"
+            "strong > a"
           ]
         },
         {
@@ -10770,9 +10687,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/business-source-premier-button-240.png?itok=BxN20I9V\" width=\"220\" height=\"64\" alt=\"Business source premier logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<img alt=\"The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods by Erin Gleeson Book Cover\" data-entity-type=\"file\" data-entity-uuid=\"6f020583-e293-4955-9e7a-d1c8b336c5e4\" src=\"/sites/default/files/inline-images/Sept_The_Forest_Feast.jpg\" width=\"220\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
           "target": [
-            "img[alt=\"Business source premier logo\"]"
+            ".align-left"
           ]
         },
         {
@@ -10790,9 +10707,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"views-row\">",
+          "html": "<p><strong>Why This Book</strong></p>",
           "target": [
-            ".views-row:nth-child(2)"
+            "p:nth-child(3)"
           ]
         },
         {
@@ -10810,9 +10727,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"98\" about=\"/node/98\" id=\"node-98\" class=\"node node--type-resource-database-etc- node--view-mode-teaser\">",
+          "html": "<strong>Why This Book</strong>",
           "target": [
-            "#node-98"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -10830,9 +10747,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__content\">",
+          "html": "<p>",
           "target": [
-            "#node-98 > .node__content"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -10850,9 +10767,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">",
+          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
           "target": [
-            "#node-98 > .node__content > .node-title"
+            "p:nth-child(4) > a"
           ]
         },
         {
@@ -10870,9 +10787,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=lirc\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Legal Information Source</span>\n</a>",
+          "html": "<em>The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</em>",
           "target": [
-            "#node-98 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "a > em"
           ]
         },
         {
@@ -10890,9 +10807,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Legal Information Source</span>",
+          "html": "<p><strong>What We’re Trying: Cream Cheese-filled Parmesan Poppers&nbsp;</strong></p>",
           "target": [
-            "#node-98 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
+            "p:nth-child(5)"
           ]
         },
         {
@@ -10910,9 +10827,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-field-resource-description field--type-text-long field--label-hidden field__item\">",
+          "html": "<strong>What We’re Trying: Cream Cheese-filled Parmesan Poppers&nbsp;</strong>",
           "target": [
-            "#node-98 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted"
+            "p:nth-child(5) > strong"
           ]
         },
         {
@@ -10930,9 +10847,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>This database contains hundreds of full-text publications and thousands of legal forms. The full-text legal reference books are provided through Nolo, the nation's oldest and most-respected provider of legal information for consumers and small businesses.</p>",
+          "html": "<p>",
           "target": [
-            "#node-98 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
+            "p:nth-child(6)"
           ]
         },
         {
@@ -10950,9 +10867,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-resource-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a></div>\n                    </div>",
+          "html": "<img alt=\"Ingredients and book for Cream Cheese-filled Parmesan Poppers\" data-entity-type=\"file\" data-entity-uuid=\"e737ac6e-d916-42ab-8af9-9d6349da5070\" src=\"/sites/default/files/inline-images/Sept_before-cooking-parmesan-poppers.jpg\" width=\"500\" height=\"281\" loading=\"lazy\" class=\"align-right\">",
           "target": [
-            "#node-98 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items"
+            ".align-right"
           ]
         },
         {
@@ -10970,9 +10887,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a></div>",
+          "html": "<ul>",
           "target": [
-            "#node-98 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item"
+            "div[property=\"schema:text\"] > ul"
           ]
         },
         {
@@ -10990,9 +10907,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<li><strong>Only Four Ingredients -</strong> Eggs, parmesan, cayenne, and cream cheese are all you’ll need for this easy recipe!</li>",
           "target": [
-            "#node-98 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
+            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
           ]
         },
         {
@@ -11010,9 +10927,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__image\">",
+          "html": "<strong>Only Four Ingredients -</strong>",
           "target": [
-            "#node-98 > .node__image"
+            "li:nth-child(1) > strong"
           ]
         },
         {
@@ -11030,9 +10947,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;groupid=main&amp;profile=lirc\" rel=\"bookmark\" target=\"_blank\">",
+          "html": "<li><strong>Great for Hosting -</strong> These delicious cheesy poppers will appeal to any guest regardless of age and are an easy appetizer to make just minutes before the party.</li>",
           "target": [
-            "#node-98 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
           ]
         },
         {
@@ -11050,9 +10967,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-resource-logo field--type-image field--label-hidden field__item\">",
+          "html": "<strong>Great for Hosting -</strong>",
           "target": [
-            "#node-98 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-field-resource-logo.field--type-image.field__item"
+            "li:nth-child(2) > strong"
           ]
         },
         {
@@ -11070,9 +10987,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2025/legal-information-source-button-240.png?itok=OLw50qsp\" width=\"220\" height=\"92\" alt=\"Legal Information Source logo\" title=\"Legal Information Source\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<li><strong>Warm food that won’t heat the kitchen -</strong> These poppers are fried for just one minute on the stove, resulting in a warm treat while keeping your living space cool.</li>",
           "target": [
-            "img[height=\"92\"]"
+            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
           ]
         },
         {
@@ -11090,9 +11007,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"views-row\">",
+          "html": "<strong>Warm food that won’t heat the kitchen -</strong>",
           "target": [
-            ".views-row:nth-child(3)"
+            "li:nth-child(3) > strong"
           ]
         },
         {
@@ -11110,9 +11027,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"111\" about=\"/node/111\" id=\"node-111\" class=\"node node--type-resource-database-etc- node--view-mode-teaser\">",
+          "html": "<li><em><strong>Key Tips -</strong> We recommend using a non-stick pot as these parmesan poppers quickly become sticky in the hot oil. The poppers we made were large, which resulted in a longer cooking time. While they were delicious, it is recommended to make smaller ones instead.</em></li>",
           "target": [
-            "#node-111"
+            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
           ]
         },
         {
@@ -11130,9 +11047,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__content\">",
+          "html": "<em><strong>Key Tips -</strong> We recommend using a non-stick pot as these parmesan poppers quickly become sticky in the hot oil. The poppers we made were large, which resulted in a longer cooking time. While they were delicious, it is recommended to make smaller ones instead.</em>",
           "target": [
-            "#node-111 > .node__content"
+            "li:nth-child(4) > em"
           ]
         },
         {
@@ -11150,9 +11067,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"node-title\">",
+          "html": "<strong>Key Tips -</strong>",
           "target": [
-            "#node-111 > .node__content > .node-title"
+            "em > strong"
           ]
         },
         {
@@ -11170,9 +11087,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=ehost&amp;defaultdb=bwh\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">Regional Business News</span>\n</a>",
+          "html": "<p>",
           "target": [
-            "#node-111 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "p:nth-child(8)"
           ]
         },
         {
@@ -11190,9 +11107,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">Regional Business News</span>",
+          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
           "target": [
-            "#node-111 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
+            ".button"
           ]
         },
         {
@@ -11210,9 +11127,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-field-resource-description field--type-text-long field--label-hidden field__item\">",
+          "html": "<p><strong>Meet the Author</strong></p>",
           "target": [
-            "#node-111 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted"
+            "p:nth-child(9)"
           ]
         },
         {
@@ -11230,9 +11147,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>This database provides comprehensive full-text coverage for regional business publications. Regional Business News incorporates coverage of more than 80 regional business publications covering all metropolitan and rural areas within the United States.</p>",
+          "html": "<strong>Meet the Author</strong>",
           "target": [
-            "#node-111 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
+            "p:nth-child(9) > strong"
           ]
         },
         {
@@ -11250,9 +11167,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-resource-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a></div>\n                    </div>",
+          "html": "<p>",
           "target": [
-            "#node-111 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items"
+            "p:nth-child(10)"
           ]
         },
         {
@@ -11270,9 +11187,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a></div>",
+          "html": "<a href=\"https://www.theforestfeast.com/\">check out her website</a>",
           "target": [
-            "#node-111 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item"
+            "p:nth-child(10) > a"
           ]
         },
         {
@@ -11290,9 +11207,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
+          "html": "<div class=\"sidebar\">",
           "target": [
-            "#node-111 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
+            ".sidebar"
           ]
         },
         {
@@ -11310,9 +11227,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__image\">",
+          "html": "<div id=\"sidebar-newsletter-signup\">",
           "target": [
-            "#node-111 > .node__image"
+            "#sidebar-newsletter-signup"
           ]
         },
         {
@@ -11330,9 +11247,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;custid=s4119092&amp;profile=ehost&amp;defaultdb=bwh\" rel=\"bookmark\" target=\"_blank\">",
+          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#node-111 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -11350,9 +11267,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-resource-logo field--type-image field--label-hidden field__item\">",
+          "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#node-111 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-field-resource-logo.field--type-image.field__item"
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
           ]
         },
         {
@@ -11370,309 +11287,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2021/regional-business-news-button-240_0.png?itok=kM_T1v4V\" width=\"220\" height=\"64\" alt=\"Regional business news logo\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
+          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "img[alt=\"Regional business news logo\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"views-row\">",
-          "target": [
-            ".views-row:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<article data-history-node-id=\"406\" about=\"/node/406\" id=\"node-406\" class=\"node node--type-resource-database-etc- node--view-mode-teaser\">",
-          "target": [
-            "#node-406"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__content\">",
-          "target": [
-            "#node-406 > .node__content"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"node-title\">\n      <a href=\"https://townofwindsor.sizeup.com/colorado/\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">SizeUp Windsor Economic Development</span>\n</a>\n    </h2>",
-          "target": [
-            "#node-406 > .node__content > .node-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://townofwindsor.sizeup.com/colorado/\" rel=\"bookmark\" target=\"_blank\"><span class=\"field field--name-title field--type-string field--label-hidden\">SizeUp Windsor Economic Development</span>\n</a>",
-          "target": [
-            "#node-406 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span class=\"field field--name-title field--type-string field--label-hidden\">SizeUp Windsor Economic Development</span>",
-          "target": [
-            "#node-406 > .node__content > .node-title > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-field-resource-description field--type-text-long field--label-hidden field__item\">",
-          "target": [
-            "#node-406 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>SizeUp is a free, robust business analytics tool designed to support small and medium-sized businesses in a variety of stages, from the entrepreneur looking to start their first business to a seasoned business owner looking to expand their customer base.</p>",
-          "target": [
-            "#node-406 > .node__content > .field--name-field-resource-description.field--type-text-long.text-formatted > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-resource-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a></div>\n                    </div>",
-          "target": [
-            "#node-406 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a></div>",
-          "target": [
-            "#node-406 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/borrow-research/research/business-legal-0\" hreflang=\"en\">Business &amp; Legal</a>",
-          "target": [
-            "#node-406 > .node__content > .field--name-field-resource-category.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"node__image\">",
-          "target": [
-            "#node-406 > .node__image"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://townofwindsor.sizeup.com/colorado/\" rel=\"bookmark\" target=\"_blank\">",
-          "target": [
-            "#node-406 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field field--name-field-resource-logo field--type-image field--label-hidden field__item\">",
-          "target": [
-            "#node-406 > .node__image > a[rel=\"bookmark\"][target=\"_blank\"] > .field--name-field-resource-logo.field--type-image.field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/medium/public/resource-logos/2022/Windsor-Economic-Development-for-Size-Up.png?itok=0D5OQX5k\" width=\"220\" height=\"36\" alt=\"SizeUp Windsor Logo\" title=\"SizeUp Windsor Economic Development\" typeof=\"foaf:Image\" class=\"image-style-medium\">",
-          "target": [
-            "img[height=\"36\"]"
+            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -11772,7 +11389,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-footerbranding-2 > .field--name-body.field--type-text-with-summary.text-formatted"
+            "#block-footerbranding-2 > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -11792,7 +11409,7 @@
           "impact": null,
           "html": "<div class=\"site-logo\">\n    <img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">\n</div>",
           "target": [
-            ".field--name-body.field--type-text-with-summary.text-formatted > .site-logo"
+            ".clearfix.text-formatted.field--name-body > .site-logo"
           ]
         },
         {
@@ -12152,7 +11769,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more\" data-drupal-link-system-path=\"node/45\">Learn More</a>",
           "target": [
-            "#menu-item-c92f701b > a[href$=\"learn-more\"][data-drupal-link-system-path=\"node/45\"]"
+            "#menu-item-c92f701b > a[data-drupal-link-system-path=\"node/45\"][href$=\"learn-more\"]"
           ]
         },
         {
@@ -12212,7 +11829,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[href$=\"news\"][data-drupal-link-system-path=\"node/254\"]"
+            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -12852,7 +12469,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-newslettersignup-2 > .field--name-body.field--type-text-with-summary.text-formatted"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -12872,7 +12489,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .field--name-body.field--type-text-with-summary.text-formatted > p"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
           ]
         },
         {
@@ -12892,7 +12509,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#newsletter-next-step"
+            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -12972,7 +12589,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>© Clearview Library District, 2021</p></div>",
           "target": [
-            "#block-copyright-2 > .field--name-body.field--type-text-with-summary.text-formatted"
+            "#block-copyright-2 > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -12992,7 +12609,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .field--name-body.field--type-text-with-summary.text-formatted > p"
+            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
           ]
         },
         {
@@ -13032,7 +12649,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-socialicons-2 > .field--name-body.field--type-text-with-summary.text-formatted"
+            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body"
           ]
         },
         {
@@ -13052,7 +12669,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(1)"
+            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
           ]
         },
         {
@@ -13092,7 +12709,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(2)"
+            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
           ]
         },
         {
@@ -13132,7 +12749,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".field--name-body.field--type-text-with-summary.text-formatted > a:nth-child(3)"
+            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
           ]
         },
         {
@@ -13270,7 +12887,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
           ]
@@ -13290,9 +12907,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -13492,7 +13109,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/1\"][href$=\"borrow-research\"]"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -13612,27 +13229,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[href$=\"about-us\"][data-drupal-link-system-path=\"node/4\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"drupal-live-announce\" class=\"visually-hidden\" aria-live=\"polite\" aria-busy=\"false\"></div>",
-          "target": [
-            "#drupal-live-announce"
+            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -13718,7 +13315,138 @@
       ]
     }
   ],
-  "incomplete": [],
+  "incomplete": [
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/\">Home</a>",
+          "target": [
+            "li:nth-child(1) > a[href=\"/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us\">About Us</a>",
+          "target": [
+            "li:nth-child(2) > a[href$=\"about-us\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
+          "target": [
+            "li:nth-child(3) > a[href$=\"learn-more\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "bgOverlap"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<ol>",
+                  "target": [
+                    "ol"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's contrast ratio could not be determined because of element overlap"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
+          "target": [
+            "li:nth-child(4) > a[href$=\"news\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+        }
+      ]
+    }
+  ],
   "violations": [],
-  "documentTitle": "Business & Legal | Clearview Library"
+  "documentTitle": "Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods | Clearview Library"
 }

@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:39:23.470Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-cindy-mullanix",
+  "timestamp": "2025-09-15T21:19:29.592Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-becca-sharp",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,6 +264,22 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -2565,55 +2581,6 @@
       ]
     },
     {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
-          "target": [
-            "font"
-          ]
-        }
-      ]
-    },
-    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2720,7 +2687,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Becca Sharp</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2803,9 +2770,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -3163,7 +3130,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Becca Sharp\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -3188,7 +3155,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>",
+          "html": "<time datetime=\"2022-10-21T08:14:01-06:00\" title=\"Friday, October 21, 2022 - 08:14\" class=\"datetime\">October 21, 2022</time>",
           "target": [
             "time"
           ]
@@ -3215,7 +3182,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3238,7 +3205,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Becca Sharp</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3288,7 +3255,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Hometown:</strong> Dallas, Texas.</p>",
+          "html": "<p><strong>Hometown:</strong> Del Rio, Texas</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -3327,6 +3294,31 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Interests:</strong> Visiting as many national and state parks as possible, kayaking,&nbsp;hiking, yoga, camping with my husband and daughter in our Winnebago, walking my dog Chili, volunteering with MomCongress, and reading...OF COURSE!</p>",
+          "target": [
+            "p:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -3341,31 +3333,6 @@
           "html": "<strong>Interests:</strong>",
           "target": [
             "p:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#222222",
-                "bgColor": "#ffffff",
-                "contrastRatio": 15.9,
-                "fontSize": "9.6pt (12.8px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 15.9"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
-          "target": [
-            "font"
           ]
         },
         {
@@ -3388,7 +3355,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -3413,7 +3380,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Book: </strong>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
             "p:nth-child(4) > strong"
           ]
@@ -3423,24 +3390,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#181818",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
+                "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
+              "message": "Element has sufficient color contrast of 17.75"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>All I Really Need to Know I Learned in Kindergarten</em>",
+          "html": "<em>Cloud Atlas</em>",
           "target": [
-            "a > em"
+            "em:nth-child(2)"
           ]
         },
         {
@@ -3463,9 +3430,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>The Girl From the Sea of Cortez</em>",
+          "html": "<em>Interpreter of Maladies</em>",
           "target": [
-            "p:nth-child(4) > em"
+            "em:nth-child(3)"
           ]
         },
         {
@@ -3488,7 +3455,132 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Preferred Superpower:</strong> Being able to communicate in any language.</p>",
+          "html": "<em>On the Road</em>",
+          "target": [
+            "em:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The Mouse and the Motorcycle</em>",
+          "target": [
+            "em:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>Flora &amp; Ulysses</em>",
+          "target": [
+            "em:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The BFG</em>",
+          "target": [
+            "em:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The Curious Garden</em>",
+          "target": [
+            "em:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Preferred Superpower:</strong> Teleportation (because all my family lives in Texas and that's a long drive). Or as it's called in Harry Potter- apparition.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -3538,7 +3630,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Author:</strong> I absolutely can't pick just one. Robert Fulghum. Kristin Hannah. Anna Quindlen.</p>",
+          "html": "<p><strong>Favorite Author: </strong>Neil Gaiman, Jack Kerouac, Thich Nhat Hanh, Jon Klassen and Kate DiCamillo (that's a lot but it's hard to choose!)</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -3563,7 +3655,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Author:</strong>",
+          "html": "<strong>Favorite Author: </strong>",
           "target": [
             "p:nth-child(6) > strong"
           ]
@@ -3588,7 +3680,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Vacation Spot: </strong>Northern California.</p>",
+          "html": "<p><strong>Favorite Vacation Spot:</strong> Estes Park! But really anywhere where I can hike and explore, eat good food, and then sit outside to relax and read and stargaze at night.</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -3613,7 +3705,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Vacation Spot: </strong>",
+          "html": "<strong>Favorite Vacation Spot:</strong>",
           "target": [
             "p:nth-child(7) > strong"
           ]
@@ -3638,7 +3730,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Eleanor Roosevelt, Van Jones, Chris McCloskey (my late brother).</p>",
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Michelle Obama, Ruth Bader Ginsburg, and Zooey Deschanel</p>",
           "target": [
             "p:nth-child(8)"
           ]
@@ -3688,7 +3780,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Quote:</strong> \"Live a balanced life - learn some and drink some and draw some and paint some and sing and dance and play and work everyday some.\" Robert Fulghum</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(9)"
           ]
@@ -3738,7 +3830,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist.</p>",
+          "html": "<p><strong>Job at the Library:</strong> Children's Services Assistant</p>",
           "target": [
             "p:nth-child(10)"
           ]
@@ -4670,7 +4762,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Becca Sharp</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4898,7 +4990,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Becca Sharp</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -5082,7 +5174,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-10/Becca.jpg?itok=7zRuQKgj\" width=\"1019\" height=\"573\" alt=\"Becca Sharp\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -5235,7 +5327,7 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-10/Becca.jpg?itok=7zRuQKgj\" width=\"1019\" height=\"573\" alt=\"Becca Sharp\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -6071,31 +6163,6 @@
           "target": [
             "li:nth-child(4) > a[href$=\"news\"]"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
         }
       ]
     },
@@ -6167,9 +6234,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6611,59 +6678,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"/media/196/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
-          "target": [
-            "p:nth-child(4) > a"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -7233,9 +7248,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7627,7 +7642,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
@@ -7861,7 +7876,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Becca Sharp\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -8167,7 +8182,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
@@ -8431,7 +8446,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-10/Becca.jpg?itok=7zRuQKgj\" width=\"1019\" height=\"573\" alt=\"Becca Sharp\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -8565,7 +8580,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Becca Sharp</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8790,7 +8805,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
@@ -8810,9 +8825,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -10010,7 +10025,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Staff Spotlight: Cindy Mullanix\n              </li>",
+          "html": "<li>\n                  Staff Spotlight: Becca Sharp\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -10130,9 +10145,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"470\" about=\"/about-us/learn-more/news/staff-spotlight-cindy-mullanix\" typeof=\"schema:Article\" id=\"node-470\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"410\" about=\"/about-us/learn-more/news/staff-spotlight-becca-sharp\" typeof=\"schema:Article\" id=\"node-410\" class=\"node node--type-article node--promoted node--view-mode-full\">",
           "target": [
-            "#node-470"
+            "#node-410"
           ]
         },
         {
@@ -10190,7 +10205,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2023-06-01T17:03:08+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>\n</span>",
+          "html": "<span property=\"schema:dateCreated\" content=\"2022-10-21T14:14:01+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2022-10-21T08:14:01-06:00\" title=\"Friday, October 21, 2022 - 08:14\" class=\"datetime\">October 21, 2022</time>\n</span>",
           "target": [
             ".field--name-created"
           ]
@@ -10210,7 +10225,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2023-06-01T11:03:08-06:00\" title=\"Thursday, June 1, 2023 - 11:03\" class=\"datetime\">June 1, 2023</time>",
+          "html": "<time datetime=\"2022-10-21T08:14:01-06:00\" title=\"Friday, October 21, 2022 - 08:14\" class=\"datetime\">October 21, 2022</time>",
           "target": [
             "time"
           ]
@@ -10272,7 +10287,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news/staff-spotlight\" hreflang=\"en\">Staff Spotlight</a>",
           "target": [
-            ".field--name-field-article-category > .field__item > a[hreflang=\"en\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10290,7 +10305,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Becca Sharp</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10310,7 +10325,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Cindy Mullanix</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Staff Spotlight: Becca Sharp</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10450,7 +10465,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">",
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-10/Becca.jpg?itok=7zRuQKgj\" width=\"1019\" height=\"573\" alt=\"Becca Sharp\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n\n</div>",
           "target": [
             ".field--name-field-media-image-1 > .field__item"
           ]
@@ -10470,27 +10485,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/196/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-06/MullanixFamily2021.jpg?itok=rEda0ozA\" width=\"1019\" height=\"573\" alt=\"Family group photo outdoors.\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-10/Becca.jpg?itok=7zRuQKgj\" width=\"1019\" height=\"573\" alt=\"Becca Sharp\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -10550,7 +10545,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Hometown:</strong> Dallas, Texas.</p>",
+          "html": "<p><strong>Hometown:</strong> Del Rio, Texas</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10590,7 +10585,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Interests:</strong> Visiting as many national and state parks as possible, kayaking,&nbsp;hiking, yoga, camping with my husband and daughter in our Winnebago, walking my dog Chili, volunteering with MomCongress, and reading...OF COURSE!</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10630,27 +10625,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<font face=\"verdana, sans-serif\" style=\"color: rgb(34, 34, 34); font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">",
-          "target": [
-            "font"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Favorite Book: </strong><a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a> by Robert Fulghum and <em>The Girl From the Sea of Cortez</em> by Peter Benchley.</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -10670,7 +10645,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Book: </strong>",
+          "html": "<strong>Favorite Book:</strong>",
           "target": [
             "p:nth-child(4) > strong"
           ]
@@ -10690,9 +10665,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/title.aspx?ctx=1.1033.0.0.6&amp;pos=1&amp;cn=286257\"><em>All I Really Need to Know I Learned in Kindergarten</em></a>",
+          "html": "<em>Cloud Atlas</em>",
           "target": [
-            "p:nth-child(4) > a"
+            "em:nth-child(2)"
           ]
         },
         {
@@ -10710,9 +10685,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>All I Really Need to Know I Learned in Kindergarten</em>",
+          "html": "<em>Interpreter of Maladies</em>",
           "target": [
-            "a > em"
+            "em:nth-child(3)"
           ]
         },
         {
@@ -10730,9 +10705,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<em>The Girl From the Sea of Cortez</em>",
+          "html": "<em>On the Road</em>",
           "target": [
-            "p:nth-child(4) > em"
+            "em:nth-child(4)"
           ]
         },
         {
@@ -10750,7 +10725,107 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Preferred Superpower:</strong> Being able to communicate in any language.</p>",
+          "html": "<em>The Mouse and the Motorcycle</em>",
+          "target": [
+            "em:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>Flora &amp; Ulysses</em>",
+          "target": [
+            "em:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The BFG</em>",
+          "target": [
+            "em:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<em>The Curious Garden</em>",
+          "target": [
+            "em:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<br>",
+          "target": [
+            "p:nth-child(4) > br"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p><strong>Preferred Superpower:</strong> Teleportation (because all my family lives in Texas and that's a long drive). Or as it's called in Harry Potter- apparition.</p>",
           "target": [
             "p:nth-child(5)"
           ]
@@ -10790,7 +10865,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Author:</strong> I absolutely can't pick just one. Robert Fulghum. Kristin Hannah. Anna Quindlen.</p>",
+          "html": "<p><strong>Favorite Author: </strong>Neil Gaiman, Jack Kerouac, Thich Nhat Hanh, Jon Klassen and Kate DiCamillo (that's a lot but it's hard to choose!)</p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -10810,7 +10885,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Author:</strong>",
+          "html": "<strong>Favorite Author: </strong>",
           "target": [
             "p:nth-child(6) > strong"
           ]
@@ -10830,7 +10905,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Vacation Spot: </strong>Northern California.</p>",
+          "html": "<p><strong>Favorite Vacation Spot:</strong> Estes Park! But really anywhere where I can hike and explore, eat good food, and then sit outside to relax and read and stargaze at night.</p>",
           "target": [
             "p:nth-child(7)"
           ]
@@ -10850,7 +10925,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Favorite Vacation Spot: </strong>",
+          "html": "<strong>Favorite Vacation Spot:</strong>",
           "target": [
             "p:nth-child(7) > strong"
           ]
@@ -10870,7 +10945,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Eleanor Roosevelt, Van Jones, Chris McCloskey (my late brother).</p>",
+          "html": "<p><strong>What three people (dead or alive) would you invite to a dinner party?</strong> Michelle Obama, Ruth Bader Ginsburg, and Zooey Deschanel</p>",
           "target": [
             "p:nth-child(8)"
           ]
@@ -10910,7 +10985,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Favorite Quote:</strong> \"Live a balanced life - learn some and drink some and draw some and paint some and sing and dance and play and work everyday some.\" Robert Fulghum</p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(9)"
           ]
@@ -10950,7 +11025,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Job at the Library:</strong> Customer Service Specialist.</p>",
+          "html": "<p><strong>Job at the Library:</strong> Children's Services Assistant</p>",
           "target": [
             "p:nth-child(10)"
           ]
@@ -12670,7 +12745,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
@@ -12690,9 +12765,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -13100,5 +13175,5 @@
   ],
   "incomplete": [],
   "violations": [],
-  "documentTitle": "Staff Spotlight: Cindy Mullanix | Clearview Library"
+  "documentTitle": "Staff Spotlight: Becca Sharp | Clearview Library"
 }

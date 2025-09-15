@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:39:15.336Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-forest-feast-simple-vegetarian-recipes-my-cabin-woods",
+  "timestamp": "2025-09-15T21:19:21.743Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/events",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -457,6 +457,23 @@
       "description": "Ensure the complementary landmark or aside is at top level",
       "help": "Aside should not be contained in another landmark",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": null,
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
       "nodes": []
     },
     {
@@ -1517,7 +1534,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body class=\"_0829669 path-node page-node-type-article\">",
+          "html": "<body class=\"_0829669 path-taxonomy\">",
           "target": [
             "body"
           ]
@@ -2614,25 +2631,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         }
       ]
@@ -2687,9 +2686,15 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
                   "target": [
                     "h1"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>\n        </h2>",
+                  "target": [
+                    ".node-title"
                   ]
                 },
                 {
@@ -2770,9 +2775,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -2797,7 +2802,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -2822,7 +2827,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -2847,7 +2852,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -2872,7 +2877,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -2897,7 +2902,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -2922,7 +2927,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -2947,7 +2952,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -3007,7 +3012,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -3130,59 +3135,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes From My Cabin In The Woods\n              </li>",
+          "html": "<li>\n                  Events\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<time datetime=\"2023-09-22T10:26:37-06:00\" title=\"Friday, September 22, 2023 - 10:26\" class=\"datetime\">September 22, 2023</time>",
-          "target": [
-            "time"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
-          "target": [
-            "a[href$=\"cookbook-nook\"]"
           ]
         },
         {
@@ -3205,7 +3160,97 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
+          "target": [
+            "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "hidden"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is hidden"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<select data-drupal-selector=\"edit-field-article-category-target-id\" id=\"edit-field-article-category-target-id\" name=\"field_article_category_target_id\" class=\"form-select\">",
+          "target": [
+            "#edit-field-article-category-target-id"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "hidden"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is hidden"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<input data-bef-auto-submit-click=\"\" class=\"js-hide button js-form-submit form-submit\" data-drupal-selector=\"edit-submit-news\" type=\"submit\" id=\"edit-submit-news\" value=\"Apply\">",
+          "target": [
+            "#edit-submit-news"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/events\" hreflang=\"en\">Events</a>",
+          "target": [
+            "a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3219,7 +3264,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
+                "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3230,34 +3275,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>",
+          "html": "<time datetime=\"2023-03-29T12:06:12-06:00\" title=\"Wednesday, March 29, 2023 - 12:06\" class=\"datetime\">March 29, 2023</time>",
           "target": [
-            "p:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Why This Book</strong>",
-          "target": [
-            "p:nth-child(3) > strong"
+            "time"
           ]
         },
         {
@@ -3280,9 +3300,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "p:nth-child(4)"
+            "div[property=\"schema:text\"]"
           ]
         },
         {
@@ -3290,424 +3310,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
+                "fgColor": "#d14600",
                 "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</em>",
-          "target": [
-            "a > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
+                "contrastRatio": 4.57,
                 "fontSize": "12.0pt (16px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
+              "message": "Element has sufficient color contrast of 4.57"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>What We’re Trying: Cream Cheese-filled Parmesan Poppers&nbsp;</strong>",
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/national-library-week-2023\">Read More ➔</a>",
           "target": [
-            "p:nth-child(5) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Only Four Ingredients -</strong> Eggs, parmesan, cayenne, and cream cheese are all you’ll need for this easy recipe!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Only Four Ingredients -</strong>",
-          "target": [
-            "li:nth-child(1) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Great for Hosting -</strong> These delicious cheesy poppers will appeal to any guest regardless of age and are an easy appetizer to make just minutes before the party.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Great for Hosting -</strong>",
-          "target": [
-            "li:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Warm food that won’t heat the kitchen -</strong> These poppers are fried for just one minute on the stove, resulting in a warm treat while keeping your living space cool.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Warm food that won’t heat the kitchen -</strong>",
-          "target": [
-            "li:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em><strong>Key Tips -</strong> We recommend using a non-stick pot as these parmesan poppers quickly become sticky in the hot oil. The poppers we made were large, which resulted in a longer cooking time. While they were delicious, it is recommended to make smaller ones instead.</em>",
-          "target": [
-            "li:nth-child(4) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Key Tips -</strong>",
-          "target": [
-            "em > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
-          "target": [
-            ".button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Meet the Author</strong>",
-          "target": [
-            "p:nth-child(9) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.theforestfeast.com/\">check out her website</a>",
-          "target": [
-            "p:nth-child(10) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#e1f0fb",
-                "contrastRatio": 15.26,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 15.26"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0072bc",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            "a[alt=\"go to the article\"]"
           ]
         },
         {
@@ -3857,7 +3477,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -3882,7 +3502,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -3907,7 +3527,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -3932,7 +3552,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -3957,7 +3577,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -3982,7 +3602,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -4032,7 +3652,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -4057,7 +3677,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -4082,7 +3702,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -4132,7 +3752,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -4157,7 +3777,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -4182,7 +3802,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -4207,7 +3827,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -4232,7 +3852,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -4257,7 +3877,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -4282,7 +3902,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         }
       ]
@@ -4432,6 +4052,24 @@
           "any": [
             {
               "id": "duplicate-id-aria",
+              "data": "edit-field-article-category-target-id",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<select data-drupal-selector=\"edit-field-article-category-target-id\" id=\"edit-field-article-category-target-id\" name=\"field_article_category_target_id\" class=\"form-select\">",
+          "target": [
+            "#edit-field-article-category-target-id"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "duplicate-id-aria",
               "data": "block-mainnavigation-menu",
               "relatedNodes": [],
               "impact": "critical",
@@ -4562,9 +4200,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>\n        </h2>",
+          "target": [
+            ".node-title"
           ]
         },
         {
@@ -4710,9 +4366,15 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > h1:nth-child(2)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(1) > div > div > h1"
                     ],
                     "level": 1
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > div > div > div:nth-child(2) > div > div > div > div > div:nth-child(2) > div > article > div:nth-child(2) > h2:nth-child(2)"
+                    ],
+                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -4790,9 +4452,27 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>\n        </h2>",
+          "target": [
+            ".node-title"
           ]
         },
         {
@@ -4974,61 +4654,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-03/National-Library-Week-2023-Hero.png?itok=WlonhVla\" width=\"1019\" height=\"573\" alt=\"More to the story graphic for National Library Week 2023\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods by Erin Gleeson Book Cover\" data-entity-type=\"file\" data-entity-uuid=\"6f020583-e293-4955-9e7a-d1c8b336c5e4\" src=\"/sites/default/files/inline-images/Sept_The_Forest_Feast.jpg\" width=\"220\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Ingredients and book for Cream Cheese-filled Parmesan Poppers\" data-entity-type=\"file\" data-entity-uuid=\"e737ac6e-d916-42ab-8af9-9d6349da5070\" src=\"/sites/default/files/inline-images/Sept_before-cooking-parmesan-poppers.jpg\" width=\"500\" height=\"281\" loading=\"lazy\" class=\"align-right\">",
-          "target": [
-            ".align-right"
           ]
         },
         {
@@ -5179,45 +4807,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-03/National-Library-Week-2023-Hero.png?itok=WlonhVla\" width=\"1019\" height=\"573\" alt=\"More to the story graphic for National Library Week 2023\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods by Erin Gleeson Book Cover\" data-entity-type=\"file\" data-entity-uuid=\"6f020583-e293-4955-9e7a-d1c8b336c5e4\" src=\"/sites/default/files/inline-images/Sept_The_Forest_Feast.jpg\" width=\"220\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Ingredients and book for Cream Cheese-filled Parmesan Poppers\" data-entity-type=\"file\" data-entity-uuid=\"e737ac6e-d916-42ab-8af9-9d6349da5070\" src=\"/sites/default/files/inline-images/Sept_before-cooking-parmesan-poppers.jpg\" width=\"500\" height=\"281\" loading=\"lazy\" class=\"align-right\">",
-          "target": [
-            ".align-right"
           ]
         },
         {
@@ -5328,7 +4920,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         }
       ]
@@ -5622,14 +5214,7 @@
             {
               "id": "page-no-duplicate-contentinfo",
               "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
-                  "target": [
-                    "#sitewide-footer"
-                  ]
-                }
-              ],
+              "relatedNodes": [],
               "impact": "moderate",
               "message": "Document does not have more than one contentinfo landmark"
             }
@@ -5637,9 +5222,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<footer id=\"sitewide-footer\" role=\"contentinfo\">",
           "target": [
-            ".node__meta"
+            "#sitewide-footer"
           ]
         }
       ]
@@ -5937,88 +5522,6 @@
       ]
     },
     {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(10)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(10)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.theforestfeast.com/\">check out her website</a>",
-          "target": [
-            "p:nth-child(10) > a"
-          ]
-        }
-      ]
-    },
-    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -6086,9 +5589,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6114,7 +5617,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -6140,7 +5643,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -6166,7 +5669,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -6218,7 +5721,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -6244,7 +5747,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -6270,7 +5773,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -6296,7 +5799,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -6322,7 +5825,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -6528,9 +6031,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "html": "<a href=\"/about-us/learn-more/news/events\" hreflang=\"en\">Events</a>",
           "target": [
-            "a[href$=\"cookbook-nook\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -6554,9 +6057,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>",
           "target": [
-            "a[href$=\"edit\"]"
+            "a[rel=\"bookmark\"]"
           ]
         },
         {
@@ -6580,87 +6083,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/national-library-week-2023\">Read More ➔</a>",
           "target": [
-            "strong > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
-          "target": [
-            ".button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.theforestfeast.com/\">check out her website</a>",
-          "target": [
-            "p:nth-child(10) > a"
+            "a[alt=\"go to the article\"]"
           ]
         },
         {
@@ -6764,7 +6189,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -6790,7 +6215,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -6816,7 +6241,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -6842,7 +6267,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -6868,7 +6293,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -6894,7 +6319,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -6946,7 +6371,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -6972,7 +6397,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -6998,7 +6423,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -7050,7 +6475,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -7076,7 +6501,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -7102,7 +6527,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -7128,7 +6553,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -7154,7 +6579,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
           ]
         },
         {
@@ -7180,7 +6605,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
           ]
         },
         {
@@ -7206,7 +6631,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
           ]
         },
         {
@@ -7230,9 +6655,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7258,7 +6683,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -7284,7 +6709,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -7310,7 +6735,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -7336,7 +6761,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -7362,7 +6787,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -7388,7 +6813,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -7414,7 +6839,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -7448,7 +6873,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > .menu"
+            "#block-utilitiesmenu > ul"
           ]
         },
         {
@@ -7466,7 +6891,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > .menu"
+            "#block-clearview-main-menu > ul"
           ]
         },
         {
@@ -7500,9 +6925,9 @@
             }
           ],
           "impact": null,
-          "html": "<ul>",
+          "html": "<ul class=\"menu\">",
           "target": [
-            "div[property=\"schema:text\"] > ul"
+            "#block-mainnavigation > ul"
           ]
         },
         {
@@ -7520,7 +6945,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > .menu"
+            "#menu-item-c92f701b > ul"
           ]
         },
         {
@@ -7538,7 +6963,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > .menu"
+            "#menu-item-cb25c7c1 > ul"
           ]
         },
         {
@@ -7556,7 +6981,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > .menu"
+            "#menu-item-0267a4c3 > ul"
           ]
         },
         {
@@ -7574,7 +6999,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > .menu"
+            "#block-utilitiesmenu-2 > ul"
           ]
         },
         {
@@ -7592,25 +7017,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > .menu"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul class=\"menu\">",
-          "target": [
-            "#block-mainnavigation-6 > .menu"
+            "#block-mainnavigation-6 > ul"
           ]
         }
       ]
@@ -7642,9 +7049,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7662,7 +7069,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7680,7 +7087,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -7698,7 +7105,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -7716,7 +7123,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -7734,7 +7141,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -7752,7 +7159,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -7770,7 +7177,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -7788,7 +7195,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -7876,81 +7283,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes From My Cabin In The Woods\n              </li>",
+          "html": "<li>\n                  Events\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Only Four Ingredients -</strong> Eggs, parmesan, cayenne, and cream cheese are all you’ll need for this easy recipe!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Great for Hosting -</strong> These delicious cheesy poppers will appeal to any guest regardless of age and are an easy appetizer to make just minutes before the party.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Warm food that won’t heat the kitchen -</strong> These poppers are fried for just one minute on the stove, resulting in a warm treat while keeping your living space cool.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><em><strong>Key Tips -</strong> We recommend using a non-stick pot as these parmesan poppers quickly become sticky in the hot oil. The poppers we made were large, which resulted in a longer cooking time. While they were delicious, it is recommended to make smaller ones instead.</em></li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
           ]
         },
         {
@@ -7986,7 +7321,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8004,7 +7339,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8022,7 +7357,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8040,7 +7375,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8058,7 +7393,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -8076,7 +7411,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6)"
           ]
         },
         {
@@ -8112,7 +7447,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8130,7 +7465,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8148,7 +7483,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8184,7 +7519,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8202,7 +7537,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8220,7 +7555,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8238,7 +7573,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8254,9 +7589,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8274,7 +7609,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8292,7 +7627,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8310,7 +7645,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8328,7 +7663,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -8346,7 +7681,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -8364,7 +7699,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -8382,7 +7717,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         }
       ]
@@ -8502,7 +7837,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -8518,63 +7853,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-03/National-Library-Week-2023-Hero.png?itok=WlonhVla\" width=\"1019\" height=\"573\" alt=\"More to the story graphic for National Library Week 2023\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods by Erin Gleeson Book Cover\" data-entity-type=\"file\" data-entity-uuid=\"6f020583-e293-4955-9e7a-d1c8b336c5e4\" src=\"/sites/default/files/inline-images/Sept_The_Forest_Feast.jpg\" width=\"220\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            ".align-left"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Ingredients and book for Cream Cheese-filled Parmesan Poppers\" data-entity-type=\"file\" data-entity-uuid=\"e737ac6e-d916-42ab-8af9-9d6349da5070\" src=\"/sites/default/files/inline-images/Sept_before-cooking-parmesan-poppers.jpg\" width=\"500\" height=\"281\" loading=\"lazy\" class=\"align-right\">",
-          "target": [
-            ".align-right"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
           ]
         },
         {
@@ -8610,7 +7891,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -8688,7 +7969,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
+                  "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
                   "target": [
                     "h1"
                   ]
@@ -8895,7 +8176,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > .menu"
+            "#block-utilitiesmenu > ul"
           ]
         },
         {
@@ -8913,9 +8194,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8933,9 +8214,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -8955,7 +8236,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8975,7 +8256,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -8995,7 +8276,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -9015,7 +8296,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -9035,7 +8316,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -9055,7 +8336,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -9215,7 +8496,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > .menu"
+            "#block-clearview-main-menu > ul"
           ]
         },
         {
@@ -9235,7 +8516,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -9255,7 +8536,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -9275,7 +8556,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -9295,7 +8576,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -9315,7 +8596,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -9335,7 +8616,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -9355,7 +8636,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -9375,7 +8656,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -9395,7 +8676,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -9415,7 +8696,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -9555,7 +8836,7 @@
           "impact": null,
           "html": "<div class=\"content\">",
           "target": [
-            ".content"
+            ".prf-opac-search > .content"
           ]
         },
         {
@@ -9735,7 +9016,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Search\">",
           "target": [
-            "input[type=\"submit\"]"
+            "input[value=\"Search\"]"
           ]
         },
         {
@@ -9775,7 +9056,7 @@
           "impact": null,
           "html": "<strong class=\"label\">Suggested:</strong>",
           "target": [
-            ".label"
+            "strong"
           ]
         },
         {
@@ -9893,9 +9174,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"block-clearview-breadcrumbs\" class=\"block block-system block-system-breadcrumb-block\">",
+          "html": "<div id=\"block-clearview-breadcrumbs-2\" class=\"block block-system block-system-breadcrumb-block\">",
           "target": [
-            "#block-clearview-breadcrumbs"
+            "#block-clearview-breadcrumbs-2"
           ]
         },
         {
@@ -10133,7 +9414,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes From My Cabin In The Woods\n              </li>",
+          "html": "<li>\n                  Events\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -10253,9 +9534,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"522\" about=\"/about-us/learn-more/news/cookbook-nook-forest-feast-simple-vegetarian-recipes-my-cabin-woods\" typeof=\"schema:Article\" id=\"node-522\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<div about=\"/about-us/learn-more/news/events\" id=\"taxonomy-term-34\" class=\"taxonomy-term vocabulary-article-category\">",
           "target": [
-            "#node-522"
+            "#taxonomy-term-34"
           ]
         },
         {
@@ -10273,9 +9554,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<footer class=\"node__meta\">",
+          "html": "<div class=\"content\">",
           "target": [
-            ".node__meta"
+            "#taxonomy-term-34 > .content"
           ]
         },
         {
@@ -10293,9 +9574,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__submitted\">",
+          "html": "<div class=\"no-flex layout layout--onecol\">",
           "target": [
-            ".node__submitted"
+            ".no-flex"
           ]
         },
         {
@@ -10313,9 +9594,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2023-09-22T16:26:37+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-09-22T10:26:37-06:00\" title=\"Friday, September 22, 2023 - 10:26\" class=\"datetime\">September 22, 2023</time>\n</span>",
+          "html": "<div class=\"layout__region layout__region--content\">\n      <div class=\"block block-layout-builder block-field-blocktaxonomy-termarticle-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>\n\n  </div>\n\n    </div>",
           "target": [
-            ".field--name-created"
+            ".no-flex > .layout__region.layout__region--content"
           ]
         },
         {
@@ -10333,9 +9614,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2023-09-22T10:26:37-06:00\" title=\"Friday, September 22, 2023 - 10:26\" class=\"datetime\">September 22, 2023</time>",
+          "html": "<div class=\"block block-layout-builder block-field-blocktaxonomy-termarticle-categoryname\">\n  \n    \n      \n    <h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>\n\n  </div>",
           "target": [
-            "time"
+            ".block-layout-builder"
           ]
         },
         {
@@ -10353,67 +9634,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>\n                    </div>",
-          "target": [
-            ".field--name-field-article-category"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>",
-          "target": [
-            ".field--name-field-article-category > .field__item"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
-          "target": [
-            "a[href$=\"cookbook-nook\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>\n</h1>",
+          "html": "<h1 class=\"field field--name-name field--type-string field--label-hidden field__item\">Events</h1>",
           "target": [
             "h1"
           ]
@@ -10433,9 +9654,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</span>",
+          "html": "<div class=\"layout layout--onecol\">",
           "target": [
-            ".field--name-title"
+            ".layout.layout--onecol:nth-child(2)"
           ]
         },
         {
@@ -10453,9 +9674,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__main\">",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            ".node__main"
+            ".layout.layout--onecol:nth-child(2) > .layout__region.layout__region--content"
           ]
         },
         {
@@ -10473,9 +9694,129 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"node__content\">",
+          "html": "<div class=\"views-element-container block block-views block-views-blocknews-block-3\">",
           "target": [
-            ".node__content"
+            ".block-views-blocknews-block-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div>",
+          "target": [
+            ".block-views-blocknews-block-3 > div"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view view-news view-id-news view-display-id-block_3 js-view-dom-id-3dbe72eb0231227377c69bdcfccf208fda9e7d1a978d8681c0861fb5323c9794\">",
+          "target": [
+            ".view-display-id-block_3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"view-content\">",
+          "target": [
+            ".view-content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"views-row\">",
+          "target": [
+            ".views-row"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<article data-history-node-id=\"456\" about=\"/about-us/learn-more/news/national-library-week-2023\" typeof=\"schema:Article\" id=\"node-456\" class=\"node node--type-article node--promoted node--sticky node--view-mode-big-feature\">",
+          "target": [
+            "#node-456"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__image\">",
+          "target": [
+            ".node__image"
           ]
         },
         {
@@ -10573,7 +9914,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">  <a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>\n</div>",
+          "html": "<div class=\"field__item\">",
           "target": [
             ".field--name-field-media-image-1 > .field__item"
           ]
@@ -10593,9 +9934,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/132/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2023-03/National-Library-Week-2023-Hero.png?itok=WlonhVla\" width=\"1019\" height=\"573\" alt=\"More to the story graphic for National Library Week 2023\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
-            "a[href$=\"edit\"]"
+            ".image-style-large-16-9"
           ]
         },
         {
@@ -10613,9 +9954,189 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2022-09/Cookbook-Nook-1.jpg?itok=G2SoW2RQ\" width=\"1019\" height=\"573\" alt=\"Cookbook Nook Logo\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<div class=\"node__content\">",
           "target": [
-            ".image-style-large-16-9"
+            ".node__content"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"category\">\n                <a href=\"/about-us/learn-more/news/events\" hreflang=\"en\">Events</a>\n            </div>",
+          "target": [
+            ".category"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/events\" hreflang=\"en\">Events</a>",
+          "target": [
+            "a[hreflang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"node-title\">\n            <a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>\n        </h2>",
+          "target": [
+            ".node-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/about-us/learn-more/news/national-library-week-2023\" rel=\"bookmark\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>\n</a>",
+          "target": [
+            "a[rel=\"bookmark\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">National Library Week 2023</span>",
+          "target": [
+            ".field--name-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"date\">",
+          "target": [
+            ".date"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span property=\"schema:dateCreated\" content=\"2023-03-29T18:06:12+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2023-03-29T12:06:12-06:00\" title=\"Wednesday, March 29, 2023 - 12:06\" class=\"datetime\">March 29, 2023</time>\n</span>",
+          "target": [
+            ".field--name-created"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2023-03-29T12:06:12-06:00\" title=\"Wednesday, March 29, 2023 - 12:06\" class=\"datetime\">March 29, 2023</time>",
+          "target": [
+            "time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"node__body\">",
+          "target": [
+            ".node__body"
           ]
         },
         {
@@ -10653,9 +10174,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>&nbsp;</p>",
+          "html": "<div class=\"read-more\">\n            <a alt=\"go to the article\" href=\"/about-us/learn-more/news/national-library-week-2023\">Read More ➔</a>\n        </div>",
           "target": [
-            "div[property=\"schema:text\"] > p:nth-child(1)"
+            ".read-more"
           ]
         },
         {
@@ -10673,9 +10194,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<a alt=\"go to the article\" href=\"/about-us/learn-more/news/national-library-week-2023\">Read More ➔</a>",
           "target": [
-            "p:nth-child(2)"
+            "a[alt=\"go to the article\"]"
           ]
         },
         {
@@ -10693,9 +10214,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>",
+          "html": "<div class=\"layout layout--onecol\">",
           "target": [
-            "p:nth-child(2) > strong"
+            ".layout.layout--onecol:nth-child(3)"
           ]
         },
         {
@@ -10713,9 +10234,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
+          "html": "<div class=\"layout__region layout__region--content\">",
           "target": [
-            "strong > a"
+            ".layout.layout--onecol:nth-child(3) > .layout__region.layout__region--content"
           ]
         },
         {
@@ -10733,9 +10254,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods by Erin Gleeson Book Cover\" data-entity-type=\"file\" data-entity-uuid=\"6f020583-e293-4955-9e7a-d1c8b336c5e4\" src=\"/sites/default/files/inline-images/Sept_The_Forest_Feast.jpg\" width=\"220\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
+          "html": "<div class=\"views-element-container block block-views block-views-blocknews-block-2\">",
           "target": [
-            ".align-left"
+            ".block-views-blocknews-block-2"
           ]
         },
         {
@@ -10753,9 +10274,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p><strong>Why This Book</strong></p>",
+          "html": "<div><div class=\"view view-news view-id-news view-display-id-block_2 js-view-dom-id-773a1789522a0d5abd71e0631a8d43d94caa2be15061bb4c5611ff2a3463ea75\">\n  \n    \n      \n  \n      \n          </div>\n</div>",
           "target": [
-            "p:nth-child(3)"
+            ".block-views-blocknews-block-2 > div"
           ]
         },
         {
@@ -10773,569 +10294,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Why This Book</strong>",
+          "html": "<div class=\"view view-news view-id-news view-display-id-block_2 js-view-dom-id-773a1789522a0d5abd71e0631a8d43d94caa2be15061bb4c5611ff2a3463ea75\">\n  \n    \n      \n  \n      \n          </div>",
           "target": [
-            "p:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
-          "target": [
-            "p:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em>The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods</em>",
-          "target": [
-            "a > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>What We’re Trying: Cream Cheese-filled Parmesan Poppers&nbsp;</strong></p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>What We’re Trying: Cream Cheese-filled Parmesan Poppers&nbsp;</strong>",
-          "target": [
-            "p:nth-child(5) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Ingredients and book for Cream Cheese-filled Parmesan Poppers\" data-entity-type=\"file\" data-entity-uuid=\"e737ac6e-d916-42ab-8af9-9d6349da5070\" src=\"/sites/default/files/inline-images/Sept_before-cooking-parmesan-poppers.jpg\" width=\"500\" height=\"281\" loading=\"lazy\" class=\"align-right\">",
-          "target": [
-            ".align-right"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "div[property=\"schema:text\"] > ul"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Only Four Ingredients -</strong> Eggs, parmesan, cayenne, and cream cheese are all you’ll need for this easy recipe!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Only Four Ingredients -</strong>",
-          "target": [
-            "li:nth-child(1) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Great for Hosting -</strong> These delicious cheesy poppers will appeal to any guest regardless of age and are an easy appetizer to make just minutes before the party.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Great for Hosting -</strong>",
-          "target": [
-            "li:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Warm food that won’t heat the kitchen -</strong> These poppers are fried for just one minute on the stove, resulting in a warm treat while keeping your living space cool.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Warm food that won’t heat the kitchen -</strong>",
-          "target": [
-            "li:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><em><strong>Key Tips -</strong> We recommend using a non-stick pot as these parmesan poppers quickly become sticky in the hot oil. The poppers we made were large, which resulted in a longer cooking time. While they were delicious, it is recommended to make smaller ones instead.</em></li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<em><strong>Key Tips -</strong> We recommend using a non-stick pot as these parmesan poppers quickly become sticky in the hot oil. The poppers we made were large, which resulted in a longer cooking time. While they were delicious, it is recommended to make smaller ones instead.</em>",
-          "target": [
-            "li:nth-child(4) > em"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Key Tips -</strong>",
-          "target": [
-            "em > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a class=\"button text-center\" href=\"https://catalog.clearviewlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&amp;type=Default&amp;term=The%20Forest%20Feast:%20Simple%20Vegetarian%20Recipes%20from%20My%20Cabin%20in%20the%20Woods%20by%20Erin%20Gleeson&amp;by=KW&amp;sort=RELEVANCE&amp;limit=TOM=*&amp;query=&amp;page=0&amp;searchid=1\">",
-          "target": [
-            ".button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Meet the Author</strong></p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Meet the Author</strong>",
-          "target": [
-            "p:nth-child(9) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.theforestfeast.com/\">check out her website</a>",
-          "target": [
-            "p:nth-child(10) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"sidebar\">",
-          "target": [
-            ".sidebar"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div id=\"sidebar-newsletter-signup\">",
-          "target": [
-            "#sidebar-newsletter-signup"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>Get the latest on library news, events, and services.</p>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > p"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
-          "target": [
-            "#sidebar-newsletter-signup > .clearfix.text-formatted.field--name-body > button"
+            ".view-display-id-block_2"
           ]
         },
         {
@@ -11435,7 +10396,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-footerbranding-2 > .clearfix.text-formatted.field--name-body"
+            "#block-footerbranding-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -11455,7 +10416,7 @@
           "impact": null,
           "html": "<div class=\"site-logo\">\n    <img src=\"/themes/clearview/assets/images/logo-white.png\" alt=\"footer logo\">\n</div>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > .site-logo"
+            ".text-formatted.field--name-body.field--type-text-with-summary > .site-logo"
           ]
         },
         {
@@ -11775,7 +10736,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > .menu"
+            "#block-mainnavigation > ul"
           ]
         },
         {
@@ -11835,7 +10796,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > .menu"
+            "#menu-item-c92f701b > ul"
           ]
         },
         {
@@ -11855,7 +10816,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -11875,7 +10836,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -11895,7 +10856,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -11915,7 +10876,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -11935,7 +10896,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -11955,7 +10916,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -11975,7 +10936,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -11995,7 +10956,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -12015,7 +10976,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -12035,7 +10996,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -12055,7 +11016,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6)"
           ]
         },
         {
@@ -12075,7 +11036,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -12135,7 +11096,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > .menu"
+            "#menu-item-cb25c7c1 > ul"
           ]
         },
         {
@@ -12155,7 +11116,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -12175,7 +11136,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -12195,7 +11156,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12215,7 +11176,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -12235,7 +11196,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -12255,7 +11216,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -12315,7 +11276,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > .menu"
+            "#menu-item-0267a4c3 > ul"
           ]
         },
         {
@@ -12335,7 +11296,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -12355,7 +11316,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -12375,7 +11336,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12395,7 +11356,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -12415,7 +11376,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -12435,7 +11396,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -12455,7 +11416,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -12475,7 +11436,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -12515,7 +11476,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -12535,7 +11496,7 @@
           "impact": null,
           "html": "<p>Get the latest on library news, events, and services.</p>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-newslettersignup-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -12555,7 +11516,7 @@
           "impact": null,
           "html": "<button id=\"newsletter-next-step\" data-featherlight=\"#newsletter-modal\">Sign Up Now!</button>",
           "target": [
-            "#block-newslettersignup-2 > .clearfix.text-formatted.field--name-body > button"
+            "#newsletter-next-step"
           ]
         },
         {
@@ -12635,7 +11596,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>© Clearview Library District, 2021</p></div>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -12655,7 +11616,7 @@
           "impact": null,
           "html": "<p>© Clearview Library District, 2021</p>",
           "target": [
-            "#block-copyright-2 > .clearfix.text-formatted.field--name-body > p"
+            "#block-copyright-2 > .text-formatted.field--name-body.field--type-text-with-summary > p"
           ]
         },
         {
@@ -12695,7 +11656,7 @@
           "impact": null,
           "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary"
           ]
         },
         {
@@ -12715,7 +11676,7 @@
           "impact": null,
           "html": "<a href=\"https://www.instagram.com/clearviewlibrary/\"><img src=\"/themes/clearview/assets/images/icons/instagram.png\" alt=\"instagram icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(1)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(1)"
           ]
         },
         {
@@ -12755,7 +11716,7 @@
           "impact": null,
           "html": "<a href=\"https://www.facebook.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/facebook.png\" alt=\"facebook icon\"></a>",
           "target": [
-            "#block-socialicons-2 > .clearfix.text-formatted.field--name-body > a:nth-child(2)"
+            "#block-socialicons-2 > .text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(2)"
           ]
         },
         {
@@ -12795,7 +11756,7 @@
           "impact": null,
           "html": "<a href=\"http://www.youtube.com/clearviewlibrary\"><img src=\"/themes/clearview/assets/images/icons/youtube.png\" alt=\"youtube icon\"></a>",
           "target": [
-            ".clearfix.text-formatted.field--name-body > a:nth-child(3)"
+            ".text-formatted.field--name-body.field--type-text-with-summary > a:nth-child(3)"
           ]
         },
         {
@@ -12915,7 +11876,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > .menu"
+            "#block-utilitiesmenu-2 > ul"
           ]
         },
         {
@@ -12933,9 +11894,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -12953,9 +11914,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -12975,7 +11936,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12995,7 +11956,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -13015,7 +11976,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -13035,7 +11996,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -13055,7 +12016,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -13075,7 +12036,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -13115,7 +12076,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation-6 > .menu"
+            "#block-mainnavigation-6 > ul"
           ]
         },
         {
@@ -13135,7 +12096,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -13155,7 +12116,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -13175,7 +12136,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -13195,7 +12156,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -13215,7 +12176,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -13235,7 +12196,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -13255,7 +12216,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -13275,7 +12236,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -13361,138 +12322,7 @@
       ]
     }
   ],
-  "incomplete": [
-    {
-      "id": "link-in-text-block",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2a",
-        "wcag141",
-        "TTv5",
-        "TT13.a",
-        "EN-301-549",
-        "EN-9.1.4.1"
-      ],
-      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-      "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/\">Home</a>",
-          "target": [
-            "li:nth-child(1) > a[href=\"/\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us\">About Us</a>",
-          "target": [
-            "li:nth-child(2) > a[href$=\"about-us\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more\">Learn More</a>",
-          "target": [
-            "li:nth-child(3) > a[href$=\"learn-more\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<ol>",
-                  "target": [
-                    "ol"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a href=\"/about-us/learn-more/news\">News</a>",
-          "target": [
-            "li:nth-child(4) > a[href$=\"news\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        }
-      ]
-    }
-  ],
+  "incomplete": [],
   "violations": [],
-  "documentTitle": "Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods | Clearview Library"
+  "documentTitle": "Events | Clearview Library"
 }

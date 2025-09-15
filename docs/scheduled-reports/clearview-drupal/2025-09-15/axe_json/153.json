@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:36:59.669Z",
-  "url": "https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-windsor-colorado-centennial-cookbook-1890-1990",
+  "timestamp": "2025-09-15T21:16:39.582Z",
+  "url": "https://clearviewlibrary.org/about-us/learn-more/news/proposal-network-services-and-hardware-all-sites",
   "toolOptions": {
     "reporter": "v1"
   },
@@ -264,22 +264,6 @@
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/autocomplete-valid?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "avoid-inline-spacing",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag21aa",
-        "wcag1412",
-        "EN-301-549",
-        "EN-9.1.4.12",
-        "ACT"
-      ],
-      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
-      "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
       "nodes": []
     },
     {
@@ -650,37 +634,6 @@
       "description": "Ensure <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text",
       "help": "<svg> elements with an img role must have an alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/svg-img-alt?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "table-duplicate-name",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "best-practice"
-      ],
-      "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
-      "help": "Tables should not have the same summary and caption",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "td-headers-attr",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "wcag2a",
-        "wcag131",
-        "section508",
-        "section508.22.g",
-        "TTv5",
-        "TT14.b",
-        "EN-301-549",
-        "EN-9.1.3.1"
-      ],
-      "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
-      "help": "Table cells that use the headers attribute must only refer to cells in the same table",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/td-headers-attr?application=axeAPI",
       "nodes": []
     },
     {
@@ -2581,6 +2534,55 @@
       ]
     },
     {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412",
+        "EN-301-549",
+        "EN-9.1.4.12",
+        "ACT"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/avoid-inline-spacing?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">",
+          "target": [
+            "table"
+          ]
+        }
+      ]
+    },
+    {
       "id": "button-name",
       "impact": null,
       "tags": [
@@ -2687,7 +2689,7 @@
                   ]
                 },
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -2770,9 +2772,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -2797,7 +2799,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -2822,7 +2824,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -2847,7 +2849,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -2872,7 +2874,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -2897,7 +2899,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -2922,7 +2924,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -2947,7 +2949,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -3130,7 +3132,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990\n              </li>",
+          "html": "<li>\n                  Proposal For Network Services and Hardware For All Sites\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -3155,7 +3157,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2025-01-28T10:08:06-07:00\" title=\"Tuesday, January 28, 2025 - 10:08\" class=\"datetime\">January 28, 2025</time>",
+          "html": "<time datetime=\"2025-01-09T09:57:55-07:00\" title=\"Thursday, January 9, 2025 - 09:57\" class=\"datetime\">January 9, 2025</time>",
           "target": [
             "time"
           ]
@@ -3180,9 +3182,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
           "target": [
-            "a[href$=\"cookbook-nook\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -3205,7 +3207,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>",
           "target": [
             ".field--name-title"
           ]
@@ -3230,7 +3232,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (RFP) for Network Services and Hardware for All Sites.&nbsp;</p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -3244,7 +3246,7 @@
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
                 "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
+                "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
@@ -3255,9 +3257,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>",
+          "html": "<p><strong>Deadline for Questions:</strong> January 25, 2025, by 5:00 PM MT. Questions must be submitted via email to <a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>.</p>",
           "target": [
-            "p:nth-child(1) > strong"
+            "p:nth-child(2)"
           ]
         },
         {
@@ -3280,7 +3282,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Why This Book<img alt=\"Ingredients on a counter\" data-entity-type=\"file\" data-entity-uuid=\"eaa30ca9-154e-45df-ba1a-19edcc22905d\" src=\"/sites/default/files/inline-images/ingredients.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\"></strong>",
+          "html": "<strong>Deadline for Questions:</strong>",
           "target": [
             "p:nth-child(2) > strong"
           ]
@@ -3290,6 +3292,31 @@
             {
               "id": "color-contrast",
               "data": {
+                "fgColor": "#0072bc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
+          "target": [
+            "p:nth-child(2) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
                 "fgColor": "#181818",
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
@@ -3305,7 +3332,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Answers to Questions Posted:</strong> January 31, 2025, by 5:00 PM MT. Answers will be available on the District’s website.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -3315,31 +3342,6 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://www.coloradoan.com/story/news/local/windsor/2015/04/26/historical-societys-cookbook-brings-back-memories/26304893/\">this Coloradoan article</a>",
-          "target": [
-            "p:nth-child(3) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
                 "fgColor": "#181818",
                 "bgColor": "#ffffff",
                 "contrastRatio": 17.75,
@@ -3355,284 +3357,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>What We’re Trying: Kiflings (Swedish cookie)&nbsp;</strong>",
+          "html": "<strong>Answers to Questions Posted:</strong>",
           "target": [
-            "p:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>We were intrigued by these cookies as they both have an uncommon name and are from another culture. The recipe for these baked treats was provided by Windsor local, Carol Mimms!</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Five ingredients -</strong> The ingredients for this recipe are likely already in your home! &nbsp;Simply mix, knead, roll, and bake; then you will have delicious Swedish cookies!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Five ingredients -</strong>",
-          "target": [
-            "li:nth-child(1) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Easy to share - </strong>These cookies take the form of small powdered balls and can be easily packaged for transport in a Tupperware container, then shared with family and friends at social gatherings.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Easy to share - </strong>",
-          "target": [
-            "li:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Nuts -</strong> This recipe does not specify the type of chopped nuts to be used in this recipe. &nbsp;We used Macadamia nuts, however cashews are often recommended while baking due to their buttery, rich flavor.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Nuts -</strong>",
-          "target": [
-            "li:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Meeting Spaces -</strong>",
-          "target": [
-            "li:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#0072bc",
-                "bgColor": "#ffffff",
-                "contrastRatio": 5.08,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.08"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/services/other/reserve-room\">Visit our website for more information</a>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#181818",
-                "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong><img alt=\"Swedish Cookies on a plate\" data-entity-type=\"file\" data-entity-uuid=\"a0c98adc-f56c-4725-8341-3ac3b0e06272\" src=\"/sites/default/files/inline-images/finished.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">Meet the Author</strong>",
-          "target": [
-            "p:nth-child(7) > strong"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -3657,7 +3384,32 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(8)"
+            "p:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#181818",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.75,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.75"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<strong>Proposal Deadline:</strong>",
+          "target": [
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -3680,9 +3432,59 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.thewshs.org/about/\">https://www.thewshs.org/about/</a>",
+          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
           "target": [
-            "a[href$=\"about/\"]"
+            "p:nth-child(4) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/FCC-Form-470-Clearview-Library-District-RFP-2025.pdf\">View the RFP</a>",
+          "target": [
+            "td:nth-child(1) > .button.text-center"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0072bc",
+                "contrastRatio": 5.08,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.08"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/Pricing%20Spreadsheet-Cat-One-and-Two-2025-Updated.xlsx\">View the Pricing Spreadsheet</a>",
+          "target": [
+            "td:nth-child(2) > .button.text-center"
           ]
         },
         {
@@ -3882,7 +3684,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -3907,7 +3709,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -3932,7 +3734,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -3957,7 +3759,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -3982,7 +3784,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -4007,7 +3809,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -4057,7 +3859,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -4082,7 +3884,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -4107,7 +3909,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -4157,7 +3959,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -4182,7 +3984,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -4207,7 +4009,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -4232,7 +4034,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -4587,7 +4389,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4815,7 +4617,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -4999,87 +4801,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-01/Cookbook-Hero-January-2025.png?itok=N7lL11_W\" width=\"1019\" height=\"573\" alt=\"Windsor Colorado Centennial Cookbook\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Windsor Colorado Centennial Cookbook \" data-entity-type=\"file\" data-entity-uuid=\"23eea9aa-0a43-470a-bbed-e951c92b3f00\" src=\"/sites/default/files/inline-images/Windsor-Centennial-Cookbook-Cover.jpg\" width=\"224\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            "img[width=\"224\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Ingredients on a counter\" data-entity-type=\"file\" data-entity-uuid=\"eaa30ca9-154e-45df-ba1a-19edcc22905d\" src=\"/sites/default/files/inline-images/ingredients.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\">",
-          "target": [
-            ".align-right"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Swedish Cookies on a plate\" data-entity-type=\"file\" data-entity-uuid=\"a0c98adc-f56c-4725-8341-3ac3b0e06272\" src=\"/sites/default/files/inline-images/finished.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            "img[alt=\"Swedish Cookies on a plate\"]"
           ]
         },
         {
@@ -5230,63 +4954,9 @@
             }
           ],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-01/Cookbook-Hero-January-2025.png?itok=N7lL11_W\" width=\"1019\" height=\"573\" alt=\"Windsor Colorado Centennial Cookbook\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Windsor Colorado Centennial Cookbook \" data-entity-type=\"file\" data-entity-uuid=\"23eea9aa-0a43-470a-bbed-e951c92b3f00\" src=\"/sites/default/files/inline-images/Windsor-Centennial-Cookbook-Cover.jpg\" width=\"224\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            "img[width=\"224\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Ingredients on a counter\" data-entity-type=\"file\" data-entity-uuid=\"eaa30ca9-154e-45df-ba1a-19edcc22905d\" src=\"/sites/default/files/inline-images/ingredients.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\">",
-          "target": [
-            ".align-right"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img alt=\"Swedish Cookies on a plate\" data-entity-type=\"file\" data-entity-uuid=\"a0c98adc-f56c-4725-8341-3ac3b0e06272\" src=\"/sites/default/files/inline-images/finished.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            "img[alt=\"Swedish Cookies on a plate\"]"
           ]
         },
         {
@@ -6028,9 +5698,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>",
+                  "html": "<p><strong>Deadline for Questions:</strong> January 25, 2025, by 5:00 PM MT. Questions must be submitted via email to <a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>.</p>",
                   "target": [
-                    "p:nth-child(3)"
+                    "p:nth-child(2)"
                   ]
                 }
               ],
@@ -6042,9 +5712,9 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<p>",
+                  "html": "<p><strong>Deadline for Questions:</strong> January 25, 2025, by 5:00 PM MT. Questions must be submitted via email to <a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>.</p>",
                   "target": [
-                    "p:nth-child(3)"
+                    "p:nth-child(2)"
                   ]
                 }
               ],
@@ -6055,48 +5725,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.coloradoan.com/story/news/local/windsor/2015/04/26/historical-societys-cookbook-brings-back-memories/26304893/\">this Coloradoan article</a>",
+          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
           "target": [
-            "p:nth-child(3) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "div[property=\"schema:text\"] > ul > li:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text in some way other than by color"
-            },
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<li>",
-                  "target": [
-                    "div[property=\"schema:text\"] > ul > li:nth-child(4)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/services/other/reserve-room\">Visit our website for more information</a>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4) > a"
+            "p:nth-child(2) > a"
           ]
         },
         {
@@ -6108,7 +5739,7 @@
                 {
                   "html": "<p>",
                   "target": [
-                    "p:nth-child(8)"
+                    "p:nth-child(4)"
                   ]
                 }
               ],
@@ -6122,7 +5753,7 @@
                 {
                   "html": "<p>",
                   "target": [
-                    "p:nth-child(8)"
+                    "p:nth-child(4)"
                   ]
                 }
               ],
@@ -6133,9 +5764,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.thewshs.org/about/\">https://www.thewshs.org/about/</a>",
+          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
           "target": [
-            "a[href$=\"about/\"]"
+            "p:nth-child(4) > a"
           ]
         }
       ]
@@ -6208,9 +5839,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -6236,7 +5867,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -6262,7 +5893,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -6288,7 +5919,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -6340,7 +5971,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -6366,7 +5997,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -6392,7 +6023,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -6418,7 +6049,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -6444,7 +6075,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -6650,9 +6281,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
           "target": [
-            "a[href$=\"cookbook-nook\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -6676,9 +6307,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/media/400/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-01/Cookbook-Hero-January-2025.png?itok=N7lL11_W\" width=\"1019\" height=\"573\" alt=\"Windsor Colorado Centennial Cookbook\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
+          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
           "target": [
-            "a[href$=\"edit\"]"
+            "p:nth-child(2) > a"
           ]
         },
         {
@@ -6702,9 +6333,9 @@
             }
           ],
           "impact": null,
-          "html": "<a data-entity-substitution=\"\" data-entity-type=\"\" data-entity-uuid=\"\" href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Windsor-Severance%20%28Colorado%29%20Historical%20Society%2C%20Inc%22\">",
+          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
           "target": [
-            "a[data-entity-substitution=\"\"]"
+            "p:nth-child(4) > a"
           ]
         },
         {
@@ -6728,9 +6359,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://www.coloradoan.com/story/news/local/windsor/2015/04/26/historical-societys-cookbook-brings-back-memories/26304893/\">this Coloradoan article</a>",
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/FCC-Form-470-Clearview-Library-District-RFP-2025.pdf\">View the RFP</a>",
           "target": [
-            "p:nth-child(3) > a"
+            "td:nth-child(1) > .button.text-center"
           ]
         },
         {
@@ -6754,35 +6385,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/services/other/reserve-room\">Visit our website for more information</a>",
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/Pricing%20Spreadsheet-Cat-One-and-Two-2025-Updated.xlsx\">View the Pricing Spreadsheet</a>",
           "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
-          "html": "<a href=\"https://www.thewshs.org/about/\">https://www.thewshs.org/about/</a>",
-          "target": [
-            "a[href$=\"about/\"]"
+            "td:nth-child(2) > .button.text-center"
           ]
         },
         {
@@ -6886,7 +6491,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -6912,7 +6517,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -6938,7 +6543,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -6964,7 +6569,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -6990,7 +6595,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -7016,7 +6621,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -7068,7 +6673,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -7094,7 +6699,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -7120,7 +6725,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -7172,7 +6777,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -7198,7 +6803,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -7224,7 +6829,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -7250,7 +6855,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -7352,9 +6957,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -7380,7 +6985,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -7406,7 +7011,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -7432,7 +7037,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -7458,7 +7063,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -7484,7 +7089,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -7510,7 +7115,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -7536,7 +7141,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -7570,7 +7175,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > .menu"
+            "#block-utilitiesmenu > ul"
           ]
         },
         {
@@ -7588,7 +7193,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > .menu"
+            "#block-clearview-main-menu > ul"
           ]
         },
         {
@@ -7622,9 +7227,9 @@
             }
           ],
           "impact": null,
-          "html": "<ul>",
+          "html": "<ul class=\"menu\">",
           "target": [
-            "div[property=\"schema:text\"] > ul"
+            "#block-mainnavigation > ul"
           ]
         },
         {
@@ -7642,7 +7247,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > .menu"
+            "#menu-item-c92f701b > ul"
           ]
         },
         {
@@ -7660,7 +7265,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > .menu"
+            "#menu-item-cb25c7c1 > ul"
           ]
         },
         {
@@ -7678,7 +7283,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > .menu"
+            "#menu-item-0267a4c3 > ul"
           ]
         },
         {
@@ -7696,7 +7301,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > .menu"
+            "#block-utilitiesmenu-2 > ul"
           ]
         },
         {
@@ -7714,25 +7319,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > .menu"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "only-listitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List element only has direct children that are allowed inside <li> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<ul class=\"menu\">",
-          "target": [
-            "#block-mainnavigation-6 > .menu"
+            "#block-mainnavigation-6 > ul"
           ]
         }
       ]
@@ -7764,9 +7351,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -7784,7 +7371,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -7802,7 +7389,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -7820,7 +7407,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -7838,7 +7425,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -7856,7 +7443,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -7874,7 +7461,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -7892,7 +7479,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -7910,7 +7497,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -7998,81 +7585,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990\n              </li>",
+          "html": "<li>\n                  Proposal For Network Services and Hardware For All Sites\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Five ingredients -</strong> The ingredients for this recipe are likely already in your home! &nbsp;Simply mix, knead, roll, and bake; then you will have delicious Swedish cookies!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Easy to share - </strong>These cookies take the form of small powdered balls and can be easily packaged for transport in a Tupperware container, then shared with family and friends at social gatherings.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Nuts -</strong> This recipe does not specify the type of chopped nuts to be used in this recipe. &nbsp;We used Macadamia nuts, however cashews are often recommended while baking due to their buttery, rich flavor.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
           ]
         },
         {
@@ -8108,7 +7623,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8126,7 +7641,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8144,7 +7659,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8162,7 +7677,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8180,7 +7695,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -8198,7 +7713,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6)"
           ]
         },
         {
@@ -8234,7 +7749,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8252,7 +7767,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8270,7 +7785,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8306,7 +7821,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8324,7 +7839,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8342,7 +7857,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8360,7 +7875,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8376,9 +7891,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -8396,7 +7911,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -8414,7 +7929,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -8432,7 +7947,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -8450,7 +7965,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -8468,7 +7983,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -8486,7 +8001,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -8504,7 +8019,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         }
       ]
@@ -8640,63 +8155,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-01/Cookbook-Hero-January-2025.png?itok=N7lL11_W\" width=\"1019\" height=\"573\" alt=\"Windsor Colorado Centennial Cookbook\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Windsor Colorado Centennial Cookbook \" data-entity-type=\"file\" data-entity-uuid=\"23eea9aa-0a43-470a-bbed-e951c92b3f00\" src=\"/sites/default/files/inline-images/Windsor-Centennial-Cookbook-Cover.jpg\" width=\"224\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            "img[width=\"224\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Ingredients on a counter\" data-entity-type=\"file\" data-entity-uuid=\"eaa30ca9-154e-45df-ba1a-19edcc22905d\" src=\"/sites/default/files/inline-images/ingredients.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\">",
-          "target": [
-            ".align-right"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Swedish Cookies on a plate\" data-entity-type=\"file\" data-entity-uuid=\"a0c98adc-f56c-4725-8341-3ac3b0e06272\" src=\"/sites/default/files/inline-images/finished.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            "img[alt=\"Swedish Cookies on a plate\"]"
           ]
         },
         {
@@ -8828,7 +8289,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990</span>\n</h1>",
+                  "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9035,7 +8496,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu > .menu"
+            "#block-utilitiesmenu > ul"
           ]
         },
         {
@@ -9053,9 +8514,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -9073,9 +8534,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -9095,7 +8556,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -9115,7 +8576,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -9135,7 +8596,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -9155,7 +8616,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -9175,7 +8636,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -9195,7 +8656,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -9355,7 +8816,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-clearview-main-menu > .menu"
+            "#block-clearview-main-menu > ul"
           ]
         },
         {
@@ -9375,7 +8836,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -9395,7 +8856,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -9415,7 +8876,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -9435,7 +8896,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -9455,7 +8916,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -9475,7 +8936,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -9495,7 +8956,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -9515,7 +8976,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-clearview-main-menu > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         },
         {
@@ -9535,7 +8996,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-4f3daaa4\" class=\"menu-item\">\n        <a href=\"#prf-search-field\">Toggle Search</a>\n              </li>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5)"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -9555,7 +9016,7 @@
           "impact": null,
           "html": "<a href=\"#prf-search-field\">Toggle Search</a>",
           "target": [
-            "#block-clearview-main-menu > .menu > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
+            "#block-clearview-main-menu > ul > .menu-item:nth-child(5) > a[href$=\"#prf-search-field\"]"
           ]
         },
         {
@@ -10273,7 +9734,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li>\n                  Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990\n              </li>",
+          "html": "<li>\n                  Proposal For Network Services and Hardware For All Sites\n              </li>",
           "target": [
             "ol > li:nth-child(5)"
           ]
@@ -10393,9 +9854,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<article data-history-node-id=\"656\" about=\"/about-us/learn-more/news/cookbook-nook-windsor-colorado-centennial-cookbook-1890-1990\" typeof=\"schema:Article\" id=\"node-656\" class=\"node node--type-article node--promoted node--view-mode-full\">",
+          "html": "<article data-history-node-id=\"668\" about=\"/about-us/learn-more/news/proposal-network-services-and-hardware-all-sites\" typeof=\"schema:Article\" id=\"node-668\" class=\"node node--type-article node--view-mode-full\">",
           "target": [
-            "#node-656"
+            "#node-668"
           ]
         },
         {
@@ -10453,7 +9914,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:dateCreated\" content=\"2025-01-28T17:08:06+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-01-28T10:08:06-07:00\" title=\"Tuesday, January 28, 2025 - 10:08\" class=\"datetime\">January 28, 2025</time>\n</span>",
+          "html": "<span property=\"schema:dateCreated\" content=\"2025-01-09T16:57:55+00:00\" class=\"field field--name-created field--type-created field--label-hidden\"><time datetime=\"2025-01-09T09:57:55-07:00\" title=\"Thursday, January 9, 2025 - 09:57\" class=\"datetime\">January 9, 2025</time>\n</span>",
           "target": [
             ".field--name-created"
           ]
@@ -10473,7 +9934,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<time datetime=\"2025-01-28T10:08:06-07:00\" title=\"Tuesday, January 28, 2025 - 10:08\" class=\"datetime\">January 28, 2025</time>",
+          "html": "<time datetime=\"2025-01-09T09:57:55-07:00\" title=\"Thursday, January 9, 2025 - 09:57\" class=\"datetime\">January 9, 2025</time>",
           "target": [
             "time"
           ]
@@ -10493,7 +9954,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>\n                    </div>",
+          "html": "<div class=\"field field--name-field-article-category field--type-entity-reference field--label-hidden field__items\">\n                            <div class=\"field__item\"><a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a></div>\n                    </div>",
           "target": [
             ".field--name-field-article-category"
           ]
@@ -10513,7 +9974,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\"><a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a></div>",
+          "html": "<div class=\"field__item\"><a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a></div>",
           "target": [
             ".field--name-field-article-category > .field__item"
           ]
@@ -10533,9 +9994,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/cookbook-nook\" hreflang=\"en\">Cookbook Nook</a>",
+          "html": "<a href=\"/about-us/learn-more/news/news\" hreflang=\"en\">News</a>",
           "target": [
-            "a[href$=\"cookbook-nook\"]"
+            "a[hreflang=\"en\"]"
           ]
         },
         {
@@ -10553,7 +10014,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990</span>\n</h1>",
+          "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>\n</h1>",
           "target": [
             "h1"
           ]
@@ -10573,7 +10034,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990</span>",
+          "html": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Proposal for Network Services and Hardware for All Sites</span>",
           "target": [
             ".field--name-title"
           ]
@@ -10713,7 +10174,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"field__item\">",
+          "html": "<div class=\"field__item\">  <img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n\n</div>",
           "target": [
             ".field--name-field-media-image-1 > .field__item"
           ]
@@ -10733,27 +10194,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/media/400/edit\" hreflang=\"en\"><img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-01/Cookbook-Hero-January-2025.png?itok=N7lL11_W\" width=\"1019\" height=\"573\" alt=\"Windsor Colorado Centennial Cookbook\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">\n\n</a>",
-          "target": [
-            "a[href$=\"edit\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2025-01/Cookbook-Hero-January-2025.png?itok=N7lL11_W\" width=\"1019\" height=\"573\" alt=\"Windsor Colorado Centennial Cookbook\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
+          "html": "<img loading=\"lazy\" src=\"/sites/default/files/styles/large_16_9/public/2024-10/News-Logo-Hero.png?itok=ZKego9hd\" width=\"1019\" height=\"573\" alt=\"Clearview Library District News\" typeof=\"foaf:Image\" class=\"image-style-large-16-9\">",
           "target": [
             ".image-style-large-16-9"
           ]
@@ -10793,7 +10234,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p>The Clearview Library District is excited to announce the release of this Request for Proposal (RFP) for Network Services and Hardware for All Sites.&nbsp;</p>",
           "target": [
             "div[property=\"schema:text\"] > p:nth-child(1)"
           ]
@@ -10813,67 +10254,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>",
-          "target": [
-            "p:nth-child(1) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a data-entity-substitution=\"\" data-entity-type=\"\" data-entity-uuid=\"\" href=\"https://pika.clearviewlibrary.org/Author/Home?author=%22Windsor-Severance%20%28Colorado%29%20Historical%20Society%2C%20Inc%22\">",
-          "target": [
-            "a[data-entity-substitution=\"\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Windsor Colorado Centennial Cookbook \" data-entity-type=\"file\" data-entity-uuid=\"23eea9aa-0a43-470a-bbed-e951c92b3f00\" src=\"/sites/default/files/inline-images/Windsor-Centennial-Cookbook-Cover.jpg\" width=\"224\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            "img[width=\"224\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>Why This Book<img alt=\"Ingredients on a counter\" data-entity-type=\"file\" data-entity-uuid=\"eaa30ca9-154e-45df-ba1a-19edcc22905d\" src=\"/sites/default/files/inline-images/ingredients.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\"></strong></p>",
+          "html": "<p><strong>Deadline for Questions:</strong> January 25, 2025, by 5:00 PM MT. Questions must be submitted via email to <a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>.</p>",
           "target": [
             "p:nth-child(2)"
           ]
@@ -10893,7 +10274,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<strong>Why This Book<img alt=\"Ingredients on a counter\" data-entity-type=\"file\" data-entity-uuid=\"eaa30ca9-154e-45df-ba1a-19edcc22905d\" src=\"/sites/default/files/inline-images/ingredients.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\"></strong>",
+          "html": "<strong>Deadline for Questions:</strong>",
           "target": [
             "p:nth-child(2) > strong"
           ]
@@ -10913,9 +10294,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img alt=\"Ingredients on a counter\" data-entity-type=\"file\" data-entity-uuid=\"eaa30ca9-154e-45df-ba1a-19edcc22905d\" src=\"/sites/default/files/inline-images/ingredients.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-right\">",
+          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
           "target": [
-            ".align-right"
+            "p:nth-child(2) > a"
           ]
         },
         {
@@ -10933,7 +10314,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>",
+          "html": "<p><strong>Answers to Questions Posted:</strong> January 31, 2025, by 5:00 PM MT. Answers will be available on the District’s website.</p>",
           "target": [
             "p:nth-child(3)"
           ]
@@ -10953,329 +10334,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.coloradoan.com/story/news/local/windsor/2015/04/26/historical-societys-cookbook-brings-back-memories/26304893/\">this Coloradoan article</a>",
+          "html": "<strong>Answers to Questions Posted:</strong>",
           "target": [
-            "p:nth-child(3) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong>What We’re Trying: Kiflings (Swedish cookie)&nbsp;</strong></p>",
-          "target": [
-            "p:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>What We’re Trying: Kiflings (Swedish cookie)&nbsp;</strong>",
-          "target": [
-            "p:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>We were intrigued by these cookies as they both have an uncommon name and are from another culture. The recipe for these baked treats was provided by Windsor local, Carol Mimms!</p>",
-          "target": [
-            "p:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<ul>",
-          "target": [
-            "div[property=\"schema:text\"] > ul"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Five ingredients -</strong> The ingredients for this recipe are likely already in your home! &nbsp;Simply mix, knead, roll, and bake; then you will have delicious Swedish cookies!</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Five ingredients -</strong>",
-          "target": [
-            "li:nth-child(1) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Easy to share - </strong>These cookies take the form of small powdered balls and can be easily packaged for transport in a Tupperware container, then shared with family and friends at social gatherings.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Easy to share - </strong>",
-          "target": [
-            "li:nth-child(2) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li><strong>Nuts -</strong> This recipe does not specify the type of chopped nuts to be used in this recipe. &nbsp;We used Macadamia nuts, however cashews are often recommended while baking due to their buttery, rich flavor.</li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Nuts -</strong>",
-          "target": [
-            "li:nth-child(3) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong>Meeting Spaces -</strong>",
-          "target": [
-            "li:nth-child(4) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"https://clearviewlibrary.org/services/other/reserve-room\">Visit our website for more information</a>",
-          "target": [
-            "div[property=\"schema:text\"] > ul > li:nth-child(4) > a"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p><strong><img alt=\"Swedish Cookies on a plate\" data-entity-type=\"file\" data-entity-uuid=\"a0c98adc-f56c-4725-8341-3ac3b0e06272\" src=\"/sites/default/files/inline-images/finished.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">Meet the Author</strong></p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<strong><img alt=\"Swedish Cookies on a plate\" data-entity-type=\"file\" data-entity-uuid=\"a0c98adc-f56c-4725-8341-3ac3b0e06272\" src=\"/sites/default/files/inline-images/finished.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">Meet the Author</strong>",
-          "target": [
-            "p:nth-child(7) > strong"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img alt=\"Swedish Cookies on a plate\" data-entity-type=\"file\" data-entity-uuid=\"a0c98adc-f56c-4725-8341-3ac3b0e06272\" src=\"/sites/default/files/inline-images/finished.jpg\" width=\"300\" height=\"300\" loading=\"lazy\" class=\"align-left\">",
-          "target": [
-            "img[alt=\"Swedish Cookies on a plate\"]"
+            "p:nth-child(3) > strong"
           ]
         },
         {
@@ -11295,7 +10356,7 @@
           "impact": null,
           "html": "<p>",
           "target": [
-            "p:nth-child(8)"
+            "p:nth-child(4)"
           ]
         },
         {
@@ -11313,9 +10374,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"https://www.thewshs.org/about/\">https://www.thewshs.org/about/</a>",
+          "html": "<strong>Proposal Deadline:</strong>",
           "target": [
-            "a[href$=\"about/\"]"
+            "p:nth-child(4) > strong"
           ]
         },
         {
@@ -11333,9 +10394,169 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<br>",
+          "html": "<a href=\"mailto:beth@clearviewlibrary.org\">beth@clearviewlibrary.org</a>",
           "target": [
-            "p:nth-child(8) > br"
+            "p:nth-child(4) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>&nbsp;</p>",
+          "target": [
+            "p:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">",
+          "target": [
+            "table"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<tbody>",
+          "target": [
+            "tbody"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<tr>",
+          "target": [
+            "tr"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<td><a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/FCC-Form-470-Clearview-Library-District-RFP-2025.pdf\">View the RFP</a></td>",
+          "target": [
+            "td:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/FCC-Form-470-Clearview-Library-District-RFP-2025.pdf\">View the RFP</a>",
+          "target": [
+            "td:nth-child(1) > .button.text-center"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<td><a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/Pricing%20Spreadsheet-Cat-One-and-Two-2025-Updated.xlsx\">View the Pricing Spreadsheet</a></td>",
+          "target": [
+            "td:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"button text-center\" href=\"https://clearviewlibrary.org/sites/default/files/2025-01/Pricing%20Spreadsheet-Cat-One-and-Two-2025-Updated.xlsx\">View the Pricing Spreadsheet</a>",
+          "target": [
+            "td:nth-child(2) > .button.text-center"
           ]
         },
         {
@@ -11675,7 +10896,7 @@
           "impact": null,
           "html": "<br>",
           "target": [
-            ".address:nth-child(3) > br:nth-child(2)"
+            "br:nth-child(2)"
           ]
         },
         {
@@ -11875,7 +11096,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation > .menu"
+            "#block-mainnavigation > ul"
           ]
         },
         {
@@ -11935,7 +11156,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-c92f701b > .menu"
+            "#menu-item-c92f701b > ul"
           ]
         },
         {
@@ -11955,7 +11176,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -11975,7 +11196,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/news\" data-drupal-link-system-path=\"node/254\">News</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/254\"][href$=\"news\"]"
           ]
         },
         {
@@ -11995,7 +11216,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12015,7 +11236,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/policies\" data-drupal-link-system-path=\"node/48\">Policies</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(2) > a[href$=\"policies\"][data-drupal-link-system-path=\"node/48\"]"
           ]
         },
         {
@@ -12035,7 +11256,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -12055,7 +11276,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/faqs\" data-drupal-link-system-path=\"node/293\">FAQs</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(3) > a[href$=\"faqs\"][data-drupal-link-system-path=\"node/293\"]"
           ]
         },
         {
@@ -12075,7 +11296,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -12095,7 +11316,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/board-of-trustees\" data-drupal-link-system-path=\"node/49\">Board of Trustees</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/49\"]"
           ]
         },
         {
@@ -12115,7 +11336,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5)"
           ]
         },
         {
@@ -12135,7 +11356,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/work-with-us\" data-drupal-link-system-path=\"node/50\">Work With Us</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(5) > a[data-drupal-link-system-path=\"node/50\"]"
           ]
         },
         {
@@ -12155,7 +11376,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>\n              </li>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6)"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6)"
           ]
         },
         {
@@ -12175,7 +11396,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/learn-more/facilities-plan\" data-drupal-link-system-path=\"node/51\">Facilities Plan</a>",
           "target": [
-            "#menu-item-c92f701b > .menu > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
+            "#menu-item-c92f701b > ul > .menu-item:nth-child(6) > a[data-drupal-link-system-path=\"node/51\"]"
           ]
         },
         {
@@ -12235,7 +11456,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-cb25c7c1 > .menu"
+            "#menu-item-cb25c7c1 > ul"
           ]
         },
         {
@@ -12255,7 +11476,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -12275,7 +11496,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/our-impact\" data-drupal-link-system-path=\"node/53\">Our Impact</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/53\"]"
           ]
         },
         {
@@ -12295,7 +11516,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12315,7 +11536,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/financial-spending\" data-drupal-link-system-path=\"node/55\">Financial Spending</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/55\"]"
           ]
         },
         {
@@ -12335,7 +11556,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>\n              </li>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -12355,7 +11576,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/values-priorities/strategic-plan\" data-drupal-link-system-path=\"node/56\">Strategic Plan</a>",
           "target": [
-            "#menu-item-cb25c7c1 > .menu > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
+            "#menu-item-cb25c7c1 > ul > .menu-item:nth-child(3) > a[data-drupal-link-system-path=\"node/56\"]"
           ]
         },
         {
@@ -12415,7 +11636,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#menu-item-0267a4c3 > .menu"
+            "#menu-item-0267a4c3 > ul"
           ]
         },
         {
@@ -12435,7 +11656,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/\">Friends of the Library</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -12455,7 +11676,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/\">Friends of the Library</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(1) > a[href$=\"cldfriends.org/\"]"
           ]
         },
         {
@@ -12475,7 +11696,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -12495,7 +11716,7 @@
           "impact": null,
           "html": "<a href=\"/about-us/support-donate/volunteer\" data-drupal-link-system-path=\"node/59\">Volunteer</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/59\"]"
           ]
         },
         {
@@ -12515,7 +11736,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://www.cldfriends.org/donate\">Donate</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -12535,7 +11756,7 @@
           "impact": null,
           "html": "<a href=\"https://www.cldfriends.org/donate\">Donate</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(3) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(3) > a"
           ]
         },
         {
@@ -12555,7 +11776,7 @@
           "impact": null,
           "html": "<li class=\"menu-item\">\n        <a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>\n              </li>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4)"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -12575,7 +11796,7 @@
           "impact": null,
           "html": "<a href=\"https://clearviewlibrary.org/your-library-story\">Share Your Story</a>",
           "target": [
-            "#menu-item-0267a4c3 > .menu > .menu-item:nth-child(4) > a"
+            "#menu-item-0267a4c3 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -13015,7 +12236,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-utilitiesmenu-2 > .menu"
+            "#block-utilitiesmenu-2 > ul"
           ]
         },
         {
@@ -13033,9 +12254,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
         },
         {
@@ -13053,9 +12274,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(1) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
           ]
         },
         {
@@ -13075,7 +12296,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-80bf37e1\" class=\"menu-item\">\n        <a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2)"
           ]
         },
         {
@@ -13095,7 +12316,7 @@
           "impact": null,
           "html": "<a href=\"/contact\" data-drupal-link-system-path=\"node/63\">Contact</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/63\"][href$=\"contact\"]"
           ]
         },
         {
@@ -13115,7 +12336,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-55a138c8\" class=\"menu-item\">\n        <a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3)"
           ]
         },
         {
@@ -13135,7 +12356,7 @@
           "impact": null,
           "html": "<a href=\"/card\" data-drupal-link-system-path=\"node/64\">Get a Library Card</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(3) > a[href$=\"card\"][data-drupal-link-system-path=\"node/64\"]"
           ]
         },
         {
@@ -13155,7 +12376,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-85950601\" class=\"menu-item\">\n        <a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>\n              </li>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4)"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4)"
           ]
         },
         {
@@ -13175,7 +12396,7 @@
           "impact": null,
           "html": "<a href=\"https://pika.clearviewlibrary.org/MyAccount/Home\">My Account</a>",
           "target": [
-            "#block-utilitiesmenu-2 > .menu > .menu-item:nth-child(4) > a"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(4) > a"
           ]
         },
         {
@@ -13215,7 +12436,7 @@
           "impact": null,
           "html": "<ul class=\"menu\">",
           "target": [
-            "#block-mainnavigation-6 > .menu"
+            "#block-mainnavigation-6 > ul"
           ]
         },
         {
@@ -13235,7 +12456,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-6831e5fa\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1)"
           ]
         },
         {
@@ -13255,7 +12476,7 @@
           "impact": null,
           "html": "<a href=\"/borrow-research\" data-drupal-link-system-path=\"node/1\">Borrow &amp; Research</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(1) > a[href$=\"borrow-research\"][data-drupal-link-system-path=\"node/1\"]"
           ]
         },
         {
@@ -13275,7 +12496,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-b3c7fee7\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2)"
           ]
         },
         {
@@ -13295,7 +12516,7 @@
           "impact": null,
           "html": "<a href=\"https://clearview.libnet.info/events\">Programs &amp; Events</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(2) > a"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(2) > a"
           ]
         },
         {
@@ -13315,7 +12536,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-de88dab0\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3)"
           ]
         },
         {
@@ -13335,7 +12556,7 @@
           "impact": null,
           "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/3\">Services</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(3) > a[href$=\"services\"][data-drupal-link-system-path=\"node/3\"]"
           ]
         },
         {
@@ -13355,7 +12576,7 @@
           "impact": null,
           "html": "<li id=\"menu-item-d6a8cc8c\" class=\"menu-item menu-item--expanded\">",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4)"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4)"
           ]
         },
         {
@@ -13375,7 +12596,7 @@
           "impact": null,
           "html": "<a href=\"/about-us\" data-drupal-link-system-path=\"node/4\">About Us</a>",
           "target": [
-            "#block-mainnavigation-6 > .menu > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
+            "#block-mainnavigation-6 > ul > .menu-item--expanded.menu-item:nth-child(4) > a[data-drupal-link-system-path=\"node/4\"][href$=\"about-us\"]"
           ]
         }
       ]
@@ -13456,6 +12677,75 @@
           "html": "<a id=\"main-content\" tabindex=\"-1\"></a>",
           "target": [
             "#main-content"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table-duplicate-name",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "best-practice"
+      ],
+      "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
+      "help": "Tables should not have the same summary and caption",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "same-caption-summary",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Content of summary attribute and <caption> are not duplicated"
+            }
+          ],
+          "impact": null,
+          "html": "<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">",
+          "target": [
+            "table"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "td-headers-attr",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "wcag2a",
+        "wcag131",
+        "section508",
+        "section508.22.g",
+        "TTv5",
+        "TT14.b",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
+      "help": "Table cells that use the headers attribute must only refer to cells in the same table",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/td-headers-attr?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "td-headers-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "The headers attribute is exclusively used to refer to other cells in the table"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">",
+          "target": [
+            "table"
           ]
         }
       ]
@@ -13594,5 +12884,5 @@
     }
   ],
   "violations": [],
-  "documentTitle": "Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990 | Clearview Library"
+  "documentTitle": "Proposal for Network Services and Hardware for All Sites | Clearview Library"
 }
