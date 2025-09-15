@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T19:19:51.746Z",
+  "timestamp": "2025-09-15T19:38:51.926Z",
   "url": "https://pika.clearviewlibrary.org/GroupedWork/35244c42-40e2-3513-d646-3d90b73f038e/Home",
   "toolOptions": {
     "reporter": "v1"
@@ -4077,7 +4077,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 87.348px;\">",
+          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 92.6267px;\">",
           "target": [
             "#home-page-login"
           ]
@@ -4109,7 +4109,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 87.348px;\">",
+          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 92.6267px;\">",
           "target": [
             "#home-page-library-section"
           ]
@@ -4173,7 +4173,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<a data-pin-custom=\"true\" data-pin-do=\"buttonPin\" data-pin-media=\"https://pika.clearviewlibrary.org/bookcover.php?id=35244c42-40e2-3513-d646-3d90b73f038e&amp;size=large&amp;type=grouped_work&amp;category=eBook\" target=\"_blank\" style=\"cursor:pointer;\" title=\"Pin on Pinterest\" data-pin-log=\"button_pinit\" data-pin-href=\"https://www.pinterest.com/pin/create/button?guid=a3r1sy1fH53d-1&amp;url=https%3A%2F%2Fpika.clearviewlibrary.org%2F%2FGroupedWork%2F35244c42-40e2-3513-d646-3d90b73f038e%2FHome&amp;media=https%3A%2F%2Fpika.clearviewlibrary.org%2Fbookcover.php%3Fid%3D35244c42-40e2-3513-d646-3d90b73f038e%26size%3Dlarge%26type%3Dgrouped_work%26category%3DeBook&amp;description=Read%20at%20n%2Fa\">",
+          "html": "<a data-pin-custom=\"true\" data-pin-do=\"buttonPin\" data-pin-media=\"https://pika.clearviewlibrary.org/bookcover.php?id=35244c42-40e2-3513-d646-3d90b73f038e&amp;size=large&amp;type=grouped_work&amp;category=eBook\" target=\"_blank\" style=\"cursor:pointer;\" title=\"Pin on Pinterest\" data-pin-log=\"button_pinit\" data-pin-href=\"https://www.pinterest.com/pin/create/button?guid=TGas1Mx9V7Qr-1&amp;url=https%3A%2F%2Fpika.clearviewlibrary.org%2F%2FGroupedWork%2F35244c42-40e2-3513-d646-3d90b73f038e%2FHome&amp;media=https%3A%2F%2Fpika.clearviewlibrary.org%2Fbookcover.php%3Fid%3D35244c42-40e2-3513-d646-3d90b73f038e%26size%3Dlarge%26type%3Dgrouped_work%26category%3DeBook&amp;description=Read%20at%20n%2Fa\">",
           "target": [
             "a[data-pin-custom=\"true\"]"
           ]
@@ -4609,6 +4609,18 @@
                   ]
                 },
                 {
+                  "html": "<h2 class=\"panel-title\">Librarian Reviews</h2>",
+                  "target": [
+                    "a[href=\"#librarianReviewsPanelBody\"] > .panel-heading > .panel-title"
+                  ]
+                },
+                {
+                  "html": "<h2 class=\"panel-title\">Borrower Reviews</h2>",
+                  "target": [
+                    "a[href$=\"#borrowerReviewsPanelBody\"] > .panel-heading > .panel-title"
+                  ]
+                },
+                {
                   "html": "<h2 class=\"panel-title\">Published Reviews</h2>",
                   "target": [
                     "a[href=\"#syndicatedReviewsPanelBody\"] > .panel-heading > .panel-title"
@@ -4907,6 +4919,31 @@
           "html": "<div id=\"home-page-hours-locations\" class=\"sidebar-button\">Library Hours &amp; Locations</div>",
           "target": [
             "#home-page-hours-locations"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#4f5253",
+                "contrastRatio": 7.88,
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.88"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div id=\"home-page-home-button\" class=\"sidebar-button\">Library Home Page</div>",
+          "target": [
+            "#home-page-home-button"
           ]
         },
         {
@@ -5831,7 +5868,7 @@
           "impact": null,
           "html": "<small class=\"version_info\">v. 2025.03.0</small>",
           "target": [
-            ".version_info"
+            "small"
           ]
         }
       ]
@@ -6168,6 +6205,42 @@
           "html": "<h2 class=\"panel-title\">More Copies In Prospector</h2>",
           "target": [
             "a[href$=\"#prospectorPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Librarian Reviews</h2>",
+          "target": [
+            "a[href=\"#librarianReviewsPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Borrower Reviews</h2>",
+          "target": [
+            "a[href$=\"#borrowerReviewsPanelBody\"] > .panel-heading > .panel-title"
           ]
         },
         {
@@ -6539,6 +6612,18 @@
                   },
                   {
                     "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(11) > a:nth-child(1) > div > h2"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(12) > a:nth-child(1) > div > h2"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
                       "html > body > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > main:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > div:nth-child(13) > a:nth-child(1) > div > h2"
                     ],
                     "level": 2
@@ -6670,6 +6755,42 @@
           "html": "<h2 class=\"panel-title\">More Copies In Prospector</h2>",
           "target": [
             "a[href$=\"#prospectorPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Librarian Reviews</h2>",
+          "target": [
+            "a[href=\"#librarianReviewsPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Borrower Reviews</h2>",
+          "target": [
+            "a[href$=\"#borrowerReviewsPanelBody\"] > .panel-heading > .panel-title"
           ]
         },
         {
@@ -9187,6 +9308,58 @@
           "html": "<a data-toggle=\"collapse\" href=\"#prospectorPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">More Copies In Prospector</h2></div></a>",
           "target": [
             "a[href$=\"#prospectorPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#librarianReviewsPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Librarian Reviews</h2></div></a>",
+          "target": [
+            "a[href=\"#librarianReviewsPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#borrowerReviewsPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Borrower Reviews</h2></div></a>",
+          "target": [
+            "a[href$=\"#borrowerReviewsPanelBody\"]"
           ]
         },
         {
@@ -12392,7 +12565,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 87.348px;\">",
+          "html": "<div id=\"home-page-login\" class=\"text-center row\" style=\"overflow: hidden; width: 92.6267px;\">",
           "target": [
             "#home-page-login"
           ]
@@ -12472,7 +12645,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 87.348px;\">",
+          "html": "<div id=\"home-page-library-section\" class=\"row\" style=\"overflow: hidden; width: 92.6267px;\">",
           "target": [
             "#home-page-library-section"
           ]
@@ -15672,7 +15845,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a data-pin-custom=\"true\" data-pin-do=\"buttonPin\" data-pin-media=\"https://pika.clearviewlibrary.org/bookcover.php?id=35244c42-40e2-3513-d646-3d90b73f038e&amp;size=large&amp;type=grouped_work&amp;category=eBook\" target=\"_blank\" style=\"cursor:pointer;\" title=\"Pin on Pinterest\" data-pin-log=\"button_pinit\" data-pin-href=\"https://www.pinterest.com/pin/create/button?guid=a3r1sy1fH53d-1&amp;url=https%3A%2F%2Fpika.clearviewlibrary.org%2F%2FGroupedWork%2F35244c42-40e2-3513-d646-3d90b73f038e%2FHome&amp;media=https%3A%2F%2Fpika.clearviewlibrary.org%2Fbookcover.php%3Fid%3D35244c42-40e2-3513-d646-3d90b73f038e%26size%3Dlarge%26type%3Dgrouped_work%26category%3DeBook&amp;description=Read%20at%20n%2Fa\">",
+          "html": "<a data-pin-custom=\"true\" data-pin-do=\"buttonPin\" data-pin-media=\"https://pika.clearviewlibrary.org/bookcover.php?id=35244c42-40e2-3513-d646-3d90b73f038e&amp;size=large&amp;type=grouped_work&amp;category=eBook\" target=\"_blank\" style=\"cursor:pointer;\" title=\"Pin on Pinterest\" data-pin-log=\"button_pinit\" data-pin-href=\"https://www.pinterest.com/pin/create/button?guid=TGas1Mx9V7Qr-1&amp;url=https%3A%2F%2Fpika.clearviewlibrary.org%2F%2FGroupedWork%2F35244c42-40e2-3513-d646-3d90b73f038e%2FHome&amp;media=https%3A%2F%2Fpika.clearviewlibrary.org%2Fbookcover.php%3Fid%3D35244c42-40e2-3513-d646-3d90b73f038e%26size%3Dlarge%26type%3Dgrouped_work%26category%3DeBook&amp;description=Read%20at%20n%2Fa\">",
           "target": [
             "a[data-pin-custom=\"true\"]"
           ]
@@ -16592,6 +16765,166 @@
           "all": [],
           "none": [],
           "impact": null,
+          "html": "<div class=\"panel \" id=\"librarianReviewsPanel\">",
+          "target": [
+            "#librarianReviewsPanel"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#librarianReviewsPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Librarian Reviews</h2></div></a>",
+          "target": [
+            "a[href=\"#librarianReviewsPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel-heading\"><h2 class=\"panel-title\">Librarian Reviews</h2></div>",
+          "target": [
+            "a[href=\"#librarianReviewsPanelBody\"] > .panel-heading"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Librarian Reviews</h2>",
+          "target": [
+            "a[href=\"#librarianReviewsPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel \" id=\"borrowerReviewsPanel\">",
+          "target": [
+            "#borrowerReviewsPanel"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a data-toggle=\"collapse\" href=\"#borrowerReviewsPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Borrower Reviews</h2></div></a>",
+          "target": [
+            "a[href$=\"#borrowerReviewsPanelBody\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"panel-heading\"><h2 class=\"panel-title\">Borrower Reviews</h2></div>",
+          "target": [
+            "a[href$=\"#borrowerReviewsPanelBody\"] > .panel-heading"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 class=\"panel-title\">Borrower Reviews</h2>",
+          "target": [
+            "a[href$=\"#borrowerReviewsPanelBody\"] > .panel-heading > .panel-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
           "html": "<div class=\"panel \" id=\"syndicatedReviewsPanel\">",
           "target": [
             "#syndicatedReviewsPanel"
@@ -17394,7 +17727,7 @@
           "impact": null,
           "html": "<small class=\"version_info\">v. 2025.03.0</small>",
           "target": [
-            ".version_info"
+            "small"
           ]
         },
         {
@@ -18051,31 +18384,6 @@
             {
               "id": "color-contrast",
               "data": {
-                "contrastRatio": 0,
-                "fontSize": "11.3pt (15px)",
-                "fontWeight": "normal",
-                "messageKey": "bgOverlap",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element's background color could not be determined because it is overlapped by another element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<div id=\"home-page-home-button\" class=\"sidebar-button\">Library Home Page</div>",
-          "target": [
-            "#home-page-home-button"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
                 "messageKey": "complexTextShadows"
               },
               "relatedNodes": [],
@@ -18173,6 +18481,48 @@
           "html": "<h2 class=\"panel-title\">More Copies In Prospector</h2>",
           "target": [
             "a[href$=\"#prospectorPanelBody\"] > .panel-heading > .panel-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "complexTextShadows"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's contrast could not be determined because it uses complex text shadows"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"panel-title\">Librarian Reviews</h2>",
+          "target": [
+            "a[href=\"#librarianReviewsPanelBody\"] > .panel-heading > .panel-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "messageKey": "complexTextShadows"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's contrast could not be determined because it uses complex text shadows"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 class=\"panel-title\">Borrower Reviews</h2>",
+          "target": [
+            "a[href$=\"#borrowerReviewsPanelBody\"] > .panel-heading > .panel-title"
           ],
           "failureSummary": "Fix any of the following:\n  Element's contrast could not be determined because it uses complex text shadows"
         },
@@ -18436,34 +18786,6 @@
           "html": "<a data-toggle=\"collapse\" href=\"#prospectorPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">More Copies In Prospector</h2></div></a>",
           "target": [
             "a[href$=\"#prospectorPanelBody\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block",
-              "data": {
-                "messageKey": "bgOverlap"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<div class=\"panel \" id=\"syndicatedReviewsPanel\">",
-                  "target": [
-                    "#syndicatedReviewsPanel"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's contrast ratio could not be determined because of element overlap"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<a data-toggle=\"collapse\" href=\"#syndicatedReviewsPanelBody\"><div class=\"panel-heading\"><h2 class=\"panel-title\">Published Reviews</h2></div></a>",
-          "target": [
-            "a[href=\"#syndicatedReviewsPanelBody\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
         },
