@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2025-09-15T17:47:57.704Z",
+  "timestamp": "2025-09-15T19:24:19.735Z",
   "url": "https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-network-services-and-hardware-0",
   "toolOptions": {
     "reporter": "v1"
@@ -445,6 +445,18 @@
       "description": "Ensure <input type=\"image\"> elements have alternative text",
       "help": "Image buttons must have alternative text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=axeAPI",
+      "nodes": []
+    },
+    {
+      "id": "landmark-complementary-is-top-level",
+      "impact": null,
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
       "nodes": []
     },
     {
@@ -2681,9 +2693,9 @@
                   ]
                 },
                 {
-                  "html": "<h3>Project and General Information</h3>",
+                  "html": "<h2>Project and General Information</h2>",
                   "target": [
-                    "h3"
+                    "div[property=\"schema:text\"] > h2"
                   ]
                 },
                 {
@@ -2764,9 +2776,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
           ]
         },
         {
@@ -3209,24 +3221,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#181818",
+                "fgColor": "#0072bc",
                 "bgColor": "#ffffff",
-                "contrastRatio": 17.75,
-                "fontSize": "14.4pt (19.2px)",
+                "contrastRatio": 5.08,
+                "fontSize": "20.7pt (27.648px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 17.75"
+              "message": "Element has sufficient color contrast of 5.08"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>Project and General Information</h3>",
+          "html": "<h2>Project and General Information</h2>",
           "target": [
-            "h3"
+            "div[property=\"schema:text\"] > h2"
           ]
         },
         {
@@ -4299,9 +4311,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>Project and General Information</h3>",
+          "html": "<h2>Project and General Information</h2>",
           "target": [
-            "h3"
+            "div[property=\"schema:text\"] > h2"
           ]
         },
         {
@@ -4412,7 +4424,7 @@
     },
     {
       "id": "heading-order",
-      "impact": "moderate",
+      "impact": null,
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -4453,9 +4465,9 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1)"
+                      "html > body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > main:nth-child(2) > div > div > article > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > h2:nth-child(1)"
                     ],
-                    "level": 3
+                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -4536,6 +4548,24 @@
           "html": "<h1 class=\"node-title\"><span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Request for Proposal for Network Services and Hardware</span>\n</h1>",
           "target": [
             "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Project and General Information</h2>",
+          "target": [
+            "div[property=\"schema:text\"] > h2"
           ]
         },
         {
@@ -5716,9 +5746,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
           ]
         },
         {
@@ -6834,9 +6864,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
           ]
         },
         {
@@ -7228,7 +7258,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
@@ -7768,7 +7798,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
@@ -8391,7 +8421,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu > ul > .menu-item:nth-child(1)"
           ]
@@ -8411,9 +8441,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu > ul > .menu-item:nth-child(1) > a"
           ]
         },
         {
@@ -10131,9 +10161,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3>Project and General Information</h3>",
+          "html": "<h2>Project and General Information</h2>",
           "target": [
-            "h3"
+            "div[property=\"schema:text\"] > h2"
           ]
         },
         {
@@ -10311,9 +10341,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<aside class=\"sidebar\">",
+          "html": "<div class=\"sidebar\">",
           "target": [
-            "aside"
+            ".sidebar"
           ]
         },
         {
@@ -11991,7 +12021,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>\n              </li>",
+          "html": "<li id=\"menu-item-72193438\" class=\"menu-item\">\n        <a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>\n              </li>",
           "target": [
             "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1)"
           ]
@@ -12011,9 +12041,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/about-us/learn-more/hours-locations\" data-drupal-link-system-path=\"node/434\">Hours &amp; Locations</a>",
+          "html": "<a href=\"/about-us/learn-more/hours-locations\">Hours &amp; Locations</a>",
           "target": [
-            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a[data-drupal-link-system-path=\"node/434\"]"
+            "#block-utilitiesmenu-2 > ul > .menu-item:nth-child(1) > a"
           ]
         },
         {
@@ -12551,73 +12581,6 @@
       ]
     }
   ],
-  "violations": [
-    {
-      "id": "heading-order",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the order of headings is semantically correct",
-      "help": "Heading levels should only increase by one",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order invalid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<h3>Project and General Information</h3>",
-          "target": [
-            "h3"
-          ],
-          "failureSummary": "Fix any of the following:\n  Heading order invalid"
-        }
-      ]
-    },
-    {
-      "id": "landmark-complementary-is-top-level",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the complementary landmark or aside is at top level",
-      "help": "Aside should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "landmark-is-top-level",
-              "data": {
-                "role": null
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "The null landmark is contained in another landmark."
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<aside class=\"sidebar\">",
-          "target": [
-            "aside"
-          ],
-          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
-        }
-      ]
-    }
-  ],
+  "violations": [],
   "documentTitle": "Request for Proposal for Network Services and Hardware | Clearview Library"
 }
