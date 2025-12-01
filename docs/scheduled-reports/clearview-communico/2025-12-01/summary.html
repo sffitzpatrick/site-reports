@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Summary</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #f4f4f4; }
+    canvas { max-width: 800px; margin: 2rem auto; display: block; }
+    a { color: #0366d6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Accessibility Audit Summary</h1>
+  <h2>Site url: https://clearview.libnet.info/events</h2>
+  <canvas id="summaryChart"></canvas>
+  <table id="summary-table">
+    <thead>
+      <tr>
+        <th>Page</th><th>Title</th><th>URL</th><th>Report</th><th>Total</th><th>Critical</th><th>Serious</th><th>Moderate</th><th>Minor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>1</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?" target="_blank">https://clearview.libnet.info/events?</a></td>
+          <td><a href="./reports/1.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>8</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>10</td>
+          <td>Bookmobile Stop at Grandview Elementary - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14771325" target="_blank">https://clearview.libnet.info/event/14771325</a></td>
+          <td><a href="./reports/10.html" target="_blank">Report</a></td>
+          <td>10</td>
+          <td>1</td>
+          <td>9</td>
+          <td>24</td>
+          <td>1</td>
+        </tr>
+      
+        <tr>
+          <td>11</td>
+          <td>Lego Engineers - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14814683" target="_blank">https://clearview.libnet.info/event/14814683</a></td>
+          <td><a href="./reports/11.html" target="_blank">Report</a></td>
+          <td>9</td>
+          <td>1</td>
+          <td>7</td>
+          <td>22</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>12</td>
+          <td>After-School Collective - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14815927" target="_blank">https://clearview.libnet.info/event/14815927</a></td>
+          <td><a href="./reports/12.html" target="_blank">Report</a></td>
+          <td>9</td>
+          <td>1</td>
+          <td>8</td>
+          <td>21</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>13</td>
+          <td>Bookmobile Stop at Northern Lights Park - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14771331" target="_blank">https://clearview.libnet.info/event/14771331</a></td>
+          <td><a href="./reports/13.html" target="_blank">Report</a></td>
+          <td>10</td>
+          <td>1</td>
+          <td>9</td>
+          <td>24</td>
+          <td>1</td>
+        </tr>
+      
+        <tr>
+          <td>14</td>
+          <td>Bookmobile Stop at Windshire Park - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14771337" target="_blank">https://clearview.libnet.info/event/14771337</a></td>
+          <td><a href="./reports/14.html" target="_blank">Report</a></td>
+          <td>10</td>
+          <td>1</td>
+          <td>9</td>
+          <td>24</td>
+          <td>1</td>
+        </tr>
+      
+        <tr>
+          <td>15</td>
+          <td>Teens Cook - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14816320" target="_blank">https://clearview.libnet.info/event/14816320</a></td>
+          <td><a href="./reports/15.html" target="_blank">Report</a></td>
+          <td>9</td>
+          <td>1</td>
+          <td>7</td>
+          <td>22</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>16</td>
+          <td>Bookmobile Stop at Covenant Park - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14771392" target="_blank">https://clearview.libnet.info/event/14771392</a></td>
+          <td><a href="./reports/16.html" target="_blank">Report</a></td>
+          <td>10</td>
+          <td>1</td>
+          <td>9</td>
+          <td>24</td>
+          <td>1</td>
+        </tr>
+      
+        <tr>
+          <td>17</td>
+          <td>Privacy and cookie policy - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/privacy" target="_blank">https://clearview.libnet.info/privacy</a></td>
+          <td><a href="./reports/17.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>17</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>18</td>
+          <td>Sorry, page not found - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/" target="_blank">https://clearview.libnet.info/</a></td>
+          <td><a href="./reports/18.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>19</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?a=Tweens+9-12" target="_blank">https://clearview.libnet.info/events?a=Tweens+9-12</a></td>
+          <td><a href="./reports/19.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>2</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?" target="_blank">https://clearview.libnet.info/events?</a></td>
+          <td><a href="./reports/2.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>49</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>20</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?a=Teens+12-18" target="_blank">https://clearview.libnet.info/events?a=Teens+12-18</a></td>
+          <td><a href="./reports/20.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>26</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>21</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?a=Little+Ones+(0-5)" target="_blank">https://clearview.libnet.info/events?a=Little+Ones+(0-5)</a></td>
+          <td><a href="./reports/21.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>22</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>22</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?a=Families" target="_blank">https://clearview.libnet.info/events?a=Families</a></td>
+          <td><a href="./reports/22.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>23</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?a=Children+6-9" target="_blank">https://clearview.libnet.info/events?a=Children+6-9</a></td>
+          <td><a href="./reports/23.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>24</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522STEAM%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522STEAM%2522%255D</a></td>
+          <td><a href="./reports/24.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>20</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>25</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Community%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Community%2522%255D</a></td>
+          <td><a href="./reports/25.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>20</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>26</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Arts%2520%2526%2520Crafts%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Arts%2520%2526%2520Crafts%2522%255D</a></td>
+          <td><a href="./reports/26.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>20</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>27</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?" target="_blank">https://clearview.libnet.info/events?</a></td>
+          <td><a href="./reports/27.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>49</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>28</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Book%2520Club%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Book%2520Club%2522%255D</a></td>
+          <td><a href="./reports/28.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>29</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Storytime%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Storytime%2522%255D</a></td>
+          <td><a href="./reports/29.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>3</td>
+          <td>My Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/myevents" target="_blank">https://clearview.libnet.info/myevents</a></td>
+          <td><a href="./reports/3.html" target="_blank">Report</a></td>
+          <td>5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>8</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>30</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Play%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Play%2522%255D</a></td>
+          <td><a href="./reports/30.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>15</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>31</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?term=STAY%26PLAY" target="_blank">https://clearview.libnet.info/events?term=STAY%26PLAY</a></td>
+          <td><a href="./reports/31.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>32</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?a=All+Ages" target="_blank">https://clearview.libnet.info/events?a=All+Ages</a></td>
+          <td><a href="./reports/32.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>33</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Bookmobile%2520Stop%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Bookmobile%2520Stop%2522%255D</a></td>
+          <td><a href="./reports/33.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>34</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Pop-Up%2520Library%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Pop-Up%2520Library%2522%255D</a></td>
+          <td><a href="./reports/34.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>35</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Games%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Games%2522%255D</a></td>
+          <td><a href="./reports/35.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>36</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Food%2520%2526%2520Drink%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Food%2520%2526%2520Drink%2522%255D</a></td>
+          <td><a href="./reports/36.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>37</td>
+          <td>Sorry, page not found - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/location/Administrative%20Services%20Building" target="_blank">https://clearview.libnet.info/location/Administrative%20Services%20Building</a></td>
+          <td><a href="./reports/37.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>38</td>
+          <td>Sorry, page not found - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/location/Bookmobile" target="_blank">https://clearview.libnet.info/location/Bookmobile</a></td>
+          <td><a href="./reports/38.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>39</td>
+          <td>Sorry, page not found - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/location/Severance%20Library" target="_blank">https://clearview.libnet.info/location/Severance%20Library</a></td>
+          <td><a href="./reports/39.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>4</td>
+          <td>Communico</td>
+          <td><a href="https://clearview.libnet.info/v/assets/734" target="_blank">https://clearview.libnet.info/v/assets/734</a></td>
+          <td><a href="./reports/4.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>40</td>
+          <td>Sorry, page not found - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/location/Windsor%20Library" target="_blank">https://clearview.libnet.info/location/Windsor%20Library</a></td>
+          <td><a href="./reports/40.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>41</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?a=Little+Ones+(0-5)" target="_blank">https://clearview.libnet.info/events?a=Little+Ones+(0-5)</a></td>
+          <td><a href="./reports/41.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>42</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522STEAM%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522STEAM%2522%255D</a></td>
+          <td><a href="./reports/42.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>43</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Community%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Community%2522%255D</a></td>
+          <td><a href="./reports/43.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>44</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Arts%2520%2526%2520Crafts%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Arts%2520%2526%2520Crafts%2522%255D</a></td>
+          <td><a href="./reports/44.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>20</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>45</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Book%2520Club%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Book%2520Club%2522%255D</a></td>
+          <td><a href="./reports/45.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>46</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Storytime%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Storytime%2522%255D</a></td>
+          <td><a href="./reports/46.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>47</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Play%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Play%2522%255D</a></td>
+          <td><a href="./reports/47.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>15</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>48</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Bookmobile%2520Stop%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Bookmobile%2520Stop%2522%255D</a></td>
+          <td><a href="./reports/48.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>49</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Pop-Up%2520Library%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Pop-Up%2520Library%2522%255D</a></td>
+          <td><a href="./reports/49.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>5</td>
+          <td>Family Art Challenge - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14815819" target="_blank">https://clearview.libnet.info/event/14815819</a></td>
+          <td><a href="./reports/5.html" target="_blank">Report</a></td>
+          <td>7</td>
+          <td>1</td>
+          <td>4</td>
+          <td>22</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>50</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Games%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Games%2522%255D</a></td>
+          <td><a href="./reports/50.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>51</td>
+          <td>Events - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/events?t=%255B%2522Food%2520%2526%2520Drink%2522%255D" target="_blank">https://clearview.libnet.info/events?t=%255B%2522Food%2520%2526%2520Drink%2522%255D</a></td>
+          <td><a href="./reports/51.html" target="_blank">Report</a></td>
+          <td>3</td>
+          <td>42</td>
+          <td>0</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>6</td>
+          <td>Teen Book Box - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14828441" target="_blank">https://clearview.libnet.info/event/14828441</a></td>
+          <td><a href="./reports/6.html" target="_blank">Report</a></td>
+          <td>8</td>
+          <td>1</td>
+          <td>6</td>
+          <td>22</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>7</td>
+          <td>Messy Monster Monday - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14822386" target="_blank">https://clearview.libnet.info/event/14822386</a></td>
+          <td><a href="./reports/7.html" target="_blank">Report</a></td>
+          <td>10</td>
+          <td>1</td>
+          <td>9</td>
+          <td>22</td>
+          <td>1</td>
+        </tr>
+      
+        <tr>
+          <td>8</td>
+          <td>Read, Rhyme, and Romp - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14829698" target="_blank">https://clearview.libnet.info/event/14829698</a></td>
+          <td><a href="./reports/8.html" target="_blank">Report</a></td>
+          <td>9</td>
+          <td>1</td>
+          <td>8</td>
+          <td>21</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>9</td>
+          <td>Stay and Play - Clearview Library District</td>
+          <td><a href="https://clearview.libnet.info/event/14829739" target="_blank">https://clearview.libnet.info/event/14829739</a></td>
+          <td><a href="./reports/9.html" target="_blank">Report</a></td>
+          <td>9</td>
+          <td>1</td>
+          <td>7</td>
+          <td>21</td>
+          <td>0</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <script>
+    const data = {
+      labels: ["1","10","11","12","13","14","15","16","17","18","19","2","20","21","22","23","24","25","26","27","28","29","3","30","31","32","33","34","35","36","37","38","39","4","40","41","42","43","44","45","46","47","48","49","5","50","51","6","7","8","9"],
+      datasets: [
+        { label: 'Critical', backgroundColor: '#e3342f', data: [42,1,1,1,1,1,1,1,0,0,42,42,42,42,42,42,42,42,42,42,42,42,1,42,42,42,42,42,42,42,0,0,0,0,0,42,42,42,42,42,42,42,42,42,1,42,42,1,1,1,1] },
+        { label: 'Serious', backgroundColor: '#f6993f', data: [0,9,7,8,9,9,7,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,6,9,8,7] },
+        { label: 'Moderate', backgroundColor: '#ffed4a', data: [8,24,22,21,24,24,22,24,17,4,9,49,26,22,14,9,20,20,20,49,14,9,8,15,9,9,9,14,14,14,4,4,4,1,4,9,9,9,20,9,9,15,9,14,22,14,14,22,22,21,21] },
+        { label: 'Minor', backgroundColor: '#38c172', data: [0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0] },
+      ]
+    };
+
+    new Chart(document.getElementById('summaryChart'), {
+      type: 'bar',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Accessibility Violations by Page'
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, beginAtZero: true }
+        }
+      }
+    });
+
+    $(document).ready( function () {
+      $('#summary-table').DataTable({
+        paging: false
+      });
+  } );
+
+
+
+  </script>
+</body>
+</html>
