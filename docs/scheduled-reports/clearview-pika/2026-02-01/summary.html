@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Summary</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #f4f4f4; }
+    canvas { max-width: 800px; margin: 2rem auto; display: block; }
+    a { color: #0366d6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Accessibility Audit Summary</h1>
+  <h2>Site url: https://pika.clearviewlibrary.org/</h2>
+  <canvas id="summaryChart"></canvas>
+  <table id="summary-table">
+    <thead>
+      <tr>
+        <th>Page</th><th>Title</th><th>URL</th><th>Report</th><th>Total</th><th>Critical</th><th>Serious</th><th>Moderate</th><th>Minor</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>1</td>
+          <td>Catalog Home | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/" target="_blank">https://pika.clearviewlibrary.org/</a></td>
+          <td><a href="./reports/1.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>10</td>
+          <td>Breathe Like a Bear: 30 Mindful Moments for Kids to Feel Calm...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Hoopla/MWT12142005" target="_blank">https://pika.clearviewlibrary.org/Hoopla/MWT12142005</a></td>
+          <td><a href="./reports/10.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>11</td>
+          <td>Calm : : mindfulness for kids / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/19062" target="_blank">https://pika.clearviewlibrary.org/Record/19062</a></td>
+          <td><a href="./reports/11.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>12</td>
+          <td>Calm monsters, kind monsters : a Sesame Street guide to...</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/66f2e75d-20d7-4be8-79b0-c522f7db805f/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/66f2e75d-20d7-4be8-79b0-c522f7db805f/Home</a></td>
+          <td><a href="./reports/12.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>13</td>
+          <td>Can you hug a forest? / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/305840" target="_blank">https://pika.clearviewlibrary.org/Record/305840</a></td>
+          <td><a href="./reports/13.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>14</td>
+          <td>Crafting calm : : art and activities for mindful kids / |...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/217669" target="_blank">https://pika.clearviewlibrary.org/Record/217669</a></td>
+          <td><a href="./reports/14.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>15</td>
+          <td>Finding calm in nature : : a guide for mindful kids / |...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/344926" target="_blank">https://pika.clearviewlibrary.org/Record/344926</a></td>
+          <td><a href="./reports/15.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>16</td>
+          <td>Follow your breath! : a first book of mindfulness | Clearview...</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/1e6ff318-9a7e-f9fa-514a-5f0cdaa32189/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/1e6ff318-9a7e-f9fa-514a-5f0cdaa32189/Home</a></td>
+          <td><a href="./reports/16.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>17</td>
+          <td>Good night, body : finding calm from head to toe | Clearview...</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/7f5e0168-c81f-a27f-2894-43ae2f2cf255/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/7f5e0168-c81f-a27f-2894-43ae2f2cf255/Home</a></td>
+          <td><a href="./reports/17.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>18</td>
+          <td>Here : : I can be mindful / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/300330" target="_blank">https://pika.clearviewlibrary.org/Record/300330</a></td>
+          <td><a href="./reports/18.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>19</td>
+          <td>I am a peaceful goldfish | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/970510e1-9e63-da34-c89c-143dfbd89894/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/970510e1-9e63-da34-c89c-143dfbd89894/Home</a></td>
+          <td><a href="./reports/19.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>2</td>
+          <td>Login | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/Home" target="_blank">https://pika.clearviewlibrary.org/MyAccount/Home</a></td>
+          <td><a href="./reports/2.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>20</td>
+          <td>I am peace : a book of mindfulness | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/7dba6289-1024-23bc-148f-f7c4ab47424f/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/7dba6289-1024-23bc-148f-f7c4ab47424f/Home</a></td>
+          <td><a href="./reports/20.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>21</td>
+          <td>The in-between book | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/51d7b0a1-303d-757a-ddc6-f6acb99bc52b/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/51d7b0a1-303d-757a-ddc6-f6acb99bc52b/Home</a></td>
+          <td><a href="./reports/21.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>22</td>
+          <td>It's ok : : being kind to yourself when things feel hard / |...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/305644" target="_blank">https://pika.clearviewlibrary.org/Record/305644</a></td>
+          <td><a href="./reports/22.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>23</td>
+          <td>Just breathe, bear / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/339066" target="_blank">https://pika.clearviewlibrary.org/Record/339066</a></td>
+          <td><a href="./reports/23.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>24</td>
+          <td>A kids book about : : mindfulness / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/373147" target="_blank">https://pika.clearviewlibrary.org/Record/373147</a></td>
+          <td><a href="./reports/24.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>25</td>
+          <td>The marvelous now / | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/461721" target="_blank">https://pika.clearviewlibrary.org/Record/461721</a></td>
+          <td><a href="./reports/25.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>26</td>
+          <td>Mindful Mr. Sloth | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/5030c86e-58cc-5922-4e3b-ec04333e0ad8/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/5030c86e-58cc-5922-4e3b-ec04333e0ad8/Home</a></td>
+          <td><a href="./reports/26.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>27</td>
+          <td>Mindfulness and pets | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/31eeef3e-b784-e1e7-5f62-11e4cef9c96b/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/31eeef3e-b784-e1e7-5f62-11e4cef9c96b/Home</a></td>
+          <td><a href="./reports/27.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>28</td>
+          <td>Mindfulness makes me stronger | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/3af051c6-cb8e-d47e-5ec4-67ab76cc0fb9/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/3af051c6-cb8e-d47e-5ec4-67ab76cc0fb9/Home</a></td>
+          <td><a href="./reports/28.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>29</td>
+          <td>Mindfulness on the playground | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/b47b055a-7436-21b5-40a9-5708660fd145/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/b47b055a-7436-21b5-40a9-5708660fd145/Home</a></td>
+          <td><a href="./reports/29.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>3</td>
+          <td>Catalog Home | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/" target="_blank">https://pika.clearviewlibrary.org/</a></td>
+          <td><a href="./reports/3.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>30</td>
+          <td>Mindfulness While Playing Sports | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/563b85bd-3cb1-4972-611b-13b85a8b0abc/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/563b85bd-3cb1-4972-611b-13b85a8b0abc/Home</a></td>
+          <td><a href="./reports/30.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>31</td>
+          <td>Report Web Accessibility Issue | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Help/AccessibilityReport" target="_blank">https://pika.clearviewlibrary.org/Help/AccessibilityReport</a></td>
+          <td><a href="./reports/31.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>32</td>
+          <td>Email to Reset Pin | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/EmailResetPin" target="_blank">https://pika.clearviewlibrary.org/MyAccount/EmailResetPin</a></td>
+          <td><a href="./reports/32.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>33</td>
+          <td>Self Registration | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/SelfReg" target="_blank">https://pika.clearviewlibrary.org/MyAccount/SelfReg</a></td>
+          <td><a href="./reports/33.html" target="_blank">Report</a></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>34</td>
+          <td></td>
+          <td><a href="https://pika.clearviewlibrary.org/Help/Home?topic=advsearch" target="_blank">https://pika.clearviewlibrary.org/Help/Home?topic=advsearch</a></td>
+          <td><a href="./reports/34.html" target="_blank">Report</a></td>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>35</td>
+          <td></td>
+          <td><a href="https://pika.clearviewlibrary.org/Help/Home?topic=search" target="_blank">https://pika.clearviewlibrary.org/Help/Home?topic=search</a></td>
+          <td><a href="./reports/35.html" target="_blank">Report</a></td>
+          <td>5</td>
+          <td>0</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>36</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=available_at_clearview%3A%22Bookmobile%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=available_at_clearview%3A%22Bookmobile%22&sort=title</a></td>
+          <td><a href="./reports/36.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>37</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=available_at_clearview%3A%22Severance+Library%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=available_at_clearview%3A%22Severance+Library%22&sort=title</a></td>
+          <td><a href="./reports/37.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>11</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>38</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=available_at_clearview%3A%22Windsor+Library%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=available_at_clearview%3A%22Windsor+Library%22&sort=title</a></td>
+          <td><a href="./reports/38.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>14</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>39</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=available_at_clearview%3A%22Online+OverDrive+Collection%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=available_at_clearview%3A%22Online+OverDrive+Collection%22&sort=title</a></td>
+          <td><a href="./reports/39.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>4</td>
+          <td>Advanced Search | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/Search/Advanced" target="_blank">https://pika.clearviewlibrary.org/Search/Advanced</a></td>
+          <td><a href="./reports/4.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>0</td>
+          <td>13</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>40</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=format_clearview%3A%22Book%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=format_clearview%3A%22Book%22&sort=title</a></td>
+          <td><a href="./reports/40.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>20</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>41</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=format_clearview%3A%22eBook%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=format_clearview%3A%22eBook%22&sort=title</a></td>
+          <td><a href="./reports/41.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>15</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>42</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=format_clearview%3A%22eAudiobook%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=format_clearview%3A%22eAudiobook%22&sort=title</a></td>
+          <td><a href="./reports/42.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>4</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>43</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=collection_clearview%3A%22Juvenile+Non-Fiction%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=collection_clearview%3A%22Juvenile+Non-Fiction%22&sort=title</a></td>
+          <td><a href="./reports/43.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>20</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>44</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=collection_clearview%3A%22Picture+Book%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=collection_clearview%3A%22Picture+Book%22&sort=title</a></td>
+          <td><a href="./reports/44.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>11</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>45</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=collection_clearview%3A%22Board+Book%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=collection_clearview%3A%22Board+Book%22&sort=title</a></td>
+          <td><a href="./reports/45.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>46</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=local_time_since_added_clearview%3A%22Year%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=local_time_since_added_clearview%3A%22Year%22&sort=title</a></td>
+          <td><a href="./reports/46.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>47</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=local_time_since_added_clearview%3A%22Six+Months%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=local_time_since_added_clearview%3A%22Six+Months%22&sort=title</a></td>
+          <td><a href="./reports/47.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>48</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=target_audience%3A%22Juvenile%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=target_audience%3A%22Juvenile%22&sort=title</a></td>
+          <td><a href="./reports/48.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>20</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>49</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=literary_form_full%3A%22Non+Fiction%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=literary_form_full%3A%22Non+Fiction%22&sort=title</a></td>
+          <td><a href="./reports/49.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>20</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>5</td>
+          <td></td>
+          <td><a href="https://pika.clearviewlibrary.org/AJAX/JSON?method=getHoursAndLocations" target="_blank">https://pika.clearviewlibrary.org/AJAX/JSON?method=getHoursAndLocations</a></td>
+          <td><a href="./reports/5.html" target="_blank">Report</a></td>
+          <td>5</td>
+          <td>0</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>50</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=literary_form_full%3A%22Fiction%22&sort=title" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796?filter%5B%5D=literary_form_full%3A%22Fiction%22&sort=title</a></td>
+          <td><a href="./reports/50.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>11</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>6</td>
+          <td>Mindfulness for Kids | Clearview Library District</td>
+          <td><a href="https://pika.clearviewlibrary.org/MyAccount/MyList/796" target="_blank">https://pika.clearviewlibrary.org/MyAccount/MyList/796</a></td>
+          <td><a href="./reports/6.html" target="_blank">Report</a></td>
+          <td>2</td>
+          <td>20</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>7</td>
+          <td>Be happy : : a little book of mindfulness / | Clearview...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/295685" target="_blank">https://pika.clearviewlibrary.org/Record/295685</a></td>
+          <td><a href="./reports/7.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>8</td>
+          <td>The book of belonging : : Bible stories for modern and...</td>
+          <td><a href="https://pika.clearviewlibrary.org/Record/374878" target="_blank">https://pika.clearviewlibrary.org/Record/374878</a></td>
+          <td><a href="./reports/8.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+        <tr>
+          <td>9</td>
+          <td>Breathe and be : a book of mindfulness poems | Clearview...</td>
+          <td><a href="https://pika.clearviewlibrary.org/GroupedWork/1e633656-bfd9-650a-07e1-13177b9610ca/Home" target="_blank">https://pika.clearviewlibrary.org/GroupedWork/1e633656-bfd9-650a-07e1-13177b9610ca/Home</a></td>
+          <td><a href="./reports/9.html" target="_blank">Report</a></td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <script>
+    const data = {
+      labels: ["1","10","11","12","13","14","15","16","17","18","19","2","20","21","22","23","24","25","26","27","28","29","3","30","31","32","33","34","35","36","37","38","39","4","40","41","42","43","44","45","46","47","48","49","5","50","6","7","8","9"],
+      datasets: [
+        { label: 'Critical', backgroundColor: '#e3342f', data: [0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,11,14,1,0,20,15,4,20,11,1,1,1,20,20,0,11,20,1,1,1] },
+        { label: 'Serious', backgroundColor: '#f6993f', data: [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,1,0,13,1,0,0,0,0,1,0,0,1,0,2,1,1,0,0,0] },
+        { label: 'Moderate', backgroundColor: '#ffed4a', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0] },
+        { label: 'Minor', backgroundColor: '#38c172', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] },
+      ]
+    };
+
+    new Chart(document.getElementById('summaryChart'), {
+      type: 'bar',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Accessibility Violations by Page'
+          },
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true, beginAtZero: true }
+        }
+      }
+    });
+
+    $(document).ready( function () {
+      $('#summary-table').DataTable({
+        paging: false
+      });
+  } );
+
+
+
+  </script>
+</body>
+</html>
