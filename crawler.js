@@ -4,15 +4,67 @@ const { chromium } = require('playwright');
 const axeCore = require('axe-core');
 const { createHtmlReport } = require('axe-html-reporter'); // Correct import
 const robotsParser = require('robots-parser');
-const fetch = require('node-fetch');
 const axios = require('axios');
-const args = require('minimist')(process.argv.slice(2));
+let program;
+let pino;
+let minimist;
+try {
+  ({ program } = require('commander'));
+} catch (e) {
+  program = null;
+}
 
-const START_URL = args.start_url; // Replace with your target
-const SITE_NAME = args.site_name;
-const DATESTAMP = args.datestamp;
-const REPORT_DIR = args.report_dir
-const MAX_PAGES = args.max_pages;
+try {
+  pino = require('pino');
+} catch (e) {
+  pino = null;
+}
+
+try {
+  minimist = require('minimist');
+} catch (e) {
+  minimist = null;
+}
+
+// If `commander` is available use it, otherwise fall back to a noop program
+if (program) {
+  program
+    .option('--start-url <url>')
+    .option('--site-name <name>')
+    .option('--datestamp <date>')
+    .option('--report-dir <dir>', './output')
+    .option('--max-pages <n>', (v) => parseInt(v, 10), 100)
+    .option('--dry-run', 'create output dirs and show config but do not crawl', false)
+    .option('--verbose', 'enable debug logging', false);
+
+  program.parse(process.argv);
+  var opts = program.opts();
+} else {
+  var opts = {};
+}
+
+// Support legacy underscore-style flags and environment variables used by GitHub Actions
+const mm = minimist ? minimist(process.argv.slice(2)) : {};
+const START_URL = opts.startUrl || process.env.SITE_URL || mm.start_url || mm.startUrl;
+const SITE_NAME = opts.siteName || process.env.SITE_NAME || mm.site_name || mm.siteName;
+const DATESTAMP = opts.datestamp || process.env.DATESTAMP || mm.datestamp;
+const REPORT_DIR = opts.reportDir || process.env.REPORT_DIR || mm.report_dir || mm.reportDir || './output';
+const MAX_PAGES = opts.maxPages || process.env.MAX_PAGES || mm.max_pages || mm.maxPages || 100;
+const DRY_RUN = opts.dryRun || process.env.DRY_RUN || mm.dry_run || false;
+
+let logger;
+if (pino) {
+  logger = pino({ level: opts.verbose ? 'debug' : process.env.LOG_LEVEL || 'info' });
+} else {
+  // simple console fallback
+  const level = opts.verbose ? 'debug' : process.env.LOG_LEVEL || 'info';
+  logger = {
+    info: (...a) => console.log('[info]', ...a),
+    debug: (...a) => console.debug('[debug]', ...a),
+    warn: (...a) => console.warn('[warn]', ...a),
+    error: (...a) => console.error('[error]', ...a),
+  };
+}
 
 const DIR_BASE = REPORT_DIR;
 const OUTPUT_DIR = DIR_BASE + '/reports';
@@ -30,24 +82,24 @@ const nonHtmlExts = /\.(css|js|pdf|png|jpe?g|svg|gif|ico|woff2?|ttf|eot|zip|mp4|
 async function createDirectory(directoryPath) {
   try {
     await fs.mkdir(directoryPath, { recursive: true }); // recursive: true creates parent directories if needed
-    console.log(`Directory '${directoryPath}' created successfully.`);
+    logger.info({ dir: directoryPath }, 'Directory created');
   } catch (err) {
     if (err.code === 'EEXIST') {
-      console.log(`Directory '${directoryPath}' already exists.`);
+      logger.debug({ dir: directoryPath }, 'Directory already exists');
     } else {
-      console.error(`Error creating directory: ${err.message}`);
+      logger.error({ err }, 'Error creating directory');
     }
   }
 }
 
 async function loadRobotsTxt() {
   try {
-    const res = await fetch(domain + '/robots.txt');
-    const txt = await res.text();
+    const res = await axios.get(domain + '/robots.txt', { timeout: 5000 });
+    const txt = typeof res.data === 'string' ? res.data : '';
     robots = robotsParser(domain + '/robots.txt', txt);
-    console.log('✅ Loaded robots.txt');
+    logger.info('Loaded robots.txt');
   } catch {
-    console.warn('⚠️ robots.txt not found; crawling anyway.');
+    logger.warn('robots.txt not found; crawling anyway.');
     robots = { isAllowed: () => true };
   }
 }
@@ -67,13 +119,13 @@ function isHtmlPage(url) {
 }
 
 async function crawlPage(page, url) {
-  console.log(`🔍 Crawling: ${url}`);
+  logger.info({ url }, 'Crawling');
   try {
     await page.goto(url, { timeout: 30000, waitUntil: 'domcontentloaded' });
     await page.addScriptTag({ content: axeCore.source });
     return await page.evaluate(() => axe.run());
   } catch (e) {
-    console.error(`❌ Failed on ${url}: ${e.message}`);
+    logger.error({ err: e, url }, 'Failed crawling page');
     return null;
   }
 }
@@ -86,6 +138,18 @@ async function checkLinks(links, baseUrl) {
       const res = await axios.head(link, { maxRedirects: 5, timeout: 5000 });
       results.push({ link, status: res.status });
     } catch (error) {
+      // If HEAD is not allowed (405) try GET as a fallback
+      if (error.response && error.response.status === 405) {
+        try {
+          const res = await axios.get(link, { maxRedirects: 5, timeout: 5000 });
+          results.push({ link, status: res.status });
+          continue;
+        } catch (e) {
+          results.push({ link, status: e.response?.status || null, error: e.code || e.message, source: baseUrl });
+          continue;
+        }
+      }
+
       results.push({
         link,
         status: error.response?.status || null,
@@ -115,6 +179,13 @@ async function extractLinks(page) {
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   if (!fs.existsSync(RAW_JSON_DIR)) fs.mkdirSync(RAW_JSON_DIR, { recursive: true });
 
+  logger.info({ startUrl: START_URL, reportDir: DIR_BASE, maxPages: MAX_PAGES, dryRun: DRY_RUN }, 'Initialization complete');
+
+  if (DRY_RUN) {
+    logger.info('Dry run enabled — skipping network requests and browser launch');
+    process.exit(0);
+  }
+
   await loadRobotsTxt();
 
   const browser = await chromium.launch();
@@ -129,14 +200,25 @@ async function extractLinks(page) {
 
     visited.add(url);
     const results = await crawlPage(page, url);
-    const title = await page.title();
     if (results) {
       count++;
       const safe = `${count}`;
       const title = await page.title();
-      results.url = page.url();
-      results.documentTitle = title;
-      fs.writeFileSync(path.join(RAW_JSON_DIR, safe + '.json'), JSON.stringify(results, null, 2));
+
+      const report = {
+        meta: {
+          scannedAt: new Date().toISOString(),
+          url: page.url(),
+          documentTitle: title,
+          index: count,
+        },
+        results,
+      };
+
+      // write raw JSON report asynchronously
+      await fs.promises.writeFile(path.join(RAW_JSON_DIR, safe + '.json'), JSON.stringify(report, null, 2));
+
+      // create HTML report from the raw axe results (not the wrapped report)
       createHtmlReport({
         results,
         options: {
@@ -156,7 +238,7 @@ async function extractLinks(page) {
 
   await browser.close();
 
-  fs.writeFileSync(LINK_REPORT_PATH, JSON.stringify(allLinkResults, null, 2));
+  await fs.promises.writeFile(LINK_REPORT_PATH, JSON.stringify(allLinkResults, null, 2));
   
   const brokenLinkCount = allLinkResults.length;
   console.log(`❌ Found ${brokenLinkCount} broken links.`);

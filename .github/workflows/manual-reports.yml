@@ -67,6 +67,7 @@ jobs:
           npm install
           npm ci
           npx playwright install
+          npx playwright install-deps
       
       - name: Run a11y scan
         run: node crawler.js --report_dir=$REPORT_DIR --max_pages=$MAX_PAGES  --site_name=$SITE_NAME --start_url=$SITE_URL --datestamp=$DATESTAMP
