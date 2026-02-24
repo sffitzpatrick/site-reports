@@ -35,6 +35,8 @@ if (program) {
     .option('--report-dir <dir>', './output')
     .option('--max-pages <n>', (v) => parseInt(v, 10), 100)
     .option('--dry-run', 'create output dirs and show config but do not crawl', false)
+    .option('--ignore-robots', 'ignore robots.txt restrictions during crawl', false)
+    .option('--user-agent <ua>', 'custom User-Agent header', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
     .option('--verbose', 'enable debug logging', false);
 
   program.parse(process.argv);
@@ -51,6 +53,8 @@ const DATESTAMP = opts.datestamp || process.env.DATESTAMP || mm.datestamp;
 const REPORT_DIR = opts.reportDir || process.env.REPORT_DIR || mm.report_dir || mm.reportDir || './output';
 const MAX_PAGES = opts.maxPages || process.env.MAX_PAGES || mm.max_pages || mm.maxPages || 100;
 const DRY_RUN = opts.dryRun || process.env.DRY_RUN || mm.dry_run || false;
+const IGNORE_ROBOTS = opts.ignoreRobots || process.env.IGNORE_ROBOTS || mm.ignore_robots || false;
+const USER_AGENT = opts.userAgent || process.env.USER_AGENT || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36';
 
 let logger;
 if (pino) {
@@ -93,13 +97,23 @@ async function createDirectory(directoryPath) {
 }
 
 async function loadRobotsTxt() {
+  if (IGNORE_ROBOTS) {
+    logger.info('robots.txt ignored (--ignore-robots flag set)');
+    robots = { isAllowed: () => true };
+    return;
+  }
+
   try {
-    const res = await axios.get(domain + '/robots.txt', { timeout: 5000 });
+    const res = await axios.get(domain + '/robots.txt', { 
+      timeout: 5000,
+      headers: { 'User-Agent': USER_AGENT }
+    });
     const txt = typeof res.data === 'string' ? res.data : '';
     robots = robotsParser(domain + '/robots.txt', txt);
     logger.info('Loaded robots.txt');
-  } catch {
-    logger.warn('robots.txt not found; crawling anyway.');
+    logger.debug({ robotsTxt: txt.split('\n').slice(0, 10).join(' ') }, 'robots.txt excerpt (first 10 lines)');
+  } catch (e) {
+    logger.warn({ err: e.code || e.message }, 'robots.txt not found; crawling anyway.');
     robots = { isAllowed: () => true };
   }
 }
@@ -122,6 +136,10 @@ async function crawlPage(page, url) {
   logger.info({ url }, 'Crawling');
   try {
     await page.goto(url, { timeout: 30000, waitUntil: 'domcontentloaded' });
+    // Wait for network to idle to ensure dynamically-loaded links are present
+    await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {
+      logger.debug('Network idle timeout; proceeding anyway');
+    });
     await page.addScriptTag({ content: axeCore.source });
     return await page.evaluate(() => axe.run());
   } catch (e) {
@@ -135,13 +153,21 @@ async function checkLinks(links, baseUrl) {
 
   for (const link of links) {
     try {
-      const res = await axios.head(link, { maxRedirects: 5, timeout: 5000 });
+      const res = await axios.head(link, { 
+        maxRedirects: 5, 
+        timeout: 5000,
+        headers: { 'User-Agent': USER_AGENT }
+      });
       results.push({ link, status: res.status });
     } catch (error) {
       // If HEAD is not allowed (405) try GET as a fallback
       if (error.response && error.response.status === 405) {
         try {
-          const res = await axios.get(link, { maxRedirects: 5, timeout: 5000 });
+          const res = await axios.get(link, { 
+            maxRedirects: 5, 
+            timeout: 5000,
+            headers: { 'User-Agent': USER_AGENT }
+          });
           results.push({ link, status: res.status });
           continue;
         } catch (e) {
@@ -167,11 +193,22 @@ let allLinkResults = [];
 
 async function extractLinks(page) {
   const hrefs = await page.$$eval('a[href]', els => els.map(el => el.href));
-  return new Set(
-    hrefs
-      .map(normalizeUrl)
-      .filter(u => u && isHtmlPage(u) && !visited.has(u) && robots.isAllowed(u))
-  );
+  const raw = hrefs.length;
+
+  const normalized = hrefs.map(normalizeUrl).filter(u => u);
+  const htmlOnly = normalized.filter(u => isHtmlPage(u));
+  const notVisited = htmlOnly.filter(u => !visited.has(u));
+  const allowed = IGNORE_ROBOTS ? notVisited : notVisited.filter(u => robots.isAllowed(u));
+
+  logger.debug({
+    rawCount: raw,
+    afterNormalize: normalized.length,
+    htmlFiltered: htmlOnly.length,
+    notYetVisited: notVisited.length,
+    robotsAllowed: allowed.length,
+  }, 'Link extraction breakdown');
+
+  return new Set(allowed);
 }
 
 (async () => {
@@ -196,7 +233,7 @@ async function extractLinks(page) {
   while (toVisit.size && count < MAX_PAGES) {
     const url = toVisit.values().next().value;
     toVisit.delete(url);
-    if (!robots.isAllowed(url)) continue;
+    if (!IGNORE_ROBOTS && !robots.isAllowed(url)) continue;
 
     visited.add(url);
     const results = await crawlPage(page, url);

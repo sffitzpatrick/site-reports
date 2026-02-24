@@ -38,14 +38,6 @@ node crawler.js --start-url=https://example.com --report-dir=tmp-out --max-pages
 node crawler.js --start-url=https://example.com --report-dir=tmp-out --max-pages=1
 ```
 
-**Docker** (no host deps needed)
-
-Run inside Playwright's official image (adjust tag if needed):
-
-```bash
-docker run --rm -v "$PWD":/work -w /work mcr.microsoft.com/playwright:latest \
-	node crawler.js --start-url=https://example.com --report-dir=/work/tmp-out --max-pages=1
-```
 
 **Supported CLI flags and env fallbacks**
 - `--start-url` (or `--start_url` / env `SITE_URL`) — site to crawl
@@ -54,12 +46,9 @@ docker run --rm -v "$PWD":/work -w /work mcr.microsoft.com/playwright:latest \
 - `--site-name` (or `--site_name` / env `SITE_NAME`) — human label
 - `--datestamp` (env `DATESTAMP`) — optional datestamp
 - `--dry-run` — create dirs and show config, skip crawling
+- `--ignore-robots` (env `IGNORE_ROBOTS`) — bypass robots.txt restrictions
+- `--user-agent <ua>` (env `USER_AGENT`) — custom User-Agent header (default: Chrome on Windows)
 
 The CLI accepts both hyphenated flags (recommended) and underscore-style flags used in existing GitHub Actions. Environment variables are also supported so existing workflows don't need changes.
 
-**Notes & recommendations**
-- Prefer `axios` (used across the codebase) rather than ESM-only `node-fetch` to avoid CommonJS/ESM mismatches.
-- Consider modularizing `crawler.js` into `lib/crawler.js`, `lib/link-checker.js`, and a thin `bin/crawl.js` entry point for easier testing.
-- Add `npx playwright install-deps` to any CI or container setup step to ensure Playwright can launch browsers on Linux runners.
 
-If you want, I can split `crawler.js` into modules and add a small test harness next.
