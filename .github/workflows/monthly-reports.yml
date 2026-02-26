@@ -26,16 +26,17 @@ jobs:
         site:
           - name: clearview-drupal
             url: https://clearviewlibrary.org
-            report_recipient: brad@clearviewlibrary.org
             max_pages: 500
           - name: clearview-communico
             url: https://clearview.libnet.info/events
-            report_recipient: brad@clearviewlibrary.org
             max_pages: 500
           - name: clearview-pika
             url: https://pika.clearviewlibrary.org/
-            report_recipient: brad@clearviewlibrary.org
             max_pages: 50
+          - name: amigos-drupal
+            url: https://www.amigos.org/
+            max_pages: 50
+
 
     env:
       SITE_NAME: ${{ matrix.site.name }}

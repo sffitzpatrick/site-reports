@@ -77,7 +77,7 @@ const LINK_REPORT_PATH = path.join(DIR_BASE, 'link_issues.json');
 
 const visited = new Set();
 const toVisit = new Set([START_URL]);
-const domain = new URL(START_URL).origin;
+const domain = normalizeDomain(START_URL);
 
 
 let robots;
@@ -118,6 +118,16 @@ async function loadRobotsTxt() {
   }
 }
 
+function normalizeDomain(url) {
+  try {
+    const u = new URL(url);
+    u.hostname = u.hostname.replace(/^www\./, '');
+    return u.origin;
+  } catch {
+    return null;
+  }
+}
+
 function normalizeUrl(url) {
   try {
     const u = new URL(url, domain);
@@ -129,7 +139,12 @@ function normalizeUrl(url) {
 }
 
 function isHtmlPage(url) {
-  return url.startsWith(domain) && !nonHtmlExts.test(url);
+  try {
+    const normalizedUrlOrigin = normalizeDomain(url);
+    return normalizedUrlOrigin === domain && !nonHtmlExts.test(url);
+  } catch {
+    return false;
+  }
 }
 
 async function crawlPage(page, url) {
