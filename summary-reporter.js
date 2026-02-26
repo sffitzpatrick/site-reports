@@ -5,10 +5,10 @@ const { JSDOM } = require('jsdom');
 const csvWriter = require('csv-writer').createObjectCsvWriter;
 
 const args = require('minimist')(process.argv.slice(2));
-const SITE_NAME = args.site_name;
-const DATESTAMP = args.datestamp;
-const REPORT_DIR = args.report_dir
-const SITE_URL = args.start_url
+const SITE_NAME = args['site-name'];
+const DATESTAMP = args['datestamp'];
+const REPORT_DIR = args['report-dir']
+const SITE_URL = args['start-url']
 
 const DIR_BASE = REPORT_DIR;
 
