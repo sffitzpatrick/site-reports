@@ -2,31 +2,19 @@ const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
 const axeCore = require('axe-core');
-const { createHtmlReport } = require('axe-html-reporter'); // Correct import
+const { createHtmlReport } = require('axe-html-reporter');
 const robotsParser = require('robots-parser');
 const axios = require('axios');
-let program;
-let pino;
-let minimist;
-try {
-  ({ program } = require('commander'));
-} catch (e) {
-  program = null;
-}
 
-try {
-  pino = require('pino');
-} catch (e) {
-  pino = null;
-}
+let program, pino, minimist;
 
-try {
-  minimist = require('minimist');
-} catch (e) {
-  minimist = null;
-}
+try { ({ program } = require('commander')); } catch { program = null; }
+try { pino = require('pino'); } catch { pino = null; }
+try { minimist = require('minimist'); } catch { minimist = null; }
 
-// If `commander` is available use it, otherwise fall back to a noop program
+// -----------------------------
+// CLI / Options
+// -----------------------------
 if (program) {
   program
     .option('--start-url <url>')
@@ -40,18 +28,21 @@ if (program) {
     .option('--verbose', 'enable debug logging', false);
 
   program.parse(process.argv);
-  var opts = program.opts();
-} else {
-  var opts = {};
 }
 
-// Support legacy underscore-style flags and environment variables used by GitHub Actions
+const opts = program ? program.opts() : {};
 const mm = minimist ? minimist(process.argv.slice(2)) : {};
+
 const START_URL = opts.startUrl || process.env.SITE_URL || mm.start_url || mm.startUrl;
+if (!START_URL) {
+  console.error('❌ START_URL is required (--start-url or SITE_URL env var)');
+  process.exit(1);
+}
+
 const SITE_NAME = opts.siteName || process.env.SITE_NAME || mm.site_name || mm.siteName;
 const DATESTAMP = opts.datestamp || process.env.DATESTAMP || mm.datestamp;
 const REPORT_DIR = opts.reportDir || process.env.REPORT_DIR || mm.report_dir || mm.reportDir || './output';
-const MAX_PAGES = opts.maxPages || process.env.MAX_PAGES || mm.max_pages || mm.maxPages || 100;
+const MAX_PAGES = parseInt(opts.maxPages || process.env.MAX_PAGES || mm.max_pages || mm.maxPages || 100, 10);
 const DRY_RUN = opts.dryRun || process.env.DRY_RUN || mm.dry_run || false;
 const IGNORE_ROBOTS = opts.ignoreRobots || process.env.IGNORE_ROBOTS || mm.ignore_robots || false;
 const USER_AGENT = opts.userAgent || process.env.USER_AGENT || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36';
@@ -60,7 +51,6 @@ let logger;
 if (pino) {
   logger = pino({ level: opts.verbose ? 'debug' : process.env.LOG_LEVEL || 'info' });
 } else {
-  // simple console fallback
   const level = opts.verbose ? 'debug' : process.env.LOG_LEVEL || 'info';
   logger = {
     info: (...a) => console.log('[info]', ...a),
@@ -71,21 +61,26 @@ if (pino) {
 }
 
 const DIR_BASE = REPORT_DIR;
-const OUTPUT_DIR = DIR_BASE + '/reports';
-const RAW_JSON_DIR = DIR_BASE + '/axe_json';
+const OUTPUT_DIR = path.join(DIR_BASE, 'reports');
+const RAW_JSON_DIR = path.join(DIR_BASE, 'axe_json');
 const LINK_REPORT_PATH = path.join(DIR_BASE, 'link_issues.json');
 
 const visited = new Set();
 const toVisit = new Set([START_URL]);
-const domain = normalizeDomain(START_URL);
+const baseUrl = new URL(START_URL);
+const domainHost = baseUrl.hostname.replace(/^www\./, '');
 
-
-let robots;
 const nonHtmlExts = /\.(css|js|pdf|png|jpe?g|svg|gif|ico|woff2?|ttf|eot|zip|mp4|mp3)$/i;
 
+let robots;
+let allLinkResults = [];
+
+// -----------------------------
+// Helpers
+// -----------------------------
 async function createDirectory(directoryPath) {
   try {
-    await fs.mkdir(directoryPath, { recursive: true }); // recursive: true creates parent directories if needed
+    await fs.promises.mkdir(directoryPath, { recursive: true });
     logger.info({ dir: directoryPath }, 'Directory created');
   } catch (err) {
     if (err.code === 'EEXIST') {
@@ -104,12 +99,10 @@ async function loadRobotsTxt() {
   }
 
   try {
-    const res = await axios.get(domain + '/robots.txt', { 
-      timeout: 5000,
-      headers: { 'User-Agent': USER_AGENT }
-    });
+    const robotsUrl = baseUrl.origin + '/robots.txt';
+    const res = await axios.get(robotsUrl, { timeout: 5000, headers: { 'User-Agent': USER_AGENT } });
     const txt = typeof res.data === 'string' ? res.data : '';
-    robots = robotsParser(domain + '/robots.txt', txt);
+    robots = robotsParser(robotsUrl, txt);
     logger.info('Loaded robots.txt');
     logger.debug({ robotsTxt: txt.split('\n').slice(0, 10).join(' ') }, 'robots.txt excerpt (first 10 lines)');
   } catch (e) {
@@ -118,21 +111,12 @@ async function loadRobotsTxt() {
   }
 }
 
-function normalizeDomain(url) {
-  try {
-    const u = new URL(url);
-    u.hostname = u.hostname.replace(/^www\./, '');
-    return u.origin;
-  } catch {
-    return null;
-  }
-}
-
 function normalizeUrl(url) {
   try {
-    const u = new URL(url, domain);
+    const u = new URL(url, START_URL);
     u.hash = '';
-    return u.href;
+    u.hostname = u.hostname.replace(/^www\./, '');
+    return u.href.replace(/\/$/, '');
   } catch {
     return null;
   }
@@ -140,8 +124,9 @@ function normalizeUrl(url) {
 
 function isHtmlPage(url) {
   try {
-    const normalizedUrlOrigin = normalizeDomain(url);
-    return normalizedUrlOrigin === domain && !nonHtmlExts.test(url);
+    const u = new URL(url);
+    const host = u.hostname.replace(/^www\./, '');
+    return host === domainHost && !nonHtmlExts.test(u.pathname);
   } catch {
     return false;
   }
@@ -151,10 +136,7 @@ async function crawlPage(page, url) {
   logger.info({ url }, 'Crawling');
   try {
     await page.goto(url, { timeout: 30000, waitUntil: 'domcontentloaded' });
-    // Wait for network to idle to ensure dynamically-loaded links are present
-    await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {
-      logger.debug('Network idle timeout; proceeding anyway');
-    });
+    await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => logger.debug('Network idle timeout; proceeding anyway'));
     await page.addScriptTag({ content: axeCore.source });
     return await page.evaluate(() => axe.run());
   } catch (e) {
@@ -163,55 +145,12 @@ async function crawlPage(page, url) {
   }
 }
 
-async function checkLinks(links, baseUrl) {
-  const results = [];
-
-  for (const link of links) {
-    try {
-      const res = await axios.head(link, { 
-        maxRedirects: 5, 
-        timeout: 5000,
-        headers: { 'User-Agent': USER_AGENT }
-      });
-      results.push({ link, status: res.status });
-    } catch (error) {
-      // If HEAD is not allowed (405) try GET as a fallback
-      if (error.response && error.response.status === 405) {
-        try {
-          const res = await axios.get(link, { 
-            maxRedirects: 5, 
-            timeout: 5000,
-            headers: { 'User-Agent': USER_AGENT }
-          });
-          results.push({ link, status: res.status });
-          continue;
-        } catch (e) {
-          results.push({ link, status: e.response?.status || null, error: e.code || e.message, source: baseUrl });
-          continue;
-        }
-      }
-
-      results.push({
-        link,
-        status: error.response?.status || null,
-        error: error.code || error.message,
-        source: baseUrl,
-      });
-    }
-  }
-
-  return results;
-}
-
-let allLinkResults = [];
-
-
 async function extractLinks(page) {
   const hrefs = await page.$$eval('a[href]', els => els.map(el => el.href));
   const raw = hrefs.length;
 
   const normalized = hrefs.map(normalizeUrl).filter(u => u);
-  const htmlOnly = normalized.filter(u => isHtmlPage(u));
+  const htmlOnly = normalized.filter(isHtmlPage);
   const notVisited = htmlOnly.filter(u => !visited.has(u));
   const allowed = IGNORE_ROBOTS ? notVisited : notVisited.filter(u => robots.isAllowed(u));
 
@@ -226,12 +165,33 @@ async function extractLinks(page) {
   return new Set(allowed);
 }
 
-(async () => {
-  if (!fs.existsSync(DIR_BASE)) fs.mkdirSync(DIR_BASE, { recursive: true });
-  if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-  if (!fs.existsSync(RAW_JSON_DIR)) fs.mkdirSync(RAW_JSON_DIR, { recursive: true });
+async function checkLinks(links, baseUrl) {
+  const checks = links.map(async (link) => {
+    try {
+      const res = await axios.head(link, { maxRedirects: 5, timeout: 5000, headers: { 'User-Agent': USER_AGENT } });
+      return { link, status: res.status };
+    } catch (error) {
+      return {
+        link,
+        status: error.response?.status || null,
+        error: error.code || error.message,
+        source: baseUrl,
+      };
+    }
+  });
 
-  logger.info({ startUrl: START_URL, reportDir: DIR_BASE, maxPages: MAX_PAGES, dryRun: DRY_RUN }, 'Initialization complete');
+  return Promise.all(checks);
+}
+
+// -----------------------------
+// Crawl Loop
+// -----------------------------
+(async () => {
+  await createDirectory(DIR_BASE);
+  await createDirectory(OUTPUT_DIR);
+  await createDirectory(RAW_JSON_DIR);
+
+  logger.info({ startUrl: START_URL, domainHost, reportDir: DIR_BASE, maxPages: MAX_PAGES, dryRun: DRY_RUN }, 'Initialization complete');
 
   if (DRY_RUN) {
     logger.info('Dry run enabled — skipping network requests and browser launch');
@@ -246,38 +206,29 @@ async function extractLinks(page) {
   let count = 0;
 
   while (toVisit.size && count < MAX_PAGES) {
-    const url = toVisit.values().next().value;
-    toVisit.delete(url);
-    if (!IGNORE_ROBOTS && !robots.isAllowed(url)) continue;
+    const rawUrl = toVisit.values().next().value;
+    toVisit.delete(rawUrl);
 
+    const url = normalizeUrl(rawUrl);
+    if (!url) continue;
+    if (visited.has(url)) continue;
     visited.add(url);
+
+    if (!IGNORE_ROBOTS && !robots.isAllowed(url)) {
+      logger.debug({ url }, 'URL blocked by robots.txt');
+      continue;
+    }
+
     const results = await crawlPage(page, url);
     if (results) {
       count++;
       const safe = `${count}`;
       const title = await page.title();
 
-      const report = {
-        meta: {
-          scannedAt: new Date().toISOString(),
-          url: page.url(),
-          documentTitle: title,
-          index: count,
-        },
-        results,
-      };
-
-      // write raw JSON report asynchronously
+      const report = { meta: { scannedAt: new Date().toISOString(), url, documentTitle: title, index: count }, results };
       await fs.promises.writeFile(path.join(RAW_JSON_DIR, safe + '.json'), JSON.stringify(report, null, 2));
 
-      // create HTML report from the raw axe results (not the wrapped report)
-      createHtmlReport({
-        results,
-        options: {
-          outputDir: OUTPUT_DIR,
-          reportFileName: safe + '.html'
-        }
-      });
+      createHtmlReport({ results, options: { outputDir: OUTPUT_DIR, reportFileName: safe + '.html' } });
     }
 
     const links = await extractLinks(page);
@@ -289,16 +240,10 @@ async function extractLinks(page) {
   }
 
   await browser.close();
-
   await fs.promises.writeFile(LINK_REPORT_PATH, JSON.stringify(allLinkResults, null, 2));
-  
+
   const brokenLinkCount = allLinkResults.length;
   console.log(`❌ Found ${brokenLinkCount} broken links.`);
   console.log(`🔗 Link check report written to ${LINK_REPORT_PATH}`);
   console.log(`✅ Completed. Scanned ${count} pages - reports in ./${OUTPUT_DIR}`);
-
-  // const core = require('@actions/core');
-  // core.setOutput('broken_count', brokenLinkCount);
-
-
 })();
