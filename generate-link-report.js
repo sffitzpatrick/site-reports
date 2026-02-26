@@ -2,14 +2,14 @@ const fs = require('fs');
 const path = require('path');
 
 const args = require('minimist')(process.argv.slice(2));
-const SITE_NAME = args['site-name'];
-const DATESTAMP = args['datestamp'];
-const REPORT_DIR = args['report-dir'];
+const SITE_NAME = args.site_name;
+const DATESTAMP = args.datestamp;
+const REPORT_DIR = args.report_dir;
 
 const DIR_BASE = REPORT_DIR;
 
 const inputFile = DIR_BASE + '/link_issues.json'; // e.g., 'docs/reports/2025-07-08/example/link_issues.json'
-const outputFile = args['output-file'] || DIR_BASE + '/link-report.html';
+const outputFile = args.output_file || DIR_BASE + '/link-report.html';
 
 
 if (!fs.existsSync(inputFile)) {
