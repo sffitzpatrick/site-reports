@@ -68,23 +68,33 @@ jobs:
           npm ci
           npx playwright install
           npx playwright install-deps
+
+      - name: Debug environment variables
+        run: |
+          echo "SITE_NAME=$SITE_NAME"
+          echo "SITE_URL=$SITE_URL"
+          echo "MAX_PAGES=$MAX_PAGES"
+          echo "DATESTAMP=$DATESTAMP"
+          echo "REPORT_DIR=$REPORT_DIR"
+          echo "Directory exists: $(test -d "$REPORT_DIR" && echo 'YES' || echo 'NO')"
+          ls -la "$REPORT_DIR" || echo "Directory does not exist"
       
       - name: Run a11y scan
-        run: node crawler.js --report-dir=$REPORT_DIR --max-pages=$MAX_PAGES  --site-name=$SITE_NAME --start-url=$SITE_URL --datestamp=$DATESTAMP
+        run: node crawler.js --report-dir="$REPORT_DIR" --max-pages="$MAX_PAGES" --site-name="$SITE_NAME" --start-url="$SITE_URL" --datestamp="$DATESTAMP"
 
       - name: Generate a11y reports
-        run: node summary-reporter.js --report-dir=$REPORT_DIR --site-name=$SITE_NAME --start-url=$SITE_URL --datestamp=$DATESTAMP
+        run: node summary-reporter.js --report-dir="$REPORT_DIR" --site-name="$SITE_NAME" --start-url="$SITE_URL" --datestamp="$DATESTAMP"
 
       - name: Generate broken link report
-        run:  node generate-link-report.js --report-dir=$REPORT_DIR --site-name=$SITE_NAME --datestamp=$DATESTAMP
+        run: node generate-link-report.js --report-dir="$REPORT_DIR" --site-name="$SITE_NAME" --datestamp="$DATESTAMP"
 
       - name: Generate HTML Dashboard
         run: |
           node generate-dashboard.js \
-            --output-dir $REPORT_DIR \
-            --site-name "${{ env.SITE_NAME }}" \
-            --datestamp "${{ env.DATESTAMP }}" \
-            --page-count ${{ steps.count_pages.outputs.total }}
+            --output-dir "$REPORT_DIR" \
+            --site-name "$SITE_NAME" \
+            --datestamp "$DATESTAMP" \
+            --page-count 0
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
