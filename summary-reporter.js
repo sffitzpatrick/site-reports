@@ -48,12 +48,14 @@ fs.readdirSync(JSON_DIR).forEach(file => {
     return;
   }
 
-  // Support old and new axe-core structures
   const violations = data.violations || data.results?.violations || [];
   const passes = data.passes || data.results?.passes || [];
 
   const counts = { critical: 0, serious: 0, moderate: 0, minor: 0 };
   let severityScore = 0;
+
+  const pageUrl = data.url || data.meta?.url || '';
+  const pageTitle = data.documentTitle || data.meta?.documentTitle || '';
 
   console.log(`Processing ${file} — ${violations.length} violations, ${passes.length} passes`);
 
@@ -69,8 +71,8 @@ fs.readdirSync(JSON_DIR).forEach(file => {
     v.nodes?.forEach(node => {
       allViolations.push({
         page: file.replace('.json', ''),
-        url: data.url || data.meta?.url || '',
-        title: data.documentTitle || data.meta?.documentTitle || '',
+        url: pageUrl,
+        title: pageTitle,
         impact: impact,
         id: v.id || '',
         description: v.description || '',
@@ -83,9 +85,9 @@ fs.readdirSync(JSON_DIR).forEach(file => {
 
   summary.push({
     page: file.replace('.json', ''),
+    pageTitle,
+    pageUrl,
     reportLink: `./reports/${file.replace('.json', '.html')}`,
-    url: data.url || data.meta?.url || '',
-    title: data.documentTitle || data.meta?.documentTitle || '',
     totalViolations: violations.length,
     totalPasses: passes.length,
     severityScore,
@@ -100,8 +102,8 @@ csvWriter({
   path: CSV_PATH,
   header: [
     { id: 'page', title: 'Page' },
-    { id: 'url', title: 'URL' },
-    { id: 'title', title: 'Title' },
+    { id: 'pageTitle', title: 'Title' },
+    { id: 'pageUrl', title: 'URL' },
     { id: 'reportLink', title: 'Report Link' },
     { id: 'totalViolations', title: 'Total Violations' },
     { id: 'totalPasses', title: 'Total Passes' },
@@ -167,6 +169,7 @@ canvas { max-width: 900px; margin: 2rem auto; display: block; }
 <tr>
 <th>Page</th>
 <th>Title</th>
+<th>Report</th>
 <th>Total Violations</th>
 <th>Passes</th>
 <th>Critical</th>
@@ -180,7 +183,8 @@ canvas { max-width: 900px; margin: 2rem auto; display: block; }
 ${summary.map(row => `
 <tr>
 <td>${row.page}</td>
-<td>${row.title}</td>
+<td><a href="${row.pageUrl}" target="_blank">${row.pageTitle}</a></td>
+<td><a href="${row.reportLink}" target="_blank">View Report</a></td>
 <td>${row.totalViolations}</td>
 <td>${row.totalPasses}</td>
 <td>${row.critical}</td>
