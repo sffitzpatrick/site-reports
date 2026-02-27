@@ -5,10 +5,10 @@ const { JSDOM } = require('jsdom');
 const csvWriter = require('csv-writer').createObjectCsvWriter;
 
 const args = require('minimist')(process.argv.slice(2));
-const SITE_NAME = args.site_name || process.env.SITE_NAME;
+const SITE_NAME = args['site-name'] || process.env.SITE_NAME;
 const DATESTAMP = args.datestamp || process.env.DATESTAMP;
-const REPORT_DIR = args.report_dir || process.env.REPORT_DIR;
-const SITE_URL = args.start_url || process.env.SITE_URL;
+const REPORT_DIR = args['report-dir'] || process.env.REPORT_DIR;
+const SITE_URL = args['start-url'] || process.env.SITE_URL;
 
 const DIR_BASE = REPORT_DIR;
 
@@ -24,7 +24,9 @@ fs.readdirSync(JSON_DIR).forEach(file => {
   if (!file.endsWith('.json')) return;
   const data = JSON.parse(fs.readFileSync(path.join(JSON_DIR, file), 'utf-8'));
   const counts = { critical: 0, serious: 0, moderate: 0, minor: 0 };
-
+  if(!data.violations || data.violations.length === 0) {
+    console.warn(`⚠️ No violations found in ${file}, skipping...`);
+    return;
   data.violations.forEach(v => {
     const impact = v.impact || 'minor';
     if (counts[impact] !== undefined) {
@@ -44,6 +46,7 @@ fs.readdirSync(JSON_DIR).forEach(file => {
       });
     });
   });
+}
 
   summary.push({
     page: file.replace('.json', ''),

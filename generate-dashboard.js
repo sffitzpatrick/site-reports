@@ -6,10 +6,10 @@ const { format } = require('date-fns');
 const args = require('minimist')(process.argv.slice(2));
 
 // Parse CLI args
-const REPORT_DIR = args.output_dir || process.env.REPORT_DIR; // e.g. docs/reports/2025-07-08/example/reports
-const SITE_NAME = args.site_name || process.env.SITE_NAME || 'Unnamed Site';
+const REPORT_DIR = args['output-dir'] || process.env.REPORT_DIR; // e.g. docs/reports/2025-07-08/example/reports
+const SITE_NAME = args['site-name'] || process.env.SITE_NAME || 'Unnamed Site';
 const DATESTAMP = args.datestamp || process.env.DATESTAMP;
-const PAGE_COUNT = args.page_count || process.env.PAGE_COUNT || '?';
+const PAGE_COUNT = args['page-count'] || process.env.PAGE_COUNT || '?';
 
 // Validate directory
 if (!REPORT_DIR || !fs.existsSync(REPORT_DIR)) {
