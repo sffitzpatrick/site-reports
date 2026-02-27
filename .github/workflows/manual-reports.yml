@@ -91,7 +91,7 @@ jobs:
       - name: Generate HTML Dashboard
         run: |
           node generate-dashboard.js \
-            --output-dir "$REPORT_DIR" \
+            --report-dir "$REPORT_DIR" \
             --site-name "$SITE_NAME" \
             --datestamp "$DATESTAMP" \
             --page-count 0

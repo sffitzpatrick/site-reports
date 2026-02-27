@@ -6,7 +6,7 @@ const { format } = require('date-fns');
 const args = require('minimist')(process.argv.slice(2));
 
 // Parse CLI args
-const REPORT_DIR = args['output-dir'] || process.env.REPORT_DIR; // e.g. docs/reports/2025-07-08/example/reports
+const REPORT_DIR = args['report-dir'] || process.env.REPORT_DIR; // e.g. docs/reports/2025-07-08/example/reports
 const SITE_NAME = args['site-name'] || process.env.SITE_NAME || 'Unnamed Site';
 const DATESTAMP = args.datestamp || process.env.DATESTAMP;
 const PAGE_COUNT = args['page-count'] || process.env.PAGE_COUNT || '?';
@@ -24,7 +24,8 @@ const reportFiles = fs.readdirSync(REPORT_DIR).filter(file =>
 const now = format(new Date(), 'yyyy-MM-dd HH:mm:ss');
 
 const rows = reportFiles.map(file => {
-  const href = path.join(path.basename(REPORT_DIR), file);
+  const href = file;
+
   const type = file.endsWith('.csv') ? 'CSV' : 'HTML';
   return `<tr>
     <td>${file}</td>
