@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Accessibility Summary</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+<style>
+body { font-family: sans-serif; padding: 2rem; }
+table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+th { background: #f4f4f4; }
+canvas { max-width: 900px; margin: 2rem auto; display: block; }
+</style>
+</head>
+<body>
+
+<h1>Accessibility Audit Summary</h1>
+<h2>Site URL: https://www.amigos.org/</h2>
+
+<canvas id="summaryChart"></canvas>
+
+<table id="summary-table">
+<thead>
+<tr>
+<th>Page</th>
+<th>Title</th>
+<th>Report</th>
+<th>Total Violations</th>
+<th>Passes</th>
+<th>Critical</th>
+<th>Serious</th>
+<th>Moderate</th>
+<th>Minor</th>
+<th>Severity Score</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+
+<script>
+const chartData = {
+  labels: [],
+  datasets: [
+    { label: 'Critical', backgroundColor: '#e3342f', data: [] },
+    { label: 'Serious', backgroundColor: '#f6993f', data: [] },
+    { label: 'Moderate', backgroundColor: '#ffed4a', data: [] },
+    { label: 'Minor', backgroundColor: '#38c172', data: [] }
+  ]
+};
+
+new Chart(document.getElementById('summaryChart'), {
+  type: 'bar',
+  data: chartData,
+  options: {
+    responsive: true,
+    scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } }
+  }
+});
+
+$(document).ready(function() {
+  $('#summary-table').DataTable({ paging: false });
+});
+</script>
+
+</body>
+</html>
