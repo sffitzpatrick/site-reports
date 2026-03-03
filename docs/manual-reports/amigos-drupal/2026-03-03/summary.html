@@ -1,0 +1,6571 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Accessibility Summary</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+<style>
+body { font-family: sans-serif; padding: 2rem; }
+table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+th { background: #f4f4f4; }
+canvas { max-width: 900px; margin: 2rem auto; display: block; }
+</style>
+</head>
+<body>
+
+<h1>Accessibility Audit Summary</h1>
+<h2>Site URL: https://amigos.org</h2>
+
+<canvas id="summaryChart"></canvas>
+
+<table id="summary-table">
+<thead>
+<tr>
+<th>Page</th>
+<th>Title</th>
+<th>Report</th>
+<th>Total Violations</th>
+<th>Passes</th>
+<th>Critical</th>
+<th>Serious</th>
+<th>Moderate</th>
+<th>Minor</th>
+<th>Severity Score</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>1</td>
+<td><a href="https://amigos.org" target="_blank">Homepage | Amigos Library Services</a></td>
+<td><a href="./reports/1.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://amigos.org/services/resource-sharing" target="_blank">Amigos Library Services Resource Sharing | Amigos Library Services</a></td>
+<td><a href="./reports/10.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>100</td>
+<td><a href="https://amigos.org/memberconference/2024" target="_blank">Leading. Partnering. Connecting. The Amigos Member Conference 2024 | Amigos Library Services</a></td>
+<td><a href="./reports/100.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>101</td>
+<td><a href="https://amigos.org/memberconference/2023" target="_blank">Amigos Member Conference 2023: Libraries Plan to Succeed | Amigos Library Services</a></td>
+<td><a href="./reports/101.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>102</td>
+<td><a href="https://amigos.org/membership/member-directory?order=field_oclc_symbol&sort=asc" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/102.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>103</td>
+<td><a href="https://amigos.org/membership/member-directory?order=title&sort=desc" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/103.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>104</td>
+<td><a href="https://amigos.org/membership/member-directory?order=field_city&sort=asc" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/104.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>105</td>
+<td><a href="https://amigos.org/membership/member-directory?order=field_state&sort=asc" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/105.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>106</td>
+<td><a href="https://amigos.org/node/9715" target="_blank">Member Contact Update Form | Amigos Library Services</a></td>
+<td><a href="./reports/106.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>107</td>
+<td><a href="https://amigos.org/node/9718" target="_blank">Institution Update Form | Amigos Library Services</a></td>
+<td><a href="./reports/107.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>108</td>
+<td><a href="https://amigos.org/node/266" target="_blank">Amigos Resource Sharing Agreement | Amigos Library Services</a></td>
+<td><a href="./reports/108.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td><strong>6</strong></td>
+</tr>
+
+<tr>
+<td>109</td>
+<td><a href="https://amigos.org/news/updates-and-new-journals-project-muse" target="_blank">Updates and New Journals from Project MUSE | Amigos Library Services</a></td>
+<td><a href="./reports/109.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://amigos.org/services/digital-repository" target="_blank">Digital Repository Service | Amigos Library Services</a></td>
+<td><a href="./reports/11.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>110</td>
+<td><a href="https://amigos.org/news/share-research-coevolution-your-campus" target="_blank">Share Research on Coevolution with Your Campus | Amigos Library Services</a></td>
+<td><a href="./reports/110.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>111</td>
+<td><a href="https://amigos.org/news/resource-sharing-and-services" target="_blank">Resource Sharing & Services | Amigos Library Services</a></td>
+<td><a href="./reports/111.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>112</td>
+<td><a href="https://amigos.org/news/trans-amigos-express-forms-moving-tae-label-maker-monday-february-23" target="_blank">Trans-Amigos Express Forms Moving to the TAE Label Maker on Monday, February 23 | Amigos Library Services</a></td>
+<td><a href="./reports/112.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>113</td>
+<td><a href="https://amigos.org/news/archive" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/113.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>114</td>
+<td><a href="https://amigos.org/news/membership-and-people" target="_blank">Membership & People | Amigos Library Services</a></td>
+<td><a href="./reports/114.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>115</td>
+<td><a href="https://amigos.org/news/newsletters" target="_blank">Newsletters | Amigos Library Services</a></td>
+<td><a href="./reports/115.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>116</td>
+<td><a href="https://amigos.org/news/amy-drayer-keynote-digital-accessibility-libraries-conference" target="_blank">Amy Drayer to Keynote Digital Accessibility in Libraries Conference | Amigos Library Services</a></td>
+<td><a href="./reports/116.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>117</td>
+<td><a href="https://amigos.org/news/college-students-actually-do-read" target="_blank">College Students Actually Do Read | Amigos Library Services</a></td>
+<td><a href="./reports/117.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>118</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-college-students-actually-do-read" target="_blank">Know & Go: College Students Actually Do Read | Amigos Library Services</a></td>
+<td><a href="./reports/118.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>119</td>
+<td><a href="https://amigos.org/news/upcoming-ai-sessions-librarians-serving-latino-communities" target="_blank">Upcoming AI Sessions for Librarians Serving Latino Communities | Amigos Library Services</a></td>
+<td><a href="./reports/119.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://amigos.org/services/association-management" target="_blank">Association Management Services | Amigos Library Services</a></td>
+<td><a href="./reports/12.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>120</td>
+<td><a href="https://amigos.org/news/why-annual-planning-matters-your-library" target="_blank">Why Annual Planning Matters for Your Library | Amigos Library Services</a></td>
+<td><a href="./reports/120.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>121</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/demco" target="_blank">DEMCO | Amigos Library Services</a></td>
+<td><a href="./reports/121.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>122</td>
+<td><a href="https://amigos.org/node/8762" target="_blank">Job Bank | Amigos Library Services</a></td>
+<td><a href="./reports/122.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>123</td>
+<td><a href="https://amigos.org/about/employment/benefits" target="_blank">Employee Benefits | Amigos Library Services</a></td>
+<td><a href="./reports/123.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>124</td>
+<td><a href="https://amigos.org/news/february-and-march-know-go-sessions-bite-sized-learning-library-staff" target="_blank">February and March Know & Go Sessions: Bite-Sized Learning for Library Staff | Amigos Library Services</a></td>
+<td><a href="./reports/124.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>125</td>
+<td><a href="https://amigos.org/news/two-amigos-cfps-closing-soon-submit-your-proposal-today" target="_blank">Two Amigos CFPs Closing Soon. Submit Your Proposal Today | Amigos Library Services</a></td>
+<td><a href="./reports/125.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>126</td>
+<td><a href="https://amigos.org/news/february-conference-registration-now-open" target="_blank">February Conference Registration Now Open | Amigos Library Services</a></td>
+<td><a href="./reports/126.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>127</td>
+<td><a href="https://amigos.org/news/electronic-resource-management-micro-credential-series-registration-open" target="_blank">Electronic Resource Management Micro-Credential Series Registration Open | Amigos Library Services</a></td>
+<td><a href="./reports/127.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>128</td>
+<td><a href="https://amigos.org/news/missed-practical-paths-ai-enhanced-library-conference-register-recording" target="_blank">Missed Practical Paths to the AI-Enhanced Library Conference? Register for the recording! | Amigos Library Services</a></td>
+<td><a href="./reports/128.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>129</td>
+<td><a href="https://amigos.org/news/education-and-events?page=1" target="_blank">Education & Events | Amigos Library Services</a></td>
+<td><a href="./reports/129.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://amigos.org/services/consulting" target="_blank">Consulting | Amigos Library Services</a></td>
+<td><a href="./reports/13.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>130</td>
+<td><a href="https://amigos.org/taxonomy/term/96/feed" target="_blank"></a></td>
+<td><a href="./reports/130.html" target="_blank">View Report</a></td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td><strong>12</strong></td>
+</tr>
+
+<tr>
+<td>131</td>
+<td><a href="https://amigos.org/newsletters" target="_blank">Newsletters | Amigos Library Services</a></td>
+<td><a href="./reports/131.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>132</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/oxford-university-press" target="_blank">Oxford University Press | Amigos Library Services</a></td>
+<td><a href="./reports/132.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>133</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/project-muse" target="_blank">Project MUSE (The Johns Hopkins University Press) | Amigos Library Services</a></td>
+<td><a href="./reports/133.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>134</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/bioone" target="_blank">BioOne | Amigos Library Services</a></td>
+<td><a href="./reports/134.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>135</td>
+<td><a href="https://amigos.org/news/ambrose-video-announces-wcag-compliant-website" target="_blank">Ambrose Video Announces WCAG Compliant Website | Amigos Library Services</a></td>
+<td><a href="./reports/135.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>136</td>
+<td><a href="https://amigos.org/news/free-resource-spotlight-open-access-collection-project-muse" target="_blank">Free Resource Spotlight: Open Access Collection from Project MUSE | Amigos Library Services</a></td>
+<td><a href="./reports/136.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>137</td>
+<td><a href="https://amigos.org/news/schlager-announces-2026-title-additions-and-growth" target="_blank">Schlager Announces 2026 Title Additions and Growth | Amigos Library Services</a></td>
+<td><a href="./reports/137.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>138</td>
+<td><a href="https://amigos.org/news/oxford-university-press-upgrades" target="_blank">Oxford University Press Upgrades | Amigos Library Services</a></td>
+<td><a href="./reports/138.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>139</td>
+<td><a href="https://amigos.org/news/springshare-and-bibliotheca-announce-advanced-event-calendar-integration" target="_blank">Springshare and Bibliotheca Announce Advanced Event Calendar Integration | Amigos Library Services</a></td>
+<td><a href="./reports/139.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://amigos.org/membership" target="_blank">Membership | Amigos Library Services</a></td>
+<td><a href="./reports/14.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>140</td>
+<td><a href="https://amigos.org/news/products-and-partnerships?page=1" target="_blank">Products & Partnerships | Amigos Library Services</a></td>
+<td><a href="./reports/140.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>141</td>
+<td><a href="https://amigos.org/taxonomy/term/1/feed" target="_blank"></a></td>
+<td><a href="./reports/141.html" target="_blank">View Report</a></td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td><strong>12</strong></td>
+</tr>
+
+<tr>
+<td>142</td>
+<td><a href="https://amigos.org/taxonomy/term/50" target="_blank">Cataloging | Amigos Library Services</a></td>
+<td><a href="./reports/142.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>143</td>
+<td><a href="https://amigos.org/taxonomy/term/76" target="_blank">Metadata | Amigos Library Services</a></td>
+<td><a href="./reports/143.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>144</td>
+<td><a href="https://amigos.org/taxonomy/term/74" target="_blank">Management & Leadership | Amigos Library Services</a></td>
+<td><a href="./reports/144.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>145</td>
+<td><a href="https://amigos.org/taxonomy/term/78" target="_blank">User Experience | Amigos Library Services</a></td>
+<td><a href="./reports/145.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>146</td>
+<td><a href="https://amigos.org/taxonomy/term/59" target="_blank">Technology | Amigos Library Services</a></td>
+<td><a href="./reports/146.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>147</td>
+<td><a href="https://amigos.org/taxonomy/term/79" target="_blank">Marketing & Outreach | Amigos Library Services</a></td>
+<td><a href="./reports/147.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>148</td>
+<td><a href="https://amigos.org/taxonomy/term/77" target="_blank">Programming & Services | Amigos Library Services</a></td>
+<td><a href="./reports/148.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>149</td>
+<td><a href="https://amigos.org/services/continuing-education/acrl-framework-informed-best-practices-academic-reference-services" target="_blank">ACRL Framework-Informed Best Practices for Academic Reference Services | Amigos Library Services</a></td>
+<td><a href="./reports/149.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://amigos.org/membership/annual-conference" target="_blank">Annual Member Conference | Amigos Library Services</a></td>
+<td><a href="./reports/15.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>150</td>
+<td><a href="https://amigos.org/services/continuing-education/ai-prompting-purpose-building-refining-and-testing-ai-prompts-library" target="_blank">AI Prompting with Purpose: Building, Refining, and Testing AI Prompts for Library Work | Amigos Library Services</a></td>
+<td><a href="./reports/150.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>151</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-research-data-management-accidental-data-services" target="_blank">An Introduction to Research Data Management for the Accidental Data Services Librarian | Amigos Library Services</a></td>
+<td><a href="./reports/151.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>152</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-teaching-information-literacy" target="_blank">An Introduction to Teaching Information Literacy | Amigos Library Services</a></td>
+<td><a href="./reports/152.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>153</td>
+<td><a href="https://amigos.org/services/continuing-education/authority-control-creating-and-maintaining-consistency" target="_blank">Authority Control: Creating and Maintaining Consistency | Amigos Library Services</a></td>
+<td><a href="./reports/153.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>154</td>
+<td><a href="https://amigos.org/services/continuing-education/back-basics-blogs-and-newsletters-libraries" target="_blank">Back to Basics Blogs and Newsletters for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/154.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>155</td>
+<td><a href="https://amigos.org/services/continuing-education/basic-cataloging" target="_blank">Basic Cataloging | Amigos Library Services</a></td>
+<td><a href="./reports/155.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>156</td>
+<td><a href="https://amigos.org/services/continuing-education/beyond-accessibility-basics" target="_blank">Beyond Accessibility Basics | Amigos Library Services</a></td>
+<td><a href="./reports/156.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>157</td>
+<td><a href="https://amigos.org/services/continuing-education/building-practice-plain-language-your-library" target="_blank">Building a Practice of Plain Language in Your Library | Amigos Library Services</a></td>
+<td><a href="./reports/157.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>158</td>
+<td><a href="https://amigos.org/services/continuing-education/cataloging-rda-0" target="_blank">Cataloging with RDA | Amigos Library Services</a></td>
+<td><a href="./reports/158.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>159</td>
+<td><a href="https://amigos.org/services/continuing-education/chat-and-online-reference-services" target="_blank">Chat and Online Reference Services | Amigos Library Services</a></td>
+<td><a href="./reports/159.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><a href="https://amigos.org/membership/member-directory" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/16.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>160</td>
+<td><a href="https://amigos.org/services/continuing-education/collection-management-selection-and-acquisition" target="_blank">Collection Management: Selection and Acquisition | Amigos Library Services</a></td>
+<td><a href="./reports/160.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>161</td>
+<td><a href="https://amigos.org/services/continuing-education/collections-reflect-communities-amigos-online-conference" target="_blank">Collections Reflect Communities: An Amigos Online Conference | Amigos Library Services</a></td>
+<td><a href="./reports/161.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>162</td>
+<td><a href="https://amigos.org/services/continuing-education/conducting-effective-community-needs-assessment-101" target="_blank">Conducting Effective Community Needs Assessment 101 | Amigos Library Services</a></td>
+<td><a href="./reports/162.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>163</td>
+<td><a href="https://amigos.org/services/continuing-education/content-strategy-basics" target="_blank">Content Strategy: The Basics | Amigos Library Services</a></td>
+<td><a href="./reports/163.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>164</td>
+<td><a href="https://amigos.org/services/continuing-education/controlled-vocabularies-and-taxonomies" target="_blank">Controlled Vocabularies and Taxonomies | Amigos Library Services</a></td>
+<td><a href="./reports/164.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>165</td>
+<td><a href="https://amigos.org/services/continuing-education/copyright-101-helping-patrons-understand-copyright" target="_blank">Copyright 101: Helping Patrons Understand Copyright | Amigos Library Services</a></td>
+<td><a href="./reports/165.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>166</td>
+<td><a href="https://amigos.org/services/continuing-education/creating-library-marketing-plan" target="_blank">Creating a Library Marketing Plan | Amigos Library Services</a></td>
+<td><a href="./reports/166.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>167</td>
+<td><a href="https://amigos.org/services/continuing-education/creating-social-media-policy" target="_blank">Creating a Social Media Policy | Amigos Library Services</a></td>
+<td><a href="./reports/167.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>168</td>
+<td><a href="https://amigos.org/services/continuing-education/creating-online-tutorials" target="_blank">Creating Online Tutorials | Amigos Library Services</a></td>
+<td><a href="./reports/168.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>169</td>
+<td><a href="https://amigos.org/services/continuing-education/creative-survey-design-crafting-survey-instruments-meet-your-0" target="_blank">Creative Survey Design: Crafting Survey Instruments to Meet Your Library’s Research and Evaluation Needs | Amigos Library Services</a></td>
+<td><a href="./reports/169.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><a href="https://amigos.org/membership/manage-membership" target="_blank">Manage Your Membership | Amigos Library Services</a></td>
+<td><a href="./reports/17.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>170</td>
+<td><a href="https://amigos.org/services/continuing-education/dealing-difficult-interactions" target="_blank">Dealing with Difficult Interactions | Amigos Library Services</a></td>
+<td><a href="./reports/170.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>171</td>
+<td><a href="https://amigos.org/services/continuing-education/design-thinking-libraries" target="_blank">Design Thinking for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/171.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>172</td>
+<td><a href="https://amigos.org/services/continuing-education/developing-social-media-strategy" target="_blank">Developing a Social Media Strategy | Amigos Library Services</a></td>
+<td><a href="./reports/172.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>173</td>
+<td><a href="https://amigos.org/services/continuing-education/developing-community-support-and-building-creative-partnerships" target="_blank">Developing Community Support and Building Creative Partnerships | Amigos Library Services</a></td>
+<td><a href="./reports/173.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>174</td>
+<td><a href="https://amigos.org/services/continuing-education/dewey-decimal-classification-basics" target="_blank">Dewey Decimal Classification: The Basics | Amigos Library Services</a></td>
+<td><a href="./reports/174.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>175</td>
+<td><a href="https://amigos.org/services/continuing-education/digital-accessibility-libraries-conference" target="_blank">Digital Accessibility in Libraries Conference | Amigos Library Services</a></td>
+<td><a href="./reports/175.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>176</td>
+<td><a href="https://amigos.org/services/continuing-education/documenting-your-librarys-work" target="_blank">Documenting Your Library's Work | Amigos Library Services</a></td>
+<td><a href="./reports/176.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>177</td>
+<td><a href="https://amigos.org/services/continuing-education/doing-digital-preservation" target="_blank">Doing Digital Preservation | Amigos Library Services</a></td>
+<td><a href="./reports/177.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>178</td>
+<td><a href="https://amigos.org/services/continuing-education/dont-just-stand-there-say-something-networking-and-communication" target="_blank">Don’t Just Stand There, Say Something! Networking and Communication Skills for Librarians | Amigos Library Services</a></td>
+<td><a href="./reports/178.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>179</td>
+<td><a href="https://amigos.org/services/continuing-education/electronic-resource-management-1-acquisition-and-implementation" target="_blank">Electronic Resource Management 1: Acquisition and Implementation | Amigos Library Services</a></td>
+<td><a href="./reports/179.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><a href="https://amigos.org/membership/how-to-join/budget-reporting" target="_blank">Amigos Membership Budget Reporting Form | Amigos Library Services</a></td>
+<td><a href="./reports/18.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>49</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>180</td>
+<td><a href="https://amigos.org/services/continuing-education/electronic-resource-management-2-maintenance-and-troubleshooting" target="_blank">Electronic Resource Management 2: Maintenance and Troubleshooting | Amigos Library Services</a></td>
+<td><a href="./reports/180.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>181</td>
+<td><a href="https://amigos.org/services/continuing-education/electronic-resource-management-3-assessment-and-preservation" target="_blank">Electronic Resource Management 3: Assessment and Preservation | Amigos Library Services</a></td>
+<td><a href="./reports/181.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>182</td>
+<td><a href="https://amigos.org/services/continuing-education/electronic-resource-management-micro-credentialing-capstone-project" target="_blank">Electronic Resource Management: Micro-Credentialing & Capstone Project | Amigos Library Services</a></td>
+<td><a href="./reports/182.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>183</td>
+<td><a href="https://amigos.org/services/continuing-education/empowering-staff-advocate-and-guide-librarys-story" target="_blank">Empowering Staff to Advocate and Guide the Library’s Story | Amigos Library Services</a></td>
+<td><a href="./reports/183.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>184</td>
+<td><a href="https://amigos.org/services/continuing-education/entrepreneurial-supporting-small-business-development-libraries" target="_blank">Entrepreneurial: Supporting Small Business Development in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/184.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>185</td>
+<td><a href="https://amigos.org/services/continuing-education/event-planning-101" target="_blank">Event Planning 101 | Amigos Library Services</a></td>
+<td><a href="./reports/185.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>186</td>
+<td><a href="https://amigos.org/services/continuing-education/excellence-library-services-older-adults" target="_blank">Excellence in Library Services to Older Adults | Amigos Library Services</a></td>
+<td><a href="./reports/186.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>187</td>
+<td><a href="https://amigos.org/services/continuing-education/foundations-intellectual-freedom" target="_blank">Foundations of Intellectual Freedom | Amigos Library Services</a></td>
+<td><a href="./reports/187.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>188</td>
+<td><a href="https://amigos.org/services/continuing-education/getting-started-grant-writing" target="_blank">Getting Started with Grant Writing | Amigos Library Services</a></td>
+<td><a href="./reports/188.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>189</td>
+<td><a href="https://amigos.org/services/continuing-education/grant-writing-essentials" target="_blank">Grant Writing Essentials | Amigos Library Services</a></td>
+<td><a href="./reports/189.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><a href="https://amigos.org/membership/how-to-join/reciprocal-borrowing" target="_blank">Amigos Reciprocal Borrowing Agreements | Amigos Library Services</a></td>
+<td><a href="./reports/19.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>190</td>
+<td><a href="https://amigos.org/services/continuing-education/graphic-design-librarians" target="_blank">Graphic Design for Librarians | Amigos Library Services</a></td>
+<td><a href="./reports/190.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>191</td>
+<td><a href="https://amigos.org/services/continuing-education/guided-genealogy-following-your-ancestors-footsteps" target="_blank">Guided Genealogy: Following in Your Ancestor’s Footsteps | Amigos Library Services</a></td>
+<td><a href="./reports/191.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>192</td>
+<td><a href="https://amigos.org/services/continuing-education/how-teach-online" target="_blank">How to Teach Online | Amigos Library Services</a></td>
+<td><a href="./reports/192.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>193</td>
+<td><a href="https://amigos.org/services/continuing-education/improving-accessibility-through-document-remediation" target="_blank">Improving Accessibility Through Document Remediation | Amigos Library Services</a></td>
+<td><a href="./reports/193.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>194</td>
+<td><a href="https://amigos.org/services/continuing-education/incorporating-sustainability-teaching-programs-and-practice" target="_blank">Incorporating Sustainability into Teaching, Programs, and Practice | Amigos Library Services</a></td>
+<td><a href="./reports/194.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>195</td>
+<td><a href="https://amigos.org/services/continuing-education/information-literacy-ai-era-navigating-digital-information-critical" target="_blank">Information Literacy in the AI Era: Navigating Digital Information with Critical Thought | Amigos Library Services</a></td>
+<td><a href="./reports/195.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>196</td>
+<td><a href="https://amigos.org/services/continuing-education/intermediate-archives" target="_blank">Intermediate Archives | Amigos Library Services</a></td>
+<td><a href="./reports/196.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>197</td>
+<td><a href="https://amigos.org/services/continuing-education/intermediate-cataloging-subject-analysis" target="_blank">Intermediate Cataloging: Subject Analysis | Amigos Library Services</a></td>
+<td><a href="./reports/197.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>198</td>
+<td><a href="https://amigos.org/services/continuing-education/intermediate-genealogy" target="_blank">Intermediate Genealogy | Amigos Library Services</a></td>
+<td><a href="./reports/198.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>199</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-archival-practice" target="_blank">Introduction to Archival Practice | Amigos Library Services</a></td>
+<td><a href="./reports/199.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://amigos.org/contact" target="_blank">Contact Us | Amigos Library Services</a></td>
+<td><a href="./reports/2.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>49</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><a href="https://amigos.org/news" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/20.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>200</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-health-literacy-libraries" target="_blank">Introduction to Health Literacy for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/200.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>201</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-library-acquisitions" target="_blank">Introduction to Library Acquisitions | Amigos Library Services</a></td>
+<td><a href="./reports/201.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>202</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-marcedit" target="_blank">Introduction to MarcEdit | Amigos Library Services</a></td>
+<td><a href="./reports/202.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>203</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-preservation" target="_blank">Introduction to Preservation | Amigos Library Services</a></td>
+<td><a href="./reports/203.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>204</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-programming-python-and-pymarc" target="_blank">Introduction to Programming with Python and PyMARC | Amigos Library Services</a></td>
+<td><a href="./reports/204.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>205</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-reference-services-1-core-reference-skills" target="_blank">Introduction to Reference Services 1: Core Reference Skills | Amigos Library Services</a></td>
+<td><a href="./reports/205.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>206</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-reference-services-2-reference-collection" target="_blank">Introduction to Reference Services 2: The Reference Collection | Amigos Library Services</a></td>
+<td><a href="./reports/206.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>207</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-reference-services-3-reference-resources" target="_blank">Introduction to Reference Services 3: Reference Resources | Amigos Library Services</a></td>
+<td><a href="./reports/207.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>208</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-reference-services-4-legal-and-ethical-issues-reference" target="_blank">Introduction to Reference Services 4: Legal and Ethical Issues in Reference Services | Amigos Library Services</a></td>
+<td><a href="./reports/208.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>209</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-serials-cataloging" target="_blank">Introduction to Serials Cataloging | Amigos Library Services</a></td>
+<td><a href="./reports/209.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><a href="https://amigos.org/about" target="_blank">About Amigos Library Services | Amigos Library Services</a></td>
+<td><a href="./reports/21.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>210</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-agile-methodologies-beginners" target="_blank">Know & Go: Agile Methodologies for Beginners | Amigos Library Services</a></td>
+<td><a href="./reports/210.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>211</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-ai-tools-and-library-instruction" target="_blank">Know & Go: AI Tools and Library Instruction | Amigos Library Services</a></td>
+<td><a href="./reports/211.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>212</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-artificial-intelligence-ai-libraries" target="_blank">Know & Go: Artificial Intelligence (AI) in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/212.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>213</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-bedbugs-library" target="_blank">Know & Go: Bedbugs in the Library | Amigos Library Services</a></td>
+<td><a href="./reports/213.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>214</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-beginning-genealogy-free-resources" target="_blank">Know & Go: Beginning Genealogy - Free Resources | Amigos Library Services</a></td>
+<td><a href="./reports/214.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>215</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-building-some-truly-bodacious-book-displays" target="_blank">Know & Go: Building Some Truly Bodacious Book Displays | Amigos Library Services</a></td>
+<td><a href="./reports/215.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>216</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-building-teams-during-times-transition" target="_blank">Know & Go: Building Teams During Times of Transition | Amigos Library Services</a></td>
+<td><a href="./reports/216.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>217</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-camera-ready-quick-library-video-tips-and-takes" target="_blank">Know & Go: Camera Ready - Quick Library Video Tips and Takes | Amigos Library Services</a></td>
+<td><a href="./reports/217.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>218</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-cataloging-collection-unusual-things" target="_blank">Know & Go: Cataloging a Collection of Unusual Things | Amigos Library Services</a></td>
+<td><a href="./reports/218.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>219</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-cataloging-graphic-novels" target="_blank">Know & Go: Cataloging Graphic Novels | Amigos Library Services</a></td>
+<td><a href="./reports/219.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><a href="https://amigos.org/about/annual-reports" target="_blank">Annual Reports | Amigos Library Services</a></td>
+<td><a href="./reports/22.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>220</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-cataloging-library-things" target="_blank">Know & Go: Cataloging the Library of Things | Amigos Library Services</a></td>
+<td><a href="./reports/220.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>221</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-cemetery-searching-genealogical-and-local-history-research" target="_blank">Know & Go: Cemetery Searching for Genealogical and Local History Research | Amigos Library Services</a></td>
+<td><a href="./reports/221.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>222</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-census-records-genealogy" target="_blank">Know & Go: Census Records for Genealogy | Amigos Library Services</a></td>
+<td><a href="./reports/222.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>223</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-climate-literacy-and-climate-change-awareness" target="_blank">Know & Go: Climate Literacy and Climate Change Awareness | Amigos Library Services</a></td>
+<td><a href="./reports/223.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>224</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-collaborating-faculty" target="_blank">Know & Go: Collaborating with Faculty | Amigos Library Services</a></td>
+<td><a href="./reports/224.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>225</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-conducting-effective-meetings" target="_blank">Know & Go: Conducting Effective Meetings | Amigos Library Services</a></td>
+<td><a href="./reports/225.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>226</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-crafting-compelling-copy" target="_blank">Know & Go: Crafting Compelling Copy | Amigos Library Services</a></td>
+<td><a href="./reports/226.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>227</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-creating-mentorship-program-your-library" target="_blank">Know & Go: Creating a Mentorship Program at Your Library | Amigos Library Services</a></td>
+<td><a href="./reports/227.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>228</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-creating-effective-library-policies" target="_blank">Know & Go: Creating Effective Library Policies | Amigos Library Services</a></td>
+<td><a href="./reports/228.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>229</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-cultivating-accessibility-mindset" target="_blank">Know & Go: Cultivating an Accessibility Mindset | Amigos Library Services</a></td>
+<td><a href="./reports/229.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>23</td>
+<td><a href="https://amigos.org/about/strategic-plan" target="_blank">Amigos Library Services Strategic Plan to 2025 | Amigos Library Services</a></td>
+<td><a href="./reports/23.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>230</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-developing-information-literacy-lessons-first-year-college" target="_blank">Know & Go: Developing Information Literacy Lessons for First-Year College Students | Amigos Library Services</a></td>
+<td><a href="./reports/230.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>231</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-documenting-library-work" target="_blank">Know & Go: Documenting Library Work | Amigos Library Services</a></td>
+<td><a href="./reports/231.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>232</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-donation-and-gift-policy-best-practices-libraries" target="_blank">Know & Go: Donation and Gift Policy Best Practices for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/232.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>233</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-edi-equity-diversity-and-inclusion-organizational-and" target="_blank">Know & Go: EDI (Equity, Diversity, and Inclusion) Organizational and Individual Self-Assessment Tools for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/233.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>234</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-effective-committee-and-board-service" target="_blank">Know & Go: Effective Committee and Board Service | Amigos Library Services</a></td>
+<td><a href="./reports/234.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>235</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-elevating-librarys-voice-emergency-response" target="_blank">Know & Go: Elevating the Library’s Voice in Emergency Response | Amigos Library Services</a></td>
+<td><a href="./reports/235.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>236</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-emerging-adulthood-and-adulting-programs-teens-and-college" target="_blank">Know & Go: Emerging Adulthood and Adulting Programs for Teens and College Students | Amigos Library Services</a></td>
+<td><a href="./reports/236.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>237</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-exploring-government-information" target="_blank">Know & Go: Exploring Government Information | Amigos Library Services</a></td>
+<td><a href="./reports/237.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>238</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-strategic-planning-strategic-foresight" target="_blank">Know & Go: From Strategic Planning to Strategic Foresight | Amigos Library Services</a></td>
+<td><a href="./reports/238.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>239</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-health-literacy-libraries" target="_blank">Know & Go: Health Literacy in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/239.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>24</td>
+<td><a href="https://amigos.org/about/governance" target="_blank">Governance | Amigos Library Services</a></td>
+<td><a href="./reports/24.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>240</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-how-catalog-kits" target="_blank">Know & Go: How to Catalog Kits | Amigos Library Services</a></td>
+<td><a href="./reports/240.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>241</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-how-catalog-zines" target="_blank">Know & Go: How to Catalog Zines | Amigos Library Services</a></td>
+<td><a href="./reports/241.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>242</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-identifying-when-interactions-cross-line" target="_blank">Know & Go: Identifying When Interactions Cross the Line | Amigos Library Services</a></td>
+<td><a href="./reports/242.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>243</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-interlibrary-loan-policies" target="_blank">Know & Go: Interlibrary Loan Policies | Amigos Library Services</a></td>
+<td><a href="./reports/243.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>244</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-introduction-authority-control" target="_blank">Know & Go: Introduction to Authority Control | Amigos Library Services</a></td>
+<td><a href="./reports/244.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>245</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-making-meetings-more-effective" target="_blank">Know & Go: Making Meetings More Effective | Amigos Library Services</a></td>
+<td><a href="./reports/245.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>246</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-managing-workplace-conflict" target="_blank">Know & Go: Managing Workplace Conflict | Amigos Library Services</a></td>
+<td><a href="./reports/246.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>247</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-manipulating-metadata-marcedit-and-openrefine" target="_blank">Know & Go: Manipulating Metadata with MarcEdit and OpenRefine | Amigos Library Services</a></td>
+<td><a href="./reports/247.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>248</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-mold-mitigation-and-prevention" target="_blank">Know & Go: Mold Mitigation and Prevention | Amigos Library Services</a></td>
+<td><a href="./reports/248.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>249</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-open-educational-resource-initiatives" target="_blank">Know & Go: Open Educational Resource Initiatives | Amigos Library Services</a></td>
+<td><a href="./reports/249.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>25</td>
+<td><a href="https://amigos.org/about/staff" target="_blank">Staff | Amigos Library Services</a></td>
+<td><a href="./reports/25.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>250</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-plain-language-communication-libraries" target="_blank">Know & Go: Plain Language Communication in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/250.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>251</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-planned-abandonment-libraries" target="_blank">Know & Go: Planned Abandonment & Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/251.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>252</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-practical-ai-prompting" target="_blank">Know & Go: Practical AI Prompting | Amigos Library Services</a></td>
+<td><a href="./reports/252.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>253</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-project-management-tools" target="_blank">Know & Go: Project Management Tools | Amigos Library Services</a></td>
+<td><a href="./reports/253.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>254</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-quick-and-easy-tips-using-canva" target="_blank">Know & Go: Quick and Easy Tips for Using Canva | Amigos Library Services</a></td>
+<td><a href="./reports/254.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>255</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-recovering-wind-and-rain-event" target="_blank">Know & Go: Recovering from a Wind and Rain Event | Amigos Library Services</a></td>
+<td><a href="./reports/255.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>256</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-slide-decks-non-designers" target="_blank">Know & Go: Slide Decks for Non-Designers | Amigos Library Services</a></td>
+<td><a href="./reports/256.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>257</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-social-services-teens-library" target="_blank">Know & Go: Social Services for Teens in the Library | Amigos Library Services</a></td>
+<td><a href="./reports/257.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>258</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-strategies-designing-library-instruction-ai-tools-chat" target="_blank">Know & Go: Strategies for Designing Library Instruction on AI Tools & Chat | Amigos Library Services</a></td>
+<td><a href="./reports/258.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>259</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-tools-job-seekers-libraries" target="_blank">Know & Go: Tools for Job Seekers in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/259.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>26</td>
+<td><a href="https://amigos.org/about/employment" target="_blank">Employment | Amigos Library Services</a></td>
+<td><a href="./reports/26.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>260</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-trauma-informed-design-libraries" target="_blank">Know & Go: Trauma-Informed Design for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/260.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>261</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-trend-scanning-libraries" target="_blank">Know & Go: Trend Scanning for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/261.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>262</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-trends-and-changes-future-libraries" target="_blank">Know & Go: Trends and Changes for the Future of Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/262.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>263</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-unlocking-benefits-membership-amigos-library-services" target="_blank">Know & Go: Unlocking the Benefits of Membership in Amigos Library Services | Amigos Library Services</a></td>
+<td><a href="./reports/263.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>264</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-using-and-creating-infographics-libraries" target="_blank">Know & Go: Using and Creating Infographics in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/264.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>265</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-welcoming-adult-learners-your-library-bilingual-programming" target="_blank">Know & Go: Welcoming Adult Learners to Your Library with Bilingual Programming | Amigos Library Services</a></td>
+<td><a href="./reports/265.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>266</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-writing-effective-alternative-text" target="_blank">Know & Go: Writing Effective Alternative Text | Amigos Library Services</a></td>
+<td><a href="./reports/266.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>267</td>
+<td><a href="https://amigos.org/services/continuing-education/launching-and-cultivating-your-face-face-and-online-book-discussion" target="_blank">Launching and Cultivating your Face to Face and Online Book Discussion Groups | Amigos Library Services</a></td>
+<td><a href="./reports/267.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>268</td>
+<td><a href="https://amigos.org/services/continuing-education/let-it-go-weeding-your-librarys-collection" target="_blank">Let It Go: Weeding Your Library's Collection | Amigos Library Services</a></td>
+<td><a href="./reports/268.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>269</td>
+<td><a href="https://amigos.org/services/continuing-education/libraries-cultivating-community-amigos-online-conference" target="_blank">Libraries Cultivating Community - an Amigos Online Conference | Amigos Library Services</a></td>
+<td><a href="./reports/269.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>27</td>
+<td><a href="https://amigos.org/news/education-and-events" target="_blank">Education & Events | Amigos Library Services</a></td>
+<td><a href="./reports/27.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>270</td>
+<td><a href="https://amigos.org/services/continuing-education/library-management-everyday-negotiations" target="_blank">Library Management: Everyday Negotiations | Amigos Library Services</a></td>
+<td><a href="./reports/270.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>271</td>
+<td><a href="https://amigos.org/services/continuing-education/library-management-managing-middle" target="_blank">Library Management: Managing from the Middle | Amigos Library Services</a></td>
+<td><a href="./reports/271.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>272</td>
+<td><a href="https://amigos.org/services/continuing-education/library-management-managing-personnel" target="_blank">Library Management: Managing Personnel | Amigos Library Services</a></td>
+<td><a href="./reports/272.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>273</td>
+<td><a href="https://amigos.org/services/continuing-education/library-management-motivating-retaining-employees" target="_blank">Library Management: Motivating & Retaining Employees | Amigos Library Services</a></td>
+<td><a href="./reports/273.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>274</td>
+<td><a href="https://amigos.org/services/continuing-education/library-management-workplace-communication" target="_blank">Library Management: Workplace Communication | Amigos Library Services</a></td>
+<td><a href="./reports/274.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>275</td>
+<td><a href="https://amigos.org/services/continuing-education/library-congress-classification-basics" target="_blank">Library of Congress Classification: The Basics | Amigos Library Services</a></td>
+<td><a href="./reports/275.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>276</td>
+<td><a href="https://amigos.org/services/continuing-education/metadata-principles-and-practices-metadata-basics" target="_blank">Metadata Principles and Practices: Metadata Basics | Amigos Library Services</a></td>
+<td><a href="./reports/276.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>277</td>
+<td><a href="https://amigos.org/services/continuing-education/metadata-principles-and-practices-metadata-customization-exchange" target="_blank">Metadata Principles and Practices: Metadata Customization, Exchange, Transformation and Migration | Amigos Library Services</a></td>
+<td><a href="./reports/277.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>278</td>
+<td><a href="https://amigos.org/services/continuing-education/metadata-principles-and-practices-metadata-relationships" target="_blank">Metadata Principles and Practices: Metadata Relationships | Amigos Library Services</a></td>
+<td><a href="./reports/278.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>279</td>
+<td><a href="https://amigos.org/services/continuing-education/metadata-principles-and-practices-metadata-standards-and-types" target="_blank">Metadata Principles and Practices: Metadata Standards and Types | Amigos Library Services</a></td>
+<td><a href="./reports/279.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>28</td>
+<td><a href="https://amigos.org/news/last-chance-register-digital-accessibility-conference" target="_blank">Last Chance to Register for Digital Accessibility Conference | Amigos Library Services</a></td>
+<td><a href="./reports/28.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>280</td>
+<td><a href="https://amigos.org/services/continuing-education/metadata-principles-and-practices-micro-credentialing-capstone" target="_blank">Metadata Principles and Practices: Micro-Credentialing & Capstone Project | Amigos Library Services</a></td>
+<td><a href="./reports/280.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>281</td>
+<td><a href="https://amigos.org/services/continuing-education/parliamentary-procedure-101" target="_blank">Parliamentary Procedure 101 | Amigos Library Services</a></td>
+<td><a href="./reports/281.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>282</td>
+<td><a href="https://amigos.org/services/continuing-education/pda-collection-love-through-patron-driven-acquisition" target="_blank">PDA: Collection Love through Patron Driven Acquisition | Amigos Library Services</a></td>
+<td><a href="./reports/282.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>283</td>
+<td><a href="https://amigos.org/services/continuing-education/project-management-skills-non-pmps" target="_blank">Project Management Skills for Non-PMPs | Amigos Library Services</a></td>
+<td><a href="./reports/283.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>284</td>
+<td><a href="https://amigos.org/services/continuing-education/rda-audio-recordings" target="_blank">RDA for Audio Recordings | Amigos Library Services</a></td>
+<td><a href="./reports/284.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>285</td>
+<td><a href="https://amigos.org/services/continuing-education/rda-video-recordings" target="_blank">RDA for Video Recordings | Amigos Library Services</a></td>
+<td><a href="./reports/285.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>286</td>
+<td><a href="https://amigos.org/services/continuing-education/reference-and-information-services" target="_blank">Reference and Information Services | Amigos Library Services</a></td>
+<td><a href="./reports/286.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>287</td>
+<td><a href="https://amigos.org/services/continuing-education/reference-management-new-approach" target="_blank">Reference Management: A New Approach | Amigos Library Services</a></td>
+<td><a href="./reports/287.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>288</td>
+<td><a href="https://amigos.org/services/continuing-education/reference-policies" target="_blank">Reference Policies | Amigos Library Services</a></td>
+<td><a href="./reports/288.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>289</td>
+<td><a href="https://amigos.org/services/continuing-education/serving-neurodiverse-library-user" target="_blank">Serving the Neurodiverse Library User | Amigos Library Services</a></td>
+<td><a href="./reports/289.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>29</td>
+<td><a href="https://amigos.org/news/invite-your-student-workers-and-volunteers-customer-service-basics-free" target="_blank">Invite Your Student Workers and Volunteers to Customer Service Basics for Free | Amigos Library Services</a></td>
+<td><a href="./reports/29.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>290</td>
+<td><a href="https://amigos.org/services/continuing-education/strategic-communication-planning-libraries" target="_blank">Strategic Communication Planning for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/290.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>291</td>
+<td><a href="https://amigos.org/services/continuing-education/strategies-creating-and-rebuilding-library-partnerships" target="_blank">Strategies for Creating and Rebuilding Library Partnerships | Amigos Library Services</a></td>
+<td><a href="./reports/291.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>292</td>
+<td><a href="https://amigos.org/services/continuing-education/streamlining-library-workflows-and-processes" target="_blank">Streamlining Library Workflows and Processes | Amigos Library Services</a></td>
+<td><a href="./reports/292.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>293</td>
+<td><a href="https://amigos.org/services/continuing-education/accidental-library-fundraiser" target="_blank">The Accidental Library Fundraiser | Amigos Library Services</a></td>
+<td><a href="./reports/293.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>294</td>
+<td><a href="https://amigos.org/services/continuing-education/essentials-conducting-reference-interview" target="_blank">The Essentials: Conducting the Reference Interview | Amigos Library Services</a></td>
+<td><a href="./reports/294.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>295</td>
+<td><a href="https://amigos.org/services/continuing-education/essentials-customer-service" target="_blank">The Essentials: Customer Service | Amigos Library Services</a></td>
+<td><a href="./reports/295.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>296</td>
+<td><a href="https://amigos.org/services/continuing-education/essentials-library-values" target="_blank">The Essentials: Library Values | Amigos Library Services</a></td>
+<td><a href="./reports/296.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>297</td>
+<td><a href="https://amigos.org/services/continuing-education/essentials-workplace-communication" target="_blank">The Essentials: Workplace Communication | Amigos Library Services</a></td>
+<td><a href="./reports/297.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>298</td>
+<td><a href="https://amigos.org/services/continuing-education/reference-collection" target="_blank">The Reference Collection | Amigos Library Services</a></td>
+<td><a href="./reports/298.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>299</td>
+<td><a href="https://amigos.org/services/continuing-education/usable-and-accessible-library-space" target="_blank">The Usable and Accessible Library Space | Amigos Library Services</a></td>
+<td><a href="./reports/299.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://amigos.org/membership/how-to-join" target="_blank">Joining Amigos Library Services | Amigos Library Services</a></td>
+<td><a href="./reports/3.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>30</td>
+<td><a href="https://amigos.org/news/speakers-announced-march-17-session-apis-libraries" target="_blank">Speakers Announced for March 17 Session on APIs in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/30.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>300</td>
+<td><a href="https://amigos.org/services/continuing-education/toward-trans-inclusive-librarianship" target="_blank">Toward Trans-Inclusive Librarianship | Amigos Library Services</a></td>
+<td><a href="./reports/300.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>301</td>
+<td><a href="https://amigos.org/services/continuing-education/transparency-library-communication" target="_blank">Transparency in Library Communication | Amigos Library Services</a></td>
+<td><a href="./reports/301.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>302</td>
+<td><a href="https://amigos.org/services/continuing-education/understanding-and-assisting-library-patrons-autism-spectrum" target="_blank">Understanding and Assisting Library Patrons on the Autism Spectrum | Amigos Library Services</a></td>
+<td><a href="./reports/302.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>303</td>
+<td><a href="https://amigos.org/services/continuing-education/understanding-needs-patrons-mental-disorders-and-improving-self-care" target="_blank">Understanding Needs of Patrons with Mental Disorders and Improving Self-Care for Library Professionals | Amigos Library Services</a></td>
+<td><a href="./reports/303.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>304</td>
+<td><a href="https://amigos.org/services/continuing-education/understanding-needs-library-users-personality-disorder" target="_blank">Understanding the Needs of Library Users with a Personality Disorder | Amigos Library Services</a></td>
+<td><a href="./reports/304.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>305</td>
+<td><a href="https://amigos.org/services/continuing-education/volunteers-library" target="_blank">Volunteers in the Library | Amigos Library Services</a></td>
+<td><a href="./reports/305.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>306</td>
+<td><a href="https://amigos.org/services/continuing-education/web-design-and-accessibility" target="_blank">Web Design and Accessibility | Amigos Library Services</a></td>
+<td><a href="./reports/306.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>307</td>
+<td><a href="https://amigos.org/services/continuing-education/website-accessibility-everyone" target="_blank">Website Accessibility for Everyone | Amigos Library Services</a></td>
+<td><a href="./reports/307.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>308</td>
+<td><a href="https://amigos.org/node/8564" target="_blank">Know & Go Session Recording Registration Form | Amigos Library Services</a></td>
+<td><a href="./reports/308.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>309</td>
+<td><a href="https://amigos.org/services/continuing-education/discover-hyku-empowering-libraries-open-source-repository-solutions" target="_blank">Access denied | Amigos Library Services</a></td>
+<td><a href="./reports/309.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>31</td>
+<td><a href="https://amigos.org/news/products-and-partnerships" target="_blank">Products & Partnerships | Amigos Library Services</a></td>
+<td><a href="./reports/31.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>310</td>
+<td><a href="https://amigos.org/services/continuing-education/hive-tips-and-tricks-using-generative-ai" target="_blank">Access denied | Amigos Library Services</a></td>
+<td><a href="./reports/310.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>311</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/disruption-of-service" target="_blank">TAE | Login</a></td>
+<td><a href="./reports/311.html" target="_blank">View Report</a></td>
+<td>4</td>
+<td>18</td>
+<td>1</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td><strong>18</strong></td>
+</tr>
+
+<tr>
+<td>312</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/holiday-closing-report" target="_blank">TAE | Login</a></td>
+<td><a href="./reports/312.html" target="_blank">View Report</a></td>
+<td>4</td>
+<td>18</td>
+<td>1</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td><strong>18</strong></td>
+</tr>
+
+<tr>
+<td>313</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/lost-damaged-items" target="_blank">TAE | Login</a></td>
+<td><a href="./reports/313.html" target="_blank">View Report</a></td>
+<td>4</td>
+<td>18</td>
+<td>1</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td><strong>18</strong></td>
+</tr>
+
+<tr>
+<td>314</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/tae-supply-request" target="_blank">TAE | Login</a></td>
+<td><a href="./reports/314.html" target="_blank">View Report</a></td>
+<td>4</td>
+<td>18</td>
+<td>1</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td><strong>18</strong></td>
+</tr>
+
+<tr>
+<td>315</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants?order=field_tae_site_number&sort=asc" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/315.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>316</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants?order=field_tae_hub&sort=asc" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/316.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>317</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants?order=field_oclc_symbol&sort=asc" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/317.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>318</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants?order=field_tae_type&sort=asc" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/318.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>319</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants?order=field_tae_service_level&sort=asc" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/319.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>32</td>
+<td><a href="https://amigos.org/news/oxford-research-encyclopedias-move-oxford-academic" target="_blank">Oxford Research Encyclopedias move to Oxford Academic | Amigos Library Services</a></td>
+<td><a href="./reports/32.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>320</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants?order=title&sort=desc" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/320.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>321</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants?order=field_city&sort=asc" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/321.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>322</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants?order=field_state&sort=asc" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/322.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>323</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/guidelines-labeling/packing-requirements" target="_blank">Packaging, Labels, Bags, and Requirements | Amigos Library Services</a></td>
+<td><a href="./reports/323.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>324</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/guidelines-labeling/reporting" target="_blank">Reporting - Service Disruptions, and Holidays | Amigos Library Services</a></td>
+<td><a href="./reports/324.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>325</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/guidelines-labeling/lost-and-damaged-items" target="_blank">Lost and Damaged Items | Amigos Library Services</a></td>
+<td><a href="./reports/325.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>326</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/guidelines-labeling/texas-armadillo-network" target="_blank">Information on the Texas Armadillo Network for Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/326.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>327</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/able-card" target="_blank">Able Card, LLC | Amigos Library Services</a></td>
+<td><a href="./reports/327.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>328</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/after-mouse" target="_blank">After-Mouse.com | Amigos Library Services</a></td>
+<td><a href="./reports/328.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>329</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/archival-methods" target="_blank">Archival Methods | Amigos Library Services</a></td>
+<td><a href="./reports/329.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>33</td>
+<td><a href="https://amigos.org/node/2566" target="_blank">Joining Amigos Library Services | Amigos Library Services</a></td>
+<td><a href="./reports/33.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>330</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/backstage-library-works" target="_blank">Backstage Library Works | Amigos Library Services</a></td>
+<td><a href="./reports/330.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>331</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/bibliotheca" target="_blank">Bibliotheca | Amigos Library Services</a></td>
+<td><a href="./reports/331.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>332</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/brodart" target="_blank">Brodart | Amigos Library Services</a></td>
+<td><a href="./reports/332.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>333</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/cloudsource-oa" target="_blank">Cloudsource OA | Amigos Library Services</a></td>
+<td><a href="./reports/333.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>334</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/gaylord-archival" target="_blank">Gaylord Archival | Amigos Library Services</a></td>
+<td><a href="./reports/334.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>335</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/hollinger-metal-edge" target="_blank">Hollinger Metal Edge | Amigos Library Services</a></td>
+<td><a href="./reports/335.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>336</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/kapco-book-protection" target="_blank">Kapco Book Protection | Amigos Library Services</a></td>
+<td><a href="./reports/336.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>337</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/niche-academy" target="_blank">Niche Academy | Amigos Library Services</a></td>
+<td><a href="./reports/337.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>338</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/pressbooks" target="_blank">Pressbooks | Amigos Library Services</a></td>
+<td><a href="./reports/338.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>339</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/rep-industries" target="_blank">R.E.P. Industries, Inc. | Amigos Library Services</a></td>
+<td><a href="./reports/339.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>34</td>
+<td><a href="https://amigos.org/services/continuing-education/linked-data-and-libraries" target="_blank">Linked Data and Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/34.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>340</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/skilltype" target="_blank">Skilltype | Amigos Library Services</a></td>
+<td><a href="./reports/340.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>341</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct/the-library-store" target="_blank">The Library Store | Amigos Library Services</a></td>
+<td><a href="./reports/341.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>342</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/ABC-CLIO" target="_blank">ABC-CLIO | Amigos Library Services</a></td>
+<td><a href="./reports/342.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>343</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/Adam-matthew" target="_blank">Adam Matthew | Amigos Library Services</a></td>
+<td><a href="./reports/343.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>344</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/Alexander-street-press" target="_blank">Alexander Street Press | Amigos Library Services</a></td>
+<td><a href="./reports/344.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>345</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/altarama" target="_blank">Altarama | Amigos Library Services</a></td>
+<td><a href="./reports/345.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>346</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/ambrose-video-publishing" target="_blank">Ambrose Video Publishing | Amigos Library Services</a></td>
+<td><a href="./reports/346.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>347</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/asia-studies" target="_blank">Asia-Studies Full-Text Online | Amigos Library Services</a></td>
+<td><a href="./reports/347.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>348</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/asme" target="_blank">ASME - American Society of Mechanical Engineers | Amigos Library Services</a></td>
+<td><a href="./reports/348.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>349</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/atlas-systems" target="_blank">Atlas Systems, Inc. | Amigos Library Services</a></td>
+<td><a href="./reports/349.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>35</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-customer-service-basics" target="_blank">Know & Go: Customer Service Basics | Amigos Library Services</a></td>
+<td><a href="./reports/35.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>350</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/bibliotele" target="_blank">Bibliotele | Amigos Library Services</a></td>
+<td><a href="./reports/350.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>351</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/bloomsbury" target="_blank">Bloomsbury Publishing | Amigos Library Services</a></td>
+<td><a href="./reports/351.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>352</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/boarddocs" target="_blank">BoardDocs® Board Management Solutions | Amigos Library Services</a></td>
+<td><a href="./reports/352.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>353</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/third-iron" target="_blank">BrowZine by Third Iron | Amigos Library Services</a></td>
+<td><a href="./reports/353.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>354</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/cahiers-dart" target="_blank">Cahiers d’Art Institute (Artifex Press) | Amigos Library Services</a></td>
+<td><a href="./reports/354.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>355</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/cambridge-university-press" target="_blank">Cambridge University Press | Amigos Library Services</a></td>
+<td><a href="./reports/355.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>356</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/clcd" target="_blank">CLCD | Amigos Library Services</a></td>
+<td><a href="./reports/356.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>357</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/columbia-university-press" target="_blank">Columbia University Press | Amigos Library Services</a></td>
+<td><a href="./reports/357.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>358</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/data-planet" target="_blank">Data-Planet | Amigos Library Services</a></td>
+<td><a href="./reports/358.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>359</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/data2" target="_blank">Data2 | Amigos Library Services</a></td>
+<td><a href="./reports/359.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>36</td>
+<td><a href="https://amigos.org/services/continuing-education/hive-unlocking-power-apis-libraries" target="_blank">The Hive: Unlocking the Power of APIs in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/36.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>360</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/demco-software" target="_blank">DEMCO Software | Amigos Library Services</a></td>
+<td><a href="./reports/360.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>361</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/docuseek" target="_blank">Docuseek2 | Amigos Library Services</a></td>
+<td><a href="./reports/361.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>362</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/duke-university-press" target="_blank">Duke University Press | Amigos Library Services</a></td>
+<td><a href="./reports/362.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>363</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/edcetera" target="_blank">Edcetera | Amigos Library Services</a></td>
+<td><a href="./reports/363.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>364</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/harvard-university-press" target="_blank">Harvard University Press | Amigos Library Services</a></td>
+<td><a href="./reports/364.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>365</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/hein-online" target="_blank">Hein Online | Amigos Library Services</a></td>
+<td><a href="./reports/365.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>366</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/infobase" target="_blank">Infobase (Credo, Films on Demand, Facts on File) | Amigos Library Services</a></td>
+<td><a href="./reports/366.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>367</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/latin-american-studies" target="_blank">Latin American Studies Full-Text Online | Amigos Library Services</a></td>
+<td><a href="./reports/367.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>368</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/lexis-nexis" target="_blank">LexisNexis | Amigos Library Services</a></td>
+<td><a href="./reports/368.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>369</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/mango-languages" target="_blank">Mango Languages | Amigos Library Services</a></td>
+<td><a href="./reports/369.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>37</td>
+<td><a href="https://amigos.org/services/continuing-education/message-media-media-production-essentials-library-workers" target="_blank">Message to Media: Media Production Essentials for Library Workers | Amigos Library Services</a></td>
+<td><a href="./reports/37.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>370</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/mcgraw-hill" target="_blank">McGraw Hill | Amigos Library Services</a></td>
+<td><a href="./reports/370.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>371</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/morningstar" target="_blank">Morningstar | Amigos Library Services</a></td>
+<td><a href="./reports/371.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>372</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/mosio" target="_blank">Mosio For Libraries (formerly known as Text A Librarian) | Amigos Library Services</a></td>
+<td><a href="./reports/372.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>373</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/mylibro" target="_blank">myLIBRO | Amigos Library Services</a></td>
+<td><a href="./reports/373.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>374</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/naxos" target="_blank">Naxos Online Libraries, Inc. | Amigos Library Services</a></td>
+<td><a href="./reports/374.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>375</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/noodletools" target="_blank">NoodleTools | Amigos Library Services</a></td>
+<td><a href="./reports/375.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>376</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/optimal-resume" target="_blank">Optimal Resume | Amigos Library Services</a></td>
+<td><a href="./reports/376.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>377</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/ovid" target="_blank">Ovid | Amigos Library Services</a></td>
+<td><a href="./reports/377.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>378</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/policymap" target="_blank">PolicyMap | Amigos Library Services</a></td>
+<td><a href="./reports/378.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>379</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/powernotes" target="_blank">PowerNotes | Amigos Library Services</a></td>
+<td><a href="./reports/379.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>38</td>
+<td><a href="https://amigos.org/node/4470" target="_blank">Continuing Education Services | Amigos Library Services</a></td>
+<td><a href="./reports/38.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>380</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/privco" target="_blank">PrivCo | Amigos Library Services</a></td>
+<td><a href="./reports/380.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>381</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/proquest" target="_blank">ProQuest | Amigos Library Services</a></td>
+<td><a href="./reports/381.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>382</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/research-solutions" target="_blank">Research Solutions | Amigos Library Services</a></td>
+<td><a href="./reports/382.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>383</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/rocks-backpages" target="_blank">Rock's Backpages | Amigos Library Services</a></td>
+<td><a href="./reports/383.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>384</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/sage-publications" target="_blank">SAGE Publications (including CQ Press) | Amigos Library Services</a></td>
+<td><a href="./reports/384.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>385</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/schlager-group" target="_blank">Schlager Group | Amigos Library Services</a></td>
+<td><a href="./reports/385.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>386</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/social-explorer" target="_blank">Social Explorer | Amigos Library Services</a></td>
+<td><a href="./reports/386.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>387</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/springshare" target="_blank">Springshare | Amigos Library Services</a></td>
+<td><a href="./reports/387.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>388</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/taylor-and-francis" target="_blank">Taylor & Francis Group | Amigos Library Services</a></td>
+<td><a href="./reports/388.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>389</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/new-york-times" target="_blank">The New York Times | Amigos Library Services</a></td>
+<td><a href="./reports/389.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>39</td>
+<td><a href="https://amigos.org/services/continuing-education/full-catalog" target="_blank">Course Catalog | Amigos Library Services</a></td>
+<td><a href="./reports/39.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td><strong>1</strong></td>
+</tr>
+
+<tr>
+<td>390</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/top-graphics" target="_blank">Top Graphics | Amigos Library Services</a></td>
+<td><a href="./reports/390.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>391</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/watson-label-products" target="_blank">Watson Label Products | Amigos Library Services</a></td>
+<td><a href="./reports/391.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>392</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors/wolters-kluwer" target="_blank">WoltersKluwer | Amigos Library Services</a></td>
+<td><a href="./reports/392.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>393</td>
+<td><a href="https://amigos.org/news/why-hyku-why-repository-solution" target="_blank">Why Hyku? Why a Repository Solution? | Amigos Library Services</a></td>
+<td><a href="./reports/393.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>394</td>
+<td><a href="https://amigos.org/news/amigos-library-services-joins-samvera-community" target="_blank">Amigos Library Services Joins the Samvera Community | Amigos Library Services</a></td>
+<td><a href="./reports/394.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>395</td>
+<td><a href="https://amigos.org/services/hyku" target="_blank">Digital Repository Service | Amigos Library Services</a></td>
+<td><a href="./reports/395.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>396</td>
+<td><a href="https://amigos.org/services/hyku/webinars/recording-form" target="_blank">Hyku Session Recording Registration Form | Amigos Library Services</a></td>
+<td><a href="./reports/396.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>397</td>
+<td><a href="https://amigos.org/taxonomy/term/55" target="_blank">Equity, Diversity & Inclusion | Amigos Library Services</a></td>
+<td><a href="./reports/397.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>398</td>
+<td><a href="https://amigos.org/node/222" target="_blank">By Request Training FAQs | Amigos Library Services</a></td>
+<td><a href="./reports/398.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>399</td>
+<td><a href="https://amigos.org/taxonomy/term/90" target="_blank">Archives, Preservation & Digitization | Amigos Library Services</a></td>
+<td><a href="./reports/399.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://amigos.org/services" target="_blank">Services | Amigos Library Services</a></td>
+<td><a href="./reports/4.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>40</td>
+<td><a href="https://amigos.org/services/continuing-education/free-courses" target="_blank">Free for Members | Amigos Library Services</a></td>
+<td><a href="./reports/40.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>49</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>400</td>
+<td><a href="https://amigos.org/taxonomy/term/58" target="_blank">Copyright | Amigos Library Services</a></td>
+<td><a href="./reports/400.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>401</td>
+<td><a href="https://amigos.org/taxonomy/term/57" target="_blank">Reference | Amigos Library Services</a></td>
+<td><a href="./reports/401.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>402</td>
+<td><a href="https://amigos.org/taxonomy/term/73" target="_blank">Learning & Instruction | Amigos Library Services</a></td>
+<td><a href="./reports/402.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>403</td>
+<td><a href="https://amigos.org/taxonomy/term/80" target="_blank">Collection Development | Amigos Library Services</a></td>
+<td><a href="./reports/403.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>404</td>
+<td><a href="https://amigos.org/taxonomy/term/6" target="_blank">Texas | Amigos Library Services</a></td>
+<td><a href="./reports/404.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>405</td>
+<td><a href="https://amigos.org/taxonomy/term/11" target="_blank">Missouri | Amigos Library Services</a></td>
+<td><a href="./reports/405.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>406</td>
+<td><a href="https://amigos.org/taxonomy/term/84" target="_blank">Louisiana | Amigos Library Services</a></td>
+<td><a href="./reports/406.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>407</td>
+<td><a href="https://amigos.org/taxonomy/term/7" target="_blank">Oklahoma | Amigos Library Services</a></td>
+<td><a href="./reports/407.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>408</td>
+<td><a href="https://amigos.org/taxonomy/term/24" target="_blank">Illinois | Amigos Library Services</a></td>
+<td><a href="./reports/408.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>409</td>
+<td><a href="https://amigos.org/taxonomy/term/8" target="_blank">New Mexico | Amigos Library Services</a></td>
+<td><a href="./reports/409.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>41</td>
+<td><a href="https://amigos.org/services/continuing-education/microcredential-program" target="_blank">Amigos Micro-Credential Program | Amigos Library Services</a></td>
+<td><a href="./reports/41.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>410</td>
+<td><a href="https://amigos.org/node/12794" target="_blank">All Sessions | Amigos Library Services</a></td>
+<td><a href="./reports/410.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>411</td>
+<td><a href="https://amigos.org/node/12794%20" target="_blank">Page not found | Amigos Library Services</a></td>
+<td><a href="./reports/411.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>412</td>
+<td><a href="https://amigos.org/node/12725" target="_blank">All Sessions | Amigos Library Services</a></td>
+<td><a href="./reports/412.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>413</td>
+<td><a href="https://amigos.org/node/12725%20" target="_blank">Page not found | Amigos Library Services</a></td>
+<td><a href="./reports/413.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>414</td>
+<td><a href="https://amigos.org/node/12651" target="_blank">Libraries Cultivate Community | Amigos Library Services</a></td>
+<td><a href="./reports/414.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>415</td>
+<td><a href="https://amigos.org/node/12651%20" target="_blank">Page not found | Amigos Library Services</a></td>
+<td><a href="./reports/415.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>416</td>
+<td><a href="https://amigos.org/node/12485" target="_blank">Collections Reflect Communities | Amigos Library Services</a></td>
+<td><a href="./reports/416.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>417</td>
+<td><a href="https://amigos.org/node/12485%20" target="_blank">Page not found | Amigos Library Services</a></td>
+<td><a href="./reports/417.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>418</td>
+<td><a href="https://amigos.org/requestconsulting" target="_blank">Request Consulting Services | Amigos Library Services</a></td>
+<td><a href="./reports/418.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>419</td>
+<td><a href="https://amigos.org/node/12488" target="_blank">Our Present. Our Futures. The Amigos Member Conference 2025 - Board Candidates | Amigos Library Services</a></td>
+<td><a href="./reports/419.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>42</td>
+<td><a href="https://amigos.org/services/continuing-education/by-request-training-faqs" target="_blank">By Request Training FAQs | Amigos Library Services</a></td>
+<td><a href="./reports/42.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>420</td>
+<td><a href="https://amigos.org/node/12502" target="_blank">Our Present. Our Futures. The Amigos Member Conference 2025 | Amigos Library Services</a></td>
+<td><a href="./reports/420.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>421</td>
+<td><a href="https://amigos.org/node/12502%20" target="_blank">Page not found | Amigos Library Services</a></td>
+<td><a href="./reports/421.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>422</td>
+<td><a href="https://amigos.org/node/8664" target="_blank">Leading. Partnering. Connecting. The Amigos Member Conference 2024 - Board Candidates | Amigos Library Services</a></td>
+<td><a href="./reports/422.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>423</td>
+<td><a href="https://amigos.org/node/8663" target="_blank">Leading. Partnering. Connecting. The Amigos Member Conference 2024 - Schedule | Amigos Library Services</a></td>
+<td><a href="./reports/423.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>424</td>
+<td><a href="https://amigos.org/node/8666" target="_blank">Leading. Partnering. Connecting. The Amigos Member Conference 2024 - Speakers | Amigos Library Services</a></td>
+<td><a href="./reports/424.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>425</td>
+<td><a href="https://amigos.org/node/8665" target="_blank">Leading. Partnering. Connecting. The Amigos Member Conference 2024 - Sponsors | Amigos Library Services</a></td>
+<td><a href="./reports/425.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>426</td>
+<td><a href="https://amigos.org/node/8141" target="_blank">Amigos Member Conference 2023: Libraries Plan to Succeed - Board Candidates | Amigos Library Services</a></td>
+<td><a href="./reports/426.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>427</td>
+<td><a href="https://amigos.org/node/8196" target="_blank">Amigos Member Conference 2023: Libraries Plan to Succeed - Schedule | Amigos Library Services</a></td>
+<td><a href="./reports/427.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>428</td>
+<td><a href="https://amigos.org/node/8195" target="_blank">Amigos Member Conference 2023: Libraries Plan to Succeed - Speakers | Amigos Library Services</a></td>
+<td><a href="./reports/428.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>429</td>
+<td><a href="https://amigos.org/node/8188" target="_blank">Amigos Member Conference 2023: Libraries Plan to Succeed - Sponsors | Amigos Library Services</a></td>
+<td><a href="./reports/429.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>43</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/forms" target="_blank">Trans-Amigos Express Forms | Amigos Library Services</a></td>
+<td><a href="./reports/43.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>430</td>
+<td><a href="https://amigos.org/node/2854" target="_blank">ASME - American Society of Mechanical Engineers | Amigos Library Services</a></td>
+<td><a href="./reports/430.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>431</td>
+<td><a href="https://amigos.org/node/2742" target="_blank">Bloomsbury Publishing | Amigos Library Services</a></td>
+<td><a href="./reports/431.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>432</td>
+<td><a href="https://amigos.org/node/1611" target="_blank">Project MUSE (The Johns Hopkins University Press) | Amigos Library Services</a></td>
+<td><a href="./reports/432.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>433</td>
+<td><a href="https://amigos.org/membership/member-directory?order=field_oclc_symbol&sort=desc" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/433.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>434</td>
+<td><a href="https://amigos.org/membership/member-directory?order=title&sort=asc" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/434.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>435</td>
+<td><a href="https://amigos.org/membership/member-directory?order=field_city&sort=desc" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/435.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>436</td>
+<td><a href="https://amigos.org/membership/member-directory?order=field_state&sort=desc" target="_blank">Amigos Library Services Members | Amigos Library Services</a></td>
+<td><a href="./reports/436.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>437</td>
+<td><a href="https://amigos.org/membership/manage-membership/individual-update" target="_blank">Member Contact Update Form | Amigos Library Services</a></td>
+<td><a href="./reports/437.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>438</td>
+<td><a href="https://amigos.org/membership/manage-membership/institution-update" target="_blank">Institution Update Form | Amigos Library Services</a></td>
+<td><a href="./reports/438.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>439</td>
+<td><a href="https://amigos.org/services/resource-sharing/agreement" target="_blank">Amigos Resource Sharing Agreement | Amigos Library Services</a></td>
+<td><a href="./reports/439.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td><strong>6</strong></td>
+</tr>
+
+<tr>
+<td>44</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/participants" target="_blank">Participants | Amigos Library Services</a></td>
+<td><a href="./reports/44.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>440</td>
+<td><a href="https://amigos.org/news/navigating-courier-links-and-information-redesigned-amigosorg-website" target="_blank">Navigating to Courier Links and Information on the Redesigned Amigos.org Website | Amigos Library Services</a></td>
+<td><a href="./reports/440.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>441</td>
+<td><a href="https://amigos.org/news/courier-winter-holiday-2024-schedule" target="_blank">Courier Winter Holiday 2024 Schedule | Amigos Library Services</a></td>
+<td><a href="./reports/441.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>442</td>
+<td><a href="https://amigos.org/news/courier-winter-holiday-schedule" target="_blank">Courier Winter Holiday Schedule | Amigos Library Services</a></td>
+<td><a href="./reports/442.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>443</td>
+<td><a href="https://amigos.org/news/trans-amigos-express-tae-courier-launches-new-label-maker" target="_blank">Trans-Amigos Express (TAE) Courier Launches New Label Maker | Amigos Library Services</a></td>
+<td><a href="./reports/443.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>444</td>
+<td><a href="https://amigos.org/taxonomy/term/18/feed" target="_blank"></a></td>
+<td><a href="./reports/444.html" target="_blank">View Report</a></td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td><strong>12</strong></td>
+</tr>
+
+<tr>
+<td>445</td>
+<td><a href="https://amigos.org/news/amigos-releases-2024-25-annual-report-highlighting-year-progress-and-investment" target="_blank">Amigos Releases 2024–25 Annual Report Highlighting a Year of Progress and Investment | Amigos Library Services</a></td>
+<td><a href="./reports/445.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>446</td>
+<td><a href="https://amigos.org/news/kyla-hunt-joins-amigos-library-services-trainer-and-missouri-libraries-2-go-molib2go" target="_blank">Kyla Hunt Joins Amigos as Library Services Trainer and Missouri Libraries 2 Go (MOLIB2GO) Coordinator | Amigos Library Services</a></td>
+<td><a href="./reports/446.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>447</td>
+<td><a href="https://amigos.org/news/archive?page=0" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/447.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>448</td>
+<td><a href="https://amigos.org/news/archive?page=1" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/448.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>449</td>
+<td><a href="https://amigos.org/news/archive?page=2" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/449.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>45</td>
+<td><a href="https://amigos.org/services/trans-amigos-express/guidelines-labeling" target="_blank">Courier Service Guidelines & Labeling Information | Amigos Library Services</a></td>
+<td><a href="./reports/45.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>450</td>
+<td><a href="https://amigos.org/news/archive?page=3" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/450.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>451</td>
+<td><a href="https://amigos.org/news/archive?page=4" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/451.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>452</td>
+<td><a href="https://amigos.org/news/archive?page=5" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/452.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>453</td>
+<td><a href="https://amigos.org/news/archive?page=6" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/453.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>454</td>
+<td><a href="https://amigos.org/news/archive?page=7" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/454.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>455</td>
+<td><a href="https://amigos.org/news/archive?page=8" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/455.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>456</td>
+<td><a href="https://amigos.org/news/archive?page=23" target="_blank">News | Amigos Library Services</a></td>
+<td><a href="./reports/456.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>457</td>
+<td><a href="https://amigos.org/news/new-year-new-hiring-recruit-top-talent-amigos-job-bank" target="_blank">New Year, New Hiring! Recruit Top Talent with the Amigos Job Bank | Amigos Library Services</a></td>
+<td><a href="./reports/457.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>458</td>
+<td><a href="https://amigos.org/job_bank" target="_blank">Job Bank | Amigos Library Services</a></td>
+<td><a href="./reports/458.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>459</td>
+<td><a href="https://amigos.org/news/save-registration-niso-plus-baltimore" target="_blank">Save on Registration for NISO Plus Baltimore | Amigos Library Services</a></td>
+<td><a href="./reports/459.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>46</td>
+<td><a href="https://amigos.org/services/member-discounts/discount-direct" target="_blank">Discount Direct | Amigos Library Services</a></td>
+<td><a href="./reports/46.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>52</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>460</td>
+<td><a href="https://amigos.org/news/amigos-member-library-directors-check-your-2024-25-member-report-card" target="_blank">Amigos Member Library Directors: Check Your 2024-25 Member Report Card! | Amigos Library Services</a></td>
+<td><a href="./reports/460.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>461</td>
+<td><a href="https://amigos.org/news/have-you-shared-your-input-yet" target="_blank">Have You Shared Your Input Yet? | Amigos Library Services</a></td>
+<td><a href="./reports/461.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>462</td>
+<td><a href="https://amigos.org/news/applications-open-2026-niso-plus-scholarships" target="_blank">Applications Open for 2026 NISO Plus Scholarships | Amigos Library Services</a></td>
+<td><a href="./reports/462.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>463</td>
+<td><a href="https://amigos.org/news/congratulations-2025-mla-award-winners" target="_blank">Congratulations to 2025 MLA Award Winners | Amigos Library Services</a></td>
+<td><a href="./reports/463.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>464</td>
+<td><a href="https://amigos.org/news/reminder-continuing-education-now-free-members" target="_blank">Reminder: Continuing Education is Now Free for Members | Amigos Library Services</a></td>
+<td><a href="./reports/464.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>465</td>
+<td><a href="https://amigos.org/news/amigos-erl-registration-award-application-now-open" target="_blank">Amigos ER&L Registration Award Application Now Open | Amigos Library Services</a></td>
+<td><a href="./reports/465.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>466</td>
+<td><a href="https://amigos.org/news/membership-and-people?page=1" target="_blank">Membership & People | Amigos Library Services</a></td>
+<td><a href="./reports/466.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>467</td>
+<td><a href="https://amigos.org/taxonomy/term/97/feed" target="_blank"></a></td>
+<td><a href="./reports/467.html" target="_blank">View Report</a></td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td><strong>12</strong></td>
+</tr>
+
+<tr>
+<td>468</td>
+<td><a href="https://amigos.org/node/1362?which_newsletter_do_you_wish_to_subscribe_to=AmigosNow" target="_blank">Subscribe to AmigosNow and/or Continued ... Newsletters | Amigos Library Services</a></td>
+<td><a href="./reports/468.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>469</td>
+<td><a href="https://amigos.org/node/9716?newsletter_unsubscribe=AmigosNow" target="_blank">Unsubscribe from AmigosNow and/or Continued ... Newsletters | Amigos Library Services</a></td>
+<td><a href="./reports/469.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>47</td>
+<td><a href="https://amigos.org/services/member-discounts/request" target="_blank">Member Discount Quote Request Form | Amigos Library Services</a></td>
+<td><a href="./reports/47.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>49</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>470</td>
+<td><a href="https://amigos.org/node/1362?which_newsletter_do_you_wish_to_subscribe_to=Continued" target="_blank">Subscribe to AmigosNow and/or Continued ... Newsletters | Amigos Library Services</a></td>
+<td><a href="./reports/470.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>471</td>
+<td><a href="https://amigos.org/node/9716?newsletter_unsubscribe=Continued" target="_blank">Unsubscribe from AmigosNow and/or Continued ... Newsletters | Amigos Library Services</a></td>
+<td><a href="./reports/471.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>472</td>
+<td><a href="https://amigos.org/news/february-conference-call-proposals-now-open" target="_blank">February Conference Call for Proposals Now Open | Amigos Library Services</a></td>
+<td><a href="./reports/472.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>473</td>
+<td><a href="https://amigos.org/news/congratulations-new-amigos-micro-credential-certificate-recipients" target="_blank">Congratulations! New Amigos Micro-Credential Certificate Recipients | Amigos Library Services</a></td>
+<td><a href="./reports/473.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>474</td>
+<td><a href="https://amigos.org/news/see-whats-new-amigos-ce-continued-newsletter" target="_blank">See What’s New in Amigos CE in Continued Newsletter | Amigos Library Services</a></td>
+<td><a href="./reports/474.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>475</td>
+<td><a href="https://amigos.org/news/schedule-announced-practical-paths-ai-enhanced-library" target="_blank">Schedule Announced for Practical Paths to the AI-Enhanced Library | Amigos Library Services</a></td>
+<td><a href="./reports/475.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>476</td>
+<td><a href="https://amigos.org/news/call-panelists-hive-unlocking-power-apis-libraries" target="_blank">Call for Panelists - The Hive: Unlocking the Power of APIs in Libraries | Amigos Library Services</a></td>
+<td><a href="./reports/476.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>477</td>
+<td><a href="https://amigos.org/news/keynote-speakers-announced-practical-paths-ai-enhanced-library" target="_blank">Keynote Speakers Announced for Practical Paths to the AI-Enhanced Library | Amigos Library Services</a></td>
+<td><a href="./reports/477.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>478</td>
+<td><a href="https://amigos.org/news/registration-open-practical-paths-ai-enhanced-library-conference" target="_blank">Registration Open for Practical Paths to the AI-Enhanced Library Conference | Amigos Library Services</a></td>
+<td><a href="./reports/478.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>479</td>
+<td><a href="https://amigos.org/news/ai-amigos-fall" target="_blank">AI With Amigos This Fall | Amigos Library Services</a></td>
+<td><a href="./reports/479.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>48</td>
+<td><a href="https://amigos.org/services/member-discounts/vendors" target="_blank">Vendors | Amigos Library Services</a></td>
+<td><a href="./reports/48.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>52</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>480</td>
+<td><a href="https://amigos.org/news/learn-essentials-library-acquisitions-elizabeth-j-szkirpan" target="_blank">Learn the Essentials of Library Acquisitions with Elizabeth J. Szkirpan | Amigos Library Services</a></td>
+<td><a href="./reports/480.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>481</td>
+<td><a href="https://amigos.org/news/october-know-gos" target="_blank">October Know & Go’s | Amigos Library Services</a></td>
+<td><a href="./reports/481.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>482</td>
+<td><a href="https://amigos.org/news/education-and-events?page=0" target="_blank">Education & Events | Amigos Library Services</a></td>
+<td><a href="./reports/482.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>483</td>
+<td><a href="https://amigos.org/news/education-and-events?page=2" target="_blank">Education & Events | Amigos Library Services</a></td>
+<td><a href="./reports/483.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>484</td>
+<td><a href="https://amigos.org/news/help-faculty-find-right-journals" target="_blank">Help Faculty Find the Right Journals | Amigos Library Services</a></td>
+<td><a href="./reports/484.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>485</td>
+<td><a href="https://amigos.org/news/case-law-power-tool-now-integrated-heinonline" target="_blank">Case Law Power Tool Now Integrated to HeinOnline | Amigos Library Services</a></td>
+<td><a href="./reports/485.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>486</td>
+<td><a href="https://amigos.org/news/savings-everyday-purchases-brodart" target="_blank">Savings on Everyday Purchases with Brodart | Amigos Library Services</a></td>
+<td><a href="./reports/486.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>487</td>
+<td><a href="https://amigos.org/news/special-offer-oxford-journals-archive" target="_blank">Special Offer on Oxford Journals Archive | Amigos Library Services</a></td>
+<td><a href="./reports/487.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>488</td>
+<td><a href="https://amigos.org/news/celebrate-latin-and-spanish-language-stories-november" target="_blank">Celebrate Latin and Spanish-Language Stories This November | Amigos Library Services</a></td>
+<td><a href="./reports/488.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>489</td>
+<td><a href="https://amigos.org/news/doaj-shares-updates-and-thanks-amigos-supporters" target="_blank">DOAJ Shares Updates and Thanks Amigos Supporters | Amigos Library Services</a></td>
+<td><a href="./reports/489.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>49</td>
+<td><a href="https://amigos.org/news/search?search_api_fulltext=hyku" target="_blank">News Search | Amigos Library Services</a></td>
+<td><a href="./reports/49.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>490</td>
+<td><a href="https://amigos.org/news/learn-how-jessica-kingsley-publishers-library-enhances-collections-free-webinar" target="_blank">Learn How the Jessica Kingsley Publishers Library Enhances Collections in Free Webinar | Amigos Library Services</a></td>
+<td><a href="./reports/490.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>491</td>
+<td><a href="https://amigos.org/news/make-every-label-count-demco" target="_blank"> Make Every Label Count with Demco | Amigos Library Services</a></td>
+<td><a href="./reports/491.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>492</td>
+<td><a href="https://amigos.org/news/project-muse-introduces-2026-hopkins-book-collection" target="_blank">Project MUSE Introduces the 2026 Hopkins Book Collection | Amigos Library Services</a></td>
+<td><a href="./reports/492.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>493</td>
+<td><a href="https://amigos.org/news/bioone-introduces-subscribe-open-pilot-program" target="_blank">BioOne Introduces Subscribe to Open Pilot Program | Amigos Library Services</a></td>
+<td><a href="./reports/493.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>494</td>
+<td><a href="https://amigos.org/news/products-and-partnerships?page=0" target="_blank">Products & Partnerships | Amigos Library Services</a></td>
+<td><a href="./reports/494.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>495</td>
+<td><a href="https://amigos.org/news/products-and-partnerships?page=2" target="_blank">Products & Partnerships | Amigos Library Services</a></td>
+<td><a href="./reports/495.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>496</td>
+<td><a href="https://amigos.org/taxonomy/term/50?page=1" target="_blank">Cataloging | Amigos Library Services</a></td>
+<td><a href="./reports/496.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>497</td>
+<td><a href="https://amigos.org/taxonomy/term/50/feed" target="_blank"></a></td>
+<td><a href="./reports/497.html" target="_blank">View Report</a></td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td><strong>12</strong></td>
+</tr>
+
+<tr>
+<td>498</td>
+<td><a href="https://amigos.org/taxonomy/term/76?page=1" target="_blank">Metadata | Amigos Library Services</a></td>
+<td><a href="./reports/498.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>499</td>
+<td><a href="https://amigos.org/taxonomy/term/76/feed" target="_blank"></a></td>
+<td><a href="./reports/499.html" target="_blank">View Report</a></td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td><strong>12</strong></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://amigos.org/services/continuing-education" target="_blank">Continuing Education Services | Amigos Library Services</a></td>
+<td><a href="./reports/5.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>50</td>
+<td><a href="https://amigos.org/services/digital-repository/privacy" target="_blank">Privacy Policy | Amigos Library Services</a></td>
+<td><a href="./reports/50.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>500</td>
+<td><a href="https://amigos.org/taxonomy/term/74?page=1" target="_blank">Management & Leadership | Amigos Library Services</a></td>
+<td><a href="./reports/500.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>51</td>
+<td><a href="https://amigos.org/services/digital-repository/webinars" target="_blank">Webinars | Amigos Library Services</a></td>
+<td><a href="./reports/51.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>52</td>
+<td><a href="https://amigos.org/node/2736" target="_blank">Association Management Services | Amigos Library Services</a></td>
+<td><a href="./reports/52.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>53</td>
+<td><a href="https://amigos.org/consulting" target="_blank">Consulting | Amigos Library Services</a></td>
+<td><a href="./reports/53.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>54</td>
+<td><a href="https://amigos.org/continuing_education" target="_blank">Continuing Education Services | Amigos Library Services</a></td>
+<td><a href="./reports/54.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>55</td>
+<td><a href="https://amigos.org/member_discounts" target="_blank">Member Discount Services | Amigos Library Services</a></td>
+<td><a href="./reports/55.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>56</td>
+<td><a href="https://amigos.org/amigos_resource_sharing" target="_blank">Amigos Library Services Resource Sharing | Amigos Library Services</a></td>
+<td><a href="./reports/56.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>57</td>
+<td><a href="https://amigos.org/node/670" target="_blank">Amigos Online Conferences | Amigos Library Services</a></td>
+<td><a href="./reports/57.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>58</td>
+<td><a href="https://amigos.org/trans_amigos_express" target="_blank">Trans-Amigos Express | Amigos Library Services</a></td>
+<td><a href="./reports/58.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>59</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-performance-improvement-plans" target="_blank">Know & Go: Performance Improvement Plans | Amigos Library Services</a></td>
+<td><a href="./reports/59.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://amigos.org/services/trans-amigos-express" target="_blank">Trans-Amigos Express | Amigos Library Services</a></td>
+<td><a href="./reports/6.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>60</td>
+<td><a href="https://amigos.org/services/continuing-education/understanding-and-supporting-neurodiverse-colleagues" target="_blank">Understanding and Supporting Neurodiverse Colleagues | Amigos Library Services</a></td>
+<td><a href="./reports/60.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>61</td>
+<td><a href="https://amigos.org/services/continuing-education/adaptive-services-staff-success-amigos-community-conversation" target="_blank">Adaptive Services for Staff Success: An Amigos Community Conversation | Amigos Library Services</a></td>
+<td><a href="./reports/61.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>62</td>
+<td><a href="https://amigos.org/services/continuing-education/cataloging-classification-basics" target="_blank">Cataloging & Classification Basics | Amigos Library Services</a></td>
+<td><a href="./reports/62.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>63</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-tips-cover-letters-resumes-and-interviews" target="_blank">Know & Go: Tips for Cover Letters, Resumes, and Interviews | Amigos Library Services</a></td>
+<td><a href="./reports/63.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>64</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-beyond-books-strengthening-rural-communities-through-library" target="_blank">Know & Go: Beyond the Books – Strengthening Rural Communities Through Library Engagement | Amigos Library Services</a></td>
+<td><a href="./reports/64.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>65</td>
+<td><a href="https://amigos.org/services/continuing-education/book-repair-basics" target="_blank">Book Repair Basics | Amigos Library Services</a></td>
+<td><a href="./reports/65.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>66</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-understanding-creative-commons-licensing" target="_blank">Know & Go: Understanding Creative Commons Licensing | Amigos Library Services</a></td>
+<td><a href="./reports/66.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>67</td>
+<td><a href="https://amigos.org/services/continuing-education/soft-skills-library-staff" target="_blank">Soft Skills for Library Staff | Amigos Library Services</a></td>
+<td><a href="./reports/67.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>68</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-open-rules-cataloging-project" target="_blank">Know & Go: The Open Rules for Cataloging Project | Amigos Library Services</a></td>
+<td><a href="./reports/68.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>69</td>
+<td><a href="https://amigos.org/services/continuing-education/essentials-teaching-and-presenting-profession" target="_blank">The Essentials: Teaching and Presenting in the Profession | Amigos Library Services</a></td>
+<td><a href="./reports/69.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://amigos.org/services/job-bank" target="_blank">Job Bank | Amigos Library Services</a></td>
+<td><a href="./reports/7.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>70</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-building-authentic-culture-everyday-moments" target="_blank">Know & Go: Building Authentic Culture in Everyday Moments | Amigos Library Services</a></td>
+<td><a href="./reports/70.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>71</td>
+<td><a href="https://amigos.org/services/continuing-education/library-management-managing-change" target="_blank">Library Management: Managing Change | Amigos Library Services</a></td>
+<td><a href="./reports/71.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>72</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-library-management-skills-new-and-aspiring-managers" target="_blank">Know & Go: Library Management Skills for New and Aspiring Managers | Amigos Library Services</a></td>
+<td><a href="./reports/72.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>73</td>
+<td><a href="https://amigos.org/services/continuing-education/creating-collection-development-policy" target="_blank">Creating a Collection Development Policy | Amigos Library Services</a></td>
+<td><a href="./reports/73.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>74</td>
+<td><a href="https://amigos.org/services/continuing-education/library-signage" target="_blank">Library Signage | Amigos Library Services</a></td>
+<td><a href="./reports/74.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>75</td>
+<td><a href="https://amigos.org/services/continuing-education/introduction-openrefine" target="_blank">Introduction to OpenRefine | Amigos Library Services</a></td>
+<td><a href="./reports/75.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>76</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-increase-your-productivity-time-management" target="_blank">Know & Go: Increase Your Productivity with Time Management | Amigos Library Services</a></td>
+<td><a href="./reports/76.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>77</td>
+<td><a href="https://amigos.org/services/continuing-education/know-go-diversity-and-inclusion-activities-library-meetings" target="_blank">Know & Go: Diversity and Inclusion Activities for Library Meetings | Amigos Library Services</a></td>
+<td><a href="./reports/77.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>78</td>
+<td><a href="https://amigos.org/services/continuing-education/creating-visual-content-multiple-platforms" target="_blank">Creating Visual Content for Multiple Platforms | Amigos Library Services</a></td>
+<td><a href="./reports/78.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>79</td>
+<td><a href="https://amigos.org/services/job-bank/health-professions-librarian-clinical-assistant-professor-sam-houston-state" target="_blank">Health Professions Librarian - Clinical Assistant Professor -- Sam Houston State University -- Huntsville, TX | Amigos Library Services</a></td>
+<td><a href="./reports/79.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://amigos.org/services/member-discounts" target="_blank">Member Discount Services | Amigos Library Services</a></td>
+<td><a href="./reports/8.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>80</td>
+<td><a href="https://amigos.org/services/job-bank/librarian-i-catalog-texas-christian-university-fort-worth-tx" target="_blank">Librarian I (Catalog) -- Texas Christian University -- Fort Worth, TX | Amigos Library Services</a></td>
+<td><a href="./reports/80.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>81</td>
+<td><a href="https://amigos.org/services/job-bank/librarian-reference-collection-development-college-mainland-texas-city-tx" target="_blank">Librarian, Reference & Collection Development -- College of the Mainland -- Texas City, TX | Amigos Library Services</a></td>
+<td><a href="./reports/81.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>82</td>
+<td><a href="https://amigos.org/services/job-bank/head-librarian-missouri-historical-society-st-louis-mo" target="_blank">Head Librarian -- Missouri Historical Society -- St. Louis, MO | Amigos Library Services</a></td>
+<td><a href="./reports/82.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>83</td>
+<td><a href="https://amigos.org/services/job-bank/digital-humanities-archivist-louisiana-state-university-shreveport-la" target="_blank">Digital Humanities Archivist -- Louisiana State University -- Shreveport, LA | Amigos Library Services</a></td>
+<td><a href="./reports/83.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>84</td>
+<td><a href="https://amigos.org/services/job-bank/department-head-research-and-learning-services-oklahoma-state-university-0" target="_blank">Department Head, Research and Learning Services -- Oklahoma State University -- Stillwater, OK | Amigos Library Services</a></td>
+<td><a href="./reports/84.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>85</td>
+<td><a href="https://amigos.org/services/job-bank/library-assistant-i-part-time-harper-college-palatine-il-1" target="_blank">Library Assistant I - Part Time -- Harper College -- Palatine, IL | Amigos Library Services</a></td>
+<td><a href="./reports/85.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>86</td>
+<td><a href="https://amigos.org/services/job-bank/business-librarian-baylor-university-waco-tx" target="_blank">Business Librarian -- Baylor University -- Waco, TX | Amigos Library Services</a></td>
+<td><a href="./reports/86.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>87</td>
+<td><a href="https://amigos.org/services/job-bank/collection-strategy-librarian-university-missouri-columbia-mo" target="_blank">Collection Strategy Librarian -- University of Missouri -- Columbia, MO | Amigos Library Services</a></td>
+<td><a href="./reports/87.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>88</td>
+<td><a href="https://amigos.org/services/job-bank/technical-services-librarian-conception-seminary-college-conception-mo" target="_blank">Technical Services Librarian -- Conception Seminary College -- Conception, MO | Amigos Library Services</a></td>
+<td><a href="./reports/88.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>89</td>
+<td><a href="https://amigos.org/services/job-bank/library-manager-support-services-las-cruces-public-libraries-las-cruces-nm" target="_blank">Library Manager - Support Services -- Las Cruces Public Libraries -- Las Cruces, NM | Amigos Library Services</a></td>
+<td><a href="./reports/89.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td><strong>12</strong></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://amigos.org/services/online-conference" target="_blank">Amigos Online Conferences | Amigos Library Services</a></td>
+<td><a href="./reports/9.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>90</td>
+<td><a href="https://amigos.org/node/9708" target="_blank">Vendors | Amigos Library Services</a></td>
+<td><a href="./reports/90.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>52</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>91</td>
+<td><a href="https://amigos.org/services/online-conference/digital-accessibility-in-libraries" target="_blank">Digital Accessibility in Libraries Conference | Amigos Library Services</a></td>
+<td><a href="./reports/91.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>92</td>
+<td><a href="https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library" target="_blank">Practical Paths to the AI-Enhanced Library Conference | Amigos Library Services</a></td>
+<td><a href="./reports/92.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>93</td>
+<td><a href="https://amigos.org/services/online-conference/libraries-cultivating-community" target="_blank">Libraries Cultivating Community Conference | Amigos Library Services</a></td>
+<td><a href="./reports/93.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>51</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+<tr>
+<td>94</td>
+<td><a href="https://amigos.org/collections-reflect-communities" target="_blank">Collections Reflect Communities Conference | Amigos Library Services</a></td>
+<td><a href="./reports/94.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>95</td>
+<td><a href="https://amigos.org/node/2317" target="_blank">Request Consulting Services | Amigos Library Services</a></td>
+<td><a href="./reports/95.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>96</td>
+<td><a href="https://amigos.org/services/continuing-education/full-catalog?field_coursetype_target_id=37&field_topic_area_target_id=All" target="_blank">Course Catalog | Amigos Library Services</a></td>
+<td><a href="./reports/96.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td><strong>1</strong></td>
+</tr>
+
+<tr>
+<td>97</td>
+<td><a href="https://amigos.org/services/continuing-education/full-catalog?field_coursetype_target_id=34&field_topic_area_target_id=All" target="_blank">Course Catalog | Amigos Library Services</a></td>
+<td><a href="./reports/97.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td><strong>1</strong></td>
+</tr>
+
+<tr>
+<td>98</td>
+<td><a href="https://amigos.org/rdatoolkit" target="_blank">RDA Toolkit | Amigos Library Services</a></td>
+<td><a href="./reports/98.html" target="_blank">View Report</a></td>
+<td>0</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><strong>0</strong></td>
+</tr>
+
+<tr>
+<td>99</td>
+<td><a href="https://amigos.org/membership/annual-conference/2025" target="_blank">Our Present. Our Futures. The Amigos Member Conference 2025 | Amigos Library Services</a></td>
+<td><a href="./reports/99.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>50</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><strong>3</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<script>
+const chartData = {
+  labels: ["1","10","100","101","102","103","104","105","106","107","108","109","11","110","111","112","113","114","115","116","117","118","119","12","120","121","122","123","124","125","126","127","128","129","13","130","131","132","133","134","135","136","137","138","139","14","140","141","142","143","144","145","146","147","148","149","15","150","151","152","153","154","155","156","157","158","159","16","160","161","162","163","164","165","166","167","168","169","17","170","171","172","173","174","175","176","177","178","179","18","180","181","182","183","184","185","186","187","188","189","19","190","191","192","193","194","195","196","197","198","199","2","20","200","201","202","203","204","205","206","207","208","209","21","210","211","212","213","214","215","216","217","218","219","22","220","221","222","223","224","225","226","227","228","229","23","230","231","232","233","234","235","236","237","238","239","24","240","241","242","243","244","245","246","247","248","249","25","250","251","252","253","254","255","256","257","258","259","26","260","261","262","263","264","265","266","267","268","269","27","270","271","272","273","274","275","276","277","278","279","28","280","281","282","283","284","285","286","287","288","289","29","290","291","292","293","294","295","296","297","298","299","3","30","300","301","302","303","304","305","306","307","308","309","31","310","311","312","313","314","315","316","317","318","319","32","320","321","322","323","324","325","326","327","328","329","33","330","331","332","333","334","335","336","337","338","339","34","340","341","342","343","344","345","346","347","348","349","35","350","351","352","353","354","355","356","357","358","359","36","360","361","362","363","364","365","366","367","368","369","37","370","371","372","373","374","375","376","377","378","379","38","380","381","382","383","384","385","386","387","388","389","39","390","391","392","393","394","395","396","397","398","399","4","40","400","401","402","403","404","405","406","407","408","409","41","410","411","412","413","414","415","416","417","418","419","42","420","421","422","423","424","425","426","427","428","429","43","430","431","432","433","434","435","436","437","438","439","44","440","441","442","443","444","445","446","447","448","449","45","450","451","452","453","454","455","456","457","458","459","46","460","461","462","463","464","465","466","467","468","469","47","470","471","472","473","474","475","476","477","478","479","48","480","481","482","483","484","485","486","487","488","489","49","490","491","492","493","494","495","496","497","498","499","5","50","500","51","52","53","54","55","56","57","58","59","6","60","61","62","63","64","65","66","67","68","69","7","70","71","72","73","74","75","76","77","78","79","8","80","81","82","83","84","85","86","87","88","89","9","90","91","92","93","94","95","96","97","98","99"],
+  datasets: [
+    { label: 'Critical', backgroundColor: '#e3342f', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] },
+    { label: 'Serious', backgroundColor: '#f6993f', data: [0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,1,1,1,0,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,1,0,0,0,0,0,1] },
+    { label: 'Moderate', backgroundColor: '#ffed4a', data: [0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,1,1,1,0,1,0,0,0,1,1,1,1,1,1,0,3,0,0,0,0,1,1,1,1,1,0,1,3,2,2,2,2,2,2,2,1,0,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1,1,1,0,0,1,1,0,1,0,1,1,0,1,0,1,1,1,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,1,1,1,1,1,0,0,0,1,1,0,1,1,0,1,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1,0,1,0,1,0,0,0,1,0,0,1,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,0,0,0,1,0,0,1,0,1,1,0,1,0,1,1,1,7,7,7,7,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,2,0,1,0,0,1,2,2,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,1,1,1,3,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,2,3,2,3,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0] },
+    { label: 'Minor', backgroundColor: '#38c172', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0] }
+  ]
+};
+
+new Chart(document.getElementById('summaryChart'), {
+  type: 'bar',
+  data: chartData,
+  options: {
+    responsive: true,
+    scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } }
+  }
+});
+
+$(document).ready(function() {
+  $('#summary-table').DataTable({ paging: false });
+});
+</script>
+
+</body>
+</html>
