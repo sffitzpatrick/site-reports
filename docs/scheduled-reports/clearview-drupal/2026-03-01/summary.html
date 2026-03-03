@@ -1,0 +1,4283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Accessibility Summary</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
+<style>
+body { font-family: sans-serif; padding: 2rem; }
+table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+th { background: #f4f4f4; }
+canvas { max-width: 900px; margin: 2rem auto; display: block; }
+</style>
+</head>
+<body>
+
+<h1>Accessibility Audit Summary</h1>
+<h2>Site URL: https://clearviewlibrary.org</h2>
+
+<canvas id="summaryChart"></canvas>
+
+<table id="summary-table">
+<thead>
+<tr>
+<th>Page</th>
+<th>Title</th>
+<th>Report</th>
+<th>Total Violations</th>
+<th>Passes</th>
+<th>Critical</th>
+<th>Serious</th>
+<th>Moderate</th>
+<th>Minor</th>
+<th>Severity Score</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>1</td>
+<td><a href="https://clearviewlibrary.org" target="_blank">Homepage | Clearview Library</a></td>
+<td><a href="./reports/1.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>49</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/adventure-pass" target="_blank">Adventure Pass | Clearview Library</a></td>
+<td><a href="./reports/10.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>100</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=18" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/100.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>101</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=19" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/101.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>102</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=16" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/102.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>103</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=23" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/103.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>104</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=25" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/104.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>105</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=24" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/105.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>106</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=21" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/106.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>107</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=26" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/107.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>108</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=62" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/108.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>109</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=77" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/109.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more/interlibrary-loan" target="_blank">Interlibrary Loan | Clearview Library</a></td>
+<td><a href="./reports/11.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>110</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=20" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/110.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>111</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=18" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/111.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>112</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=19" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/112.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>113</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=16" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/113.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>114</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=23" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/114.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>115</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=25" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/115.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>116</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=24" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/116.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>117</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=21" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/117.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>118</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=26" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/118.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>119</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=62" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/119.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a href="https://clearviewlibrary.org/form/suggest-a-purchase" target="_blank">Suggest a Purchase | Clearview Library</a></td>
+<td><a href="./reports/12.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>120</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=77" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/120.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>121</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=20" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/121.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>122</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=18" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/122.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>123</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=19" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/123.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>124</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=16" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/124.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>125</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=23" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/125.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>126</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=25" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/126.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>127</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=24" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/127.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>128</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=21" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/128.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>129</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=26" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/129.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more/read-watch-listen-suggestions" target="_blank">Read, Watch, Listen Suggestions | Clearview Library</a></td>
+<td><a href="./reports/13.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>130</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=62" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/130.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>131</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=77" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/131.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>132</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=20" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/132.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>133</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=18" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/133.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>134</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=19" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/134.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>135</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=16" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/135.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>136</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=23" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/136.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>137</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=25" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/137.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>138</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=24" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/138.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>139</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=21" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/139.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/14.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>140</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=26" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/140.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>141</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=62" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/141.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>142</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/meeting-room-policy" target="_blank">Meeting Room Policy | Clearview Library</a></td>
+<td><a href="./reports/142.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>143</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/signup" target="_blank">Newsletter Signup | Clearview Library</a></td>
+<td><a href="./reports/143.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>144</td>
+<td><a href="https://clearviewlibrary.org/cookbook-nook" target="_blank">Cookbook Nook | Clearview Library</a></td>
+<td><a href="./reports/144.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>145</td>
+<td><a href="https://clearviewlibrary.org/100-books-before-graduation" target="_blank">100 Books Before Graduation | Clearview Library</a></td>
+<td><a href="./reports/145.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>43</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>146</td>
+<td><a href="https://clearviewlibrary.org/junior-librarian" target="_blank">Junior Librarian | Clearview Library</a></td>
+<td><a href="./reports/146.html" target="_blank">View Report</a></td>
+<td>3</td>
+<td>43</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>12</strong></td>
+</tr>
+
+<tr>
+<td>147</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/unattended-children-and-behavior-policy" target="_blank">Unattended Children and Behavior Policy | Clearview Library</a></td>
+<td><a href="./reports/147.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>148</td>
+<td><a href="https://clearviewlibrary.org/programs-events/just-for-kids/1kbk-signup" target="_blank">1000 Books Before Kindergarten Signup | Clearview Library</a></td>
+<td><a href="./reports/148.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>149</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/staff-spotlight-our-bookmobile" target="_blank">Page not found | Clearview Library</a></td>
+<td><a href="./reports/149.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>43</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/15.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>150</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/all-databases" target="_blank">All Databases | Clearview Library</a></td>
+<td><a href="./reports/150.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>151</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/join-film-conversation-and-community-connections" target="_blank">Join In: Film, Conversation, and Community Connections | Clearview Library</a></td>
+<td><a href="./reports/151.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>152</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-organizational-structure-effectiveness-study" target="_blank">Request for Proposal for Organizational Structure & Effectiveness Study | Clearview Library</a></td>
+<td><a href="./reports/152.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>153</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/art-library-july-2025" target="_blank">Art in the Library - July 2025 | Clearview Library</a></td>
+<td><a href="./reports/153.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>154</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news?page=0" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/154.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>155</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news?page=1" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/155.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>156</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news?page=2" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/156.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>157</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news?page=3" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/157.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>158</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news?page=4" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/158.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>159</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news?page=5" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/159.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/16.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>160</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/bookmobile-policy" target="_blank">Bookmobile Policy | Clearview Library</a></td>
+<td><a href="./reports/160.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>161</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/budget-policy" target="_blank">Budget Policy | Clearview Library</a></td>
+<td><a href="./reports/161.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>162</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/check-out-policy" target="_blank">Check Out Policy | Clearview Library</a></td>
+<td><a href="./reports/162.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>163</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/co-location-library-facilities-policy" target="_blank">Co-Location of Library Facilities Policy | Clearview Library</a></td>
+<td><a href="./reports/163.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>164</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/collection-development-policy" target="_blank">Collection Development Policy | Clearview Library</a></td>
+<td><a href="./reports/164.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>165</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/comments-complaints-and-concerns-policy" target="_blank">Comments, Complaints, and Concerns Policy | Clearview Library</a></td>
+<td><a href="./reports/165.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>166</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/conduct-library-policy" target="_blank">Conduct in the Library Policy | Clearview Library</a></td>
+<td><a href="./reports/166.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>167</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/copyright-policy" target="_blank">Copyright Policy | Clearview Library</a></td>
+<td><a href="./reports/167.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>168</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/emergency-closings-policy" target="_blank">Emergency Closings Policy | Clearview Library</a></td>
+<td><a href="./reports/168.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>169</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/facilities-policy" target="_blank">Facilities Policy | Clearview Library</a></td>
+<td><a href="./reports/169.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/17.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>170</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/federal-immigration-authority-contact-policy" target="_blank">Federal Immigration Authority Contact Policy | Clearview Library</a></td>
+<td><a href="./reports/170.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>171</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/financial-policies" target="_blank">Financial Policies | Clearview Library</a></td>
+<td><a href="./reports/171.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>172</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/interlibrary-loan-policy" target="_blank">Interlibrary Loan Policy | Clearview Library</a></td>
+<td><a href="./reports/172.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>173</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/internet-safety-and-acceptable-use-policy" target="_blank">Internet Safety and Acceptable Use Policy | Clearview Library</a></td>
+<td><a href="./reports/173.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>174</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/investment-policy" target="_blank">Investment Policy | Clearview Library</a></td>
+<td><a href="./reports/174.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>175</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/material-donation-policy" target="_blank">Material Donation Policy | Clearview Library</a></td>
+<td><a href="./reports/175.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>176</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/naming-rights-policy" target="_blank">Naming Rights Policy | Clearview Library</a></td>
+<td><a href="./reports/176.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>177</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/open-records-policy" target="_blank">Open Records Policy | Clearview Library</a></td>
+<td><a href="./reports/177.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>178</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/photography-videography-and-recording-policy" target="_blank">Photography, Videography, and Recording Policy | Clearview Library</a></td>
+<td><a href="./reports/178.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>179</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/postings-promotional-materials-displays-and-exhibits-policy" target="_blank">Postings, Promotional Materials, Displays, and Exhibits Policy | Clearview Library</a></td>
+<td><a href="./reports/179.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/18.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>180</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/privacy-user-records-policy" target="_blank">Privacy of User Records Policy | Clearview Library</a></td>
+<td><a href="./reports/180.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>181</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/procurement-policy" target="_blank">Procurement Policy | Clearview Library</a></td>
+<td><a href="./reports/181.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>51</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>182</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/program-policy" target="_blank">Program Policy | Clearview Library</a></td>
+<td><a href="./reports/182.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>183</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/provision-library-services-policy" target="_blank">Provision of Library Services Policy | Clearview Library</a></td>
+<td><a href="./reports/183.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>184</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-art-policy" target="_blank">Public Art Policy | Clearview Library</a></td>
+<td><a href="./reports/184.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>185</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/public-comment-policy" target="_blank">Public Comment Policy | Clearview Library</a></td>
+<td><a href="./reports/185.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>186</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/records-retention-policy" target="_blank">Records Retention Policy | Clearview Library</a></td>
+<td><a href="./reports/186.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>187</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/request-for-reconsideration-policy" target="_blank">Request for Reconsideration Policy | Clearview Library</a></td>
+<td><a href="./reports/187.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>188</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/request-public-records" target="_blank">Request Public Records | Clearview Library</a></td>
+<td><a href="./reports/188.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>189</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/social-media-policy" target="_blank">Social Media Policy | Clearview Library</a></td>
+<td><a href="./reports/189.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/19.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>190</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/solicitation-and-petitioning-policy" target="_blank">Solicitation and Petitioning Policy | Clearview Library</a></td>
+<td><a href="./reports/190.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>191</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/teen-spaces-policy" target="_blank">Teen Spaces Policy | Clearview Library</a></td>
+<td><a href="./reports/191.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>192</td>
+<td><a href="https://clearviewlibrary.org/about-us/support-donate/volunteer/teens" target="_blank">Teen Volunteer Application Form | Clearview Library</a></td>
+<td><a href="./reports/192.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>46</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td><strong>5</strong></td>
+</tr>
+
+<tr>
+<td>193</td>
+<td><a href="https://clearviewlibrary.org/form/youth-services-volunteer" target="_blank">Youth Services Volunteer Application | Clearview Library</a></td>
+<td><a href="./reports/193.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>43</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>194</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/art-library-winter-edition" target="_blank">Art in the Library - Winter Edition! | Clearview Library</a></td>
+<td><a href="./reports/194.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>195</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/art-library-may-july-2024" target="_blank">Art in the Library! May - July 2024 | Clearview Library</a></td>
+<td><a href="./reports/195.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>196</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/art-library-march-may-2024" target="_blank">Art in the Library! March - May 2024 | Clearview Library</a></td>
+<td><a href="./reports/196.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>197</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/art-in-the-library-January-March-2024" target="_blank">Art in the Library! January - March 2024 | Clearview Library</a></td>
+<td><a href="./reports/197.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>198</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/art-in-the-library" target="_blank">Art in the Library! | Clearview Library</a></td>
+<td><a href="./reports/198.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>199</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/clearview-library-district-announces-summer-adventure-program-color-our" target="_blank">Clearview Library District announces summer adventure program: Color Our World | Clearview Library</a></td>
+<td><a href="./reports/199.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/improving-our-community-spaces-pikes-peak-meeting-room-renovation" target="_blank">Improving Our Community Spaces: Pikes Peak Meeting Room Renovation | Clearview Library</a></td>
+<td><a href="./reports/2.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><a href="https://clearviewlibrary.org/services/other/reserve-room" target="_blank">Reserve a Meeting Room | Clearview Library</a></td>
+<td><a href="./reports/20.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>200</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/young-writers-big-impact-katherine-applegate-launches-national-writing" target="_blank">Young Writers, Big Impact: Katherine Applegate Launches National Writing Contest for Kids Ages 8 to 12 | Clearview Library</a></td>
+<td><a href="./reports/200.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>201</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/reserve-meeting-rooms-after-hours-severance-library" target="_blank">Reserve Meeting Rooms After-Hours at Severance Library | Clearview Library</a></td>
+<td><a href="./reports/201.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>202</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/news?page=0" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/202.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>203</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/news?page=1" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/203.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>204</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/news?page=2" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/204.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>205</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/community" target="_blank">Community | Clearview Library</a></td>
+<td><a href="./reports/205.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>206</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/try-mango-languages-asl-course-your-library-needs-your-help" target="_blank">Try Mango Languages’ ASL Course – Your Library Needs Your Help! | Clearview Library</a></td>
+<td><a href="./reports/206.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>207</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/clearview-library-adds-genealogy-databases" target="_blank">Clearview Library Adds Genealogy Databases | Clearview Library</a></td>
+<td><a href="./reports/207.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>208</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=All" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/208.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>209</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=77" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/209.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><a href="https://clearviewlibrary.org/programs-events/upcoming-events/for-adults" target="_blank">For Adults | Clearview Library</a></td>
+<td><a href="./reports/21.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>210</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=20" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/210.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>211</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=18" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/211.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>212</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=19" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/212.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>213</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=16" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/213.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>214</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=23" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/214.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>215</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=25" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/215.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>216</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=24" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/216.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>217</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=21" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/217.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>218</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=26" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/218.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>219</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=62" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/219.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><a href="https://clearviewlibrary.org/programs-events/upcoming-events/for-teens" target="_blank">For Teens | Clearview Library</a></td>
+<td><a href="./reports/22.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>51</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td><strong>5</strong></td>
+</tr>
+
+<tr>
+<td>220</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=77" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/220.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>221</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=20" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/221.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>222</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=18" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/222.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>223</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=19" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/223.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>224</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=16" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/224.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>225</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=23" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/225.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>226</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=25" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/226.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>227</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=24" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/227.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>228</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=21" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/228.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>229</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=26" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/229.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>23</td>
+<td><a href="https://clearviewlibrary.org/programs-events/upcoming-events/book-clubs" target="_blank">Book Clubs | Clearview Library</a></td>
+<td><a href="./reports/23.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>230</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=62" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/230.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>231</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=77" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/231.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>232</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=20" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/232.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>233</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=18" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/233.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>234</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=19" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/234.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>235</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=16" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/235.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>236</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=23" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/236.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>237</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=25" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/237.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>238</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=24" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/238.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>239</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=21" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/239.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>24</td>
+<td><a href="https://clearviewlibrary.org/programs-events/upcoming-events/suggest-program" target="_blank">Suggest a Program | Clearview Library</a></td>
+<td><a href="./reports/24.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>240</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=26" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/240.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>241</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=62" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/241.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>242</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=77" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/242.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>243</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=20" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/243.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>244</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=18" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/244.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>245</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=19" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/245.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>246</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=16" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/246.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>247</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=23" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/247.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>248</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=25" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/248.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>249</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=24" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/249.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>25</td>
+<td><a href="https://clearviewlibrary.org/sap" target="_blank">Summer Adventure Program | Clearview Library</a></td>
+<td><a href="./reports/25.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>250</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=21" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/250.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>251</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=26" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/251.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>252</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=62" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/252.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>253</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=77" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/253.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>254</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=20" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/254.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>255</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=18" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/255.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>256</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=19" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/256.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>257</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=16" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/257.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>258</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=23" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/258.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>259</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=25" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/259.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>26</td>
+<td><a href="https://clearviewlibrary.org/programs-events/just-for-kids" target="_blank">Just for Kids | Clearview Library</a></td>
+<td><a href="./reports/26.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>260</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=24" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/260.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>261</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=21" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/261.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>262</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=26" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/262.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>263</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=62" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/263.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>264</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=All" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/264.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>265</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=All" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/265.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>266</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/history-genealogy?field_resource_category_target_id=All" target="_blank">History & Genealogy | Clearview Library</a></td>
+<td><a href="./reports/266.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>267</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/homework-online-learning-0?field_resource_category_target_id=All" target="_blank">Homework & Online Learning | Clearview Library</a></td>
+<td><a href="./reports/267.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>268</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/news-current-events?field_resource_category_target_id=All" target="_blank">News & Current Events | Clearview Library</a></td>
+<td><a href="./reports/268.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>269</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/real-baby-food-easy-all-natural-recipes-your-baby-and-toddler-jenna-helwig" target="_blank">Real Baby Food: Easy, All-Natural Recipes for Your Baby and Toddler by Jenna Helwig | Clearview Library</a></td>
+<td><a href="./reports/269.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>27</td>
+<td><a href="https://clearviewlibrary.org/programs-events/just-for-kids/little-ones" target="_blank">Little Ones | Clearview Library</a></td>
+<td><a href="./reports/27.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>46</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td><strong>5</strong></td>
+</tr>
+
+<tr>
+<td>270</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-martha-stewarts-fruit-desserts-100-delicious-ways-savor-best" target="_blank">Cookbook Nook: Martha Stewart's Fruit Desserts: 100+ Delicious Ways to Savor the Best of Every Season by Martha Stewart | Clearview Library</a></td>
+<td><a href="./reports/270.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>271</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-official-bridgerton-cookbook-regula-ysewijn" target="_blank">Cookbook Nook: The Official Bridgerton Cookbook by Regula Ysewijn | Clearview Library</a></td>
+<td><a href="./reports/271.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>272</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-windsor-colorado-centennial-cookbook-1890-1990" target="_blank">Cookbook Nook: Windsor Colorado Centennial Cookbook 1890-1990 | Clearview Library</a></td>
+<td><a href="./reports/272.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>273</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/half-baked-harvest-quick-cozy-cookbook-tieghan-gerard" target="_blank">Half Baked Harvest Quick & Cozy: A Cookbook by Tieghan Gerard | Clearview Library</a></td>
+<td><a href="./reports/273.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>274</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-pumpkin-spice-cookbook-60-wonderfully-warming-recipes" target="_blank">Cookbook Nook: The Pumpkin Spice Cookbook: 60 Wonderfully Warming Recipes by Heather Thomas | Clearview Library</a></td>
+<td><a href="./reports/274.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>275</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-unofficial-harry-potter-cookbook-dinah-bucholz" target="_blank">Cookbook Nook: The Unofficial Harry Potter Cookbook by Dinah Bucholz | Clearview Library</a></td>
+<td><a href="./reports/275.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>44</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td><strong>5</strong></td>
+</tr>
+
+<tr>
+<td>276</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-how-not-die-cookbook-michael-greger" target="_blank">Cookbook Nook: The How Not to Die Cookbook by Michael Greger | Clearview Library</a></td>
+<td><a href="./reports/276.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>277</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-noom-kitchen-100-healthy-delicious-flexible-recipes-every" target="_blank">Cookbook Nook: The Noom Kitchen: 100 Healthy, Delicious, Flexible Recipes for Every Day by Noom | Clearview Library</a></td>
+<td><a href="./reports/277.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>278</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-mexican-today-pati-jinish" target="_blank">Cookbook Nook: Mexican Today by Pati Jinish | Clearview Library</a></td>
+<td><a href="./reports/278.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>279</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-blue-zones-american-kitchen-dan-buettner" target="_blank">Cookbook Nook: The Blue Zones American Kitchen by Dan Buettner | Clearview Library</a></td>
+<td><a href="./reports/279.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>28</td>
+<td><a href="https://clearviewlibrary.org/programs-events/just-for-kids/1k-books-before-kindergarten" target="_blank">1000 Books Before Kindergarten | Clearview Library</a></td>
+<td><a href="./reports/28.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>280</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-taste-home-make-ahead-comfort-foods" target="_blank">Cookbook Nook: Taste of Home: Make-Ahead Comfort Foods | Clearview Library</a></td>
+<td><a href="./reports/280.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>281</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-milk-street-cook-what-you-have-christopher-kimball" target="_blank">Cookbook Nook: Milk Street: Cook What You Have by Christopher Kimball | Clearview Library</a></td>
+<td><a href="./reports/281.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>282</td>
+<td><a href="https://clearviewlibrary.org/cookbook-nook?page=0" target="_blank">Cookbook Nook | Clearview Library</a></td>
+<td><a href="./reports/282.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>283</td>
+<td><a href="https://clearviewlibrary.org/cookbook-nook?page=1" target="_blank">Cookbook Nook | Clearview Library</a></td>
+<td><a href="./reports/283.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>284</td>
+<td><a href="https://clearviewlibrary.org/cookbook-nook?page=2" target="_blank">Cookbook Nook | Clearview Library</a></td>
+<td><a href="./reports/284.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>285</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/proposal-network-services-and-hardware-all-sites" target="_blank">Proposal for Network Services and Hardware for All Sites | Clearview Library</a></td>
+<td><a href="./reports/285.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>286</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/windsor-and-severance-library-branches-announce-new-hours-starting" target="_blank">Windsor and Severance Library Branches Announce New Hours Starting December 30, 2024 | Clearview Library</a></td>
+<td><a href="./reports/286.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>287</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/clearview-library-district-statement-town-windsors-development-resolution" target="_blank">Clearview Library District Statement on Town of Windsor’s Development Resolution (2024-62) | Clearview Library</a></td>
+<td><a href="./reports/287.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>288</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/clearview-library-district-appoints-new-library-director" target="_blank">Clearview Library District Appoints New Library Director | Clearview Library</a></td>
+<td><a href="./reports/288.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>289</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/discover-more-pika-our-new-intuitive-catalog-system" target="_blank">Discover More with Pika: Our New Intuitive Catalog System | Clearview Library</a></td>
+<td><a href="./reports/289.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>29</td>
+<td><a href="https://clearviewlibrary.org/services" target="_blank">Services | Clearview Library</a></td>
+<td><a href="./reports/29.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>290</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/2024-candidates-library-director-position" target="_blank">2024 Candidates for the Library Director Position | Clearview Library</a></td>
+<td><a href="./reports/290.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>291</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/library-district-director-retirement-announcement" target="_blank">Library District Director Retirement Announcement | Clearview Library</a></td>
+<td><a href="./reports/291.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>292</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/library-director-opening" target="_blank">Library Director Opening | Clearview Library</a></td>
+<td><a href="./reports/292.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>293</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-halloween-cookbook-betty-crocker" target="_blank">Cookbook Nook: Halloween Cookbook by Betty Crocker | Clearview Library</a></td>
+<td><a href="./reports/293.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>294</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-forest-feast-simple-vegetarian-recipes-my-cabin-woods" target="_blank">Cookbook Nook: The Forest Feast: Simple Vegetarian Recipes from My Cabin in the Woods | Clearview Library</a></td>
+<td><a href="./reports/294.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>295</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/statement-clearview-library-district-board" target="_blank">Statement from the Clearview Library District Board | Clearview Library</a></td>
+<td><a href="./reports/295.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>296</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-farmhouse-rules-seasonal-meals-whole-family" target="_blank">The Cookbook Nook: Farmhouse Rules: Seasonal Meals for the Whole Family | Clearview Library</a></td>
+<td><a href="./reports/296.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>297</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-take-it-easy-recipes-zero-stress-deliciousness" target="_blank">The Cookbook Nook: Take It Easy: Recipes for Zero Stress Deliciousness | Clearview Library</a></td>
+<td><a href="./reports/297.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>298</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-shelving" target="_blank">Request for Proposal for Shelving | Clearview Library</a></td>
+<td><a href="./reports/298.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>299</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-furniture" target="_blank">Request for Proposal for Furniture | Clearview Library</a></td>
+<td><a href="./reports/299.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/hours-locations" target="_blank">Hours & Locations | Clearview Library</a></td>
+<td><a href="./reports/3.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>30</td>
+<td><a href="https://clearviewlibrary.org/services/technology" target="_blank">Technology Services | Clearview Library</a></td>
+<td><a href="./reports/30.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>300</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-mi-cocina-recipes-and-rapture-my-kitchen-mexico" target="_blank">The Cookbook Nook: Mi Cocina: Recipes and Rapture from My Kitchen in Mexico | Clearview Library</a></td>
+<td><a href="./reports/300.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>301</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-naming-convention-logo-design-and-branding-refresh" target="_blank">Request for Proposal for Naming Convention, Logo Design, and Branding Refresh | Clearview Library</a></td>
+<td><a href="./reports/301.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>302</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-delectable-sweet-and-savory-baking-claudia-fleming" target="_blank">The Cookbook Nook: Delectable: Sweet and Savory Baking by Claudia Fleming | Clearview Library</a></td>
+<td><a href="./reports/302.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>303</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/clearview-library-district-breaks-ground-new-branch-severance" target="_blank">Clearview Library District Breaks Ground on New Branch in Severance | Clearview Library</a></td>
+<td><a href="./reports/303.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>304</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-100-techniques-master-lifetime-cooking-skills-basic-bucket" target="_blank">The Cookbook Nook: 100 Techniques: Master A Lifetime Of Cooking Skills, From Basic To Bucket List by America's Test Kitchen | Clearview Library</a></td>
+<td><a href="./reports/304.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>305</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/events" target="_blank">Events | Clearview Library</a></td>
+<td><a href="./reports/305.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>306</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/national-library-week-2023" target="_blank">National Library Week 2023 | Clearview Library</a></td>
+<td><a href="./reports/306.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>307</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-pasta-queen-just-gorgeous-cookbook-nadia-caterina-munno" target="_blank">The Cookbook Nook: The Pasta Queen: A Just Gorgeous Cookbook by Nadia Caterina Munno | Clearview Library</a></td>
+<td><a href="./reports/307.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>308</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/pioneer-woman-cooks-super-easy-ree-drummond" target="_blank">The Pioneer Woman Cooks: Super Easy! by Ree Drummond | Clearview Library</a></td>
+<td><a href="./reports/308.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>309</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-network-services-and-hardware-0" target="_blank">Request for Proposal for Network Services and Hardware | Clearview Library</a></td>
+<td><a href="./reports/309.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>31</td>
+<td><a href="https://clearviewlibrary.org/services/technology/3d-printing" target="_blank">3D Printing | Clearview Library</a></td>
+<td><a href="./reports/31.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>310</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-korean-vegan-cookbook-joanne-lee-molinaro" target="_blank">The Cookbook Nook: The Korean Vegan Cookbook by Joanne Lee Molinaro | Clearview Library</a></td>
+<td><a href="./reports/310.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>311</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-dories-cookies" target="_blank">The Cookbook Nook: Dorie's Cookies | Clearview Library</a></td>
+<td><a href="./reports/311.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>312</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-prep-rally" target="_blank">The Cookbook Nook: Prep + Rally: an hour of prep, a week of delicious meals. | Clearview Library</a></td>
+<td><a href="./reports/312.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>313</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/cookbook-nook-half-baked-harvest-every-day" target="_blank">Cookbook Nook: Half Baked Harvest: Every Day | Clearview Library</a></td>
+<td><a href="./reports/313.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>314</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/severance-library-branch" target="_blank">Severance Library Branch | Clearview Library</a></td>
+<td><a href="./reports/314.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>315</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-network-services-and-hardware" target="_blank">Request for Proposal for Network Services and Hardware | Clearview Library</a></td>
+<td><a href="./reports/315.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>316</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/library-and-school-district-partner-bring-e-books-students" target="_blank">Library and School District Partner to Bring e-Books to Students | Clearview Library</a></td>
+<td><a href="./reports/316.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>317</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies-faqs/check-out-information-policy" target="_blank">Check Out Policy | Clearview Library</a></td>
+<td><a href="./reports/317.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>318</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more/suggest-purchase" target="_blank">Access denied | Clearview Library</a></td>
+<td><a href="./reports/318.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>43</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>319</td>
+<td><a href="https://clearviewlibrary.org/node/322" target="_blank">Request Public Records | Clearview Library</a></td>
+<td><a href="./reports/319.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>32</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/text-notifications" target="_blank">Text Notifications | Clearview Library</a></td>
+<td><a href="./reports/32.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>320</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research?field_resource_category_target_id=All" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/320.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>321</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive?field_resource_category_target_id=All" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/321.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>322</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science?field_resource_category_target_id=All" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/322.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>323</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies?field_resource_category_target_id=All" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/323.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>324</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology?field_resource_category_target_id=All" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/324.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>33</td>
+<td><a href="https://clearviewlibrary.org/services/other" target="_blank">Other Services | Clearview Library</a></td>
+<td><a href="./reports/33.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>34</td>
+<td><a href="https://clearviewlibrary.org/services/other/bookmobile" target="_blank">Bookmobile | Clearview Library</a></td>
+<td><a href="./reports/34.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>35</td>
+<td><a href="https://clearviewlibrary.org/services/other/lobby-stops" target="_blank">Lobby Stops | Clearview Library</a></td>
+<td><a href="./reports/35.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>36</td>
+<td><a href="https://clearviewlibrary.org/services/other/tax-help" target="_blank">Tax Help | Clearview Library</a></td>
+<td><a href="./reports/36.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>37</td>
+<td><a href="https://clearviewlibrary.org/educator-card" target="_blank">Educator Card | Clearview Library</a></td>
+<td><a href="./reports/37.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>38</td>
+<td><a href="https://clearviewlibrary.org/about-us" target="_blank">About Us | Clearview Library</a></td>
+<td><a href="./reports/38.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>49</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>39</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more" target="_blank">Learn More | Clearview Library</a></td>
+<td><a href="./reports/39.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a href="https://clearviewlibrary.org/contact" target="_blank">Contact | Clearview Library</a></td>
+<td><a href="./reports/4.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>47</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>40</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/40.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>41</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/policies" target="_blank">Policies | Clearview Library</a></td>
+<td><a href="./reports/41.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>42</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/faqs" target="_blank">FAQs | Clearview Library</a></td>
+<td><a href="./reports/42.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>43</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/board-of-trustees" target="_blank">Board of Trustees | Clearview Library</a></td>
+<td><a href="./reports/43.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>55</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>6</strong></td>
+</tr>
+
+<tr>
+<td>44</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/work-with-us" target="_blank">Work With Us | Clearview Library</a></td>
+<td><a href="./reports/44.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>45</td>
+<td><a href="https://clearviewlibrary.org/about-us/values-priorities" target="_blank">Values & Priorities | Clearview Library</a></td>
+<td><a href="./reports/45.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>46</td>
+<td><a href="https://clearviewlibrary.org/about-us/values-priorities/our-impact" target="_blank">Our Impact | Clearview Library</a></td>
+<td><a href="./reports/46.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>48</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>47</td>
+<td><a href="https://clearviewlibrary.org/about-us/values-priorities/financial-spending" target="_blank">Financial Spending | Clearview Library</a></td>
+<td><a href="./reports/47.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>45</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td><strong>5</strong></td>
+</tr>
+
+<tr>
+<td>48</td>
+<td><a href="https://clearviewlibrary.org/about-us/values-priorities/strategic-plan" target="_blank">Together Forward: 2024-2025 Strategic Plan | Clearview Library</a></td>
+<td><a href="./reports/48.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>49</td>
+<td><a href="https://clearviewlibrary.org/about-us/support-donate" target="_blank">Support & Donate | Clearview Library</a></td>
+<td><a href="./reports/49.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a href="https://clearviewlibrary.org/card" target="_blank">Get a Library Card | Clearview Library</a></td>
+<td><a href="./reports/5.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>50</td>
+<td><a href="https://clearviewlibrary.org/about-us/support-donate/volunteer" target="_blank">Volunteer | Clearview Library</a></td>
+<td><a href="./reports/50.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>51</td>
+<td><a href="https://clearviewlibrary.org/your-library-story" target="_blank">Your Library Story | Clearview Library</a></td>
+<td><a href="./reports/51.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>52</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/art-library" target="_blank">Art in the Library | Clearview Library</a></td>
+<td><a href="./reports/52.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>53</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/local-artists-featured-new-windsor-library-gallery-exhibit" target="_blank">Local Artists Featured in New Windsor Library Gallery Exhibit | Clearview Library</a></td>
+<td><a href="./reports/53.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>54</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/news" target="_blank">News | Clearview Library</a></td>
+<td><a href="./reports/54.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>55</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-auditor-services-2025" target="_blank">Request for Proposal for Auditor Services 2025 | Clearview Library</a></td>
+<td><a href="./reports/55.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>56</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/clearview-library-district-launches-new-asl-resource-through-mango" target="_blank">Clearview Library District Launches New ASL Resource Through Mango Languages | Clearview Library</a></td>
+<td><a href="./reports/56.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>57</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/new-year-new-us-clearview-joins-marmot-library-network" target="_blank">New Year, New Us: Clearview Joins the Marmot Library Network | Clearview Library</a></td>
+<td><a href="./reports/57.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>58</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/got-seeds-contribute-our-seed-bank-binder" target="_blank">Got Seeds? Contribute to our Seed Bank Binder! | Clearview Library</a></td>
+<td><a href="./reports/58.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>59</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/art-quiet-space-january-2026" target="_blank">Art in the Quiet Space - January 2026 | Clearview Library</a></td>
+<td><a href="./reports/59.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a href="https://clearviewlibrary.org/borrow-research" target="_blank">Borrow & Research | Clearview Library</a></td>
+<td><a href="./reports/6.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>60</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/request-proposal-construction-manager-general-contractor-cmgc-services" target="_blank">Request for Proposal for Construction Manager General Contractor (CMGC) Services | Clearview Library</a></td>
+<td><a href="./reports/60.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>61</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/junior-librarian-program-gives-kids-ages-6-12-behind-scenes-look-library" target="_blank">Junior Librarian Program Gives Kids Ages 6 to 12 a Behind the Scenes Look at Library Life | Clearview Library</a></td>
+<td><a href="./reports/61.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>62</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/severance-library-collecting-donations-annual-turkey-food-drive" target="_blank">Severance Library Collecting Donations for Annual Turkey Food Drive | Clearview Library</a></td>
+<td><a href="./reports/62.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>63</td>
+<td><a href="https://clearviewlibrary.org/services/technology/ask-a-tech" target="_blank">Ask A Tech | Clearview Library</a></td>
+<td><a href="./reports/63.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>64</td>
+<td><a href="https://clearviewlibrary.org/website-accessibility" target="_blank">Website Accessibility | Clearview Library</a></td>
+<td><a href="./reports/64.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>65</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/facilities-plan" target="_blank">Access denied | Clearview Library</a></td>
+<td><a href="./reports/65.html" target="_blank">View Report</a></td>
+<td>2</td>
+<td>43</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><strong>4</strong></td>
+</tr>
+
+<tr>
+<td>66</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/database-spotlight" target="_blank">Database Spotlight | Clearview Library</a></td>
+<td><a href="./reports/66.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>67</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/clearview-library-now-offers-online-crafting-classes" target="_blank">Clearview Library Now Offers Online Crafting Classes | Clearview Library</a></td>
+<td><a href="./reports/67.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>68</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/5-ways-library-can-help-homework" target="_blank">5 Ways the Library Can Help with Homework | Clearview Library</a></td>
+<td><a href="./reports/68.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>69</td>
+<td><a href="https://clearviewlibrary.org/about-us/learn-more/news/newspaperscom-gives-online-access-historical-papers" target="_blank">Newspapers.com Gives Online Access to Historical Papers | Clearview Library</a></td>
+<td><a href="./reports/69.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more" target="_blank">Books, Movies, & More | Clearview Library</a></td>
+<td><a href="./reports/7.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>70</td>
+<td><a href="https://clearviewlibrary.org/adventure-pass" target="_blank">Adventure Pass | Clearview Library</a></td>
+<td><a href="./reports/70.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>71</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=77" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/71.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>72</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=20" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/72.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>73</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=18" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/73.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>74</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=19" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/74.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>75</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=16" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/75.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>76</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=23" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/76.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>77</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=25" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/77.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>78</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=24" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/78.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>79</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=21" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/79.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more/downloads-streaming" target="_blank">Downloads & Streaming | Clearview Library</a></td>
+<td><a href="./reports/8.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>46</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>80</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=26" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/80.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>81</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research?field_resource_category_target_id=62" target="_blank">Research | Clearview Library</a></td>
+<td><a href="./reports/81.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>82</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/general-research" target="_blank">General Research | Clearview Library</a></td>
+<td><a href="./reports/82.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>83</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/automotive" target="_blank">Automotive | Clearview Library</a></td>
+<td><a href="./reports/83.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>84</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/health-science" target="_blank">Health & Science | Clearview Library</a></td>
+<td><a href="./reports/84.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>85</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/hobbies" target="_blank">Hobbies | Clearview Library</a></td>
+<td><a href="./reports/85.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>86</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/technology" target="_blank">Technology | Clearview Library</a></td>
+<td><a href="./reports/86.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>87</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=77" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/87.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>88</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=20" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/88.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>89</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=18" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/89.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/books-movies-more/explore-kits" target="_blank">"Library of Things": Check Out an Adventure with Explore Kits | Clearview Library</a></td>
+<td><a href="./reports/9.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>90</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=19" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/90.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>91</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=16" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/91.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>92</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=23" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/92.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>93</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=25" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/93.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>94</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=24" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/94.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>95</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=21" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/95.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>96</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=26" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/96.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>97</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/books-literature-0?field_resource_category_target_id=62" target="_blank">Books & Literature | Clearview Library</a></td>
+<td><a href="./reports/97.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>98</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=77" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/98.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+<tr>
+<td>99</td>
+<td><a href="https://clearviewlibrary.org/borrow-research/research/business-legal-0?field_resource_category_target_id=20" target="_blank">Business & Legal | Clearview Library</a></td>
+<td><a href="./reports/99.html" target="_blank">View Report</a></td>
+<td>1</td>
+<td>44</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td><strong>2</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<script>
+const chartData = {
+  labels: ["1","10","100","101","102","103","104","105","106","107","108","109","11","110","111","112","113","114","115","116","117","118","119","12","120","121","122","123","124","125","126","127","128","129","13","130","131","132","133","134","135","136","137","138","139","14","140","141","142","143","144","145","146","147","148","149","15","150","151","152","153","154","155","156","157","158","159","16","160","161","162","163","164","165","166","167","168","169","17","170","171","172","173","174","175","176","177","178","179","18","180","181","182","183","184","185","186","187","188","189","19","190","191","192","193","194","195","196","197","198","199","2","20","200","201","202","203","204","205","206","207","208","209","21","210","211","212","213","214","215","216","217","218","219","22","220","221","222","223","224","225","226","227","228","229","23","230","231","232","233","234","235","236","237","238","239","24","240","241","242","243","244","245","246","247","248","249","25","250","251","252","253","254","255","256","257","258","259","26","260","261","262","263","264","265","266","267","268","269","27","270","271","272","273","274","275","276","277","278","279","28","280","281","282","283","284","285","286","287","288","289","29","290","291","292","293","294","295","296","297","298","299","3","30","300","301","302","303","304","305","306","307","308","309","31","310","311","312","313","314","315","316","317","318","319","32","320","321","322","323","324","33","34","35","36","37","38","39","4","40","41","42","43","44","45","46","47","48","49","5","50","51","52","53","54","55","56","57","58","59","6","60","61","62","63","64","65","66","67","68","69","7","70","71","72","73","74","75","76","77","78","79","8","80","81","82","83","84","85","86","87","88","89","9","90","91","92","93","94","95","96","97","98","99"],
+  datasets: [
+    { label: 'Critical', backgroundColor: '#e3342f', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] },
+    { label: 'Serious', backgroundColor: '#f6993f', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] },
+    { label: 'Moderate', backgroundColor: '#ffed4a', data: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1] },
+    { label: 'Minor', backgroundColor: '#38c172', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] }
+  ]
+};
+
+new Chart(document.getElementById('summaryChart'), {
+  type: 'bar',
+  data: chartData,
+  options: {
+    responsive: true,
+    scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } }
+  }
+});
+
+$(document).ready(function() {
+  $('#summary-table').DataTable({ paging: false });
+});
+</script>
+
+</body>
+</html>
