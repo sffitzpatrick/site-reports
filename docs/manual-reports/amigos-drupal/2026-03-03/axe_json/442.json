@@ -1,8 +1,8 @@
 {
   "meta": {
-    "scannedAt": "2026-03-03T16:49:53.184Z",
-    "url": "https://amigos.org/news/courier-winter-holiday-2024-schedule",
-    "documentTitle": "Courier Winter Holiday 2024 Schedule | Amigos Library Services",
+    "scannedAt": "2026-03-03T18:42:12.311Z",
+    "url": "https://amigos.org/news/navigating-courier-links-and-information-redesigned-amigosorg-website",
+    "documentTitle": "Navigating to Courier Links and Information on the Redesigned Amigos.org Website | Amigos Library Services",
     "index": 442
   },
   "results": {
@@ -20,8 +20,8 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2026-03-03T16:49:53.065Z",
-    "url": "https://www.amigos.org/news/courier-winter-holiday-2024-schedule",
+    "timestamp": "2026-03-03T18:42:12.202Z",
+    "url": "https://www.amigos.org/news/navigating-courier-links-and-information-redesigned-amigosorg-website",
     "toolOptions": {
       "reporter": "v1"
     },
@@ -675,6 +675,24 @@
         "nodes": []
       },
       {
+        "id": "valid-lang",
+        "impact": null,
+        "tags": [
+          "cat.language",
+          "wcag2aa",
+          "wcag312",
+          "TTv5",
+          "TT11.b",
+          "EN-301-549",
+          "EN-9.3.1.2",
+          "ACT"
+        ],
+        "description": "Ensure lang attributes have valid values",
+        "help": "lang attribute must have a valid value",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/valid-lang?application=axeAPI",
+        "nodes": []
+      },
+      {
         "id": "video-caption",
         "impact": null,
         "tags": [
@@ -828,7 +846,33 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-allowed-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role"
+              }
+            ],
+            "none": [
+              {
+                "id": "aria-unsupported-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute is supported"
+              }
+            ],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -1017,6 +1061,24 @@
             "all": [],
             "none": [],
             "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
             "html": "<aside class=\"layout-sidebar-second\" role=\"complementary\">",
             "target": [
               "aside"
@@ -1055,7 +1117,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -1215,7 +1277,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-conditional-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "ARIA attribute is allowed"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -1373,6 +1453,24 @@
               }
             ],
             "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "deprecatedrole",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is not deprecated"
+              }
+            ],
+            "impact": null,
             "html": "<aside class=\"layout-sidebar-second\" role=\"complementary\">",
             "target": [
               "aside"
@@ -1411,7 +1509,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -1499,7 +1597,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<body class=\"page--node-12350 has-sidebar-second path-node page-node-type-news-article\">",
+            "html": "<body class=\"page--node-12368 has-sidebar-second path-node page-node-type-news-article\">",
             "target": [
               "body"
             ]
@@ -1589,7 +1687,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "ARIA attribute is allowed"
+              }
+            ],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -1747,6 +1863,24 @@
             "all": [],
             "none": [],
             "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-required-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "All required ARIA attributes are present"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
             "html": "<aside class=\"layout-sidebar-second\" role=\"complementary\">",
             "target": [
               "aside"
@@ -1785,7 +1919,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -2045,6 +2179,38 @@
               }
             ],
             "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "invalidrole",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA role is valid"
+              },
+              {
+                "id": "abstractrole",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Abstract roles are not used"
+              },
+              {
+                "id": "unsupportedrole",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA role is supported"
+              }
+            ],
+            "impact": null,
             "html": "<aside class=\"layout-sidebar-second\" role=\"complementary\">",
             "target": [
               "aside"
@@ -2111,7 +2277,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -2351,7 +2517,39 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute values are valid"
+              },
+              {
+                "id": "aria-errormessage",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+              },
+              {
+                "id": "aria-level",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-level values are valid"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -2503,7 +2701,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-valid-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute name is valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -3036,7 +3252,7 @@
             "impact": null,
             "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "ol"
+              ".breadcrumb > ol"
             ]
           },
           {
@@ -3068,7 +3284,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Home</a>\n              </li>",
             "target": [
-              "ol > li:nth-child(1)"
+              ".breadcrumb > ol > li:nth-child(1)"
             ]
           },
           {
@@ -3132,7 +3348,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/news\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">News</a>\n              </li>",
             "target": [
-              "ol > li:nth-child(2)"
+              ".breadcrumb > ol > li:nth-child(2)"
             ]
           },
           {
@@ -3194,9 +3410,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Courier Winter Holiday 2024 Schedule\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Navigating To Courier Links and Information On The Redesigned Amigos.org Website\n              </li>",
             "target": [
-              "ol > li:nth-child(3)"
+              ".breadcrumb > ol > li:nth-child(3)"
             ]
           },
           {
@@ -3226,7 +3442,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>\n</h1>",
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>\n</h1>",
             "target": [
               "h1"
             ]
@@ -3258,7 +3474,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>",
             "target": [
               ".field--name-title.field--type-string[data-asw-org-font-size=\"32\"]"
             ]
@@ -3292,7 +3508,7 @@
             "impact": null,
             "html": "<a href=\"/news/resource-sharing-and-services\" hreflang=\"en\" data-asw-org-font-size=\"12\" style=\"font-size: 12px;\">Resource Sharing &amp; Services</a>",
             "target": [
-              "#node-12350 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"][data-asw-org-font-size=\"12\"]"
+              "#node-12368 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"][data-asw-org-font-size=\"12\"]"
             ]
           },
           {
@@ -3322,9 +3538,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-created field--type-created field--label-hidden\" data-asw-org-font-size=\"14\" style=\"font-size: 14px;\"><time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>\n</span>",
+            "html": "<span class=\"field field--name-created field--type-created field--label-hidden\" data-asw-org-font-size=\"14\" style=\"font-size: 14px;\"><time datetime=\"2025-01-15T15:16:52-06:00\" title=\"Wednesday, January 15, 2025, 3:16 pm\" class=\"datetime\">January 15, 2025</time>\n</span>",
             "target": [
-              "#node-12350 > .node-date-category > .field--name-created.field--type-created[data-asw-org-font-size=\"14\"]"
+              "#node-12368 > .node-date-category > .field--name-created.field--type-created[data-asw-org-font-size=\"14\"]"
             ]
           },
           {
@@ -3354,9 +3570,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div class=\"OutlineElement Ltr SCXW218738917 BCX8\" style=\"-webkit-text-stroke-width:0px;-webkit-user-drag:none;background-color:rgb(255, 255, 255);clear:both;color:rgb(0, 0, 0);cursor:text;direction:ltr;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;overflow:visible;padding:0px;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              ".OutlineElement.Ltr.SCXW218738917:nth-child(1)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1)"
             ]
           },
           {
@@ -3386,9 +3602,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p class=\"Paragraph SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; background-color: transparent; color: windowtext; font-kerning: none; font-style: normal; font-weight: normal; margin: 0px; overflow-wrap: break-word; padding: 0px; text-align: left; text-indent: 0px; vertical-align: baseline; white-space: pre-wrap; font-size: 12px;\" paraid=\"125249952\" paraeid=\"{d494550a-b2ec-4984-9881-57a65738eba2}{67}\" data-asw-org-font-size=\"12\">",
+            "html": "<a href=\"https://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">redesigned Amigos Library Services website</a>",
             "target": [
-              "p[paraid=\"125249952\"]"
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1) > a[href$=\"amigos.org/\"]"
             ]
           },
           {
@@ -3418,9 +3634,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "p[paraid=\"125249952\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(2)"
             ]
           },
           {
@@ -3450,9 +3666,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"EOP SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px;\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}\" data-asw-org-font-size=\"16\">",
+            "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "p[paraid=\"125249952\"] > .EOP.SCXW218738917.BCX8"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol"
             ]
           },
           {
@@ -3482,9 +3698,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div class=\"OutlineElement Ltr SCXW218738917 BCX8\" style=\"-webkit-text-stroke-width:0px;-webkit-user-drag:none;background-color:rgb(255, 255, 255);clear:both;color:rgb(0, 0, 0);cursor:text;direction:ltr;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;overflow:visible;padding:0px;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Visit <a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>&nbsp;</li>",
             "target": [
-              ".OutlineElement.Ltr.SCXW218738917:nth-child(2)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(1)"
             ]
           },
           {
@@ -3514,9 +3730,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p class=\"Paragraph SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; background-color: transparent; color: windowtext; font-kerning: none; font-style: normal; font-weight: normal; margin: 0px; overflow-wrap: break-word; padding: 0px; text-align: left; text-indent: 0px; vertical-align: baseline; white-space: pre-wrap; font-size: 12px;\" paraid=\"25467129\" paraeid=\"{d494550a-b2ec-4984-9881-57a65738eba2}{73}\" data-asw-org-font-size=\"12\">",
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
             "target": [
-              "p[paraid=\"25467129\"]"
+              "li:nth-child(1) > a[href$=\"amigos.org/\"]"
             ]
           },
           {
@@ -3546,9 +3762,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"EOP SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px;\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}\" data-asw-org-font-size=\"16\">",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "p[paraid=\"25467129\"] > .EOP.SCXW218738917.BCX8"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(2)"
             ]
           },
           {
@@ -3578,9 +3794,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<div class=\"OutlineElement Ltr SCXW218738917 BCX8\" style=\"-webkit-text-stroke-width:0px;-webkit-user-drag:none;background-color:rgb(255, 255, 255);clear:both;color:rgb(0, 0, 0);cursor:text;direction:ltr;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;overflow:visible;padding:0px;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              ".OutlineElement.Ltr.SCXW218738917:nth-child(3)"
+              "li:nth-child(2) > p:nth-child(1)"
             ]
           },
           {
@@ -3610,9 +3826,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p class=\"Paragraph SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; background-color: transparent; color: windowtext; font-kerning: none; font-style: normal; font-weight: normal; margin: 0px; overflow-wrap: break-word; padding: 0px; text-align: left; text-indent: 0px; vertical-align: baseline; white-space: pre-wrap; font-size: 12px;\" paraid=\"580410227\" paraeid=\"{d494550a-b2ec-4984-9881-57a65738eba2}{77}\" data-asw-org-font-size=\"12\">",
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
             "target": [
-              "p[paraid=\"580410227\"]"
+              "li:nth-child(2) > p:nth-child(1) > a[href$=\"amigos.org/\"]"
             ]
           },
           {
@@ -3642,9 +3858,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.25.47-PM.png\" alt=\"screenshot of Amigos website highlighting TAE\" width=\"400\" height=\"254\" loading=\"lazy\"></p>",
             "target": [
-              "p[paraid=\"580410227\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
+              "li:nth-child(2) > p:nth-child(2)"
             ]
           },
           {
@@ -3674,9 +3890,297 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<h3 data-asw-org-font-size=\"18\" style=\"font-size: 18px;\">Subscribe for updates</h3>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "h3"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">You will now be on the Courier/TAE homepage: <a href=\"https://www.amigos.org/services/trans-amigos-express\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">https://www.amigos.org/services/trans-amigos-express</a>.&nbsp;&nbsp;</p>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/services/trans-amigos-express\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">https://www.amigos.org/services/trans-amigos-express</a>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(1) > a"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">*&nbsp; <em>Tip: For ease of locating courier links and information in the future, bookmark this page in your browser</em>&nbsp;</p>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "ol > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.31.17-PM.png\" alt=\"screenshot of Amigos TAE landing page\" width=\"400\" height=\"260\" loading=\"lazy\"></p>",
+            "target": [
+              "p:nth-child(4)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>Holiday and Closing Reporting</strong>&nbsp;<br>Courier participants should now report holidays and closings by emailing TAE directly. The old online form in no longer in use.&nbsp;&nbsp;</p>",
+            "target": [
+              "p:nth-child(5)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "p:nth-child(6)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"mailto:tae@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<h2 class=\"h3\" data-asw-org-font-size=\"20\" style=\"font-size: 20px;\">Subscribe for updates</h2>",
+            "target": [
+              ".h3"
             ]
           },
           {
@@ -3900,7 +4404,7 @@
             "impact": null,
             "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Trans-Amigos Express Forms Moving to the TAE Label Maker on Monday, February 23</span>",
             "target": [
-              "#node-12812 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-12812 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -3962,9 +4466,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-created field--type-created field--label-hidden\" data-asw-org-font-size=\"14\" style=\"font-size: 14px;\"><time datetime=\"2025-01-15T15:16:52-06:00\" title=\"Wednesday, January 15, 2025, 3:16 pm\" class=\"datetime\">January 15, 2025</time>\n</span>",
+            "html": "<span class=\"field field--name-created field--type-created field--label-hidden\" data-asw-org-font-size=\"14\" style=\"font-size: 14px;\"><time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>\n</span>",
             "target": [
-              "#node-12368 > .node-date-category > .field--name-created.field--type-created[data-asw-org-font-size=\"14\"]"
+              "#node-12350 > .node-date-category > .field--name-created.field--type-created[data-asw-org-font-size=\"14\"]"
             ]
           },
           {
@@ -3996,7 +4500,7 @@
             "impact": null,
             "html": "<h2 data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "#node-12368 > h2"
+              "#node-12350 > h2"
             ]
           },
           {
@@ -4026,9 +4530,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/news/navigating-courier-links-and-information-redesigned-amigosorg-website\" rel=\"bookmark\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "html": "<a href=\"/news/courier-winter-holiday-2024-schedule\" rel=\"bookmark\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday 2024 Schedule</span>\n</a>",
             "target": [
-              "#node-12368 > h2 > a[rel=\"bookmark\"]"
+              "#node-12350 > h2 > a[rel=\"bookmark\"]"
             ]
           },
           {
@@ -4058,9 +4562,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday 2024 Schedule</span>",
             "target": [
-              "#node-12368 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-12350 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -4090,9 +4594,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/news/navigating-courier-links-and-information-redesigned-amigosorg-website\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a>",
+            "html": "<a href=\"/news/courier-winter-holiday-2024-schedule\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a>",
             "target": [
-              "#node-12368 > .article-read-more > a[data-asw-org-font-size=\"15\"]"
+              "#node-12350 > .article-read-more > a[data-asw-org-font-size=\"15\"]"
             ]
           },
           {
@@ -4220,7 +4724,7 @@
             "impact": null,
             "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday Schedule</span>",
             "target": [
-              "#node-8573 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-8573 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -4442,7 +4946,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -4474,9 +4978,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
             ]
           },
           {
@@ -4979,15 +5483,15 @@
                     ]
                   },
                   {
-                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>\n</h1>",
+                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>\n</h1>",
                     "target": [
                       "h1"
                     ]
                   },
                   {
-                    "html": "<h3 data-asw-org-font-size=\"18\" style=\"font-size: 18px;\">Subscribe for updates</h3>",
+                    "html": "<h2 class=\"h3\" data-asw-org-font-size=\"20\" style=\"font-size: 20px;\">Subscribe for updates</h2>",
                     "target": [
-                      "h3"
+                      ".h3"
                     ]
                   },
                   {
@@ -5005,7 +5509,7 @@
                   {
                     "html": "<h2 data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
                     "target": [
-                      "#node-12368 > h2"
+                      "#node-12350 > h2"
                     ]
                   },
                   {
@@ -5051,7 +5555,7 @@
       },
       {
         "id": "color-contrast",
-        "impact": "serious",
+        "impact": null,
         "tags": [
           "cat.color",
           "wcag2aa",
@@ -5326,9 +5830,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Courier Winter Holiday 2024 Schedule\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Navigating To Courier Links and Information On The Redesigned Amigos.org Website\n              </li>",
             "target": [
-              "ol > li:nth-child(3)"
+              ".breadcrumb > ol > li:nth-child(3)"
             ]
           },
           {
@@ -5351,7 +5855,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>",
             "target": [
               ".field--name-title.field--type-string[data-asw-org-font-size=\"32\"]"
             ]
@@ -5378,7 +5882,7 @@
             "impact": null,
             "html": "<a href=\"/news/resource-sharing-and-services\" hreflang=\"en\" data-asw-org-font-size=\"12\" style=\"font-size: 12px;\">Resource Sharing &amp; Services</a>",
             "target": [
-              "#node-12350 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"][data-asw-org-font-size=\"12\"]"
+              "#node-12368 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"][data-asw-org-font-size=\"12\"]"
             ]
           },
           {
@@ -5401,9 +5905,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>",
+            "html": "<time datetime=\"2025-01-15T15:16:52-06:00\" title=\"Wednesday, January 15, 2025, 3:16 pm\" class=\"datetime\">January 15, 2025</time>",
             "target": [
-              "time[datetime=\"2024-12-18T13:33:00-06:00\"]"
+              "time[datetime=\"2025-01-15T15:16:52-06:00\"]"
             ]
           },
           {
@@ -5426,9 +5930,684 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "p[paraid=\"580410227\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">redesigned Amigos Library Services website</a>",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Where to Find Key Links</strong>",
+            "target": [
+              "p:nth-child(2) > strong"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Visit <a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>&nbsp;</li>",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
+            "target": [
+              "li:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "li:nth-child(2) > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
+            "target": [
+              "li:nth-child(2) > p:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Courier</strong>",
+            "target": [
+              "p:nth-child(1) > strong:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<em>OR</em>",
+            "target": [
+              "p:nth-child(1) > em"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Services</strong>",
+            "target": [
+              "p:nth-child(1) > strong:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Courier</strong>",
+            "target": [
+              "p:nth-child(1) > strong:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">You will now be on the Courier/TAE homepage: <a href=\"https://www.amigos.org/services/trans-amigos-express\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">https://www.amigos.org/services/trans-amigos-express</a>.&nbsp;&nbsp;</p>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/services/trans-amigos-express\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">https://www.amigos.org/services/trans-amigos-express</a>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(1) > a"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<em>Tip: For ease of locating courier links and information in the future, bookmark this page in your browser</em>",
+            "target": [
+              "p:nth-child(2) > em"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "ol > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Courier</strong>",
+            "target": [
+              "li:nth-child(4) > strong:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Member Services</strong>",
+            "target": [
+              "li:nth-child(4) > strong:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>TAE</strong>",
+            "target": [
+              "strong:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Label Maker</strong>",
+            "target": [
+              "li:nth-child(4) > strong:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Forms</strong>",
+            "target": [
+              "li:nth-child(4) > strong:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Participants</strong>",
+            "target": [
+              "strong:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Guidelines &amp; Labeling Info</strong>",
+            "target": [
+              "strong:nth-child(7)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>Holiday and Closing Reporting</strong>&nbsp;<br>Courier participants should now report holidays and closings by emailing TAE directly. The old online form in no longer in use.&nbsp;&nbsp;</p>",
+            "target": [
+              "p:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Holiday and Closing Reporting</strong>",
+            "target": [
+              "p:nth-child(5) > strong"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "p:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Assistance</strong>",
+            "target": [
+              "p:nth-child(6) > strong"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"extlink-nobreak\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak"
             ]
           },
           {
@@ -5461,24 +6640,24 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#0f0f0f",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 19.16,
-                  "fontSize": "13.5pt (18px)",
-                  "fontWeight": "normal",
-                  "expectedContrastRatio": "4.5:1"
+                  "contrastRatio": 9.42,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "3:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 19.16"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h3 data-asw-org-font-size=\"18\" style=\"font-size: 18px;\">Subscribe for updates</h3>",
+            "html": "<h2 class=\"h3\" data-asw-org-font-size=\"20\" style=\"font-size: 20px;\">Subscribe for updates</h2>",
             "target": [
-              "h3"
+              ".h3"
             ]
           },
           {
@@ -5603,7 +6782,7 @@
             "impact": null,
             "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Trans-Amigos Express Forms Moving to the TAE Label Maker on Monday, February 23</span>",
             "target": [
-              "#node-12812 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-12812 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -5651,9 +6830,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<time datetime=\"2025-01-15T15:16:52-06:00\" title=\"Wednesday, January 15, 2025, 3:16 pm\" class=\"datetime\">January 15, 2025</time>",
+            "html": "<time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>",
             "target": [
-              "time[datetime=\"2025-01-15T15:16:52-06:00\"]"
+              "time[datetime=\"2024-12-18T13:33:00-06:00\"]"
             ]
           },
           {
@@ -5676,9 +6855,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday 2024 Schedule</span>",
             "target": [
-              "#node-12368 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-12350 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -5701,9 +6880,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/news/navigating-courier-links-and-information-redesigned-amigosorg-website\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a>",
+            "html": "<a href=\"/news/courier-winter-holiday-2024-schedule\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a>",
             "target": [
-              "#node-12368 > .article-read-more > a[data-asw-org-font-size=\"15\"]"
+              "#node-12350 > .article-read-more > a[data-asw-org-font-size=\"15\"]"
             ]
           },
           {
@@ -5753,7 +6932,7 @@
             "impact": null,
             "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday Schedule</span>",
             "target": [
-              "#node-8573 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-8573 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -5853,7 +7032,7 @@
             "impact": null,
             "html": "<span class=\"extlink-nobreak\">",
             "target": [
-              ".extlink-nobreak"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak"
             ]
           },
           {
@@ -6001,9 +7180,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
             ]
           },
           {
@@ -6333,7 +7512,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>\n</h1>",
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>\n</h1>",
             "target": [
               "h1"
             ]
@@ -6351,9 +7530,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h3 data-asw-org-font-size=\"18\" style=\"font-size: 18px;\">Subscribe for updates</h3>",
+            "html": "<h2 class=\"h3\" data-asw-org-font-size=\"20\" style=\"font-size: 20px;\">Subscribe for updates</h2>",
             "target": [
-              "h3"
+              ".h3"
             ]
           },
           {
@@ -6407,7 +7586,7 @@
             "impact": null,
             "html": "<h2 data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "#node-12368 > h2"
+              "#node-12350 > h2"
             ]
           },
           {
@@ -6511,7 +7690,7 @@
       },
       {
         "id": "heading-order",
-        "impact": "moderate",
+        "impact": null,
         "tags": [
           "cat.semantics",
           "best-practice"
@@ -6552,9 +7731,9 @@
                     },
                     {
                       "ancestry": [
-                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > aside:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(2) > h3:nth-child(1)"
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > aside:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(2) > h2:nth-child(1)"
                       ],
-                      "level": 3
+                      "level": 2
                     },
                     {
                       "ancestry": [
@@ -6650,9 +7829,27 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>\n</h1>",
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>\n</h1>",
             "target": [
               "h1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 class=\"h3\" data-asw-org-font-size=\"20\" style=\"font-size: 20px;\">Subscribe for updates</h2>",
+            "target": [
+              ".h3"
             ]
           },
           {
@@ -6706,7 +7903,7 @@
             "impact": null,
             "html": "<h2 data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "#node-12368 > h2"
+              "#node-12350 > h2"
             ]
           },
           {
@@ -6888,6 +8085,58 @@
               }
             ],
             "impact": null,
+            "html": "<img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.25.47-PM.png\" alt=\"screenshot of Amigos website highlighting TAE\" width=\"400\" height=\"254\" loading=\"lazy\">",
+            "target": [
+              "img[height=\"254\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has an alt attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "alt-space-value",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has a valid alt attribute value"
+              }
+            ],
+            "impact": null,
+            "html": "<img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.31.17-PM.png\" alt=\"screenshot of Amigos TAE landing page\" width=\"400\" height=\"260\" loading=\"lazy\">",
+            "target": [
+              "img[height=\"260\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has an alt attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "alt-space-value",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has a valid alt attribute value"
+              }
+            ],
+            "impact": null,
             "html": "<img src=\"/themes/custom/amigos/assets/images/facebook.png\" alt=\"Facebook\">",
             "target": [
               "img[alt=\"Facebook\"]"
@@ -7026,6 +8275,42 @@
             "html": "<img src=\"/themes/custom/amigos/amigos-logo.png\" alt=\"Home\" fetchpriority=\"high\">",
             "target": [
               "img[alt=\"Home\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not duplicate existing text in <img> alt text"
+              }
+            ],
+            "impact": null,
+            "html": "<img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.25.47-PM.png\" alt=\"screenshot of Amigos website highlighting TAE\" width=\"400\" height=\"254\" loading=\"lazy\">",
+            "target": [
+              "img[height=\"254\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not duplicate existing text in <img> alt text"
+              }
+            ],
+            "impact": null,
+            "html": "<img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.31.17-PM.png\" alt=\"screenshot of Amigos TAE landing page\" width=\"400\" height=\"260\" loading=\"lazy\">",
+            "target": [
+              "img[height=\"260\"]"
             ]
           },
           {
@@ -7817,7 +9102,7 @@
                   {
                     "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
                     "target": [
-                      "ol"
+                      ".breadcrumb > ol"
                     ]
                   }
                 ],
@@ -7842,7 +9127,7 @@
                   {
                     "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
                     "target": [
-                      "ol"
+                      ".breadcrumb > ol"
                     ]
                   }
                 ],
@@ -7856,6 +9141,81 @@
             "html": "<a href=\"/news\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">News</a>",
             "target": [
               "li:nth-child(2) > a[href$=\"news\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+                    "target": [
+                      ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Links can be distinguished from surrounding text by visual styling"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">redesigned Amigos Library Services website</a>",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+                    "target": [
+                      "li:nth-child(2) > p:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Links can be distinguished from surrounding text by visual styling"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
+            "target": [
+              "li:nth-child(2) > p:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+                    "target": [
+                      "p:nth-child(6)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Links can be distinguished from surrounding text by visual styling"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"mailto:tae@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"]"
             ]
           }
         ]
@@ -8164,7 +9524,137 @@
             "impact": null,
             "html": "<a href=\"/news/resource-sharing-and-services\" hreflang=\"en\" data-asw-org-font-size=\"12\" style=\"font-size: 12px;\">Resource Sharing &amp; Services</a>",
             "target": [
-              "#node-12350 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"][data-asw-org-font-size=\"12\"]"
+              "#node-12368 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"][data-asw-org-font-size=\"12\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">redesigned Amigos Library Services website</a>",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
+            "target": [
+              "li:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
+            "target": [
+              "li:nth-child(2) > p:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/services/trans-amigos-express\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">https://www.amigos.org/services/trans-amigos-express</a>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(1) > a"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"mailto:tae@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"]"
             ]
           },
           {
@@ -8266,9 +9756,9 @@
               }
             ],
             "impact": null,
-            "html": "<a href=\"/news/navigating-courier-links-and-information-redesigned-amigosorg-website\" rel=\"bookmark\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "html": "<a href=\"/news/courier-winter-holiday-2024-schedule\" rel=\"bookmark\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday 2024 Schedule</span>\n</a>",
             "target": [
-              "#node-12368 > h2 > a[rel=\"bookmark\"]"
+              "#node-12350 > h2 > a[rel=\"bookmark\"]"
             ]
           },
           {
@@ -8292,9 +9782,9 @@
               }
             ],
             "impact": null,
-            "html": "<a href=\"/news/navigating-courier-links-and-information-redesigned-amigosorg-website\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a>",
+            "html": "<a href=\"/news/courier-winter-holiday-2024-schedule\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a>",
             "target": [
-              "#node-12368 > .article-read-more > a[data-asw-org-font-size=\"15\"]"
+              "#node-12350 > .article-read-more > a[data-asw-org-font-size=\"15\"]"
             ]
           },
           {
@@ -8448,9 +9938,9 @@
               }
             ],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
             ]
           },
           {
@@ -8737,7 +10227,25 @@
             "impact": null,
             "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "ol"
+              ".breadcrumb > ol"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
+            "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol"
             ]
           },
           {
@@ -8915,7 +10423,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Home</a>\n              </li>",
             "target": [
-              "ol > li:nth-child(1)"
+              ".breadcrumb > ol > li:nth-child(1)"
             ]
           },
           {
@@ -8933,7 +10441,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/news\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">News</a>\n              </li>",
             "target": [
-              "ol > li:nth-child(2)"
+              ".breadcrumb > ol > li:nth-child(2)"
             ]
           },
           {
@@ -8949,9 +10457,81 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Courier Winter Holiday 2024 Schedule\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Navigating To Courier Links and Information On The Redesigned Amigos.org Website\n              </li>",
             "target": [
-              "ol > li:nth-child(3)"
+              ".breadcrumb > ol > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Visit <a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>&nbsp;</li>",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "ol > li:nth-child(4)"
             ]
           },
           {
@@ -9003,7 +10583,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -9231,6 +10811,60 @@
             "all": [],
             "none": [],
             "impact": null,
+            "html": "<img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.25.47-PM.png\" alt=\"screenshot of Amigos website highlighting TAE\" width=\"400\" height=\"254\" loading=\"lazy\">",
+            "target": [
+              "img[height=\"254\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.31.17-PM.png\" alt=\"screenshot of Amigos TAE landing page\" width=\"400\" height=\"260\" loading=\"lazy\">",
+            "target": [
+              "img[height=\"260\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
             "html": "<input data-drupal-selector=\"edit-submit-news-search\" type=\"submit\" id=\"edit-submit-news-search\" value=\"Search\" class=\"button js-form-submit form-submit\">",
             "target": [
               "#edit-submit-news-search"
@@ -9251,7 +10885,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -9401,7 +11035,7 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>\n</h1>",
+                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>\n</h1>",
                     "target": [
                       "h1"
                     ]
@@ -10268,7 +11902,7 @@
             "impact": null,
             "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "ol"
+              ".breadcrumb > ol"
             ]
           },
           {
@@ -10288,7 +11922,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Home</a>\n              </li>",
             "target": [
-              "ol > li:nth-child(1)"
+              ".breadcrumb > ol > li:nth-child(1)"
             ]
           },
           {
@@ -10328,7 +11962,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/news\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">News</a>\n              </li>",
             "target": [
-              "ol > li:nth-child(2)"
+              ".breadcrumb > ol > li:nth-child(2)"
             ]
           },
           {
@@ -10366,9 +12000,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Courier Winter Holiday 2024 Schedule\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Navigating To Courier Links and Information On The Redesigned Amigos.org Website\n              </li>",
             "target": [
-              "ol > li:nth-child(3)"
+              ".breadcrumb > ol > li:nth-child(3)"
             ]
           },
           {
@@ -10486,7 +12120,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>\n</h1>",
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>\n</h1>",
             "target": [
               "h1"
             ]
@@ -10506,7 +12140,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Courier Winter Holiday 2024 Schedule</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>",
             "target": [
               ".field--name-title.field--type-string[data-asw-org-font-size=\"32\"]"
             ]
@@ -10546,9 +12180,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<article id=\"node-12350\" class=\"node node--type-news-article node--promoted node--view-mode-full\">",
+            "html": "<article id=\"node-12368\" class=\"node node--type-news-article node--promoted node--view-mode-full\">",
             "target": [
-              "#node-12350"
+              "#node-12368"
             ]
           },
           {
@@ -10568,7 +12202,7 @@
             "impact": null,
             "html": "<div class=\"node-date-category\">",
             "target": [
-              "#node-12350 > .node-date-category"
+              "#node-12368 > .node-date-category"
             ]
           },
           {
@@ -10588,7 +12222,7 @@
             "impact": null,
             "html": "<div class=\"field field--name-taxonomy-vocabulary-1 field--type-entity-reference field--label-hidden field__items\">",
             "target": [
-              "#node-12350 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items"
+              "#node-12368 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items"
             ]
           },
           {
@@ -10608,7 +12242,7 @@
             "impact": null,
             "html": "<div class=\"field__item\"><a href=\"/news/resource-sharing-and-services\" hreflang=\"en\" data-asw-org-font-size=\"12\" style=\"font-size: 12px;\">Resource Sharing &amp; Services</a></div>",
             "target": [
-              "#node-12350 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item"
+              "#node-12368 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item"
             ]
           },
           {
@@ -10628,7 +12262,7 @@
             "impact": null,
             "html": "<a href=\"/news/resource-sharing-and-services\" hreflang=\"en\" data-asw-org-font-size=\"12\" style=\"font-size: 12px;\">Resource Sharing &amp; Services</a>",
             "target": [
-              "#node-12350 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"][data-asw-org-font-size=\"12\"]"
+              "#node-12368 > .node-date-category > .field--name-taxonomy-vocabulary-1.field--type-entity-reference.field__items > .field__item > a[hreflang=\"en\"][data-asw-org-font-size=\"12\"]"
             ]
           },
           {
@@ -10646,9 +12280,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-created field--type-created field--label-hidden\" data-asw-org-font-size=\"14\" style=\"font-size: 14px;\"><time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>\n</span>",
+            "html": "<span class=\"field field--name-created field--type-created field--label-hidden\" data-asw-org-font-size=\"14\" style=\"font-size: 14px;\"><time datetime=\"2025-01-15T15:16:52-06:00\" title=\"Wednesday, January 15, 2025, 3:16 pm\" class=\"datetime\">January 15, 2025</time>\n</span>",
             "target": [
-              "#node-12350 > .node-date-category > .field--name-created.field--type-created[data-asw-org-font-size=\"14\"]"
+              "#node-12368 > .node-date-category > .field--name-created.field--type-created[data-asw-org-font-size=\"14\"]"
             ]
           },
           {
@@ -10666,9 +12300,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>",
+            "html": "<time datetime=\"2025-01-15T15:16:52-06:00\" title=\"Wednesday, January 15, 2025, 3:16 pm\" class=\"datetime\">January 15, 2025</time>",
             "target": [
-              "time[datetime=\"2024-12-18T13:33:00-06:00\"]"
+              "time[datetime=\"2025-01-15T15:16:52-06:00\"]"
             ]
           },
           {
@@ -10726,9 +12360,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"OutlineElement Ltr SCXW218738917 BCX8\" style=\"-webkit-text-stroke-width:0px;-webkit-user-drag:none;background-color:rgb(255, 255, 255);clear:both;color:rgb(0, 0, 0);cursor:text;direction:ltr;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;overflow:visible;padding:0px;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              ".OutlineElement.Ltr.SCXW218738917:nth-child(1)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1)"
             ]
           },
           {
@@ -10746,9 +12380,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p class=\"Paragraph SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; background-color: transparent; color: windowtext; font-kerning: none; font-style: normal; font-weight: normal; margin: 0px; overflow-wrap: break-word; padding: 0px; text-align: left; text-indent: 0px; vertical-align: baseline; white-space: pre-wrap; font-size: 12px;\" paraid=\"125249952\" paraeid=\"{d494550a-b2ec-4984-9881-57a65738eba2}{67}\" data-asw-org-font-size=\"12\">",
+            "html": "<a href=\"https://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">redesigned Amigos Library Services website</a>",
             "target": [
-              "p[paraid=\"125249952\"]"
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(1) > a[href$=\"amigos.org/\"]"
             ]
           },
           {
@@ -10766,9 +12400,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "p[paraid=\"125249952\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
+              ".text-formatted.field--name-body.field--type-text-with-summary > p:nth-child(2)"
             ]
           },
           {
@@ -10786,9 +12420,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"EOP SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px;\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}\" data-asw-org-font-size=\"16\">",
+            "html": "<strong>Where to Find Key Links</strong>",
             "target": [
-              "p[paraid=\"125249952\"] > .EOP.SCXW218738917.BCX8"
+              "p:nth-child(2) > strong"
             ]
           },
           {
@@ -10806,9 +12440,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"OutlineElement Ltr SCXW218738917 BCX8\" style=\"-webkit-text-stroke-width:0px;-webkit-user-drag:none;background-color:rgb(255, 255, 255);clear:both;color:rgb(0, 0, 0);cursor:text;direction:ltr;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;overflow:visible;padding:0px;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">",
+            "html": "<br>",
             "target": [
-              ".OutlineElement.Ltr.SCXW218738917:nth-child(2)"
+              "p:nth-child(2) > br"
             ]
           },
           {
@@ -10826,9 +12460,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p class=\"Paragraph SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; background-color: transparent; color: windowtext; font-kerning: none; font-style: normal; font-weight: normal; margin: 0px; overflow-wrap: break-word; padding: 0px; text-align: left; text-indent: 0px; vertical-align: baseline; white-space: pre-wrap; font-size: 12px;\" paraid=\"25467129\" paraeid=\"{d494550a-b2ec-4984-9881-57a65738eba2}{73}\" data-asw-org-font-size=\"12\">",
+            "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "p[paraid=\"25467129\"]"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol"
             ]
           },
           {
@@ -10846,9 +12480,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"EOP SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px;\" data-ccp-props=\"{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}\" data-asw-org-font-size=\"16\">",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Visit <a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>&nbsp;</li>",
             "target": [
-              "p[paraid=\"25467129\"] > .EOP.SCXW218738917.BCX8"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(1)"
             ]
           },
           {
@@ -10866,9 +12500,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"OutlineElement Ltr SCXW218738917 BCX8\" style=\"-webkit-text-stroke-width:0px;-webkit-user-drag:none;background-color:rgb(255, 255, 255);clear:both;color:rgb(0, 0, 0);cursor:text;direction:ltr;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;overflow:visible;padding:0px;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">",
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
             "target": [
-              ".OutlineElement.Ltr.SCXW218738917:nth-child(3)"
+              "li:nth-child(1) > a[href$=\"amigos.org/\"]"
             ]
           },
           {
@@ -10886,9 +12520,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p class=\"Paragraph SCXW218738917 BCX8\" style=\"-webkit-user-drag: none; background-color: transparent; color: windowtext; font-kerning: none; font-style: normal; font-weight: normal; margin: 0px; overflow-wrap: break-word; padding: 0px; text-align: left; text-indent: 0px; vertical-align: baseline; white-space: pre-wrap; font-size: 12px;\" paraid=\"580410227\" paraeid=\"{d494550a-b2ec-4984-9881-57a65738eba2}{77}\" data-asw-org-font-size=\"12\">",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "p[paraid=\"580410227\"]"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(2)"
             ]
           },
           {
@@ -10906,9 +12540,669 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "p[paraid=\"580410227\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
+              "li:nth-child(2) > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"http://www.amigos.org/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">www.amigos.org</a>",
+            "target": [
+              "li:nth-child(2) > p:nth-child(1) > a[href$=\"amigos.org/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Courier</strong>",
+            "target": [
+              "p:nth-child(1) > strong:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<em>OR</em>",
+            "target": [
+              "p:nth-child(1) > em"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Services</strong>",
+            "target": [
+              "p:nth-child(1) > strong:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Courier</strong>",
+            "target": [
+              "p:nth-child(1) > strong:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.25.47-PM.png\" alt=\"screenshot of Amigos website highlighting TAE\" width=\"400\" height=\"254\" loading=\"lazy\"></p>",
+            "target": [
+              "li:nth-child(2) > p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.25.47-PM.png\" alt=\"screenshot of Amigos website highlighting TAE\" width=\"400\" height=\"254\" loading=\"lazy\">",
+            "target": [
+              "img[height=\"254\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              ".text-formatted.field--name-body.field--type-text-with-summary > ol > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">You will now be on the Courier/TAE homepage: <a href=\"https://www.amigos.org/services/trans-amigos-express\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">https://www.amigos.org/services/trans-amigos-express</a>.&nbsp;&nbsp;</p>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/services/trans-amigos-express\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">https://www.amigos.org/services/trans-amigos-express</a>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(1) > a"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">*&nbsp; <em>Tip: For ease of locating courier links and information in the future, bookmark this page in your browser</em>&nbsp;</p>",
+            "target": [
+              "li:nth-child(3) > p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<em>Tip: For ease of locating courier links and information in the future, bookmark this page in your browser</em>",
+            "target": [
+              "p:nth-child(2) > em"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "ol > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Courier</strong>",
+            "target": [
+              "li:nth-child(4) > strong:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Member Services</strong>",
+            "target": [
+              "li:nth-child(4) > strong:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>TAE</strong>",
+            "target": [
+              "strong:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Label Maker</strong>",
+            "target": [
+              "li:nth-child(4) > strong:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Forms</strong>",
+            "target": [
+              "li:nth-child(4) > strong:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Participants</strong>",
+            "target": [
+              "strong:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Guidelines &amp; Labeling Info</strong>",
+            "target": [
+              "strong:nth-child(7)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.31.17-PM.png\" alt=\"screenshot of Amigos TAE landing page\" width=\"400\" height=\"260\" loading=\"lazy\"></p>",
+            "target": [
+              "p:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img src=\"/sites/default/files/Screenshot-2025-01-15-at-3.31.17-PM.png\" alt=\"screenshot of Amigos TAE landing page\" width=\"400\" height=\"260\" loading=\"lazy\">",
+            "target": [
+              "img[height=\"260\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>Holiday and Closing Reporting</strong>&nbsp;<br>Courier participants should now report holidays and closings by emailing TAE directly. The old online form in no longer in use.&nbsp;&nbsp;</p>",
+            "target": [
+              "p:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Holiday and Closing Reporting</strong>",
+            "target": [
+              "p:nth-child(5) > strong"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<br>",
+            "target": [
+              "p:nth-child(5) > br"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "p:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<strong>Assistance</strong>",
+            "target": [
+              "p:nth-child(6) > strong"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<br>",
+            "target": [
+              "p:nth-child(6) > br"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"mailto:tae@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"extlink-nobreak\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<title>(link sends email)</title>",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"] > title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<path d=\"M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z\"></path>",
+            "target": [
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"] > path"
             ]
           },
           {
@@ -11226,9 +13520,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h3 data-asw-org-font-size=\"18\" style=\"font-size: 18px;\">Subscribe for updates</h3>",
+            "html": "<h2 class=\"h3\" data-asw-org-font-size=\"20\" style=\"font-size: 20px;\">Subscribe for updates</h2>",
             "target": [
-              "h3"
+              ".h3"
             ]
           },
           {
@@ -11366,7 +13660,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"view view-news view-id-news view-display-id-block_8 js-view-dom-id-cbc3d8dda8996e5262e5dfaf3825b81fb70ecc7ae627c05d5c723059599fbb43\">",
+            "html": "<div class=\"view view-news view-id-news view-display-id-block_8 js-view-dom-id-7e574af5e7e62264585650133cd947f97ec34e0389fc0cba78beea26ac43b775\">",
             "target": [
               ".view"
             ]
@@ -11548,7 +13842,7 @@
             "impact": null,
             "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Trans-Amigos Express Forms Moving to the TAE Label Maker on Monday, February 23</span>",
             "target": [
-              "#node-12812 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-12812 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -11626,9 +13920,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<article id=\"node-12368\" class=\"node node--type-news-article node--promoted node--view-mode-small-teaser\">",
+            "html": "<article id=\"node-12350\" class=\"node node--type-news-article node--promoted node--view-mode-small-teaser\">",
             "target": [
-              "#node-12368"
+              "#node-12350"
             ]
           },
           {
@@ -11648,7 +13942,7 @@
             "impact": null,
             "html": "<div class=\"node-date-category\">",
             "target": [
-              "#node-12368 > .node-date-category"
+              "#node-12350 > .node-date-category"
             ]
           },
           {
@@ -11666,9 +13960,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-created field--type-created field--label-hidden\" data-asw-org-font-size=\"14\" style=\"font-size: 14px;\"><time datetime=\"2025-01-15T15:16:52-06:00\" title=\"Wednesday, January 15, 2025, 3:16 pm\" class=\"datetime\">January 15, 2025</time>\n</span>",
+            "html": "<span class=\"field field--name-created field--type-created field--label-hidden\" data-asw-org-font-size=\"14\" style=\"font-size: 14px;\"><time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>\n</span>",
             "target": [
-              "#node-12368 > .node-date-category > .field--name-created.field--type-created[data-asw-org-font-size=\"14\"]"
+              "#node-12350 > .node-date-category > .field--name-created.field--type-created[data-asw-org-font-size=\"14\"]"
             ]
           },
           {
@@ -11686,9 +13980,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<time datetime=\"2025-01-15T15:16:52-06:00\" title=\"Wednesday, January 15, 2025, 3:16 pm\" class=\"datetime\">January 15, 2025</time>",
+            "html": "<time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>",
             "target": [
-              "time[datetime=\"2025-01-15T15:16:52-06:00\"]"
+              "time[datetime=\"2024-12-18T13:33:00-06:00\"]"
             ]
           },
           {
@@ -11708,7 +14002,7 @@
             "impact": null,
             "html": "<h2 data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "#node-12368 > h2"
+              "#node-12350 > h2"
             ]
           },
           {
@@ -11726,9 +14020,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/news/navigating-courier-links-and-information-redesigned-amigosorg-website\" rel=\"bookmark\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "html": "<a href=\"/news/courier-winter-holiday-2024-schedule\" rel=\"bookmark\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday 2024 Schedule</span>\n</a>",
             "target": [
-              "#node-12368 > h2 > a[rel=\"bookmark\"]"
+              "#node-12350 > h2 > a[rel=\"bookmark\"]"
             ]
           },
           {
@@ -11746,9 +14040,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Navigating to Courier Links and Information on the Redesigned Amigos.org Website</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday 2024 Schedule</span>",
             "target": [
-              "#node-12368 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-12350 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -11766,9 +14060,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"article-read-more\"><a href=\"/news/navigating-courier-links-and-information-redesigned-amigosorg-website\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a></div>",
+            "html": "<div class=\"article-read-more\"><a href=\"/news/courier-winter-holiday-2024-schedule\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a></div>",
             "target": [
-              "#node-12368 > .article-read-more"
+              "#node-12350 > .article-read-more"
             ]
           },
           {
@@ -11786,9 +14080,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/news/navigating-courier-links-and-information-redesigned-amigosorg-website\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a>",
+            "html": "<a href=\"/news/courier-winter-holiday-2024-schedule\" data-asw-org-font-size=\"15\" style=\"font-size: 15px;\">Read More ››</a>",
             "target": [
-              "#node-12368 > .article-read-more > a[data-asw-org-font-size=\"15\"]"
+              "#node-12350 > .article-read-more > a[data-asw-org-font-size=\"15\"]"
             ]
           },
           {
@@ -11948,7 +14242,7 @@
             "impact": null,
             "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Courier Winter Holiday Schedule</span>",
             "target": [
-              "#node-8573 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string.field"
+              "#node-8573 > h2 > a[rel=\"bookmark\"] > .field--name-title.field--type-string"
             ]
           },
           {
@@ -12288,7 +14582,7 @@
             "impact": null,
             "html": "<span class=\"extlink-nobreak\">",
             "target": [
-              ".extlink-nobreak"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak"
             ]
           },
           {
@@ -12308,7 +14602,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           },
           {
@@ -12328,7 +14622,7 @@
             "impact": null,
             "html": "<title>(link sends email)</title>",
             "target": [
-              "svg[focusable=\"false\"] > title"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"] > title"
             ]
           },
           {
@@ -12348,7 +14642,7 @@
             "impact": null,
             "html": "<path d=\"M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z\"></path>",
             "target": [
-              "svg[focusable=\"false\"] > path"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"] > path"
             ]
           },
           {
@@ -12646,7 +14940,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -12666,9 +14960,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
             ]
           },
           {
@@ -13432,7 +15726,32 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[focusable=\"false\"]"
+              "a[href$=\"mailto:tae@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "svg-non-empty-title",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has a child that is a title"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute exists and is not empty"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[focusable=\"false\"][width=\"1em\"][height=\"1em\"]"
             ]
           }
         ]
@@ -13467,149 +15786,9 @@
             ]
           }
         ]
-      },
-      {
-        "id": "valid-lang",
-        "impact": null,
-        "tags": [
-          "cat.language",
-          "wcag2aa",
-          "wcag312",
-          "TTv5",
-          "TT11.b",
-          "EN-301-549",
-          "EN-9.3.1.2",
-          "ACT"
-        ],
-        "description": "Ensure lang attributes have valid values",
-        "help": "lang attribute must have a valid value",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/valid-lang?application=axeAPI",
-        "nodes": [
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "valid-lang",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Value of lang attribute is included in the list of valid languages"
-              }
-            ],
-            "impact": null,
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
-            "target": [
-              "p[paraid=\"125249952\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
-            ]
-          },
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "valid-lang",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Value of lang attribute is included in the list of valid languages"
-              }
-            ],
-            "impact": null,
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
-            "target": [
-              "p[paraid=\"580410227\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
-            ]
-          }
-        ]
       }
     ],
-    "incomplete": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "tags": [
-          "cat.color",
-          "wcag2aa",
-          "wcag143",
-          "TTv5",
-          "TT13.c",
-          "EN-301-549",
-          "EN-9.1.4.3",
-          "ACT"
-        ],
-        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "normal",
-                  "messageKey": "elmPartiallyObscured",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"OutlineElement Ltr SCXW218738917 BCX8\" style=\"-webkit-text-stroke-width:0px;-webkit-user-drag:none;background-color:rgb(255, 255, 255);clear:both;color:rgb(0, 0, 0);cursor:text;direction:ltr;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;overflow:visible;padding:0px;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">",
-                    "target": [
-                      ".OutlineElement.Ltr.SCXW218738917:nth-child(1)"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined because it's partially obscured by another element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
-            "target": [
-              "p[paraid=\"125249952\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-          }
-        ]
-      }
-    ],
-    "violations": [
-      {
-        "id": "heading-order",
-        "impact": "moderate",
-        "tags": [
-          "cat.semantics",
-          "best-practice"
-        ],
-        "description": "Ensure the order of headings is semantically correct",
-        "help": "Heading levels should only increase by one",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "heading-order",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "Heading order invalid"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "moderate",
-            "html": "<h3 data-asw-org-font-size=\"18\" style=\"font-size: 18px;\">Subscribe for updates</h3>",
-            "target": [
-              "h3"
-            ],
-            "failureSummary": "Fix any of the following:\n  Heading order invalid"
-          }
-        ]
-      }
-    ]
+    "incomplete": [],
+    "violations": []
   }
 }
