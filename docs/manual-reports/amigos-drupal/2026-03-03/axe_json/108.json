@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scannedAt": "2026-03-03T13:54:21.219Z",
+    "scannedAt": "2026-03-03T15:33:35.804Z",
     "url": "https://amigos.org/node/266",
     "documentTitle": "Amigos Resource Sharing Agreement | Amigos Library Services",
     "index": 108
@@ -20,7 +20,7 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2026-03-03T13:54:21.094Z",
+    "timestamp": "2026-03-03T15:33:35.699Z",
     "url": "https://www.amigos.org/services/resource-sharing/agreement",
     "toolOptions": {
       "reporter": "v1"
@@ -468,6 +468,23 @@
         "description": "Ensure the complementary landmark or aside is at top level",
         "help": "Aside should not be contained in another landmark",
         "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+        "nodes": []
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": null,
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
         "nodes": []
       },
       {
@@ -3316,9 +3333,73 @@
             ],
             "none": [],
             "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Introduction</h2>",
+            "target": [
+              ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">(Complete the <a href=\"/sites/default/files/amigos_resource_sharing_agreement_form.pdf\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource Sharing Agreement Form</a>)</p>",
+            "target": [
+              "p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
             "html": "<a href=\"/sites/default/files/amigos_resource_sharing_agreement_form.pdf\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource Sharing Agreement Form</a>",
             "target": [
-              ".clearfix.text-formatted.field--name-body > a"
+              "p:nth-child(2) > a"
             ]
           },
           {
@@ -3380,6 +3461,38 @@
             ],
             "none": [],
             "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">I. Definition</h2>",
+            "target": [
+              "h2:nth-child(4)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
             "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource sharing is comprised of transactions by which a library makes its materials or copies of its materials available to the clientele of another library upon request.</p>",
             "target": [
               "p:nth-child(5)"
@@ -3412,7 +3525,39 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The purpose is to obtain, upon request of a library’s primary clientele, materials not available in the local library.</p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">II. Purpose</h2>",
+            "target": [
+              "h2:nth-child(6)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The purpose is to obtain, upon request of a library's primary clientele, materials not available in the local library.</p>",
             "target": [
               "p:nth-child(7)"
             ]
@@ -3444,9 +3589,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>III. Scope</strong></p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">III. Scope</h2>",
             "target": [
-              "p:nth-child(8)"
+              "h2:nth-child(8)"
             ]
           },
           {
@@ -3604,9 +3749,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>IV. Responsibilities of the Requesting Library</strong></p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">IV. Responsibilities of the Requesting Library</h2>",
             "target": [
-              "p:nth-child(10)"
+              "h2:nth-child(10)"
             ]
           },
           {
@@ -3988,9 +4133,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>V. Responsibilities of the Supplying Library</strong></p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">V. Responsibilities of the Supplying Library</h2>",
             "target": [
-              "p:nth-child(12)"
+              "h2:nth-child(12)"
             ]
           },
           {
@@ -4244,9 +4389,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>VI. Expenses</strong></p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VI. Expenses</h2>",
             "target": [
-              "p:nth-child(14)"
+              "h2:nth-child(14)"
             ]
           },
           {
@@ -4374,7 +4519,39 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Fees for handling interlibrary loan requests.</li>",
             "target": [
-              "li:nth-child(1) > ol > li"
+              "li:nth-child(1) > ol > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Postage or other transportation charges.</li>",
+            "target": [
+              "li:nth-child(1) > ol > li:nth-child(2)"
             ]
           },
           {
@@ -4406,7 +4583,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">For photocopies up to 50 pages per bibliographic citation. Charges beyond the 50 pages are at the discretion of the supplying library.</li>",
             "target": [
-              "li\\. > li"
+              "li:nth-child(1) > ol > li:nth-child(3)"
             ]
           },
           {
@@ -4439,6 +4616,38 @@
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
               "ol[type=\"A\"]:nth-child(15) > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VII. Violation of the Agreement</h2>",
+            "target": [
+              "h2:nth-child(16)"
             ]
           },
           {
@@ -5267,6 +5476,54 @@
                     ]
                   },
                   {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Introduction</h2>",
+                    "target": [
+                      ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+                    ]
+                  },
+                  {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">I. Definition</h2>",
+                    "target": [
+                      "h2:nth-child(4)"
+                    ]
+                  },
+                  {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">II. Purpose</h2>",
+                    "target": [
+                      "h2:nth-child(6)"
+                    ]
+                  },
+                  {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">III. Scope</h2>",
+                    "target": [
+                      "h2:nth-child(8)"
+                    ]
+                  },
+                  {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">IV. Responsibilities of the Requesting Library</h2>",
+                    "target": [
+                      "h2:nth-child(10)"
+                    ]
+                  },
+                  {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">V. Responsibilities of the Supplying Library</h2>",
+                    "target": [
+                      "h2:nth-child(12)"
+                    ]
+                  },
+                  {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VI. Expenses</h2>",
+                    "target": [
+                      "h2:nth-child(14)"
+                    ]
+                  },
+                  {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VII. Violation of the Agreement</h2>",
+                    "target": [
+                      "h2:nth-child(16)"
+                    ]
+                  },
+                  {
                     "html": "<h2 class=\"visually-hidden\" id=\"block-amigos-footer-menu\" data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Footer</h2>",
                     "target": [
                       "#block-amigos-footer-menu"
@@ -5638,6 +5895,31 @@
               {
                 "id": "color-contrast",
                 "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Introduction</h2>",
+            "target": [
+              ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
                   "fgColor": "#000000",
                   "bgColor": "#ffffff",
                   "contrastRatio": 21,
@@ -5653,34 +5935,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">(Complete the <a href=\"/sites/default/files/amigos_resource_sharing_agreement_form.pdf\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource Sharing Agreement Form</a>)</p>",
             "target": [
-              ".block-layout-builder > .clearfix.text-formatted.field--name-body"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#000000",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<strong>Introduction</strong>",
-            "target": [
-              ".clearfix.text-formatted.field--name-body > strong:nth-child(1)"
+              "p:nth-child(2)"
             ]
           },
           {
@@ -5705,7 +5962,7 @@
             "impact": null,
             "html": "<a href=\"/sites/default/files/amigos_resource_sharing_agreement_form.pdf\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource Sharing Agreement Form</a>",
             "target": [
-              ".clearfix.text-formatted.field--name-body > a"
+              "p:nth-child(2) > a"
             ]
           },
           {
@@ -5738,24 +5995,24 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>I. Definition</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">I. Definition</h2>",
             "target": [
-              "strong:nth-child(4)"
+              "h2:nth-child(4)"
             ]
           },
           {
@@ -5788,24 +6045,24 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>II. Purpose</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">II. Purpose</h2>",
             "target": [
-              "strong:nth-child(6)"
+              "h2:nth-child(6)"
             ]
           },
           {
@@ -5828,7 +6085,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The purpose is to obtain, upon request of a library’s primary clientele, materials not available in the local library.</p>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The purpose is to obtain, upon request of a library's primary clientele, materials not available in the local library.</p>",
             "target": [
               "p:nth-child(7)"
             ]
@@ -5838,24 +6095,24 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>III. Scope</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">III. Scope</h2>",
             "target": [
-              "p:nth-child(8) > strong"
+              "h2:nth-child(8)"
             ]
           },
           {
@@ -5938,24 +6195,24 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>IV. Responsibilities of the Requesting Library</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">IV. Responsibilities of the Requesting Library</h2>",
             "target": [
-              "p:nth-child(10) > strong"
+              "h2:nth-child(10)"
             ]
           },
           {
@@ -6213,24 +6470,24 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>V. Responsibilities of the Supplying Library</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">V. Responsibilities of the Supplying Library</h2>",
             "target": [
-              "p:nth-child(12) > strong"
+              "h2:nth-child(12)"
             ]
           },
           {
@@ -6388,24 +6645,24 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>VI. Expenses</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VI. Expenses</h2>",
             "target": [
-              "p:nth-child(14) > strong"
+              "h2:nth-child(14)"
             ]
           },
           {
@@ -6455,7 +6712,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Fees for handling interlibrary loan requests.</li>",
             "target": [
-              "li:nth-child(1) > ol > li"
+              "li:nth-child(1) > ol > li:nth-child(1)"
             ]
           },
           {
@@ -6478,9 +6735,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li.>Postage or other transportation charges.\n        <li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">For photocopies up to 50 pages per bibliographic citation. Charges beyond the 50 pages are at the discretion of the supplying library.</li>\n   </li.>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Postage or other transportation charges.</li>",
             "target": [
-              "li\\."
+              "li:nth-child(1) > ol > li:nth-child(2)"
             ]
           },
           {
@@ -6505,7 +6762,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">For photocopies up to 50 pages per bibliographic citation. Charges beyond the 50 pages are at the discretion of the supplying library.</li>",
             "target": [
-              "li\\. > li"
+              "li:nth-child(1) > ol > li:nth-child(3)"
             ]
           },
           {
@@ -6538,24 +6795,24 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>VII. Violation of the Agreement</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VII. Violation of the Agreement</h2>",
             "target": [
-              "strong:nth-child(16)"
+              "h2:nth-child(16)"
             ]
           },
           {
@@ -7185,6 +7442,150 @@
             "all": [],
             "none": [],
             "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Introduction</h2>",
+            "target": [
+              ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">I. Definition</h2>",
+            "target": [
+              "h2:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">II. Purpose</h2>",
+            "target": [
+              "h2:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">III. Scope</h2>",
+            "target": [
+              "h2:nth-child(8)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">IV. Responsibilities of the Requesting Library</h2>",
+            "target": [
+              "h2:nth-child(10)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">V. Responsibilities of the Supplying Library</h2>",
+            "target": [
+              "h2:nth-child(12)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VI. Expenses</h2>",
+            "target": [
+              "h2:nth-child(14)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VII. Violation of the Agreement</h2>",
+            "target": [
+              "h2:nth-child(16)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
             "html": "<h2 class=\"visually-hidden\" id=\"block-amigos-footer-menu\" data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Footer</h2>",
             "target": [
               "#block-amigos-footer-menu"
@@ -7278,6 +7679,54 @@
                     },
                     {
                       "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div > article > div > div > div > div > div > h2:nth-child(1)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div > article > div > div > div > div > div > h2:nth-child(4)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div > article > div > div > div > div > div > h2:nth-child(6)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div > article > div > div > div > div > div > h2:nth-child(8)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div > article > div > div > div > div > div > h2:nth-child(10)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div > article > div > div > div > div > div > h2:nth-child(12)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div > article > div > div > div > div > div > h2:nth-child(14)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div > article > div > div > div > div > div > h2:nth-child(16)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
                         "html > body > div:nth-child(2) > div:nth-child(1) > footer:nth-child(3) > div > div:nth-child(2) > nav:nth-child(1) > h2:nth-child(1)"
                       ],
                       "level": 2
@@ -7349,6 +7798,150 @@
             "html": "<h2 id=\"system-breadcrumb\" class=\"visually-hidden\" data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Breadcrumb</h2>",
             "target": [
               "#system-breadcrumb"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Introduction</h2>",
+            "target": [
+              ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">I. Definition</h2>",
+            "target": [
+              "h2:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">II. Purpose</h2>",
+            "target": [
+              "h2:nth-child(6)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">III. Scope</h2>",
+            "target": [
+              "h2:nth-child(8)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">IV. Responsibilities of the Requesting Library</h2>",
+            "target": [
+              "h2:nth-child(10)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">V. Responsibilities of the Supplying Library</h2>",
+            "target": [
+              "h2:nth-child(12)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VI. Expenses</h2>",
+            "target": [
+              "h2:nth-child(14)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VII. Violation of the Agreement</h2>",
+            "target": [
+              "h2:nth-child(16)"
             ]
           },
           {
@@ -8287,49 +8880,6 @@
         ]
       },
       {
-        "id": "link-in-text-block",
-        "impact": null,
-        "tags": [
-          "cat.color",
-          "wcag2a",
-          "wcag141",
-          "TTv5",
-          "TT13.a",
-          "EN-301-549",
-          "EN-9.1.4.1"
-        ],
-        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-        "help": "Links must be distinguishable without relying on color",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "link-in-text-block-style",
-                "data": null,
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
-                    "target": [
-                      ".block-layout-builder > .clearfix.text-formatted.field--name-body"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Links can be distinguished from surrounding text by visual styling"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<a href=\"/sites/default/files/amigos_resource_sharing_agreement_form.pdf\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource Sharing Agreement Form</a>",
-            "target": [
-              ".clearfix.text-formatted.field--name-body > a"
-            ]
-          }
-        ]
-      },
-      {
         "id": "link-name",
         "impact": null,
         "tags": [
@@ -8659,7 +9209,7 @@
             "impact": null,
             "html": "<a href=\"/sites/default/files/amigos_resource_sharing_agreement_form.pdf\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource Sharing Agreement Form</a>",
             "target": [
-              ".clearfix.text-formatted.field--name-body > a"
+              "p:nth-child(2) > a"
             ]
           },
           {
@@ -8987,7 +9537,7 @@
       },
       {
         "id": "list",
-        "impact": "serious",
+        "impact": null,
         "tags": [
           "cat.structure",
           "wcag2a",
@@ -9138,6 +9688,24 @@
               }
             ],
             "impact": null,
+            "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "li:nth-child(1) > ol"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
             "html": "<ul class=\"menu\">",
             "target": [
               "#block-amigos-footer > .menu"
@@ -9165,7 +9733,7 @@
       },
       {
         "id": "listitem",
-        "impact": "serious",
+        "impact": null,
         "tags": [
           "cat.structure",
           "wcag2a",
@@ -9732,7 +10300,43 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Fees for handling interlibrary loan requests.</li>",
             "target": [
-              "li:nth-child(1) > ol > li"
+              "li:nth-child(1) > ol > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Postage or other transportation charges.</li>",
+            "target": [
+              "li:nth-child(1) > ol > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">For photocopies up to 50 pages per bibliographic citation. Charges beyond the 50 pages are at the discretion of the supplying library.</li>",
+            "target": [
+              "li:nth-child(1) > ol > li:nth-child(3)"
             ]
           },
           {
@@ -11487,9 +12091,29 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>Introduction</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Introduction</h2>",
             "target": [
-              ".clearfix.text-formatted.field--name-body > strong:nth-child(1)"
+              ".clearfix.text-formatted.field--name-body > h2:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">(Complete the <a href=\"/sites/default/files/amigos_resource_sharing_agreement_form.pdf\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource Sharing Agreement Form</a>)</p>",
+            "target": [
+              "p:nth-child(2)"
             ]
           },
           {
@@ -11509,7 +12133,7 @@
             "impact": null,
             "html": "<a href=\"/sites/default/files/amigos_resource_sharing_agreement_form.pdf\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Resource Sharing Agreement Form</a>",
             "target": [
-              ".clearfix.text-formatted.field--name-body > a"
+              "p:nth-child(2) > a"
             ]
           },
           {
@@ -11547,9 +12171,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>I. Definition</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">I. Definition</h2>",
             "target": [
-              "strong:nth-child(4)"
+              "h2:nth-child(4)"
             ]
           },
           {
@@ -11587,9 +12211,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>II. Purpose</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">II. Purpose</h2>",
             "target": [
-              "strong:nth-child(6)"
+              "h2:nth-child(6)"
             ]
           },
           {
@@ -11607,7 +12231,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The purpose is to obtain, upon request of a library’s primary clientele, materials not available in the local library.</p>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The purpose is to obtain, upon request of a library's primary clientele, materials not available in the local library.</p>",
             "target": [
               "p:nth-child(7)"
             ]
@@ -11627,29 +12251,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>III. Scope</strong></p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">III. Scope</h2>",
             "target": [
-              "p:nth-child(8)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<strong>III. Scope</strong>",
-            "target": [
-              "p:nth-child(8) > strong"
+              "h2:nth-child(8)"
             ]
           },
           {
@@ -11747,29 +12351,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>IV. Responsibilities of the Requesting Library</strong></p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">IV. Responsibilities of the Requesting Library</h2>",
             "target": [
-              "p:nth-child(10)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<strong>IV. Responsibilities of the Requesting Library</strong>",
-            "target": [
-              "p:nth-child(10) > strong"
+              "h2:nth-child(10)"
             ]
           },
           {
@@ -12007,29 +12591,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>V. Responsibilities of the Supplying Library</strong></p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">V. Responsibilities of the Supplying Library</h2>",
             "target": [
-              "p:nth-child(12)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<strong>V. Responsibilities of the Supplying Library</strong>",
-            "target": [
-              "p:nth-child(12) > strong"
+              "h2:nth-child(12)"
             ]
           },
           {
@@ -12187,29 +12751,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><strong>VI. Expenses</strong></p>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VI. Expenses</h2>",
             "target": [
-              "p:nth-child(14)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<strong>VI. Expenses</strong>",
-            "target": [
-              "p:nth-child(14) > strong"
+              "h2:nth-child(14)"
             ]
           },
           {
@@ -12289,7 +12833,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Fees for handling interlibrary loan requests.</li>",
             "target": [
-              "li:nth-child(1) > ol > li"
+              "li:nth-child(1) > ol > li:nth-child(1)"
             ]
           },
           {
@@ -12307,9 +12851,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li.>Postage or other transportation charges.\n        <li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">For photocopies up to 50 pages per bibliographic citation. Charges beyond the 50 pages are at the discretion of the supplying library.</li>\n   </li.>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Postage or other transportation charges.</li>",
             "target": [
-              "li\\."
+              "li:nth-child(1) > ol > li:nth-child(2)"
             ]
           },
           {
@@ -12329,7 +12873,7 @@
             "impact": null,
             "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">For photocopies up to 50 pages per bibliographic citation. Charges beyond the 50 pages are at the discretion of the supplying library.</li>",
             "target": [
-              "li\\. > li"
+              "li:nth-child(1) > ol > li:nth-child(3)"
             ]
           },
           {
@@ -12367,9 +12911,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<strong>VII. Violation of the Agreement</strong>",
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">VII. Violation of the Agreement</h2>",
             "target": [
-              "strong:nth-child(16)"
+              "h2:nth-child(16)"
             ]
           },
           {
@@ -13911,86 +14455,6 @@
       }
     ],
     "incomplete": [],
-    "violations": [
-      {
-        "id": "list",
-        "impact": "serious",
-        "tags": [
-          "cat.structure",
-          "wcag2a",
-          "wcag131",
-          "EN-301-549",
-          "EN-9.1.3.1"
-        ],
-        "description": "Ensure that lists are structured correctly",
-        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=axeAPI",
-        "nodes": [
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "only-listitems",
-                "data": {
-                  "values": "li."
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<li.>Postage or other transportation charges.\n        <li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">For photocopies up to 50 pages per bibliographic citation. Charges beyond the 50 pages are at the discretion of the supplying library.</li>\n   </li.>",
-                    "target": [
-                      "li\\."
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "List element has direct children that are not allowed: li."
-              }
-            ],
-            "impact": "serious",
-            "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
-            "target": [
-              "li:nth-child(1) > ol"
-            ],
-            "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: li."
-          }
-        ]
-      },
-      {
-        "id": "listitem",
-        "impact": "serious",
-        "tags": [
-          "cat.structure",
-          "wcag2a",
-          "wcag131",
-          "EN-301-549",
-          "EN-9.1.3.1"
-        ],
-        "description": "Ensure <li> elements are used semantically",
-        "help": "<li> elements must be contained in a <ul> or <ol>",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/listitem?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "listitem",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "List item does not have a <ul>, <ol> parent element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">For photocopies up to 50 pages per bibliographic citation. Charges beyond the 50 pages are at the discretion of the supplying library.</li>",
-            "target": [
-              "li\\. > li"
-            ],
-            "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
-          }
-        ]
-      }
-    ]
+    "violations": []
   }
 }

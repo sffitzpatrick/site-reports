@@ -192,21 +192,15 @@
                                     <td>1</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">form &gt; input[type&#x3D;&quot;text&quot;]</code></pre>
+                                        <pre><code class="css text-wrap">#email</code></pre>
                                         <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;input type&#x3D;&quot;text&quot;&gt;</code></pre>
+                                        <pre><code class="html text-wrap">&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;email&quot;&gt;</code></pre>
                                     </td>
                                     <td>
                                         <div class="wrapBreakWord">
-                                            <p>Fix any of the following:</p>
+                                            <p>Fix all of the following:</p>
                                             <ul class="text-muted">
-                                                <li>  Element does not have an implicit (wrapped) &lt;label&gt;</li>
-                                                <li>  Element does not have an explicit &lt;label&gt;</li>
-                                                <li>  aria-label attribute does not exist or is empty</li>
-                                                <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
-                                                <li>  Element has no title attribute</li>
-                                                <li>  Element has no placeholder attribute</li>
-                                                <li>  Element&#39;s default semantics were not overridden with role&#x3D;&quot;none&quot; or role&#x3D;&quot;presentation&quot;</li>
+                                                <li>  Form element has explicit &lt;label&gt; that is hidden</li>
                                             </ul>
                                         </div>
                                     </td>
@@ -368,7 +362,7 @@
                                         <td>IDs used in ARIA and labels must be unique</td>
                                         <td>duplicate-id-aria</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>7</td>
+                                        <td>8</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">18</th>

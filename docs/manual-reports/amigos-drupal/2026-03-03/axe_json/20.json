@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scannedAt": "2026-03-03T14:04:20.567Z",
+    "scannedAt": "2026-03-03T15:43:20.592Z",
     "url": "https://amigos.org/news",
     "documentTitle": "News | Amigos Library Services",
     "index": 20
@@ -20,7 +20,7 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2026-03-03T14:04:20.412Z",
+    "timestamp": "2026-03-03T15:43:20.446Z",
     "url": "https://www.amigos.org/news",
     "toolOptions": {
       "reporter": "v1"
@@ -8641,9 +8641,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input type=\"text\">",
+            "html": "<input type=\"text\" id=\"email\">",
             "target": [
-              "form > input[type=\"text\"]"
+              "#email"
             ]
           },
           {
@@ -9075,6 +9075,24 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
+                "data": "email",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<input type=\"text\" id=\"email\">",
+            "target": [
+              "#email"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
                 "data": "block-amigos-footer-menu",
                 "relatedNodes": [],
                 "impact": "critical",
@@ -9403,9 +9421,9 @@
               }
             ],
             "impact": null,
-            "html": "<input type=\"text\">",
+            "html": "<input type=\"text\" id=\"email\">",
             "target": [
-              "form > input[type=\"text\"]"
+              "#email"
             ]
           },
           {
@@ -10537,9 +10555,9 @@
               }
             ],
             "impact": null,
-            "html": "<input type=\"text\">",
+            "html": "<input type=\"text\" id=\"email\">",
             "target": [
-              "form > input[type=\"text\"]"
+              "#email"
             ]
           },
           {
@@ -14508,7 +14526,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"slick view view-news view-id-news view-display-id-block_5 js-view-dom-id-3f83ef94797f28b97038a06d3324ec30ecd80b10b72eb16f235037a56b585b0a\">",
+            "html": "<div class=\"slick view view-news view-id-news view-display-id-block_5 js-view-dom-id-48cf173544132f143659dbad67ef285e915d4662941f160a354221b7e4f446f3\">",
             "target": [
               ".slick"
             ]
@@ -16228,7 +16246,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"view view-news view-id-news view-display-id-block_3 js-view-dom-id-ec544d05a00246b66037fa51f86fba8cad379493f7ed3361f4adf10a694a9d8f\">",
+            "html": "<div class=\"view view-news view-id-news view-display-id-block_3 js-view-dom-id-4dea53a18085c44351ab78aa5f22c516775ddaccc10bcfdc2b9c5bf239ab1243\">",
             "target": [
               ".view-display-id-block_3"
             ]
@@ -17268,7 +17286,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"view view-news view-id-news view-display-id-block_4 js-view-dom-id-a66b0c6506568f9d3c794516fcec4b8c2d7975564950ff7f804a6606f99ea08e\">",
+            "html": "<div class=\"view view-news view-id-news view-display-id-block_4 js-view-dom-id-60abda69f84403175f0023c3f2cc11e5fede123744217e76e54dea4905170e48\">",
             "target": [
               ".view-display-id-block_4"
             ]
@@ -18748,7 +18766,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<form>\n<label class=\"visually-hidden\" for=\"email\">Your email</label>\n<input type=\"text\"><input type=\"submit\" value=\"Sign Up\">\n</form>",
+            "html": "<form>\n<label class=\"visually-hidden\" for=\"email\">Your email</label>\n<input type=\"text\" id=\"email\"><input type=\"submit\" value=\"Sign Up\">\n</form>",
             "target": [
               ".content-column > form"
             ]
@@ -18768,9 +18786,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input type=\"text\">",
+            "html": "<input type=\"text\" id=\"email\">",
             "target": [
-              "form > input[type=\"text\"]"
+              "#email"
             ]
           },
           {
@@ -20642,69 +20660,23 @@
         "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=axeAPI",
         "nodes": [
           {
-            "any": [
+            "any": [],
+            "all": [],
+            "none": [
               {
-                "id": "implicit-label",
+                "id": "hidden-explicit-label",
                 "data": null,
                 "relatedNodes": [],
                 "impact": "critical",
-                "message": "Element does not have an implicit (wrapped) <label>"
-              },
-              {
-                "id": "explicit-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have an explicit <label>"
-              },
-              {
-                "id": "aria-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-label attribute does not exist or is empty"
-              },
-              {
-                "id": "aria-labelledby",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
-              },
-              {
-                "id": "non-empty-title",
-                "data": {
-                  "messageKey": "noAttr"
-                },
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element has no title attribute"
-              },
-              {
-                "id": "non-empty-placeholder",
-                "data": {
-                  "messageKey": "noAttr"
-                },
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element has no placeholder attribute"
-              },
-              {
-                "id": "presentational-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                "message": "Form element has explicit <label> that is hidden"
               }
             ],
-            "all": [],
-            "none": [],
             "impact": "critical",
-            "html": "<input type=\"text\">",
+            "html": "<input type=\"text\" id=\"email\">",
             "target": [
-              "form > input[type=\"text\"]"
+              "#email"
             ],
-            "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            "failureSummary": "Fix all of the following:\n  Form element has explicit <label> that is hidden"
           }
         ]
       }

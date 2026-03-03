@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scannedAt": "2026-03-03T14:02:14.319Z",
+    "scannedAt": "2026-03-03T15:41:18.780Z",
     "url": "https://amigos.org/news/courier-winter-holiday-2024-schedule",
     "documentTitle": "Courier Winter Holiday 2024 Schedule | Amigos Library Services",
     "index": 441
@@ -20,7 +20,7 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2026-03-03T14:02:14.217Z",
+    "timestamp": "2026-03-03T15:41:18.661Z",
     "url": "https://www.amigos.org/news/courier-winter-holiday-2024-schedule",
     "toolOptions": {
       "reporter": "v1"
@@ -5051,7 +5051,7 @@
       },
       {
         "id": "color-contrast",
-        "impact": null,
+        "impact": "serious",
         "tags": [
           "cat.color",
           "wcag2aa",
@@ -5404,31 +5404,6 @@
             "html": "<time datetime=\"2024-12-18T13:33:00-06:00\" title=\"Wednesday, December 18, 2024, 1:33 pm\" class=\"datetime\">December 18, 2024</time>",
             "target": [
               "time[datetime=\"2024-12-18T13:33:00-06:00\"]"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#000000",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "normal",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
-            "target": [
-              "p[paraid=\"125249952\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
             ]
           },
           {
@@ -11391,7 +11366,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"view view-news view-id-news view-display-id-block_8 js-view-dom-id-1bf8df40023ea336b7ce19e96c037aa9ac2f4114ab9c44e7f14c3bb1b5e7d9e9\">",
+            "html": "<div class=\"view view-news view-id-news view-display-id-block_8 js-view-dom-id-ae7a0193bf553cb6165a1649670acc497a31b83de17ed30024b39345e0d15ed6\">",
             "target": [
               ".view"
             ]
@@ -13549,7 +13524,59 @@
         ]
       }
     ],
-    "incomplete": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "elmPartiallyObscured",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"OutlineElement Ltr SCXW218738917 BCX8\" style=\"-webkit-text-stroke-width:0px;-webkit-user-drag:none;background-color:rgb(255, 255, 255);clear:both;color:rgb(0, 0, 0);cursor:text;direction:ltr;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin:0px;orphans:2;overflow:visible;padding:0px;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">",
+                    "target": [
+                      ".OutlineElement.Ltr.SCXW218738917:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it's partially obscured by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"TextRun SCXW218738917 BCX8 NormalTextRun\" style=\"-webkit-user-drag: none; color: rgb(0, 0, 0); font-family: Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif; font-size: 16px; line-height: 18px; margin: 0px; padding: 0px; font-variant-ligatures: none !important;\" data-contrast=\"none\" xml:lang=\"EN-US\" lang=\"EN-US\" data-asw-org-font-size=\"16\">",
+            "target": [
+              "p[paraid=\"125249952\"] > .TextRun.NormalTextRun[data-contrast=\"none\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+          }
+        ]
+      }
+    ],
     "violations": [
       {
         "id": "heading-order",

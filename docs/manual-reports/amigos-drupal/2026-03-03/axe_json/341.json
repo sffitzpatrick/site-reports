@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scannedAt": "2026-03-03T13:59:34.722Z",
+    "scannedAt": "2026-03-03T15:38:35.992Z",
     "url": "https://amigos.org/services/member-discounts/discount-direct/the-library-store",
     "documentTitle": "The Library Store | Amigos Library Services",
     "index": 341
@@ -20,7 +20,7 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2026-03-03T13:59:34.632Z",
+    "timestamp": "2026-03-03T15:38:35.892Z",
     "url": "https://www.amigos.org/services/member-discounts/discount-direct/the-library-store",
     "toolOptions": {
       "reporter": "v1"
@@ -3807,7 +3807,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" loading=\"lazy\">The Library Store offers a variety of library and school supplies.</p>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" alt=\"The Library Store Logo\" loading=\"lazy\">The Library Store offers a variety of library and school supplies.</p>",
             "target": [
               "p"
             ]
@@ -5099,7 +5099,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" loading=\"lazy\">The Library Store offers a variety of library and school supplies.</p>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" alt=\"The Library Store Logo\" loading=\"lazy\">The Library Store offers a variety of library and school supplies.</p>",
             "target": [
               "p"
             ]
@@ -6293,7 +6293,7 @@
       },
       {
         "id": "image-alt",
-        "impact": "critical",
+        "impact": null,
         "tags": [
           "cat.text-alternatives",
           "wcag2a",
@@ -6335,6 +6335,32 @@
             "html": "<img src=\"/themes/custom/amigos/amigos-logo.png\" alt=\"Home\" fetchpriority=\"high\">",
             "target": [
               "img[alt=\"Home\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has an alt attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "alt-space-value",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has a valid alt attribute value"
+              }
+            ],
+            "impact": null,
+            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" alt=\"The Library Store Logo\" loading=\"lazy\">",
+            "target": [
+              ".logo"
             ]
           },
           {
@@ -6511,7 +6537,7 @@
               }
             ],
             "impact": null,
-            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" loading=\"lazy\">",
+            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" alt=\"The Library Store Logo\" loading=\"lazy\">",
             "target": [
               ".logo"
             ]
@@ -8478,7 +8504,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" loading=\"lazy\">",
+            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" alt=\"The Library Store Logo\" loading=\"lazy\">",
             "target": [
               ".logo"
             ]
@@ -10131,7 +10157,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" loading=\"lazy\">The Library Store offers a variety of library and school supplies.</p>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" alt=\"The Library Store Logo\" loading=\"lazy\">The Library Store offers a variety of library and school supplies.</p>",
             "target": [
               "p"
             ]
@@ -10151,7 +10177,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" loading=\"lazy\">",
+            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" alt=\"The Library Store Logo\" loading=\"lazy\">",
             "target": [
               ".logo"
             ]
@@ -12405,78 +12431,6 @@
       }
     ],
     "incomplete": [],
-    "violations": [
-      {
-        "id": "image-alt",
-        "impact": "critical",
-        "tags": [
-          "cat.text-alternatives",
-          "wcag2a",
-          "wcag111",
-          "section508",
-          "section508.22.a",
-          "TTv5",
-          "TT7.a",
-          "TT7.b",
-          "EN-301-549",
-          "EN-9.1.1.1",
-          "ACT"
-        ],
-        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
-        "help": "Images must have alternative text",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "has-alt",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have an alt attribute"
-              },
-              {
-                "id": "aria-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-label attribute does not exist or is empty"
-              },
-              {
-                "id": "aria-labelledby",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
-              },
-              {
-                "id": "non-empty-title",
-                "data": {
-                  "messageKey": "noAttr"
-                },
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element has no title attribute"
-              },
-              {
-                "id": "presentational-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/the_library_store.png\" width=\"300\" height=\"231\" loading=\"lazy\">",
-            "target": [
-              ".logo"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-          }
-        ]
-      }
-    ]
+    "violations": []
   }
 }
