@@ -135,8 +135,23 @@ function isHtmlPage(url) {
 async function crawlPage(page, url) {
   logger.info({ url }, 'Crawling');
   try {
-    await page.goto(url, { timeout: 30000, waitUntil: 'domcontentloaded' });
-    await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => logger.debug('Network idle timeout; proceeding anyway'));
+   // Go to the URL
+const response = await page.goto(url, { 
+  timeout: 30000, 
+  waitUntil: 'domcontentloaded', 
+  // Playwright will automatically follow redirects
+});
+
+// Get the final URL after any 301/302 redirects
+const finalUrl = page.url();
+if (finalUrl !== url) {
+  logger.info(`Redirected: ${url} → ${finalUrl}`);
+}
+
+// Wait for network idle, but proceed if slow
+await page.waitForLoadState('networkidle', { timeout: 10000 })
+  .catch(() => logger.debug('Network idle timeout; proceeding anyway'));
+
     await page.addScriptTag({ content: axeCore.source });
     return await page.evaluate(() => axe.run());
   } catch (e) {
