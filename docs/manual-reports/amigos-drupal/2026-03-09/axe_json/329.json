@@ -1,8 +1,8 @@
 {
   "meta": {
-    "scannedAt": "2026-03-09T18:11:14.277Z",
-    "url": "https://amigos.org/services/continuing-education/hive-tips-and-tricks-using-generative-ai",
-    "documentTitle": "Access denied | Amigos Library Services",
+    "scannedAt": "2026-03-09T19:47:39.205Z",
+    "url": "https://amigos.org/services/continuing-education/website-accessibility-everyone",
+    "documentTitle": "Website Accessibility for Everyone | Amigos Library Services",
     "index": 329
   },
   "results": {
@@ -20,8 +20,8 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2026-03-09T18:11:14.155Z",
-    "url": "https://www.amigos.org/services/continuing-education/hive-tips-and-tricks-using-generative-ai",
+    "timestamp": "2026-03-09T19:47:39.108Z",
+    "url": "https://www.amigos.org/services/continuing-education/website-accessibility-everyone",
     "toolOptions": {
       "reporter": "v1"
     },
@@ -468,6 +468,23 @@
         "description": "Ensure the complementary landmark or aside is at top level",
         "help": "Aside should not be contained in another landmark",
         "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=axeAPI",
+        "nodes": []
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": null,
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
         "nodes": []
       },
       {
@@ -1101,7 +1118,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -1439,7 +1456,7 @@
               }
             ],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -1493,7 +1510,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<body class=\"page--node-12579 path-services\">",
+            "html": "<body class=\"page--node-4862 path-node page-node-type-course\">",
             "target": [
               "body"
             ]
@@ -1795,7 +1812,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -2117,7 +2134,7 @@
               }
             ],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -2724,7 +2741,7 @@
             "impact": null,
             "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/80\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>",
             "target": [
-              "#block-amigos-main-menu > .menu > .menu--megamenu.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/80\"]"
+              "#block-amigos-main-menu > .menu > .menu--megamenu.menu-item--expanded.menu-item > a[data-drupal-link-system-path=\"node/80\"][href$=\"services\"]"
             ]
           },
           {
@@ -3074,9 +3091,489 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Access Denied\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/services\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>\n              </li>",
             "target": [
               "ol > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/services\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>",
+            "target": [
+              "li:nth-child(2) > a[href$=\"services\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/services/continuing-education\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education Services</a>\n              </li>",
+            "target": [
+              "ol > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/services/continuing-education\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education Services</a>",
+            "target": [
+              "li:nth-child(3) > a[href$=\"continuing-education\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Website Accessibility For Everyone\n              </li>",
+            "target": [
+              "ol > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>\n</h1>",
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>",
+            "target": [
+              ".field--name-title"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Describe various ways people with different abilities use the web</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Identify barriers to using the web and solutions that would improve the situation</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create an accessibility plan for improving navigation and use of websites</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/55\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Equity, Diversity &amp; Inclusion</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/55\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/59\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Technology</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/59\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/78\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">User Experience</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/78\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Instructor(s)</h2>",
+            "target": [
+              "#instructor-info > h2"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">TBD</p>",
+            "target": [
+              "p"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/node/222\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Also available by request for libraries and other organizations</a>",
+            "target": [
+              ".field--name-field-availableonrequest > a"
             ]
           },
           {
@@ -3236,7 +3733,7 @@
             "impact": null,
             "html": "<a href=\"/services/continuing-education\" data-drupal-link-system-path=\"node/4470\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education</a>",
             "target": [
-              ".menu-item:nth-child(2) > a[href$=\"continuing-education\"][data-drupal-link-system-path=\"node/4470\"]"
+              ".menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/4470\"][href$=\"continuing-education\"]"
             ]
           },
           {
@@ -3266,7 +3763,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -3298,9 +3795,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
             ]
           },
           {
@@ -3803,6 +4300,18 @@
                     ]
                   },
                   {
+                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>\n</h1>",
+                    "target": [
+                      "h1"
+                    ]
+                  },
+                  {
+                    "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Instructor(s)</h2>",
+                    "target": [
+                      "#instructor-info > h2"
+                    ]
+                  },
+                  {
                     "html": "<h2 class=\"visually-hidden\" id=\"block-amigos-footer-menu\" data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Footer</h2>",
                     "target": [
                       "#block-amigos-footer-menu"
@@ -3926,7 +4435,7 @@
             "impact": null,
             "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/80\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>",
             "target": [
-              "#block-amigos-main-menu > .menu > .menu--megamenu.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/80\"]"
+              "#block-amigos-main-menu > .menu > .menu--megamenu.menu-item--expanded.menu-item > a[data-drupal-link-system-path=\"node/80\"][href$=\"services\"]"
             ]
           },
           {
@@ -4021,7 +4530,7 @@
             "impact": null,
             "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\" placeholder=\"Enter search terms...\">",
             "target": [
-              "input[placeholder=\"Enter search terms...\"]"
+              "#edit-keys"
             ]
           },
           {
@@ -4041,7 +4550,7 @@
             "impact": null,
             "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">",
             "target": [
-              "#edit-actions--2 > .js-form-submit.form-submit[data-drupal-selector=\"edit-submit\"]"
+              "#edit-submit"
             ]
           },
           {
@@ -4074,24 +4583,49 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#0f0f0f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
+                  "contrastRatio": 19.16,
                   "fontSize": "12.0pt (16px)",
                   "fontWeight": "normal",
                   "expectedContrastRatio": "4.5:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 19.16"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Access Denied\n              </li>",
+            "html": "<a href=\"/services\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>",
             "target": [
-              "ol > li:nth-child(2)"
+              "li:nth-child(2) > a[href$=\"services\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0f0f0f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 19.16,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 19.16"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/services/continuing-education\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education Services</a>",
+            "target": [
+              "li:nth-child(3) > a[href$=\"continuing-education\"]"
             ]
           },
           {
@@ -4114,9 +4648,484 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div id=\"block-amigos-business-responsive-theme-system-main\" class=\"block block-system block-system-main-block\">\n  \n    \n      You are not authorized to access this page.\n  </div>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Website Accessibility For Everyone\n              </li>",
             "target": [
-              "#block-amigos-business-responsive-theme-system-main"
+              "ol > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "24.0pt (32px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>",
+            "target": [
+              ".field--name-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+            "target": [
+              ".node__content > .field--name-body.field--type-text-with-summary.field--label-hidden"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Learning objectives for this session may include:</div>",
+            "target": [
+              ".field--name-field-learningobjectives > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Describe various ways people with different abilities use the web</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Identify barriers to using the web and solutions that would improve the situation</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create an accessibility plan for improving navigation and use of websites</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Topic Area</div>",
+            "target": [
+              ".field--name-field-topic-area > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/55\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Equity, Diversity &amp; Inclusion</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/55\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/59\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Technology</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/59\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/78\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">User Experience</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/78\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Contact</div>",
+            "target": [
+              ".field--name-field-questions > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\">learning@amigos.org</div>",
+            "target": [
+              ".field--name-field-questions > .field__item"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Session Duration</div>",
+            "target": [
+              ".field--name-field-sessionduration > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\">This course consists of one 2-hour session.</div>",
+            "target": [
+              ".field--name-field-sessionduration > .field__item"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Contact Hours</div>",
+            "target": [
+              ".field--name-field-contacthours > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\">2</div>",
+            "target": [
+              ".field--name-field-contacthours > .field__item"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Instructor(s)</h2>",
+            "target": [
+              "#instructor-info > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 21"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">TBD</p>",
+            "target": [
+              "p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/node/222\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Also available by request for libraries and other organizations</a>",
+            "target": [
+              ".field--name-field-availableonrequest > a"
             ]
           },
           {
@@ -4316,7 +5325,7 @@
             "impact": null,
             "html": "<a href=\"/services/continuing-education\" data-drupal-link-system-path=\"node/4470\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education</a>",
             "target": [
-              ".menu-item:nth-child(2) > a[href$=\"continuing-education\"][data-drupal-link-system-path=\"node/4470\"]"
+              ".menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/4470\"][href$=\"continuing-education\"]"
             ]
           },
           {
@@ -4339,9 +5348,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
             ]
           },
           {
@@ -4389,9 +5398,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
+              "#edit-keys--2"
             ]
           }
         ]
@@ -4435,7 +5444,7 @@
       },
       {
         "id": "duplicate-id-aria",
-        "impact": "critical",
+        "impact": null,
         "tags": [
           "cat.parsing",
           "wcag2a",
@@ -4487,6 +5496,24 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
+                "data": "edit-keys",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\" placeholder=\"Enter search terms...\">",
+            "target": [
+              "#edit-keys"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
                 "data": "system-breadcrumb",
                 "relatedNodes": [],
                 "impact": "critical",
@@ -4517,6 +5544,24 @@
             "html": "<h2 class=\"visually-hidden\" id=\"block-amigos-footer-menu\" data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Footer</h2>",
             "target": [
               "#block-amigos-footer-menu"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "edit-keys--2",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "target": [
+              "#edit-keys--2"
             ]
           },
           {
@@ -4617,6 +5662,42 @@
             "all": [],
             "none": [],
             "impact": null,
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>\n</h1>",
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Instructor(s)</h2>",
+            "target": [
+              "#instructor-info > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
             "html": "<h2 class=\"visually-hidden\" id=\"block-amigos-footer-menu\" data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Footer</h2>",
             "target": [
               "#block-amigos-footer-menu"
@@ -4649,9 +5730,9 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<label for=\"edit-keys\" class=\"visually-hidden\">Search</label>",
+                    "html": "<label for=\"edit-keys--2\" class=\"visually-hidden\">Search</label>",
                     "target": [
-                      "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > label"
+                      "label[for=\"edit-keys--2\"]"
                     ]
                   }
                 ],
@@ -4660,9 +5741,9 @@
               }
             ],
             "impact": null,
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
+              "#edit-keys--2"
             ]
           }
         ]
@@ -4699,6 +5780,18 @@
                     {
                       "ancestry": [
                         "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(3) > div > nav > h2:nth-child(1)"
+                      ],
+                      "level": 2
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div:nth-child(1) > div > h1"
+                      ],
+                      "level": 1
+                    },
+                    {
+                      "ancestry": [
+                        "html > body > div:nth-child(2) > div:nth-child(1) > main:nth-child(2) > div:nth-child(4) > div > div > div:nth-child(2) > article > div > div:nth-child(7) > h2:nth-child(1)"
                       ],
                       "level": 2
                     },
@@ -4757,6 +5850,42 @@
             "html": "<h2 id=\"system-breadcrumb\" class=\"visually-hidden\" data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Breadcrumb</h2>",
             "target": [
               "#system-breadcrumb"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>\n</h1>",
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Instructor(s)</h2>",
+            "target": [
+              "#instructor-info > h2"
             ]
           },
           {
@@ -5184,9 +6313,40 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">",
+            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit--2\" value=\"Search\" class=\"button js-form-submit form-submit\">",
             "target": [
-              "#edit-actions > .js-form-submit.form-submit[data-drupal-selector=\"edit-submit\"]"
+              "#edit-submit--2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "label-title-only",
+        "impact": null,
+        "tags": [
+          "cat.forms",
+          "best-practice"
+        ],
+        "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+        "help": "Form elements should have a visible label",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "title-only",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Form element does not solely use title attribute for its label"
+              }
+            ],
+            "impact": null,
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "target": [
+              "#edit-keys--2"
             ]
           }
         ]
@@ -5217,15 +6377,9 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<label for=\"edit-keys\" class=\"visually-hidden\">Search</label>",
+                    "html": "<label for=\"edit-keys--2\" class=\"visually-hidden\">Search</label>",
                     "target": [
-                      "#block-amigos-search-form-narrow > form > .js-form-item.form-item.js-form-type-search > label"
-                    ]
-                  },
-                  {
-                    "html": "<label for=\"edit-keys\" class=\"visually-hidden\">Search</label>",
-                    "target": [
-                      "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > label"
+                      "label[for=\"edit-keys--2\"]"
                     ]
                   }
                 ],
@@ -5251,9 +6405,9 @@
               }
             ],
             "impact": null,
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
+              "#edit-keys--2"
             ]
           }
         ]
@@ -5662,52 +6816,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "link-in-text-block",
-        "impact": null,
-        "tags": [
-          "cat.color",
-          "wcag2a",
-          "wcag141",
-          "TTv5",
-          "TT13.a",
-          "EN-301-549",
-          "EN-9.1.4.1"
-        ],
-        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-        "help": "Links must be distinguishable without relying on color",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "link-in-text-block-style",
-                "data": null,
-                "relatedNodes": [
-                  {
-                    "html": "<ol data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
-                    "target": [
-                      "ol"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Links can be distinguished from surrounding text by visual styling"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<a href=\"/\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Home</a>",
-            "target": [
-              "li:nth-child(1) > a[href=\"/\"]"
             ]
           }
         ]
@@ -5860,7 +6971,7 @@
             "impact": null,
             "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/80\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>",
             "target": [
-              "#block-amigos-main-menu > .menu > .menu--megamenu.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/80\"]"
+              "#block-amigos-main-menu > .menu > .menu--megamenu.menu-item--expanded.menu-item > a[data-drupal-link-system-path=\"node/80\"][href$=\"services\"]"
             ]
           },
           {
@@ -5988,6 +7099,162 @@
               }
             ],
             "impact": null,
+            "html": "<a href=\"/services\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>",
+            "target": [
+              "li:nth-child(2) > a[href$=\"services\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"/services/continuing-education\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education Services</a>",
+            "target": [
+              "li:nth-child(3) > a[href$=\"continuing-education\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/55\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Equity, Diversity &amp; Inclusion</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/55\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/59\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Technology</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/59\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/78\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">User Experience</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/78\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/node/222\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Also available by request for libraries and other organizations</a>",
+            "target": [
+              ".field--name-field-availableonrequest > a"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
             "html": "<a href=\"mailto:info@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
             "target": [
               "a[href$=\"mailto:info@amigos.org\"]"
@@ -6042,7 +7309,7 @@
             "impact": null,
             "html": "<a href=\"/services/continuing-education\" data-drupal-link-system-path=\"node/4470\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education</a>",
             "target": [
-              ".menu-item:nth-child(2) > a[href$=\"continuing-education\"][data-drupal-link-system-path=\"node/4470\"]"
+              ".menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/4470\"][href$=\"continuing-education\"]"
             ]
           },
           {
@@ -6066,9 +7333,9 @@
               }
             ],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
             ]
           },
           {
@@ -6371,6 +7638,24 @@
               }
             ],
             "impact": null,
+            "html": "<ul>",
+            "target": [
+              ".field__item > ul"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
             "html": "<ul class=\"menu\">",
             "target": [
               "#block-amigos-footer > .menu"
@@ -6549,9 +7834,99 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Access Denied\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/services\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>\n              </li>",
             "target": [
               "ol > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/services/continuing-education\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education Services</a>\n              </li>",
+            "target": [
+              "ol > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Website Accessibility For Everyone\n              </li>",
+            "target": [
+              "ol > li:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Describe various ways people with different abilities use the web</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Identify barriers to using the web and solutions that would improve the situation</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create an accessibility plan for improving navigation and use of websites</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(3)"
             ]
           },
           {
@@ -6603,7 +7978,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -6849,9 +8224,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">",
+            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit--2\" value=\"Search\" class=\"button js-form-submit form-submit\">",
             "target": [
-              "#edit-actions > .js-form-submit.form-submit[data-drupal-selector=\"edit-submit\"]"
+              "#edit-submit--2"
             ]
           },
           {
@@ -6960,6 +8335,44 @@
             "html": "<a href=\"https://accessibility-widget.pages.dev\" target=\"_blank\" class=\"asw-menu-btn\" title=\"Open Accessibility Menu (opens in a new window)\" role=\"button\" aria-expanded=\"false\" data-translate=\"Open Accessibility Menu\" rel=\"noopener noreferrer\" style=\"bottom: 20px; left: 20px;\">",
             "target": [
               ".asw-menu-btn"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": null,
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "page-has-heading-one",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>\n</h1>",
+                    "target": [
+                      "h1"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "Page has at least one level-one heading"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<html lang=\"en\" dir=\"ltr\" class=\"js\">",
+            "target": [
+              "html"
             ]
           }
         ]
@@ -7452,7 +8865,7 @@
             "impact": null,
             "html": "<a href=\"/services\" data-drupal-link-system-path=\"node/80\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>",
             "target": [
-              "#block-amigos-main-menu > .menu > .menu--megamenu.menu-item--expanded.menu-item > a[href$=\"services\"][data-drupal-link-system-path=\"node/80\"]"
+              "#block-amigos-main-menu > .menu > .menu--megamenu.menu-item--expanded.menu-item > a[data-drupal-link-system-path=\"node/80\"][href$=\"services\"]"
             ]
           },
           {
@@ -7612,7 +9025,7 @@
             "impact": null,
             "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
             "target": [
-              "#block-amigos-searchicon > .clearfix.text-formatted.field"
+              "#block-amigos-searchicon > .field--name-body.field--type-text-with-summary.field--label-hidden"
             ]
           },
           {
@@ -7632,7 +9045,7 @@
             "impact": null,
             "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">",
             "target": [
-              "#block-amigos-searchicon > .clearfix.text-formatted.field > svg[width=\"24\"][height=\"24\"][viewBox=\"0 0 24 24\"]"
+              "#block-amigos-searchicon > .field--name-body.field--type-text-with-summary.field--label-hidden > svg[width=\"24\"][height=\"24\"][viewBox=\"0 0 24 24\"]"
             ]
           },
           {
@@ -7652,7 +9065,7 @@
             "impact": null,
             "html": "<path d=\"M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z\"></path>",
             "target": [
-              "#block-amigos-searchicon > .clearfix.text-formatted.field > svg[width=\"24\"][height=\"24\"][viewBox=\"0 0 24 24\"] > path"
+              "#block-amigos-searchicon > .field--name-body.field--type-text-with-summary.field--label-hidden > svg[width=\"24\"][height=\"24\"][viewBox=\"0 0 24 24\"] > path"
             ]
           },
           {
@@ -7870,9 +9283,89 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Access Denied\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/services\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>\n              </li>",
             "target": [
               "ol > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/services\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Services</a>",
+            "target": [
+              "li:nth-child(2) > a[href$=\"services\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  <a href=\"/services/continuing-education\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education Services</a>\n              </li>",
+            "target": [
+              "ol > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/services/continuing-education\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education Services</a>",
+            "target": [
+              "li:nth-child(3) > a[href$=\"continuing-education\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Website Accessibility For Everyone\n              </li>",
+            "target": [
+              "ol > li:nth-child(4)"
             ]
           },
           {
@@ -7910,7 +9403,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"layout-content\">\n                <div class=\"region region-content\">\n    <div id=\"block-amigos-business-responsive-theme-system-main\" class=\"block block-system block-system-main-block\">\n  \n    \n      You are not authorized to access this page.\n  </div>\n\n  </div>\n\n          </div>",
+            "html": "<div class=\"layout-content\">",
             "target": [
               ".layout-content"
             ]
@@ -7930,7 +9423,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"region region-content\">\n    <div id=\"block-amigos-business-responsive-theme-system-main\" class=\"block block-system block-system-main-block\">\n  \n    \n      You are not authorized to access this page.\n  </div>\n\n  </div>",
+            "html": "<div class=\"region region-content\">",
             "target": [
               ".region-content"
             ]
@@ -7950,9 +9443,769 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div id=\"block-amigos-business-responsive-theme-system-main\" class=\"block block-system block-system-main-block\">\n  \n    \n      You are not authorized to access this page.\n  </div>",
+            "html": "<div id=\"block-amigos-pagetitle\" class=\"no-banner block block-core block-page-title-block\">",
+            "target": [
+              "#block-amigos-pagetitle"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"inner\">",
+            "target": [
+              ".inner"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>\n</h1>",
+            "target": [
+              "h1"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Website Accessibility for Everyone</span>",
+            "target": [
+              ".field--name-title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div id=\"block-amigos-business-responsive-theme-system-main\" class=\"block block-system block-system-main-block\">",
             "target": [
               "#block-amigos-business-responsive-theme-system-main"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<article id=\"node-4862\" class=\"node node--type-course node--view-mode-full\">",
+            "target": [
+              "#node-4862"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"node__content\">",
+            "target": [
+              ".node__content"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+            "target": [
+              ".node__content > .field--name-body.field--type-text-with-summary.field--label-hidden"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"clearfix text-formatted field field--name-field-learningobjectives field--type-text-with-summary field--label-above\">",
+            "target": [
+              ".field--name-field-learningobjectives"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Learning objectives for this session may include:</div>",
+            "target": [
+              ".field--name-field-learningobjectives > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\">",
+            "target": [
+              ".field--name-field-learningobjectives > .field__item"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<ul>",
+            "target": [
+              ".field__item > ul"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Describe various ways people with different abilities use the web</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Identify barriers to using the web and solutions that would improve the situation</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create an accessibility plan for improving navigation and use of websites</li>",
+            "target": [
+              ".field__item > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field field--name-field-topic-area field--type-entity-reference field--label-above\">",
+            "target": [
+              ".field--name-field-topic-area"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Topic Area</div>",
+            "target": [
+              ".field--name-field-topic-area > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__items\">",
+            "target": [
+              ".field__items"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/55\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Equity, Diversity &amp; Inclusion</a></div>",
+            "target": [
+              ".field__items > .field__item:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/55\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Equity, Diversity &amp; Inclusion</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/55\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/59\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Technology</a></div>",
+            "target": [
+              ".field__items > .field__item:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/59\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Technology</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/59\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\"><a href=\"/taxonomy/term/78\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">User Experience</a></div>",
+            "target": [
+              ".field__item:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"/taxonomy/term/78\" hreflang=\"en\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">User Experience</a>",
+            "target": [
+              "a[href=\"/taxonomy/term/78\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"clearfix text-formatted field field--name-field-questions field--type-text field--label-inline\">\n    <div class=\"field__label\">Contact</div>\n              <div class=\"field__item\">learning@amigos.org</div>\n          </div>",
+            "target": [
+              ".field--name-field-questions"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Contact</div>",
+            "target": [
+              ".field--name-field-questions > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\">learning@amigos.org</div>",
+            "target": [
+              ".field--name-field-questions > .field__item"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field field--name-field-sessionduration field--type-list-string field--label-inline clearfix\">\n    <div class=\"field__label\">Session Duration</div>\n              <div class=\"field__item\">This course consists of one 2-hour session.</div>\n          </div>",
+            "target": [
+              ".field--name-field-sessionduration"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Session Duration</div>",
+            "target": [
+              ".field--name-field-sessionduration > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\">This course consists of one 2-hour session.</div>",
+            "target": [
+              ".field--name-field-sessionduration > .field__item"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field field--name-field-contacthours field--type-list-float field--label-inline clearfix\">\n    <div class=\"field__label\">Contact Hours</div>\n              <div class=\"field__item\">2</div>\n          </div>",
+            "target": [
+              ".field--name-field-contacthours"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__label\">Contact Hours</div>",
+            "target": [
+              ".field--name-field-contacthours > .field__label"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"field__item\">2</div>",
+            "target": [
+              ".field--name-field-contacthours > .field__item"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div id=\"instructor-info\" class=\"clearfix\">",
+            "target": [
+              "#instructor-info"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<h2 data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Instructor(s)</h2>",
+            "target": [
+              "#instructor-info > h2"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"clearfix text-formatted field field--name-field-instructor-info field--type-text-with-summary field--label-hidden field__item\"><p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">TBD</p>\n</div>",
+            "target": [
+              ".field--name-field-instructor-info"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">TBD</p>",
+            "target": [
+              "p"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"clearfix text-formatted field field--name-field-availableonrequest field--type-text field--label-hidden field__item\"><a href=\"https://www.amigos.org/node/222\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Also available by request for libraries and other organizations</a></div>",
+            "target": [
+              ".field--name-field-availableonrequest"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"https://www.amigos.org/node/222\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Also available by request for libraries and other organizations</a>",
+            "target": [
+              ".field--name-field-availableonrequest > a"
             ]
           },
           {
@@ -8052,7 +10305,7 @@
             "impact": null,
             "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
             "target": [
-              "#block-amigos-addressesblock > .clearfix.text-formatted.field"
+              "#block-amigos-addressesblock > .field--name-body.field--type-text-with-summary.field--label-hidden"
             ]
           },
           {
@@ -8592,7 +10845,7 @@
             "impact": null,
             "html": "<a href=\"/services/continuing-education\" data-drupal-link-system-path=\"node/4470\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Continuing Education</a>",
             "target": [
-              ".menu-item:nth-child(2) > a[href$=\"continuing-education\"][data-drupal-link-system-path=\"node/4470\"]"
+              ".menu-item:nth-child(2) > a[data-drupal-link-system-path=\"node/4470\"][href$=\"continuing-education\"]"
             ]
           },
           {
@@ -8610,7 +10863,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -8630,9 +10883,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
             ]
           },
           {
@@ -8690,7 +10943,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -8710,9 +10963,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<form action=\"/search/node\" method=\"get\" id=\"search-block-form\" accept-charset=\"UTF-8\">",
+            "html": "<form action=\"/search/node\" method=\"get\" id=\"search-block-form--2\" accept-charset=\"UTF-8\">",
             "target": [
-              "#block-amigos-searchform > form"
+              "#search-block-form--2"
             ]
           },
           {
@@ -8732,7 +10985,7 @@
             "impact": null,
             "html": "<div class=\"js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search"
+              "#search-block-form--2 > .js-form-item.form-item.js-form-type-search"
             ]
           },
           {
@@ -8750,9 +11003,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<label for=\"edit-keys\" class=\"visually-hidden\">Search</label>",
+            "html": "<label for=\"edit-keys--2\" class=\"visually-hidden\">Search</label>",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > label"
+              "label[for=\"edit-keys--2\"]"
             ]
           },
           {
@@ -8770,9 +11023,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
+              "#edit-keys--2"
             ]
           },
           {
@@ -8790,9 +11043,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div data-drupal-selector=\"edit-actions\" class=\"form-actions js-form-wrapper form-wrapper\" id=\"edit-actions\"><input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">\n</div>",
+            "html": "<div data-drupal-selector=\"edit-actions\" class=\"form-actions js-form-wrapper form-wrapper\" id=\"edit-actions--2\"><input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit--2\" value=\"Search\" class=\"button js-form-submit form-submit\">\n</div>",
             "target": [
-              "#edit-actions"
+              "#edit-actions--2"
             ]
           },
           {
@@ -8810,9 +11063,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">",
+            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit--2\" value=\"Search\" class=\"button js-form-submit form-submit\">",
             "target": [
-              "#edit-actions > .js-form-submit.form-submit[data-drupal-selector=\"edit-submit\"]"
+              "#edit-submit--2"
             ]
           },
           {
@@ -8852,7 +11105,7 @@
             "impact": null,
             "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
             "target": [
-              "#block-amigos-socialmediaicons > .clearfix.text-formatted.field"
+              "#block-amigos-socialmediaicons > .field--name-body.field--type-text-with-summary.field--label-hidden"
             ]
           },
           {
@@ -9433,115 +11686,7 @@
         ]
       }
     ],
-    "incomplete": [
-      {
-        "id": "duplicate-id-aria",
-        "impact": "critical",
-        "tags": [
-          "cat.parsing",
-          "wcag2a",
-          "wcag412",
-          "EN-301-549",
-          "EN-9.4.1.2"
-        ],
-        "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-        "help": "IDs used in ARIA and labels must be unique",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/duplicate-id-aria?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "edit-keys",
-                "relatedNodes": [
-                  {
-                    "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
-                    "target": [
-                      "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: edit-keys"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\" placeholder=\"Enter search terms...\">",
-            "target": [
-              "input[placeholder=\"Enter search terms...\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: edit-keys"
-          }
-        ]
-      }
-    ],
-    "violations": [
-      {
-        "id": "label-title-only",
-        "impact": "serious",
-        "tags": [
-          "cat.forms",
-          "best-practice"
-        ],
-        "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-        "help": "Form elements should have a visible label",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=axeAPI",
-        "nodes": [
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "title-only",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Only title used to generate label for form element"
-              }
-            ],
-            "impact": "serious",
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
-            "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
-            ],
-            "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
-          }
-        ]
-      },
-      {
-        "id": "page-has-heading-one",
-        "impact": "moderate",
-        "tags": [
-          "cat.semantics",
-          "best-practice"
-        ],
-        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-        "help": "Page should contain a level-one heading",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
-        "nodes": [
-          {
-            "any": [],
-            "all": [
-              {
-                "id": "page-has-heading-one",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "Page must have a level-one heading"
-              }
-            ],
-            "none": [],
-            "impact": "moderate",
-            "html": "<html lang=\"en\" dir=\"ltr\" class=\"js\">",
-            "target": [
-              "html"
-            ],
-            "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
-          }
-        ]
-      }
-    ]
+    "incomplete": [],
+    "violations": []
   }
 }

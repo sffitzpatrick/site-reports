@@ -1,8 +1,8 @@
 {
   "meta": {
-    "scannedAt": "2026-03-09T18:13:31.690Z",
-    "url": "https://amigos.org/services/member-discounts/vendors/social-explorer",
-    "documentTitle": "Social Explorer | Amigos Library Services",
+    "scannedAt": "2026-03-09T19:49:54.840Z",
+    "url": "https://amigos.org/services/member-discounts/vendors/rocks-backpages",
+    "documentTitle": "Rock's Backpages | Amigos Library Services",
     "index": 404
   },
   "results": {
@@ -20,8 +20,8 @@
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2026-03-09T18:13:31.577Z",
-    "url": "https://www.amigos.org/services/member-discounts/vendors/social-explorer",
+    "timestamp": "2026-03-09T19:49:54.728Z",
+    "url": "https://www.amigos.org/services/member-discounts/vendors/rocks-backpages",
     "toolOptions": {
       "reporter": "v1"
     },
@@ -471,23 +471,6 @@
         "nodes": []
       },
       {
-        "id": "link-in-text-block",
-        "impact": null,
-        "tags": [
-          "cat.color",
-          "wcag2a",
-          "wcag141",
-          "TTv5",
-          "TT13.a",
-          "EN-301-549",
-          "EN-9.1.4.1"
-        ],
-        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-        "help": "Links must be distinguishable without relying on color",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
-        "nodes": []
-      },
-      {
         "id": "marquee",
         "impact": null,
         "tags": [
@@ -875,7 +858,33 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-allowed-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role"
+              }
+            ],
+            "none": [
+              {
+                "id": "aria-unsupported-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute is supported"
+              }
+            ],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -901,7 +910,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -927,7 +936,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1118,7 +1127,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-allowed-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is allowed for given element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -1136,7 +1163,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1172,7 +1199,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1206,7 +1233,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -1332,7 +1359,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-conditional-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "ARIA attribute is allowed"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -1350,7 +1395,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1368,7 +1413,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1528,7 +1573,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "deprecatedrole",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "ARIA role is not deprecated"
+              }
+            ],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -1546,7 +1609,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1582,7 +1645,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1616,7 +1679,7 @@
               }
             ],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -1670,7 +1733,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<body class=\"page--node-6261 path-node page-node-type-vendor\">",
+            "html": "<body class=\"page--node-1722 path-node page-node-type-vendor\">",
             "target": [
               "body"
             ]
@@ -1760,7 +1823,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "ARIA attribute is allowed"
+              }
+            ],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -1778,7 +1859,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1796,7 +1877,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -1956,7 +2037,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-required-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "All required ARIA attributes are present"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -1974,7 +2073,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -2010,7 +2109,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -2044,7 +2143,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -2272,7 +2371,39 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "invalidrole",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA role is valid"
+              },
+              {
+                "id": "abstractrole",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Abstract roles are not used"
+              },
+              {
+                "id": "unsupportedrole",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA role is supported"
+              }
+            ],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -2304,7 +2435,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -2368,7 +2499,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -2430,7 +2561,7 @@
               }
             ],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -2608,7 +2739,39 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute values are valid"
+              },
+              {
+                "id": "aria-errormessage",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+              },
+              {
+                "id": "aria-level",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-level values are valid"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -2640,7 +2803,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -2672,7 +2835,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -2824,7 +2987,25 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-valid-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute name is valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -2842,7 +3023,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -2860,7 +3041,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -3679,7 +3860,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Social Explorer\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Rock's Backpages\n              </li>",
             "target": [
               "ol > li:nth-child(5)"
             ]
@@ -3711,7 +3892,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>\n</h1>",
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>\n</h1>",
             "target": [
               "h1"
             ]
@@ -3743,7 +3924,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>",
             "target": [
               ".field--name-title"
             ]
@@ -3775,9 +3956,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<a href=\"https://www.socialexplorer.com/\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
+            "html": "<a href=\"http://www.rocksbackpages.com/\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
             "target": [
-              ".ext[rel=\"noopener noreferrer\"][data-extlink=\"\"]"
+              "a[href$=\"rocksbackpages.com/\"]"
             ]
           },
           {
@@ -3807,9 +3988,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The entire U.S. Census 1790-2010, as well as U.S. Decennial Censuses on 2010 Geographies – reallocated data</li>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img class=\"logo align-right\" src=\"/sites/default/files/2025-01/rocks_back_pages-logo.png\" alt=\"Rock's Backpages logo\" title=\"Rock's Backpages logo\" width=\"200\" height=\"227\" loading=\"lazy\">\n</p>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(1)"
+              "p:nth-child(2)"
             ]
           },
           {
@@ -3839,9 +4020,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The entire American Community Survey 2005-2017</li>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Rock's Backpages is the definitive archive of music journalism by the finest music writers of the last 50 years and offers libraries:</p>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(2)"
+              "p:nth-child(3)"
             ]
           },
           {
@@ -3871,9 +4052,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The presidential, congressional, senatorial and gubernatorial results from the Atlas of U.S. Presidential Elections 1912-2018 Social Explorer Tract Estimates 2016 and Projections 2022</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(3)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(1)"
             ]
           },
           {
@@ -3903,9 +4084,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Various Crime, Business, Environmental, Religion, and Health Data</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">500+ exclusive, and previously unpublished, audio interviews with major icons from Jimi Hendrix to Kurt Cobain.</li>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(4)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(2)"
             ]
           },
           {
@@ -3935,9 +4116,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">International data (United Kingdom Census, Canadian Census, Eurostat, World Development Indicators, Irish religions and population data</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">coverage of all types of popular music from the 1950s to the present: from rockabilly to hip hop, Elvis Presley to Eminem, the White Stripes to Amy Winehouse.</li>",
             "target": [
-              "ul:nth-child(3) > li:nth-child(5)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(3)"
             ]
           },
           {
@@ -3967,9 +4148,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Plus new data sources added throughout the year.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">regular content updates with the addition of at least 50 new articles per week, plus a new audio interview.</li>",
             "target": [
-              "ul:nth-child(3) > li:nth-child(6)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(4)"
             ]
           },
           {
@@ -3999,9 +4180,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Visualize data with customizable, user-friendly maps, allowing unparalleled exploration of demographic and social change, revealing the patterns buried in raw numbers.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">links with Academic Charts Online (ACO)/Music Industry Data allowing seamless linking for ACO/MIdata users.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(1)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(5)"
             ]
           },
           {
@@ -4031,9 +4212,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Export, save, and print maps and reports for professional looking reports, presentations, and graphics.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">optimization for all mobile devices for reading and research on the go.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(2)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(6)"
             ]
           },
           {
@@ -4063,9 +4244,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create multi-map presentations with the interactive slideshows tool for in-depth comparisons and story-telling.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">social networking with Facebook, Instagram, Tumblr, Twitter &amp; Audioboom to help engage users.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(3)"
+              "li:nth-child(7)"
             ]
           },
           {
@@ -4095,9 +4276,105 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create data reports at all geographic levels, including state, county, census tract, block group, zip code, and census place.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">discoverable via OCLC WorldCat, ProQuest Summon and the EBSCO Discovery Service.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(4)"
+              "li:nth-child(8)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Subscribers receive weekly updates detailing new additions and other updates to the library.</li>",
+            "target": [
+              "li:nth-child(9)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+            "target": [
+              "p:nth-child(5)"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "important-letter-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-word-spacing",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+              },
+              {
+                "id": "important-line-height",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"http://www.rocksbackpages.com/Pages/AcademicSubscriptions\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"]"
             ]
           },
           {
@@ -4129,7 +4406,7 @@
             "impact": null,
             "html": "<span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span>",
             "target": [
-              ".field--name-field-orderform > .field__items > .field__item > .link-item > .link-url > span"
+              ".link-url > span"
             ]
           },
           {
@@ -4159,41 +4436,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span>",
+            "html": "<a href=\"mailto:mds@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
             "target": [
-              ".field--name-field-license > .field__items > .field__item > .link-item > .link-url > span"
-            ]
-          },
-          {
-            "any": [],
-            "all": [
-              {
-                "id": "important-letter-spacing",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-              },
-              {
-                "id": "important-word-spacing",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-              },
-              {
-                "id": "important-line-height",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-              }
-            ],
-            "none": [],
-            "impact": null,
-            "html": "<a href=\"mailto:ceballos@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
-            "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"]"
+              "a[href$=\"mailto:mds@amigos.org\"]"
             ]
           },
           {
@@ -4415,7 +4660,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -4447,9 +4692,9 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
             ]
           },
           {
@@ -4952,7 +5197,7 @@
                     ]
                   },
                   {
-                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>\n</h1>",
+                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>\n</h1>",
                     "target": [
                       "h1"
                     ]
@@ -5176,7 +5421,7 @@
             "impact": null,
             "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\" placeholder=\"Enter search terms...\">",
             "target": [
-              "input[placeholder=\"Enter search terms...\"]"
+              "#edit-keys"
             ]
           },
           {
@@ -5196,7 +5441,7 @@
             "impact": null,
             "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">",
             "target": [
-              "#block-amigos-search-form-narrow > form > .form-actions.js-form-wrapper.form-wrapper > .js-form-submit.form-submit[data-drupal-selector=\"edit-submit\"]"
+              "#edit-submit"
             ]
           },
           {
@@ -5319,7 +5564,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Social Explorer\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Rock's Backpages\n              </li>",
             "target": [
               "ol > li:nth-child(5)"
             ]
@@ -5344,7 +5589,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>",
             "target": [
               ".field--name-title"
             ]
@@ -5396,7 +5641,7 @@
             "impact": null,
             "html": "<span class=\"extlink-nobreak\">",
             "target": [
-              ".ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak"
             ]
           },
           {
@@ -5419,9 +5664,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Rock's Backpages is the definitive archive of music journalism by the finest music writers of the last 50 years and offers libraries:</p>",
             "target": [
-              ".node__content > .text-formatted.field--name-body.field--type-text-with-summary"
+              "p:nth-child(3)"
             ]
           },
           {
@@ -5444,9 +5689,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The entire U.S. Census 1790-2010, as well as U.S. Decennial Censuses on 2010 Geographies – reallocated data</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(1)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(1)"
             ]
           },
           {
@@ -5469,9 +5714,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The entire American Community Survey 2005-2017</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">500+ exclusive, and previously unpublished, audio interviews with major icons from Jimi Hendrix to Kurt Cobain.</li>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(2)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(2)"
             ]
           },
           {
@@ -5494,9 +5739,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The presidential, congressional, senatorial and gubernatorial results from the Atlas of U.S. Presidential Elections 1912-2018 Social Explorer Tract Estimates 2016 and Projections 2022</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">coverage of all types of popular music from the 1950s to the present: from rockabilly to hip hop, Elvis Presley to Eminem, the White Stripes to Amy Winehouse.</li>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(3)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(3)"
             ]
           },
           {
@@ -5519,9 +5764,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Various Crime, Business, Environmental, Religion, and Health Data</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">regular content updates with the addition of at least 50 new articles per week, plus a new audio interview.</li>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(4)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(4)"
             ]
           },
           {
@@ -5544,9 +5789,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">International data (United Kingdom Census, Canadian Census, Eurostat, World Development Indicators, Irish religions and population data</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">links with Academic Charts Online (ACO)/Music Industry Data allowing seamless linking for ACO/MIdata users.</li>",
             "target": [
-              "ul:nth-child(3) > li:nth-child(5)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(5)"
             ]
           },
           {
@@ -5569,9 +5814,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Plus new data sources added throughout the year.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">optimization for all mobile devices for reading and research on the go.</li>",
             "target": [
-              "ul:nth-child(3) > li:nth-child(6)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(6)"
             ]
           },
           {
@@ -5594,9 +5839,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Visualize data with customizable, user-friendly maps, allowing unparalleled exploration of demographic and social change, revealing the patterns buried in raw numbers.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">social networking with Facebook, Instagram, Tumblr, Twitter &amp; Audioboom to help engage users.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(1)"
+              "li:nth-child(7)"
             ]
           },
           {
@@ -5619,9 +5864,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Export, save, and print maps and reports for professional looking reports, presentations, and graphics.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">discoverable via OCLC WorldCat, ProQuest Summon and the EBSCO Discovery Service.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(2)"
+              "li:nth-child(8)"
             ]
           },
           {
@@ -5644,9 +5889,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create multi-map presentations with the interactive slideshows tool for in-depth comparisons and story-telling.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Subscribers receive weekly updates detailing new additions and other updates to the library.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(3)"
+              "li:nth-child(9)"
             ]
           },
           {
@@ -5669,9 +5914,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create data reports at all geographic levels, including state, county, census tract, block group, zip code, and census place.</li>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "ul:nth-child(4) > li:nth-child(4)"
+              "p:nth-child(5)"
             ]
           },
           {
@@ -5679,49 +5924,49 @@
               {
                 "id": "color-contrast",
                 "data": {
-                  "fgColor": "#000000",
+                  "fgColor": "#24418f",
                   "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "bold",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<div class=\"field__label\">Order Form</div>",
-            "target": [
-              ".field--name-field-orderform > .field__label"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#000000",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 21,
+                  "contrastRatio": 9.42,
                   "fontSize": "12.0pt (16px)",
                   "fontWeight": "normal",
                   "expectedContrastRatio": "4.5:1"
                 },
                 "relatedNodes": [],
                 "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
+                "message": "Element has sufficient color contrast of 9.42"
               }
             ],
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"link-title\">No order form required.</div>",
+            "html": "<a href=\"http://www.rocksbackpages.com/Pages/AcademicSubscriptions\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
             "target": [
-              ".field--name-field-orderform > .field__items > .field__item > .link-item > .link-title"
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#24418f",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 9.42,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 9.42"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"extlink-nobreak\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak"
             ]
           },
           {
@@ -5771,7 +6016,7 @@
             "impact": null,
             "html": "<div class=\"link-title\">No license agreement required.</div>",
             "target": [
-              ".field--name-field-license > .field__items > .field__item > .link-item > .link-title"
+              ".link-title"
             ]
           },
           {
@@ -5896,7 +6141,7 @@
             "impact": null,
             "html": "<span class=\"extlink-nobreak\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak"
             ]
           },
           {
@@ -6072,31 +6317,6 @@
             "html": "<div class=\"field__item\">School K-12</div>",
             "target": [
               ".field__item:nth-child(4)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#000000",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 21,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "normal",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element has sufficient color contrast of 21"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<div class=\"field__item\">Special</div>",
-            "target": [
-              ".field__item:nth-child(5)"
             ]
           },
           {
@@ -6319,9 +6539,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
             ]
           },
           {
@@ -6369,9 +6589,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
+              "#edit-keys--2"
             ]
           }
         ]
@@ -6415,7 +6635,7 @@
       },
       {
         "id": "duplicate-id-aria",
-        "impact": "critical",
+        "impact": null,
         "tags": [
           "cat.parsing",
           "wcag2a",
@@ -6467,6 +6687,24 @@
             "any": [
               {
                 "id": "duplicate-id-aria",
+                "data": "edit-keys",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\" placeholder=\"Enter search terms...\">",
+            "target": [
+              "#edit-keys"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
                 "data": "system-breadcrumb",
                 "relatedNodes": [],
                 "impact": "critical",
@@ -6497,6 +6735,24 @@
             "html": "<h2 class=\"visually-hidden\" id=\"block-amigos-footer-menu\" data-asw-org-font-size=\"28\" style=\"font-size: 28px;\">Footer</h2>",
             "target": [
               "#block-amigos-footer-menu"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "edit-keys--2",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "target": [
+              "#edit-keys--2"
             ]
           },
           {
@@ -6597,7 +6853,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>\n</h1>",
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>\n</h1>",
             "target": [
               "h1"
             ]
@@ -6647,9 +6903,9 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<label for=\"edit-keys\" class=\"visually-hidden\">Search</label>",
+                    "html": "<label for=\"edit-keys--2\" class=\"visually-hidden\">Search</label>",
                     "target": [
-                      "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > label"
+                      "label[for=\"edit-keys--2\"]"
                     ]
                   }
                 ],
@@ -6658,9 +6914,9 @@
               }
             ],
             "impact": null,
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
+              "#edit-keys--2"
             ]
           }
         ]
@@ -6776,7 +7032,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>\n</h1>",
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>\n</h1>",
             "target": [
               "h1"
             ]
@@ -6949,7 +7205,7 @@
               }
             ],
             "impact": null,
-            "html": "<img src=\"/sites/default/files/social_explorer.png\" class=\"logo\" alt=\"Social Explorer logo\" title=\"Social Explorer logo\">",
+            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/rocks_back_pages-logo.png\" alt=\"Rock's Backpages logo\" title=\"Rock's Backpages logo\" width=\"200\" height=\"227\" loading=\"lazy\">",
             "target": [
               ".logo"
             ]
@@ -7128,7 +7384,7 @@
               }
             ],
             "impact": null,
-            "html": "<img src=\"/sites/default/files/social_explorer.png\" class=\"logo\" alt=\"Social Explorer logo\" title=\"Social Explorer logo\">",
+            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/rocks_back_pages-logo.png\" alt=\"Rock's Backpages logo\" title=\"Rock's Backpages logo\" width=\"200\" height=\"227\" loading=\"lazy\">",
             "target": [
               ".logo"
             ]
@@ -7257,9 +7513,40 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">",
+            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit--2\" value=\"Search\" class=\"button js-form-submit form-submit\">",
             "target": [
-              "#block-amigos-searchform > form > .form-actions.js-form-wrapper.form-wrapper > .js-form-submit.form-submit[data-drupal-selector=\"edit-submit\"]"
+              "#edit-submit--2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "label-title-only",
+        "impact": null,
+        "tags": [
+          "cat.forms",
+          "best-practice"
+        ],
+        "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+        "help": "Form elements should have a visible label",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "title-only",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Form element does not solely use title attribute for its label"
+              }
+            ],
+            "impact": null,
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "target": [
+              "#edit-keys--2"
             ]
           }
         ]
@@ -7290,15 +7577,9 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<label for=\"edit-keys\" class=\"visually-hidden\">Search</label>",
+                    "html": "<label for=\"edit-keys--2\" class=\"visually-hidden\">Search</label>",
                     "target": [
-                      "#block-amigos-search-form-narrow > form > .js-form-item.form-item.js-form-type-search > label"
-                    ]
-                  },
-                  {
-                    "html": "<label for=\"edit-keys\" class=\"visually-hidden\">Search</label>",
-                    "target": [
-                      "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > label"
+                      "label[for=\"edit-keys--2\"]"
                     ]
                   }
                 ],
@@ -7324,9 +7605,9 @@
               }
             ],
             "impact": null,
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
+              "#edit-keys--2"
             ]
           }
         ]
@@ -7735,9 +8016,52 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": null,
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
+                    "target": [
+                      "p:nth-child(5)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Links can be distinguished from surrounding text by visual styling"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a href=\"http://www.rocksbackpages.com/Pages/AcademicSubscriptions\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"]"
             ]
           }
         ]
@@ -8103,9 +8427,42 @@
               }
             ],
             "impact": null,
-            "html": "<a href=\"https://www.socialexplorer.com/\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
+            "html": "<a href=\"http://www.rocksbackpages.com/\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
             "target": [
-              ".ext[rel=\"noopener noreferrer\"][data-extlink=\"\"]"
+              "a[href$=\"rocksbackpages.com/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              },
+              {
+                "id": "non-empty-title",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has a title attribute"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a href=\"http://www.rocksbackpages.com/Pages/AcademicSubscriptions\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"]"
             ]
           },
           {
@@ -8129,9 +8486,9 @@
               }
             ],
             "impact": null,
-            "html": "<a href=\"mailto:ceballos@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
+            "html": "<a href=\"mailto:mds@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"]"
+              "a[href$=\"mailto:mds@amigos.org\"]"
             ]
           },
           {
@@ -8259,9 +8616,9 @@
               }
             ],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
             ]
           },
           {
@@ -8566,25 +8923,7 @@
             "impact": null,
             "html": "<ul>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3)"
-            ]
-          },
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "only-listitems",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "List element only has direct children that are allowed inside <li> elements"
-              }
-            ],
-            "impact": null,
-            "html": "<ul>",
-            "target": [
-              "ul:nth-child(4)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul"
             ]
           },
           {
@@ -8832,7 +9171,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Social Explorer\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Rock's Backpages\n              </li>",
             "target": [
               "ol > li:nth-child(5)"
             ]
@@ -8850,9 +9189,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The entire U.S. Census 1790-2010, as well as U.S. Decennial Censuses on 2010 Geographies – reallocated data</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(1)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(1)"
             ]
           },
           {
@@ -8868,9 +9207,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The entire American Community Survey 2005-2017</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">500+ exclusive, and previously unpublished, audio interviews with major icons from Jimi Hendrix to Kurt Cobain.</li>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(2)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(2)"
             ]
           },
           {
@@ -8886,9 +9225,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The presidential, congressional, senatorial and gubernatorial results from the Atlas of U.S. Presidential Elections 1912-2018 Social Explorer Tract Estimates 2016 and Projections 2022</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">coverage of all types of popular music from the 1950s to the present: from rockabilly to hip hop, Elvis Presley to Eminem, the White Stripes to Amy Winehouse.</li>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(3)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(3)"
             ]
           },
           {
@@ -8904,9 +9243,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Various Crime, Business, Environmental, Religion, and Health Data</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">regular content updates with the addition of at least 50 new articles per week, plus a new audio interview.</li>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(4)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(4)"
             ]
           },
           {
@@ -8922,9 +9261,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">International data (United Kingdom Census, Canadian Census, Eurostat, World Development Indicators, Irish religions and population data</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">links with Academic Charts Online (ACO)/Music Industry Data allowing seamless linking for ACO/MIdata users.</li>",
             "target": [
-              "ul:nth-child(3) > li:nth-child(5)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(5)"
             ]
           },
           {
@@ -8940,9 +9279,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Plus new data sources added throughout the year.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">optimization for all mobile devices for reading and research on the go.</li>",
             "target": [
-              "ul:nth-child(3) > li:nth-child(6)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(6)"
             ]
           },
           {
@@ -8958,9 +9297,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Visualize data with customizable, user-friendly maps, allowing unparalleled exploration of demographic and social change, revealing the patterns buried in raw numbers.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">social networking with Facebook, Instagram, Tumblr, Twitter &amp; Audioboom to help engage users.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(1)"
+              "li:nth-child(7)"
             ]
           },
           {
@@ -8976,9 +9315,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Export, save, and print maps and reports for professional looking reports, presentations, and graphics.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">discoverable via OCLC WorldCat, ProQuest Summon and the EBSCO Discovery Service.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(2)"
+              "li:nth-child(8)"
             ]
           },
           {
@@ -8994,27 +9333,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create multi-map presentations with the interactive slideshows tool for in-depth comparisons and story-telling.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Subscribers receive weekly updates detailing new additions and other updates to the library.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(3)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "listitem",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create data reports at all geographic levels, including state, county, census tract, block group, zip code, and census place.</li>",
-            "target": [
-              "ul:nth-child(4) > li:nth-child(4)"
+              "li:nth-child(9)"
             ]
           },
           {
@@ -9066,7 +9387,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -9296,7 +9617,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -9312,7 +9633,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<img src=\"/sites/default/files/social_explorer.png\" class=\"logo\" alt=\"Social Explorer logo\" title=\"Social Explorer logo\">",
+            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/rocks_back_pages-logo.png\" alt=\"Rock's Backpages logo\" title=\"Rock's Backpages logo\" width=\"200\" height=\"227\" loading=\"lazy\">",
             "target": [
               ".logo"
             ]
@@ -9330,9 +9651,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -9350,7 +9671,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -9366,9 +9687,27 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">",
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "#block-amigos-searchform > form > .form-actions.js-form-wrapper.form-wrapper > .js-form-submit.form-submit[data-drupal-selector=\"edit-submit\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit--2\" value=\"Search\" class=\"button js-form-submit form-submit\">",
+            "target": [
+              "#edit-submit--2"
             ]
           },
           {
@@ -9500,7 +9839,7 @@
                 "data": null,
                 "relatedNodes": [
                   {
-                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>\n</h1>",
+                    "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>\n</h1>",
                     "target": [
                       "h1"
                     ]
@@ -10545,7 +10884,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Social Explorer\n              </li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n                  Rock's Backpages\n              </li>",
             "target": [
               "ol > li:nth-child(5)"
             ]
@@ -10645,7 +10984,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"inner\">\n    \n    \n          \n  <h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>\n</h1>\n\n\n      </div>",
+            "html": "<div class=\"inner\">\n    \n    \n          \n  <h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>\n</h1>\n\n\n      </div>",
             "target": [
               ".inner"
             ]
@@ -10665,7 +11004,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>\n</h1>",
+            "html": "<h1 class=\"page-title\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\"><span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>\n</h1>",
             "target": [
               "h1"
             ]
@@ -10685,7 +11024,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Social Explorer</span>",
+            "html": "<span class=\"field field--name-title field--type-string field--label-hidden\" data-asw-org-font-size=\"32\" style=\"font-size: 32px;\">Rock's Backpages</span>",
             "target": [
               ".field--name-title"
             ]
@@ -10725,9 +11064,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<article id=\"node-6261\" class=\"node node--type-vendor node--view-mode-full\">",
+            "html": "<article id=\"node-1722\" class=\"node node--type-vendor node--view-mode-full\">",
             "target": [
-              "#node-6261"
+              "#node-1722"
             ]
           },
           {
@@ -10825,9 +11164,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"https://www.socialexplorer.com/\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
+            "html": "<a href=\"http://www.rocksbackpages.com/\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
             "target": [
-              ".ext[rel=\"noopener noreferrer\"][data-extlink=\"\"]"
+              "a[href$=\"rocksbackpages.com/\"]"
             ]
           },
           {
@@ -10847,7 +11186,7 @@
             "impact": null,
             "html": "<span class=\"extlink-nobreak\">",
             "target": [
-              ".ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak"
             ]
           },
           {
@@ -10867,7 +11206,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -10887,7 +11226,7 @@
             "impact": null,
             "html": "<title>(link is external)</title>",
             "target": [
-              "svg[aria-label=\"(link is external)\"] > title"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"] > title"
             ]
           },
           {
@@ -10907,7 +11246,7 @@
             "impact": null,
             "html": "<path d=\"M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z\"></path>",
             "target": [
-              "svg[aria-label=\"(link is external)\"] > path:nth-child(2)"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"] > path:nth-child(2)"
             ]
           },
           {
@@ -10927,7 +11266,7 @@
             "impact": null,
             "html": "<path d=\"M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z\"></path>",
             "target": [
-              "path:nth-child(3)"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"] > path:nth-child(3)"
             ]
           },
           {
@@ -10965,7 +11304,27 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<img src=\"/sites/default/files/social_explorer.png\" class=\"logo\" alt=\"Social Explorer logo\" title=\"Social Explorer logo\">",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"><img class=\"logo align-right\" src=\"/sites/default/files/2025-01/rocks_back_pages-logo.png\" alt=\"Rock's Backpages logo\" title=\"Rock's Backpages logo\" width=\"200\" height=\"227\" loading=\"lazy\">\n</p>",
+            "target": [
+              "p:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<img class=\"logo align-right\" src=\"/sites/default/files/2025-01/rocks_back_pages-logo.png\" alt=\"Rock's Backpages logo\" title=\"Rock's Backpages logo\" width=\"200\" height=\"227\" loading=\"lazy\">",
             "target": [
               ".logo"
             ]
@@ -10985,129 +11344,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<ul>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Rock's Backpages is the definitive archive of music journalism by the finest music writers of the last 50 years and offers libraries:</p>",
             "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The entire U.S. Census 1790-2010, as well as U.S. Decennial Censuses on 2010 Geographies – reallocated data</li>",
-            "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(1)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The entire American Community Survey 2005-2017</li>",
-            "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(2)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">The presidential, congressional, senatorial and gubernatorial results from the Atlas of U.S. Presidential Elections 1912-2018 Social Explorer Tract Estimates 2016 and Projections 2022</li>",
-            "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(3)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Various Crime, Business, Environmental, Religion, and Health Data</li>",
-            "target": [
-              ".text-formatted.field--name-body.field--type-text-with-summary > ul:nth-child(3) > li:nth-child(4)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">International data (United Kingdom Census, Canadian Census, Eurostat, World Development Indicators, Irish religions and population data</li>",
-            "target": [
-              "ul:nth-child(3) > li:nth-child(5)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Plus new data sources added throughout the year.</li>",
-            "target": [
-              "ul:nth-child(3) > li:nth-child(6)"
+              "p:nth-child(3)"
             ]
           },
           {
@@ -11127,7 +11366,7 @@
             "impact": null,
             "html": "<ul>",
             "target": [
-              "ul:nth-child(4)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul"
             ]
           },
           {
@@ -11145,9 +11384,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Visualize data with customizable, user-friendly maps, allowing unparalleled exploration of demographic and social change, revealing the patterns buried in raw numbers.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              "ul:nth-child(4) > li:nth-child(1)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(1)"
             ]
           },
           {
@@ -11165,9 +11404,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Export, save, and print maps and reports for professional looking reports, presentations, and graphics.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">500+ exclusive, and previously unpublished, audio interviews with major icons from Jimi Hendrix to Kurt Cobain.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(2)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(2)"
             ]
           },
           {
@@ -11185,9 +11424,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create multi-map presentations with the interactive slideshows tool for in-depth comparisons and story-telling.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">coverage of all types of popular music from the 1950s to the present: from rockabilly to hip hop, Elvis Presley to Eminem, the White Stripes to Amy Winehouse.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(3)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(3)"
             ]
           },
           {
@@ -11205,9 +11444,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Create data reports at all geographic levels, including state, county, census tract, block group, zip code, and census place.</li>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">regular content updates with the addition of at least 50 new articles per week, plus a new audio interview.</li>",
             "target": [
-              "ul:nth-child(4) > li:nth-child(4)"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(4)"
             ]
           },
           {
@@ -11225,9 +11464,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"field field--name-field-orderform field--type-link field--label-above\">",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">links with Academic Charts Online (ACO)/Music Industry Data allowing seamless linking for ACO/MIdata users.</li>",
             "target": [
-              ".field--name-field-orderform"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(5)"
             ]
           },
           {
@@ -11245,9 +11484,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"field__label\">Order Form</div>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">optimization for all mobile devices for reading and research on the go.</li>",
             "target": [
-              ".field--name-field-orderform > .field__label"
+              ".text-formatted.field--name-body.field--type-text-with-summary > ul > li:nth-child(6)"
             ]
           },
           {
@@ -11265,9 +11504,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"field__items\">\n              <div class=\"field__item\"><div class=\"link-item\"><div class=\"link-title\">No order form required.</div><div class=\"link-url\"><span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span></div></div></div>\n              </div>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">social networking with Facebook, Instagram, Tumblr, Twitter &amp; Audioboom to help engage users.</li>",
             "target": [
-              ".field--name-field-orderform > .field__items"
+              "li:nth-child(7)"
             ]
           },
           {
@@ -11285,9 +11524,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"field__item\"><div class=\"link-item\"><div class=\"link-title\">No order form required.</div><div class=\"link-url\"><span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span></div></div></div>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">discoverable via OCLC WorldCat, ProQuest Summon and the EBSCO Discovery Service.</li>",
             "target": [
-              ".field--name-field-orderform > .field__items > .field__item"
+              "li:nth-child(8)"
             ]
           },
           {
@@ -11305,9 +11544,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"link-item\"><div class=\"link-title\">No order form required.</div><div class=\"link-url\"><span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span></div></div>",
+            "html": "<li data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Subscribers receive weekly updates detailing new additions and other updates to the library.</li>",
             "target": [
-              ".field--name-field-orderform > .field__items > .field__item > .link-item"
+              "li:nth-child(9)"
             ]
           },
           {
@@ -11325,9 +11564,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"link-title\">No order form required.</div>",
+            "html": "<p data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">",
             "target": [
-              ".field--name-field-orderform > .field__items > .field__item > .link-item > .link-title"
+              "p:nth-child(5)"
             ]
           },
           {
@@ -11345,9 +11584,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"link-url\"><span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span></div>",
+            "html": "<a href=\"http://www.rocksbackpages.com/Pages/AcademicSubscriptions\" data-asw-org-font-size=\"16\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"(opens in a new window)\" style=\"font-size: 16px;\">",
             "target": [
-              ".field--name-field-orderform > .field__items > .field__item > .link-item > .link-url"
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"]"
             ]
           },
           {
@@ -11365,9 +11604,89 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span>",
+            "html": "<span class=\"extlink-nobreak\">",
             "target": [
-              ".field--name-field-orderform > .field__items > .field__item > .link-item > .link-url > span"
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<title>(link is external)</title>",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"] > title"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<path d=\"M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z\"></path>",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"] > path:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<path d=\"M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z\"></path>",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"] > path:nth-child(3)"
             ]
           },
           {
@@ -11467,7 +11786,7 @@
             "impact": null,
             "html": "<div class=\"link-item\"><div class=\"link-title\">No license agreement required.</div><div class=\"link-url\"><span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span></div></div>",
             "target": [
-              ".field--name-field-license > .field__items > .field__item > .link-item"
+              ".link-item"
             ]
           },
           {
@@ -11487,7 +11806,7 @@
             "impact": null,
             "html": "<div class=\"link-title\">No license agreement required.</div>",
             "target": [
-              ".field--name-field-license > .field__items > .field__item > .link-item > .link-title"
+              ".link-title"
             ]
           },
           {
@@ -11507,7 +11826,7 @@
             "impact": null,
             "html": "<div class=\"link-url\"><span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span></div>",
             "target": [
-              ".field--name-field-license > .field__items > .field__item > .link-item > .link-url"
+              ".link-url"
             ]
           },
           {
@@ -11527,7 +11846,7 @@
             "impact": null,
             "html": "<span data-asw-org-font-size=\"16\" style=\"font-size: 16px;\"></span>",
             "target": [
-              ".field--name-field-license > .field__items > .field__item > .link-item > .link-url > span"
+              ".link-url > span"
             ]
           },
           {
@@ -11685,9 +12004,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"mailto:ceballos@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
+            "html": "<a href=\"mailto:mds@amigos.org\" data-asw-org-font-size=\"16\" class=\"mailto\" data-extlink=\"\" style=\"font-size: 16px;\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"]"
+              "a[href$=\"mailto:mds@amigos.org\"]"
             ]
           },
           {
@@ -11707,7 +12026,7 @@
             "impact": null,
             "html": "<span class=\"extlink-nobreak\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak"
             ]
           },
           {
@@ -11727,7 +12046,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -11747,7 +12066,7 @@
             "impact": null,
             "html": "<title>(link sends email)</title>",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"] > title"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"] > title"
             ]
           },
           {
@@ -11767,7 +12086,7 @@
             "impact": null,
             "html": "<path d=\"M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z\"></path>",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"] > path"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"] > path"
             ]
           },
           {
@@ -11905,7 +12224,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"field__items\">",
+            "html": "<div class=\"field__items\">\n              <div class=\"field__item\">Academic</div>\n          <div class=\"field__item\">Community College</div>\n          <div class=\"field__item\">Public</div>\n          <div class=\"field__item\">School K-12</div>\n              </div>",
             "target": [
               ".field--name-field-librarytype > .field__items"
             ]
@@ -11988,26 +12307,6 @@
             "html": "<div class=\"field__item\">School K-12</div>",
             "target": [
               ".field__item:nth-child(4)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<div class=\"field__item\">Special</div>",
-            "target": [
-              ".field__item:nth-child(5)"
             ]
           },
           {
@@ -12327,7 +12626,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -12347,7 +12646,7 @@
             "impact": null,
             "html": "<title>(link sends email)</title>",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"] > title"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"] > title"
             ]
           },
           {
@@ -12367,7 +12666,7 @@
             "impact": null,
             "html": "<path d=\"M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z\"></path>",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"] > path"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"] > path"
             ]
           },
           {
@@ -12665,7 +12964,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
+            "html": "<li class=\"menu-item\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">\n        <a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>\n              </li>",
             "target": [
               "#block-amigos-footer > .menu > .menu-item:nth-child(3)"
             ]
@@ -12685,9 +12984,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a href=\"/services/job-bank\" data-drupal-link-system-path=\"node/8762\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
+            "html": "<a href=\"/services/job-bank\" data-asw-org-font-size=\"16\" style=\"font-size: 16px;\">Job Bank</a>",
             "target": [
-              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"][data-drupal-link-system-path=\"node/8762\"]"
+              "#block-amigos-footer > .menu > .menu-item:nth-child(3) > a[href$=\"job-bank\"]"
             ]
           },
           {
@@ -12745,7 +13044,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form\" id=\"block-amigos-searchform\" role=\"search\">",
+            "html": "<div class=\"search-block-form block block-search container-inline\" data-drupal-selector=\"search-block-form-2\" id=\"block-amigos-searchform\" role=\"search\">",
             "target": [
               "#block-amigos-searchform"
             ]
@@ -12765,9 +13064,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<form action=\"/search/node\" method=\"get\" id=\"search-block-form\" accept-charset=\"UTF-8\">",
+            "html": "<form action=\"/search/node\" method=\"get\" id=\"search-block-form--2\" accept-charset=\"UTF-8\">",
             "target": [
-              "#block-amigos-searchform > form"
+              "#search-block-form--2"
             ]
           },
           {
@@ -12787,7 +13086,7 @@
             "impact": null,
             "html": "<div class=\"js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search"
+              "#search-block-form--2 > .js-form-item.form-item.js-form-type-search"
             ]
           },
           {
@@ -12805,9 +13104,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<label for=\"edit-keys\" class=\"visually-hidden\">Search</label>",
+            "html": "<label for=\"edit-keys--2\" class=\"visually-hidden\">Search</label>",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > label"
+              "label[for=\"edit-keys--2\"]"
             ]
           },
           {
@@ -12825,9 +13124,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
+            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys--2\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
             "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
+              "#edit-keys--2"
             ]
           },
           {
@@ -12845,9 +13144,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div data-drupal-selector=\"edit-actions\" class=\"form-actions js-form-wrapper form-wrapper\" id=\"edit-actions\"><input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">\n</div>",
+            "html": "<div data-drupal-selector=\"edit-actions\" class=\"form-actions js-form-wrapper form-wrapper\" id=\"edit-actions--2\"><input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit--2\" value=\"Search\" class=\"button js-form-submit form-submit\">\n</div>",
             "target": [
-              "#block-amigos-searchform > form > .form-actions.js-form-wrapper.form-wrapper"
+              "#edit-actions--2"
             ]
           },
           {
@@ -12865,9 +13164,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit\" value=\"Search\" class=\"button js-form-submit form-submit\">",
+            "html": "<input data-drupal-selector=\"edit-submit\" type=\"submit\" id=\"edit-submit--2\" value=\"Search\" class=\"button js-form-submit form-submit\">",
             "target": [
-              "#block-amigos-searchform > form > .form-actions.js-form-wrapper.form-wrapper > .js-form-submit.form-submit[data-drupal-selector=\"edit-submit\"]"
+              "#edit-submit--2"
             ]
           },
           {
@@ -13451,7 +13750,32 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "svg[aria-label=\"(link is external)\"]"
+              "a[href$=\"rocksbackpages.com/\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "svg-non-empty-title",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has a child that is a title"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute exists and is not empty"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"ext\" data-extlink-placement=\"append\" aria-label=\"(link is external)\" viewBox=\"0 0 80 40\" role=\"img\" aria-hidden=\"false\">",
+            "target": [
+              "p:nth-child(5) > .ext[rel=\"noopener noreferrer\"][data-extlink=\"\"] > .extlink-nobreak > .ext[aria-label=\"(link is external)\"][viewBox=\"0 0 80 40\"]"
             ]
           },
           {
@@ -13476,7 +13800,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href=\"mailto:ceballos@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:mds@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           },
           {
@@ -13501,7 +13825,7 @@
             "impact": null,
             "html": "<svg focusable=\"false\" width=\"1em\" height=\"1em\" class=\"mailto\" data-extlink-placement=\"append\" aria-label=\"(link sends email)\" viewBox=\"0 10 70 20\" role=\"img\" aria-hidden=\"false\">",
             "target": [
-              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > svg[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"][focusable=\"false\"]"
+              "a[href$=\"mailto:info@amigos.org\"] > .extlink-nobreak > .mailto[aria-label=\"(link sends email)\"][viewBox=\"0 10 70 20\"]"
             ]
           }
         ]
@@ -13538,83 +13862,7 @@
         ]
       }
     ],
-    "incomplete": [
-      {
-        "id": "duplicate-id-aria",
-        "impact": "critical",
-        "tags": [
-          "cat.parsing",
-          "wcag2a",
-          "wcag412",
-          "EN-301-549",
-          "EN-9.4.1.2"
-        ],
-        "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-        "help": "IDs used in ARIA and labels must be unique",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/duplicate-id-aria?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "edit-keys",
-                "relatedNodes": [
-                  {
-                    "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
-                    "target": [
-                      "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: edit-keys"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\" placeholder=\"Enter search terms...\">",
-            "target": [
-              "input[placeholder=\"Enter search terms...\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: edit-keys"
-          }
-        ]
-      }
-    ],
-    "violations": [
-      {
-        "id": "label-title-only",
-        "impact": "serious",
-        "tags": [
-          "cat.forms",
-          "best-practice"
-        ],
-        "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-        "help": "Form elements should have a visible label",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=axeAPI",
-        "nodes": [
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "title-only",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Only title used to generate label for form element"
-              }
-            ],
-            "impact": "serious",
-            "html": "<input title=\"Enter the terms you wish to search for.\" data-drupal-selector=\"edit-keys\" type=\"search\" id=\"edit-keys\" name=\"keys\" value=\"\" size=\"15\" maxlength=\"128\" class=\"form-search\">",
-            "target": [
-              "#block-amigos-searchform > form > .js-form-item.form-item.js-form-type-search > .form-search[data-drupal-selector=\"edit-keys\"][type=\"search\"]"
-            ],
-            "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
-          }
-        ]
-      }
-    ]
+    "incomplete": [],
+    "violations": []
   }
 }
