@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Broken Links Report</title>
+<style>
+body { font-family: system-ui, sans-serif; padding: 2rem; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; }
+th { background: #eee; }
+tr:nth-child(even) { background: #fafafa; }
+</style>
+</head>
+<body>
+<h1>Broken Links Report</h1>
+<table>
+<thead><tr><th>Source Page</th><th>Link</th><th>Status</th><th>Link Text</th></tr></thead>
+<tbody>
+<tr><td>https://amigos.org</td><td>http://www.twitter.com/@AmigosLibServ</td><td>520</td><td></td></tr>
+<tr><td>https://amigos.org</td><td>https://amigos.org/membership/member-directory</td><td>FAILED</td><td>Member Directory</td></tr>
+<tr><td>https://amigos.org/services/continuing-education</td><td>https://mycourses.amigos.org/bbb-requirements</td><td>403</td><td>BigBlueButton's detailed requirements page</td></tr>
+<tr><td>https://amigos.org/services/association-management</td><td>http://www.oklibs.org/</td><td>403</td><td>Oklahoma Library Association</td></tr>
+<tr><td>https://amigos.org/news/membership-and-people</td><td>https://www.molib.org/Annual-Conference</td><td>404</td><td>Missouri Library Association (MLA) Annual Conference</td></tr>
+<tr><td>https://amigos.org/news/products-and-partnerships</td><td>https://ideas.demco.com/blog/school-library-annual-planning/</td><td>403</td><td>Annual Planning for School Librarians</td></tr>
+<tr><td>https://amigos.org/services/continuing-education/free-courses</td><td>https://amigos.org/services/continuing-education/discover-hyku-empowering-libraries-open-source-repository-solutions</td><td>403</td><td>Discover Hyku: Empowering Libraries with Open-Source Repository Solutions</td></tr>
+<tr><td>https://amigos.org/services/continuing-education/free-courses</td><td>https://amigos.org/services/continuing-education/hive-tips-and-tricks-using-generative-ai</td><td>403</td><td>The Hive: Tips and Tricks for Using Generative AI</td></tr>
+<tr><td>https://amigos.org/services/job-bank/music-cataloging-and-subject-specialist-rice-university-houston-tx</td><td>https://knowledgecafe.rice.edu/fair-labor-standards-act-flsa</td><td>406</td><td>FLSA</td></tr>
+<tr><td>https://amigos.org/services/job-bank/music-cataloging-and-subject-specialist-rice-university-houston-tx</td><td>https://knowledgecafe.rice.edu/benefits</td><td>406</td><td>https://knowledgecafe.rice.edu/benefits</td></tr>
+<tr><td>https://amigos.org/services/job-bank/institutional-repository-and-business-librarian-university-missouri-st-louis-mo</td><td>https://erecruit.umsystem.edu/psc/tamext/STLOU/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&amp;Action=U&amp;SiteId=11&amp;FOCUS=Applicant&amp;SiteId=11&amp;JobOpeningId=58568&amp;PostingSeq=1</td><td>405</td><td>here: https://erecruit.umsystem.edu/psc/tamext/STLOU/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&amp;Action=U&amp;SiteId=11&amp;FOCUS=Applicant&amp;SiteId=11&amp;JobOpeningId=58568&amp;PostingSeq=1</td></tr>
+<tr><td>https://amigos.org/services/job-bank/access-services-librarian-university-missouri-st-louis-mo</td><td>https://erecruit.umsystem.edu/psc/tamext/STLOU/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&amp;Action=U</td><td>405</td><td>https://erecruit.umsystem.edu/psc/tamext/STLOU/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_SCHJOB_FL&amp;Action=U</td></tr>
+<tr><td>https://amigos.org/services/job-bank/librarian-i-catalog-texas-christian-university-fort-worth-tx</td><td>https://jobs.tcu.edu/jobs/librarian-i-catalog-tcu-main-campus-texas-united-states</td><td>404</td><td>https://jobs.tcu.edu/jobs/librarian-i-catalog-tcu-main-campus-texas-united-states</td></tr>
+<tr><td>https://amigos.org/services/job-bank/librarian-reference-collection-development-college-mainland-texas-city-tx</td><td>https://jobs.com.edu/postings/4058</td><td>FAILED</td><td>https://jobs.com.edu/postings/4058</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-355</td><td>404</td><td>Transcripts and Captions and Metadata, Oh My!: A Case Study on Making Digitized Film Accessible</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-353</td><td>404</td><td>Opening Keynote - Digital Accessibility for Libraries in 2026</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-356</td><td>404</td><td>Kristin Flachsbart</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-361</td><td>404</td><td>Accessibility in Action: Steps, Strategies, and Tools to Scale the Mountain</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-354</td><td>404</td><td>Matthew Mayton</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-352</td><td>404</td><td>Amy Drayer</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-360</td><td>404</td><td>Heather Lundy</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-367</td><td>404</td><td>Accessibility-first Strategies for Digital Content</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-357</td><td>404</td><td>Autumn Roberts</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-358</td><td>404</td><td>Rachel Baack</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-359</td><td>404</td><td>Patti Bruno</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-365</td><td>404</td><td>Holli Kubly</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-366</td><td>404</td><td>Jingjing Wu</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-364</td><td>404</td><td>Make Your Videos Accessible</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-362</td><td>404</td><td>Naomi Schemm</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-370</td><td>404</td><td>Where Do We Go from Here? A Discussion on Library Accessibility Next Steps</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-368</td><td>404</td><td>Christina Pryor</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-363</td><td>404</td><td>Rebecca Paulraj</td></tr>
+<tr><td>https://amigos.org/services/online-conference/digital-accessibility-in-libraries</td><td>https://amigos.org/node/12794%20#paragraph-369</td><td>404</td><td>Kyla Hunt</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-300</td><td>404</td><td>Opening Keynote - Partnerships in Action: WashU Libraries &amp; DI2 Navigating AI-Enhanced Services</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-299</td><td>404</td><td>Mimi Calter</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-301</td><td>404</td><td>Rebecca Graff</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-302</td><td>404</td><td>Julia Anderson</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-303</td><td>404</td><td>Ramón García</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-306</td><td>404</td><td>Rapid Response to AI: Everything Counts</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-318</td><td>404</td><td>Kelly Walker-Moseley</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-304</td><td>404</td><td>Megan Heuer</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-305</td><td>404</td><td>Melissa Johnson</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-310</td><td>404</td><td>Lunch Break</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-313</td><td>404</td><td>Fixed-Prompt Metadata Workflows: Practical Paths to the AI-Enhanced Library</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-308</td><td>404</td><td>More Than Pretty Pictures: Text and Data Extraction to Maximize Usefulness of Digitized Materials</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-307</td><td>404</td><td>Steven Pryor</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-311</td><td>404</td><td>Synae Yoon</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-315</td><td>404</td><td>Gene-AI-ology: Harnessing the Power of Artificial Intelligence in Family History Research</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-312</td><td>404</td><td>Tue Vu, PhD</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-317</td><td>404</td><td>Closing Keynote - The Human Element: Maintaining Judgment and Accountability When AI is Used</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-316</td><td>404</td><td>Lauren Hays</td></tr>
+<tr><td>https://amigos.org/services/online-conference/practical-paths-to-the-ai-enhanced-library</td><td>https://amigos.org/node/12725%20#paragraph-314</td><td>404</td><td>Rachael Scott</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-270</td><td>404</td><td>Feed the Funnel</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-262</td><td>404</td><td>Amanda May</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-272</td><td>404</td><td>Lunch Break</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-263</td><td>404</td><td>Taking A "Paws"-- Kitten Cuddle Puddle with Barnie's Place Feline Rescue</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-259</td><td>404</td><td>Diana Moronta</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-261</td><td>404</td><td>Opening Keynote: Lifting as We Climb: Building Community in Libraries</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-260</td><td>404</td><td>Alyssa Brissett</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-269</td><td>404</td><td>Maggie Moore</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-268</td><td>404</td><td>Sue Lightfoot-Horine</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-278</td><td>404</td><td>Closing Keynote: The Power of Place: Building Futures Through Innovation and Inclusion</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-275</td><td>404</td><td>Amber Carr</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-274</td><td>404</td><td>Building Community Through Body-Mind Wellness Programming</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-277</td><td>404</td><td>Megan Phifer-Davis</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-276</td><td>404</td><td>Spiva Library is Feeding the Pride at MSSU</td></tr>
+<tr><td>https://amigos.org/services/online-conference/libraries-cultivating-community</td><td>https://amigos.org/node/12651%20#paragraph-273</td><td>404</td><td>Leslie Kravitz Fox</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-90</td><td>404</td><td>CJ Williams</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-93</td><td>404</td><td>Sara Mautino</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-87</td><td>404</td><td>Opening Keynote: Curating Diverse Community Collections: A Road Map</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-116</td><td>404</td><td>Wendy K. Bartlett</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-86</td><td>404</td><td>Mary Schreiber</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-91</td><td>404</td><td>Nikita Mohammed</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-92</td><td>404</td><td>Responsive Collection Strategies: HCPL’s Community-Centered Approach to Library Services</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-94</td><td>404</td><td>Documenting Indigenous Architecture: A Digital Bibliography for Oklahoma</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-89</td><td>404</td><td>Fostering a Relevant Collection for Your Community in Austere Times: 3 Strategies</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-96</td><td>404</td><td>Lunch Break</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-99</td><td>404</td><td>Behind the Stacks</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-88</td><td>404</td><td>Melissa Freiley</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-97</td><td>404</td><td>Gabriel Lopez (Moderator)</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-98</td><td>404</td><td>Elizabeth Bradshaw</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-102</td><td>404</td><td>No Stone Unturned: Taking a Deeper Look at Your Library</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-118</td><td>404</td><td>Christina Taylor</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-119</td><td>404</td><td>Majestie Varnado</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-100</td><td>404</td><td>Katherine Witzig</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-104</td><td>404</td><td>Closing Keynote: Reflecting Our Communities: The African American Subject Funnel Project</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-103</td><td>404</td><td>Michelle Cronquist</td></tr>
+<tr><td>https://amigos.org/collections-reflect-communities</td><td>https://amigos.org/node/12485%20#paragraph-101</td><td>404</td><td>Heather D. Hutto</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-161</td><td>404</td><td>Member Business Meeting</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-170</td><td>404</td><td>AI Instruction in the Library and Beyond: Pedagogical Approaches for Students and Faculty</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-163</td><td>404</td><td>Lunch Break</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-158</td><td>404</td><td>Julie Mosbo Ballestro</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-127</td><td>404</td><td>Welcome and Call to Order</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-178</td><td>404</td><td>Dawndrea Casey</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-159</td><td>404</td><td>Opening Keynote - Transforming Libraries: Embracing Change for the Future</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-179</td><td>404</td><td>Kelly Williams</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-175</td><td>404</td><td>Erin Owens</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-167</td><td>404</td><td>Experiences with SpringShare</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-180</td><td>404</td><td>Michelle Shea</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-176</td><td>404</td><td>Lisa Louis</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-191</td><td>404</td><td>Rachel Pecotte</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-177</td><td>404</td><td>Sarah Timm</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-165</td><td>404</td><td>Navigating Library Hosting in the Information Age</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-187</td><td>404</td><td>Teach with Amigos</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-186</td><td>404</td><td>Naomi Gonzales</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-174</td><td>404</td><td>Christine Peterson</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-185</td><td>404</td><td>Christina Pryor</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-171</td><td>404</td><td>Break</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-188</td><td>404</td><td>Angela Whitfield</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-190</td><td>404</td><td>Turning space into place: Building community through creative engagement</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-189</td><td>404</td><td>Kimberly Richardson</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-182</td><td>404</td><td>Better Together. Collaboration, Facilitation, and the Power of Strategic Partnerships on Project MUSE</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-181</td><td>404</td><td>Tricia Miller-Chareun</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-184</td><td>404</td><td>Break</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-169</td><td>404</td><td>Closing Keynote: Interview with an Innovator</td></tr>
+<tr><td>https://amigos.org/membership/annual-conference/2025</td><td>https://amigos.org/node/12502%20#paragraph-168</td><td>404</td><td>Lisa Wells</td></tr>
+<tr><td>https://amigos.org/news/creative-ways-use-bookmarks-your-library</td><td>https://ideas.demco.com/blog/more-than-a-page-marker/</td><td>403</td><td>More Than a Page Marker</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/ieLiVQlBdhdMmbLP83dSwqnB1x9DrBxYwisZK3RSIeUx?msdynttrid=0KHob04cbWn9vZboAyAu3EQJ0mw_bQbfPlMgk5Pc9SI#</td><td>FAILED</td><td>Aug 14</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/KUY3UVc5Gu2v7smAX31f4q2Fnql91rOOcfktKaganKQx?msdynttrid=SUSyFOyWfwpO3va1pmv6ujLXB86l55k3RDfXLrtNu5U#</td><td>FAILED</td><td>Jun 19</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/tf6hun0vFWaZZ07D1OMNwKg8qTGPC7ix3S9V7hMIxkgx?msdynttrid=7qbJKcl7bR0OYUoKs-g2uDPmTE61Lv2ez9H1lg8orZw#</td><td>FAILED</td><td>May 22</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/iCHH20AcEEcNkaqpSBWdxElt7HV2CDgDaGCPgHwefNEx?msdynttrid=uACJtr5lncBtajNJujhO2mk2So_i1cg6EPLU49FGuuU#</td><td>FAILED</td><td>Jul 31</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/EuKTSXyKVlTBRZdJTw5qS23k6UCr5oIxxnjCjtODzEwx?msdynttrid=AYt54dw9GywuMN0ttzI1C37tX0kLVGgKH4ckK7yAcDs#</td><td>FAILED</td><td>May 8</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/ek6bmHFBkNcvLjsfInSZ1AqB3qokS0hfKTrlcMUqPvkx?msdynttrid=N3lAS9N52eYxT1PRgoGRIc3rimCktsfmcLXv89zZxLg#</td><td>FAILED</td><td>Jul 3</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/WSjYlGdzGYreMEkGyxG3J61uDgzO0JOW0dA2VZGQfxMx?msdynttrid=28VNCCctFXZ84n_hallOQyryQmqp4J8qR3NcKz1OZK4#</td><td>FAILED</td><td>Jul 17</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/Di6tDJEhIRdt6saD3ICfy8iGlZINbDzCAxXyJfbxyw8x?msdynttrid=-Q0WIOibyXKowCHe_CIMcg_R4gqikbQ0Uco1S29Fk0s#</td><td>FAILED</td><td>Jun 5</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/9AUBlUejsyQCxh7iIbSqMnqXvILiXTxERRuZndbUWFEx?msdynttrid=B7iDmSMpcTypoNJPBt0gUENTNn-Ck6xGyPwkqfQpGTQ#</td><td>FAILED</td><td>Apr 24</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/5voOM7q8YsF0PsEiSWzA1LbslTaHUeN0jWzXJGrG4yox?msdynttrid=8v8NW4Ctplpc42ayagwvCC6IU08-s6VftBrrg7jcyAM#</td><td>FAILED</td><td>Apr 10</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/bNooAIZmNgYKk8iwdtW1cJ0oNwZTxC0dTPWRurv6zosx?msdynttrid=37r9n6ZxxR3-oRhFi5pb8e3Y7sejAf-r1CBzY55P5c4#</td><td>FAILED</td><td>Mar 13</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/ZlffHMSaBqx8e0wxJO1PJEBaEPAsFdNWGrSoOtsqLx8x?msdynttrid=tywQ1dY448l4z27sycKMGzkaBnpgPPIA-113ofv7RiY#</td><td>FAILED</td><td>Mar 27</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/gurSMTpAZK7isGFyeuYA9FLAKzq4hvuMrPH8dXDWpE8x?msdynttrid=tieqtImeoDbXhWSMK1n9jwqbuJOOpG0grbQ0EVglURI#</td><td>FAILED</td><td>Jan 30</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/LQZLIlkWfqia4t46HUGBOGvHs6WRQxJbxQ1FnZbp6g8x?msdynttrid=xMq9bStFJGXgtWkJcMQGikHVlytrzNV5CcnDsLoOrq4#</td><td>FAILED</td><td>Feb 13</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/93Uh86TVtbmIMkQpapAX4vdnEcQsEE3fxlTFq48UIDUx?msdynttrid=aU4nnjUdBnNzfL6w20ddcR9I-7qiIBWXcXNIIMnALNM#</td><td>FAILED</td><td>Feb 27</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/U5k1HW1hAwP4AEzYta78x0kR26N3CEVfYiblUvl07Pwx?msdynttrid=8asUolfMnYlPf_sb9ehIzHL60KecSjnPMOwmQCUrtQk#</td><td>FAILED</td><td>Dec 19</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/CldbaTwTN3HGt75WlOsirZOpb7ZzsxbobSO47R3QcT4x?msdynttrid=bFMGoJywasOgZuUiLblljVtlHDJXT2DSLsGrLUBmAXc#</td><td>FAILED</td><td>Dec 5</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/pK3TN6HaZAeZRLSoSdOF3c0DmJ1hIE37ctVNSui3xIkx?msdynttrid=FcsNEnyfH8LhttbD41BsG_H00UrNseihiPkeXmmJeKU#</td><td>FAILED</td><td>Jan 16</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/cu16EpS7HT9aP2BxSmoXJCaDpRky5dppKIPxVw1a0oIx?msdynttrid=1-by9FkofMhrumcOgQUgCSlpqDKRKhLJvgTG0mqZwa0#</td><td>FAILED</td><td>Nov 21</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/oSNOVaDv5zUUfZ2vygu6fEjbelrlxTxPcxG8kcvQDOAx?msdynttrid=39VWna_b-udnh-RiuBPfFgpIgBKZOvSbekEMHbGYjbA#</td><td>FAILED</td><td>Nov 7</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/al8KmqI1pxQPfl9NWZZxCNNUi330aKin4KFxzUn2UOwx?msdynttrid=mpt2px2n75znu1HUZOlaPSkcP6M3SB95F1iOYQ_uPiA#</td><td>FAILED</td><td>Oct 24</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/MIEOjcIFqmYqoj0PoHAZVhbcR9w779iYYQDhxh4KEdgx?msdynttrid=Svfx3j-hty0gG-OGJff6JjBDTLTnP5dyc8-yVihT8tE#</td><td>FAILED</td><td>Oct 10</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/4TiuhwYYTbvIPIZTnvGCWFSo3IGbTD9jb70Ke6gWLDAx?msdynttrid=q0b-2pDrMXZrTl18RXN51mzqU9Y5WIeUYD7-5gA291o#</td><td>FAILED</td><td>Sep 26</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/pLlueNEitXfxULwGkQoO6UKNUXs1x7xWDuGWbZj0aP8x?msdynttrid=RFRKi5fAQUUTvcLcL0B9zDn_dst4_jB7f5LMxO3BYos#</td><td>FAILED</td><td>Aug 29</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/RwlnFa1Lxw6yAQpOkxdc3JplOg2k8cx12xdvJjt753Mx?msdynttrid=diUoUg-fapxaxGnFkbJXDxYvAa0Ds7LfAdNMrjWb8Bk#</td><td>FAILED</td><td>Sep 12</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/p6ArDkjGPRwGiT4fXzKZ9gWmVEF742xKREjKDAQkLpwx?msdynttrid=ZGmGikBf2nI_9NTl7w2Ez6ENep6CGBzS7_U-0ocQ_Tw#</td><td>FAILED</td><td>Aug 15</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/Q8xu0nVyscaxygxmsPdPssupMoB6rf6ljn7Njn3qf7cx?msdynttrid=00ermg6L57bktIdwdvYlmoVqGaQyTz1HKJl-tUlJdcs#</td><td>FAILED</td><td>Aug 1</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/ALT6igWywb9fbXh8fQtmFDHtIDdO2Z1uBOOeCN2Zprwx?msdynttrid=11L4CgJAxKX2DY_Hu8tdEihFhfwQLsMymVGRAuQ6zWM#</td><td>FAILED</td><td>Jul 18</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/o9ytLtTOKApvyUsKOQYZf3ljVZj1qcUiPHGjiKeL95Qx?msdynttrid=AoLbQkFVcEfraU_UKBfEsWq_38DG7WeOxpitZPO27qw#</td><td>FAILED</td><td>Jun 20</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/LISOVoIc4Aux6pEAxktfGht06lTPjcNJIgiCHNSrF5kx?msdynttrid=K43hFDOmj0UsgUbzLVbyALqfSHvxY5pDX8pEOjtsqos#</td><td>FAILED</td><td>Jun 6</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/xWRgpC2OXf0QYC4hFGkDnhBqCOBy5eQUoRHhj0SWWugx#</td><td>FAILED</td><td>May 23</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/WF6y9AWdvA0Lb1ZOuLUrYxAE4mcx0tPj2cpox57mWh4x#</td><td>FAILED</td><td>May 9</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/bkyRMVDPvozIavxdVvbTOZOExxda5gdrvZKk7NSIv6wx?msdynttrid=VwOeSvc5gg_MD_PfP0vpQLZzHG-9jwYLgfQMJIbayG4#</td><td>FAILED</td><td>June 12, 2025</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/AX42hzqy9aypzQPxPBenb8MBU6l6uMs7ysvfqCxkWGsx?msdynttrid=8Jk5dU3BpYtzEeqBKpYOuMfzeLY55y3h0Cofaa6oZ48#</td><td>FAILED</td><td>March 20, 2025</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/hUBaMkKKrEQowD3rnmugdwVOixMaUxjG9yXdMHSbOTAx?msdynttrid=1f4smVTD2ylItVoCBmgQr_Cl7WyyXrZh8aNkxGW1-aQ#</td><td>FAILED</td><td>January 8, 2025</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/jdAPaQBMgbukjcAvL38zQpoSzMTsh5bQqIazljkFUiMx?msdynttrid=kdYN6PQvtUWHjz8F5GmTgWabpd84OxAyCaJsxaX1izs#</td><td>FAILED</td><td>September 4, 2024</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/GhHS9Q8qYbujaUEWNsdxxv8FfnXE1WEX9dUHbKvkJywx?msdynttrid=x-8tkzKaZz_YuQvg0t59fr2ozzqLv18r_1VeSnV_kAU#</td><td>FAILED</td><td>March 7, 2024</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/7AXxZKryZBstCAsYNOEjx2JUDGw9TSzPMeTuh3IGVvwx?msdynttrid=01gRRKvSoE5CAEPX7Y_chTPKDZPPlWolheiD36mIYPk#</td><td>FAILED</td><td>September 5, 2023</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/k0Be3Xs5WSYxJuXo43uCfTAmUel5GAB7xMSEOQSDhPgx?msdynttrid=i0daqlxaUBEOOIsuuHnb_FyQzsgfZLi6CtWUcxaCXEI#</td><td>FAILED</td><td>November 29, 2023</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/d66LPtPULNUoFMOty8TK1AX8DICk1PG8vhAdUT8vBs4x?msdynttrid=ZjvysgG3PKSp1MCI3vFu4bAgZCwEPq3AE6NFoqxJU8I#</td><td>FAILED</td><td>Issue 6 | May/June 2023</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/3tsDynx</td><td>403</td><td>Issue 3 | Nov/Dec 2022</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/3Br3pkr</td><td>403</td><td>Issue 2 | Sep/Oct 2022</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/3gj55Bh</td><td>403</td><td>Issue 4 | Mar/Apr 2022</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/3vmDs2c</td><td>403</td><td>Issue 5 | May/Jun 2022</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/3P8ZrAN</td><td>403</td><td>Issue 1 | Jul/Aug 2022</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/3JbmR6A</td><td>403</td><td>Issue 3 | Jan/Feb 2022</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/2W2jYRM</td><td>403</td><td>Issue 2 | Fall 2021</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/3x7C42b</td><td>403</td><td>Issue 1 | Summer 2021</td></tr>
+<tr><td>https://amigos.org/news/newsletters</td><td>https://conta.cc/3rYFEZP</td><td>403</td><td>Issue 4 | Spring 2021</td></tr>
+<tr><td>https://amigos.org/news/have-you-shared-your-input-yet</td><td>https://forms.microsoft.com/r/nN4paygvn8</td><td>405</td><td>October’s question about library technology needs</td></tr>
+<tr><td>https://amigos.org/news/have-you-shared-your-input-yet</td><td>https://forms.microsoft.com/r/rL2HjPg6Bj</td><td>405</td><td>This month’s one question survey focuses on this idea of connection</td></tr>
+<tr><td>https://amigos.org/news/two-amigos-cfps-closing-soon-submit-your-proposal-today</td><td>https://forms.office.com/r/irnpU1XdrS</td><td>405</td><td>Submit your Hive proposal</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/infobase</td><td>http://www.infobaselearning.com/</td><td>405</td><td>http://www.infobaselearning.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/infobase</td><td>https://infobase.com/products-universities-colleges?_sft_product_tag=ebook-collections</td><td>404</td><td>Credo Essentials Collections</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/infobase</td><td>https://infobaseplatform.zendesk.com/hc/en-us/articles/37300098682779-Accessibility-Statement-for-the-Infobase-Platform</td><td>403</td><td>Accessibility</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/infobase</td><td>https://infobase.com/products/writers-reference-center/</td><td>404</td><td>Writer’s Reference Center</td></tr>
+<tr><td>https://amigos.org/news/oxford-research-encyclopedias-move-oxford-academic</td><td>https://academic.oup.com/pages/about-oxford-academic/upcoming-changes-for-customers?utm_term=Customer%20Services&amp;utm_content=brick1%2Bcta&amp;utm_campaign=oupac-campaign%3A&amp;utm_medium=email&amp;utm_source=adestra&amp;nbd_source=adestra&amp;nbd=3905400</td><td>403</td><td>information page</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/pages/about-oxford-academic/accessibility</td><td>403</td><td>Accessibility | Oxford Academic</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/amamanualofstyle</td><td>403</td><td>AMA Manual of Style Online</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/officialmethodsofanalysis-aoac</td><td>403</td><td>Official Methods of Analysis of AOAC International</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/oxford-clinical-psychology</td><td>403</td><td>Oxford Clinical Psychology</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/search-results?sort=Title+-+A+to+Z&amp;f_ContentType=Book&amp;fl_SiteID=191&amp;cqb=%5B%7B%22terms%22:%5B%7B%22filter%22:%22Title%22,%22input%22:%22The%20Oxford%20History%20of%20Western%20Music%22,%22exactMatch%22:true%7D%5D%7D%5D&amp;qb=%7B%22Title1-exact%22:%22The%20Oxford%20History%20of%20Western%20Music%22%7D&amp;page=1</td><td>403</td><td>Oxford History of Western Music Online (now part of Oxford Scholarship Online -…</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/intersections</td><td>403</td><td>Oxford Intersections</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/oxford-law-pro</td><td>403</td><td>Oxford Law Pro</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/journals</td><td>403</td><td>Oxford Journals</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>http://www.oxfordhandbooks.com/</td><td>403</td><td>Oxford Handbooks Online</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/oxford-scholarship-online</td><td>403</td><td>Oxford Scholarship Online</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/sipri-yearbook</td><td>403</td><td>Stockholm International Peace Research Institute Yearbook</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>http://oxfordmedicine.com/</td><td>403</td><td>Oxford Medicine Online</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>https://academic.oup.com/very-short-introductions</td><td>403</td><td>Very Short Introductions</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/oxford-university-press</td><td>http://www.e-enlightenment.com/</td><td>FAILED</td><td>Electronic Enlightenment</td></tr>
+<tr><td>https://amigos.org/news/share-research-coevolution-your-campus</td><td>https://bioone.org/</td><td>FAILED</td><td>https://bioone.org</td></tr>
+<tr><td>https://amigos.org/news/share-research-coevolution-your-campus</td><td>https://bioone.org/vista-coevolution?utm_source=mailchimp&amp;utm_medium=email&amp;utm_campaign=vista</td><td>FAILED</td><td>for free through March 15, 2026</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/browse/bioonecomplete</td><td>FAILED</td><td>BioOne Complete</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/title-lists</td><td>FAILED</td><td>Title Lists</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/archive</td><td>FAILED</td><td>secures continuing access</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/subscribe/why-subscribe</td><td>FAILED</td><td>BioOne Digital Library Information for Librarians</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/instructor-resources</td><td>FAILED</td><td>Instructor Resources</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/resources-for-librarians-and-administrators</td><td>FAILED</td><td>Library Resources</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/browse/ebooks/collection</td><td>FAILED</td><td>ESA eBook Collection</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/help</td><td>FAILED</td><td>Help Center</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>https://bioone.org/documents/Accessibility/BioOne_Complete_VPAT_2019.4.16.pdf</td><td>FAILED</td><td>https://bioone.org/documents/Accessibility/BioOne_Complete_VPAT_2019.4.16.pdf</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bioone</td><td>http://www.bioone.org/</td><td>FAILED</td><td>http://www.bioone.org/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/discount-direct/demco</td><td>http://www.demco.com/software/boopsie&amp;intcmp=DSNav_Boopsie</td><td>404</td><td>Boopsie</td></tr>
+<tr><td>https://amigos.org/services/continuing-education/creating-library-marketing-plan</td><td>http://www.librarymarketingbookclub.org/</td><td>404</td><td>www.librarymarketingbookclub.org</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/discount-direct/backstage-library-works</td><td>http://www.bslw.com/</td><td>403</td><td>http://www.bslw.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/ABC-CLIO</td><td>http://www.abc-clio.com/</td><td>FAILED</td><td>http://www.abc-clio.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/ABC-CLIO</td><td>https://www.abc-clio.com/shop/</td><td>FAILED</td><td>https://www.abc-clio.com/shop/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/altarama</td><td>http://www.altarama.com/</td><td>FAILED</td><td>http://www.altarama.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/altarama</td><td>http://altarama.com/Products/DeskStats</td><td>FAILED</td><td>DeskStats</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/altarama</td><td>http://altarama.com/Products/RefChatter</td><td>FAILED</td><td>RefChatter</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/altarama</td><td>http://altarama.com/Products/RefTracker</td><td>FAILED</td><td>RefTracker</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/altarama</td><td>http://altarama.com/Products/SMSreference</td><td>FAILED</td><td>SMSreference</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/ambrose-video-publishing</td><td>http://www.ambrosedigital.com/index.php?option=com_virtuemart&amp;page=shop.browse&amp;category_id=23&amp;Itemid=59</td><td>404</td><td>By Subject: English</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/ambrose-video-publishing</td><td>http://www.ambrosedigital.com/index.php?option=com_virtuemart&amp;page=shop.browse&amp;category_id=57&amp;Itemid=59</td><td>FAILED</td><td>By Subject: Philosophy</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/asia-studies</td><td>http://www.asia-studies.com/</td><td>FAILED</td><td>http://www.asia-studies.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/asme</td><td>http://asmedigitalcollection.asme.org/</td><td>403</td><td>ASME Digital Collection</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/atlas-systems</td><td>https://www.atlas-sys.com/vtl</td><td>403</td><td>Video Training Library Subscription</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/atlas-systems</td><td>https://www.atlas-sys.com/aeon</td><td>403</td><td>Aeon</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/atlas-systems</td><td>https://www.atlas-sys.com/ares</td><td>403</td><td>Ares</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/atlas-systems</td><td>http://www.atlas-sys.com/</td><td>403</td><td>http://www.atlas-sys.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bloomsbury</td><td>http://www.bloomsbury.com/</td><td>403</td><td>http://www.bloomsbury.com</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bloomsbury</td><td>https://www.bloomsbury.com/dr/digital-resources/</td><td>403</td><td>Click here to launch the digital catalog</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/bloomsbury</td><td>https://www.bloomsbury.com/dr/digital-resources/products/screen-studies/</td><td>403</td><td>Bloomsbury Screen Studies (Launching Spring 2018)</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/boarddocs</td><td>https://www.boarddocs.com/Home.nsf/blog</td><td>405</td><td>https://www.boarddocs.com/Home.nsf/blog</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/boarddocs</td><td>https://www.boarddocs.com/</td><td>405</td><td>https://www.boarddocs.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/cahiers-dart</td><td>https://artifexpress.com/catalogues/agnes-martin/description</td><td>404</td><td>Agnes Martin: Paintings</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/cahiers-dart</td><td>https://artifexpress.com/catalogues/james-siena/description</td><td>404</td><td>James Siena</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/cahiers-dart</td><td>https://artifexpress.com/catalogues/tim-hawkinson/description</td><td>404</td><td>Tim Hawkinson</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/cahiers-dart</td><td>https://artifexpress.com/catalogues/jim-dine-sculpture/description</td><td>404</td><td>Jim Dine: Sculpture, 1983 – Present</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/cambridge-university-press</td><td>http://www.cambridge.org/</td><td>403</td><td>http://www.cambridge.org/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/clcd</td><td>https://stemexplore.clcd.com/</td><td>FAILED</td><td>CLCD STEMExplore</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/columbia-university-press</td><td>http://www.columbia.edu/cu/cup/</td><td>403</td><td>http://www.columbia.edu/cu/cup/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/columbia-university-press</td><td>http://www.columbiagrangers.org/grangers/</td><td>404</td><td>Columbia Granger's World of Poetry Online</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/columbia-university-press</td><td>http://www.academiccharts.com/home</td><td>403</td><td>Academic Charts Online</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/data-planet</td><td>http://www.niso.org/workrooms/seru/registry/</td><td>404</td><td>http://www.niso.org/workrooms/seru/registry/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/data2</td><td>http://www.data2.com/markets.library.phtml</td><td>405</td><td>http://www.data2.com/markets.library.phtml</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/products/wandoo-reader/</td><td>403</td><td>Wandoo Reader</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/products/discoverlocal/?utm_source=Demco&amp;utm_medium=Banner&amp;utm_campaign=Discoverlocal&amp;webSyncID=6d169707-3557-5141-a50</td><td>403</td><td>DicsoverLocal</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/products/signup/?utm_source=Demco&amp;utm_medium=Banner&amp;utm_campaign=SignUp&amp;w6ebSyncID=6d169707-3557-5141-a509-95de7b453a</td><td>403</td><td>Signup</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/products/boopsie/</td><td>403</td><td>Boopsie mobile app</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/</td><td>403</td><td>http://demcosoftware.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/products/dibs/</td><td>403</td><td>D!BS</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/products/signup/</td><td>403</td><td>SignUp</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/products/brainhq/</td><td>403</td><td>BrainHQ</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/demco-software</td><td>http://demcosoftware.com/products/spaces/?utm_source=Demco&amp;utm_medium=Banner&amp;utm_campaign=Spaces&amp;webSyncID=6d169707-3557-5141-a509-95de7b46</td><td>403</td><td>Spaces</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/duke-university-press</td><td>https://www.dukeupress.edu/Assets/Downloads/dup_info_titles.xls</td><td>404</td><td>View our Title List</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/duke-university-press</td><td>http://www.dukeupress.edu/Catalog/ViewProduct.php?productid=45608</td><td>404</td><td>Duke Mathematical Journal: Volumes 1-100</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/duke-university-press</td><td>http://www.dukeupress.edu/Libraries/collectionDetail.php?collectionid=3</td><td>404</td><td>Euclid Prime</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/duke-university-press</td><td>http://www.dukeupress.edu/Libraries/collectionDetail.php?collectionid=2</td><td>404</td><td>e-Duke Books</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/duke-university-press</td><td>http://www.dukeupress.edu/Libraries/collectionDetail.php?collectionid=1</td><td>404</td><td>e-Duke Journals</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/duke-university-press</td><td>http://www.dukeupress.edu/Libraries/sitelicenses.php</td><td>404</td><td>http://www.dukeupress.edu/Libraries/sitelicenses.php</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/edcetera</td><td>https://pulseradiology.com/</td><td>403</td><td>Pulse Radiology</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/10</td><td>404</td><td>ESL Polish</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/</td><td>404</td><td>http://www.mangolanguages.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/12</td><td>404</td><td>ESL Brazilian Portuguese</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/4</td><td>404</td><td>French</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/1</td><td>404</td><td>Brazilian Portuguese</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/6</td><td>404</td><td>Italian</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/3</td><td>404</td><td>Japanese</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/11</td><td>404</td><td>ESL Spanish</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/5</td><td>404</td><td>German</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/7</td><td>404</td><td>Greek</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/9</td><td>404</td><td>Mandarin</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/8</td><td>404</td><td>Russian</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mango-languages</td><td>http://www.mangolanguages.com/lesson/view#/2</td><td>404</td><td>Spanish</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mcgraw-hill</td><td>http://www.accessengineeringlibrary.com/</td><td>FAILED</td><td>AccessEngineering</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/mcgraw-hill</td><td>http://www.accessscience.com/</td><td>FAILED</td><td>AccessScience</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/naxos</td><td>http://www.amigos.org/sites/default/files/naxos_order_0.pdf</td><td>404</td><td>http://www.amigos.org/sites/default/files/naxos_order_0.pdf</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/noodletools</td><td>http://www.noodletools.com/tools/index.php</td><td>404</td><td>NoodleTools</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/noodletools</td><td>http://www.noodletools.com/tos.php</td><td>404</td><td>http://www.noodletools.com/tos.php</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>https://www.optimalresume.com/libraries.html</td><td>404</td><td>https://www.optimalresume.com/libraries.html</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/on-demand/optimal-letter</td><td>404</td><td>OptimalLetter</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/on-demand/optimal-interview</td><td>404</td><td>OptimalInterview &amp; OptimalInterviewPRO</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/on-demand/optimal-resume</td><td>404</td><td>OptimalResume</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/on-demand/optimal-efolio</td><td>404</td><td>OptimalEfolio &amp; OptimalWebsite</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/apis/optimal-occupations</td><td>404</td><td>OptimalOccupations API</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/apis/optimal-interview</td><td>404</td><td>OptimalInterview API</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/on-demand/online-recruiting</td><td>404</td><td>OnlineRecruiting</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/on-demand/optimal-video-resume</td><td>404</td><td>OptimalVideoResume</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/optimal-resume</td><td>http://www.optimalresume.com/products/apis/optimal-us-companies</td><td>404</td><td>OptimalUSCompanies API</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/ovid</td><td>http://www.ovid.com/webapp/wcs/stores/servlet/content_landing_OvidSP_13051_-1_13151</td><td>404</td><td>OVIDSP</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/ovid</td><td>http://www.ovid.com/webapp/wcs/stores/servlet/content_landing_Nursing_13051_-1_13151</td><td>404</td><td>Nursing@OVID</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/ovid</td><td>http://www.ovid.com/webapp/wcs/stores/servlet/content_landing_OvidMD_13051_-1_13151</td><td>404</td><td>OVIDMD</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/ovid</td><td>http://www.ovid.com/webapp/wcs/stores/servlet/content_landing_JBI_13051_-1_13151</td><td>404</td><td>Johanna Briggs Institute Evidence-Based Practice Resources</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/policymap</td><td>http://user-94545020520.cld.bz/SL-July15-2</td><td>404</td><td>http://user-94545020520.cld.bz/SL-July15-2</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/privco</td><td>http://www.privco.com/premium-access/libraries-universities</td><td>404</td><td>PrivCo Database</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/proquest</td><td>http://www.proquest.com/products-services/Historical-Statistical-Abstracts-of-the-US.html</td><td>404</td><td>Historical Statistical Abstracts of the United States</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/proquest</td><td>http://proquest.com/</td><td>FAILED</td><td>http://proquest.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/proquest</td><td>http://www.proquest.com/</td><td>FAILED</td><td>ProQuest Congressional Base</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>http://www.sagepub.com/</td><td>403</td><td>http://www.sagepub.com/</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/state-stats</td><td>404</td><td>SAGE State Stats</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/sage-stats</td><td>403</td><td>SAGE Stats</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/sage-business-researcher</td><td>403</td><td>SAGE Business Researcher</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/local-stats</td><td>404</td><td>SAGE Local Stats</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/reference</td><td>404</td><td>Reference</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/sage-business-stats</td><td>403</td><td>SAGE Business Stats</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/journals-subject-collections</td><td>403</td><td>Subject Collections</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/sage-backfile-packages</td><td>404</td><td>Backfile Packages</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/sage-premier</td><td>404</td><td>SAGE Premier</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/navigator</td><td>403</td><td>SAGE Navigator</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/cq-press-congress-collection</td><td>404</td><td>CQ Press Congress Collection</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://www.sagepub.com/lower-footer/accessibility</td><td>403</td><td>Accessibility | Sage</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/us-political-stats</td><td>403</td><td>U.S. Political Stats</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/sage-publications</td><td>https://us.sagepub.com/en-us/nam/cq-weekly</td><td>403</td><td>CQ Weekly</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/springshare</td><td>ttps://www.springshare.com/accessibility</td><td>FAILED</td><td>Accessibility | Springshare</td></tr>
+<tr><td>https://amigos.org/services/member-discounts/vendors/top-graphics</td><td>http://topgraphics.com/aboutus.html</td><td>404</td><td>MU-0006 Patron Card: 30ML all plastic</td></tr>
+<tr><td>https://amigos.org/news/why-hyku-why-repository-solution</td><td>https://amigos.org/hyku</td><td>404</td><td>repository solution that uses Hyku</td></tr>
+<tr><td>https://amigos.org/news/why-hyku-why-repository-solution</td><td>https://amigos.org/civicrm/event/info?reset=1&amp;id=2073</td><td>404</td><td>November 11, 2024; 1:30 – 2:30 Central Time</td></tr>
+<tr><td>https://amigos.org/news/why-hyku-why-repository-solution</td><td>https://amigos.org/civicrm/event/info?reset=1&amp;id=2058</td><td>404</td><td>September 23, 2024; 1:30 – 2:30 Central Time</td></tr>
+<tr><td>https://amigos.org/services/job-bank/department-head-research-and-learning-services-oklahoma-state-university-0</td><td>https://hr.okstate.edu/equal-opportunity/</td><td>403</td><td>eeo.okstate.edu</td></tr>
+<tr><td>https://amigos.org/services/job-bank/business-librarian-baylor-university-waco-tx</td><td>https://waco.web.baylor.edu/</td><td>403</td><td>Waco, Texas</td></tr>
+<tr><td>https://amigos.org/services/job-bank/business-librarian-baylor-university-waco-tx</td><td>https://hankamer.baylor.edu/</td><td>403</td><td>Hankamer School of Business</td></tr>
+<tr><td>https://amigos.org/services/job-bank/business-librarian-baylor-university-waco-tx</td><td>https://about.web.baylor.edu/values-vision/mission-statement</td><td>403</td><td>mission</td></tr>
+<tr><td>https://amigos.org/services/job-bank/business-librarian-baylor-university-waco-tx</td><td>https://hr.web.baylor.edu/benefits</td><td>403</td><td>benefits</td></tr>
+<tr><td>https://amigos.org/services/job-bank/business-librarian-baylor-university-waco-tx</td><td>https://disclosures.web.baylor.edu/notice-non-discrimination</td><td>403</td><td>Non-Discrimination</td></tr>
+<tr><td>https://amigos.org/node/8195</td><td>https://onlinelibrary.wiley.com/doi/10.1002/leap.1086</td><td>403</td><td>Learned Publishing</td></tr>
+<tr><td>https://amigos.org/news/archive?page=4</td><td>https://www.amigos.org/services/continuing-education/recognizing-and-cultivating-house-talent-amigos-community</td><td>403</td><td>Recognizing and Cultivating In-House Talent</td></tr>
+<tr><td>https://amigos.org/news/archive?page=6</td><td>https://c846d1698e3d4355b29a446a8a84ba08.marketingusercontent.com/m/view/bkyRMVDPvozIavxdVvbTOZOExxda5gdrvZKk7NSIv6wx?msdynttrid=VwOeSvc5gg_MD_PfP0vpQLZzHG-9jwYLgfQMJIbayG4</td><td>FAILED</td><td>June 12 issue of Continued</td></tr>
+<tr><td>https://amigos.org/news/archive?page=8</td><td>https://t.e2ma.net/message/lq1f4l/9waqf0b</td><td>404</td><td>streamline IP address management</td></tr>
+<tr><td>https://amigos.org/news/archive?page=23</td><td>https://amigos.org/node/7658</td><td>404</td><td>scholarships</td></tr>
+<tr><td>https://amigos.org/news/february-conference-call-proposals-now-open</td><td>https://forms.office.com/r/tMNeYGpvU0</td><td>405</td><td>submit your proposal</td></tr>
+</tbody>
+</table>
+</body>
+</html>
