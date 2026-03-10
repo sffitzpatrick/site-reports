@@ -1,9 +1,16 @@
-// summary-generator.js
+// summary-reporter.js
+'use strict';
+
 const fs = require('fs');
 const path = require('path');
 const csvWriter = require('csv-writer').createObjectCsvWriter;
-
 const args = require('minimist')(process.argv.slice(2));
+
+const { readCSV, writeReport } = require('./report-utils');
+
+// -----------------------------
+// Command-line / Environment
+// -----------------------------
 const SITE_NAME = args['site-name'] || process.env.SITE_NAME || '';
 const DATESTAMP = args.datestamp || process.env.DATESTAMP || '';
 const REPORT_DIR = args['report-dir'] || process.env.REPORT_DIR;
@@ -14,33 +21,36 @@ if (!REPORT_DIR) {
   process.exit(1);
 }
 
+// -----------------------------
+// Paths
+// -----------------------------
 const JSON_DIR = path.join(__dirname, REPORT_DIR, 'axe_json');
 const CSV_PATH = path.join(__dirname, REPORT_DIR, 'summary.csv');
 const DETAILS_CSV_PATH = path.join(__dirname, REPORT_DIR, 'violations-detailed.csv');
-const HTML_PATH = path.join(__dirname, REPORT_DIR, 'summary.html');
 
+// -----------------------------
+// Prepare data
+// -----------------------------
 const summary = [];
 const allViolations = [];
 
 // Severity weights
-const WEIGHTS = {
-  critical: 4,
-  serious: 3,
-  moderate: 2,
-  minor: 1
-};
+const WEIGHTS = { critical: 4, serious: 3, moderate: 2, minor: 1 };
 
 if (!fs.existsSync(JSON_DIR)) {
   console.error(`❌ JSON directory not found: ${JSON_DIR}`);
   process.exit(1);
 }
 
+// -----------------------------
+// Read JSON and build summaries
+// -----------------------------
 fs.readdirSync(JSON_DIR).forEach(file => {
   if (!file.endsWith('.json')) return;
 
   const filePath = path.join(JSON_DIR, file);
-
   let data;
+
   try {
     data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   } catch (err) {
@@ -95,135 +105,63 @@ fs.readdirSync(JSON_DIR).forEach(file => {
   });
 });
 
-//
-// WRITE SUMMARY CSV
-//
-csvWriter({
-  path: CSV_PATH,
-  header: [
-    { id: 'page', title: 'Page' },
-    { id: 'pageTitle', title: 'Title' },
-    { id: 'pageUrl', title: 'URL' },
-    { id: 'reportLink', title: 'Report Link' },
-    { id: 'totalViolations', title: 'Total Violations' },
-    { id: 'totalPasses', title: 'Total Passes' },
-    { id: 'critical', title: 'Critical' },
-    { id: 'serious', title: 'Serious' },
-    { id: 'moderate', title: 'Moderate' },
-    { id: 'minor', title: 'Minor' },
-    { id: 'severityScore', title: 'Severity Score' },
-  ]
-}).writeRecords(summary)
-  .then(() => console.log('✅ summary.csv written'))
-  .catch(err => console.error('❌ Failed writing summary CSV', err));
+// -----------------------------
+// Async function to write CSV + HTML
+// -----------------------------
+async function generateReports() {
+  try {
+    // --- Write summary CSV ---
+    await csvWriter({
+      path: CSV_PATH,
+      header: [
+        { id: 'page', title: 'Page' },
+        { id: 'pageTitle', title: 'Title' },
+        { id: 'pageUrl', title: 'URL' },
+        { id: 'reportLink', title: 'Report Link' },
+        { id: 'totalViolations', title: 'Total Violations' },
+        { id: 'totalPasses', title: 'Total Passes' },
+        { id: 'critical', title: 'Critical' },
+        { id: 'serious', title: 'Serious' },
+        { id: 'moderate', title: 'Moderate' },
+        { id: 'minor', title: 'Minor' },
+        { id: 'severityScore', title: 'Severity Score' },
+      ]
+    }).writeRecords(summary);
 
-//
-// WRITE DETAILED CSV
-//
-csvWriter({
-  path: DETAILS_CSV_PATH,
-  header: [
-    { id: 'page', title: 'Page' },
-    { id: 'url', title: 'URL' },
-    { id: 'title', title: 'Title' },
-    { id: 'impact', title: 'Impact' },
-    { id: 'id', title: 'Rule ID' },
-    { id: 'description', title: 'Description' },
-    { id: 'help', title: 'Help' },
-    { id: 'helpUrl', title: 'Help URL' },
-    { id: 'html', title: 'HTML Element' },
-  ]
-}).writeRecords(allViolations)
-  .then(() => console.log('✅ violations-detailed.csv written'))
-  .catch(err => console.error('❌ Failed writing detailed CSV', err));
+    console.log('✅ summary.csv written');
 
-//
-// HTML REPORT
-//
-const htmlContent = `<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Accessibility Summary</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
-<link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
-<style>
-body { font-family: sans-serif; padding: 2rem; }
-table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
-th { background: #f4f4f4; }
-canvas { max-width: 900px; margin: 2rem auto; display: block; }
-</style>
-</head>
-<body>
+    // --- Write detailed CSV ---
+    await csvWriter({
+      path: DETAILS_CSV_PATH,
+      header: [
+        { id: 'page', title: 'Page' },
+        { id: 'url', title: 'URL' },
+        { id: 'title', title: 'Title' },
+        { id: 'impact', title: 'Impact' },
+        { id: 'id', title: 'Rule ID' },
+        { id: 'description', title: 'Description' },
+        { id: 'help', title: 'Help' },
+        { id: 'helpUrl', title: 'Help URL' },
+        { id: 'html', title: 'HTML Element' },
+      ]
+    }).writeRecords(allViolations);
 
-<h1>Accessibility Audit Summary</h1>
-<h2>Site URL: ${SITE_URL}</h2>
+    console.log('✅ violations-detailed.csv written');
 
-<canvas id="summaryChart"></canvas>
+    // --- Read summary CSV and generate HTML ---
+    const { headers, data } = readCSV(CSV_PATH);
 
-<table id="summary-table">
-<thead>
-<tr>
-<th>Page</th>
-<th>Title</th>
-<th>Report</th>
-<th>Total Violations</th>
-<th>Passes</th>
-<th>Critical</th>
-<th>Serious</th>
-<th>Moderate</th>
-<th>Minor</th>
-<th>Severity Score</th>
-</tr>
-</thead>
-<tbody>
-${summary.map(row => `
-<tr>
-<td>${row.page}</td>
-<td><a href="${row.pageUrl}" target="_blank">${row.pageTitle}</a></td>
-<td><a href="${row.reportLink}" target="_blank">View Report</a></td>
-<td>${row.totalViolations}</td>
-<td>${row.totalPasses}</td>
-<td>${row.critical}</td>
-<td>${row.serious}</td>
-<td>${row.moderate}</td>
-<td>${row.minor}</td>
-<td><strong>${row.severityScore}</strong></td>
-</tr>
-`).join('')}
-</tbody>
-</table>
+    writeReport(data, headers, REPORT_DIR, 'summary', {
+      title: 'Accessibility Summary Report',
+      linkColumns: ['URL', 'Report Link'] // make URLs clickable
+    });
 
-<script>
-const chartData = {
-  labels: ${JSON.stringify(summary.map(r => r.page))},
-  datasets: [
-    { label: 'Critical', backgroundColor: '#e3342f', data: ${JSON.stringify(summary.map(r => r.critical))} },
-    { label: 'Serious', backgroundColor: '#f6993f', data: ${JSON.stringify(summary.map(r => r.serious))} },
-    { label: 'Moderate', backgroundColor: '#ffed4a', data: ${JSON.stringify(summary.map(r => r.moderate))} },
-    { label: 'Minor', backgroundColor: '#38c172', data: ${JSON.stringify(summary.map(r => r.minor))} }
-  ]
-};
+    console.log('✅ summary.html written');
 
-new Chart(document.getElementById('summaryChart'), {
-  type: 'bar',
-  data: chartData,
-  options: {
-    responsive: true,
-    scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } }
+  } catch (err) {
+    console.error('❌ Error generating reports', err);
   }
-});
+}
 
-$(document).ready(function() {
-  $('#summary-table').DataTable({ paging: false });
-});
-</script>
-
-</body>
-</html>`;
-
-fs.writeFileSync(HTML_PATH, htmlContent, 'utf-8');
-console.log('✅ summary.html written');
+// Run
+generateReports();
