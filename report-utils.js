@@ -1,107 +1,139 @@
 'use strict';
+
 const fs = require('fs');
 const path = require('path');
 const parse = require('csv-parse/sync').parse;
 
-function escapeHtml(str = '') {
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-}
 
-// CSV → array of objects
-function readCSV(file) {
-  const content = fs.readFileSync(file, 'utf8');
+// -----------------------------
+// Read CSV
+// -----------------------------
+function readCSV(filePath) {
+  const content = fs.readFileSync(filePath, 'utf8');
+
   const records = parse(content, {
-    columns: true,      // first row = headers
+    columns: true,
     skip_empty_lines: true,
     trim: true
   });
+
   const headers = Object.keys(records[0] || {});
   return { headers, data: records };
 }
 
-// Convert array of objects to CSV (for custom reports)
-function toCSV(data, headers) {
-  const rows = [headers.join(',')];
-  for (const row of data) {
-    rows.push(
-      headers
-        .map(h => `"${String(row[h] ?? '').replace(/"/g, '""')}"`)
-        .join(',')
-    );
-  }
-  return rows.join('\n');
+
+// -----------------------------
+// Escape HTML
+// -----------------------------
+function escapeHtml(str) {
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
-// Generate HTML table from CSV data
-function toHTMLTable(data, headers, options = {}) {
-  const title = options.title || 'Report';
-  const linkColumns = options.linkColumns || [];
 
-  const head = headers.map(h => `<th>${escapeHtml(h)}</th>`).join('');
+// -----------------------------
+// Generate HTML Table
+// -----------------------------
+function generateTable(data, headers, linkColumns = []) {
 
-  const rows = data
-    .map(row => {
-      const cols = headers
-        .map(h => {
-          const val = row[h] ?? '';
-          if (linkColumns.includes(h)) {
-            return `<td><a href="${escapeHtml(val)}" target="_blank">${escapeHtml(val)}</a></td>`;
-          } else {
-            return `<td>${escapeHtml(val)}</td>`;
-          }
-        })
-        .join('');
-      return `<tr>${cols}</tr>`;
-    })
-    .join('\n');
+  const thead = `
+<thead>
+<tr>
+${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('\n')}
+</tr>
+</thead>`;
 
-  return `<!DOCTYPE html>
+  const tbodyRows = data.map(row => {
+
+    const cols = headers.map(h => {
+
+      let value = row[h] ?? '';
+
+      if (linkColumns.includes(h) && value) {
+        return `<td><a href="${escapeHtml(value)}" target="_blank">${escapeHtml(value)}</a></td>`;
+      }
+
+      return `<td>${escapeHtml(value)}</td>`;
+    });
+
+    return `<tr>${cols.join('')}</tr>`;
+  });
+
+  const tbody = `<tbody>\n${tbodyRows.join('\n')}\n</tbody>`;
+
+  return `<table id="summary-table">${thead}${tbody}</table>`;
+}
+
+
+// -----------------------------
+// Write HTML Report
+// -----------------------------
+function writeReport(data, headers, reportDir, name, options = {}) {
+
+  const {
+    title = 'Report',
+    linkColumns = [],
+    siteUrl = '',
+    siteName = '',
+    datestamp = ''
+  } = options;
+
+  const table = generateTable(data, headers, linkColumns);
+
+  const html = `
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>${escapeHtml(title)}</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
 <style>
-body { font-family: system-ui, sans-serif; padding: 2rem; }
-table { border-collapse: collapse; width: 100%; }
-th, td { border: 1px solid #ccc; padding: 6px 10px; }
-th { background: #eee; }
-tr:nth-child(even) { background: #fafafa; }
+body { font-family: sans-serif; padding: 2rem; }
+table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+th { background: #f4f4f4; }
+canvas { max-width: 900px; margin: 2rem auto; display: block; }
 </style>
+
 </head>
 <body>
+
 <h1>${escapeHtml(title)}</h1>
-<table>
-<thead><tr>${head}</tr></thead>
-<tbody>
-${rows}
-</tbody>
-</table>
+
+<div class="meta">
+${siteName ? `<div><strong>Site:</strong> ${escapeHtml(siteName)}</div>` : ''}
+${siteUrl ? `<div><strong>URL:</strong> <a href="${escapeHtml(siteUrl)}">${escapeHtml(siteUrl)}</a></div>` : ''}
+${datestamp ? `<div><strong>Date:</strong> ${escapeHtml(datestamp)}</div>` : ''}
+</div>
+
+${table}
+
+<script>
+
+$(document).ready(function() {
+  $('#summary-table').DataTable({ paging: false });
+});
+</script>
+
+
 </body>
-</html>`;
+</html>
+`;
+
+  const outputPath = path.join(reportDir, `${name}.html`);
+  fs.writeFileSync(outputPath, html, 'utf8');
 }
 
-// Write both CSV + HTML
-function writeReport(data, headers, outputDir, baseName, options = {}) {
-  if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
-  const csvContent = toCSV(data, headers);
-  const htmlContent = toHTMLTable(data, headers, options);
-
-  const csvPath = path.join(outputDir, `${baseName}.csv`);
-  const htmlPath = path.join(outputDir, `${baseName}.html`);
-
-  fs.writeFileSync(csvPath, csvContent, 'utf8');
-  fs.writeFileSync(htmlPath, htmlContent, 'utf8');
-
-  return { csvPath, htmlPath };
-}
-
+// -----------------------------
 module.exports = {
   readCSV,
-  writeReport,
-  toCSV,
-  toHTMLTable
+  writeReport
 };

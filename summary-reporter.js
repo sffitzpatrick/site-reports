@@ -153,7 +153,10 @@ async function generateReports() {
 
     writeReport(data, headers, REPORT_DIR, 'summary', {
       title: 'Accessibility Summary Report',
-      linkColumns: ['URL', 'Report Link'] // make URLs clickable
+      linkColumns: ['URL', 'Report Link'],
+      siteUrl: SITE_URL,
+      siteName: SITE_NAME,
+      datestamp: DATESTAMP
     });
 
     console.log('✅ summary.html written');
