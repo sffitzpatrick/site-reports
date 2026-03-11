@@ -153,9 +153,30 @@ jobs:
           git commit -m "Add reports for $DATESTAMP" || echo "No changes"
           git push origin main
 
-      # - name: Send email reports with Node.js
-      #   env:
-      #     DATESTAMP: ${{ env.DATESTAMP }}
-      #     SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
-      #   run: |
-      #     node send-reports.js
+      - name: email reports
+        run: |
+          for dir in ${{ env.DATESTAMP }}/*; do
+            site=$(basename "$dir")
+            echo "Sending email for $site..."
+
+            curl --request POST \
+              --url https://api.sendgrid.com/v3/mail/send \
+              --header "Authorization: Bearer $SENDGRID_API_KEY" \
+              --header 'Content-Type: application/json' \
+              --data '{
+                "personalizations": [{
+                  "to": [{ "email": "sean@proofstudio.co" }],
+                  "subject": "Report for '"$SITE_NAME"'"
+                }],
+                "from": { "email": "noreply@proofstudio.co" },
+                "content": [{
+                  "type": "text/plain",
+                  "value": "The report for '"$SITE_NAME"' is ready. View it here: https://sffitzpatrick.github.io/website-accessibilty-reports/'"${{ env.REPORT_DIR }}"'"
+                }]
+              }'
+          done
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
+          SITE_NAME: ${{ github.event.inputs.site_name }}
+          DATESTAMP: ${{ needs.set-date.outputs.datestamp }}
+          REPORT_DIR: /scheduled-reports/${{ github.event.inputs.site_name }}/${{ needs.set-date.outputs.datestamp }}
