@@ -195,7 +195,7 @@ async function generateLinkReports() {
   const { headers, data } = readCSV(LINK_CSV_PATH);
   writeReport(data, headers, REPORT_DIR, 'broken-links', {
     title: 'Broken Links Report',
-    linkColumns: ['Link'],
+    linkColumns: ['Link', 'Source Page'],
     siteUrl: START_URL,
     siteName: SITE_NAME,
     datestamp: DATESTAMP

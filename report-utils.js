@@ -96,8 +96,8 @@ function writeReport(data, headers, reportDir, name, options = {}) {
 <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.min.css">
 <style>
 body { font-family: sans-serif; padding: 2rem; }
-table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+table { border-collapse: collapse; width: 100%; margin-top: 1rem; table-layout: fixed; }
+th, td { border: 1px solid #ccc; padding: 6px; text-align: center; word-break: break-word; }
 th { background: #f4f4f4; }
 canvas { max-width: 900px; margin: 2rem auto; display: block; }
 </style>

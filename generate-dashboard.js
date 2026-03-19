@@ -44,8 +44,8 @@ const html = `
     body { font-family: sans-serif; padding: 2em; background: #f9f9f9; }
     h1 { font-size: 1.8em; }
     .meta { margin-bottom: 1.5em; color: #555; }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { padding: 10px; border: 1px solid #ccc; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th, td { padding: 10px; border: 1px solid #ccc; word-break: break-word; }
     th { background: #eee; }
     tr:nth-child(even) { background: #fefefe; }
     a { color: #0077cc; text-decoration: none; }
