@@ -91,9 +91,6 @@ jobs:
 
       - name: Generate a11y reports
         run: node summary-reporter.js --report-dir=$REPORT_DIR --site-name=$SITE_NAME --start-url=$SITE_URL --datestamp=$DATESTAMP
-      
-      - name: Generate broken link report
-        run:  node generate-link-report.js --report-dir=$REPORT_DIR --site-name=$SITE_NAME --datestamp=$DATESTAMP
 
       - name: Generate HTML Dashboard
         run: |
